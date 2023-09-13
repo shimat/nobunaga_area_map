@@ -1,43 +1,55 @@
 import pydeck
 # import numpy as np
-import pandas as pd
+# import pandas as pd
 import streamlit as st
-from load_data import load_data
+from data_loader import load_data_from_gml, mod_data
 
-df = load_data("gml/北海道.gml")
-st.dataframe(df)
+df_org = load_data_from_gml("gml/北海道.gml")
+df_mod = mod_data(df_org)
+df_org = df_org[:6000]
+# df.to_csv("hokkaido.csv")
+
+for name, df in {"「信長の野望 出陣」のエリア": df_mod, "全町名": df_org}.items():
+    st.header(name)
+    polygon_layer = pydeck.Layer(
+        "PolygonLayer",
+        df,
+        stroked=True,
+        filled=True,
+        extruded=False,
+        wireframe=True,
+        line_width_scale=10,
+        line_width_min_pixels=1,
+        get_polygon="lonlat_coordinates",
+        get_line_color=[255, 255, 255],
+        get_fill_color=[0, 0, 0, 64],
+        auto_highlight=True,
+        pickable=True,
+    )
+    tooltip = "{address}\n面積: {area}㎡\n人口: {population}人, 世帯数: {household_count}" 
+    if name != "全町名":
+        tooltip += "\n推定石高:{estimated_kokudaka}"
+    deck = pydeck.Deck(
+            layers=(polygon_layer, ),
+            initial_view_state=pydeck.ViewState(
+                # latitude=43.08,
+                # longitude=141.35,
+                # zoom=10.0,
+                # latitude=43.08,
+                # longitude=141.30,
+                # zoom=12.0,
+                latitude=42.99,
+                longitude=141.46,
+                zoom=12.0,
+                max_zoom=16,
+                pitch=0,
+                bearing=0),
+            tooltip={"text": tooltip})
+    st.pydeck_chart(deck)
 
 
-polygon_layer = pydeck.Layer(
-    "PolygonLayer",
-    df,
-    stroked=True,
-    filled=True,
-    extruded=False,
-    wireframe=True,
-    line_width_scale=10,
-    line_width_min_pixels=1,
-    get_polygon="lonlat_coordinates",
-    get_line_color=[255, 255, 255],
-    get_fill_color=[0, 0, 0, 128],
-    auto_highlight=True,
-    pickable=True,
-)
-deck = pydeck.Deck(
-        layers=(polygon_layer, ),
-        initial_view_state=pydeck.ViewState(
-            # latitude=43.08,
-            # longitude=141.35,
-            # zoom=10.0,
-            latitude=43.08,
-            longitude=141.30,
-            zoom=12.0,
-            max_zoom=16,
-            pitch=0,
-            bearing=0),
-        tooltip={"text": "{city_name} {town_name}\n面積: {area}㎡\n人口: {population}人, 世帯数:{household_count}"})
-st.pydeck_chart(deck)
-
+st.dataframe(df_org)
+# st.dataframe(df_mod)
 
 st.markdown(
     """
