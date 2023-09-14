@@ -6,7 +6,15 @@ from data_loader import load_data_from_gml, load_data_from_gml_zip, mod_data
 
 
 df_org = load_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
-#df_org.to_csv("hokkaido.csv")
+#"""
+df_org.to_csv("hokkaido.csv", columns=[
+    "prefecture_name",
+    "address",
+    "area",
+    "perimeter",
+    "population",
+    "household_count",], index=False, encoding="utf-8-sig")
+#"""
 
 #df_org = load_data_from_gml("gml/北海道.gml")
 df_mod = mod_data(df_org)
