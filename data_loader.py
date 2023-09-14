@@ -1,8 +1,11 @@
 import functools
 import json
+import more_itertools
 import pandas as pd
 import streamlit as st
 import shapely
+import zipfile
+from os.path import splitext
 from xml.etree import ElementTree
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
@@ -14,9 +17,21 @@ NAMESPACES = {
 }
 
 
+def load_data_from_gml_zip(file_name: str) -> pd.DataFrame:
+    with zipfile.ZipFile(file_name, 'r') as zf:
+        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
+        with zf.open(gml_file_name, 'r') as file:
+            tree = ElementTree.parse(file)
+            return load_data(tree)
+
+
 @st.cache_data
 def load_data_from_gml(file_name: str) -> pd.DataFrame:
     tree = ElementTree.parse(file_name)
+    return load_data(tree)
+
+
+def load_data(tree: ElementTree) -> pd.DataFrame:
     # root = tree.getroot()
 
     # bounded_by = tree.find("gml:boundedBy", NAMESPACES)
@@ -40,8 +55,10 @@ def load_data_from_gml(file_name: str) -> pd.DataFrame:
         addresses.append(f"{city_names[-1]} {town_names[-1]}")
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
         perimeters.append(float(elem.find("fme:PERIMETER", NAMESPACES).text))
-        populations.append(int(elem.find("fme:JINKO", NAMESPACES).text))
-        household_counts.append(int(elem.find("fme:SETAI", NAMESPACES).text))
+        #populations.append(int(elem.find("fme:JINKO", NAMESPACES).text))
+        #household_counts.append(int(elem.find("fme:SETAI", NAMESPACES).text))
+        populations.append(0)
+        household_counts.append(0)
 
         pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
         pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
@@ -82,18 +99,22 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
     for address, sub_addresses in PAIRS.items():
         sub_rows = df.query("address in @sub_addresses")
         # st.dataframe(sub_rows)
-        new_data["prefecture_name"].append(sub_rows.iloc[0]["prefecture_name"])
+        #new_data["prefecture_name"].append(sub_rows.iloc[0]["prefecture_name"])
+        new_data["prefecture_name"].append("")
         new_data["address"].append(address)
         new_data["area"].append(sub_rows["area"].sum())
         new_data["perimeter"].append(sub_rows["perimeter"].sum())
         new_data["population"].append(sub_rows["population"].sum())
         new_data["household_count"].append(sub_rows["household_count"].sum())
-        
+
         kokudaka = estimate_kokudaka(new_data["area"][-1])
         new_data["estimated_kokudaka"].append(f"{kokudaka:.1f}")
 
         polygons = [shapely.geometry.Polygon(c[0])
                     for c in sub_rows["lonlat_coordinates"].values]
+        if not polygons:
+            new_data["lonlat_coordinates"].append([])
+            continue
         merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
         if merged_polygon.geom_type == "Polygon":
             coords = [list(merged_polygon.exterior.coords)]
