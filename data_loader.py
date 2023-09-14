@@ -136,4 +136,4 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def estimate_kokudaka(area: float):
-    return 0.0491 * (area ** 0.457)
+    return 0.035 * (area ** 0.494)
