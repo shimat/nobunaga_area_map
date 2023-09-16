@@ -43,8 +43,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     addresses: list[str] = []
     areas: list[float] = []
     perimeters: list[float] = []
-    populations: list[int] = []
-    household_counts: list[int] = []
     lonlat_lists: list[list[list[list[float]]]] = []
 
     for index, feature_member in enumerate(tree.findall("gml:featureMember", NAMESPACES)):
@@ -55,10 +53,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
         addresses.append(f"{city_names[-1]} {town_names[-1]}")
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
         perimeters.append(float(elem.find("fme:PERIMETER", NAMESPACES).text))
-        #populations.append(int(elem.find("fme:JINKO", NAMESPACES).text))
-        #household_counts.append(int(elem.find("fme:SETAI", NAMESPACES).text))
-        populations.append(0)
-        household_counts.append(0)
 
         pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
         pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
@@ -72,8 +66,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
         "address": addresses,
         "area": areas,
         "perimeter": perimeters,
-        "population": populations,
-        "household_count": household_counts,
         "lonlat_coordinates": lonlat_lists,
     }
     return pd.DataFrame(
@@ -91,21 +83,16 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
         "address": [],
         "area": [],
         "perimeter": [],
-        "population": [],
-        "household_count": [],
         "estimated_kokudaka": [],
         "lonlat_coordinates": [],
     }
     for address, sub_addresses in PAIRS.items():
         sub_rows = df.query("address in @sub_addresses")
         # st.dataframe(sub_rows)
-        #new_data["prefecture_name"].append(sub_rows.iloc[0]["prefecture_name"])
-        new_data["prefecture_name"].append("")
+        new_data["prefecture_name"].append(sub_rows.iloc[0]["prefecture_name"])
         new_data["address"].append(address)
         new_data["area"].append(sub_rows["area"].sum())
         new_data["perimeter"].append(sub_rows["perimeter"].sum())
-        new_data["population"].append(sub_rows["population"].sum())
-        new_data["household_count"].append(sub_rows["household_count"].sum())
 
         kokudaka = estimate_kokudaka(new_data["area"][-1])
         new_data["estimated_kokudaka"].append(f"{kokudaka:.1f}")
@@ -119,6 +106,7 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
         if merged_polygon.geom_type == "Polygon":
             coords = [list(merged_polygon.exterior.coords)]
         elif merged_polygon.geom_type == "MultiPolygon":
+            #coords = [list(p.exterior.coords) for p in sorted(merged_polygon.geoms, key=lambda p: p.area, reverse=True)]
             coords = [list(p.exterior.coords) for p in merged_polygon.geoms]
         else:
             raise
