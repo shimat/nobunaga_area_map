@@ -42,7 +42,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     town_names: list[str] = []
     addresses: list[str] = []
     areas: list[float] = []
-    perimeters: list[float] = []
     lonlat_lists: list[list[list[list[float]]]] = []
 
     for index, feature_member in enumerate(tree.findall("gml:featureMember", NAMESPACES)):
@@ -52,7 +51,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
         town_names.append(elem.find("fme:S_NAME", NAMESPACES).text)
         addresses.append(f"{city_names[-1]} {town_names[-1]}")
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
-        perimeters.append(float(elem.find("fme:PERIMETER", NAMESPACES).text))
 
         pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
         pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
@@ -65,7 +63,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
         "town_name": town_names,
         "address": addresses,
         "area": areas,
-        "perimeter": perimeters,
         "lonlat_coordinates": lonlat_lists,
     }
     return pd.DataFrame(
@@ -82,21 +79,17 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
         "prefecture_name": [],
         "address": [],
         "area": [],
-        "perimeter": [],
-        "estimated_kokudaka": [],
+        "kokudaka": [],
+        "sub_addresses": [],
         "lonlat_coordinates": [],
     }
     for address, sub_addresses in PAIRS.items():
         sub_rows = df.query("address in @sub_addresses")
-        # st.dataframe(sub_rows)
-        new_data["prefecture_name"].append(sub_rows.iloc[0]["prefecture_name"])
-        new_data["address"].append(address)
-        new_data["area"].append(sub_rows["area"].sum())
-        new_data["perimeter"].append(sub_rows["perimeter"].sum())
+        prefecture_name = sub_rows.iloc[0]["prefecture_name"]
+        area: float = sub_rows["area"].sum()
+        kokudaka = estimate_kokudaka(area)
 
-        kokudaka = estimate_kokudaka(new_data["area"][-1])
-        new_data["estimated_kokudaka"].append(f"{kokudaka:.1f}")
-
+        # st.write(new_data["address"][-1], sub_rows)
         polygons = [shapely.geometry.Polygon(c[0])
                     for c in sub_rows["lonlat_coordinates"].values]
         if not polygons:
@@ -106,22 +99,26 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
         if merged_polygon.geom_type == "Polygon":
             coords = [list(merged_polygon.exterior.coords)]
         elif merged_polygon.geom_type == "MultiPolygon":
-            #coords = [list(p.exterior.coords) for p in sorted(merged_polygon.geoms, key=lambda p: p.area, reverse=True)]
             coords = [list(p.exterior.coords) for p in merged_polygon.geoms]
+            # st.write(new_data["address"][-1], coords)
         else:
             raise
-        new_data["lonlat_coordinates"].append(coords)
+ 
+        if len(coords) > 1:
+            address += " (飛び地あり)"
+        for c in coords:
+            new_data["prefecture_name"].append(prefecture_name)
+            new_data["address"].append(address)
+            new_data["area"].append(round(area))
+            new_data["kokudaka"].append(round(kokudaka, 2))
+            new_data["sub_addresses"].append(sub_addresses)
+            new_data["lonlat_coordinates"].append([c])
 
-    x = pd.DataFrame(
+    return pd.DataFrame(
         data=new_data,
         columns=new_data.keys()
     )
-    # st.dataframe(x)
-    return x
-
-    # df = df[:5800]
-    # return df
 
 
-def estimate_kokudaka(area: float):
+def estimate_kokudaka(area: float) -> float:
     return 0.035 * (area ** 0.494)
