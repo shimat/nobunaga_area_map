@@ -8,10 +8,13 @@ from data_loader import load_data_from_gml_zip, mod_data
 df_org = load_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
 # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
 
+city_name = st.selectbox("市区町村", ("札幌市清田区",))
 
-# df_org = load_data_from_gml("gml/北海道.gml")
+df_org = df_org[df_org["city_name"] == city_name]
 df_mod = mod_data(df_org)
-df_org = df_org[:6000]
+# df_org = df_org[:6000]
+
+# st.write(df_org.memory_usage(deep=True))
 
 df_map = {"「信長の野望 出陣」の各エリア": df_mod, "全町名": df_org}
 tabs = dict(zip(df_map.keys(), st.tabs(df_map.keys())))
@@ -47,8 +50,8 @@ for name, df in df_map.items():
                     # latitude=43.08,
                     # longitude=141.30,
                     # zoom=12.0,
-                    latitude=42.99,
-                    longitude=141.46,
+                    latitude=42.995,
+                    longitude=141.455,
                     zoom=12.0,
                     max_zoom=16,
                     pitch=0,
@@ -64,8 +67,7 @@ for name, df in df_map.items():
             "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
             "sub_addresses": st.column_config.ListColumn("含む町名"),
             "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
-            "city_name": None,
-            "town_name": None,
+            "city_name": None
         })
 
 

@@ -17,6 +17,7 @@ NAMESPACES = {
 }
 
 
+# @st.cache_data
 def load_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, 'r') as zf:
         gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
@@ -39,17 +40,17 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
 
     prefecture_names: list[str] = []
     city_names: list[str] = []
-    town_names: list[str] = []
     addresses: list[str] = []
     areas: list[float] = []
     lonlat_lists: list[list[list[list[float]]]] = []
 
-    for index, feature_member in enumerate(tree.findall("gml:featureMember", NAMESPACES)):
+    for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
         prefecture_names.append(elem.find("fme:PREF_NAME", NAMESPACES).text)
-        city_names.append(elem.find("fme:CITY_NAME", NAMESPACES).text)
-        town_names.append(elem.find("fme:S_NAME", NAMESPACES).text)
-        addresses.append(f"{city_names[-1]} {town_names[-1]}")
+        city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
+        town_name = elem.find("fme:S_NAME", NAMESPACES).text
+        city_names.append(city_name)
+        addresses.append(f"{city_name} {town_name}")
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
 
         pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
@@ -60,7 +61,6 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     data = {
         "prefecture_name": prefecture_names,
         "city_name": city_names,
-        "town_name": town_names,
         "address": addresses,
         "area": areas,
         "lonlat_coordinates": lonlat_lists,
