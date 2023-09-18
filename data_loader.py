@@ -6,6 +6,8 @@ import streamlit as st
 import shapely
 import zipfile
 from os.path import splitext
+from pathlib import Path
+from pydantic import BaseModel
 from xml.etree import ElementTree
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
@@ -71,10 +73,7 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-def mod_data(df: pd.DataFrame) -> pd.DataFrame:
-    with open("nobunaga_areas_correspondences.json", "r", encoding="utf-8-sig") as f:
-        PAIRS = json.load(f)
-
+def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.DataFrame:
     new_data = {
         "prefecture_name": [],
         "address": [],
@@ -83,7 +82,7 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
         "sub_addresses": [],
         "lonlat_coordinates": [],
     }
-    for address, sub_addresses in PAIRS.items():
+    for address, sub_addresses in correspondences.items():
         sub_rows = df.query("address in @sub_addresses")
         prefecture_name = sub_rows.iloc[0]["prefecture_name"]
         area: float = sub_rows["area"].sum()
@@ -103,7 +102,7 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
             # st.write(new_data["address"][-1], coords)
         else:
             raise
- 
+
         if len(coords) > 1:
             address += " (飛び地あり)"
         for c in coords:
@@ -122,3 +121,23 @@ def mod_data(df: pd.DataFrame) -> pd.DataFrame:
 
 def estimate_kokudaka(area: float) -> float:
     return 0.035 * (area ** 0.494)
+
+
+
+class ViewState(BaseModel):
+    latitude: float
+    longitude: float
+    zoom: float
+
+
+class AreaData(BaseModel):
+    view_state: ViewState
+    correspondences: dict[str, list[str]]
+
+
+#@st.cache_data
+def load_area_data(area_name: str) -> AreaData:
+    path = Path("correspondences") / f"{area_name}.json"
+    return AreaData.parse_file(path, encoding="utf-8-sig")
+    #with open(f"correspondences/{area_name}.json", "r", encoding="utf-8-sig") as f:
+    #    return json.load(f)
