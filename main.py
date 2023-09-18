@@ -6,7 +6,10 @@ from data_loader import load_data_from_gml_zip, load_area_data, mod_data
 
 
 
-city_name = st.selectbox("市区町村", ("札幌市清田区",))
+city_name = st.selectbox(
+    label="市区町村",
+    options=("札幌市手稲区", "札幌市清田区",),
+    index=1)
 
 area_data = load_area_data(city_name)
 
