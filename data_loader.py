@@ -120,8 +120,7 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
 
 
 def estimate_kokudaka(area: float) -> float:
-    return 0.035 * (area ** 0.494)
-
+    return 0.0338 * (area ** 0.496)
 
 
 class ViewState(BaseModel):
@@ -138,6 +137,5 @@ class AreaData(BaseModel):
 #@st.cache_data
 def load_area_data(area_name: str) -> AreaData:
     path = Path("correspondences") / f"{area_name}.json"
-    return AreaData.parse_file(path, encoding="utf-8-sig")
-    #with open(f"correspondences/{area_name}.json", "r", encoding="utf-8-sig") as f:
-    #    return json.load(f)
+    j = path.read_text(encoding="utf-8-sig")
+    return AreaData.model_validate_json(j)
