@@ -1,5 +1,4 @@
 import functools
-import json
 import more_itertools
 import pandas as pd
 import streamlit as st
@@ -120,7 +119,7 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
 
 
 def estimate_kokudaka(area: float) -> float:
-    return 0.0338 * (area ** 0.496)
+    return (area ** 0.497) / 30
 
 
 class ViewState(BaseModel):
@@ -134,7 +133,7 @@ class AreaData(BaseModel):
     correspondences: dict[str, list[str]]
 
 
-#@st.cache_data
+# @st.cache_data
 def load_area_data(area_name: str) -> AreaData:
     path = Path("correspondences") / f"{area_name}.json"
     j = path.read_text(encoding="utf-8-sig")

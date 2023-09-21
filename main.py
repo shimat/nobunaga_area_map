@@ -3,6 +3,8 @@ import streamlit as st
 from data_loader import load_data_from_gml_zip, load_area_data, mod_data
 
 
+st.set_page_config(page_title="「信長の野望 出陣」エリア別石高の可視化")
+
 city_name = st.selectbox(
     label="市区町村",
     options=("札幌市手稲区", "札幌市清田区", "虻田郡京極町", ),
