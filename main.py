@@ -18,6 +18,10 @@ df_mod = mod_data(df_org, area_data.correspondences)
 # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
 # st.write(df_org.memory_usage(deep=True))
 
+df_org["area_str"] = df_org["area"].apply(lambda x: '{:,.0f}'.format(x))
+df_mod["area_str"] = df_mod["area"].apply(lambda x: '{:,.0f}'.format(x))
+
+
 df_map = {"「信長の野望 出陣」の各エリア": df_mod, "全町名": df_org}
 tabs = dict(zip(df_map.keys(), st.tabs(df_map.keys())))
 
@@ -39,7 +43,7 @@ for name, df in df_map.items():
             auto_highlight=True,
             pickable=True,
         )
-        tooltip = "{address}\n面積: {area}㎡"
+        tooltip = "{address}\n面積: {area_str}㎡"
         if name != "全町名":
             tooltip += "\n推定石高:{kokudaka}"
         deck = pydeck.Deck(
@@ -58,11 +62,12 @@ for name, df in df_map.items():
         st.dataframe(df, hide_index=True, column_config={
             "prefecture_name": st.column_config.TextColumn("都道府県", width="small"),
             "address": address_label,
-            "area": st.column_config.NumberColumn("面積[㎡]", format="%.0f"),
+            "area": st.column_config.NumberColumn("面積[㎡]", step="0"),
             "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
             "sub_addresses": st.column_config.ListColumn("含む町名"),
             "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
-            "city_name": None
+            "city_name": None,
+            "area_str": None,
         })
 
 
