@@ -18,7 +18,7 @@ NAMESPACES = {
 }
 
 
-# @st.cache_data
+@st.cache_resource
 def load_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, 'r') as zf:
         gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
@@ -128,13 +128,24 @@ class ViewState(BaseModel):
     zoom: float
 
 
-class AreaData(BaseModel):
+class OneAreaData(BaseModel):
     view_state: ViewState
     correspondences: dict[str, list[str]]
 
 
+class AllAreasData(BaseModel):
+    view_state: ViewState
+    areas: dict[str, OneAreaData]
+
+    def get_all_correspondences(self) -> dict[str, list[str]]:
+        merged: dict[str, list[str]] = {}
+        for a in self.areas.values():
+            merged.update(a.correspondences)
+        return merged
+
+
 # @st.cache_data
-def load_area_data(area_name: str) -> AreaData:
-    path = Path("correspondences") / f"{area_name}.json"
+def load_area_data() -> AllAreasData:
+    path = Path("correspondences.json")
     j = path.read_text(encoding="utf-8-sig")
-    return AreaData.model_validate_json(j)
+    return AllAreasData.model_validate_json(j)
