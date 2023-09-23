@@ -14,11 +14,12 @@ city_name = st.selectbox(
     label="市区町村",
     options=(
         "北海道",
+        "札幌市南区",
         "札幌市手稲区",
+        "札幌市豊平区",
         "札幌市清田区",
         "虻田郡京極町",
     ),
-    index=1,
 )
 
 t = time.perf_counter()
