@@ -1,6 +1,7 @@
 import functools
 import more_itertools
 import pandas as pd
+import pydantic_yaml
 import streamlit as st
 import shapely
 import zipfile
@@ -145,7 +146,13 @@ class AllAreasData(BaseModel):
 
 
 # @st.cache_data
-def load_area_data() -> AllAreasData:
+def load_area_data_json() -> AllAreasData:
     path = Path("correspondences.json")
     j = path.read_text(encoding="utf-8-sig")
     return AllAreasData.model_validate_json(j)
+
+
+def load_area_data() -> AllAreasData:
+    path = Path("correspondences.yaml")
+    y = path.read_text(encoding="utf-8-sig")
+    return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
