@@ -16,16 +16,32 @@ areas:
 
   札幌市北区:
     view_state:
-      latitude: 43.120
-      longitude: 141.330
+      latitude: 43.127
+      longitude: 141.350
       zoom: 11.0
     correspondences:
+      札幌市北区 新川:
       札幌市北区 屯田町:
       札幌市北区 新琴似町:
       札幌市北区 篠路町篠路:
+      札幌市北区 篠路町上篠路:
       札幌市北区 篠路町太平:
       札幌市北区 篠路町拓北:
       札幌市北区 篠路町福移:
+
+
+  札幌市東区:
+    view_state:
+      latitude: 43.118
+      longitude: 141.390
+      zoom: 11.0
+    correspondences:
+      札幌市東区 丘珠町:
+      札幌市東区 中沼町:
+      札幌市東区 東雁来町:
+      札幌市東区 モエレ沼公園:
+      札幌市東区 栄町:
+
 
 
   札幌市南区:
