@@ -105,6 +105,7 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
         else:
             raise
 
+        simplified_sub_addresses = [s.split(" ")[1:] for s in sub_addresses]
         if len(coords) > 1:
             address += " (飛び地あり)"
         for c in coords:
@@ -112,7 +113,7 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
             new_data["address"].append(address)
             new_data["area"].append(round(area))
             new_data["kokudaka"].append(round(kokudaka, 2))
-            new_data["sub_addresses"].append(sub_addresses)
+            new_data["sub_addresses"].append(simplified_sub_addresses)
             new_data["lonlat_coordinates"].append([c])
 
     return pd.DataFrame(

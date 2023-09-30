@@ -1,9 +1,33 @@
 ﻿view_state:
-  latitude: 42.97215953177475
-  longitude: 141.14724879924492
-  zoom: 9
+  latitude: 43.050
+  longitude: 141.400
+  zoom: 8
 
 areas:
+  札幌市中央区:
+    view_state:
+      latitude: 43.040
+      longitude: 141.300
+      zoom: 11.5
+    correspondences:
+      札幌市中央区 盤渓:
+      札幌市中央区 宮の森:
+
+
+  札幌市北区:
+    view_state:
+      latitude: 43.120
+      longitude: 141.330
+      zoom: 11.0
+    correspondences:
+      札幌市北区 屯田町:
+      札幌市北区 新琴似町:
+      札幌市北区 篠路町篠路:
+      札幌市北区 篠路町太平:
+      札幌市北区 篠路町拓北:
+      札幌市北区 篠路町福移:
+
+
   札幌市南区:
     view_state:
       latitude: 42.969
@@ -17,6 +41,20 @@ areas:
       札幌市南区 藤野:
       札幌市南区 常盤:
       札幌市南区 滝野:
+
+
+  札幌市西区:
+    view_state:
+      latitude: 43.070
+      longitude: 141.250
+      zoom: 11.5
+    correspondences:
+      札幌市西区 福井:
+      札幌市西区 平和:
+      札幌市西区 西野:
+      札幌市西区 宮の沢:
+      札幌市西区 小別沢:
+
 
   札幌市手稲区:
     view_state:
@@ -279,7 +317,7 @@ areas:
 
   樺戸郡月形町:
     view_state:
-      latitude: 43.341
+      latitude: 43.370
       longitude: 141.670
       zoom: 10.5
     correspondences:
