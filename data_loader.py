@@ -83,7 +83,9 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
         "lonlat_coordinates": [],
     }
     for address, sub_addresses in correspondences.items():
-        sub_rows = df.query("address in @sub_addresses")
+        sub_addresses = sub_addresses or []
+        sub_addresses.append(address)
+        sub_rows = df[df["address"].isin(sub_addresses)]
         prefecture_name = sub_rows.iloc[0]["prefecture_name"]
         area: float = sub_rows["area"].sum()
         kokudaka = estimate_kokudaka(area)
@@ -131,7 +133,7 @@ class ViewState(BaseModel):
 
 class OneAreaData(BaseModel):
     view_state: ViewState
-    correspondences: dict[str, list[str]]
+    correspondences: dict[str, list[str] | None]
 
 
 class AllAreasData(BaseModel):
