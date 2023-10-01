@@ -59,6 +59,26 @@ areas:
       札幌市南区 滝野:
 
 
+  札幌市白石区:
+    view_state:
+      latitude: 43.060
+      longitude: 141.420
+      zoom: 11.5
+    correspondences:
+      札幌市白石区 東米里:
+      札幌市白石区 川下:
+      札幌市白石区 川北:
+
+
+  札幌市厚別区:
+    view_state:
+      latitude: 43.050
+      longitude: 141.470
+      zoom: 11.5
+    correspondences:
+      札幌市厚別区 厚別町山本:
+
+
   札幌市西区:
     view_state:
       latitude: 43.070
@@ -316,6 +336,19 @@ areas:
         - "札幌市清田区 北野三条１丁目"
 
 
+  小樽市: 
+    view_state:
+      latitude: 43.150
+      longitude: 141.070
+      zoom: 10.0
+    correspondences:
+      小樽市 星野町:
+      小樽市 見晴町:
+      小樽市 桂岡町:
+      小樽市 春香町:
+      小樽市 新光町:
+
+
   石狩市:
     view_state:
       latitude: 43.320
@@ -342,8 +375,8 @@ areas:
 
   虻田郡京極町: 
     view_state:
-      latitude: 42.88257897873768
-      longitude: 140.9477581366277
+      latitude: 42.882
+      longitude: 140.948
       zoom: 11.5
     correspondences:
       虻田郡京極町 字脇方:
