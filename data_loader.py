@@ -1,14 +1,12 @@
 import functools
 import more_itertools
 import pandas as pd
-import pydantic_yaml
 import streamlit as st
 import shapely
 import zipfile
 from os.path import splitext
-from pathlib import Path
-from pydantic import BaseModel
 from xml.etree import ElementTree
+from area_loader import Correspondences
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
 NAMESPACES = {
@@ -73,17 +71,24 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.DataFrame:
+def mod_data(df: pd.DataFrame, area_data: Correspondences) -> pd.DataFrame:
     new_data = {
         "prefecture_name": [],
         "address": [],
         "area": [],
         "kokudaka": [],
         "sub_addresses": [],
+        "own": [],
+        "fill_color": [],
         "lonlat_coordinates": [],
     }
-    for address, sub_addresses in correspondences.items():
-        sub_addresses = sub_addresses or []
+    for address, correespondence in area_data.items():
+        if correespondence is None or correespondence.towns is None:
+            sub_addresses = []
+            own = False
+        else:
+            sub_addresses = correespondence.towns
+            own = correespondence.own
         sub_addresses.append(address)
         sub_rows = df[df["address"].isin(sub_addresses)]
         prefecture_name = sub_rows.iloc[0]["prefecture_name"]
@@ -104,8 +109,11 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
             # st.write(new_data["address"][-1], coords)
         else:
             raise
-
+        
         simplified_sub_addresses = [s.split(" ")[1:] for s in sub_addresses]
+        
+        fill_color = [0, 192, 255, 128] if own else [0, 0, 0, 0]
+
         if len(coords) > 1:
             address += " (飛び地あり)"
         for c in coords:
@@ -115,6 +123,8 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
             new_data["kokudaka"].append(round(kokudaka, 2))
             new_data["sub_addresses"].append(simplified_sub_addresses)
             new_data["lonlat_coordinates"].append([c])
+            new_data["own"].append(own)
+            new_data["fill_color"].append(fill_color)
 
     return pd.DataFrame(
         data=new_data,
@@ -124,38 +134,3 @@ def mod_data(df: pd.DataFrame, correspondences: dict[str, list[str]]) -> pd.Data
 
 def estimate_kokudaka(area: float) -> float:
     return (area ** 0.497) / 30
-
-
-class ViewState(BaseModel):
-    latitude: float
-    longitude: float
-    zoom: float
-
-
-class OneAreaData(BaseModel):
-    view_state: ViewState
-    correspondences: dict[str, list[str] | None]
-
-
-class AllAreasData(BaseModel):
-    view_state: ViewState
-    areas: dict[str, OneAreaData]
-
-    def get_all_correspondences(self) -> dict[str, list[str]]:
-        merged: dict[str, list[str]] = {}
-        for a in self.areas.values():
-            merged.update(a.correspondences)
-        return merged
-
-
-# @st.cache_data
-def load_area_data_json() -> AllAreasData:
-    path = Path("correspondences.json")
-    j = path.read_text(encoding="utf-8-sig")
-    return AllAreasData.model_validate_json(j)
-
-
-def load_area_data() -> AllAreasData:
-    path = Path("correspondences.yaml")
-    y = path.read_text(encoding="utf-8-sig")
-    return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)

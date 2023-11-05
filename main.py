@@ -1,10 +1,12 @@
 import pydeck
 import streamlit as st
-from data_loader import load_data_from_gml_zip, load_area_data, mod_data
+from area_loader import load_area_data
+from data_loader import load_data_from_gml_zip, mod_data
 import time
 
 
-st.set_page_config(page_title="「信長の野望 出陣」エリア別石高の可視化")
+st.set_page_config(page_title="「信長の野望 出陣」エリア別石高の可視化", layout="wide")
+st.title("「信長の野望 出陣」エリア別石高の可視化")
 
 t = time.perf_counter()
 df_org = load_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
@@ -42,7 +44,7 @@ if city_name == "北海道":
     view_state = area_data.view_state
 else:
     df_target = df_org[df_org["city_name"] == city_name].copy()
-    df_mod = mod_data(df_target, area_data.areas[city_name].correspondences)
+    df_mod = mod_data(df_target, area_data.areas[city_name])
     view_state = area_data.areas[city_name].view_state
 print(f"DataFrame Mod Time = {time.perf_counter() - t}s")
 # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
@@ -64,11 +66,11 @@ for name, df in df_map.items():
             filled=True,
             extruded=False,
             wireframe=True,
-            line_width_scale=10,
-            line_width_min_pixels=1,
+            line_width_scale=20,
+            # line_width_min_pixels=0.1,
             get_polygon="lonlat_coordinates",
             get_line_color=[255, 255, 255],
-            get_fill_color=[0, 0, 0, 64],
+            get_fill_color="fill_color",
             highlight_color=[0, 0, 255, 128],
             auto_highlight=True,
             pickable=True,
@@ -103,6 +105,8 @@ for name, df in df_map.items():
                 "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
                 "city_name": None,
                 "area_str": None,
+                "own": st.column_config.TextColumn("領有", width="small"),
+                "fill_color": None,
             },
         )
 
