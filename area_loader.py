@@ -1,6 +1,6 @@
 from pathlib import Path
 from pydantic import BaseModel, Field
-from typing import TypeAlias
+from typing import Literal
 import pydantic_yaml
 
 
@@ -10,28 +10,31 @@ class ViewState(BaseModel):
     zoom: float
 
 
-class Correspondence(BaseModel):
-    own: bool = Field(default=False)
+class OneCorrespondence(BaseModel):
+    own: Literal["no", "expedition", "arrived"] = Field(default="no")
     towns: list[str] = Field(default=list())
-
-
-Correspondences: TypeAlias = dict[str, Correspondence | None]
 
 
 class OneAreaData(BaseModel):
     view_state: ViewState
-    correspondences: Correspondences
+    correspondences: dict[str, OneCorrespondence | None]
+
+
+class Correspondences(BaseModel):
+    pref_city: str
+    values: dict[str, OneCorrespondence | None]
 
 
 class AllAreasData(BaseModel):
     view_state: ViewState
     areas: dict[str, OneAreaData]
 
-    def get_all_correspondences(self) -> Correspondences:
-        merged: dict[str, Correspondence] = {}
-        for a in self.areas.values():
-            merged.update(a.correspondences)
-        return merged
+    def get_all_correspondences(self) -> list[Correspondences]:
+        return [Correspondences(pref_city=pref_city, values=area.correspondences)
+                for pref_city, area in self.areas.items()]
+    
+    def get_one_area_correspondences(self, pref_city: str) -> list[Correspondences]:
+        return [Correspondences(pref_city=pref_city, values=self.areas[pref_city].correspondences)]
 
 
 # @st.cache_data

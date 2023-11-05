@@ -26,6 +26,7 @@ city_name = st.selectbox(
         "札幌市手稲区",
         "札幌市豊平区",
         "札幌市清田区",
+        "函館市",
         "小樽市",
         "石狩市",
         "樺戸郡月形町",
@@ -39,13 +40,16 @@ print(f"AreaData Load Time = {time.perf_counter() - t}s")
 
 t = time.perf_counter()
 if city_name == "北海道":
-    df_target = df_org[df_org["city_name"].isin(area_data.areas.keys())].copy()
-    df_mod = mod_data(df_target, area_data.get_all_correspondences())
+    df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
+    correspondences = area_data.get_all_correspondences()
+    df_mod = mod_data(df_target, correspondences)
     view_state = area_data.view_state
 else:
     df_target = df_org[df_org["city_name"] == city_name].copy()
-    df_mod = mod_data(df_target, area_data.areas[city_name])
-    view_state = area_data.areas[city_name].view_state
+    pref_city = f"北海道 {city_name}"
+    correspondences = area_data.get_one_area_correspondences(pref_city)
+    df_mod = mod_data(df_target, correspondences)
+    view_state = area_data.areas[pref_city].view_state
 print(f"DataFrame Mod Time = {time.perf_counter() - t}s")
 # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
 # st.write(df_org.memory_usage(deep=True))
@@ -59,6 +63,14 @@ tabs = dict(zip(df_map.keys(), st.tabs(df_map.keys())))
 
 for name, df in df_map.items():
     with tabs[name]:
+
+        if name == "全町名":
+            fill_color = [0, 0, 0, 64]
+            tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
+        else:
+            fill_color = "fill_color"
+            tooltip = "{city_name} {area_name}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
+
         polygon_layer = pydeck.Layer(
             "PolygonLayer",
             df,
@@ -70,14 +82,11 @@ for name, df in df_map.items():
             # line_width_min_pixels=0.1,
             get_polygon="lonlat_coordinates",
             get_line_color=[255, 255, 255],
-            get_fill_color="fill_color",
+            get_fill_color=fill_color,
             highlight_color=[0, 0, 255, 128],
             auto_highlight=True,
             pickable=True,
         )
-        tooltip = "{address}\n面積: {area_str}㎡"
-        if name != "全町名":
-            tooltip += "\n推定石高:{kokudaka}"
         deck = pydeck.Deck(
             layers=(polygon_layer,),
             initial_view_state=pydeck.ViewState(
@@ -98,12 +107,14 @@ for name, df in df_map.items():
             hide_index=True,
             column_config={
                 "prefecture_name": st.column_config.TextColumn("都道府県", width="small"),
+                "city_name": st.column_config.TextColumn("市区町村", width="small"),
+                "area_name": st.column_config.TextColumn("エリア名", width="small"),
                 "address": address_label,
                 "area": st.column_config.NumberColumn("面積[㎡]", step="0"),
                 "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
-                "sub_addresses": st.column_config.ListColumn("含む町名"),
+                "sub_towns": st.column_config.ListColumn("含む町名"),
                 "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
-                "city_name": None,
+                "pref_city": None,
                 "area_str": None,
                 "own": st.column_config.TextColumn("領有", width="small"),
                 "fill_color": None,

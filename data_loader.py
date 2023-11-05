@@ -33,14 +33,10 @@ def load_data_from_gml(file_name: str) -> pd.DataFrame:
 
 
 def load_data(tree: ElementTree) -> pd.DataFrame:
-    # root = tree.getroot()
-
-    # bounded_by = tree.find("gml:boundedBy", NAMESPACES)
-    # st.write(bounded_by)
-
     prefecture_names: list[str] = []
     city_names: list[str] = []
-    addresses: list[str] = []
+    pref_cities: list[str] = []
+    town_names: list[str] = []
     areas: list[float] = []
     lonlat_lists: list[list[list[list[float]]]] = []
 
@@ -50,7 +46,8 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
         city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
         town_name = elem.find("fme:S_NAME", NAMESPACES).text
         city_names.append(city_name)
-        addresses.append(f"{city_name} {town_name}")
+        pref_cities.append(f"{prefecture_names[-1]} {city_name}")
+        town_names.append(town_name)
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
 
         pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
@@ -61,7 +58,8 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     data = {
         "prefecture_name": prefecture_names,
         "city_name": city_names,
-        "address": addresses,
+        "pref_city": pref_cities,
+        "town_name": town_names,
         "area": areas,
         "lonlat_coordinates": lonlat_lists,
     }
@@ -71,60 +69,74 @@ def load_data(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-def mod_data(df: pd.DataFrame, area_data: Correspondences) -> pd.DataFrame:
+def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.DataFrame:
     new_data = {
         "prefecture_name": [],
-        "address": [],
+        "city_name": [],
+        "area_name": [],
         "area": [],
         "kokudaka": [],
-        "sub_addresses": [],
+        "sub_towns": [],
         "own": [],
         "fill_color": [],
         "lonlat_coordinates": [],
     }
-    for address, correespondence in area_data.items():
-        if correespondence is None or correespondence.towns is None:
-            sub_addresses = []
-            own = False
-        else:
-            sub_addresses = correespondence.towns
-            own = correespondence.own
-        sub_addresses.append(address)
-        sub_rows = df[df["address"].isin(sub_addresses)]
-        prefecture_name = sub_rows.iloc[0]["prefecture_name"]
-        area: float = sub_rows["area"].sum()
-        kokudaka = estimate_kokudaka(area)
+    for area_data in area_data_list:
+        pref_city = area_data.pref_city
+        for area_name, correespondence in area_data.values.items():
+            if correespondence is None or correespondence.towns is None:
+                sub_towns = []
+                own = "no"
+            else:
+                sub_towns = correespondence.towns
+                own = correespondence.own
+            sub_towns.append(area_name)
 
-        # st.write(new_data["address"][-1], sub_rows)
-        polygons = [shapely.geometry.Polygon(c[0])
-                    for c in sub_rows["lonlat_coordinates"].values]
-        if not polygons:
-            new_data["lonlat_coordinates"].append([])
-            continue
-        merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
-        if merged_polygon.geom_type == "Polygon":
-            coords = [list(merged_polygon.exterior.coords)]
-        elif merged_polygon.geom_type == "MultiPolygon":
-            coords = [list(p.exterior.coords) for p in merged_polygon.geoms]
-            # st.write(new_data["address"][-1], coords)
-        else:
-            raise
-        
-        simplified_sub_addresses = [s.split(" ")[1:] for s in sub_addresses]
-        
-        fill_color = [0, 192, 255, 128] if own else [0, 0, 0, 0]
+            sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
+            prefecture_name = sub_rows.iloc[0]["prefecture_name"]
+            city_name = sub_rows.iloc[0]["city_name"]
+            area: float = sub_rows["area"].sum()
+            kokudaka = estimate_kokudaka(area)
 
-        if len(coords) > 1:
-            address += " (飛び地あり)"
-        for c in coords:
-            new_data["prefecture_name"].append(prefecture_name)
-            new_data["address"].append(address)
-            new_data["area"].append(round(area))
-            new_data["kokudaka"].append(round(kokudaka, 2))
-            new_data["sub_addresses"].append(simplified_sub_addresses)
-            new_data["lonlat_coordinates"].append([c])
-            new_data["own"].append(own)
-            new_data["fill_color"].append(fill_color)
+            # st.write(new_data["address"][-1], sub_rows)
+            polygons = [shapely.geometry.Polygon(c[0])
+                        for c in sub_rows["lonlat_coordinates"].values]
+            if not polygons:
+                new_data["lonlat_coordinates"].append([])
+                continue
+            merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
+            if merged_polygon.geom_type == "Polygon":
+                coords = [list(merged_polygon.exterior.coords)]
+            elif merged_polygon.geom_type == "MultiPolygon":
+                coords = [list(p.exterior.coords) for p in merged_polygon.geoms]
+                # st.write(new_data["address"][-1], coords)
+            else:
+                raise
+            
+            simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
+            
+            match own:
+                case "no":  # 未踏
+                    fill_color = [0, 0, 0, 0]
+                case "expedition":  # 遠征
+                    fill_color = [0, 255, 102, 128]
+                case "arrived":  # 直接来訪
+                    fill_color = [0, 192, 255, 128]
+                case _:
+                    raise
+
+            if len(coords) > 1:
+                area_name += " (飛び地あり)"
+            for c in coords:
+                new_data["prefecture_name"].append(prefecture_name)
+                new_data["city_name"].append(city_name)
+                new_data["area_name"].append(area_name)
+                new_data["area"].append(round(area))
+                new_data["kokudaka"].append(round(kokudaka, 2))
+                new_data["sub_towns"].append(simplified_sub_towns)
+                new_data["lonlat_coordinates"].append([c])
+                new_data["own"].append(own)
+                new_data["fill_color"].append(fill_color)
 
     return pd.DataFrame(
         data=new_data,
