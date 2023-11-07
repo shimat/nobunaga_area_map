@@ -112,12 +112,12 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
                 # st.write(new_data["address"][-1], coords)
             else:
                 raise
-            
+
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
-            
+
             match own:
                 case 0:  # 未踏
-                    fill_color = [0, 0, 0, 0]
+                    fill_color = [192, 192, 192, 64]
                 case 1:  # 直接来訪
                     fill_color = [0, 192, 255, 128]
                 case 2:  # 遠征
