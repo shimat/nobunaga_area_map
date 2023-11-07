@@ -2,7 +2,7 @@ import pydeck
 import streamlit as st
 from area_loader import load_area_data
 from town_loader import load_town_data_from_gml_zip, mod_data
-from municipality_loader import load_municipality_data
+from municipality_loader import load_municipality_data_zip
 import time
 
 
@@ -41,8 +41,7 @@ area_data = load_area_data()
 print(f"AreaData Load Time = {time.perf_counter() - t}s")
 
 t = time.perf_counter()
-df_municipalities = load_municipality_data("北海道")
-st.dataframe(df_municipalities)
+df_municipalities = load_municipality_data_zip("北海道")
 print(f"Municipality Load Time = {time.perf_counter() - t}s")
 
 t = time.perf_counter()
@@ -124,7 +123,7 @@ for name, df in df_map.items():
 
         def onclick(**kwargs):
             print(kwargs)
-        
+
         # st.pydeck_chart(deck)
         st.components.v1.html(deck.to_html(as_string=True), height=600)
         # from streamlit_deckgl import st_deckgl
