@@ -1,15 +1,16 @@
 import pydeck
 import streamlit as st
 from area_loader import load_area_data
-from data_loader import load_data_from_gml_zip, mod_data
+from town_loader import load_town_data_from_gml_zip, mod_data
+from municipality_loader import load_municipality_data
 import time
 
 
 st.set_page_config(page_title="「信長の野望 出陣」エリア別石高の可視化", layout="wide")
-st.title("「信長の野望 出陣」エリア別石高の可視化")
+st.header("「信長の野望 出陣」エリア別石高の可視化")
 
 t = time.perf_counter()
-df_org = load_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
+df_org = load_town_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
 print(f"DataFrame Load Time = {time.perf_counter() - t}s")
 
 city_name = st.selectbox(
@@ -38,6 +39,11 @@ city_name = st.selectbox(
 t = time.perf_counter()
 area_data = load_area_data()
 print(f"AreaData Load Time = {time.perf_counter() - t}s")
+
+t = time.perf_counter()
+df_municipalities = load_municipality_data("北海道")
+st.dataframe(df_municipalities)
+print(f"Municipality Load Time = {time.perf_counter() - t}s")
 
 t = time.perf_counter()
 if city_name == "北海道":
@@ -72,7 +78,7 @@ for name, df in df_map.items():
             fill_color = "fill_color"
             tooltip = "{city_name} {area_name}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
 
-        polygon_layer = pydeck.Layer(
+        town_polygon_layer = pydeck.Layer(
             "PolygonLayer",
             df,
             stroked=True,
@@ -88,8 +94,22 @@ for name, df in df_map.items():
             auto_highlight=True,
             pickable=True,
         )
+        municipality_polygon_layer = pydeck.Layer(
+            "PolygonLayer",
+            df_municipalities,
+            stroked=True,
+            filled=False,
+            extruded=False,
+            wireframe=True,
+            line_width_scale=60,
+            line_width_min_pixels=1,
+            get_polygon="lonlat_coordinates",
+            get_line_color=[255, 255, 255],
+            auto_highlight=False,
+            pickable=False,
+        )
         deck = pydeck.Deck(
-            layers=(polygon_layer,),
+            layers=(town_polygon_layer, municipality_polygon_layer),
             initial_view_state=pydeck.ViewState(
                 latitude=view_state.latitude,
                 longitude=view_state.longitude,
@@ -99,8 +119,17 @@ for name, df in df_map.items():
                 bearing=0,
             ),
             tooltip={"text": tooltip},
+            height=600
         )
-        st.pydeck_chart(deck)
+
+        def onclick(**kwargs):
+            print(kwargs)
+        
+        # st.pydeck_chart(deck)
+        st.components.v1.html(deck.to_html(as_string=True), height=600)
+        # from streamlit_deckgl import st_deckgl
+        # value = st_deckgl(deck, key=name, events=[])
+        # print(f"{value=}")
 
         address_label = "住所" if (name == "全町名") else "エリア名"
         st.dataframe(
@@ -117,7 +146,7 @@ for name, df in df_map.items():
                 "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
                 "pref_city": None,
                 "area_str": None,
-                "own": st.column_config.TextColumn("領有", width="small"),
+                "own": st.column_config.TextColumn("領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"),
                 "fill_color": None,
             },
         )

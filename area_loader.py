@@ -11,7 +11,7 @@ class ViewState(BaseModel):
 
 
 class OneCorrespondence(BaseModel):
-    own: Literal["no", "expedition", "arrived"] = Field(default="no")
+    own: Literal[0, 1, 2] = Field(default=0)
     towns: list[str] = Field(default=list())
 
 

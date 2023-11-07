@@ -1,5 +1,5 @@
 streamlit==1.28.1
-shapely==2.0.1
+shapely==2.0.2
 more-itertools==10.1.0
 pydantic==2.4.2
 pydantic-yaml==1.2.0
