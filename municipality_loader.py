@@ -32,17 +32,17 @@ def _parse_municipality_json(geojson: dict) -> pd.DataFrame:
 
         # simplify municipality contours
         shape = shapely.geometry.shape(f["geometry"])
-        if shape.type != "Polygon":
+        if shape.geom_type != "Polygon":
             continue
         simple_shape = shape.simplify(0.0005, preserve_topology=False)
         if simple_shape.is_empty:
             continue
 
-        if simple_shape.type == "Polygon":
+        if simple_shape.geom_type == "Polygon":
             polygons.append(list(simple_shape.exterior.coords))
             prefecture_names.append(prop["N03_001"])
             city_names.append(prop["N03_004"])
-        elif simple_shape.type == "MultiPolygon":
+        elif simple_shape.geom_type == "MultiPolygon":
             for p in simple_shape.geoms:
                 prefecture_names.append(prop["N03_001"])
                 city_names.append(prop["N03_004"])
