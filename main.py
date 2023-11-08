@@ -40,6 +40,7 @@ city_name = st.selectbox(
         "札幌市清田区",
         "函館市",
         "小樽市",
+        "江別市",
         "石狩市",
         "北広島市",
         "亀田郡七飯町",
@@ -75,13 +76,14 @@ for name, df in df_map.items():
     with tabs[name]:
 
         if name == "全町名":
-            fill_color = [0, 0, 0, 64]
+            fill_color = [128, 128, 256, 64]
             tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
         else:
             fill_color = "fill_color"
             tooltip = "{city_name} {area_name}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
 
-        town_polygon_layer = pydeck.Layer(
+        layers: list[pydeck.Layer] = []
+        layers.append(pydeck.Layer(
             "PolygonLayer",
             df,
             stroked=True,
@@ -96,23 +98,24 @@ for name, df in df_map.items():
             highlight_color=[255, 200, 0, 128],
             auto_highlight=True,
             pickable=True,
-        )
-        municipality_polygon_layer = pydeck.Layer(
-            "PolygonLayer",
-            df_municipalities,
-            stroked=True,
-            filled=False,
-            extruded=False,
-            wireframe=True,
-            line_width_scale=60,
-            line_width_min_pixels=1,
-            get_polygon="lonlat_coordinates",
-            get_line_color=[255, 255, 255],
-            auto_highlight=False,
-            pickable=False,
-        )
+        ))
+        if city_name == "北海道":
+            layers.append(pydeck.Layer(
+                "PolygonLayer",
+                df_municipalities,
+                stroked=True,
+                filled=False,
+                extruded=False,
+                wireframe=True,
+                line_width_scale=60,
+                line_width_min_pixels=1,
+                get_polygon="lonlat_coordinates",
+                get_line_color=[255, 255, 255],
+                auto_highlight=False,
+                pickable=False,
+            ))
         deck = pydeck.Deck(
-            layers=(town_polygon_layer, municipality_polygon_layer),
+            layers=layers,
             initial_view_state=pydeck.ViewState(
                 latitude=view_state.latitude,
                 longitude=view_state.longitude,

@@ -124,7 +124,7 @@ areas:
       羊ケ丘:
         own: 1
       西岡:
-        own: 1
+        own: 2
 
 
   北海道 札幌市清田区:
@@ -582,6 +582,38 @@ areas:
       新光町:
 
 
+  北海道 江別市:
+    view_state:
+      latitude: 43.095
+      longitude: 141.550
+      zoom: 11.0
+    correspondences:
+      西野幌:
+        own: 2
+      東野幌:
+        own: 2
+      江別太:
+        own: 2
+      豊幌:
+        own: 2
+      美原:
+        own: 1
+      篠津:
+        own: 1
+      中島:
+        own: 2
+      八幡:
+        own: 1
+      角山:
+        own: 1
+      工栄町:
+        own: 1
+      元野幌:
+        own: 1
+      大麻:
+        own: 1
+
+
   北海道 石狩市:
     view_state:
       latitude: 43.320
@@ -605,27 +637,39 @@ areas:
 
   北海道 北広島市:
     view_state:
-      latitude: 42.973
+      latitude: 42.960
       longitude: 141.528
-      zoom: 10.5
+      zoom: 11.0
     correspondences:
       大曲:
         own: 1
       西の里:
+        own: 2
       北の里:
+        own: 1
       共栄:
+        own: 1
       中の沢:
+        own: 2
+      東の里:
+        own: 2
       富ヶ岡:
+        own: 2
       南の里:
+        own: 2
       輪厚:
+        own: 1
       島松:
+        own: 1
       仁別:
+        own: 2
       三島:
+        own: 2
 
 
   北海道 亀田郡七飯町:
     view_state:
-      latitude: 41.887
+      latitude: 41.950
       longitude: 140.683
       zoom: 10.5
     correspondences:
