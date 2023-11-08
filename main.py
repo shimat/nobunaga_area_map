@@ -41,6 +41,7 @@ city_name = st.selectbox(
         "函館市",
         "小樽市",
         "石狩市",
+        "北広島市",
         "亀田郡七飯町",
         "樺戸郡月形町",
         "虻田郡京極町",
@@ -92,7 +93,7 @@ for name, df in df_map.items():
             get_polygon="lonlat_coordinates",
             get_line_color=[255, 255, 255],
             get_fill_color=fill_color,
-            highlight_color=[0, 0, 255, 128],
+            highlight_color=[255, 200, 0, 128],
             auto_highlight=True,
             pickable=True,
         )
