@@ -16,10 +16,53 @@ def load_municipality_data_zip(prefecture: str) -> pd.DataFrame:
 
 
 @st.cache_resource
+def load_municipality_geojson_simplified(prefecture: str) -> pd.DataFrame:
+    with zipfile.ZipFile(f"municipality/{prefecture}.zip", 'r') as zf:
+        geojson_file_name = zf.namelist()[0]
+        with zf.open(geojson_file_name, 'r') as file:
+            geojson = json.load(file)
+            _simplify_geojson_coordinates(geojson)
+            return geojson
+
+
+@st.cache_resource
 def load_municipality_data(prefecture: str) -> pd.DataFrame:
     with open(f"municipality/{prefecture}.geojson", "r", encoding="utf-8") as f:
         geojson = json.load(f)
         return _parse_municipality_json(geojson)
+
+
+def _simplify_geojson_coordinates(geojson: dict) -> None:
+    remove_indices = []
+    exclude_guns = {"択捉郡", "蘂取郡", "紗那郡", "国後郡", "色丹郡"}
+
+    for i, f in enumerate(geojson["features"]):
+
+        prop = f["properties"]
+        if prop["N03_003"] in exclude_guns:
+            remove_indices.append(i)
+            continue
+
+        shape = shapely.geometry.shape(f["geometry"])
+        if shape.geom_type != "Polygon":
+            remove_indices.append(i)
+            continue
+
+        simple_shape = shape.simplify(0.001, preserve_topology=False)
+        if simple_shape.is_empty:
+            remove_indices.append(i)
+            continue
+    
+        if simple_shape.geom_type == "Polygon":
+            # print(f["geometry"]["coordinates"])
+            f["geometry"]["coordinates"].clear()
+            f["geometry"]["coordinates"].append(list(simple_shape.exterior.coords))
+            # print(f["geometry"]["coordinates"])
+        elif simple_shape.geom_type == "MultiPolygon":
+            pass
+
+    for i in reversed(remove_indices):
+        geojson["features"].pop(i)
 
 
 def _parse_municipality_json(geojson: dict) -> pd.DataFrame:

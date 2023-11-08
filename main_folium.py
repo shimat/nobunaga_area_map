@@ -1,13 +1,14 @@
-import pydeck
+import folium
 import streamlit as st
+from streamlit_folium import st_folium
 from area_loader import load_area_data
 from town_loader import load_town_data_from_gml_zip, mod_data
-from municipality_loader import load_municipality_data_zip
+from municipality_loader import load_municipality_geojson_simplified
 import time
 
 
 st.set_page_config(
-    page_title="「信長の野望 出陣」エリア別石高の可視化",
+    page_title="「信長の野望 出陣」エリア別石高の可視化", 
     page_icon="🗾",
     layout="wide")
 st.header("「信長の野望 出陣」エリア別石高の可視化")
@@ -20,9 +21,9 @@ t = time.perf_counter()
 area_data = load_area_data()
 print(f"AreaData Load Time = {time.perf_counter() - t}s")
 
-t = time.perf_counter()
-df_municipalities = load_municipality_data_zip("北海道")
-print(f"Municipality Load Time = {time.perf_counter() - t}s")
+# t = time.perf_counter()
+# df_municipalities = load_municipality_data_zip("北海道")
+# print(f"Municipality Load Time = {time.perf_counter() - t}s")
 
 city_name = st.selectbox(
     label="市区町村",
@@ -46,6 +47,37 @@ city_name = st.selectbox(
         "虻田郡京極町",
     ),
 )
+
+
+map = folium.Map(
+    location=(43.062, 141.354),
+    tiles="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+    attr="Stadia.AlidadeSmoothDark",
+    zoom_start=7,
+    prefer_canvas=True,)
+
+t = time.perf_counter()
+geojson = load_municipality_geojson_simplified("北海道")
+folium.GeoJson(
+    geojson,
+    # smooth_factor=2,
+    style_function=lambda feature: {
+        "color": "white",
+        "weight": 1,
+        "fillOpacity": 0.0,
+    }).add_to(map)
+print(f"Municipality Load Time = {time.perf_counter() - t}s")
+
+event: dict = st_folium(
+    map,
+    use_container_width=True,
+    returned_objects=(
+        "last_clicked",
+        "last_object_clicked",
+        "last_object_clicked_tooltip",
+        "last_object_clicked_popup"))
+print(event)
+
 
 t = time.perf_counter()
 if city_name == "北海道":
@@ -80,52 +112,8 @@ for name, df in df_map.items():
             fill_color = "fill_color"
             tooltip = "{city_name} {area_name}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
 
-        town_polygon_layer = pydeck.Layer(
-            "PolygonLayer",
-            df,
-            stroked=True,
-            filled=True,
-            extruded=False,
-            wireframe=True,
-            line_width_scale=20,
-            # line_width_min_pixels=0.1,
-            get_polygon="lonlat_coordinates",
-            get_line_color=[255, 255, 255],
-            get_fill_color=fill_color,
-            highlight_color=[0, 0, 255, 128],
-            auto_highlight=True,
-            pickable=True,
-        )
-        municipality_polygon_layer = pydeck.Layer(
-            "PolygonLayer",
-            df_municipalities,
-            stroked=True,
-            filled=False,
-            extruded=False,
-            wireframe=True,
-            line_width_scale=60,
-            line_width_min_pixels=1,
-            get_polygon="lonlat_coordinates",
-            get_line_color=[255, 255, 255],
-            auto_highlight=False,
-            pickable=False,
-        )
-        deck = pydeck.Deck(
-            layers=(town_polygon_layer, municipality_polygon_layer),
-            initial_view_state=pydeck.ViewState(
-                latitude=view_state.latitude,
-                longitude=view_state.longitude,
-                zoom=view_state.zoom,
-                max_zoom=16,
-                pitch=0,
-                bearing=0,
-            ),
-            tooltip={"text": tooltip},
-            height=600
-        )
-
         # st.pydeck_chart(deck)
-        st.components.v1.html(deck.to_html(as_string=True), height=600)
+        # st.components.v1.html(deck.to_html(as_string=True), height=600)
         # from streamlit_deckgl import st_deckgl
         # value = st_deckgl(deck, key=name, events=[])
         # print(f"{value=}")
@@ -150,6 +138,7 @@ for name, df in df_map.items():
                 "fill_color": None,
             },
         )
+
 
 st.markdown(
     """
