@@ -561,8 +561,24 @@ areas:
       longitude: 140.870
       zoom: 10.5
     correspondences:
+      桔梗町:
+        own: 2
       亀田中野町:
         own: 1
+      石川町:
+        own: 1
+      赤川町:
+        own: 1
+        towns:
+          - "水元町"
+      陣川町:
+        own: 1
+      亀田大森町:
+        own: 2
+      寅沢町:
+        own: 2
+        towns:
+          - "三森町"
       函館山:
         own: 2
       入舟町:
@@ -685,6 +701,16 @@ areas:
         own: 1
       大麻:
         own: 1
+      文京台:
+        own: 2
+      文京台南町:
+        own: 2
+      文京台東町:
+        own: 2
+      文京台緑町:
+        own: 2
+      野幌若葉町:
+        own: 2
 
 
   北海道 千歳市:
@@ -909,7 +935,7 @@ areas:
       longitude: 140.683
       zoom: 10.5
     correspondences:
-      字中野: 
+      字中野:
         own: 2
 
 
@@ -1007,3 +1033,35 @@ areas:
       zoom: 11.5
     correspondences:
       字脇方:
+
+
+  北海道 余市郡赤井川村:
+    view_state:
+      latitude: 43.050
+      longitude: 140.870
+      zoom: 10.5
+    correspondences:
+      字常盤:
+        own: 2
+      字落合:
+        own: 2
+      字轟:
+        own: 2
+      字山梨:
+        own: 2
+      字日ノ出:
+        own: 2
+      字池田:
+        own: 2
+      字明治:
+        own: 2
+      字曲川:
+        own: 2
+      字旭丘:
+        own: 2
+      字都:
+        own: 2
+      字富田:
+        own: 2
+      字赤井川:
+        own: 2
