@@ -637,7 +637,6 @@ areas:
       天神１丁目:
         own: 1
       天狗山１丁目:
-      天狗山２丁目:
       塩谷５丁目:
       塩谷４丁目:
       塩谷３丁目:
@@ -683,6 +682,87 @@ areas:
       元野幌:
         own: 1
       大麻:
+        own: 1
+
+
+  北海道 千歳市:
+    view_state:
+      latitude: 42.800
+      longitude: 141.530
+      zoom: 9.5
+    correspondences:
+      支寒内:
+        own: 1
+        towns:
+          - "モラップ"
+      美笛:
+        own: 1
+      奥潭:
+        towns:
+          - "幌美内"
+        own: 2
+      支笏湖温泉:
+      西森:
+        own: 2
+      水明郷:
+        own: 2
+      紋別:
+        own: 2
+      藤の沢:
+        own: 1
+      泉沢:
+        own: 1
+      蘭越:
+        own: 1
+      上長都:
+        own: 1
+      北信濃:
+        own: 1
+      長都:
+      釜加:
+      都:
+      根志越:
+      中央:
+        own: 1
+      泉郷:
+      協和:
+        own: 2
+      幌加:
+      新川:
+      東丘:
+        own: 2
+      駒里:
+        own: 2
+      祝梅:
+      柏台:
+      美々:
+        own: 2
+      平和:
+        own: 1
+
+
+  北海道 恵庭市:
+    view_state:
+      latitude: 42.880
+      longitude: 141.460
+      zoom: 10.0
+    correspondences:
+      盤尻:
+        own: 2
+      桜森:
+        own: 1
+      島松沢:
+        own: 1
+      西島松:
+        own: 1
+      下島松:
+      北柏木町３丁目:
+        own: 1
+      上山口:
+        own: 1
+      戸磯:
+        own: 1
+      恵南:
         own: 1
 
 
