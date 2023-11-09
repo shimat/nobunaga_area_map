@@ -1,5 +1,5 @@
 
-import json
+import orjson
 import zipfile
 import shapely
 import pandas as pd
@@ -11,7 +11,8 @@ def load_municipality_data_zip(prefecture: str) -> pd.DataFrame:
     with zipfile.ZipFile(f"municipality/{prefecture}.zip", 'r') as zf:
         geojson_file_name = zf.namelist()[0]
         with zf.open(geojson_file_name, 'r') as file:
-            geojson = json.load(file)
+            geojson_str = file.read()
+            geojson = orjson.loads(geojson_str)
             return _parse_municipality_json(geojson)
 
 
@@ -20,7 +21,8 @@ def load_municipality_geojson_simplified(prefecture: str) -> pd.DataFrame:
     with zipfile.ZipFile(f"municipality/{prefecture}.zip", 'r') as zf:
         geojson_file_name = zf.namelist()[0]
         with zf.open(geojson_file_name, 'r') as file:
-            geojson = json.load(file)
+            geojson_str = file.read()
+            geojson = orjson.loads(geojson_str)
             _simplify_geojson_coordinates(geojson)
             return geojson
 
@@ -28,7 +30,8 @@ def load_municipality_geojson_simplified(prefecture: str) -> pd.DataFrame:
 @st.cache_resource
 def load_municipality_data(prefecture: str) -> pd.DataFrame:
     with open(f"municipality/{prefecture}.geojson", "r", encoding="utf-8") as f:
-        geojson = json.load(f)
+        geojson_str = f.read()
+        geojson = orjson.load(geojson_str)
         return _parse_municipality_json(geojson)
 
 
