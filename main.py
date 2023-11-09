@@ -76,7 +76,7 @@ for name, df in df_map.items():
     with tabs[name]:
 
         if name == "全町名":
-            fill_color = [128, 128, 256, 64]
+            fill_color = [64, 64, 256, 64]
             tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
         else:
             fill_color = "fill_color"

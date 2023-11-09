@@ -51,15 +51,42 @@ areas:
       longitude: 141.217
       zoom: 10.0
     correspondences:
+      藻岩山:
+        own: 2
+      北ノ沢:
+        own: 1
+      中ノ沢:
+        own: 2
+      砥石山:
+        own: 1
+      砥山:
+        own: 1
+      白川:
+        own: 1
+      南沢:
+        own: 1
+      硬石山:
+        own: 1
+      石山:
+        own: 2
+      真駒内:
+        own: 2
+      澄川:
+        own: 2
+      滝野:
+        own: 2
+      常盤:
+        own: 2
       定山渓:
         own: 1
       小金湯:
         own: 1
       豊滝:
+        own: 1
       簾舞:
+        own: 1
       藤野:
-      常盤:
-      滝野:
+        own: 2
 
 
   北海道 札幌市白石区:
@@ -86,7 +113,7 @@ areas:
 
   北海道 札幌市西区:
     view_state:
-      latitude: 43.070
+      latitude: 43.060
       longitude: 141.250
       zoom: 11.5
     correspondences:
@@ -97,9 +124,9 @@ areas:
       西野:
         own: 1
       宮の沢:
-        own: 1
+        own: 2
       小別沢:
-        own: 1
+        own: 2
 
 
   北海道 札幌市手稲区:
@@ -109,10 +136,14 @@ areas:
       zoom: 11.5
     correspondences:
       手稲富丘:
+        own: 2
       手稲本町:
+        own: 1
       手稲金山:
+        own: 1
       手稲山口:
       手稲前田:
+        own: 1
 
 
   北海道 札幌市豊平区:
@@ -567,19 +598,60 @@ areas:
       新川町:
 
 
-
-
   北海道 小樽市:
     view_state:
       latitude: 43.150
       longitude: 141.070
       zoom: 10.0
     correspondences:
+      銭函５丁目:
+        own: 2
+      銭函４丁目:
+        own: 2
+      銭函３丁目:
+        own: 2
       星野町:
+        own: 1
       見晴町:
+        own: 1
       桂岡町:
+        own: 1
       春香町:
+        own: 2
       新光町:
+        own: 1
+      朝里川温泉１丁目:
+        own: 1
+      朝里川温泉２丁目:
+        own: 1
+      朝里川温泉３丁目:
+        own: 1
+      天神４丁目:
+        own: 2
+        towns:
+          - "天狗山２丁目"
+      天神３丁目:
+        own: 1
+      天神２丁目:
+        own: 1
+      天神１丁目:
+        own: 1
+      天狗山１丁目:
+      天狗山２丁目:
+      塩谷５丁目:
+      塩谷４丁目:
+      塩谷３丁目:
+      塩谷２丁目:
+      塩谷１丁目:
+      桃内３丁目:
+        towns:
+          - "桃内２丁目"
+          - "忍路３丁目"
+          - "蘭島３丁目"
+      忍路２丁目:
+        own: 1
+      蘭島２丁目:
+        own: 1
 
 
   北海道 江別市:
