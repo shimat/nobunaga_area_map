@@ -929,6 +929,27 @@ areas:
         own: 2
 
 
+  北海道 北斗市:
+    view_state:
+      latitude: 41.824
+      longitude: 140.651
+      zoom: 10.0
+    correspondences:
+      中山:
+        own: 2
+      村山:
+      市渡:
+        own: 1
+      稲里:
+        own: 1
+      水無:
+      野崎:
+      向野:
+      峩朗:
+      戸切地:
+      文月:
+  
+
   北海道 亀田郡七飯町:
     view_state:
       latitude: 41.950
@@ -937,6 +958,28 @@ areas:
     correspondences:
       字中野:
         own: 2
+      字大川:
+        own: 2
+      字大中山:
+        own: 1
+      字鳴川町:
+      字桜町:
+        own: 2
+      字東大沼:
+        own: 2
+      字上軍川:
+      字軍川:
+      字上藤城:
+        own: 2
+      字藤城:
+      字峠下:
+        own: 1
+      字仁山:
+        own: 1
+      字西大沼:
+        own: 1
+      字大沼町:
+
 
 
   北海道 石狩郡当別町:
