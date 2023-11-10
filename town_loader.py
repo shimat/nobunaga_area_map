@@ -105,10 +105,12 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
                 new_data["lonlat_coordinates"].append([])
                 continue
             merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
-            if merged_polygon.geom_type == "Polygon":
-                coords = [list(merged_polygon.exterior.coords)]
-            elif merged_polygon.geom_type == "MultiPolygon":
-                coords = [list(p.exterior.coords) for p in merged_polygon.geoms]
+            simple_polygon = merged_polygon.simplify(0.0005, preserve_topology=False)
+
+            if simple_polygon.geom_type == "Polygon":
+                coords = [list(simple_polygon.exterior.coords)]
+            elif simple_polygon.geom_type == "MultiPolygon":
+                coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
                 # st.write(new_data["address"][-1], coords)
             else:
                 raise
