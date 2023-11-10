@@ -45,6 +45,7 @@ city_name = st.selectbox(
         "恵庭市",
         "石狩市",
         "北広島市",
+        "北斗市",
         "亀田郡七飯町",
         "石狩郡当別町",
         "樺戸郡月形町",
@@ -84,7 +85,7 @@ for name, df in df_map.items():
             tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
         else:
             fill_color = "fill_color"
-            tooltip = "{city_name} {area_name}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
+            tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
 
         layers: list[pydeck.Layer] = []
         layers.append(pydeck.Layer(
@@ -151,6 +152,7 @@ for name, df in df_map.items():
                 "area": st.column_config.NumberColumn("面積[㎡]", step="0"),
                 "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
                 "sub_towns": st.column_config.ListColumn("含む町名"),
+                "sub_towns_suffix": None,
                 "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
                 "pref_city": None,
                 "area_str": None,
