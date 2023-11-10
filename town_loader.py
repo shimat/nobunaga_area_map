@@ -77,6 +77,7 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
         "area": [],
         "kokudaka": [],
         "sub_towns": [],
+        "sub_towns_suffix": [],
         "own": [],
         "fill_color": [],
         "lonlat_coordinates": [],
@@ -126,7 +127,11 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
                     raise
 
             if len(coords) > 1:
-                area_name += " (飛び地あり)"
+                area_name += " [飛び地あり]"
+            sub_towns_suffix = ""
+            if len(simplified_sub_towns) > 1:
+                sub_towns_suffix = f" (+{len(simplified_sub_towns)-1}町)"
+
             for c in coords:
                 new_data["prefecture_name"].append(prefecture_name)
                 new_data["city_name"].append(city_name)
@@ -134,6 +139,7 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
                 new_data["area"].append(round(area))
                 new_data["kokudaka"].append(round(kokudaka, 2))
                 new_data["sub_towns"].append(simplified_sub_towns)
+                new_data["sub_towns_suffix"].append(sub_towns_suffix)
                 new_data["lonlat_coordinates"].append([c])
                 new_data["own"].append(own)
                 new_data["fill_color"].append(fill_color)
