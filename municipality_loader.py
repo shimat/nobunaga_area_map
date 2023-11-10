@@ -80,7 +80,7 @@ def _parse_municipality_json(geojson: dict) -> pd.DataFrame:
         shape = shapely.geometry.shape(f["geometry"])
         if shape.geom_type != "Polygon":
             continue
-        simple_shape = shape.simplify(0.0005, preserve_topology=False)
+        simple_shape = shape.simplify(0.0005, preserve_topology=True)
         if simple_shape.is_empty:
             continue
 

@@ -1,4 +1,5 @@
 import functools
+import itertools
 import more_itertools
 import pandas as pd
 import streamlit as st
@@ -33,6 +34,49 @@ def load_town_data_from_gml(file_name: str) -> pd.DataFrame:
 
 
 def load_town_data(tree: ElementTree) -> pd.DataFrame:
+    prefecture_names: list[str] = []
+    city_names: list[str] = []
+    pref_cities: list[str] = []
+    town_names: list[str] = []
+    areas: list[float] = []
+    all_towns_polygons: list[list[list[list[float]]]] = []
+
+    for feature_member in tree.findall("gml:featureMember", NAMESPACES):
+        elem = feature_member[0]
+        prefecture_names.append(elem.find("fme:PREF_NAME", NAMESPACES).text)
+        city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
+        town_name = elem.find("fme:S_NAME", NAMESPACES).text
+        city_names.append(city_name)
+        pref_cities.append(f"{prefecture_names[-1]} {city_name}")
+        town_names.append(town_name)
+        areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
+
+        polygons = []
+        contour_elements = itertools.chain(
+              elem.findall("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior", NAMESPACES),
+              elem.findall("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:interior", NAMESPACES))
+        for contour_elem in contour_elements:
+            pos_list_elem = contour_elem.find("gml:LinearRing//gml:posList", NAMESPACES)
+            pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
+            lonlat_list = [[pos_list[i*2+1], pos_list[i*2]] for i in range(len(pos_list) // 2)]
+            polygons.append(lonlat_list)
+        all_towns_polygons.append(polygons)
+
+    data = {
+        "prefecture_name": prefecture_names,
+        "city_name": city_names,
+        "pref_city": pref_cities,
+        "town_name": town_names,
+        "area": areas,
+        "lonlat_coordinates": all_towns_polygons,
+    }
+    return pd.DataFrame(
+        data=data,
+        columns=data.keys()
+    )
+
+
+def load_town_data_(tree: ElementTree) -> pd.DataFrame:
     prefecture_names: list[str] = []
     city_names: list[str] = []
     pref_cities: list[str] = []
@@ -94,6 +138,8 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
             sub_towns.append(area_name)
 
             sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
+            if sub_rows.empty:
+                raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
             prefecture_name = sub_rows.iloc[0]["prefecture_name"]
             city_name = sub_rows.iloc[0]["city_name"]
             area: float = sub_rows["area"].sum()
@@ -106,7 +152,7 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
                 new_data["lonlat_coordinates"].append([])
                 continue
             merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
-            simple_polygon = merged_polygon.simplify(0.0005, preserve_topology=False)
+            simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
 
             if simple_polygon.geom_type == "Polygon":
                 coords = [list(simple_polygon.exterior.coords)]
@@ -118,15 +164,7 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
 
-            match own:
-                case 0:  # 未踏
-                    fill_color = [192, 192, 192, 64]
-                case 1:  # 直接来訪
-                    fill_color = [0, 192, 255, 128]
-                case 2:  # 遠征
-                    fill_color = [0, 255, 102, 128]
-                case _:
-                    raise
+            fill_color = arrival_color(own)
 
             if len(coords) > 1:
                 area_name += " [飛び地あり]"
@@ -154,3 +192,15 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
 
 def estimate_kokudaka(area: float) -> float:
     return (area ** 0.497) / 30
+
+
+def arrival_color(own: int) -> list[int]:
+    match own:
+        case 0:  # 未踏
+            return [192, 192, 192, 64]
+        case 1:  # 直接来訪
+            return [0, 192, 255, 128]
+        case 2:  # 遠征
+            return [0, 255, 102, 128]
+        case _:
+            raise
