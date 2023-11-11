@@ -23,7 +23,7 @@ class OneAreaData(BaseModel):
 class Correspondences(BaseModel):
     pref_city: str
     values: dict[str, OneCorrespondence | None]
-
+    
 
 class AllAreasData(BaseModel):
     view_state: ViewState

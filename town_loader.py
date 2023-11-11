@@ -113,7 +113,8 @@ def load_town_data_(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.DataFrame:
+@st.cache_data
+def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
     new_data = {
         "prefecture_name": [],
         "city_name": [],
@@ -126,7 +127,7 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
         "fill_color": [],
         "lonlat_coordinates": [],
     }
-    for area_data in area_data_list:
+    for area_data in _area_data_list:
         pref_city = area_data.pref_city
         for area_name, correespondence in area_data.values.items():
             if correespondence is None or correespondence.towns is None:

@@ -62,19 +62,29 @@ city_name = st.selectbox(
         "山越郡長万部町",
         "檜山郡上ノ国町",
         "檜山郡厚沢部町",
+        "虻田郡倶知安町",
         "虻田郡京極町",
         "虻田郡喜茂別町",
         "虻田郡留寿都村",
         "余市郡余市町",
         "余市郡仁木町",
         "余市郡赤井川村",
+        "岩内郡共和町",
+        "岩内郡岩内町",
+        "磯谷郡蘭越町",
+        "寿都郡寿都町",
+        "寿都郡黒松内町",
         "白老郡白老町",
         "有珠郡壮瞥町",
         "虻田郡洞爺湖町",
         "虻田郡豊浦町",
-        "石狩郡当別町",
+        "石狩郡当別町",        
+        "石狩郡新篠津村",
         "樺戸郡月形町",
+        "空知郡南幌町",
         "空知郡奈井江町",
+        "夕張郡長沼町",
+        "上川郡当麻町",
     ),
 )
 
@@ -82,13 +92,13 @@ t = time.perf_counter()
 if city_name == "北海道":
     df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
     correspondences = area_data.get_all_correspondences()
-    df_mod = mod_data(df_target, correspondences)
+    df_mod = mod_data(df_target, correspondences, "北海道")
     view_state = area_data.view_state
 else:
     df_target = df_org[df_org["city_name"] == city_name].copy()
     pref_city = f"北海道 {city_name}"
     correspondences = area_data.get_one_area_correspondences(pref_city)
-    df_mod = mod_data(df_target, correspondences)
+    df_mod = mod_data(df_target, correspondences, pref_city)
     view_state = area_data.areas[pref_city].view_state
 print(f"DataFrame Mod Time = {time.perf_counter() - t}s")
 # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
