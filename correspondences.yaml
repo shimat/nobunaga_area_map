@@ -1615,128 +1615,6 @@ areas:
       字中館:
   
 
-  北海道 石狩郡当別町:
-    view_state:
-      latitude: 43.370
-      longitude: 141.512
-      zoom: 9.5
-    correspondences:
-      ビトエ:
-        own: 1
-      太美町:
-        own: 1
-      太美南:
-        own: 1
-      当別太:
-        own: 1
-      川下:
-        own: 1
-      蕨岱:
-        own: 1
-      対雁:
-        own: 1
-      字東裏:
-        own: 1
-      獅子内:
-        own: 1
-      字高岡:
-      スウェーデンヒルズ:
-      字上当別:
-        own: 1
-      若葉:
-        own: 1
-      六軒町:
-        own: 1
-      字弁華別:
-        own: 1
-      字茂平沢:
-        own: 2
-      字金沢:
-      字中小屋:
-        own: 2
-      字青山:
-        own: 1
-      字青山奥:
-        own: 2
-      字青山奥二番川:
-      字青山奥三番川:
-      字青山奥四番川:
-      北栄町:
-        own: 1
-      春日町:
-        own: 1
-      白樺町:
-        own: 1
-      西町:
-        own: 1
-      錦町:
-        own: 1
-      美里:
-      末広:
-        own: 1
-      下川町:
-        own: 1
-      幸町:
-      弥生:
-        own: 1
-        towns:
-          - "園生"
-      元町:
-        own: 1
-      緑町:
-        own: 1
-      東町:
-        own: 1
-      樺戸町:
-        own: 1
-      栄町:
-        own: 1
-
-
-  北海道 樺戸郡月形町:
-    view_state:
-      latitude: 43.370
-      longitude: 141.670
-      zoom: 10.5
-    correspondences:
-      中野:
-
-
-  北海道 空知郡奈井江町:
-    view_state:
-      latitude: 43.420
-      longitude: 141.930
-      zoom: 11.5
-    correspondences:
-      字奈井江:
-        own: 1
-      字奈井江町:
-        own: 1
-        towns:
-          - "北町１区"
-          - "北町４区"
-          - "本町２区"
-          - "本町４区"
-          - "本町５区"
-          - "本町７区"
-          - "東町１区"
-      字東奈井江:
-      厳島１区:
-      厳島２区:
-      字チャシュナイ:
-        own: 1
-      茶志内３区:
-        own: 1
-      字茶志内美唄:
-      字茶志内:
-        towns:
-          - "字ナイエ川上流"
-      高島１区:
-      瑞穂１区:
-      瑞穂２区:
-      字キナウスナイ:
-
-
   北海道 虻田郡京極町:
     view_state:
       latitude: 42.900
@@ -1760,7 +1638,6 @@ areas:
       字松川:
       字春日:
       字北岡:
-
 
 
   北海道 虻田郡喜茂別町:
@@ -1796,7 +1673,7 @@ areas:
       字知来別:
       字栄:
         own: 1
-  
+
 
   北海道 虻田郡留寿都村:
     view_state:
@@ -1818,6 +1695,33 @@ areas:
       字三ノ原:
         own: 1
       字西ノ原:
+  
+
+  北海道 余市郡余市町:
+    view_state:
+      latitude: 43.191 
+      longitude: 140.785
+      zoom: 10.5
+    correspondences:
+      栄町:
+        own: 1
+      登町:
+        own: 1
+      黒川町:
+        own: 1
+      梅川町:
+        own: 2
+      豊丘町:
+        own: 2
+
+
+  北海道 余市郡仁木町:
+    view_state:
+      latitude: 43.091
+      longitude: 140.727
+      zoom: 10.5
+    correspondences:
+      東町緑ケ丘:
   
 
   北海道 余市郡赤井川村:
@@ -1956,3 +1860,154 @@ areas:
         own: 1
       早月:
       富丘:
+
+  
+  北海道 虻田郡豊浦町:
+    view_state:
+      latitude: 42.640
+      longitude: 140.653
+      zoom: 10.5
+    correspondences:
+      字新富:
+      字青山:
+      字山梨:
+      字大和:
+      字桜:
+      字東雲町:
+        own: 1
+      字旭町:
+        own: 1
+      字海岸町:
+      字幸町:
+      字船見町:
+        own: 1
+      字浜町:
+      字高岡:
+      字豊泉:
+      字大岸:
+      字礼文華:
+      字新山梨:
+      字上泉:
+      字美和:
+   
+
+  北海道 石狩郡当別町:
+    view_state:
+      latitude: 43.370
+      longitude: 141.512
+      zoom: 9.5
+    correspondences:
+      ビトエ:
+        own: 1
+      太美町:
+        own: 1
+      太美南:
+        own: 1
+      当別太:
+        own: 1
+      川下:
+        own: 1
+      蕨岱:
+        own: 1
+      対雁:
+        own: 1
+      字東裏:
+        own: 1
+      獅子内:
+        own: 1
+      字高岡:
+      スウェーデンヒルズ:
+      字上当別:
+        own: 1
+      若葉:
+        own: 1
+      六軒町:
+        own: 1
+      字弁華別:
+        own: 1
+      字茂平沢:
+        own: 2
+      字金沢:
+      字中小屋:
+        own: 2
+      字青山:
+        own: 1
+      字青山奥:
+        own: 2
+      字青山奥二番川:
+      字青山奥三番川:
+      字青山奥四番川:
+      北栄町:
+        own: 1
+      春日町:
+        own: 1
+      白樺町:
+        own: 1
+      西町:
+        own: 1
+      錦町:
+        own: 1
+      美里:
+      末広:
+        own: 1
+      下川町:
+        own: 1
+      幸町:
+      弥生:
+        own: 1
+        towns:
+          - "園生"
+      元町:
+        own: 1
+      緑町:
+        own: 1
+      東町:
+        own: 1
+      樺戸町:
+        own: 1
+      栄町:
+        own: 1
+
+
+  北海道 樺戸郡月形町:
+    view_state:
+      latitude: 43.370
+      longitude: 141.670
+      zoom: 10.5
+    correspondences:
+      中野:
+
+
+  北海道 空知郡奈井江町:
+    view_state:
+      latitude: 43.420
+      longitude: 141.930
+      zoom: 11.5
+    correspondences:
+      字奈井江:
+        own: 1
+      字奈井江町:
+        own: 1
+        towns:
+          - "北町１区"
+          - "北町４区"
+          - "本町２区"
+          - "本町４区"
+          - "本町５区"
+          - "本町７区"
+          - "東町１区"
+      字東奈井江:
+      厳島１区:
+      厳島２区:
+      字チャシュナイ:
+        own: 1
+      茶志内３区:
+        own: 1
+      字茶志内美唄:
+      字茶志内:
+        towns:
+          - "字ナイエ川上流"
+      高島１区:
+      瑞穂１区:
+      瑞穂２区:
+      字キナウスナイ:
