@@ -45,7 +45,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
         elem = feature_member[0]
         prefecture_names.append(elem.find("fme:PREF_NAME", NAMESPACES).text)
         city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
-        town_name = elem.find("fme:S_NAME", NAMESPACES).text
+        town_name = elem.find("fme:S_NAME", NAMESPACES).text or "(町名無し)"
         city_names.append(city_name)
         pref_cities.append(f"{prefecture_names[-1]} {city_name}")
         town_names.append(town_name)
@@ -149,7 +149,6 @@ def mod_data(df: pd.DataFrame, area_data_list: list[Correspondences]) -> pd.Data
             polygons = [shapely.geometry.Polygon(c[0])
                         for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
-                new_data["lonlat_coordinates"].append([])
                 continue
             merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
             simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
