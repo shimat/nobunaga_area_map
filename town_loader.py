@@ -113,7 +113,7 @@ def load_town_data_(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-@st.cache_data
+#@st.cache_data
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
     new_data = {
         "prefecture_name": [],
