@@ -63,6 +63,7 @@ city_name = st.selectbox(
         "檜山郡上ノ国町",
         "檜山郡江差町",
         "檜山郡厚沢部町",
+        "爾志郡乙部町",
         "虻田郡倶知安町",
         "虻田郡京極町",
         "虻田郡喜茂別町",
@@ -79,7 +80,7 @@ city_name = st.selectbox(
         "有珠郡壮瞥町",
         "虻田郡洞爺湖町",
         "虻田郡豊浦町",
-        "石狩郡当別町",        
+        "石狩郡当別町",
         "石狩郡新篠津村",
         "樺戸郡月形町",
         "空知郡南幌町",
@@ -142,7 +143,7 @@ layers.append(pydeck.Layer(
     auto_highlight=True,
     pickable=True,
 ))
-if city_name == "北海道":    
+if city_name == "北海道":
     t = time.perf_counter()
     df_municipalities = load_municipality_data_zip("北海道")
     print(f"Municipality Load Time = {time.perf_counter() - t}s")
