@@ -172,7 +172,9 @@ deck = pydeck.Deck(
         bearing=0,
     ),
     tooltip={"text": tooltip},
-    height=600
+    height=600,
+    map_provider="carto",
+    map_style="dark",
 )
 
 # st.pydeck_chart(deck)
