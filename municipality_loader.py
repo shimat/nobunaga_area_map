@@ -4,16 +4,21 @@ import zipfile
 import shapely
 import pandas as pd
 import streamlit as st
+from typing import Iterable
+from collections.abc import Container
 
 
 @st.cache_resource
-def load_municipality_data_zip(prefecture: str) -> pd.DataFrame:
+def load_municipality_data_zip(
+    prefecture: str,
+    target_city_names: Container[str] | Iterable[str]
+) -> pd.DataFrame:
     with zipfile.ZipFile(f"municipality/{prefecture}.zip", 'r') as zf:
         geojson_file_name = zf.namelist()[0]
         with zf.open(geojson_file_name, 'r') as file:
             geojson_str = file.read()
             geojson = orjson.loads(geojson_str)
-            return _parse_municipality_json(geojson)
+            return _parse_municipality_json(geojson, target_city_names)
 
 
 @st.cache_resource
@@ -27,12 +32,12 @@ def load_municipality_geojson_simplified(prefecture: str) -> pd.DataFrame:
             return geojson
 
 
-@st.cache_resource
-def load_municipality_data(prefecture: str) -> pd.DataFrame:
-    with open(f"municipality/{prefecture}.geojson", "r", encoding="utf-8") as f:
-        geojson_str = f.read()
-        geojson = orjson.load(geojson_str)
-        return _parse_municipality_json(geojson)
+# @st.cache_resource
+# def load_municipality_data(prefecture: str) -> pd.DataFrame:
+#     with open(f"municipality/{prefecture}.geojson", "r", encoding="utf-8") as f:
+#         geojson_str = f.read()
+#         geojson = orjson.load(geojson_str)
+#         return _parse_municipality_json(geojson)
 
 
 def _simplify_geojson_coordinates(geojson: dict) -> None:
@@ -68,13 +73,22 @@ def _simplify_geojson_coordinates(geojson: dict) -> None:
         geojson["features"].pop(i)
 
 
-def _parse_municipality_json(geojson: dict) -> pd.DataFrame:
+def _parse_municipality_json(
+    geojson: dict,
+    target_city_names: Container[str] | Iterable[str]
+) -> pd.DataFrame:
     prefecture_names: list[str] = []
     city_names: list[str] = []
     polygons: list[list[list[list[float]]]] = []
 
     for f in geojson["features"]:
         prop = f["properties"]
+
+        if prop["N03_003"]:
+            if (prop["N03_003"]+prop["N03_004"]) not in target_city_names:
+                continue
+        elif prop["N03_004"] not in target_city_names:
+            continue
 
         # simplify municipality contours
         shape = shapely.geometry.shape(f["geometry"])
