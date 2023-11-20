@@ -56,11 +56,11 @@ def _simplify_geojson_coordinates(geojson: dict) -> None:
             remove_indices.append(i)
             continue
 
-        simple_shape = shape.simplify(0.001, preserve_topology=False)
+        simple_shape = shape.simplify(0.0002, preserve_topology=False)
         if simple_shape.is_empty:
             remove_indices.append(i)
             continue
-    
+
         if simple_shape.geom_type == "Polygon":
             # print(f["geometry"]["coordinates"])
             f["geometry"]["coordinates"].clear()
@@ -94,7 +94,7 @@ def _parse_municipality_json(
         shape = shapely.geometry.shape(f["geometry"])
         if shape.geom_type != "Polygon":
             continue
-        simple_shape = shape.simplify(0.0005, preserve_topology=True)
+        simple_shape = shape.simplify(0.0002, preserve_topology=True)
         if simple_shape.is_empty:
             continue
 
