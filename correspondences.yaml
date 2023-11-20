@@ -3365,6 +3365,20 @@ areas:
           - "五条７丁目"
 
 
+  北海道 三笠市:
+    view_state:
+      latitude: 43.239
+      longitude: 141.996
+      zoom: 9.5
+    correspondences:
+      桂沢:
+        own: 2
+      西桂沢:
+      奔別沢:
+      奔別本沢町:
+      幌内本沢町:
+
+
   北海道 千歳市:
     view_state:
       latitude: 42.800
@@ -4912,6 +4926,30 @@ areas:
       字新山梨:
       字上泉:
       字美和:
+
+
+  北海道 勇払郡安平町:
+    view_state:
+      latitude: 42.810
+      longitude: 141.841
+      zoom: 10.0
+    correspondences:
+      追分旭:
+      早来瑞穂:
+      早来緑丘:
+      早来守田:
+      早来北進:
+      早来新栄:
+      早来源武:
+      遠浅:
+      早来富岡:
+        own: 2
+      安平:
+      追分弥生:
+      追分春日:
+      追分向陽:
+      追分美園:
+
 
 
   北海道 石狩郡当別町:
