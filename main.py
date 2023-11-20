@@ -20,6 +20,7 @@ CITY_NAMES = (
     "函館市",
     "小樽市",
     "旭川市",
+    "夕張市",
     "岩見沢市",
     "苫小牧市",
     "美唄市",
@@ -69,6 +70,8 @@ CITY_NAMES = (
     "空知郡南幌町",
     "空知郡奈井江町",
     "夕張郡長沼町",
+    "夕張郡栗山町",
+    "夕張郡由仁町",
     "上川郡当麻町",
 )
 
@@ -92,10 +95,15 @@ city_name = st.selectbox(
     options=CITY_NAMES,
 )
 
-map_type = st.radio(
+col_left, col_right = st.columns(2)
+map_type = col_left.radio(
     label="マップ種別",
     options=("「信長の野望 出陣」の各エリア", "全町名"),
-    horizontal=True)
+    horizontal=True,)
+
+show_municipality_borders = col_right.checkbox(
+    label="市区町村境界を表示",
+    value=True,)
 
 
 t = time.perf_counter()
@@ -145,7 +153,7 @@ layers.append(pydeck.Layer(
     auto_highlight=True,
     pickable=True,
 ))
-if city_name == "北海道":
+if show_municipality_borders and city_name == "北海道":
     t = time.perf_counter()
     df_municipalities = load_municipality_data_zip("北海道", set(CITY_NAMES))
     print(f"Municipality Load Time = {time.perf_counter() - t}s")
