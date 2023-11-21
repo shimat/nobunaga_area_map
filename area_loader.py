@@ -23,7 +23,7 @@ class OneAreaData(BaseModel):
 class Correspondences(BaseModel):
     pref_city: str
     values: dict[str, OneCorrespondence | None]
-    
+
 
 class AllAreasData(BaseModel):
     view_state: ViewState
@@ -32,7 +32,7 @@ class AllAreasData(BaseModel):
     def get_all_correspondences(self) -> list[Correspondences]:
         return [Correspondences(pref_city=pref_city, values=area.correspondences)
                 for pref_city, area in self.areas.items()]
-    
+
     def get_one_area_correspondences(self, pref_city: str) -> list[Correspondences]:
         return [Correspondences(pref_city=pref_city, values=self.areas[pref_city].correspondences)]
 
