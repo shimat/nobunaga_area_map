@@ -37,14 +37,7 @@ class AllAreasData(BaseModel):
         return [Correspondences(pref_city=pref_city, values=self.areas[pref_city].correspondences)]
 
 
-# @st.cache_data
-def load_area_data_json() -> AllAreasData:
-    path = Path("correspondences.json")
-    j = path.read_text(encoding="utf-8-sig")
-    return AllAreasData.model_validate_json(j)
-
-
-def load_area_data() -> AllAreasData:
-    path = Path("correspondences.yaml")
+def load_area_data(prefecture_name: str) -> AllAreasData:
+    path = Path(f"data/correspondences_{prefecture_name}.yaml")
     y = path.read_text(encoding="utf-8-sig")
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)

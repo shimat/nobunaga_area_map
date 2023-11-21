@@ -1,0 +1,14 @@
+view_state:
+  latitude: 40.860
+  longitude: 140.751
+  zoom: 7.5
+
+areas:
+  青森県 下北郡大間町:
+    view_state:
+      latitude: 41.477
+      longitude: 140.927
+      zoom: 11.0
+    correspondences:
+      大字大間:
+      大字奥戸:

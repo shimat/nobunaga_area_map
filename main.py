@@ -3,79 +3,8 @@ import streamlit as st
 from area_loader import load_area_data
 from town_loader import load_town_data_from_gml_zip, mod_data
 from municipality_loader import load_municipality_data_zip
+from city_list import CITY_NAMES
 import time
-
-CITY_NAMES = (
-    "北海道",
-    "札幌市中央区",
-    "札幌市北区",
-    "札幌市東区",
-    "札幌市南区",
-    "札幌市白石区",
-    "札幌市厚別区",
-    "札幌市西区",
-    "札幌市手稲区",
-    "札幌市豊平区",
-    "札幌市清田区",
-    "函館市",
-    "小樽市",
-    "旭川市",
-    "夕張市",
-    "岩見沢市",
-    "苫小牧市",
-    "美唄市",
-    "江別市",
-    "三笠市",
-    "千歳市",
-    "滝川市",
-    "砂川市",
-    "深川市",
-    "登別市",
-    "恵庭市",
-    "伊達市",
-    "北広島市",
-    "石狩市",
-    "北斗市",
-    "松前郡松前町",
-    "松前郡福島町",
-    "上磯郡知内町",
-    "上磯郡木古内町",
-    "亀田郡七飯町",
-    "茅部郡鹿部町",
-    "茅部郡森町",
-    "二海郡八雲町",
-    "山越郡長万部町",
-    "檜山郡上ノ国町",
-    "檜山郡江差町",
-    "檜山郡厚沢部町",
-    "爾志郡乙部町",
-    "虻田郡倶知安町",
-    "虻田郡京極町",
-    "虻田郡喜茂別町",
-    "虻田郡留寿都村",
-    "余市郡余市町",
-    "余市郡仁木町",
-    "余市郡赤井川村",
-    "岩内郡共和町",
-    "岩内郡岩内町",
-    "磯谷郡蘭越町",
-    "寿都郡寿都町",
-    "寿都郡黒松内町",
-    "白老郡白老町",
-    "有珠郡壮瞥町",
-    "虻田郡洞爺湖町",
-    "虻田郡豊浦町",
-    "勇払郡安平町",
-    "石狩郡当別町",
-    "石狩郡新篠津村",
-    "樺戸郡月形町",
-    "空知郡南幌町",
-    "空知郡奈井江町",
-    "夕張郡長沼町",
-    "夕張郡栗山町",
-    "夕張郡由仁町",
-    "上川郡当麻町",
-)
 
 
 st.set_page_config(
@@ -84,39 +13,44 @@ st.set_page_config(
     layout="wide")
 st.header("「信長の野望 出陣」エリア別石高の可視化")
 
-t = time.perf_counter()
-df_org = load_town_data_from_gml_zip("gml/経済センサス_活動調査_北海道.zip")
-print(f"DataFrame Load Time = {time.perf_counter() - t}s")
+col_left, col_right = st.columns(2)
 
-t = time.perf_counter()
-area_data = load_area_data()
-print(f"AreaData Load Time = {time.perf_counter() - t}s")
-
-city_name = st.selectbox(
+prefecture_name = col_left.selectbox(
+    label="都道府県",
+    options=CITY_NAMES.keys(),
+)
+city_name = col_right.selectbox(
     label="市区町村",
-    options=CITY_NAMES,
+    options=CITY_NAMES[prefecture_name],
 )
 
-col_left, col_right = st.columns(2)
-map_type = col_left.radio(
+map_type = st.radio(
     label="マップ種別",
     options=("「信長の野望 出陣」の各エリア", "全町名"),
     horizontal=True,)
 
-show_municipality_borders = col_right.checkbox(
+show_municipality_borders = st.checkbox(
     label="市区町村境界を表示",
     value=True,)
 
 
 t = time.perf_counter()
-if city_name == "北海道":
+df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
+print(f"DataFrame Load Time = {time.perf_counter() - t}s")
+
+t = time.perf_counter()
+area_data = load_area_data(prefecture_name)
+print(f"AreaData Load Time = {time.perf_counter() - t}s")
+
+t = time.perf_counter()
+if city_name == "(全体)":
     df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
     correspondences = area_data.get_all_correspondences()
-    df_mod = mod_data(df_target, correspondences, "北海道")
+    df_mod = mod_data(df_target, correspondences, prefecture_name)
     view_state = area_data.view_state
 else:
     df_target = df_org[df_org["city_name"] == city_name].copy()
-    pref_city = f"北海道 {city_name}"
+    pref_city = f"{prefecture_name} {city_name}"
     correspondences = area_data.get_one_area_correspondences(pref_city)
     df_mod = mod_data(df_target, correspondences, pref_city)
     view_state = area_data.areas[pref_city].view_state
@@ -155,9 +89,11 @@ layers.append(pydeck.Layer(
     auto_highlight=True,
     pickable=True,
 ))
-if show_municipality_borders and city_name == "北海道":
+if show_municipality_borders and city_name == "(全体)":
     t = time.perf_counter()
-    df_municipalities = load_municipality_data_zip("北海道", set(CITY_NAMES))
+    df_municipalities = load_municipality_data_zip(
+        prefecture_name,
+        set(CITY_NAMES[prefecture_name]))
     print(f"Municipality Load Time = {time.perf_counter() - t}s")
     layers.append(pydeck.Layer(
         "PolygonLayer",
@@ -220,6 +156,8 @@ st.markdown(
 
 利用データ:
 + [e-Stat 統計で見る日本](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200553&toukeiYear=2016&serveyId=A002005532016&coordsys=1&format=gml&datum=2011): 経済センサス－活動調査（総務省・経済産業省）/ 2016年 / 小地域（町丁・大字）（JGD2011）
++ [『国土数値情報「⾏政区域データ」 (N03)』（国土交通省）](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v3_1.html)
 """,  # noqa: E501
     unsafe_allow_html=True,
 )
+
