@@ -39,11 +39,11 @@ show_municipality_borders = st.checkbox(
 if city_name:
     t = time.perf_counter()
     df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
-    print(f"DataFrame Load Time = {time.perf_counter() - t}s")
+    print(f"DataFrame Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
     area_data = load_area_data(prefecture_name)
-    print(f"AreaData Load Time = {time.perf_counter() - t}s")
+    print(f"AreaData Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
     if city_name == "(全体)":
@@ -57,13 +57,12 @@ if city_name:
         correspondences = area_data.get_one_area_correspondences(pref_city)
         df_mod = mod_data(df_target, correspondences, pref_city)
         view_state = area_data.areas[pref_city].view_state
-    print(f"DataFrame Mod Time = {time.perf_counter() - t}s")
+    print(f"DataFrame Mod Time = {time.perf_counter() - t:.3f}s")
     # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
     # st.write(df_org.memory_usage(deep=True))
 
     df_target["area_str"] = df_org["area"].apply(lambda x: "{:,.0f}".format(x))
     df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x))
-
 
     match map_type:
         case "「信長の野望 出陣」の各エリア":
@@ -97,7 +96,7 @@ if city_name:
         df_municipalities = load_municipality_data_zip(
             prefecture_name,
             set(CITY_NAMES[prefecture_name]))
-        print(f"Municipality Load Time = {time.perf_counter() - t}s")
+        print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")
         layers.append(pydeck.Layer(
             "PolygonLayer",
             df_municipalities,
