@@ -1,0 +1,81 @@
+view_state:
+  latitude: 40.860
+  longitude: 140.751
+  zoom: 7.5
+
+areas:
+  青森県 むつ市:
+    view_state:
+      latitude: 41.308
+      longitude: 141.065
+      zoom: 9.5
+    correspondences:
+      大畑町:
+      大平町:
+      大字関根:
+      大字田名部:
+      川内町:
+      川内町蛎崎:
+      川内町宿野部:
+      川内町桧川:
+      大字城ヶ沢:
+      大字大湊:
+      脇野沢:
+      赤川町:
+      大字奥内:
+      新町:
+      大字中野沢:
+
+
+  青森県 下北郡大間町:
+    view_state:
+      latitude: 41.488
+      longitude: 140.927
+      zoom: 11.0
+    correspondences:
+      大字大間:
+        own: 2
+      大字奥戸:
+        own: 2
+
+
+  青森県 下北郡風間浦村:
+    view_state:
+      latitude: 41.475
+      longitude: 141.015
+      zoom: 11.0
+    correspondences:
+      大字蛇浦:
+      大字易国間:
+      大字下風呂:
+
+
+  青森県 下北郡佐井村:
+    view_state:
+      latitude: 41.338
+      longitude: 140.827
+      zoom: 10.0
+    correspondences:
+      大字佐井:
+      大字長後:
+
+
+  青森県 下北郡東通村:
+    view_state:
+      latitude: 41.280
+      longitude: 141.361
+      zoom: 10.0
+    correspondences:
+      大字尻屋:
+      大字岩屋:
+      大字尻労:
+      大字野牛:
+      大字蒲野沢:
+      大字大利:
+      大字目名:
+      大字田屋:
+      大字砂子又:
+      大字猿ケ森:
+      大字小田野沢:
+      大字白糠:
+

@@ -145,7 +145,7 @@ if city_name:
             "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
             "sub_towns": st.column_config.ListColumn("含む町名"),
             "sub_towns_suffix": None,
-            "lonlat_coordinates": st.column_config.ListColumn("輪郭座標"),
+            "lonlat_coordinates": None,
             "pref_city": None,
             "area_str": None,
             "own": st.column_config.TextColumn("領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"),

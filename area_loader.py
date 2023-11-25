@@ -38,6 +38,6 @@ class AllAreasData(BaseModel):
 
 
 def load_area_data(prefecture_name: str) -> AllAreasData:
-    path = Path(f"data/correspondences_{prefecture_name}.yaml")
+    path = Path(f"data/correspondences/{prefecture_name}.yaml")
     y = path.read_text(encoding="utf-8-sig")
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
