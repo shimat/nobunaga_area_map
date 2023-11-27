@@ -2,6 +2,7 @@
   latitude: 40.86
   longitude: 140.751
   zoom: 7.5
+
 areas:
   青森県 むつ市:
     view_state:
@@ -39,16 +40,8 @@ areas:
       - 新町
     - towns:
       - 大字中野沢
-  青森県 下北郡佐井村:
-    view_state:
-      latitude: 41.338
-      longitude: 140.827
-      zoom: 10.0
-    correspondences:
-    - towns:
-      - 大字佐井
-    - towns:
-      - 大字長後
+
+
   青森県 下北郡大間町:
     view_state:
       latitude: 41.488
@@ -61,6 +54,35 @@ areas:
     - towns:
       - 大字奥戸
       own: 2
+
+
+  青森県 下北郡風間浦村:
+    view_state:
+      latitude: 41.475
+      longitude: 141.015
+      zoom: 11.0
+    correspondences:
+    - towns:
+      - 大字蛇浦
+      own: 2
+    - towns:
+      - 大字易国間
+    - towns:
+      - 大字下風呂
+
+
+  青森県 下北郡佐井村:
+    view_state:
+      latitude: 41.338
+      longitude: 140.827
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 大字佐井
+    - towns:
+      - 大字長後
+
+
   青森県 下北郡東通村:
     view_state:
       latitude: 41.28
@@ -91,16 +113,3 @@ areas:
       - 大字小田野沢
     - towns:
       - 大字白糠
-  青森県 下北郡風間浦村:
-    view_state:
-      latitude: 41.475
-      longitude: 141.015
-      zoom: 11.0
-    correspondences:
-    - towns:
-      - 大字蛇浦
-      own: 2
-    - towns:
-      - 大字易国間
-    - towns:
-      - 大字下風呂

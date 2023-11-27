@@ -2,39 +2,8 @@
   latitude: 35.7
   longitude: 139.5
   zoom: 9.5
+
 areas:
-  東京都 世田谷区:
-    view_state:
-      latitude: 35.638
-      longitude: 139.64
-      zoom: 11.5
-    correspondences:
-    - towns:
-      - 赤堤１丁目
-  東京都 中央区:
-    view_state:
-      latitude: 35.67
-      longitude: 139.776
-      zoom: 12.5
-    correspondences:
-    - towns:
-      - 明石町
-  東京都 中野区:
-    view_state:
-      latitude: 35.708
-      longitude: 139.663
-      zoom: 12.5
-    correspondences:
-    - towns:
-      - 新井１丁目
-  東京都 北区:
-    view_state:
-      latitude: 35.764
-      longitude: 139.73
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 赤羽１丁目
   東京都 千代田区:
     view_state:
       latitude: 35.688
@@ -57,6 +26,48 @@ areas:
       - 永田町１丁目
     - towns:
       - 永田町２丁目
+
+
+  東京都 中央区:
+    view_state:
+      latitude: 35.67
+      longitude: 139.776
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 明石町
+
+
+  東京都 港区:
+    view_state:
+      latitude: 35.651
+      longitude: 139.74
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 赤坂１丁目
+
+
+  東京都 新宿区:
+    view_state:
+      latitude: 35.7
+      longitude: 139.711
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 愛住町
+
+
+  東京都 文京区:
+    view_state:
+      latitude: 35.717
+      longitude: 139.747
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 大塚１丁目
+
+
   東京都 台東区:
     view_state:
       latitude: 35.715
@@ -65,14 +76,8 @@ areas:
     correspondences:
     - towns:
       - 上野公園
-  東京都 品川区:
-    view_state:
-      latitude: 35.613
-      longitude: 139.737
-      zoom: 12.5
-    correspondences:
-    - towns:
-      - 荏原１丁目
+
+
   東京都 墨田区:
     view_state:
       latitude: 35.715
@@ -81,6 +86,38 @@ areas:
     correspondences:
     - towns:
       - 吾妻橋１丁目
+
+
+  東京都 江東区:
+    view_state:
+      latitude: 35.655
+      longitude: 139.819
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 有明１丁目
+
+
+  東京都 品川区:
+    view_state:
+      latitude: 35.613
+      longitude: 139.737
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 荏原１丁目
+
+
+  東京都 目黒区:
+    view_state:
+      latitude: 35.633
+      longitude: 139.693
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 青葉台１丁目
+
+
   東京都 大田区:
     view_state:
       latitude: 35.57
@@ -95,54 +132,18 @@ areas:
       - 羽田空港３丁目
     - towns:
       - 池上１丁目
-  東京都 文京区:
+
+
+  東京都 世田谷区:
     view_state:
-      latitude: 35.717
-      longitude: 139.747
-      zoom: 12.5
-    correspondences:
-    - towns:
-      - 大塚１丁目
-  東京都 新宿区:
-    view_state:
-      latitude: 35.7
-      longitude: 139.711
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 愛住町
-  東京都 杉並区:
-    view_state:
-      latitude: 35.695
-      longitude: 139.628
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 阿佐谷北１丁目
-  東京都 板橋区:
-    view_state:
-      latitude: 35.77
-      longitude: 139.678
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 相生町
-  東京都 江戸川区:
-    view_state:
-      latitude: 35.693
-      longitude: 139.878
+      latitude: 35.638
+      longitude: 139.64
       zoom: 11.5
     correspondences:
     - towns:
-      - 一之江１丁目
-  東京都 江東区:
-    view_state:
-      latitude: 35.655
-      longitude: 139.819
-      zoom: 11.5
-    correspondences:
-    - towns:
-      - 有明１丁目
+      - 赤堤１丁目
+
+
   東京都 渋谷区:
     view_state:
       latitude: 35.667
@@ -151,46 +152,28 @@ areas:
     correspondences:
     - towns:
       - 上原１丁目
-  東京都 港区:
+
+
+  東京都 中野区:
     view_state:
-      latitude: 35.651
-      longitude: 139.74
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 赤坂１丁目
-  東京都 目黒区:
-    view_state:
-      latitude: 35.633
-      longitude: 139.693
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 青葉台１丁目
-  東京都 練馬区:
-    view_state:
-      latitude: 35.747
-      longitude: 139.622
-      zoom: 12.0
-    correspondences:
-    - towns:
-      - 旭丘１丁目
-  東京都 荒川区:
-    view_state:
-      latitude: 35.738
-      longitude: 139.782
+      latitude: 35.708
+      longitude: 139.663
       zoom: 12.5
     correspondences:
     - towns:
-      - 荒川１丁目
-  東京都 葛飾区:
+      - 新井１丁目
+
+
+  東京都 杉並区:
     view_state:
-      latitude: 35.755
-      longitude: 139.86
-      zoom: 11.5
+      latitude: 35.695
+      longitude: 139.628
+      zoom: 12.0
     correspondences:
     - towns:
-      - 青戸１丁目
+      - 阿佐谷北１丁目
+  
+
   東京都 豊島区:
     view_state:
       latitude: 35.731
@@ -199,6 +182,48 @@ areas:
     correspondences:
     - towns:
       - 池袋１丁目
+
+
+  東京都 北区:
+    view_state:
+      latitude: 35.764
+      longitude: 139.73
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 赤羽１丁目
+
+
+  東京都 荒川区:
+    view_state:
+      latitude: 35.738
+      longitude: 139.782
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 荒川１丁目
+
+
+  東京都 板橋区:
+    view_state:
+      latitude: 35.77
+      longitude: 139.678
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 相生町
+
+
+  東京都 練馬区:
+    view_state:
+      latitude: 35.747
+      longitude: 139.622
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 旭丘１丁目
+  
+
   東京都 足立区:
     view_state:
       latitude: 35.778
@@ -207,3 +232,23 @@ areas:
     correspondences:
     - towns:
       - 青井１丁目
+
+
+  東京都 葛飾区:
+    view_state:
+      latitude: 35.755
+      longitude: 139.86
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 青戸１丁目
+
+
+  東京都 江戸川区:
+    view_state:
+      latitude: 35.693
+      longitude: 139.878
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 一之江１丁目
