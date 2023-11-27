@@ -19,6 +19,8 @@ prefecture_name = col_left.selectbox(
     label="都道府県",
     options=CITY_NAMES.keys(),
 )
+if not prefecture_name:
+    raise Exception
 city_name: str | None = col_right.selectbox(
     label="市区町村",
     options=CITY_NAMES[prefecture_name],
@@ -64,6 +66,7 @@ if city_name:
     df_target["area_str"] = df_org["area"].apply(lambda x: "{:,.0f}".format(x))
     df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x))
 
+    fill_color: str | list[int]
     match map_type:
         case "「信長の野望 出陣」の各エリア":
             df_show = df_mod

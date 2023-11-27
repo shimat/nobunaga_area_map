@@ -64,6 +64,7 @@ class OneAreaData2(BaseModel):
             )
         )
 
+
 class AllAreasData2(BaseModel):
     a_view_state: ViewState
     areas: dict[str, OneAreaData2]
@@ -82,7 +83,6 @@ def load_area_data(prefecture_name: str) -> AllAreasData:
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
 
 
-
 def remove_own0(yaml: str) -> str:
     import re
 
@@ -91,6 +91,7 @@ def remove_own0(yaml: str) -> str:
     yaml = re.sub(r"\n\s+\n", "\n", yaml, flags=re.MULTILINE)
 
     return yaml
+
 
 def main():
     import sys

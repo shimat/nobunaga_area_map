@@ -1,67 +1,61 @@
-view_state:
-  latitude: 35.380
-  longitude: 139.370
+﻿view_state:
+  latitude: 35.38
+  longitude: 139.37
   zoom: 9.0
-
 areas:
-  神奈川県 川崎市川崎区:
-    view_state:
-      latitude: 35.507
-      longitude: 139.746
-      zoom: 12.0
-    correspondences:
-      浮島町:
-
-
-  神奈川県 川崎市幸区:
-    view_state:
-      latitude: 35.544
-      longitude: 139.683
-      zoom: 13.0
-    correspondences:
-      遠藤町:
-
-
   神奈川県 川崎市中原区:
     view_state:
       latitude: 35.576
       longitude: 139.654
       zoom: 12.5
     correspondences:
-      井田１丁目:
-
-
-  神奈川県 川崎市高津区:
-    view_state:
-      latitude: 35.5895
-      longitude: 139.617
-      zoom: 12.5
-    correspondences:
-      明津:
-
-
-  神奈川県 川崎市宮前区:
-    view_state:
-      latitude: 35.585
-      longitude: 139.578
-      zoom: 12.5
-    correspondences:
-      有馬１丁目:
-
-
+    - towns:
+      - 井田１丁目
   神奈川県 川崎市多摩区:
     view_state:
       latitude: 35.619
       longitude: 139.554
       zoom: 12.5
     correspondences:
-      生田１丁目:
-
-
+    - towns:
+      - 生田１丁目
+  神奈川県 川崎市宮前区:
+    view_state:
+      latitude: 35.585
+      longitude: 139.578
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 有馬１丁目
+  神奈川県 川崎市川崎区:
+    view_state:
+      latitude: 35.507
+      longitude: 139.746
+      zoom: 12.0
+    correspondences:
+    - towns:
+      - 浮島町
+  神奈川県 川崎市幸区:
+    view_state:
+      latitude: 35.544
+      longitude: 139.683
+      zoom: 13.0
+    correspondences:
+    - towns:
+      - 遠藤町
+  神奈川県 川崎市高津区:
+    view_state:
+      latitude: 35.5895
+      longitude: 139.617
+      zoom: 12.5
+    correspondences:
+    - towns:
+      - 明津
   神奈川県 川崎市麻生区:
     view_state:
       latitude: 35.596
       longitude: 139.496
       zoom: 12.5
     correspondences:
-      王禅寺:
+    - towns:
+      - 王禅寺

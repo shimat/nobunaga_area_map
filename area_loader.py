@@ -12,17 +12,17 @@ class ViewState(BaseModel):
 
 class OneCorrespondence(BaseModel):
     own: Literal[0, 1, 2] = Field(default=0)
-    towns: list[str] = Field(default=list())
-
-
-class OneAreaData(BaseModel):
-    view_state: ViewState
-    correspondences: dict[str, OneCorrespondence | None]
+    towns: tuple[str, ...] = Field(min_length=1)
 
 
 class Correspondences(BaseModel):
     pref_city: str
-    values: dict[str, OneCorrespondence | None]
+    values: tuple[OneCorrespondence, ...]
+
+
+class OneAreaData(BaseModel):
+    view_state: ViewState
+    correspondences: tuple[OneCorrespondence, ...]
 
 
 class AllAreasData(BaseModel):

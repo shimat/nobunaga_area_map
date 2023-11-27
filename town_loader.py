@@ -22,6 +22,8 @@ NAMESPACES = {
 def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, 'r') as zf:
         gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
+        if not gml_file_name:
+            raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, 'r') as file:
             tree = ElementTree.parse(file)
             return load_town_data(tree)
@@ -115,7 +117,7 @@ def load_town_data_(tree: ElementTree) -> pd.DataFrame:
 
 @st.cache_data
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
-    new_data = {
+    new_data: dict[str, list] = {
         "prefecture_name": [],
         "city_name": [],
         "area_name": [],
@@ -129,18 +131,15 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
     }
     for area_data in _area_data_list:
         pref_city = area_data.pref_city
-        for area_name, correespondence in area_data.values.items():
-            if correespondence is None or correespondence.towns is None:
-                sub_towns = []
-                own = 0
-            else:
-                sub_towns = correespondence.towns
-                own = correespondence.own
-            sub_towns.append(area_name)
+        for correespondence in area_data.values:
+            sub_towns = correespondence.towns
+            own = correespondence.own
 
             sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
             if sub_rows.empty:
                 raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
+            
+            area_name = get_area_name(sub_rows)
             prefecture_name = sub_rows.iloc[0]["prefecture_name"]
             city_name = sub_rows.iloc[0]["city_name"]
             area: float = sub_rows["area"].sum()
@@ -192,6 +191,12 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
 
 def estimate_kokudaka(area: float) -> float:
     return (area ** 0.497) / 30
+
+
+def get_area_name(df: pd.DataFrame) -> str:
+    df = df.reset_index()
+    max_area_row = df.iloc[df["area"].idxmax()]
+    return max_area_row["town_name"]
 
 
 def arrival_color(own: int) -> list[int]:
