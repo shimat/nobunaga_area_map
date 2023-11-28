@@ -5774,6 +5774,12 @@ areas:
       - 銭函３丁目
       own: 1
     - towns:
+      - 銭函２丁目
+    - towns:
+      - 銭函１丁目
+    - towns:
+      - 張碓町
+    - towns:
       - 星野町
       own: 1
     - towns:
@@ -5789,6 +5795,13 @@ areas:
       - 新光町
       own: 1
     - towns:
+      - 朝里４丁目
+    - towns:
+      - 朝里３丁目
+    - towns:
+      - 朝里２丁目
+      - 朝里１丁目
+    - towns:
       - 朝里川温泉１丁目
       own: 1
     - towns:
@@ -5796,6 +5809,45 @@ areas:
       own: 1
     - towns:
       - 朝里川温泉３丁目
+      own: 1
+    - towns:
+      - 新光１丁目
+    - towns:
+      - 新光２丁目
+    - towns:
+      - 新光３丁目
+    - towns:
+      - 新光４丁目
+      own: 1
+    - towns:
+      - 新光５丁目
+    - towns:
+      - 桜１丁目
+      own: 1
+    - towns:
+      - 桜２丁目
+      own: 1
+    - towns:
+      - 桜３丁目
+    - towns:
+      - 桜４丁目
+    - towns:
+      - 桜５丁目
+    - towns:
+      - 望洋台１丁目
+      own: 1
+    - towns:
+      - 望洋台２丁目
+    - towns:
+      - 望洋台３丁目
+      - 望洋台４丁目
+    - towns:
+      - 船浜町
+    - towns:
+      - 若竹町
+      own: 1
+    - towns:
+      - 築港
       own: 1
     - towns:
       - 天神４丁目
@@ -6522,6 +6574,7 @@ areas:
       own: 2
     - towns:
       - あさひが丘
+      own: 2
     - towns:
       - 東野幌本町
       own: 2
@@ -6542,6 +6595,7 @@ areas:
       own: 1
     - towns:
       - ゆめみ野南町
+      own: 2
     - towns:
       - ゆめみ野東町
       own: 2
@@ -6674,6 +6728,7 @@ areas:
       own: 1
     - towns:
       - いずみ野
+      own: 2
     - towns:
       - 対雁
       own: 1
@@ -6744,6 +6799,7 @@ areas:
       - 五条５丁目
       - 五条６丁目
       - 五条７丁目
+      own: 2
   
 
   北海道 三笠市:
@@ -8194,6 +8250,7 @@ areas:
       - わらび野
     - towns:
       - 桜野
+      own: 2
     - towns:
       - 浜松
       own: 1
@@ -8427,6 +8484,7 @@ areas:
       - 字椴川町
     - towns:
       - 字砂川
+      own: 2
     - towns:
       - 字萩ノ岱
     - towns:
@@ -8488,6 +8546,7 @@ areas:
       - 字富栄
     - towns:
       - 字美和
+      own: 2
     - towns:
       - 字旭丘
     - towns:
@@ -8506,6 +8565,7 @@ areas:
       - 館町
     - towns:
       - 南館町
+      own: 2
     - towns:
       - 字中館
   
