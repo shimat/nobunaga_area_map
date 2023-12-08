@@ -155,6 +155,11 @@ if city_name:
         },
     )
 
+    if map_type != "全町名":
+        kokudaka_sum = df_show["kokudaka"].sum()
+        st.write(f"推定石高合計: {kokudaka_sum:.2f}石")
+
+
 st.markdown(
     """
 -----
