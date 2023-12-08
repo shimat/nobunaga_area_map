@@ -156,7 +156,8 @@ if city_name:
     )
 
     if map_type != "全町名":
-        kokudaka_sum = df_show["kokudaka"].sum()
+        df_uniq = df_show.drop_duplicates(subset=("city_name", "area_name"))
+        kokudaka_sum = df_uniq["kokudaka"].sum()
         st.write(f"推定石高合計: {kokudaka_sum:.2f}石")
 
 
