@@ -7800,38 +7800,215 @@ areas:
       - 築港
       own: 1
     - towns:
-      - 天神４丁目
-      - 天狗山２丁目
-      own: 2
+      - 勝納町
+      own: 1
     - towns:
-      - 天神３丁目
+      - 潮見台１丁目
+    - towns:
+      - 潮見台２丁目
+    - towns:
+      - 潮見台３丁目
+    - towns:
+      - 潮見台４丁目
+    - towns:
+      - 真栄１丁目
+    - towns:
+      - 真栄２丁目
+    - towns:
+      - 奥沢１丁目
+    - towns:
+      - 奥沢２丁目
+    - towns:
+      - 奥沢３丁目
+    - towns:
+      - 奥沢４丁目
+    - towns:
+      - 奥沢５丁目
+    - towns:
+      - 天神１丁目
       own: 1
     - towns:
       - 天神２丁目
       own: 1
     - towns:
-      - 天神１丁目
+      - 天神３丁目
       own: 1
     - towns:
       - 天狗山１丁目
     - towns:
-      - 塩谷５丁目
+      - 天狗山２丁目
+      - 松ケ枝２丁目
+      - 天神４丁目
+      own: 2
     - towns:
-      - 塩谷４丁目
+      - 新富町
     - towns:
-      - 塩谷３丁目
+      - 若松１丁目
+      - 若松２丁目
+      - 信香町
+      own: 1
     - towns:
-      - 塩谷２丁目
+      - 有幌町
+    - towns:
+      - 住吉町
+    - towns:
+      - 入船１丁目
+      - 住ノ江１丁目
+      - 住ノ江２丁目
+    - towns:
+      - 入船２丁目
+    - towns:
+      - 入船３丁目
+    - towns:
+      - 入船４丁目
+    - towns:
+      - 入船５丁目
+    - towns:
+      - 松ケ枝１丁目
+    - towns:
+      - 最上１丁目
+    - towns:
+      - 最上２丁目
+    - towns:
+      - 花園５丁目
+    - towns:
+      - 花園４丁目
+    - towns:
+      - 花園３丁目
+    - towns:
+      - 東雲町
+      - 相生町
+    - towns:
+      - 堺町
+    - towns:
+      - 港町
+    - towns:
+      - 山田町
+      - 花園１丁目
+      - 稲穂１丁目
+    - towns:
+      - 花園２丁目
+    - towns:
+      - 緑１丁目
+    - towns:
+      - 緑２丁目
+    - towns:
+      - 緑３丁目
+    - towns:
+      - 緑４丁目
+    - towns:
+      - 緑５丁目
+    - towns:
+      - 富岡１丁目
+    - towns:
+      - 富岡２丁目
+    - towns:
+      - 稲穂２丁目
+    - towns:
+      - 稲穂３丁目
+    - towns:
+      - 稲穂４丁目
+    - towns:
+      - 稲穂５丁目
+    - towns:
+      - 色内１丁目
+    - towns:
+      - 色内２丁目
+    - towns:
+      - 色内３丁目
+    - towns:
+      - 錦町
+    - towns:
+      - 石山町
+    - towns:
+      - 豊川町
+    - towns:
+      - 清水町
+    - towns:
+      - 梅ケ枝町
+    - towns:
+      - 末広町
+    - towns:
+      - 手宮１丁目
+    - towns:
+      - 手宮２丁目
+    - towns:
+      - 手宮３丁目
+    - towns:
+      - 高島１丁目
+    - towns:
+      - 高島２丁目
+    - towns:
+      - 高島３丁目
+    - towns:
+      - 高島４丁目
+    - towns:
+      - 高島５丁目
+    - towns:
+      - 祝津１丁目
+    - towns:
+      - 祝津３丁目
+      own: 1
+    - towns:
+      - 祝津２丁目
+      - 祝津４丁目
+    - towns:
+      - 赤岩１丁目
+    - towns:
+      - 赤岩２丁目
+    - towns:
+      - 赤岩３丁目
+    - towns:
+      - 幸１丁目
+    - towns:
+      - 幸２丁目
+    - towns:
+      - 幸３丁目
+    - towns:
+      - 幸４丁目
+    - towns:
+      - 長橋１丁目
+    - towns:
+      - 長橋２丁目
+    - towns:
+      - 長橋３丁目
+    - towns:
+      - 長橋４丁目
+    - towns:
+      - 長橋５丁目
+    - towns:
+      - 旭町
+    - towns:
+      - オタモイ１丁目
+    - towns:
+      - オタモイ２丁目
+    - towns:
+      - オタモイ３丁目
+      - オタモイ４丁目
     - towns:
       - 塩谷１丁目
     - towns:
-      - 桃内３丁目
+      - 塩谷２丁目
+    - towns:
+      - 塩谷３丁目
+    - towns:
+      - 塩谷４丁目
+    - towns:
+      - 塩谷５丁目
+    - towns:
+      - 桃内１丁目
+    - towns:
       - 桃内２丁目
+      - 桃内３丁目
       - 忍路３丁目
       - 蘭島３丁目
     - towns:
+      - 忍路１丁目
+    - towns:
       - 忍路２丁目
       own: 1
+    - towns:
+      - 蘭島１丁目
     - towns:
       - 蘭島２丁目
       own: 1

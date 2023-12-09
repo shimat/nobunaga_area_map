@@ -157,8 +157,10 @@ if city_name:
 
     if map_type != "全町名":
         df_uniq = df_show.drop_duplicates(subset=("city_name", "area_name"))
-        kokudaka_sum = df_uniq["kokudaka"].sum()
-        st.write(f"推定石高合計: {kokudaka_sum:.2f}石")
+        df_own = df_uniq[df_uniq["own"] != 0]
+        kokudaka_all_sum = df_uniq["kokudaka"].sum()
+        kokudaka_own_sum = df_own["kokudaka"].sum()
+        st.write(f"推定石高合計: {kokudaka_own_sum:.2f}石 / {kokudaka_all_sum:.2f}石 ({kokudaka_own_sum/kokudaka_all_sum:.1%})")
 
 
 st.markdown(
