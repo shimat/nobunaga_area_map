@@ -7977,6 +7977,7 @@ areas:
       own: 2
     - towns:
       - 絵紙山町
+      own: 2
     - towns:
       - 銚子町
     - towns:
@@ -8050,8 +8051,10 @@ areas:
       - 豊原町
     - towns:
       - 東畑町
+      own: 2
     - towns:
       - 庵原町
+      own: 2
     - towns:
       - 亀尾町
     - towns:
@@ -9702,6 +9705,7 @@ areas:
       own: 1
     - towns:
       - 長都
+      own: 2
     - towns:
       - 釜加
     - towns:
@@ -9850,10 +9854,12 @@ areas:
       own: 2
     - towns:
       - 穂栄
+      own: 2
     - towns:
       - 林田
     - towns:
       - 漁太
+      own: 2
     - towns:
       - 下島松
       own: 2
@@ -10469,6 +10475,7 @@ areas:
       - 当別１丁目
     - towns:
       - 湯ノ沢
+      own: 2
     - towns:
       - 本郷３丁目
       - 向野３丁目
@@ -10786,6 +10793,7 @@ areas:
       - 字釜谷
     - towns:
       - 字亀川
+      own: 2
     - towns:
       - 字橋呉
     - towns:
@@ -10800,6 +10808,7 @@ areas:
       - 字大平
     - towns:
       - 字木古内
+      own: 2
     - towns:
       - 字中野
       own: 2
@@ -10807,6 +10816,7 @@ areas:
       - 字瓜谷
     - towns:
       - 字大川
+      own: 2
     - towns:
       - 字建川
     - towns:
@@ -11347,6 +11357,7 @@ areas:
       - 字伏木戸町
     - towns:
       - 字椴川町
+      own: 2
     - towns:
       - 字砂川
       own: 2
@@ -11389,6 +11400,7 @@ areas:
       - 字稲見
     - towns:
       - 字相生
+      own: 2
     - towns:
       - 字共和
     - towns:
@@ -11463,6 +11475,7 @@ areas:
       - 字館浦
     - towns:
       - 字姫川
+      own: 2
     - towns:
       - 字旭岱
       own: 2
