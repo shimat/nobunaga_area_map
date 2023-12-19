@@ -37,6 +37,8 @@ with st.expander("オプション"):
         label="市区町村境界を表示",
         value=True,
         disabled=(city_name != "(全体)"))
+    
+    map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100)
 
 
 if city_name:
@@ -126,13 +128,13 @@ if city_name:
             bearing=0,
         ),
         tooltip={"text": tooltip},
-        height=600,
+        height=map_height,
         map_provider="carto",
         map_style="dark",
     )
 
     # st.pydeck_chart(deck)
-    st.components.v1.html(deck.to_html(as_string=True), height=600)
+    st.components.v1.html(deck.to_html(as_string=True), height=map_height)
 
     address_label = "住所" if (map_type == "全町名") else "エリア名"
     st.dataframe(
