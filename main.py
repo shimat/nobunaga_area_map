@@ -28,17 +28,18 @@ city_name: str | None = col_right.selectbox(
 )
 
 with st.expander("オプション"):
-    map_type = st.radio(
-        label="マップ種別",
-        options=("「信長の野望 出陣」の各エリア", "全町名"),
-        horizontal=True,)
-
-    show_municipality_borders = st.checkbox(
-        label="市区町村境界を表示",
-        value=True,
-        disabled=(city_name != "(全体)"))
-    
-    map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100)
+    col1, col2 = st.columns(2)
+    with col1:
+        map_type = st.radio(
+            label="マップ種別",
+            options=("「信長の野望 出陣」の各エリア", "全町名"),
+            horizontal=True,)
+        show_municipality_borders = st.checkbox(
+            label="市区町村境界を表示",
+            value=True,
+            disabled=(city_name != "(全体)"))
+    with col2:
+        map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100, step=10)
 
 
 if city_name:
