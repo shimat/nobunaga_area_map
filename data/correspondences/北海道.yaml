@@ -9271,8 +9271,10 @@ areas:
       own: 2
     - towns:
       - 臼尻町
+      own: 2
     - towns:
       - 安浦町
+      own: 2
     - towns:
       - 川汲町
       own: 2
@@ -9281,8 +9283,10 @@ areas:
       own: 2
     - towns:
       - 木直町
+      own: 2
     - towns:
       - 古部町
+      own: 2
     - towns:
       - 桔梗町
       own: 2
@@ -9321,6 +9325,7 @@ areas:
       own: 2
     - towns:
       - 女那川町
+      own: 2
     - towns:
       - 高岱町
       own: 2
@@ -9568,6 +9573,7 @@ areas:
       own: 1
     - towns:
       - 昭和１丁目
+      own: 2
     - towns:
       - 亀田本町
       own: 1
@@ -9713,9 +9719,11 @@ areas:
       - 神山２丁目
     - towns:
       - 神山３丁目
+      own: 2
     - towns:
       - 陣川１丁目
       - 陣川２丁目
+      own: 2
     - towns:
       - 神山町
       own: 2
@@ -9727,10 +9735,13 @@ areas:
       own: 1
     - towns:
       - 美原３丁目
+      own: 2
     - towns:
       - 美原４丁目
+      own: 2
     - towns:
       - 美原５丁目
+      own: 2
     - towns:
       - 赤川１丁目
       own: 1
@@ -9745,14 +9756,19 @@ areas:
       own: 1
     - towns:
       - 桔梗５丁目
+      own: 2
     - towns:
       - 桔梗４丁目
+      own: 2
     - towns:
       - 桔梗３丁目
+      own: 2
     - towns:
       - 桔梗２丁目
+      own: 2
     - towns:
       - 桔梗１丁目
+      own: 2
     - towns:
       - 西桔梗町
       own: 1
@@ -15174,6 +15190,7 @@ areas:
       own: 2
     - towns:
       - 本町３丁目
+      own: 2
     - towns:
       - 本町４丁目
       own: 2
@@ -15210,8 +15227,10 @@ areas:
       own: 2
     - towns:
       - 鳴川２丁目
+      own: 2
     - towns:
       - 鳴川３丁目
+      own: 2
     - towns:
       - 大中山１丁目
       own: 2
@@ -15226,6 +15245,7 @@ areas:
       own: 2
     - towns:
       - 大中山５丁目
+      own: 2
     - towns:
       - 大中山６丁目
       own: 2
@@ -15234,6 +15254,7 @@ areas:
       own: 2
     - towns:
       - 大中山８丁目
+      own: 2
     - towns:
       - 大川１丁目
       own: 2
@@ -15252,8 +15273,10 @@ areas:
       own: 2
     - towns:
       - 大川５丁目
+      own: 2
     - towns:
       - 大川７丁目
+      own: 2
     - towns:
       - 大川８丁目
       own: 2
@@ -17353,11 +17376,477 @@ areas:
     - towns:
       - 字俵真布
     - towns:
-      - 字白金
+      - 字忠別
+    - towns:
+      - 字朗根内
+    - towns:
+      - 字横牛
+    - towns:
+      - 字下宇莫別
+    - towns:
+      - 字中宇莫別
+    - towns:
+      - 字上宇莫別
     - towns:
       - 字置杵牛
     - towns:
-      - 字朗根内
+      - 字白金
+    - towns:
+      - 字美沢
+    - towns:
+      - 字藤野
+    - towns:
+      - 字新区画
+    - towns:
+      - 字明治
+    - towns:
+      - 字大三
+    - towns:
+      - 字美瑛原野
+    - towns:
+      - 字水沢
+    - towns:
+      - 字福富
+    - towns:
+      - 字新星
+    - towns:
+      - 字常盤
+    - towns:
+      - 字美馬牛
+    - towns:
+      - 字旭
+    - towns:
+      - 字北瑛
+    - towns:
+      - 字美田
+    - towns:
+      - 字大村
+    - towns:
+      - 字瑠辺蘂
+    - towns:
+      - 字五稜
+    - towns:
+      - 字美園
+    - towns:
+      - 字二股
+
+
+  北海道 上川郡東神楽町:
+    view_state:
+      latitude: 43.675
+      longitude: 142.505
+      zoom: 11.0
+    correspondences:
+    - towns:
+      - 字志比内
+    - towns:
+      - 字栄岡
+    - towns:
+      - 字八千代ケ岡
+    - towns:
+      - ２５号
+    - towns:
+      - ２４号
+    - towns:
+      - ２３号
+    - towns:
+      - ２２号
+    - towns:
+      - ２１号
+    - towns:
+      - ２０号
+    - towns:
+      - １９号
+    - towns:
+      - １８号
+    - towns:
+      - １７号
+    - towns:
+      - １６号
+    - towns:
+      - １５号
+    - towns:
+      - １４号
+    - towns:
+      - １３号
+    - towns:
+      - １２号
+    - towns:
+      - １１号
+    - towns:
+      - １０号
+    - towns:
+      - ９号
+    - towns:
+      - ８号
+    - towns:
+      - ７号
+    - towns:
+      - ６号
+    - towns:
+      - ５号
+      - ひじり野南二条５丁目
+      - ひじり野南二条４丁目
+      - ひじり野南三条５丁目
+      - ひじり野南三条４丁目
+    - towns:
+      - ４号
+    - towns:
+      - ３号
+    - towns:
+      - 基線
+    - towns:
+      - 東１線
+    - towns:
+      - 東２線
+    - towns:
+      - 東３線
+    - towns:
+      - 東４線
+    - towns:
+      - 南一番通
+    - towns:
+      - 南２線
+    - towns:
+      - 南３線
+    - towns:
+      - 南４線
+    - towns:
+      - 南５線
+    - towns:
+      - 南１３号
+    - towns:
+      - 北三条東２丁目
+      - 北二条東２丁目
+      - 北一条東１丁目
+      - 南一条東１丁目
+    - towns:
+      - 北一条東２丁目
+    - towns:
+      - 南一条東２丁目
+    - towns:
+      - 南二条東１丁目
+      - 南二条東２丁目
+      - 南三条東１丁目
+    - towns:
+      - 北一条西１丁目
+      - 南一条西１丁目
+    - towns:
+      - 北一条西２丁目
+      - 南一条西２丁目
+    - towns:
+      - 南二条西１丁目
+      - 南二条西２丁目
+    - towns:
+      - 北二条西４丁目
+      - 北二条西３丁目
+    - towns:
+      - 北一条西４丁目
+      - 北一条西３丁目
+      - 南一条西４丁目
+      - 南一条西３丁目
+    - towns:
+      - ひじり野北二条１丁目
+      - ひじり野北一条２丁目
+      - ひじり野北一条１丁目
+    - towns:
+      - ひじり野北二条３丁目
+      - ひじり野北二条２丁目
+      - ひじり野北一条４丁目
+      - ひじり野北一条３丁目
+    - towns:
+      - ひじり野北二条５丁目
+      - ひじり野北二条４丁目
+    - towns:
+      - ひじり野北二条６丁目
+      - ひじり野北一条６丁目
+      - ひじり野北一条５丁目
+      - ひじり野南一条５丁目
+    - towns:
+      - ひじり野北一条８丁目
+      - ひじり野北一条７丁目
+      - ひじり野南一条７丁目
+      - ひじり野南一条６丁目
+    - towns:
+      - ひじり野北二条９丁目
+      - ひじり野北二条８丁目
+      - ひじり野北二条７丁目
+    - towns:
+      - ひじり野北二条１０丁目
+      - ひじり野北一条１０丁目
+      - ひじり野北一条９丁目
+      - ひじり野南一条１０丁目
+      - ひじり野南一条９丁目
+      - ひじり野南一条８丁目
+    - towns:
+      - ひじり野南三条３丁目
+      - ひじり野南三条２丁目
+    - towns:
+      - ひじり野南一条２丁目
+      - ひじり野南一条１丁目
+      - ひじり野南二条１丁目
+      - ひじり野南三条１丁目
+    - towns:
+      - ひじり野南一条４丁目
+      - ひじり野南一条３丁目
+      - ひじり野南二条３丁目
+      - ひじり野南二条２丁目
+
+
+
+  北海道 上川郡東川町:
+    view_state:
+      latitude: 43.670
+      longitude: 142.676
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 勇駒別
+    - towns:
+      - 松山温泉
+    - towns:
+      - ノカナン
+    - towns:
+      - 北２線東
+    - towns:
+      - 北３線東
+    - towns:
+      - 北５線東１０号区画外
+    - towns:
+      - 北７線東
+    - towns:
+      - 北７線
+    - towns:
+      - 東１２号北
+    - towns:
+      - 東１１号北
+    - towns:
+      - 東１０号北
+    - towns:
+      - 東９号北
+    - towns:
+      - 東８号北
+    - towns:
+      - 東７号北
+    - towns:
+      - 東６号北
+    - towns:
+      - 東５号北
+    - towns:
+      - 東４号北
+    - towns:
+      - 東３号北
+    - towns:
+      - 東２号北
+    - towns:
+      - １号北
+    - towns:
+      - 西２号北
+    - towns:
+      - 西３号北
+    - towns:
+      - 西４号北
+    - towns:
+      - 西５号北
+    - towns:
+      - 西６号北
+    - towns:
+      - 西７号北
+    - towns:
+      - 西８号北
+    - towns:
+      - 西９号北
+    - towns:
+      - 西１０号北
+    - towns:
+      - 西１１号北
+    - towns:
+      - 西１２号北
+    - towns:
+      - 東２０号
+    - towns:
+      - 東１２号南
+    - towns:
+      - 東１１号南
+    - towns:
+      - 東１０号南
+    - towns:
+      - 東９号南
+    - towns:
+      - 東８号南
+    - towns:
+      - 東７号南
+    - towns:
+      - 東６号南
+    - towns:
+      - 東５号南
+    - towns:
+      - 東４号南
+    - towns:
+      - 東３号南
+    - towns:
+      - 東２号南
+    - towns:
+      - １号南
+    - towns:
+      - 西２号南
+    - towns:
+      - 南町４丁目
+    - towns:
+      - 南町３丁目
+    - towns:
+      - 南町２丁目
+    - towns:
+      - 南町１丁目
+    - towns:
+      - 西町１丁目
+    - towns:
+      - 西町２丁目
+    - towns:
+      - 西町３丁目
+    - towns:
+      - 西町４丁目
+    - towns:
+      - 西町５丁目
+    - towns:
+      - 西町６丁目
+    - towns:
+      - 西町７丁目
+    - towns:
+      - 西町８丁目
+    - towns:
+      - 西町９丁目
+    - towns:
+      - 西町１０丁目
+    - towns:
+      - 西町１１丁目
+      - 西町１２丁目
+      - 北町１２丁目
+      - 北町１３丁目
+    - towns:
+      - 東町４丁目
+    - towns:
+      - 東町３丁目
+    - towns:
+      - 東町２丁目
+    - towns:
+      - 東町１丁目
+    - towns:
+      - 北町１丁目
+    - towns:
+      - 北町２丁目
+    - towns:
+      - 北町３丁目
+    - towns:
+      - 北町４丁目
+    - towns:
+      - 北町５丁目
+    - towns:
+      - 北町６丁目
+    - towns:
+      - 北町７丁目
+    - towns:
+      - 北町８丁目
+    - towns:
+      - 北町９丁目
+    - towns:
+      - 北町１０丁目
+    - towns:
+      - 北町１１丁目
+    - towns:
+      - 進化台
+
+
+  北海道 上川郡鷹栖町:
+    view_state:
+      latitude: 43.887
+      longitude: 142.336
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - ２７線
+    - towns:
+      - ２６線
+    - towns:
+      - ２５線
+    - towns:
+      - ２４線
+    - towns:
+      - ２３線
+    - towns:
+      - ２２線
+    - towns:
+      - ２１線
+    - towns:
+      - ２０線
+    - towns:
+      - １９線
+    - towns:
+      - １８線
+    - towns:
+      - １７線
+    - towns:
+      - １６線
+    - towns:
+      - １５線
+    - towns:
+      - １４線
+    - towns:
+      - １３線
+    - towns:
+      - １２線
+    - towns:
+      - １１線
+    - towns:
+      - １０線
+    - towns:
+      - ９線
+    - towns:
+      - ８線
+    - towns:
+      - ７線
+
+
+  北海道 上川郡比布町:
+    view_state:
+      latitude: 43.918
+      longitude: 142.483
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 北１５線
+    - towns:
+      - 北１４線
+    - towns:
+      - 北１３線
+    - towns:
+      - 北１２線
+    - towns:
+      - 北１１線
+    - towns:
+      - 北１０線
+    - towns:
+      - 北９線
+    - towns:
+      - 北８線
+    - towns:
+      - 北７線
+    - towns:
+      - 北６線
+    - towns:
+      - 北５線
+    - towns:
+      - 北４線
+    - towns:
+      - 北３線
+    - towns:
+      - 北２線
+    - towns:
+      - 北１線
+    - towns:
+      - 基線
+    - towns:
+      - 南１線
 
 
   北海道 上川郡当麻町:
@@ -17438,6 +17927,42 @@ areas:
       own: 1
 
 
+  北海道 上川郡愛別町:
+    view_state:
+      latitude: 43.930
+      longitude: 142.635
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字協和
+    - towns:
+      - 字徳星
+    - towns:
+      - 字旭山
+    - towns:
+      - 字金富
+    - towns:
+      - 字伏古
+    - towns:
+      - 字中央
+    - towns:
+      - 字愛山
+    - towns:
+      - 字豊里
+    - towns:
+      - 字愛別
+    - towns:
+      - 字東町
+    - towns:
+      - 字北町
+    - towns:
+      - 字厚生
+    - towns:
+      - 字南町
+    - towns:
+      - 字本町
+
+
   北海道 上川郡上川町:
     view_state:
       latitude: 43.740
@@ -17491,3 +18016,81 @@ areas:
       - 新光町
     - towns:
       - 栄町
+
+
+  北海道 上川郡和寒町:
+    view_state:
+      latitude: 44.025
+      longitude: 142.367
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字東和
+    - towns:
+      - 字東丘
+    - towns:
+      - 字朝日
+    - towns:
+      - 字塩狩
+    - towns:
+      - 字南丘
+    - towns:
+      - 字中和
+    - towns:
+      - 字川西
+    - towns:
+      - 字三笠
+    - towns:
+      - 字日ノ出
+    - towns:
+      - 字大成
+    - towns:
+      - 字北原
+    - towns:
+      - 字松岡
+    - towns:
+      - 字菊野
+    - towns:
+      - 字三和
+    - towns:
+      - 字西和
+    - towns:
+      - 字福原
+    - towns:
+      - 字北町
+    - towns:
+      - 字東町
+    - towns:
+      - 字南町
+    - towns:
+      - 字西町
+
+
+  北海道 上川郡剣淵町:
+    view_state:
+      latitude: 44.103
+      longitude: 142.346
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 西原町
+    - towns:
+      - 藤本町
+    - towns:
+      - 東町
+    - towns:
+      - 元町
+    - towns:
+      - 屯田町
+    - towns:
+      - 南桜町
+    - towns:
+      - 西岡町
+    - towns:
+      - 旭町
+    - towns:
+      - 仲町
+    - towns:
+      - 緑町
+    - towns:
+      - 西町
