@@ -1,6 +1,6 @@
 ﻿view_state:
-  latitude: 42.8
-  longitude: 141.4
+  latitude: 42.95
+  longitude: 141.80
   zoom: 6.5
 
 areas:
@@ -9347,6 +9347,7 @@ areas:
       - 元村町
     - towns:
       - 恵山岬町
+      own: 2
     - towns:
       - 恵山町
       - 御崎町
@@ -9562,6 +9563,7 @@ areas:
       - 亀田港町
     - towns:
       - 昭和町
+      own: 2
     - towns:
       - 昭和４丁目
       own: 1
@@ -9589,6 +9591,7 @@ areas:
       - 中道１丁目
     - towns:
       - 中道２丁目
+      own: 2
     - towns:
       - 鍛治１丁目
     - towns:
@@ -9715,6 +9718,7 @@ areas:
       - 東山３丁目
     - towns:
       - 神山１丁目
+      own: 2
     - towns:
       - 神山２丁目
     - towns:
@@ -10637,7 +10641,7 @@ areas:
     - towns:
       - 春光台５条３丁目
     - towns:
-      - 春光台５条２丁目      
+      - 春光台５条２丁目
     - towns:
       - 字近文５線
       own: 1
@@ -13375,6 +13379,36 @@ areas:
       own: 2
 
 
+  北海道 赤平市:
+    view_state:
+      latitude: 43.566
+      longitude: 142.061
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - エルム町
+    - towns:
+      - 幌岡町
+    - towns:
+      - 共和町
+    - towns:
+      - 住吉町
+    - towns:
+      - 字赤平
+    - towns:
+      - 字茂尻
+    - towns:
+      - 平岸南町
+    - towns:
+      - 百戸町北
+    - towns:
+      - 西豊里町
+    - towns:
+      - 東豊里町
+    - towns:
+      - 字豊里
+
+
   北海道 士別市:
     view_state:
       latitude: 44.110
@@ -13944,6 +13978,32 @@ areas:
       - 宮城の沢
     - towns:
       - 東豊沼
+
+
+  北海道 歌志内市:
+    view_state:
+      latitude: 43.494
+      longitude: 142.038
+      zoom: 11.0
+    correspondences:
+    - towns:
+      - 字本町
+    - towns:
+      - 字上歌
+    - towns:
+      - 字東光
+    - towns:
+      - 字新歌
+    - towns:
+      - 字西山
+    - towns:
+      - 字文珠
+    - towns:
+      - 字中村
+    - towns:
+      - 字神威
+    - towns:
+      - 字歌神
 
 
   北海道 深川市:
@@ -16274,6 +16334,60 @@ areas:
       - 字滝瀬
 
 
+  北海道 島牧郡島牧村:
+    view_state:
+      latitude: 42.670
+      longitude: 140.040
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字持田
+    - towns:
+      - 字栄浜
+    - towns:
+      - 字原歌町
+    - towns:
+      - 字元町
+    - towns:
+      - 字千走
+    - towns:
+      - 字江ノ島
+    - towns:
+      - 字賀老
+    - towns:
+      - 字豊平
+    - towns:
+      - 字泊
+    - towns:
+      - 字永豊町
+    - towns:
+      - 字大平
+    - towns:
+      - 字豊浜
+    - towns:
+      - 字軽臼岱
+    - towns:
+      - 字栄磯
+    - towns:
+      - 字小川
+    - towns:
+      - 字港
+    - towns:
+      - 字本目
+    - towns:
+      - 字折川
+    - towns:
+      - 字美川
+    - towns:
+      - 字植原
+    - towns:
+      - 字歌島
+    - towns:
+      - 字富浦
+    - towns:
+      - 国有林
+
+
   北海道 虻田郡倶知安町:
     view_state:
       latitude: 42.915
@@ -16746,6 +16860,84 @@ areas:
     - towns:
       - 字敷島内
       own: 1
+
+
+  北海道 古宇郡泊村:
+    view_state:
+      latitude: 43.100
+      longitude: 140.515
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 大字興志内村
+    - towns:
+      - 大字盃村
+    - towns:
+      - 大字泊村
+    - towns:
+      - 大字茅沼村
+    - towns:
+      - 大字堀株村
+
+
+  北海道 古宇郡神恵内村:
+    view_state:
+      latitude: 43.200
+      longitude: 140.420
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 大字珊内村
+    - towns:
+      - 大字赤石村
+    - towns:
+      - 大字神恵内村
+
+
+  北海道 積丹郡積丹町:
+    view_state:
+      latitude: 43.290
+      longitude: 140.481
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 大字神岬町
+    - towns:
+      - 大字余別町
+    - towns:
+      - 大字来岸町
+    - towns:
+      - 大字西河町
+    - towns:
+      - 大字野塚町
+    - towns:
+      - 大字日司町
+    - towns:
+      - 大字入舸町
+    - towns:
+      - 大字幌武意町
+    - towns:
+      - 大字婦美町
+    - towns:
+      - 大字美国町
+
+
+  北海道 古平郡古平町:
+    view_state:
+      latitude: 43.188
+      longitude: 140.609
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 大字浜町
+    - towns:
+      - 大字港町
+    - towns:
+      - 大字沢江町
+    - towns:
+      - 大字歌棄町
+    - towns:
+      - 大字沖町
 
 
   北海道 磯谷郡蘭越町:
@@ -17477,6 +17669,36 @@ areas:
       - 浦臼第８
 
 
+  北海道 樺戸郡新十津川町:
+    view_state:
+      latitude: 43.575
+      longitude: 141.720
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字トップ
+    - towns:
+      - 字美沢
+    - towns:
+      - 字大和
+    - towns:
+      - 字士寸
+    - towns:
+      - 字学園
+    - towns:
+      - 字吉野
+    - towns:
+      - 字幌加
+    - towns:
+      - 字総進
+    - towns:
+      - 字中央
+    - towns:
+      - 字弥生
+    - towns:
+      - 字花月
+
+
   北海道 空知郡南幌町:
     view_state:
       latitude: 43.058
@@ -17560,6 +17782,152 @@ areas:
       - 瑞穂２区
     - towns:
       - 字キナウスナイ
+
+
+  北海道 空知郡上砂川町:
+    view_state:
+      latitude: 43.450
+      longitude: 142.003
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 字鶉
+    - towns:
+      - 字西山
+    - towns:
+      - 字上砂川
+
+
+  北海道 空知郡中富良野町:
+    view_state:
+      latitude: 43.410
+      longitude: 142.435
+      zoom: 11.0
+    correspondences:
+    - towns:
+      - 字中富良野奈江
+    - towns:
+      - 字中富良野新田中農場
+    - towns:
+      - 字中富良野田中農場
+    - towns:
+      - 字中富良野伊藤農場
+    - towns:
+      - 字中富良野吉井農場
+    - towns:
+      - 字中富良野鹿討農場
+    - towns:
+      - 字中富良野福原農場
+    - towns:
+      - 字中富良野西３線北
+    - towns:
+      - 字中富良野西２線北
+    - towns:
+      - 字中富良野西１線北
+    - towns:
+      - 字中富良野基線北
+    - towns:
+      - 字中富良野東１線北
+    - towns:
+      - 字中富良野東２線北
+    - towns:
+      - 字中富良野東３線北
+    - towns:
+      - 字中富良野東４線北
+    - towns:
+      - 字中富良野東５線北
+    - towns:
+      - 字中富良野東６線北
+    - towns:
+      - 字中富良野東７線北
+    - towns:
+      - 字中富良野東８線北
+    - towns:
+      - 字中富良野東９線北
+    - towns:
+      - 字中富良野東１０線北
+    - towns:
+      - 字中富良野東１１線北
+    - towns:
+      - 字中富良野
+
+
+  北海道 空知郡上富良野町:
+    view_state:
+      latitude: 43.460
+      longitude: 142.535
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 西１５線北
+    - towns:
+      - 西１４線北
+    - towns:
+      - 西１３線北
+    - towns:
+      - 西１２線北
+    - towns:
+      - 西１１線北
+    - towns:
+      - 西１０線北
+    - towns:
+      - 西９線北
+    - towns:
+      - 西８線北
+    - towns:
+      - 西７線北
+    - towns:
+      - 西６線北
+    - towns:
+      - 西５線北
+    - towns:
+      - 西４線北
+    - towns:
+      - 西３線北
+    - towns:
+      - 西２線北
+    - towns:
+      - 西１線北
+    - towns:
+      - 基線北
+    - towns:
+      - 東１線北
+    - towns:
+      - 東２線北
+    - towns:
+      - 東３線北
+    - towns:
+      - 東４線北
+    - towns:
+      - 東５線北
+    - towns:
+      - 東６線北
+    - towns:
+      - 東７線北
+    - towns:
+      - 東８線北
+    - towns:
+      - 東９線北
+    - towns:
+      - 東１０線北
+    - towns:
+      - 東１１線北
+    - towns:
+      - 東１２線北
+    - towns:
+      - 新井牧場
+    - towns:
+      - 松井牧場
+    - towns:
+      - 十人牧場
+    - towns:
+      - 中の沢
+    - towns:
+      - 国有無番地
+    - towns:
+      - 倍本農場
+    - towns:
+      - 吹上
 
 
   北海道 夕張郡長沼町:
@@ -17828,6 +18196,131 @@ areas:
     - towns:
       - 川端
       own: 2
+
+
+  北海道 雨竜郡雨竜町:
+    view_state:
+      latitude: 43.685
+      longitude: 141.745
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字恵岱別
+    - towns:
+      - 字オシラリカ
+    - towns:
+      - 字尾白利加
+    - towns:
+      - 字渭の津
+    - towns:
+      - 字洲本
+    - towns:
+      - 第４町内
+    - towns:
+      - 字満寿
+    - towns:
+      - 字中島
+    - towns:
+      - 字フシコウリウ
+    - towns:
+      - 第１町内
+
+
+  北海道 雨竜郡北竜町:
+    view_state:
+      latitude: 43.770
+      longitude: 141.750
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字美葉牛
+    - towns:
+      - 字岩村
+    - towns:
+      - 字碧水
+    - towns:
+      - 字西川
+    - towns:
+      - 字竜西
+    - towns:
+      - 字恵岱別
+    - towns:
+      - 字三谷
+    - towns:
+      - 字板谷
+    - towns:
+      - 字和
+
+
+  北海道 雨竜郡妹背牛町:
+    view_state:
+      latitude: 43.704
+      longitude: 141.946
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 字秩父別
+    - towns:
+      - ９区
+    - towns:
+      - 字妹背牛
+      - 字オーホ
+    - towns:
+      - 字チクシベツ
+    - towns:
+      - 字大鳳
+    - towns:
+      - ７区
+    - towns:
+      - １１区
+
+
+  北海道 雨竜郡秩父別町:
+    view_state:
+      latitude: 43.772
+      longitude: 141.963
+      zoom: 11.5
+    correspondences:
+    - towns:
+      - 字滝の上
+    - towns:
+      - 字中山
+    - towns:
+      - 字東山
+    - towns:
+      - 字南山
+    - towns:
+      - 字秩父別
+
+
+  北海道 雨竜郡沼田町:
+    view_state:
+      latitude: 43.886
+      longitude: 141.968
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字昭和
+    - towns:
+      - 字浅野
+    - towns:
+      - 字幌新
+    - towns:
+      - 字真布
+    - towns:
+      - 字更新
+    - towns:
+      - 字東予
+    - towns:
+      - 字共成
+    - towns:
+      - 字高穂
+    - towns:
+      - 字沼田
+    - towns:
+      - 字恵比島
+    - towns:
+      - 字北竜
 
 
   北海道 雨竜郡幌加内町:
