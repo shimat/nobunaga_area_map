@@ -3,9 +3,9 @@
 import folium
 import streamlit as st
 from streamlit_folium import st_folium
-from area_loader import load_area_data
-from town_loader import load_town_data_from_gml_zip, mod_data
-from municipality_loader import load_municipality_geojson_simplified
+from src.area_loader import load_area_data
+from src.town_loader import load_town_data_from_gml_zip, mod_data
+from src.municipality_loader import load_municipality_geojson_simplified
 import time
 
 

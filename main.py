@@ -1,10 +1,16 @@
 import pydeck
 import streamlit as st
-from area_loader import load_area_data
-from town_loader import load_town_data_from_gml_zip, mod_data
-from municipality_loader import load_municipality_data_zip
-from city_list import CITY_NAMES
 import time
+from enum import Enum
+from src.area_loader import load_area_data
+from src.town_loader import load_town_data_from_gml_zip, mod_data
+from src.municipality_loader import load_municipality_data_zip
+from src.city_list import CITY_NAMES, HOKKAIDO_SUBPREFECTURES
+
+
+class MapType(Enum):
+    NOBUNAGA_AREAS = "「信長の野望 出陣」の各エリア"
+    ALL_TOWNS = "全町名"
 
 
 st.set_page_config(
@@ -15,12 +21,10 @@ st.header("「信長の野望 出陣」エリア別石高の可視化")
 
 col_left, col_right = st.columns(2)
 
-prefecture_name = col_left.selectbox(
+prefecture_name: str = col_left.selectbox(
     label="都道府県",
     options=CITY_NAMES.keys(),
 )
-if not prefecture_name:
-    raise Exception
 city_name: str | None = col_right.selectbox(
     label="市区町村",
     options=CITY_NAMES[prefecture_name],
@@ -32,12 +36,12 @@ with st.expander("オプション"):
     with col1:
         map_type = st.radio(
             label="マップ種別",
-            options=("「信長の野望 出陣」の各エリア", "全町名"),
+            options=[t.value for t in MapType],
             horizontal=True,)
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
-            disabled=(city_name != "(全体)"))
+            disabled=(city_name != "（全体）"))
     with col2:
         map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100, step=10)
 
@@ -52,11 +56,18 @@ if city_name:
     print(f"AreaData Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
-    if city_name == "(全体)":
+    if city_name == "（全体）":
         df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
         correspondences = area_data.get_all_correspondences()
         df_mod = mod_data(df_target, correspondences, prefecture_name)
         view_state = area_data.view_state
+    elif city_name.startswith("（"):  # 北海道の各ブロック
+        target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in HOKKAIDO_SUBPREFECTURES[city_name]}
+        df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
+        correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
+        subpref_identifier = f"{prefecture_name} {city_name}"
+        df_mod = mod_data(df_target, correspondences, subpref_identifier)
+        view_state = area_data.areas[subpref_identifier].view_state
     else:
         df_target = df_org[df_org["city_name"] == city_name].copy()
         pref_city = f"{prefecture_name} {city_name}"
@@ -72,14 +83,16 @@ if city_name:
 
     fill_color: str | list[int]
     match map_type:
-        case "「信長の野望 出陣」の各エリア":
+        case MapType.NOBUNAGA_AREAS.value:
             df_show = df_mod
             fill_color = "fill_color"
             tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
-        case "全町名":
+        case MapType.ALL_TOWNS.value:
             df_show = df_target
             fill_color = [64, 64, 256, 64]
             tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
+        case _:
+            raise Exception(f"Invalid map_type '{map_type}'")
 
     layers: list[pydeck.Layer] = []
     layers.append(pydeck.Layer(
@@ -98,7 +111,7 @@ if city_name:
         auto_highlight=True,
         pickable=True,
     ))
-    if show_municipality_borders and city_name == "(全体)":
+    if show_municipality_borders and city_name == "（全体）":
         t = time.perf_counter()
         df_municipalities = load_municipality_data_zip(
             prefecture_name,
@@ -137,7 +150,7 @@ if city_name:
     # st.pydeck_chart(deck)
     st.components.v1.html(deck.to_html(as_string=True), height=map_height)
 
-    address_label = "住所" if (map_type == "全町名") else "エリア名"
+    address_label = "住所" if (map_type == MapType.ALL_TOWNS) else "エリア名"
     st.dataframe(
         df_show,
         hide_index=True,
@@ -159,7 +172,7 @@ if city_name:
         },
     )
 
-    if map_type != "全町名":
+    if map_type != MapType.ALL_TOWNS.value:
         df_uniq = df_show.drop_duplicates(subset=("city_name", "area_name"))
         df_own = df_uniq[df_uniq["own"] != 0]
         kokudaka_all_sum = df_uniq["kokudaka"].sum()

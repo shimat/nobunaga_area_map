@@ -7,7 +7,7 @@ import shapely
 import zipfile
 from os.path import splitext
 from xml.etree import ElementTree
-from area_loader import Correspondences
+from src.area_loader import Correspondences
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
 NAMESPACES = {
@@ -153,13 +153,14 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
             merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
             simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
 
-            if simple_polygon.geom_type == "Polygon":
-                coords = [list(simple_polygon.exterior.coords)]
-            elif simple_polygon.geom_type == "MultiPolygon":
-                coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
-                # st.write(new_data["address"][-1], coords)
-            else:
-                raise
+            match simple_polygon.geom_type:
+                case "Polygon":
+                    coords = [list(simple_polygon.exterior.coords)]
+                case "MultiPolygon":
+                    coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
+                    # st.write(new_data["address"][-1], coords)
+                case _:
+                    raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
 
@@ -208,4 +209,4 @@ def arrival_color(own: int) -> list[int]:
         case 2:  # 遠征
             return [0, 255, 102, 128]
         case _:
-            raise
+            raise Exception(f"Invalid value: {own=}")
