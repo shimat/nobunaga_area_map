@@ -41,7 +41,7 @@ with st.expander("オプション"):
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
-            disabled=(city_name != "（全体）"))
+            disabled=(city_name is not None and not city_name.startswith("（")))
     with col2:
         map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100, step=10)
 
@@ -111,7 +111,7 @@ if city_name:
         auto_highlight=True,
         pickable=True,
     ))
-    if show_municipality_borders and city_name == "（全体）":
+    if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
         df_municipalities = load_municipality_data_zip(
             prefecture_name,

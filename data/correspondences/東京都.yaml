@@ -15,6 +15,7 @@ areas:
       own: 1
     - towns:
       - 丸の内２丁目
+      own: 1
     - towns:
       - 丸の内３丁目
       own: 1
@@ -30,10 +31,12 @@ areas:
       - 日比谷公園
     - towns:
       - 霞が関１丁目
+      own: 1
     - towns:
       - 霞が関２丁目
     - towns:
       - 霞が関３丁目
+      own: 1
     - towns:
       - 永田町１丁目
       own: 1
@@ -44,21 +47,26 @@ areas:
       - 隼町
     - towns:
       - 平河町２丁目
+      own: 1
     - towns:
       - 平河町１丁目
       - 麹町１丁目
       - 麹町２丁目
       - 麹町３丁目
+      own: 1
     - towns:
       - 紀尾井町
+      own: 1
     - towns:
       - 麹町４丁目
       - 麹町５丁目
       - 麹町６丁目
+      own: 1
     - towns:
       - 二番町
     - towns:
       - 一番町
+      own: 1
     - towns:
       - 六番町
     - towns:
@@ -93,6 +101,7 @@ areas:
     - towns:
       - 九段南１丁目
       - 神田神保町３丁目
+      own: 1
     - towns:
       - 三崎町１丁目
       - 三崎町２丁目
@@ -100,15 +109,18 @@ areas:
       - 西神田２丁目
       - 神田神保町２丁目
       - 猿楽町２丁目
+      own: 1
     - towns:
       - 神田神保町１丁目
     - towns:
       - 一ツ橋１丁目
       - 一ツ橋２丁目
+      own: 1
     - towns:
       - 神田錦町３丁目
     - towns:
       - 大手町１丁目
+      own: 1
     - towns:
       - 大手町２丁目
       own: 1
@@ -247,12 +259,15 @@ areas:
       - 日本橋室町２丁目
       - 日本橋室町１丁目
       - 日本橋本石町１丁目
+      own: 1
     - towns:
       - 日本橋１丁目
+      own: 1
     - towns:
       - 日本橋２丁目
       - 日本橋３丁目
       - 八重洲１丁目
+      own: 1
     - towns:
       - 日本橋小網町
     - towns:
@@ -262,6 +277,7 @@ areas:
       - 日本橋茅場町２丁目
       - 日本橋茅場町３丁目
       - 八丁堀１丁目
+      own: 1
     - towns:
       - 新川１丁目
     - towns:
@@ -275,6 +291,7 @@ areas:
     - towns:
       - 京橋３丁目
       - 八重洲２丁目
+      own: 1
     - towns:
       - 八丁堀４丁目
       - 湊１丁目
@@ -290,17 +307,21 @@ areas:
     - towns:
       - 新富２丁目
       - 築地２丁目
+      own: 1
     - towns:
       - 築地３丁目
       - 築地７丁目
+      own: 1
     - towns:
       - 築地６丁目
+      own: 1
     - towns:
       - 築地５丁目
     - towns:
       - 築地１丁目
       - 築地４丁目
       - 銀座２丁目
+      own: 1
     - towns:
       - 浜離宮庭園
     - towns:
@@ -308,14 +329,19 @@ areas:
     - towns:
       - 銀座３丁目
       - 銀座４丁目
+      own: 1
     - towns:
       - 銀座５丁目
+      own: 1
     - towns:
       - 銀座６丁目
+      own: 1
     - towns:
       - 銀座７丁目
+      own: 1
     - towns:
       - 銀座８丁目
+      own: 1
     - towns:
       - 佃１丁目
       - 月島１丁目
@@ -324,23 +350,29 @@ areas:
     - towns:
       - 佃３丁目
       - 月島２丁目
+      own: 1
     - towns:
       - 月島３丁目
+      own: 1
     - towns:
       - 月島４丁目
+      own: 1
     - towns:
       - 勝どき１丁目
       - 勝どき３丁目
+      own: 1
     - towns:
       - 勝どき２丁目
       - 勝どき４丁目
       - 勝どき６丁目
+      own: 1
     - towns:
       - 勝どき５丁目
     - towns:
       - 豊海町
     - towns:
       - 晴海１丁目
+      own: 1
     - towns:
       - 晴海２丁目
     - towns:
@@ -385,23 +417,30 @@ areas:
       - 北青山２丁目
     - towns:
       - 北青山３丁目
+      own: 1
     - towns:
       - 南青山１丁目
+      own: 1
     - towns:
       - 南青山２丁目
     - towns:
       - 南青山３丁目
+      own: 1
     - towns:
       - 南青山４丁目
     - towns:
       - 南青山５丁目
+      own: 1
     - towns:
       - 南青山６丁目
       - 南青山７丁目
+      own: 1
     - towns:
       - 西麻布１丁目
+      own: 1
     - towns:
       - 西麻布２丁目
+      own: 1
     - towns:
       - 西麻布３丁目
     - towns:
@@ -436,8 +475,10 @@ areas:
       - 麻布狸穴町
       - 麻布永坂町
       - 麻布台３丁目
+      own: 1
     - towns:
       - 麻布台１丁目
+      own: 1
     - towns:
       - 六本木１丁目
     - towns:
@@ -445,23 +486,32 @@ areas:
       - 六本木４丁目
     - towns:
       - 六本木３丁目
+      own: 1
     - towns:
       - 六本木５丁目
+      own: 1
     - towns:
       - 六本木６丁目
+      own: 1
     - towns:
       - 六本木７丁目
+      own: 1
     - towns:
       - 虎ノ門１丁目
+      own: 1
     - towns:
       - 虎ノ門２丁目
+      own: 1
     - towns:
       - 虎ノ門３丁目
+      own: 1
     - towns:
       - 虎ノ門４丁目
       - 虎ノ門５丁目
+      own: 1
     - towns:
       - 西新橋１丁目
+      own: 1
     - towns:
       - 西新橋２丁目
       - 愛宕１丁目
@@ -482,7 +532,6 @@ areas:
     - towns:
       - 新橋６丁目
       - 芝公園１丁目
-      own: 1
     - towns:
       - 東新橋１丁目
       own: 1
@@ -490,6 +539,7 @@ areas:
       - 芝公園２丁目
       - 芝大門２丁目
       - 浜松町２丁目
+      own: 1
     - towns:
       - 芝公園３丁目
     - towns:
@@ -526,6 +576,7 @@ areas:
       - 芝５丁目
     - towns:
       - 三田１丁目
+      own: 1
     - towns:
       - 三田２丁目
     - towns:
@@ -561,12 +612,14 @@ areas:
       - 高輪２丁目
     - towns:
       - 高輪３丁目
+      own: 1
     - towns:
       - 高輪４丁目
     - towns:
       - 港南１丁目
     - towns:
       - 港南２丁目
+      own: 1
     - towns:
       - 港南３丁目
       own: 1
@@ -648,8 +701,10 @@ areas:
       - 大久保３丁目
     - towns:
       - 百人町１丁目
+      own: 1
     - towns:
       - 百人町２丁目
+      own: 1
     - towns:
       - 百人町３丁目
     - towns:
@@ -660,10 +715,13 @@ areas:
       - 北新宿２丁目
     - towns:
       - 北新宿３丁目
+      own: 1
     - towns:
       - 北新宿４丁目
+      own: 1
     - towns:
       - 西新宿１丁目
+      own: 1
     - towns:
       - 西新宿２丁目
     - towns:
@@ -676,10 +734,12 @@ areas:
       - 西新宿６丁目
     - towns:
       - 西新宿７丁目
+      own: 1
     - towns:
       - 西新宿８丁目
     - towns:
       - 歌舞伎町１丁目
+      own: 1
     - towns:
       - 歌舞伎町２丁目
     - towns:
@@ -689,6 +749,7 @@ areas:
     - towns:
       - 新宿３丁目
       - 新宿４丁目
+      own: 1
     - towns:
       - 新宿５丁目
     - towns:
@@ -885,10 +946,12 @@ areas:
     correspondences:
     - towns:
       - 上大崎１丁目
+      own: 1
     - towns:
       - 上大崎２丁目
     - towns:
       - 上大崎３丁目
+      own: 1
     - towns:
       - 上大崎４丁目
       - 西五反田３丁目
@@ -909,21 +972,27 @@ areas:
     - towns:
       - 東五反田１丁目
       - 東五反田４丁目
+      own: 1
     - towns:
       - 東五反田２丁目
+      own: 1
     - towns:
       - 東五反田３丁目
       - 北品川６丁目
     - towns:
       - 東五反田５丁目
+      own: 1
     - towns:
       - 北品川１丁目
+      own: 1
     - towns:
       - 北品川２丁目
+      own: 1
     - towns:
       - 北品川３丁目
     - towns:
       - 北品川４丁目
+      own: 1
     - towns:
       - 北品川５丁目
     - towns:
@@ -953,6 +1022,7 @@ areas:
       - 南品川１丁目
       - 南品川２丁目
       - 南品川３丁目
+      own: 1
     - towns:
       - 南品川４丁目
     - towns:
@@ -965,6 +1035,7 @@ areas:
       - 広町２丁目
     - towns:
       - 大崎１丁目
+      own: 1
     - towns:
       - 大崎２丁目
     - towns:
@@ -1095,6 +1166,7 @@ areas:
       own: 1
     - towns:
       - 東大井２丁目
+      own: 1
     - towns:
       - 東大井３丁目
     - towns:
@@ -1114,6 +1186,7 @@ areas:
       - 南大井２丁目
     - towns:
       - 南大井３丁目
+      own: 1
     - towns:
       - 南大井４丁目
     - towns:
@@ -1380,11 +1453,13 @@ areas:
       - 大森北２丁目
     - towns:
       - 大森北３丁目
+      own: 1
     - towns:
       - 大森北４丁目
       - 大森北５丁目
     - towns:
       - 大森北６丁目
+      own: 1
     - towns:
       - 大森東１丁目
     - towns:
@@ -1412,14 +1487,18 @@ areas:
       - 大森西１丁目
     - towns:
       - 大森西２丁目
+      own: 1
     - towns:
       - 大森西３丁目
+      own: 1
     - towns:
       - 大森西４丁目
     - towns:
       - 大森西５丁目
+      own: 1
     - towns:
       - 大森西６丁目
+      own: 1
     - towns:
       - 大森西７丁目
     - towns:
@@ -1450,18 +1529,23 @@ areas:
       - 西糀谷２丁目
     - towns:
       - 西糀谷３丁目
+      own: 1
     - towns:
       - 西糀谷４丁目
+      own: 1
     - towns:
       - 羽田１丁目
+      own: 1
     - towns:
       - 羽田２丁目
     - towns:
       - 羽田３丁目
     - towns:
       - 羽田４丁目
+      own: 1
     - towns:
       - 羽田５丁目
+      own: 1
     - towns:
       - 羽田６丁目
     - towns:
@@ -1506,6 +1590,7 @@ areas:
       - 西六郷４丁目
     - towns:
       - 南蒲田１丁目
+      own: 1
     - towns:
       - 南蒲田２丁目
     - towns:
@@ -1518,10 +1603,13 @@ areas:
       - 蒲田１丁目
     - towns:
       - 蒲田２丁目
+      own: 1
     - towns:
       - 蒲田３丁目
+      own: 1
     - towns:
       - 蒲田４丁目
+      own: 1
     - towns:
       - 蒲田５丁目
     - towns:
@@ -1798,6 +1886,7 @@ areas:
       - 大山町
     - towns:
       - 上原１丁目
+      own: 1
     - towns:
       - 上原２丁目
     - towns:
@@ -1816,6 +1905,7 @@ areas:
       - 代々木５丁目
     - towns:
       - 代々木神園町
+      own: 1
     - towns:
       - 富ヶ谷１丁目
     - towns:
@@ -1832,6 +1922,7 @@ areas:
       - 神南１丁目
     - towns:
       - 神南２丁目
+      own: 1
     - towns:
       - 道玄坂１丁目
     - towns:
@@ -1852,12 +1943,15 @@ areas:
     - towns:
       - 代官山町
       - 恵比寿西２丁目
+      own: 1
     - towns:
       - 恵比寿西１丁目
+      own: 1
     - towns:
       - 恵比寿南１丁目
       - 恵比寿南２丁目
       - 恵比寿南３丁目
+      own: 1
     - towns:
       - 恵比寿１丁目
     - towns:
@@ -1866,6 +1960,7 @@ areas:
       - 恵比寿３丁目
     - towns:
       - 恵比寿４丁目
+      own: 1
     - towns:
       - 広尾１丁目
     - towns:
@@ -1880,39 +1975,53 @@ areas:
       - 東１丁目
     - towns:
       - 東２丁目
+      own: 1
     - towns:
       - 東３丁目
+      own: 1
     - towns:
       - 東４丁目
     - towns:
       - 渋谷１丁目
+      own: 1
     - towns:
       - 渋谷２丁目
+      own: 1
     - towns:
       - 渋谷３丁目
+      own: 1
     - towns:
       - 渋谷４丁目
+      own: 1
     - towns:
       - 神宮前１丁目
+      own: 1
     - towns:
       - 神宮前２丁目
     - towns:
       - 神宮前３丁目
     - towns:
       - 神宮前４丁目
+      own: 1
     - towns:
       - 神宮前５丁目
+      own: 1
     - towns:
       - 神宮前６丁目
+      own: 1
     - towns:
       - 千駄ヶ谷１丁目
+      own: 1
     - towns:
       - 千駄ヶ谷２丁目
       - 千駄ヶ谷３丁目
+      own: 1
     - towns:
       - 千駄ヶ谷４丁目
+      own: 1
     - towns:
       - 千駄ヶ谷５丁目
+      own: 1
     - towns:
       - 千駄ヶ谷６丁目
 
