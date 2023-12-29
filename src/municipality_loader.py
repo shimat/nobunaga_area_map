@@ -4,14 +4,12 @@ import zipfile
 import shapely
 import pandas as pd
 import streamlit as st
-from typing import Iterable
-from collections.abc import Container
 
 
 @st.cache_resource
 def load_municipality_data_zip(
     prefecture: str,
-    target_city_names: Container[str] | Iterable[str]
+    target_city_names: set[str]
 ) -> pd.DataFrame:
     with zipfile.ZipFile(f"municipality/{prefecture}.zip", 'r') as zf:
         geojson_file_name = zf.namelist()[0]
@@ -75,7 +73,7 @@ def _simplify_geojson_coordinates(geojson: dict) -> None:
 
 def _parse_municipality_json(
     geojson: dict,
-    target_city_names: Container[str] | Iterable[str]
+    target_city_names: set[str]
 ) -> pd.DataFrame:
     prefecture_names: list[str] = []
     city_names: list[str] = []

@@ -1,4 +1,4 @@
-CITY_NAMES = {
+CITY_NAMES: dict[str, tuple[str, ...]] = {
     "北海道": (
         "札幌市中央区",
         "札幌市北区",
@@ -146,7 +146,7 @@ CITY_NAMES = {
     ),
 }
 
-HOKKAIDO_SUBPREFECTURES = {
+HOKKAIDO_SUBPREFECTURES: dict[str, tuple[str, ...]] = {
     "（渡島・檜山）": (
         "函館市",
         "北斗市",

@@ -113,9 +113,13 @@ if city_name:
     ))
     if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
+        if ("全体" not in city_name) and city_name.startswith("（"):  # 北海道の各ブロック
+            target_cities = HOKKAIDO_SUBPREFECTURES[city_name]
+        else:
+            target_cities = CITY_NAMES[prefecture_name]
         df_municipalities = load_municipality_data_zip(
             prefecture_name,
-            set(CITY_NAMES[prefecture_name]))
+            set(target_cities))
         print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")
         layers.append(pydeck.Layer(
             "PolygonLayer",
