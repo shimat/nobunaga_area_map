@@ -9418,6 +9418,7 @@ areas:
       - 日ノ浜町
     - towns:
       - 川上町
+      own: 2
     - towns:
       - 大澗町
     - towns:
@@ -10185,6 +10186,7 @@ areas:
       - 神居町西丘
     - towns:
       - 神居町豊里
+      own: 2
     - towns:
       - 神居町富岡
       own: 2
@@ -11358,6 +11360,7 @@ areas:
     - towns:
       - 新富１条２丁目
       - 新富２条２丁目
+      own: 2
     - towns:
       - 新富１条１丁目
     - towns:
@@ -11401,6 +11404,7 @@ areas:
       - 東旭川町瑞穂
     - towns:
       - 東旭川町米原
+      own: 2
     - towns:
       - 東旭川町豊田
       own: 2
