@@ -166,7 +166,7 @@ if city_name:
             "address": address_label,
             "area": st.column_config.NumberColumn("面積[㎡]", step="0"),
             "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
-            "sub_towns": st.column_config.ListColumn("含む町名"),
+            # "sub_towns": st.column_config.ListColumn("含む町名"),
             "sub_towns_suffix": None,
             "lonlat_coordinates": None,
             "pref_city": None,

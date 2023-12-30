@@ -123,7 +123,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
         "area_name": [],
         "area": [],
         "kokudaka": [],
-        "sub_towns": [],
+        # "sub_towns": [],
         "sub_towns_suffix": [],
         "own": [],
         "fill_color": [],
@@ -138,7 +138,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
             sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
             if sub_rows.empty:
                 raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
-            
+
             area_name = get_area_name(sub_rows)
             prefecture_name = sub_rows.iloc[0]["prefecture_name"]
             city_name = sub_rows.iloc[0]["city_name"]
@@ -178,7 +178,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
                 new_data["area_name"].append(area_name)
                 new_data["area"].append(round(area))
                 new_data["kokudaka"].append(round(kokudaka, 2))
-                new_data["sub_towns"].append(simplified_sub_towns)
+                # new_data["sub_towns"].append(simplified_sub_towns)
                 new_data["sub_towns_suffix"].append(sub_towns_suffix)
                 new_data["lonlat_coordinates"].append([c])
                 new_data["own"].append(own)
