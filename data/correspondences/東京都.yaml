@@ -2716,8 +2716,10 @@ areas:
       - 平井２丁目
     - towns:
       - 平井３丁目
+      own: 1
     - towns:
       - 平井４丁目
+      own: 1
     - towns:
       - 平井５丁目
     - towns:
