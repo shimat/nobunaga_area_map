@@ -2,7 +2,7 @@ import more_itertools
 import zipfile
 import pandas as pd
 import functools
-from os.path import splitext
+import os
 from xml.etree import ElementTree
 import shapely
 import streamlit as st
@@ -19,7 +19,7 @@ NAMESPACES = {
 
 def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, 'r') as zf:
-        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
+        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: os.path.splitext(f)[1] == ".gml")
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, 'r') as file:
@@ -90,7 +90,10 @@ prefecture = st.selectbox(
 if prefecture:
     df = load_town_data_from_gml_zip(f"../gml/経済センサス_活動調査_{prefecture}.zip")
     st.dataframe(df)
-    df.to_json(f"out/{prefecture}.json", index=False, force_ascii=False, indent=2)
+
+    os.makedirs("out", exist_ok=True)
+    df.to_json(f"out/{prefecture}.json", index=False, force_ascii=False, indent=None)
+    # df.to_json(f"out/{prefecture}.zip", index=False, force_ascii=False, indent=2, compression="zip")
 
     deck = pydeck.Deck(
         layers=[

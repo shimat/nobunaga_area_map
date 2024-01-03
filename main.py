@@ -4,8 +4,8 @@ import time
 from enum import Enum
 from src.area_loader import load_area_data
 from src.town_loader import load_town_data_from_gml_zip, mod_data
-from src.municipality_loader import load_municipality_data_zip
-from src.city_list import CITY_NAMES, HOKKAIDO_SUBPREFECTURES
+from src.municipality_loader import load_municipality_borders_from_json
+from src.city_list import ORG_CITY_NAMES, CITY_NAMES, HOKKAIDO_SUBPREFECTURES
 
 
 class MapType(Enum):
@@ -102,7 +102,7 @@ if city_name:
         filled=True,
         extruded=False,
         wireframe=True,
-        line_width_scale=20,
+        line_width_scale=15,
         # line_width_min_pixels=0.1,
         get_polygon="lonlat_coordinates",
         get_line_color=[255, 255, 255],
@@ -114,10 +114,10 @@ if city_name:
     if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
         if city_name == "（全体）":
-            target_cities = CITY_NAMES[prefecture_name]
+            target_cities = ORG_CITY_NAMES[prefecture_name]
         else:
             target_cities = HOKKAIDO_SUBPREFECTURES[city_name]
-        df_municipalities = load_municipality_data_zip(
+        df_municipalities = load_municipality_borders_from_json(
             prefecture_name,
             set(target_cities))
         print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")

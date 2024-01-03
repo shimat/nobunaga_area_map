@@ -1,4 +1,4 @@
-CITY_NAMES: dict[str, tuple[str, ...]] = {
+ORG_CITY_NAMES: dict[str, tuple[str, ...]] = {
     "北海道": (
         "札幌市中央区",
         "札幌市北区",
@@ -238,6 +238,8 @@ HOKKAIDO_SUBPREFECTURES: dict[str, tuple[str, ...]] = {
         "札幌市清田区",
     ),
 }
+
+CITY_NAMES = ORG_CITY_NAMES.copy()
 
 CITY_NAMES["北海道"] = tuple(HOKKAIDO_SUBPREFECTURES.keys()) + CITY_NAMES["北海道"]
 
