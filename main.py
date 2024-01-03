@@ -86,7 +86,7 @@ if city_name:
         case MapType.NOBUNAGA_AREAS.value:
             df_show = df_mod
             fill_color = "fill_color"
-            tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n推定石高:{kokudaka}"
+            tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n石高:{kokudaka_str}"
         case MapType.ALL_TOWNS.value:
             df_show = df_target
             fill_color = [64, 64, 256, 64]
@@ -161,11 +161,13 @@ if city_name:
         use_container_width=True,
         column_config={
             "prefecture_name": st.column_config.TextColumn("都道府県", width="small"),
-            "city_name": st.column_config.TextColumn("市区町村", width="small"),
-            "area_name": st.column_config.TextColumn("エリア名", width="small"),
+            "city_name": st.column_config.TextColumn("市区町村"),
+            "area_name": st.column_config.TextColumn("エリア名"),
             "address": address_label,
-            "area": st.column_config.NumberColumn("面積[㎡]", step="0"),
-            "kokudaka": st.column_config.NumberColumn("推定石高", format="%.2f"),
+            "area": st.column_config.NumberColumn("面積[㎡]", step="0", width="small"),
+            "kokudaka": st.column_config.NumberColumn("石高", format="%.2f", width="small"),
+            "kokudaka_str": None,
+            "is_observed_kokudaka": st.column_config.CheckboxColumn("実測石高か", width="small", help="石高が実測値か、回帰分析による推定値かのフラグ"),
             # "sub_towns": st.column_config.ListColumn("含む町名"),
             "sub_towns_suffix": None,
             "lonlat_coordinates": None,

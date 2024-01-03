@@ -1,9 +1,9 @@
 from collections.abc import Iterable
 from pathlib import Path
 from pydantic import BaseModel, Field
-from typing import Literal
+from typing import Literal, Optional
 import pydantic_yaml
-import streamlit as st
+# import streamlit as st
 
 
 class ViewState(BaseModel):
@@ -15,6 +15,7 @@ class ViewState(BaseModel):
 class OneCorrespondence(BaseModel):
     own: Literal[0, 1, 2] = Field(default=0)
     towns: tuple[str, ...] = Field(min_length=1)
+    koku: Optional[int] = Field(default=None, ge=0)
 
 
 class Correspondences(BaseModel):

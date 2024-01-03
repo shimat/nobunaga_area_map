@@ -6,6 +6,7 @@ import streamlit as st
 import shapely
 import zipfile
 from os.path import splitext
+from typing import NamedTuple
 from xml.etree import ElementTree
 from src.area_loader import Correspondences
 
@@ -16,6 +17,11 @@ NAMESPACES = {
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "xlink": "http://www.w3.org/1999/xlink"
 }
+
+
+class Kokudaka(NamedTuple):
+    value: float
+    observed: bool
 
 
 @st.cache_resource
@@ -78,43 +84,6 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-def load_town_data_(tree: ElementTree) -> pd.DataFrame:
-    prefecture_names: list[str] = []
-    city_names: list[str] = []
-    pref_cities: list[str] = []
-    town_names: list[str] = []
-    areas: list[float] = []
-    lonlat_lists: list[list[list[list[float]]]] = []
-
-    for feature_member in tree.findall("gml:featureMember", NAMESPACES):
-        elem = feature_member[0]
-        prefecture_names.append(elem.find("fme:PREF_NAME", NAMESPACES).text)
-        city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
-        town_name = elem.find("fme:S_NAME", NAMESPACES).text
-        city_names.append(city_name)
-        pref_cities.append(f"{prefecture_names[-1]} {city_name}")
-        town_names.append(town_name)
-        areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
-
-        pos_list_elem = elem.find("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior//gml:LinearRing//gml:posList", NAMESPACES)
-        pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
-        lonlat_list = [[[pos_list[i*2+1], pos_list[i*2]] for i in range(len(pos_list) // 2)]]
-        lonlat_lists.append(lonlat_list)
-
-    data = {
-        "prefecture_name": prefecture_names,
-        "city_name": city_names,
-        "pref_city": pref_cities,
-        "town_name": town_names,
-        "area": areas,
-        "lonlat_coordinates": lonlat_lists,
-    }
-    return pd.DataFrame(
-        data=data,
-        columns=data.keys()
-    )
-
-
 @st.cache_data
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
     new_data: dict[str, list] = {
@@ -123,6 +92,8 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
         "area_name": [],
         "area": [],
         "kokudaka": [],
+        "kokudaka_str": [],
+        "is_observed_kokudaka": [],
         # "sub_towns": [],
         "sub_towns_suffix": [],
         "own": [],
@@ -143,9 +114,17 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
             prefecture_name = sub_rows.iloc[0]["prefecture_name"]
             city_name = sub_rows.iloc[0]["city_name"]
             area: float = sub_rows["area"].sum()
-            kokudaka = estimate_kokudaka(area)
 
-            # st.write(new_data["address"][-1], sub_rows)
+            estimated_kokudaka = estimate_kokudaka(area)
+            if correespondence.koku:
+                kokudaka = correespondence.koku
+                kokudaka_str = f"{correespondence.koku} ({round(estimated_kokudaka, 2)})"
+                is_observed_kokudaka = True
+            else:
+                kokudaka = estimated_kokudaka
+                kokudaka_str = f"{round(estimated_kokudaka, 2)} (推定)"
+                is_observed_kokudaka = False
+
             polygons = [shapely.geometry.Polygon(c[0])
                         for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
@@ -177,7 +156,9 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
                 new_data["city_name"].append(city_name)
                 new_data["area_name"].append(area_name)
                 new_data["area"].append(round(area))
-                new_data["kokudaka"].append(round(kokudaka, 2))
+                new_data["kokudaka"].append(kokudaka)
+                new_data["kokudaka_str"].append(kokudaka_str)
+                new_data["is_observed_kokudaka"].append(is_observed_kokudaka)
                 # new_data["sub_towns"].append(simplified_sub_towns)
                 new_data["sub_towns_suffix"].append(sub_towns_suffix)
                 new_data["lonlat_coordinates"].append([c])
