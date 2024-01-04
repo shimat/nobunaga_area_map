@@ -9587,12 +9587,16 @@ areas:
       - 新二見町
     - towns:
       - 浜町
+      own: 2
+      koku: 63
     - towns:
       - 館町
     - towns:
       - 泊町
     - towns:
       - 弁才町
+      own: 2
+      koku: 66
     - towns:
       - 瀬田来町
       own: 2
@@ -9889,8 +9893,12 @@ areas:
       - 日吉町３丁目
     - towns:
       - 日吉町４丁目
+      own: 2
+      koku: 24
     - towns:
       - 滝沢町
+      own: 2
+      koku: 41
     - towns:
       - 見晴町
     - towns:
@@ -11191,6 +11199,8 @@ areas:
       - 大町２条５丁目
       - 大町２条４丁目
       - 大町２条３丁目
+      own: 2
+      koku: 12
     - towns:
       - 大町３条９丁目
       - 大町３条８丁目
@@ -11359,6 +11369,8 @@ areas:
       - 川端町５条７丁目
       - 川端町４条８丁目
       - 川端町４条７丁目
+      own: 2
+      koku: 12
     - towns:
       - 川端町６条１０丁目
       - 川端町６条９丁目
@@ -12816,6 +12828,8 @@ areas:
       - 東７条２丁目
       - 東８条３丁目
       - 東８条２丁目
+      own: 2
+      koku: 12
     - towns:
       - 東８条５丁目
       - 東８条４丁目
@@ -12953,6 +12967,8 @@ areas:
       - ４条通１６丁目
       - ４条通１７丁目
       - ４条通１８丁目
+      own: 2
+      koku: 14
     - towns:
       - ８条通１５丁目
       - ８条通１６丁目
@@ -13137,6 +13153,8 @@ areas:
       - 曙２条３丁目
       - 曙３条３丁目
       - 曙３条２丁目
+      own: 2
+      koku: 12
     - towns:
       - ３条西３丁目
       - ３条西２丁目
@@ -13168,6 +13186,8 @@ areas:
       - １条通２丁目
       - 宮下通１丁目
       - 宮下通２丁目
+      own: 2
+      koku: 13
     - towns:
       - ３条通３丁目
       - ２条通３丁目
@@ -13202,6 +13222,8 @@ areas:
     - towns:
       - 宮下通７丁目
       - 神楽１条７丁目
+      own: 2
+      koku: 11
     - towns:
       - １条通９丁目
       - 宮下通８丁目
@@ -13254,6 +13276,8 @@ areas:
       - １条通１５丁目
       - 宮下通１３丁目
       - 宮下通１５丁目
+      own: 2
+      koku: 11
     - towns:
       - ３条通１３丁目
       - ３条通１４丁目
@@ -16019,7 +16043,6 @@ areas:
       - 幾春別栗丘町
     - towns:
       - 幾春別山手町
-
 
 
   北海道 千歳市:
@@ -18921,6 +18944,67 @@ areas:
       - 字滝瀬
 
 
+  北海道 瀬棚郡今金町:
+    view_state:
+      latitude: 42.439
+      longitude: 140.096
+      zoom: 9.5
+    correspondences:
+    - towns:
+      - 字美利河
+    - towns:
+      - 字宮島
+    - towns:
+      - 字花石
+    - towns:
+      - 字中里
+    - towns:
+      - 字奥沢
+    - towns:
+      - 字住吉
+    - towns:
+      - 字種川
+    - towns:
+      - 字光台
+    - towns:
+      - 字御影
+    - towns:
+      - 字鈴岡
+    - towns:
+      - 字神丘
+    - towns:
+      - 字今金
+    - towns:
+      - 字田代
+    - towns:
+      - 字鈴金
+    - towns:
+      - 字豊田
+    - towns:
+      - 字金原
+    - towns:
+      - 字八束
+    - towns:
+      - 字日進
+    - towns:
+      - 字旭台
+    - towns:
+      - 字白石
+    - towns:
+      - 字稲穂
+
+  北海道 久遠郡せたな町:
+    view_state:
+      latitude: 42.382
+      longitude: 139.860
+      zoom: 9.0
+    correspondences:
+    - towns:
+      - 瀬棚区北島歌
+    - towns:
+      - 瀬棚区島歌
+
+
   北海道 島牧郡島牧村:
     view_state:
       latitude: 42.670
@@ -21020,6 +21104,8 @@ areas:
     correspondences:
     - towns:
       - 字秩父別
+      own: 2
+      koku: 192
     - towns:
       - ９区
     - towns:
