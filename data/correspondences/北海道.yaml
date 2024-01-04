@@ -18993,6 +18993,7 @@ areas:
     - towns:
       - 字稲穂
 
+
   北海道 久遠郡せたな町:
     view_state:
       latitude: 42.382
@@ -19003,7 +19004,105 @@ areas:
       - 瀬棚区北島歌
     - towns:
       - 瀬棚区島歌
+    - towns:
+      - 瀬棚区西大里
+    - towns:
+      - 瀬棚区東大里
+    - towns:
+      - 瀬棚区元浦
+    - towns:
+      - 瀬棚区共和
+    - towns:
+      - 瀬棚区三本杉
+      - 瀬棚区本町
+    - towns:
+      - 瀬棚区南川
+    - towns:
+      - 北檜山区小倉山
+    - towns:
+      - 北檜山区松岡
+    - towns:
+      - 北檜山区東丹羽
+    - towns:
+      - 北檜山区丹羽
+    - towns:
+      - 北檜山区西丹羽
+    - towns:
+      - 北檜山区兜野
+    - towns:
+      - 北檜山区豊岡
+    - towns:
+      - 北檜山区愛知
+    - towns:
+      - 北檜山区徳島
+    - towns:
+      - 北檜山区北檜山
+    - towns:
+      - 北檜山区栄
+    - towns:
+      - 北檜山区共和
+    - towns:
+      - 北檜山区太櫓
+    - towns:
+      - 北檜山区新成
+    - towns:
+      - 北檜山区小川
+    - towns:
+      - 北檜山区若松
+    - towns:
+      - 北檜山区富里
+    - towns:
+      - 北檜山区二俣
+    - towns:
+      - 大成区太田
+    - towns:
+      - 大成区宮野
+    - towns:
+      - 大成区平浜
+    - towns:
+      - 大成区貝取澗
+    - towns:
+      - 大成区長磯
+    - towns:
+      - 大成区花歌
+    - towns:
+      - 大成区久遠
+    - towns:
+      - 大成区本陣
+    - towns:
+      - 大成区都
+    - towns:
+      - 大成区上浦
+      - 大成区富磯
 
+
+  北海道 奥尻郡奥尻町:
+    view_state:
+      latitude: 42.151
+      longitude: 139.468
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字稲穂
+    - towns:
+      - 字宮津
+    - towns:
+      - 字球浦
+    - towns:
+      - 字奥尻
+    - towns:
+      - 字赤石
+    - towns:
+      - 字湯浜
+    - towns:
+      - 字松江
+    - towns:
+      - 字富里
+    - towns:
+      - 字米岡
+    - towns:
+      - 字青苗
+  
 
   北海道 島牧郡島牧村:
     view_state:
