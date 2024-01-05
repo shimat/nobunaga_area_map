@@ -9,6 +9,7 @@ from os.path import splitext
 from typing import NamedTuple
 from xml.etree import ElementTree
 from src.area_loader import Correspondences
+from src.conditional_decorator import conditional_decorator
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
 NAMESPACES = {
@@ -84,7 +85,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     )
 
 
-@st.cache_data
+@conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
     new_data: dict[str, list] = {
         "prefecture_name": [],
