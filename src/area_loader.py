@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
 import pydantic_yaml
-# import streamlit as st
+import streamlit as st
 
 
 class ViewState(BaseModel):
