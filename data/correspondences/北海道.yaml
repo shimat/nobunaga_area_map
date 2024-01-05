@@ -9580,6 +9580,7 @@ areas:
       own: 2
     - towns:
       - 原木町
+      own: 2
     - towns:
       - 丸山町
       own: 2
@@ -9591,6 +9592,8 @@ areas:
       koku: 63
     - towns:
       - 館町
+      own: 2
+      koku: 33
     - towns:
       - 泊町
     - towns:
@@ -9936,8 +9939,10 @@ areas:
       own: 2
     - towns:
       - 山の手２丁目
+      own: 2
     - towns:
       - 山の手３丁目
+      own: 2
     - towns:
       - 東山１丁目
       - 神山２丁目
@@ -13460,6 +13465,267 @@ areas:
       - 南９条通２６丁目
       - 東光１３条１丁目
 
+
+  北海道 室蘭市:
+    view_state:
+      latitude: 42.365
+      longitude: 140.993
+      zoom: 11.0
+    correspondences:
+    - towns:
+      - 香川町
+    - towns:
+      - 神代町
+    - towns:
+      - 水元町
+    - towns:
+      - 崎守町
+    - towns:
+      - 石川町
+    - towns:
+      - 白鳥台１丁目
+    - towns:
+      - 白鳥台２丁目
+    - towns:
+      - 白鳥台３丁目
+    - towns:
+      - 白鳥台４丁目
+    - towns:
+      - 白鳥台５丁目
+    - towns:
+      - 陣屋町１丁目
+    - towns:
+      - 陣屋町２丁目
+    - towns:
+      - 陣屋町３丁目
+    - towns:
+      - 陣屋町４丁目
+    - towns:
+      - 陣屋町５丁目
+    - towns:
+      - 幌萌町
+    - towns:
+      - 本輪西町１丁目
+    - towns:
+      - 本輪西町２丁目
+    - towns:
+      - 本輪西町３丁目
+    - towns:
+      - 本輪西町４丁目
+    - towns:
+      - 本輪西町５丁目
+    - towns:
+      - 柏木町
+    - towns:
+      - 港北町１丁目
+    - towns:
+      - 港北町２丁目
+    - towns:
+      - 港北町３丁目
+    - towns:
+      - 港北町４丁目
+    - towns:
+      - 港北町５丁目
+    - towns:
+      - 高平町
+    - towns:
+      - 八丁平１丁目
+    - towns:
+      - 八丁平２丁目
+    - towns:
+      - 八丁平３丁目
+    - towns:
+      - 八丁平４丁目
+    - towns:
+      - 八丁平５丁目
+    - towns:
+      - 天神町
+    - towns:
+      - 中島本町１丁目
+    - towns:
+      - 中島本町２丁目
+    - towns:
+      - 中島本町３丁目
+    - towns:
+      - 知利別町１丁目
+    - towns:
+      - 知利別町２丁目
+    - towns:
+      - 知利別町３丁目
+    - towns:
+      - 知利別町４丁目
+    - towns:
+      - 中島町１丁目
+    - towns:
+      - 中島町２丁目
+    - towns:
+      - 中島町３丁目
+    - towns:
+      - 中島町４丁目
+    - towns:
+      - 宮の森町１丁目
+    - towns:
+      - 宮の森町２丁目
+    - towns:
+      - 宮の森町３丁目
+    - towns:
+      - 宮の森町４丁目
+    - towns:
+      - 高砂町１丁目
+    - towns:
+      - 高砂町２丁目
+    - towns:
+      - 高砂町３丁目
+    - towns:
+      - 高砂町４丁目
+    - towns:
+      - 高砂町５丁目
+    - towns:
+      - 日の出町１丁目
+    - towns:
+      - 日の出町２丁目
+    - towns:
+      - 日の出町３丁目
+    - towns:
+      - 寿町１丁目
+    - towns:
+      - 寿町２丁目
+    - towns:
+      - 寿町３丁目
+    - towns:
+      - 東町１丁目
+    - towns:
+      - 東町２丁目
+    - towns:
+      - 東町３丁目
+    - towns:
+      - 東町４丁目
+    - towns:
+      - 東町５丁目
+    - towns:
+      - 仲町
+    - towns:
+      - 輪西町１丁目
+    - towns:
+      - 輪西町２丁目
+    - towns:
+      - 輪西町３丁目
+    - towns:
+      - みゆき町１丁目
+    - towns:
+      - みゆき町２丁目
+    - towns:
+      - みゆき町３丁目
+    - towns:
+      - 大沢町１丁目
+    - towns:
+      - 大沢町２丁目
+    - towns:
+      - 大沢町３丁目
+    - towns:
+      - 御崎町１丁目
+    - towns:
+      - 御崎町２丁目
+    - towns:
+      - 御前水町１丁目
+    - towns:
+      - 御前水町２丁目
+    - towns:
+      - 御前水町３丁目
+    - towns:
+      - 母恋南町１丁目
+    - towns:
+      - 母恋南町２丁目
+    - towns:
+      - 母恋南町３丁目
+    - towns:
+      - 母恋南町４丁目
+    - towns:
+      - 母恋南町５丁目
+    - towns:
+      - 母恋北町１丁目
+    - towns:
+      - 母恋北町２丁目
+    - towns:
+      - 母恋北町３丁目
+    - towns:
+      - 茶津町
+    - towns:
+      - 入江町
+    - towns:
+      - 新富町１丁目
+    - towns:
+      - 新富町２丁目
+    - towns:
+      - 舟見町１丁目
+    - towns:
+      - 舟見町２丁目
+    - towns:
+      - 山手町１丁目
+    - towns:
+      - 山手町２丁目
+    - towns:
+      - 山手町３丁目
+      - 中央町３丁目
+    - towns:
+      - 幸町
+      - 本町１丁目
+      - 本町２丁目
+      - 栄町１丁目
+      - 栄町２丁目
+    - towns:
+      - 海岸町１丁目
+    - towns:
+      - 海岸町２丁目
+      - 海岸町３丁目
+      - 中央町１丁目
+      - 中央町２丁目
+      - 中央町４丁目
+    - towns:
+      - 常盤町
+    - towns:
+      - 清水町１丁目
+    - towns:
+      - 清水町２丁目
+    - towns:
+      - 幕西町
+    - towns:
+      - 沢町
+    - towns:
+      - 西小路町
+    - towns:
+      - 緑町
+    - towns:
+      - 築地町
+    - towns:
+      - 小橋内町１丁目
+    - towns:
+      - 小橋内町２丁目
+    - towns:
+      - 増市町１丁目
+    - towns:
+      - 増市町２丁目
+    - towns:
+      - 絵鞆町１丁目
+    - towns:
+      - 絵鞆町２丁目
+    - towns:
+      - 絵鞆町３丁目
+    - towns:
+      - 絵鞆町４丁目
+    - towns:
+      - 港南町１丁目
+    - towns:
+      - 港南町２丁目
+    - towns:
+      - 祝津町１丁目
+    - towns:
+      - 祝津町２丁目
+    - towns:
+      - 祝津町３丁目
+    - towns:
+      - 祝津町４丁目
+  
 
   北海道 夕張市:
     view_state:
@@ -17017,6 +17283,85 @@ areas:
       - 大滝区北湯沢温泉町
       own: 1
 
+    - towns:
+      - 有珠町
+    - towns:
+      - 北有珠町
+    - towns:
+      - 東有珠町
+    - towns:
+      - 大平町
+    - towns:
+      - 向有珠町
+    - towns:
+      - 南有珠町
+    - towns:
+      - 若生町
+    - towns:
+      - 長和町
+    - towns:
+      - 上長和町
+    - towns:
+      - 上館山町
+    - towns:
+      - 西関内町
+    - towns:
+      - 志門気町
+    - towns:
+      - 喜門別町
+    - towns:
+      - 東関内町
+    - towns:
+      - 乾町
+    - towns:
+      - 館山下町
+    - towns:
+      - 館山町
+    - towns:
+      - 山下町
+    - towns:
+      - 西浜町
+    - towns:
+      - 末永町
+    - towns:
+      - 竹原町
+    - towns:
+      - 梅本町
+    - towns:
+      - 松ケ枝町
+    - towns:
+      - 清住町
+    - towns:
+      - 幌美内町
+    - towns:
+      - 舟岡町
+    - towns:
+      - 弄月町
+    - towns:
+      - 萩原町
+    - towns:
+      - 北稀府町
+    - towns:
+      - 中稀府町
+    - towns:
+      - 南稀府町
+    - towns:
+      - 北黄金町
+    - towns:
+      - 南黄金町
+    - towns:
+      - 大町
+      - 鹿島町
+    - towns:
+      - 元町
+    - towns:
+      - 錦町
+    - towns:
+      - 網代町
+      - 東浜町
+    - towns:
+      - 旭町
+
 
   北海道 北広島市:
     view_state:
@@ -19337,6 +19682,94 @@ areas:
       - 字西ノ原
 
 
+  北海道 虻田郡真狩村:
+    view_state:
+      latitude: 42.744
+      longitude: 140.802
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字社
+    - towns:
+      - 字新陽
+    - towns:
+      - 字泉
+    - towns:
+      - 字美原
+    - towns:
+      - 字共明
+    - towns:
+      - 字光
+    - towns:
+      - 字見晴
+    - towns:
+      - 字豊川
+    - towns:
+      - 字加野
+    - towns:
+      - 字川崎
+    - towns:
+      - 字神里
+    - towns:
+      - 字南部
+    - towns:
+      - 字桜川
+    - towns:
+      - 字富里
+    - towns:
+      - 字緑岡
+    - towns:
+      - 字真狩
+
+
+  北海道 虻田郡ニセコ町:
+    view_state:
+      latitude: 42.780 
+      longitude: 140.674
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 字ニセコ
+    - towns:
+      - 字東山
+    - towns:
+      - 字曽我
+    - towns:
+      - 字有島
+    - towns:
+      - 字羊蹄
+    - towns:
+      - 字近藤
+    - towns:
+      - 字元町
+    - towns:
+      - 字富士見
+    - towns:
+      - 字中央通
+    - towns:
+      - 字本通
+    - towns:
+      - 字里見
+    - towns:
+      - 字富川
+    - towns:
+      - 字福井
+    - towns:
+      - 字西富
+    - towns:
+      - 字桂台
+    - towns:
+      - 字絹丘
+    - towns:
+      - 字黒川
+    - towns:
+      - 字宮田
+    - towns:
+      - 字豊里
+    - towns:
+      - 字峠
+  
+
   北海道 余市郡余市町:
     view_state:
       latitude: 43.191
@@ -20240,7 +20673,6 @@ areas:
       - 追分若草２丁目
     - towns:
       - 追分若草３丁目
-
 
 
   北海道 石狩郡当別町:
@@ -21203,8 +21635,6 @@ areas:
     correspondences:
     - towns:
       - 字秩父別
-      own: 2
-      koku: 192
     - towns:
       - ９区
     - towns:
@@ -21237,6 +21667,8 @@ areas:
       - 字南山
     - towns:
       - 字秩父別
+      own: 2
+      koku: 192
 
 
   北海道 雨竜郡沼田町:
