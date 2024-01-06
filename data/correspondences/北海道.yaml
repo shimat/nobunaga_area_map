@@ -9596,6 +9596,8 @@ areas:
       koku: 33
     - towns:
       - 泊町
+      own: 2
+      koku: 14
     - towns:
       - 弁才町
       own: 2
@@ -9608,6 +9610,8 @@ areas:
       own: 2
     - towns:
       - 釜谷町
+      own: 2
+      koku: 65
     - towns:
       - 小安町
     - towns:
@@ -9913,6 +9917,8 @@ areas:
       own: 1
     - towns:
       - 西旭岡町３丁目
+      own: 2
+      koku: 22
     - towns:
       - 米原町
       own: 1
@@ -10021,15 +10027,17 @@ areas:
     correspondences:
     - towns:
       - 銭函５丁目
-      own: 2
+      own: 1
     - towns:
       - 銭函４丁目
-      own: 2
+      own: 1
     - towns:
       - 銭函３丁目
       own: 1
     - towns:
       - 銭函２丁目
+      own: 1
+      koku: 28
     - towns:
       - 銭函１丁目
     - towns:
@@ -13285,6 +13293,8 @@ areas:
     - towns:
       - 宮下通１４丁目
       - 宮前１条２丁目
+      own: 2
+      koku: 12
     - towns:
       - １条通１３丁目
       - １条通１４丁目
@@ -16869,6 +16879,8 @@ areas:
     correspondences:
     - towns:
       - 鷹泊
+      own: 2
+      koku: 336
     - towns:
       - 幌内
     - towns:
@@ -18037,6 +18049,8 @@ areas:
     - towns:
       - 樽川七条１丁目
       - 樽川六条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 花川南八条１丁目
       - 花川南七条１丁目
@@ -18044,6 +18058,8 @@ areas:
     - towns:
       - 花川南七条２丁目
       - 花川南六条２丁目
+      own: 1
+      koku: 13
     - towns:
       - 花川南七条３丁目
       - 花川南六条３丁目
@@ -18051,6 +18067,8 @@ areas:
     - towns:
       - 花川南六条４丁目
       - 花川南五条４丁目
+      own: 1
+      koku: 13
     - towns:
       - 花川南五条５丁目
       - 花川南五条６丁目
@@ -18088,12 +18106,18 @@ areas:
     - towns:
       - 樽川四条３丁目
       - 樽川三条３丁目
+      own: 1
+      koku: 11
     - towns:
       - 樽川四条２丁目
       - 樽川四条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 樽川三条２丁目
       - 樽川三条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 花川南四条１丁目
       - 花川南四条２丁目
@@ -18178,6 +18202,8 @@ areas:
     - towns:
       - 花川北三条５丁目
       - 花川北三条６丁目
+      own: 1
+      koku: 15
     - towns:
       - 花川北四条５丁目
       - 花川北四条４丁目
@@ -18253,20 +18279,30 @@ areas:
       own: 1
     - towns:
       - 新港西１丁目
+      own: 1
+      koku: 40
     - towns:
       - 新港西２丁目
+      own: 1
+      koku: 39
     - towns:
       - 新港西３丁目
-      own: 2
+      own: 1
     - towns:
       - 新港中央１丁目
-      own: 2
+      own: 1
     - towns:
       - 新港中央２丁目
+      own: 1
+      koku: 43
     - towns:
       - 新港中央３丁目
+      own: 1
+      koku: 27
     - towns:
       - 新港中央４丁目
+      own: 1
+      koku: 43
     - towns:
       - 新港南１丁目
       - 花畔一条２丁目
@@ -18276,9 +18312,11 @@ areas:
       own: 1
     - towns:
       - 新港南３丁目
-      own: 2
+      own: 1
     - towns:
       - 新港東１丁目
+      own: 1
+      koku: 25
     - towns:
       - 新港東２丁目
       own: 1
@@ -18287,6 +18325,8 @@ areas:
       own: 1
     - towns:
       - 新港東４丁目
+      own: 1
+      koku: 38
     - towns:
       - 志美
       own: 1
@@ -18295,25 +18335,36 @@ areas:
       own: 2
     - towns:
       - 船場町
+      own: 1
     - towns:
       - 親船町
       own: 1
     - towns:
       - 親船東一条１丁目
       - 親船東一条２丁目
+      own: 1
+      koku: 11
     - towns:
       - 親船東二条１丁目
       - 親船東二条２丁目
       - 親船東三条１丁目
       - 親船東三条２丁目
+      own: 1
+      koku: 17
     - towns:
       - 弁天町
+      own: 1
+      koku: 19
     - towns:
       - 横町
       - 新町
       - 本町
+      own: 1
+      koku: 15
     - towns:
       - 浜町
+      own: 1
+      koku: 40
     - towns:
       - 八幡町
       own: 2
@@ -18321,19 +18372,33 @@ areas:
       - 若生町
     - towns:
       - 若生
+      own: 1
+      koku: 14
     - towns:
       - 八幡１丁目
+      own: 1
+      koku: 20
     - towns:
       - 八幡２丁目
+      own: 1
+      koku: 23
     - towns:
       - 八幡３丁目
+      own: 1
+      koku: 28
     - towns:
       - 八幡４丁目
+      own: 1
+      koku: 18
     - towns:
       - 八幡５丁目
+      own: 1
+      koku: 31
     - towns:
       - 緑ケ原１丁目
       - 緑ケ原２丁目
+      own: 1
+      koku: 16
     - towns:
       - 北生振
       own: 1
@@ -18349,6 +18414,8 @@ areas:
       own: 1
     - towns:
       - 厚田区虹が原
+      own: 1
+      koku: 11
     - towns:
       - 厚田区聚富
       own: 2
