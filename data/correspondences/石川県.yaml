@@ -1,0 +1,73 @@
+﻿view_state:
+  latitude: 36.713
+  longitude: 136.720
+  zoom: 7.5
+
+areas:
+  石川県 珠洲市:
+    view_state:
+      latitude: 37.450
+      longitude: 137.231
+      zoom: 10.5
+    correspondences:
+    - towns:
+      - 三崎町寺家
+    - towns:
+      - 三崎町粟津
+    - towns:
+      - 三崎町大屋
+    - towns:
+      - 三崎町杉山
+    - towns:
+      - 三崎町森腰
+    - towns:
+      - 三崎町本
+    - towns:
+      - 三崎町内方
+    - towns:
+      - 三崎町宇治
+    - towns:
+      - 三崎町引砂
+    - towns:
+      - 三崎町高波
+    - towns:
+      - 三崎町伏見
+    - towns:
+      - 三崎町小泊
+    - towns:
+      - 三崎町雲津
+    - towns:
+      - 三崎町細屋
+
+    - towns:
+      - 狼煙町
+      - 狼煙新町
+    - towns:
+      - 川浦町
+    - towns:
+      - 折戸町
+    - towns:
+      - 高屋町
+    - towns:
+      - 笹波町
+    - towns:
+      - 石神町
+    - towns:
+      - 馬緤町
+    - towns:
+      - 唐笠町
+    - towns:
+      - 東山中町
+    - towns:
+      - 大谷町
+    - towns:
+      - 長橋町
+    - towns:
+      - 片岩町
+    - towns:
+      - 清水町
+    - towns:
+      - 仁江町
+    - towns:
+      - 真浦町
+

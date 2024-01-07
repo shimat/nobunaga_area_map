@@ -28,10 +28,8 @@ def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
 
 
 def load_town_data(tree: ElementTree) -> pd.DataFrame:
-    pref_cities: list[str] = []
     all_towns_polygons: dict[str, list[list[list[float]]]] = {}
 
-    i = 0
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
         prefecture_name = elem.find("fme:PREF_NAME", NAMESPACES).text
@@ -69,7 +67,7 @@ def merge_contours_by_municipality(all_coordinates: dict[str, list[list[list[flo
     for pref_city, coordinates in all_coordinates.items():
         print(pref_city)
         polygons = [shapely.geometry.Polygon(c) for c in coordinates]
-        #st.write(pref_city, coordinates)
+        # st.write(pref_city, coordinates)
         merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
         simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
         match simple_polygon.geom_type:
@@ -85,7 +83,7 @@ def merge_contours_by_municipality(all_coordinates: dict[str, list[list[list[flo
 
 prefecture = st.selectbox(
     label="都道府県",
-    options=("北海道", "青森県", "福島県", "東京都", "神奈川県",),
+    options=("北海道", "青森県", "福島県", "東京都", "神奈川県", "千葉県", "石川県",),
     index=None)
 if prefecture:
     df = load_town_data_from_gml_zip(f"../gml/経済センサス_活動調査_{prefecture}.zip")
@@ -112,9 +110,9 @@ if prefecture:
                 pickable=False,
             )],
         initial_view_state=pydeck.ViewState(
-            latitude=42.95,
-            longitude=141.80,
-            zoom=8.5,
+            latitude=36.26,
+            longitude=138.15,
+            zoom=4.0,
             maxzoom=16,
             pitch=0,
             bearing=0,

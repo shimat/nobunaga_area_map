@@ -5280,7 +5280,7 @@ areas:
       own: 2
     - towns:
       - 北郷
-      own: 2
+      own: 1
     - towns:
       - 菊水上町
       own: 1
@@ -5323,6 +5323,8 @@ areas:
       own: 1
     - towns:
       - 菊水九条３丁目
+      own: 1
+      koku: 11
     - towns:
       - 菊水一条４丁目
       - 菊水三条４丁目
@@ -5503,13 +5505,19 @@ areas:
       - 北郷九条８丁目
       - 北郷九条９丁目
       - 北郷八条９丁目
+      own: 1
+      koku: 12
     - towns:
       - 北郷八条１０丁目
       - 川北五条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 北郷七条９丁目
       - 北郷七条１０丁目
       - 北郷六条１０丁目
+      own: 1
+      koku: 12
     - towns:
       - 北郷六条９丁目
       - 北郷五条８丁目
@@ -5567,6 +5575,8 @@ areas:
       own: 1
     - towns:
       - 北郷四条１１丁目
+      own: 1
+      koku: 12
     - towns:
       - 北郷四条９丁目
       - 北郷四条１０丁目
@@ -5575,6 +5585,8 @@ areas:
     - towns:
       - 北郷三条１２丁目
       - 北郷三条１３丁目
+      own: 1
+      koku: 11
     - towns:
       - 北郷三条１１丁目
       - 北郷二条１１丁目
@@ -5673,18 +5685,24 @@ areas:
     - towns:
       - 中央一条３丁目
       - 中央一条４丁目
+      own: 1
+      koku: 12
     - towns:
       - 中央一条５丁目
       - 東札幌六条３丁目
       - 東札幌六条４丁目
       - 東札幌六条５丁目
       - 東札幌五条３丁目
+      own: 1
+      koku: 15
     - towns:
       - 中央一条６丁目
       - 中央一条７丁目
       own: 1
     - towns:
       - 東札幌六条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 東札幌六条２丁目
       - 東札幌五条２丁目
@@ -5755,6 +5773,8 @@ areas:
       - 栄通１４丁目
       - 栄通１５丁目
       - 南郷通１３丁目南
+      own: 1
+      koku: 16
     - towns:
       - 栄通１６丁目
       - 栄通１７丁目
@@ -5791,9 +5811,13 @@ areas:
       - 南郷通１６丁目北
       - 南郷通１６丁目南
       - 南郷通１７丁目南
+      own: 1
+      koku: 12
     - towns:
       - 南郷通１４丁目南
       - 南郷通１５丁目南
+      own: 1
+      koku: 11
     - towns:
       - 本郷通１１丁目南
       - 本郷通１２丁目南
@@ -5864,6 +5888,8 @@ areas:
       - 本通１０丁目南
       - 本郷通９丁目北
       - 本郷通１０丁目北
+      own: 1
+      koku: 13
     - towns:
       - 本通１１丁目南
       - 本通１２丁目南
@@ -5881,6 +5907,7 @@ areas:
       - 本通１５丁目南
       - 本通１６丁目南
       - 南郷通１５丁目北
+      own: 1
     - towns:
       - 本通１７丁目南
       - 本通１８丁目南
@@ -6020,6 +6047,8 @@ areas:
       - 川下二条５丁目
       - 川下一条４丁目
       - 川下一条５丁目
+      own: 1
+      koku: 12
     - towns:
       - 川下四条５丁目
       - 川下四条６丁目
@@ -6038,6 +6067,8 @@ areas:
       - 川下四条２丁目
       - 川下三条３丁目
       - 川下三条４丁目
+      own: 1
+      koku: 13
 
 
   北海道 札幌市厚別区:
@@ -6156,7 +6187,7 @@ areas:
     - towns:
       - 厚別西二条１丁目
       - 厚別西一条１丁目
-      own: 2
+      own: 1
     - towns:
       - 厚別西一条２丁目
       - 厚別西一条３丁目
@@ -6402,7 +6433,7 @@ areas:
     - towns:
       - 青葉町１丁目
       - 青葉町２丁目
-      own: 2
+      own: 1
     - towns:
       - 青葉町４丁目
       own: 1
@@ -9614,8 +9645,12 @@ areas:
       koku: 65
     - towns:
       - 小安町
+      own: 2
+      koku: 53
     - towns:
       - 小安山町
+      own: 2
+      koku: 58
     - towns:
       - 白石町
     - towns:
@@ -9908,6 +9943,8 @@ areas:
       koku: 41
     - towns:
       - 見晴町
+      own: 2
+      koku: 40
     - towns:
       - 銅山町
     - towns:
@@ -9933,6 +9970,8 @@ areas:
       own: 1
     - towns:
       - 銭亀町
+      own: 2
+      koku: 22
     - towns:
       - 新湊町
     - towns:
@@ -12790,6 +12829,8 @@ areas:
       - 東６条８丁目
       - 東６条７丁目
       - 東７条８丁目
+      own: 2
+      koku: 11
     - towns:
       - 東７条７丁目
       - 東８条８丁目
@@ -13144,6 +13185,8 @@ areas:
       - 曙北２条７丁目
       - 曙１条８丁目
       - 曙１条７丁目
+      own: 2
+      koku: 11
     - towns:
       - 曙２条８丁目
       - 曙２条７丁目
@@ -13170,6 +13213,8 @@ areas:
       - 曙３条５丁目
       - 曙３条４丁目
       - 神楽５条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 曙１条３丁目
       - 曙２条４丁目
@@ -14988,6 +15033,38 @@ areas:
       - 桜木１条７丁目
       - 北本町東９丁目
       - 北本町東１０丁目
+
+
+  北海道 留萌市:
+    view_state:
+      latitude: 43.880
+      longitude: 141.748
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 南幌糠町
+    - towns:
+      - 大字留萌村
+    - towns:
+      - 樽真布町
+    - towns:
+      - 中幌糠町
+    - towns:
+      - 東幌糠町
+    - towns:
+      - 幌糠町
+    - towns:
+      - 藤山町
+    - towns:
+      - 大和田町
+    - towns:
+      - 礼受町
+    - towns:
+      - 浜中町
+    - towns:
+      - 塩見町
+    - towns:
+      - 三泊町
 
 
   北海道 苫小牧市:
@@ -22829,6 +22906,8 @@ areas:
       - １６線
     - towns:
       - １５線
+      own: 2
+      koku: 196
     - towns:
       - １４線
     - towns:
@@ -23077,6 +23156,8 @@ areas:
       - 字朝日
     - towns:
       - 字塩狩
+      own: 2
+      koku: 127
     - towns:
       - 字南丘
     - towns:
@@ -23139,6 +23220,95 @@ areas:
       - 緑町
     - towns:
       - 西町
+
+
+  北海道 増毛郡増毛町:
+    view_state:
+      latitude: 43.804
+      longitude: 141.528
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 阿分
+    - towns:
+      - 御料
+    - towns:
+      - 信砂
+    - towns:
+      - 舎熊
+    - towns:
+      - 湯の沢
+    - towns:
+      - 暑寒沢
+    - towns:
+      - 別苅
+    - towns:
+      - 岩尾
+      - 岩老
+    - towns:
+      - 雄冬
+    - towns:
+      - 箸別
+    - towns:
+      - 見晴町
+    - towns:
+      - 中歌
+  
+
+  北海道 留萌郡小平町:
+    view_state:
+      latitude: 44.070
+      longitude: 141.842
+      zoom: 9.5
+    correspondences:
+    - towns:
+      - 字鬼鹿豊浜
+    - towns:
+      - 字鬼鹿千松
+      - 字鬼鹿元浜
+    - towns:
+      - 字鬼鹿田代
+    - towns:
+      - 字鬼鹿港町
+    - towns:
+      - 字鬼鹿広富
+      - 字鬼鹿秀浦
+    - towns:
+      - 字鬼鹿富岡
+    - towns:
+      - 字大椴
+    - towns:
+      - 字花岡
+    - towns:
+      - 字小平町
+    - towns:
+      - 字臼谷
+    - towns:
+      - 字豊平
+    - towns:
+      - 字本郷
+    - towns:
+      - 字富里
+    - towns:
+      - 字平和
+    - towns:
+      - 字寧楽
+    - towns:
+      - 字住吉
+    - towns:
+      - 字沖内
+    - towns:
+      - 字桑園
+    - towns:
+      - 字菊岡
+      - 字豊岡
+      - 字岐富
+    - towns:
+      - 字達布
+    - towns:
+      - 字滝下
+    - towns:
+      - 字川上
 
 
   北海道 上川郡新得町:

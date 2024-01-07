@@ -86,7 +86,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 
 
 @conditional_decorator(st.cache_data, 'local' not in st.secrets)
-def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key: str) -> pd.DataFrame:
+def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_color_coding: bool, cache_key: str) -> pd.DataFrame:
     new_data: dict[str, list] = {
         "prefecture_name": [],
         "city_name": [],
@@ -144,7 +144,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], cache_key
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
 
-            fill_color = arrival_color(own)
+            fill_color = arrival_color(own, enable_color_coding)
 
             if len(coords) > 1:
                 area_name += " [飛び地あり]"
@@ -182,7 +182,9 @@ def get_area_name(df: pd.DataFrame) -> str:
     return max_area_row["town_name"]
 
 
-def arrival_color(own: int) -> list[int]:
+def arrival_color(own: int, enable_color_coding: bool) -> list[int]:
+    if not enable_color_coding:
+        return [192, 192, 192, 64]
     match own:
         case 0:  # 未踏
             return [192, 192, 192, 64]
