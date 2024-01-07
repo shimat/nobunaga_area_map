@@ -16906,6 +16906,164 @@ areas:
       own: 1
 
 
+  北海道 富良野市:
+    view_state:
+      latitude: 43.281
+      longitude: 142.481
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字東富丘
+    - towns:
+      - 字西富丘
+    - towns:
+      - 字富丘更生
+    - towns:
+      - 字東布礼別
+    - towns:
+      - 字北布礼別
+      - 字布礼別市街地
+    - towns:
+      - 字西布礼別
+    - towns:
+      - 字中布礼別
+    - towns:
+      - 字南布礼別
+    - towns:
+      - 字東麓郷
+    - towns:
+      - 字南麓郷
+    - towns:
+      - 字北麓郷
+    - towns:
+      - 字西麓郷
+    - towns:
+      - 字麓郷市街地
+    - towns:
+      - 字西達布
+    - towns:
+      - 字東山
+    - towns:
+      - 字老節布
+    - towns:
+      - 字平沢
+    - towns:
+      - 字布部石綿
+    - towns:
+      - 字上御料
+    - towns:
+      - 字中御料
+    - towns:
+      - 字下御料
+    - towns:
+      - 字上五区
+    - towns:
+      - 字中五区
+    - towns:
+      - 字下五区
+    - towns:
+      - 字学田三区
+    - towns:
+      - 字島ノ下
+    - towns:
+      - 字信濃沢
+    - towns:
+      - 字清水山
+    - towns:
+      - 字西学田二区
+    - towns:
+      - 字東学田二区
+    - towns:
+      - 字北大沼
+    - towns:
+      - 字南大沼
+    - towns:
+      - 字西鳥沼
+    - towns:
+      - 字東鳥沼
+    - towns:
+      - 字八幡丘
+    - towns:
+      - 字北扇山
+    - towns:
+      - 字南扇山
+    - towns:
+      - 字西扇山
+    - towns:
+      - 字布部一
+    - towns:
+      - 字布部市街地
+    - towns:
+      - 字山部西１２線
+    - towns:
+      - 字山部東１２線
+    - towns:
+      - 字山部西１３線
+    - towns:
+      - 字山部東１３線
+    - towns:
+      - 字山部西１４線
+    - towns:
+      - 字山部東１４線
+    - towns:
+      - 字山部西１５線
+    - towns:
+      - 字山部東１５線
+    - towns:
+      - 字山部西１６線
+    - towns:
+      - 字山部東１６線
+    - towns:
+      - 字山部西１７線
+    - towns:
+      - 字山部東１７線
+    - towns:
+      - 字山部西１８線
+    - towns:
+      - 字山部東１８線
+    - towns:
+      - 字山部西１９線
+    - towns:
+      - 字山部東１９線
+    - towns:
+      - 字山部西２０線
+    - towns:
+      - 字山部東２０線
+    - towns:
+      - 字山部西２１線
+    - towns:
+      - 字山部東２１線
+    - towns:
+      - 字山部西２２線
+    - towns:
+      - 字山部東２２線
+    - towns:
+      - 字山部西２３線
+    - towns:
+      - 字山部東２３線
+    - towns:
+      - 字山部西２４線
+    - towns:
+      - 字山部東２４線
+    - towns:
+      - 字山部西２５線
+    - towns:
+      - 字山部東２５線
+    - towns:
+      - 字山部西２６線
+    - towns:
+      - 字山部東２６線
+    - towns:
+      - 字山部西２７線
+    - towns:
+      - 字山部東２７線
+    - towns:
+      - 字山部西２８線
+
+    - towns:
+      - 北の峰町
+
+
   北海道 登別市:
     view_state:
       latitude: 42.461
@@ -20902,75 +21060,6 @@ areas:
       - 字美和
 
 
-  北海道 勇払郡厚真町:
-    view_state:
-      latitude: 42.727
-      longitude: 141.937
-      zoom: 10.0
-    correspondences:
-    - towns:
-      - 字幌内
-    - towns:
-      - 字高丘
-      own: 2
-    - towns:
-      - 字幌里
-    - towns:
-      - 字桜丘
-    - towns:
-      - 字富里
-    - towns:
-      - 字吉野
-    - towns:
-      - 字東和
-    - towns:
-      - 字朝日
-    - towns:
-      - 字宇隆
-    - towns:
-      - 字豊沢
-    - towns:
-      - 字軽舞
-    - towns:
-      - 字豊丘
-    - towns:
-      - 字鹿沼
-    - towns:
-      - 字鯉沼
-    - towns:
-      - 字清住
-    - towns:
-      - 字浜厚真
-    - towns:
-      - 字厚和
-    - towns:
-      - 字上厚真
-    - towns:
-      - 字共和
-    - towns:
-      - 字共栄
-    - towns:
-      - 字富野
-    - towns:
-      - 字上野
-    - towns:
-      - 字豊川
-    - towns:
-      - 字美里
-    - towns:
-      - 字本郷
-    - towns:
-      - 新町
-    - towns:
-      - 京町
-    - towns:
-      - 表町
-    - towns:
-      - 本町
-    - towns:
-      - 錦町
-
-
   北海道 勇払郡安平町:
     view_state:
       latitude: 42.81
@@ -21058,6 +21147,156 @@ areas:
       - 追分若草３丁目
 
 
+  北海道 勇払郡厚真町:
+    view_state:
+      latitude: 42.727
+      longitude: 141.937
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字幌内
+    - towns:
+      - 字高丘
+      own: 2
+    - towns:
+      - 字幌里
+    - towns:
+      - 字桜丘
+    - towns:
+      - 字富里
+    - towns:
+      - 字吉野
+    - towns:
+      - 字東和
+    - towns:
+      - 字朝日
+    - towns:
+      - 字宇隆
+    - towns:
+      - 字豊沢
+    - towns:
+      - 字軽舞
+    - towns:
+      - 字豊丘
+    - towns:
+      - 字鹿沼
+    - towns:
+      - 字鯉沼
+    - towns:
+      - 字清住
+    - towns:
+      - 字浜厚真
+    - towns:
+      - 字厚和
+    - towns:
+      - 字上厚真
+    - towns:
+      - 字共和
+    - towns:
+      - 字共栄
+    - towns:
+      - 字富野
+    - towns:
+      - 字上野
+    - towns:
+      - 字豊川
+    - towns:
+      - 字美里
+    - towns:
+      - 字本郷
+    - towns:
+      - 新町
+    - towns:
+      - 京町
+    - towns:
+      - 表町
+    - towns:
+      - 本町
+    - towns:
+      - 錦町
+
+
+  北海道 勇払郡むかわ町:
+    view_state:
+      latitude: 42.747
+      longitude: 142.129
+      zoom: 9.0
+    correspondences:
+    - towns:
+      - 穂別長和
+    - towns:
+      - 穂別福山
+    - towns:
+      - 穂別稲里
+    - towns:
+      - 穂別富内
+    - towns:
+      - 穂別安住
+    - towns:
+      - 穂別平丘
+    - towns:
+      - 穂別
+    - towns:
+      - 穂別和泉
+    - towns:
+      - 穂別豊田
+    - towns:
+      - 穂別栄
+    - towns:
+      - 穂別仁和
+    - towns:
+      - 有明
+    - towns:
+      - 旭岡
+    - towns:
+      - 生田
+    - towns:
+      - 花岡
+    - towns:
+      - 春日
+    - towns:
+      - 二宮
+    - towns:
+      - 田浦
+    - towns:
+      - 豊城
+    - towns:
+      - 宮戸
+    - towns:
+      - 米原
+    - towns:
+      - 汐見
+    - towns:
+      - 洋光
+    - towns:
+      - 若草
+    - towns:
+      - 駒場
+    - towns:
+      - 晴海
+
+
+  北海道 勇払郡占冠村:
+    view_state:
+      latitude: 43.006
+      longitude: 142.475
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字下トマム
+    - towns:
+      - 字中トマム
+    - towns:
+      - 字上トマム
+    - towns:
+      - 字双珠別
+    - towns:
+      - 字ニニウ
+      - 字中央
+    - towns:
+      - 字占冠
+
+
   北海道 石狩郡当別町:
     view_state:
       latitude: 43.37
@@ -21072,6 +21311,9 @@ areas:
       own: 1
     - towns:
       - 太美南
+      own: 1
+    - towns:
+      - 太美スターライト
       own: 1
     - towns:
       - 当別太
@@ -21491,6 +21733,26 @@ areas:
       - 字西山
     - towns:
       - 字上砂川
+
+
+  北海道 空知郡南富良野町:
+    view_state:
+      latitude: 43.205
+      longitude: 142.547
+      zoom: 9.5
+    correspondences:
+    - towns:
+      - 字北落合
+    - towns:
+      - 字落合
+    - towns:
+      - 字幾寅
+    - towns:
+      - 字東鹿越
+    - towns:
+      - 字下金山
+    - towns:
+      - 字金山
 
 
   北海道 空知郡中富良野町:
@@ -22877,3 +23139,23 @@ areas:
       - 緑町
     - towns:
       - 西町
+
+
+  北海道 上川郡新得町:
+    view_state:
+      latitude: 43.295
+      longitude: 142.861
+      zoom: 9.0
+    correspondences:
+    - towns:
+      - 字トムラウシ
+    - towns:
+      - 字新内
+    - towns:
+      - 字屈足
+    - towns:
+      - 字上佐幌
+    - towns:
+      - 字下佐幌
+    - towns:
+      - 字新得
