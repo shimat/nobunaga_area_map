@@ -2,6 +2,7 @@ from collections.abc import Iterable
 from pathlib import Path
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
+from src.conditional_decorator import conditional_decorator
 import pydantic_yaml
 import streamlit as st
 
@@ -44,7 +45,7 @@ class AllAreasData(BaseModel):
                 for pref_city in pref_city_list]
 
 
-@st.cache_data
+@conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def load_area_data(prefecture_name: str) -> AllAreasData:
     path = Path(f"data/correspondences/{prefecture_name}.yaml")
     y = path.read_text(encoding="utf-8-sig")
