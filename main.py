@@ -44,7 +44,8 @@ with st.expander("オプション"):
             disabled=(city_name is not None and not city_name.startswith("（")))
         enable_color_coding = st.checkbox(
             label="攻略済みの色分けを表示",
-            value=True,)
+            value=True,
+            disabled=(map_type == MapType.ALL_TOWNS.value))
     with col2:
         map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100, step=10)
 

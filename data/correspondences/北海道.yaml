@@ -22566,6 +22566,8 @@ areas:
       - 字五稜
     - towns:
       - 字美園
+      own: 2
+      koku: 171
     - towns:
       - 字二股
 
