@@ -29,7 +29,141 @@ areas:
       zoom: 12.5
     correspondences:
     - towns:
+      - 上丸子八幡町
+    - towns:
+      - 上丸子天神町
+    - towns:
+      - 上丸子山王町１丁目
+    - towns:
+      - 上丸子
+      - 上丸子山王町２丁目
+    - towns:
+      - 上小田中１丁目
+    - towns:
+      - 上小田中２丁目
+    - towns:
+      - 上小田中３丁目
+    - towns:
+      - 上小田中４丁目
+    - towns:
+      - 上小田中５丁目
+      - 新城中町
+    - towns:
+      - 上小田中６丁目
+    - towns:
+      - 上小田中７丁目
+    - towns:
+      - 上新城１丁目
+      - 上新城２丁目
+      - 新城
+      - 新城５丁目
+    - towns:
+      - 新城１丁目
+      - 新城２丁目
+      - 新城３丁目
+      - 新城４丁目
+    - towns:
+      - 上平間
+    - towns:
+      - 下小田中１丁目
+    - towns:
+      - 下小田中２丁目
+    - towns:
+      - 下小田中３丁目
+    - towns:
+      - 下小田中４丁目
+    - towns:
+      - 下小田中５丁目
+    - towns:
+      - 下小田中６丁目
+    - towns:
+      - 下新城１丁目
+    - towns:
+      - 下新城２丁目
+      - 下新城３丁目
+    - towns:
+      - 下沼部
+    - towns:
+      - 中丸子
+    - towns:
+      - 井田三舞町
+    - towns:
+      - 井田中ノ町
+    - towns:
+      - 井田杉山町
+    - towns:
       - 井田１丁目
+    - towns:
+      - 井田２丁目
+    - towns:
+      - 井田３丁目
+    - towns:
+      - 今井上町
+    - towns:
+      - 今井仲町
+    - towns:
+      - 今井南町
+    - towns:
+      - 今井西町
+    - towns:
+      - 北谷町
+      - 田尻町
+    - towns:
+      - 大倉町
+    - towns:
+      - 宮内１丁目
+    - towns:
+      - 宮内２丁目
+    - towns:
+      - 宮内３丁目
+    - towns:
+      - 宮内４丁目
+    - towns:
+      - 小杉御殿町１丁目
+    - towns:
+      - 小杉御殿町２丁目
+    - towns:
+      - 小杉町１丁目
+    - towns:
+      - 小杉町２丁目
+    - towns:
+      - 小杉町３丁目
+    - towns:
+      - 小杉陣屋町１丁目
+    - towns:
+      - 小杉陣屋町２丁目
+    - towns:
+      - 市ノ坪
+    - towns:
+      - 新丸子東３丁目
+    - towns:
+      - 新丸子町
+      - 新丸子東１丁目
+      - 新丸子東２丁目
+    - towns:
+      - 丸子通１丁目
+      - 丸子通２丁目
+    - towns:
+      - 木月住吉町
+    - towns:
+      - 木月大町
+    - towns:
+      - 木月祗園町
+      - 木月伊勢町
+    - towns:
+      - 木月１丁目
+    - towns:
+      - 木月２丁目
+    - towns:
+      - 木月３丁目
+    - towns:
+      - 木月４丁目
+    - towns:
+      - 等々力
+    - towns:
+      - 苅宿
+    - towns:
+      - 西加瀬
 
   神奈川県 川崎市高津区:
     view_state:
@@ -39,7 +173,7 @@ areas:
     correspondences:
     - towns:
       - 明津
-
+      
   神奈川県 川崎市宮前区:
     view_state:
       latitude: 35.585
