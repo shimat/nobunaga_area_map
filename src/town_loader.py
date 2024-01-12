@@ -52,9 +52,10 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
-        prefecture_names.append(elem.find("fme:PREF_NAME", NAMESPACES).text)
+        prefecture_name = elem.find("fme:PREF_NAME", NAMESPACES).text
         city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
         town_name = elem.find("fme:S_NAME", NAMESPACES).text or "(町名無し)"
+        prefecture_names.append(prefecture_name)
         city_names.append(city_name)
         pref_cities.append(f"{prefecture_names[-1]} {city_name}")
         town_names.append(town_name)
@@ -127,7 +128,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
                 kokudaka_str = f"{round(estimated_kokudaka, 2)} (推定)"
                 is_observed_kokudaka = False
 
-            polygons = [shapely.geometry.Polygon(c[0])
+            polygons = [shapely.geometry.Polygon(shell=c[0], holes=c[1:])
                         for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
                 continue
@@ -137,23 +138,30 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
             match simple_polygon.geom_type:
                 case "Polygon":
                     coords = [list(simple_polygon.exterior.coords)]
+                    for interior in simple_polygon.interiors:
+                        coords.append(list(interior.coords))
+                    coords_list = [coords]
                 case "MultiPolygon":
-                    coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
-                    # st.write(new_data["address"][-1], coords)
+                    #coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
+                    coords_list = []
+                    for p in simple_polygon.geoms:
+                        coords = [list(p.exterior.coords)]
+                        for interior in p.interiors:
+                            coords.append(list(interior.coords))
+                        coords_list.append(coords)
+                    area_name += " [飛び地あり]"
                 case _:
                     raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
-
             fill_color = arrival_color(own, enable_color_coding)
 
-            if len(coords) > 1:
-                area_name += " [飛び地あり]"
             sub_towns_suffix = ""
             if len(simplified_sub_towns) > 1:
                 sub_towns_suffix = f" (+{len(simplified_sub_towns)-1}町)"
 
-            for c in coords:
+            #print(sub_towns)
+            for c in coords_list:
                 new_data["prefecture_name"].append(prefecture_name)
                 new_data["city_name"].append(city_name)
                 new_data["area_name"].append(area_name)
@@ -163,7 +171,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
                 new_data["is_observed_kokudaka"].append(is_observed_kokudaka)
                 # new_data["sub_towns"].append(simplified_sub_towns)
                 new_data["sub_towns_suffix"].append(sub_towns_suffix)
-                new_data["lonlat_coordinates"].append([c])
+                new_data["lonlat_coordinates"].append(c)
                 new_data["own"].append(own)
                 new_data["fill_color"].append(fill_color)
 
