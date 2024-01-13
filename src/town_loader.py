@@ -142,7 +142,6 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
                         coords.append(list(interior.coords))
                     coords_list = [coords]
                 case "MultiPolygon":
-                    #coords = [list(p.exterior.coords) for p in simple_polygon.geoms]
                     coords_list = []
                     for p in simple_polygon.geoms:
                         coords = [list(p.exterior.coords)]
@@ -160,7 +159,6 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
             if len(simplified_sub_towns) > 1:
                 sub_towns_suffix = f" (+{len(simplified_sub_towns)-1}町)"
 
-            #print(sub_towns)
             for c in coords_list:
                 new_data["prefecture_name"].append(prefecture_name)
                 new_data["city_name"].append(city_name)

@@ -9677,8 +9677,11 @@ areas:
       koku: 24
     - towns:
       - 古川町
+      own: 2
+      koku: 40
     - towns:
       - 豊原町
+      own: 2
     - towns:
       - 東畑町
       own: 2
@@ -9708,8 +9711,12 @@ areas:
       own: 2
     - towns:
       - 弁天町
+      own: 2
+      koku: 25
     - towns:
       - 船見町
+      own: 2
+      koku: 24
     - towns:
       - 弥生町
     - towns:
@@ -9883,12 +9890,15 @@ areas:
       own: 2
     - towns:
       - 本通２丁目
+      own: 2
     - towns:
       - 本通３丁目
     - towns:
       - 本通４丁目
     - towns:
       - 花園町
+      own: 2
+      koku: 22
     - towns:
       - 柳町
     - towns:
@@ -9945,12 +9955,16 @@ areas:
       - 榎本町
     - towns:
       - 高丘町
+      own: 2
+      koku: 26
     - towns:
       - 日吉町１丁目
       own: 2
       koku: 20
     - towns:
       - 日吉町２丁目
+      own: 2
+      koku: 23
     - towns:
       - 日吉町３丁目
       own: 2
@@ -9969,8 +9983,12 @@ areas:
       koku: 40
     - towns:
       - 銅山町
+      own: 2
+      koku: 30
     - towns:
       - 西旭岡町１丁目
+      own: 2
+      koku: 18
     - towns:
       - 西旭岡町２丁目
       own: 1
@@ -9996,11 +10014,15 @@ areas:
       koku: 22
     - towns:
       - 新湊町
+      own: 2
+      koku: 22
     - towns:
       - 中野町
       own: 1
     - towns:
       - 石倉町
+      own: 2
+      koku: 42
     - towns:
       - 山の手１丁目
       own: 2
@@ -11253,6 +11275,8 @@ areas:
       - 住吉４条２丁目
       - 大町２条１０丁目
       - 大町２条１１丁目
+      own: 2
+      koku: 12
     - towns:
       - 大町２条１丁目
       own: 2
@@ -11303,6 +11327,8 @@ areas:
       - 大町２条１２丁目
       - 旭町２条１２丁目
       - 旭町２条１３丁目
+      own: 2
+      koku: 12
     - towns:
       - 大町１条１４丁目
       - 大町１条１３丁目
@@ -11346,6 +11372,8 @@ areas:
       - 旭町１条１４丁目
       - 旭町１条１３丁目
       - 旭町１条１２丁目
+      own: 2
+      koku: 11
     - towns:
       - 旭町１条１０丁目
       - 旭町１条９丁目
@@ -11403,9 +11431,13 @@ areas:
     - towns:
       - 錦町１２丁目
       - 北門町１２丁目
+      own: 2
+      koku: 11
     - towns:
       - 錦町１３丁目
       - 北門町１３丁目
+      own: 2
+      koku: 11
     - towns:
       - 北門町１５丁目
       - 北門町１４丁目
@@ -11461,6 +11493,8 @@ areas:
       koku: 13
     - towns:
       - 川端町７条１０丁目
+      own: 2
+      koku: 11
     - towns:
       - 近文町１２丁目
       - 近文町１１丁目
@@ -11635,6 +11669,8 @@ areas:
       - 東６条１０丁目
       - 東７条１０丁目
       - 東７条９丁目
+      own: 2
+      koku: 14
     - towns:
       - 新富３条１丁目
       - 東８条９丁目
@@ -12023,6 +12059,8 @@ areas:
       - 東旭川北１条６丁目
     - towns:
       - 東旭川北１条４丁目
+      own: 2
+      koku: 11
     - towns:
       - 東旭川南１条４丁目
       - 東旭川南１条５丁目
@@ -12788,6 +12826,8 @@ areas:
       - 神楽６条５丁目
       - 神楽５条５丁目
       - 神楽４条５丁目
+      own: 2
+      koku: 11
     - towns:
       - 神楽４条１丁目
       - 神楽４条２丁目
@@ -12800,6 +12840,8 @@ areas:
       - 神楽６条１丁目
       - 神居１条６丁目
       - 神居１条７丁目
+      own: 2
+      koku: 13
     - towns:
       - 神楽６条２丁目
       - 神楽６条３丁目
@@ -12808,11 +12850,15 @@ areas:
       - 神楽５条３丁目
       - 神楽５条４丁目
       - 神楽４条４丁目
+      own: 2
+      koku: 15
     - towns:
       - 神楽５条６丁目
       - 神楽５条７丁目
       - 神楽５条８丁目
       - 神楽６条７丁目
+      own: 2
+      koku: 11
     - towns:
       - 神楽６条６丁目
       - 神楽７条７丁目
@@ -12837,6 +12883,8 @@ areas:
 
     - towns:
       - 東３条１１丁目
+      own: 2
+      koku: 11
     - towns:
       - 東３条１０丁目
       - 東３条９丁目
@@ -12866,6 +12914,8 @@ areas:
       - 東８条８丁目
       - 東８条７丁目
       - 東８条６丁目
+      own: 2
+      koku: 11
     - towns:
       - 東５条５丁目
       - 東６条６丁目
@@ -12944,6 +12994,8 @@ areas:
       - パルプ町２条４丁目
       - パルプ町２条３丁目
       - パルプ町２条２丁目
+      own: 2
+      koku: 15
     - towns:
       - 大雪通６丁目
       - パルプ町１条６丁目
@@ -13041,6 +13093,8 @@ areas:
       - ７条通２３丁目
       - ６条通２３丁目
       - ５条通２３丁目
+      own: 2
+      koku: 13
     - towns:
       - ７条通２０丁目
       - ７条通２１丁目
@@ -13207,6 +13261,8 @@ areas:
       - 亀吉２条２丁目
       - 亀吉２条１丁目
       - 亀吉３条１丁目
+      own: 2
+      koku: 18
     - towns:
       - 亀吉１条２丁目
       - 亀吉１条１丁目
@@ -13451,6 +13507,8 @@ areas:
       - ４条通２４丁目
       - ３条通２１丁目
       - ３条通２２丁目
+      own: 2
+      koku: 11
     - towns:
       - ７条通２４丁目
       - ６条通２４丁目
@@ -18140,8 +18198,12 @@ areas:
     correspondences:
     - towns:
       - 朝日町岩尾内
+      own: 2
+      koku: 410
     - towns:
       - 朝日町茂志利
+      own: 2
+      koku: 406
     - towns:
       - 朝日町登和里
     - towns:
@@ -18150,6 +18212,8 @@ areas:
       - 朝日町中央
     - towns:
       - 朝日町南朝日
+      own: 2
+      koku: 256
     - towns:
       - 上士別町
       own: 2
@@ -20838,6 +20902,8 @@ areas:
       - 茂辺地１丁目
     - towns:
       - 当別
+      own: 2
+      koku: 108
     - towns:
       - 三ツ石
       - 三ツ石１丁目
@@ -25180,6 +25246,9 @@ areas:
       - 字中越
     - towns:
       - 字天幕
+      own: 2
+      koku: 204
+    - towns:
       - 字日東
     - towns:
       - 字豊原
@@ -25430,6 +25499,1344 @@ areas:
       - 字滝下
     - towns:
       - 字川上
+
+
+  北海道 苫前郡苫前町:
+    view_state:
+      latitude: 44.220
+      longitude: 141.836
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字三渓
+    - towns:
+      - 字三豊
+    - towns:
+      - 字上平
+    - towns:
+      - 字九重
+    - towns:
+      - 字力昼
+    - towns:
+      - 字古丹別
+    - towns:
+      - 字小川
+    - towns:
+      - 字岩見
+    - towns:
+      - 字旭
+    - towns:
+      - 字昭和
+    - towns:
+      - 字東川
+    - towns:
+      - 字栄浜
+    - towns:
+      - 字興津
+    - towns:
+      - 字苫前
+    - towns:
+      - 字豊浦
+    - towns:
+      - 字長島
+    - towns:
+      - 字霧立
+    - towns:
+      - 字香川
+
+
+  北海道 苫前郡羽幌町:
+    view_state:
+      latitude: 44.335
+      longitude: 141.883
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 北町
+    - towns:
+      - 南町
+    - towns:
+      - 大字天売
+    - towns:
+      - 大字焼尻
+    - towns:
+      - 字上築
+    - towns:
+      - 字上羽幌
+    - towns:
+      - 字中央
+    - towns:
+      - 字平
+    - towns:
+      - 字曙
+    - towns:
+      - 字朝日
+    - towns:
+      - 字汐見
+    - towns:
+      - 字築別
+    - towns:
+      - 字築別炭砿
+    - towns:
+      - 字羽幌砿
+    - towns:
+      - 字高台
+    - towns:
+      - 寿町
+    - towns:
+      - 幸町
+    - towns:
+      - 栄町
+    - towns:
+      - 緑町
+
+
+  北海道 苫前郡初山別村:
+    view_state:
+      latitude: 44.515
+      longitude: 141.840
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字共成
+    - towns:
+      - 字初山別
+    - towns:
+      - 字千代田
+    - towns:
+      - 字大沢
+    - towns:
+      - 字御料
+    - towns:
+      - 字明里
+    - towns:
+      - 字有明
+    - towns:
+      - 字栄
+    - towns:
+      - 字豊岬
+
+
+  北海道 天塩郡遠別町:
+    view_state:
+      latitude: 44.610
+      longitude: 141.933
+      zoom: 9.0
+    correspondences:
+    - towns:
+      - 字中央
+    - towns:
+      - 字丸松
+    - towns:
+      - 字久光
+    - towns:
+      - 字共栄
+    - towns:
+      - 字北浜
+    - towns:
+      - 字北里
+    - towns:
+      - 字啓明
+    - towns:
+      - 字大成
+    - towns:
+      - 字富士見
+    - towns:
+      - 字幸和
+    - towns:
+      - 字旭
+    - towns:
+      - 字本町１丁目
+    - towns:
+      - 字本町２丁目
+    - towns:
+      - 字本町３丁目
+    - towns:
+      - 字本町４丁目
+    - towns:
+      - 字本町５丁目
+    - towns:
+      - 字本町６丁目
+    - towns:
+      - 字東野
+    - towns:
+      - 字歌越
+    - towns:
+      - 字正修
+    - towns:
+      - 字清川
+    - towns:
+      - 字金浦
+
+
+  北海道 天塩郡天塩町:
+    view_state:
+      latitude: 44.879
+      longitude: 141.861
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字ウブシ
+    - towns:
+      - 字オヌプナイ
+    - towns:
+      - 字キトウシュナイ
+    - towns:
+      - 字サクカヘシ
+    - towns:
+      - 字サラキシ
+    - towns:
+      - 字タツネウシ
+    - towns:
+      - 字トコツナイ
+    - towns:
+      - 字ペンケビラ
+    - towns:
+      - 字ルークシュナイ
+    - towns:
+      - 字下コクネップ
+    - towns:
+      - 字下サロベツ
+    - towns:
+      - 字天塩
+    - towns:
+      - 字川口
+    - towns:
+      - 字更岸
+
+
+  北海道 天塩郡幌延町:
+    view_state:
+      latitude: 45.001
+      longitude: 141.952
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 元町
+    - towns:
+      - 字上問寒
+    - towns:
+      - 字上幌延
+    - towns:
+      - 字下沼
+    - towns:
+      - 字中問寒
+    - towns:
+      - 字北進
+    - towns:
+      - 字問寒別
+    - towns:
+      - 字幌延
+    - towns:
+      - 字浜里
+    - towns:
+      - 字開進
+    - towns:
+      - 字雄興
+    - towns:
+      - 宮園町
+    - towns:
+      - 東町
+    - towns:
+      - 栄町
+
+
+  北海道 天塩郡豊富町:
+    view_state:
+      latitude: 45.145
+      longitude: 141.791
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字中豊富
+    - towns:
+      - 字修徳
+    - towns:
+      - 字兜沼
+    - towns:
+      - 字兜沼中央
+    - towns:
+      - 字兜沼東
+    - towns:
+      - 字兜沼西
+    - towns:
+      - 字幌加
+    - towns:
+      - 字徳満
+    - towns:
+      - 字新生
+    - towns:
+      - 字有明
+    - towns:
+      - 字本流
+    - towns:
+      - 字東豊富
+    - towns:
+      - 字沼向
+    - towns:
+      - 字清明
+    - towns:
+      - 字瑞穂南
+    - towns:
+      - 字瑞穂東
+    - towns:
+      - 字目梨別
+    - towns:
+      - 字福永
+    - towns:
+      - 字稚咲内
+    - towns:
+      - 字芦川
+    - towns:
+      - 字落合
+    - towns:
+      - 字西豊富
+    - towns:
+      - 字豊富大通１丁目
+    - towns:
+      - 字豊富東六条１丁目
+    - towns:
+      - 字豊富温泉
+    - towns:
+      - 字豊幌
+    - towns:
+      - 字豊徳
+    - towns:
+      - 字豊栄
+    - towns:
+      - 字豊田
+    - towns:
+      - 字豊里
+    - towns:
+      - 字開源
+    - towns:
+      - 字阿沙流
+    - towns:
+      - 豊川
+
+
+  北海道 宗谷郡猿払村:
+    view_state:
+      latitude: 45.225
+      longitude: 142.112
+      zoom: 9.5
+    correspondences:
+    - towns:
+      - 上猿払
+    - towns:
+      - 小石
+    - towns:
+      - 浅茅野
+    - towns:
+      - 浅茅野台地
+    - towns:
+      - 浜猿払
+    - towns:
+      - 浜鬼志別
+    - towns:
+      - 狩別
+    - towns:
+      - 猿払
+    - towns:
+      - 知来別
+    - towns:
+      - 芦野
+    - towns:
+      - 豊里
+    - towns:
+      - 鬼志別北町
+    - towns:
+      - 鬼志別南町
+    - towns:
+      - 鬼志別東町
+    - towns:
+      - 鬼志別西町
+
+
+  北海道 枝幸郡浜頓別町:
+    view_state:
+      latitude: 45.085
+      longitude: 142.308
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - クッチャロ湖畔
+    - towns:
+      - 北四条１丁目
+    - towns:
+      - 字ポン仁達内
+    - towns:
+      - 字下頓別
+    - towns:
+      - 字仁達内
+    - towns:
+      - 字共和
+    - towns:
+      - 字宇曽丹
+    - towns:
+      - 字宇津内
+    - towns:
+      - 字安別
+    - towns:
+      - 字山軽
+    - towns:
+      - 字常盤
+    - towns:
+      - 字戸出
+    - towns:
+      - 字斜内
+    - towns:
+      - 字楓
+    - towns:
+      - 字浜頓別
+    - towns:
+      - 字茂宇津内
+    - towns:
+      - 字豊寒別
+    - towns:
+      - 字金ケ丘
+    - towns:
+      - 字頓別
+    - towns:
+      - 字高砂
+    - towns:
+      - 日の出２丁目
+    - towns:
+      - 日の出４丁目
+    - towns:
+      - 旭ケ丘３丁目
+    - towns:
+      - 旭ケ丘６丁目
+    - towns:
+      - 智福１丁目
+    - towns:
+      - 智福２丁目
+    - towns:
+      - 緑ケ丘６丁目
+    - towns:
+      - 緑ケ丘７丁目
+    - towns:
+      - 緑ケ丘８丁目
+
+
+  北海道 枝幸郡中頓別町:
+    view_state:
+      latitude: 44.905
+      longitude: 142.277
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字上頓別
+    - towns:
+      - 字上駒
+    - towns:
+      - 字中頓別
+    - towns:
+      - 字兵安
+    - towns:
+      - 字寿
+    - towns:
+      - 字小頓別
+    - towns:
+      - 字岩手
+    - towns:
+      - 字弥生
+    - towns:
+      - 字敏音知
+    - towns:
+      - 字旭台
+    - towns:
+      - 字松音知
+    - towns:
+      - 字栄
+    - towns:
+      - 字神崎
+    - towns:
+      - 字秋田
+    - towns:
+      - 字藤井
+    - towns:
+      - 字豊平
+    - towns:
+      - 字豊泉
+
+
+  北海道 枝幸郡枝幸町:
+    view_state:
+      latitude: 44.820
+      longitude: 142.542
+      zoom: 9.2
+    correspondences:
+    - towns:
+      - 三笠町
+    - towns:
+      - 上音標
+    - towns:
+      - 下幌別
+    - towns:
+      - 乙忠部
+    - towns:
+      - 北幸町
+    - towns:
+      - 北栄町
+    - towns:
+      - 北浜町
+    - towns:
+      - 南浜町
+    - towns:
+      - 問牧
+    - towns:
+      - 宇遠内
+    - towns:
+      - 山臼
+    - towns:
+      - 岡島
+    - towns:
+      - 岬町
+    - towns:
+      - 幸町
+    - towns:
+      - 徳志別
+    - towns:
+      - 新栄町
+    - towns:
+      - 新港町
+    - towns:
+      - 本町
+    - towns:
+      - 栄町
+    - towns:
+      - 梅ヶ枝町
+    - towns:
+      - 歌登パンケナイ
+    - towns:
+      - 歌登上徳志別
+    - towns:
+      - 歌登中央
+    - towns:
+      - 歌登南町
+    - towns:
+      - 歌登大奮
+    - towns:
+      - 歌登大曲
+    - towns:
+      - 歌登志美宇丹
+    - towns:
+      - 歌登本幌別
+    - towns:
+      - 歌登東歌登
+    - towns:
+      - 歌登東町
+    - towns:
+      - 歌登桧垣町
+    - towns:
+      - 歌登毛登別
+    - towns:
+      - 歌登西歌登
+    - towns:
+      - 歌登西町
+    - towns:
+      - 歌登豊沃
+    - towns:
+      - 歌登辺毛内
+    - towns:
+      - 目梨泊
+    - towns:
+      - 音標
+    - towns:
+      - 風烈布
+
+
+  北海道 紋別郡雄武町:
+    view_state:
+      latitude: 44.53653819614622
+      longitude: 142.83208080109065
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字上幌内
+    - towns:
+      - 字上沢木
+    - towns:
+      - 字上雄武
+    - towns:
+      - 字中幌内
+    - towns:
+      - 字中雄武
+    - towns:
+      - 字北幌内
+    - towns:
+      - 字北雄武
+    - towns:
+      - 字南雄武
+    - towns:
+      - 字幌内
+    - towns:
+      - 字沢木
+    - towns:
+      - 字道有林
+    - towns:
+      - 字雄武
+
+
+  北海道 紋別郡興部町:
+    view_state:
+      latitude: 44.39686573661325
+      longitude: 143.09129408213244
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字住吉
+    - towns:
+      - 字北興
+    - towns:
+      - 字宇津
+    - towns:
+      - 字富丘
+    - towns:
+      - 字朝日
+    - towns:
+      - 字沙留
+    - towns:
+      - 字秋里
+    - towns:
+      - 字興部
+    - towns:
+      - 字豊畑
+    - towns:
+      - 字豊野
+
+
+  北海道 紋別郡西興部村:
+    view_state:
+      latitude: 44.32062520966345
+      longitude: 142.9241840120553
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字上興部
+    - towns:
+      - 字上藻
+    - towns:
+      - 字中興部
+    - towns:
+      - 字中藻
+    - towns:
+      - 字六興
+    - towns:
+      - 字奥興部
+    - towns:
+      - 字忍路子
+    - towns:
+      - 字札滑
+    - towns:
+      - 字東興
+    - towns:
+      - 字西興部
+
+
+  北海道 紋別郡滝上町:
+    view_state:
+      latitude: 44.10351019239746
+      longitude: 143.01248083726787
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - あけぼの町
+    - towns:
+      - 元町
+    - towns:
+      - 大正
+    - towns:
+      - 幸町
+    - towns:
+      - 新町
+    - towns:
+      - 旭町
+    - towns:
+      - 札久留
+    - towns:
+      - 栄町
+    - towns:
+      - 滝下
+    - towns:
+      - 滝美町
+    - towns:
+      - 滝西
+    - towns:
+      - 濁川みどり町
+    - towns:
+      - 濁川中央
+    - towns:
+      - 白鳥
+    - towns:
+      - 第１区
+    - towns:
+      - 第２区
+    - towns:
+      - 第３区
+    - towns:
+      - 第４区
+    - towns:
+      - 第５区
+    - towns:
+      - 雄柏
+    - towns:
+      - 雄鎮内
+
+
+  北海道 紋別郡湧別町:
+    view_state:
+      latitude: 44.12732049074829
+      longitude: 143.60609473750375
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 上富美
+    - towns:
+      - 上湧別屯田市街地
+    - towns:
+      - 上芭露
+    - towns:
+      - 中湧別中町
+    - towns:
+      - 中湧別北町
+    - towns:
+      - 中湧別南町
+    - towns:
+      - 中湧別東町
+    - towns:
+      - 信部内
+    - towns:
+      - 北兵村一区
+    - towns:
+      - 北兵村三区
+    - towns:
+      - 北兵村二区
+    - towns:
+      - 南兵村一区
+    - towns:
+      - 南兵村三区
+    - towns:
+      - 南兵村二区
+    - towns:
+      - 富美
+    - towns:
+      - 川西
+    - towns:
+      - 志撫子
+    - towns:
+      - 旭
+    - towns:
+      - 曙町
+    - towns:
+      - 札富美
+    - towns:
+      - 東
+    - towns:
+      - 東芭露
+    - towns:
+      - 栄町
+    - towns:
+      - 港町
+    - towns:
+      - 登栄床
+    - towns:
+      - 福島
+    - towns:
+      - 緑町
+    - towns:
+      - 緑蔭
+    - towns:
+      - 芭露
+    - towns:
+      - 西芭露
+    - towns:
+      - 計呂地
+    - towns:
+      - 錦町
+    - towns:
+      - 開盛
+
+
+  北海道 紋別郡遠軽町:
+    view_state:
+      latitude: 43.906618181667966
+      longitude: 143.31067792142775
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 上白滝
+    - towns:
+      - 下白滝
+    - towns:
+      - 丸大
+    - towns:
+      - 丸瀬布上丸
+    - towns:
+      - 丸瀬布上武利
+    - towns:
+      - 丸瀬布元町
+    - towns:
+      - 丸瀬布南丸
+    - towns:
+      - 丸瀬布大平
+    - towns:
+      - 丸瀬布天神町
+    - towns:
+      - 丸瀬布新町
+    - towns:
+      - 丸瀬布東町
+    - towns:
+      - 丸瀬布武利
+    - towns:
+      - 丸瀬布水谷町
+    - towns:
+      - 丸瀬布西町
+    - towns:
+      - 丸瀬布金山
+    - towns:
+      - 千代田
+    - towns:
+      - 南町１丁目
+    - towns:
+      - 南町２丁目
+    - towns:
+      - 南町３丁目
+    - towns:
+      - 南町４丁目
+    - towns:
+      - 向遠軽
+    - towns:
+      - 奥白滝
+    - towns:
+      - 学田１丁目
+    - towns:
+      - 学田２丁目
+    - towns:
+      - 学田３丁目
+    - towns:
+      - 学田４丁目
+    - towns:
+      - 学田５丁目
+    - towns:
+      - 宮前町
+    - towns:
+      - 寿町
+    - towns:
+      - 弥生
+    - towns:
+      - 旧白滝
+    - towns:
+      - 東町１丁目
+    - towns:
+      - 東町２丁目
+    - towns:
+      - 東町３丁目
+    - towns:
+      - 東町４丁目
+    - towns:
+      - 東町５丁目
+    - towns:
+      - 東白滝
+    - towns:
+      - 柏
+    - towns:
+      - 栄野
+    - towns:
+      - 清川
+    - towns:
+      - 湯の里
+    - towns:
+      - 瀬戸瀬東町
+    - towns:
+      - 瀬戸瀬西町
+    - towns:
+      - 生田原
+    - towns:
+      - 生田原伊吹
+    - towns:
+      - 生田原八重
+    - towns:
+      - 生田原安国
+    - towns:
+      - 生田原岩戸
+    - towns:
+      - 生田原旭野
+    - towns:
+      - 生田原水穂
+    - towns:
+      - 生田原清里
+    - towns:
+      - 生田原豊原
+    - towns:
+      - 留岡
+    - towns:
+      - 白滝
+    - towns:
+      - 白滝上支湧別
+    - towns:
+      - 白滝北支湧別
+    - towns:
+      - 白滝天狗平
+    - towns:
+      - 白滝支湧別
+    - towns:
+      - 白竜
+    - towns:
+      - 社名淵
+    - towns:
+      - 福路１丁目
+    - towns:
+      - 福路２丁目
+    - towns:
+      - 福路３丁目
+    - towns:
+      - 美山
+    - towns:
+      - 若咲内
+    - towns:
+      - 若松
+    - towns:
+      - 西町１丁目
+    - towns:
+      - 西町２丁目
+    - towns:
+      - 西町３丁目
+    - towns:
+      - 見晴
+    - towns:
+      - 豊里
+    - towns:
+      - 野上
+
+
+  北海道 常呂郡佐呂間町:
+    view_state:
+      latitude: 44.02430439295725
+      longitude: 143.7842075746923
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字中園
+    - towns:
+      - 字仁倉
+    - towns:
+      - 字共立
+    - towns:
+      - 字北
+    - towns:
+      - 字啓生
+    - towns:
+      - 字大成
+    - towns:
+      - 字宮前町
+    - towns:
+      - 字富丘
+    - towns:
+      - 字富武士
+    - towns:
+      - 字川西
+    - towns:
+      - 字幌岩
+    - towns:
+      - 字幸町
+    - towns:
+      - 字朝日
+    - towns:
+      - 字東
+    - towns:
+      - 字栃木
+    - towns:
+      - 字栄
+    - towns:
+      - 字武士
+    - towns:
+      - 字永代町
+    - towns:
+      - 字浜佐呂間
+    - towns:
+      - 字浪速
+    - towns:
+      - 字知来
+    - towns:
+      - 字若佐
+    - towns:
+      - 字若里
+    - towns:
+      - 字西富
+
+
+  北海道 常呂郡置戸町:
+    view_state:
+      latitude: 43.63210275350471
+      longitude: 143.45521106514695
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 北海道照査林
+    - towns:
+      - 字中里
+    - towns:
+      - 字勝山
+    - towns:
+      - 字北光
+    - towns:
+      - 字境野
+    - towns:
+      - 字安住
+    - towns:
+      - 字川南
+    - towns:
+      - 字常元
+    - towns:
+      - 字常盤
+    - towns:
+      - 字幸岡
+    - towns:
+      - 字拓殖
+    - towns:
+      - 字春日
+    - towns:
+      - 字秋田
+    - towns:
+      - 字置戸
+    - towns:
+      - 字豊住
+    - towns:
+      - 字雄勝
+
+
+  北海道 常呂郡訓子府町:
+    view_state:
+      latitude: 43.70100663602424
+      longitude: 143.73218827248655
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字北栄
+    - towns:
+      - 字協成
+    - towns:
+      - 字大谷
+    - towns:
+      - 字実郷
+    - towns:
+      - 字常盤
+    - towns:
+      - 字弥生
+    - towns:
+      - 字日出
+    - towns:
+      - 字柏丘
+    - towns:
+      - 字清住
+    - towns:
+      - 字福野
+    - towns:
+      - 字穂波
+    - towns:
+      - 字緑丘
+    - towns:
+      - 字美園
+    - towns:
+      - 字西富
+    - towns:
+      - 字豊坂
+    - towns:
+      - 字開盛
+    - towns:
+      - 字駒里
+    - towns:
+      - 字高園
+    - towns:
+      - 旭町
+    - towns:
+      - 末広町
+    - towns:
+      - 東幸町
+    - towns:
+      - 東町
+    - towns:
+      - 栄町
+    - towns:
+      - 若富町
+    - towns:
+      - 若葉町
+    - towns:
+      - 西幸町
+    - towns:
+      - 仲町
+      - 元町
+      - 大町
+
+
+  北海道 網走郡津別町:
+    view_state:
+      latitude: 43.60755661759851
+      longitude: 144.0028727584662
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字上里
+    - towns:
+      - 字二又
+    - towns:
+      - 字共和
+    - towns:
+      - 字双葉
+    - towns:
+      - 字大昭
+    - towns:
+      - 字岩富
+    - towns:
+      - 字布川
+    - towns:
+      - 字幸町
+    - towns:
+      - 字恩根
+    - towns:
+      - 字新町
+    - towns:
+      - 字旭町
+    - towns:
+      - 字最上
+    - towns:
+      - 字木樋
+    - towns:
+      - 字本岐
+    - towns:
+      - 字本町
+    - towns:
+      - 字東岡
+    - towns:
+      - 字柏町
+    - towns:
+      - 字栄
+    - towns:
+      - 字沼沢
+    - towns:
+      - 字活汲
+    - towns:
+      - 字相生
+    - towns:
+      - 字緑町
+    - towns:
+      - 字美都
+    - towns:
+      - 字豊永
+    - towns:
+      - 字達美
+    - towns:
+      - 字高台
+      
+
+  北海道 網走郡美幌町:
+    view_state:
+      latitude: 43.75471148756523
+      longitude: 144.13270929998046
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字三橋南
+    - towns:
+      - 字三橋町１丁目
+    - towns:
+      - 字仲町１丁目
+    - towns:
+      - 字仲町２丁目
+    - towns:
+      - 字元町
+    - towns:
+      - 字古梅
+    - towns:
+      - 字報徳
+    - towns:
+      - 字日の出１丁目
+    - towns:
+      - 字日の出２丁目
+    - towns:
+      - 字日並
+    - towns:
+      - 字昭野
+    - towns:
+      - 字東町２丁目
+    - towns:
+      - 字栄森
+    - towns:
+      - 字瑞治
+    - towns:
+      - 字田中
+    - towns:
+      - 字登栄
+    - towns:
+      - 字福住
+    - towns:
+      - 字稲美
+    - towns:
+      - 字美和
+    - towns:
+      - 字美富
+    - towns:
+      - 字美禽
+    - towns:
+      - 字美芳
+    - towns:
+      - 字美里
+    - towns:
+      - 字豊富
+    - towns:
+      - 字豊岡
+    - towns:
+      - 字豊幌
+    - towns:
+      - 字都橋
+    - towns:
+      - 字野崎
+    - towns:
+      - 字青山北
+    - towns:
+      - 字青山南
+    - towns:
+      - 字青葉１丁目
+    - towns:
+      - 字駒生
+    - towns:
+      - 字高野
+    - towns:
+      - 字鳥里
+    - towns:
+      - 字鳥里１丁目
+    - towns:
+      - 字鳥里４丁目
+
+
+  北海道 網走郡大空町:
+    view_state:
+      latitude: 43.83953422853648
+      longitude: 144.24792393342045
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 女満別中央
+    - towns:
+      - 女満別住吉
+    - towns:
+      - 女満別大成
+    - towns:
+      - 女満別大東
+    - towns:
+      - 女満別巴沢
+    - towns:
+      - 女満別日進
+    - towns:
+      - 女満別昭和
+    - towns:
+      - 女満別朝日
+    - towns:
+      - 女満別本郷
+    - towns:
+      - 女満別湖南
+    - towns:
+      - 女満別湖畔３丁目
+    - towns:
+      - 女満別眺湖台３丁目
+    - towns:
+      - 女満別豊里
+    - towns:
+      - 女満別開陽
+    - towns:
+      - 東藻琴
+    - towns:
+      - 東藻琴千草
+    - towns:
+      - 東藻琴大進
+    - towns:
+      - 東藻琴山園
+    - towns:
+      - 東藻琴新富
+    - towns:
+      - 東藻琴明生
+    - towns:
+      - 東藻琴末広
+    - towns:
+      - 東藻琴栄
+    - towns:
+      - 東藻琴清浦
+    - towns:
+      - 東藻琴福富
+    - towns:
+      - 東藻琴西倉
+  
+
+  北海道 斜里郡小清水町:
+    view_state:
+      latitude: 43.81425994437361
+      longitude: 144.4569814207087
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字もこと山
+    - towns:
+      - 字上徳
+    - towns:
+      - 字中里
+    - towns:
+      - 字倉栄
+    - towns:
+      - 字共和
+    - towns:
+      - 字北斗
+    - towns:
+      - 字小清水
+    - towns:
+      - 字旭
+    - towns:
+      - 字東野
+    - towns:
+      - 字止別
+    - towns:
+      - 字水上
+    - towns:
+      - 字泉
+    - towns:
+      - 字浜小清水
+    - towns:
+      - 字神浦
+    - towns:
+      - 字美和
+    - towns:
+      - 字萱野
+
+
+  北海道 斜里郡清里町:
+    view_state:
+      latitude: 43.73302814622263
+      longitude: 144.59973771062292
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 字上斜里
+    - towns:
+      - 字向陽
+    - towns:
+      - 字川向
+    - towns:
+      - 字江南
+    - towns:
+      - 字清泉
+    - towns:
+      - 字神威
+    - towns:
+      - 字青葉
+    - towns:
+      - 札弦町
+    - towns:
+      - 水元町
+    - towns:
+      - 緑町
+    - towns:
+      - 羽衣町
 
 
   北海道 斜里郡斜里町:
@@ -26866,8 +28273,8 @@ areas:
 
   北海道 河東郡鹿追町:
     view_state:
-      latitude: 43.21468592648577
-      longitude: 143.03473298057156
+      latitude: 43.214
+      longitude: 143.034
       zoom: 9.5
     correspondences:
     - towns:
