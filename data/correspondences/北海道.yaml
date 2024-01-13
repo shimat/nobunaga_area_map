@@ -4,6 +4,14 @@
   zoom: 6.2
 
 areas:
+  北海道 （札幌市）:
+    view_state:
+      latitude: 42.980
+      longitude: 141.246
+      zoom: 9.5
+    correspondences: []
+
+
   北海道 （渡島・檜山）:
     view_state:
       latitude: 42.050
@@ -20,13 +28,44 @@ areas:
     correspondences: []
 
 
-  北海道 （札幌市）:
+  北海道 （胆振・日高）:
     view_state:
-      latitude: 42.980
-      longitude: 141.246
-      zoom: 9.5
+      latitude: 42.450
+      longitude: 141.680
+      zoom: 8.0
     correspondences: []
 
+
+  北海道 （上川・留萌）:
+    view_state:
+      latitude: 44.000
+      longitude: 142.300
+      zoom: 7.0
+    correspondences: []
+
+
+  北海道 （宗谷）:
+    view_state:
+      latitude: 45.070
+      longitude: 142.060
+      zoom: 8.0
+    correspondences: []
+
+
+  北海道 （オホーツク）:
+    view_state:
+      latitude: 44.100
+      longitude: 143.900
+      zoom: 7.8
+    correspondences: []
+
+
+  北海道 （十勝・釧路・根室）:
+    view_state:
+      latitude: 43.270
+      longitude: 143.900
+      zoom: 7.0
+    correspondences: []
 
   北海道 札幌市中央区:
     view_state:
