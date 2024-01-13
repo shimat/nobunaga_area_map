@@ -1,19 +1,17 @@
 import functools
-import hashlib
 import itertools
 import more_itertools
-import random
-import randomcolor
 import pandas as pd
 import streamlit as st
 import shapely
 import zipfile
-from enum import Enum
 from os.path import splitext
-from typing import NamedTuple
 from xml.etree import ElementTree
 from src.area_loader import Correspondences
+from src.arrival_color_generator import ArrivalColorGenerator
+from src.enums import ColorCoding
 from src.conditional_decorator import conditional_decorator
+
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
 NAMESPACES = {
@@ -22,17 +20,6 @@ NAMESPACES = {
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "xlink": "http://www.w3.org/1999/xlink"
 }
-
-
-class ColorCoding(Enum):
-    OWNERSHIP = "領有"
-    RANDOM = "ランダム"
-    NOTHING = "なし"
-
-
-class _Kokudaka(NamedTuple):
-    value: float
-    observed: bool
 
 
 @st.cache_resource
@@ -99,7 +86,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 # @st.cache_data
 @conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
-    rand_color = _make_randomcolor(cache_key)
+    color_gen = ArrivalColorGenerator(color_coding, cache_key)
 
     new_data: dict[str, list] = {
         "prefecture_name": [],
@@ -165,7 +152,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
                     raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
-            fill_color = _arrival_color(color_coding, own, rand_color)
+            fill_color = color_gen.generate(own)
 
             sub_towns_suffix = ""
             if len(simplified_sub_towns) > 1:
@@ -195,40 +182,7 @@ def estimate_kokudaka(area: float) -> float:
     return (area ** 0.497) / 30
 
 
-def _make_randomcolor(cache_key: str) -> randomcolor.RandomColor:
-    md5 = hashlib.md5(cache_key.encode())
-    hex = md5.hexdigest()
-    seed = int(hex, 16)
-    return randomcolor.RandomColor(seed=seed)
-
-
 def _get_area_name(df: pd.DataFrame) -> str:
     df = df.reset_index()
     max_area_row = df.iloc[df["area"].idxmax()]
     return max_area_row["town_name"]
-
-
-def _arrival_color(
-    color_coding: ColorCoding,
-    own: int,
-    rand_color: randomcolor.RandomColor
-) -> list[int]:
-    match color_coding:
-        case ColorCoding.OWNERSHIP.value:
-            match own:
-                case 0:  # 未踏
-                    return [192, 192, 192, 64]
-                case 1:  # 直接来訪
-                    return [0, 192, 255, 128]
-                case 2:  # 遠征
-                    return [0, 255, 102, 128]
-                case _:
-                    raise Exception(f"Invalid value: {own=}")
-        case ColorCoding.RANDOM.value:
-            rgb = rand_color.generate(hue="orange", format_="Array(rgb)", count=1)[0]
-            return [*rgb, 128]
-        case ColorCoding.NOTHING.value:
-            return [192, 192, 192, 64]
-        case _:
-            raise Exception(f"Invalid value: {color_coding=}")
-

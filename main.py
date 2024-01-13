@@ -2,16 +2,11 @@ import pydeck
 import re
 import streamlit as st
 import time
-from enum import Enum
 from src.area_loader import load_area_data
-from src.town_loader import load_town_data_from_gml_zip, mod_data, ColorCoding
+from src.enums import MapType, ColorCoding
+from src.town_loader import load_town_data_from_gml_zip, mod_data
 from src.municipality_loader import load_municipality_borders_from_json
 from src.city_list import ORG_CITY_NAMES, CITY_NAMES, HOKKAIDO_SUBPREFECTURES
-
-
-class MapType(Enum):
-    NOBUNAGA_AREAS = "「信長の野望 出陣」の各エリア"
-    ALL_TOWNS = "全町名"
 
 
 st.set_page_config(
