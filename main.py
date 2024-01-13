@@ -1,9 +1,10 @@
 import pydeck
+import re
 import streamlit as st
 import time
 from enum import Enum
 from src.area_loader import load_area_data
-from src.town_loader import load_town_data_from_gml_zip, mod_data
+from src.town_loader import load_town_data_from_gml_zip, mod_data, ColorCoding
 from src.municipality_loader import load_municipality_borders_from_json
 from src.city_list import ORG_CITY_NAMES, CITY_NAMES, HOKKAIDO_SUBPREFECTURES
 
@@ -30,6 +31,7 @@ city_name: str | None = col_right.selectbox(
     options=CITY_NAMES[prefecture_name],
     index=None
 )
+city_name = re.sub(r"^\d+: ", "", city_name or "")
 
 with st.expander("オプション"):
     col1, col2 = st.columns(2)
@@ -38,17 +40,16 @@ with st.expander("オプション"):
             label="マップ種別",
             options=[t.value for t in MapType],
             horizontal=True,)
+        color_coding = st.radio(
+            label="色分け",
+            options=[t.value for t in ColorCoding],
+            horizontal=True)
+    with col2:
+        map_height = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
             disabled=(city_name is not None and not city_name.startswith("（")))
-        enable_color_coding = st.checkbox(
-            label="攻略済みの色分けを表示",
-            value=True,
-            disabled=(map_type == MapType.ALL_TOWNS.value))
-    with col2:
-        map_height = st.number_input("Map高さ(px)", value=600, max_value=2000, min_value=100, step=10)
-
 
 if city_name:
     t = time.perf_counter()
@@ -63,20 +64,20 @@ if city_name:
     if city_name == "（全体）":
         df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
         correspondences = area_data.get_all_correspondences()
-        df_mod = mod_data(df_target, correspondences, enable_color_coding, prefecture_name)
+        df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
     elif city_name.startswith("（"):  # 北海道の各ブロック
         target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in HOKKAIDO_SUBPREFECTURES[city_name]}
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
         correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
         subpref_identifier = f"{prefecture_name} {city_name}"
-        df_mod = mod_data(df_target, correspondences, enable_color_coding, subpref_identifier)
+        df_mod = mod_data(df_target, correspondences, color_coding, subpref_identifier)
         view_state = area_data.areas[subpref_identifier].view_state
     else:
         df_target = df_org[df_org["city_name"] == city_name].copy()
         pref_city = f"{prefecture_name} {city_name}"
         correspondences = area_data.get_one_area_correspondences(pref_city)
-        df_mod = mod_data(df_target, correspondences, enable_color_coding, pref_city)
+        df_mod = mod_data(df_target, correspondences, color_coding, pref_city)
         view_state = area_data.areas[pref_city].view_state
     print(f"DataFrame Mod Time = {time.perf_counter() - t:.3f}s")
     # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")

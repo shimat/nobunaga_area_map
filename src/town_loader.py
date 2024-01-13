@@ -1,10 +1,14 @@
 import functools
+import hashlib
 import itertools
 import more_itertools
+import random
+import randomcolor
 import pandas as pd
 import streamlit as st
 import shapely
 import zipfile
+from enum import Enum
 from os.path import splitext
 from typing import NamedTuple
 from xml.etree import ElementTree
@@ -20,7 +24,13 @@ NAMESPACES = {
 }
 
 
-class Kokudaka(NamedTuple):
+class ColorCoding(Enum):
+    OWNERSHIP = "領有"
+    RANDOM = "ランダム"
+    NOTHING = "なし"
+
+
+class _Kokudaka(NamedTuple):
     value: float
     observed: bool
 
@@ -88,7 +98,9 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 
 # @st.cache_data
 @conditional_decorator(st.cache_data, 'local' not in st.secrets)
-def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_color_coding: bool, cache_key: str) -> pd.DataFrame:
+def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
+    rand_color = _make_randomcolor(cache_key)
+
     new_data: dict[str, list] = {
         "prefecture_name": [],
         "city_name": [],
@@ -113,7 +125,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
             if sub_rows.empty:
                 raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
 
-            area_name = get_area_name(sub_rows)
+            area_name = _get_area_name(sub_rows)
             prefecture_name = sub_rows.iloc[0]["prefecture_name"]
             city_name = sub_rows.iloc[0]["city_name"]
             area: float = sub_rows["area"].sum()
@@ -153,7 +165,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], enable_co
                     raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
-            fill_color = arrival_color(own, enable_color_coding)
+            fill_color = _arrival_color(color_coding, own, rand_color)
 
             sub_towns_suffix = ""
             if len(simplified_sub_towns) > 1:
@@ -183,21 +195,40 @@ def estimate_kokudaka(area: float) -> float:
     return (area ** 0.497) / 30
 
 
-def get_area_name(df: pd.DataFrame) -> str:
+def _make_randomcolor(cache_key: str) -> randomcolor.RandomColor:
+    md5 = hashlib.md5(cache_key.encode())
+    hex = md5.hexdigest()
+    seed = int(hex, 16)
+    return randomcolor.RandomColor(seed=seed)
+
+
+def _get_area_name(df: pd.DataFrame) -> str:
     df = df.reset_index()
     max_area_row = df.iloc[df["area"].idxmax()]
     return max_area_row["town_name"]
 
 
-def arrival_color(own: int, enable_color_coding: bool) -> list[int]:
-    if not enable_color_coding:
-        return [192, 192, 192, 64]
-    match own:
-        case 0:  # 未踏
+def _arrival_color(
+    color_coding: ColorCoding,
+    own: int,
+    rand_color: randomcolor.RandomColor
+) -> list[int]:
+    match color_coding:
+        case ColorCoding.OWNERSHIP.value:
+            match own:
+                case 0:  # 未踏
+                    return [192, 192, 192, 64]
+                case 1:  # 直接来訪
+                    return [0, 192, 255, 128]
+                case 2:  # 遠征
+                    return [0, 255, 102, 128]
+                case _:
+                    raise Exception(f"Invalid value: {own=}")
+        case ColorCoding.RANDOM.value:
+            rgb = rand_color.generate(hue="orange", format_="Array(rgb)", count=1)[0]
+            return [*rgb, 128]
+        case ColorCoding.NOTHING.value:
             return [192, 192, 192, 64]
-        case 1:  # 直接来訪
-            return [0, 192, 255, 128]
-        case 2:  # 遠征
-            return [0, 255, 102, 128]
         case _:
-            raise Exception(f"Invalid value: {own=}")
+            raise Exception(f"Invalid value: {color_coding=}")
+
