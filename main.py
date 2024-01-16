@@ -38,7 +38,8 @@ with st.expander("オプション"):
         color_coding = st.radio(
             label="色分け",
             options=[t.value for t in ColorCoding],
-            horizontal=True)
+            horizontal=True,
+            disabled=(map_type != MapType.NOBUNAGA_AREAS))
     with col2:
         map_height = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
         show_municipality_borders = st.checkbox(

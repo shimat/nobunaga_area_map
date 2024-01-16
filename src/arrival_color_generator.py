@@ -29,7 +29,7 @@ class ArrivalColorGenerator:
                     case _:
                         raise Exception(f"Invalid value: {own=}")
             case ColorCoding.RANDOM.value:
-                rgb = self._rand_color.generate(hue="orange", format_="Array(rgb)", count=1)[0]
+                rgb = self._rand_color.generate(luminosity="light", format_="Array(rgb)", count=1)[0]
                 return [*rgb, 128]
             case ColorCoding.NOTHING.value:
                 return [192, 192, 192, 64]
