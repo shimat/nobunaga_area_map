@@ -35,11 +35,13 @@ with st.expander("オプション"):
             label="マップ種別",
             options=[t.value for t in MapType],
             horizontal=True,)
+        color_coding_options = [t.value for t in ColorCoding]
+        if map_type == MapType.ALL_TOWNS:
+            color_coding_options.remove(ColorCoding.OWNERSHIP)
         color_coding = st.radio(
             label="色分け",
-            options=[t.value for t in ColorCoding],
-            horizontal=True,
-            disabled=(map_type != MapType.NOBUNAGA_AREAS))
+            options=color_coding_options,
+            horizontal=True,)
     with col2:
         map_height = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
         show_municipality_borders = st.checkbox(
@@ -90,7 +92,10 @@ if city_name:
             tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n石高:{kokudaka_str}"
         case MapType.ALL_TOWNS.value:
             df_show = df_target
-            fill_color = [64, 64, 256, 64]
+            if color_coding == ColorCoding.RANDOM:
+                fill_color = "fill_color"
+            else:
+                fill_color = [64, 64, 256, 64]
             tooltip = "{city_name} {town_name}\n面積: {area_str}㎡"
         case _:
             raise Exception(f"Invalid map_type '{map_type}'")
@@ -164,6 +169,7 @@ if city_name:
             "prefecture_name": st.column_config.TextColumn("都道府県", width="small"),
             "city_name": st.column_config.TextColumn("市区町村"),
             "area_name": st.column_config.TextColumn("エリア名"),
+            "town_name": st.column_config.TextColumn("町丁"),
             "address": address_label,
             "area": st.column_config.NumberColumn("面積[㎡]", step="0", width="small"),
             "kokudaka": st.column_config.NumberColumn("石高", format="%.2f", width="small"),

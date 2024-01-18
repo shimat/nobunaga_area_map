@@ -45,7 +45,10 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     pref_cities: list[str] = []
     town_names: list[str] = []
     areas: list[float] = []
+    fill_colors: list[list[int]] = []
     all_towns_polygons: list[list[list[list[float]]]] = []
+
+    color_gen = ArrivalColorGenerator.create_default()
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
@@ -57,6 +60,8 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
         pref_cities.append(f"{prefecture_names[-1]} {city_name}")
         town_names.append(town_name)
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
+
+        fill_colors.append(color_gen.generate(-1))
 
         polygons = []
         contour_elements = itertools.chain(
@@ -75,6 +80,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
         "pref_city": pref_cities,
         "town_name": town_names,
         "area": areas,
+        "fill_color": fill_colors,
         "lonlat_coordinates": all_towns_polygons,
     }
     return pd.DataFrame(
@@ -86,7 +92,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 # @st.cache_data
 @conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
-    color_gen = ArrivalColorGenerator(color_coding, cache_key)
+    color_gen = ArrivalColorGenerator.from_unique_key(color_coding, cache_key)
 
     new_data: dict[str, list] = {
         "prefecture_name": [],

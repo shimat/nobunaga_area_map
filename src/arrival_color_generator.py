@@ -1,13 +1,24 @@
 import hashlib
+from typing import Self
 from randomcolor import RandomColor
 from src.enums import ColorCoding
 
 
 class ArrivalColorGenerator:
-    def __init__(self, color_coding: ColorCoding, unique_key: str) -> None:
+    def __init__(self, color_coding: ColorCoding, rand_color: RandomColor | None) -> None:
         self._color_coding = color_coding
+        self._rand_color = rand_color
+
+    @classmethod
+    def from_unique_key(cls, color_coding: ColorCoding, unique_key: str) -> Self:
+        rand_color = None
         if color_coding == ColorCoding.RANDOM:
-            self._rand_color = self._make_randomcolor(unique_key)
+            rand_color = cls._make_randomcolor(unique_key)
+        return ArrivalColorGenerator(color_coding, rand_color)
+
+    @staticmethod
+    def create_default() -> Self:
+        return ArrivalColorGenerator(ColorCoding.RANDOM, RandomColor(seed=42))
 
     @staticmethod
     def _make_randomcolor(unique_key: str) -> RandomColor:
