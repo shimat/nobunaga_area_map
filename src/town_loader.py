@@ -48,6 +48,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     fill_colors: list[list[int]] = []
     all_towns_polygons: list[list[list[list[float]]]] = []
 
+    fill_colors_lut: dict[str, list[int]] = {}
     color_gen = ArrivalColorGenerator.create_default()
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
@@ -61,7 +62,11 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
         town_names.append(town_name)
         areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
 
-        fill_colors.append(color_gen.generate(-1))
+        # 飛び地には同じ色を振る
+        if (color := fill_colors_lut.get(town_name)) is None:
+            color = color_gen.generate(-1)
+            fill_colors_lut[town_name] = color
+        fill_colors.append(color)
 
         polygons = []
         contour_elements = itertools.chain(
