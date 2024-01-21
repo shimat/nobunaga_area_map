@@ -9863,8 +9863,12 @@ areas:
       koku: 17
     - towns:
       - 上新川町
+      own: 2
+      koku: 12
     - towns:
       - 大縄町
+      own: 2
+      koku: 16
     - towns:
       - 海岸町
       own: 1
@@ -9883,6 +9887,7 @@ areas:
       own: 1
     - towns:
       - 千代台町
+      own: 2
     - towns:
       - 的場町
       own: 2
@@ -9925,6 +9930,8 @@ areas:
       own: 1
     - towns:
       - 吉川町
+      own: 2
+      koku: 14
     - towns:
       - 追分町
       own: 2
@@ -9999,14 +10006,19 @@ areas:
       koku: 16
     - towns:
       - 本通４丁目
+      own: 2
     - towns:
       - 花園町
       own: 2
       koku: 22
     - towns:
       - 柳町
+      own: 2
+      koku: 15
     - towns:
       - 川原町
+      own: 2
+      koku: 17
     - towns:
       - 松陰町
       own: 1
@@ -10623,12 +10635,16 @@ areas:
     - towns:
       - 神居２条１９丁目
       - 神居１条１８丁目
+      own: 2
+      koku: 11
     - towns:
       - 神居３条１６丁目
       - 神居２条１６丁目
       - 神居２条１７丁目
       - 神居１条１６丁目
       - 神居１条１７丁目
+      own: 2
+      koku: 14
     - towns:
       - 神居５条１７丁目
       - 神居４条１８丁目
@@ -10902,6 +10918,8 @@ areas:
     - towns:
       - 忠和５条７丁目
       - 忠和４条７丁目
+      own: 2
+      koku: 11
     - towns:
       - 忠和３条７丁目
       own: 2
@@ -10909,6 +10927,8 @@ areas:
     - towns:
       - 忠和４条６丁目
       - 忠和３条６丁目
+      own: 2
+      koku: 11
     - towns:
       - 忠和４条５丁目
       - 忠和３条５丁目
@@ -11357,6 +11377,8 @@ areas:
       - 春光１条９丁目
     - towns:
       - 春光１条８丁目
+      own: 2
+      koku: 11
     - towns:
       - 春光２条８丁目
       - 春光２条９丁目
@@ -11414,6 +11436,8 @@ areas:
     - towns:
       - 春光７条２丁目
       - 春光６条２丁目
+      own: 2
+      koku: 11
     - towns:
       - 春光６条１丁目
       - 住吉６条２丁目
@@ -11609,6 +11633,8 @@ areas:
       - 錦町１８丁目
       - 北門町１９丁目
       - 北門町１８丁目
+      own: 2
+      koku: 13
     - towns:
       - 北門町２１丁目
       - 北門町２０丁目
@@ -11682,6 +11708,8 @@ areas:
     - towns:
       - 近文町１７丁目
       - 近文町１６丁目
+      own: 2
+      koku: 12
     - towns:
       - 近文町１８丁目
       - 緑町１８丁目
@@ -11833,6 +11861,8 @@ areas:
     - towns:
       - 秋月１条１丁目
       - 秋月１条２丁目
+      own: 2
+      koku: 13
     - towns:
       - 新富１条３丁目
       own: 2
@@ -11890,6 +11920,8 @@ areas:
     - towns:
       - 新星町２丁目
       - 新星町３丁目
+      own: 2
+      koku: 13
     - towns:
       - 新星町４丁目
     - towns:
@@ -11932,6 +11964,8 @@ areas:
       - 永山５条１丁目
       - 永山５条２丁目
       - 永山６条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 永山１条２丁目
       - 永山２条２丁目
@@ -12459,6 +12493,8 @@ areas:
       - 豊岡９条３丁目
       - 豊岡９条４丁目
       - 豊岡８条３丁目
+      own: 2
+      koku: 13
     - towns:
       - 豊岡８条２丁目
       - 豊岡７条１丁目
@@ -12485,10 +12521,14 @@ areas:
     - towns:
       - 豊岡３条２丁目
       - 豊岡２条２丁目
+      own: 2
+      koku: 12
     - towns:
       - １条通２５丁目
       - 豊岡１条１丁目
       - 東光１条１丁目
+      own: 2
+      koku: 11
     - towns:
       - 豊岡２条３丁目
       - 豊岡１条２丁目
@@ -12985,6 +13025,8 @@ areas:
       - 神楽６条１２丁目
       - 神楽５条１２丁目
       - 神楽４条１３丁目
+      own: 2
+      koku: 12
     - towns:
       - 神楽６条１３丁目
       - 神楽６条１４丁目
@@ -13092,6 +13134,8 @@ areas:
     - towns:
       - 神楽７条１２丁目
       - 神居１条２１丁目
+      own: 2
+      koku: 12
 
     - towns:
       - 東３条１１丁目
@@ -22516,6 +22560,8 @@ areas:
       own: 2
     - towns:
       - 戸切地
+      own: 2
+      koku: 72
     - towns:
       - 文月
     - towns:
@@ -22653,10 +22699,14 @@ areas:
       koku: 14
     - towns:
       - 七重浜２丁目
+      own: 2
+      koku: 19
     - towns:
       - 七重浜１丁目
     - towns:
       - 七重浜７丁目
+      own: 2
+      koku: 19
     - towns:
       - 七重浜８丁目
     - towns:
@@ -23129,6 +23179,8 @@ areas:
       - 字砂原東４丁目
     - towns:
       - 字砂原東５丁目
+      own: 2
+      koku: 86
     - towns:
       - 字砂原１丁目
     - towns:
@@ -26851,6 +26903,8 @@ areas:
       - 字上宇莫別
     - towns:
       - 字置杵牛
+      own: 2
+      koku: 251
     - towns:
       - 字白金
       own: 2
@@ -27331,6 +27385,8 @@ areas:
       - 北１４線
     - towns:
       - 北１３線
+      own: 2
+      koku: 141
     - towns:
       - 北１２線
     - towns:
@@ -27408,6 +27464,8 @@ areas:
     correspondences:
     - towns:
       - 伊香牛
+      own: 2
+      koku: 103
     - towns:
       - 宇園別
       own: 1

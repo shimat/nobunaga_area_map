@@ -6,7 +6,7 @@ from src.area_loader import load_area_data
 from src.enums import MapType, ColorCoding
 from src.town_loader import load_town_data_from_gml_zip, mod_data
 from src.municipality_loader import load_municipality_borders_from_json
-from src.city_list import ORG_CITY_NAMES, CITY_NAMES, HOKKAIDO_SUBPREFECTURES
+from src.city_list import ORG_CITY_NAMES, CITY_NAMES, SUBPREFECTURES
 
 
 st.set_page_config(
@@ -64,11 +64,12 @@ if city_name:
         correspondences = area_data.get_all_correspondences()
         df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
-    elif city_name.startswith("（"):  # 北海道の各ブロック
-        target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in HOKKAIDO_SUBPREFECTURES[city_name]}
+    elif city_name.startswith("（"):  # 北海道等の各ブロック
+        target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in SUBPREFECTURES[prefecture_name][city_name]}
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
         correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
         subpref_identifier = f"{prefecture_name} {city_name}"
+        print(f"{subpref_identifier=}")
         df_mod = mod_data(df_target, correspondences, color_coding, subpref_identifier)
         view_state = area_data.areas[subpref_identifier].view_state
     else:
@@ -122,7 +123,7 @@ if city_name:
         if city_name == "（全体）":
             target_cities = ORG_CITY_NAMES[prefecture_name]
         else:
-            target_cities = HOKKAIDO_SUBPREFECTURES[city_name]
+            target_cities = SUBPREFECTURES[prefecture_name][city_name]
         df_municipalities = load_municipality_borders_from_json(
             prefecture_name,
             set(target_cities))

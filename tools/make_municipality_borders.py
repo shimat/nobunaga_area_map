@@ -83,7 +83,15 @@ def merge_contours_by_municipality(all_coordinates: dict[str, list[list[list[flo
 
 prefecture = st.selectbox(
     label="都道府県",
-    options=("北海道", "青森県", "福島県", "東京都", "神奈川県", "千葉県", "石川県",),
+    options=(
+        "北海道",
+        "青森県",
+        "福島県",
+        "東京都",
+        "神奈川県",
+        "千葉県",
+        "石川県",
+        "京都府",),
     index=None)
 if prefecture:
     df = load_town_data_from_gml_zip(f"../gml/経済センサス_活動調査_{prefecture}.zip")
