@@ -8,7 +8,7 @@ import zipfile
 from os.path import splitext
 from xml.etree import ElementTree
 from src.area_loader import Correspondences
-from src.arrival_color_generator import ArrivalColorGenerator
+from src.color_generator import make_color_generator, RandomColorGenerator
 from src.enums import ColorCoding
 from src.conditional_decorator import conditional_decorator
 
@@ -49,7 +49,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     all_towns_polygons: list[list[list[list[float]]]] = []
 
     fill_colors_lut: dict[str, list[int]] = {}
-    color_gen = ArrivalColorGenerator.create_default()
+    color_gen = RandomColorGenerator.create_default()
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
@@ -64,7 +64,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 
         # 飛び地には同じ色を振る
         if (color := fill_colors_lut.get(town_name)) is None:
-            color = color_gen.generate(-1)
+            color = color_gen.generate()
             fill_colors_lut[town_name] = color
         fill_colors.append(color)
 
@@ -97,7 +97,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 # @st.cache_data
 @conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
-    color_gen = ArrivalColorGenerator.from_unique_key(color_coding, cache_key)
+    color_gen = make_color_generator(color_coding, cache_key)
 
     new_data: dict[str, list] = {
         "prefecture_name": [],
