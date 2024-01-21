@@ -87,12 +87,14 @@ if city_name:
 
     fill_color: str | list[int]
     match map_type:
-        case MapType.NOBUNAGA_AREAS.value:
+        case MapType.NOBUNAGA_AREAS:
             df_show = df_mod
+            line_width_scale = 15
             fill_color = "fill_color"
             tooltip = "{city_name} {area_name}{sub_towns_suffix}\n面積: {area_str}㎡\n石高:{kokudaka_str}"
-        case MapType.ALL_TOWNS.value:
+        case MapType.ALL_TOWNS:
             df_show = df_target
+            line_width_scale = 10
             if color_coding == ColorCoding.RANDOM:
                 fill_color = "fill_color"
             else:
@@ -109,7 +111,7 @@ if city_name:
         filled=True,
         extruded=False,
         wireframe=False,
-        line_width_scale=15,
+        line_width_scale=line_width_scale,
         # line_width_min_pixels=0.1,
         get_polygon="lonlat_coordinates",
         get_line_color=[255, 255, 255],
@@ -148,7 +150,8 @@ if city_name:
             latitude=view_state.latitude,
             longitude=view_state.longitude,
             zoom=view_state.zoom,
-            max_zoom=16,
+            max_zoom=17,
+            min_zoom=4,
             pitch=0,
             bearing=0,
         ),
