@@ -142,8 +142,10 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
                         for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
                 continue
-            merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
+            merged_polygon = shapely.unary_union(polygons)
+            # merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
             simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
+            # simple_polygon = merged_polygon
 
             match simple_polygon.geom_type:
                 case "Polygon":

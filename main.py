@@ -69,7 +69,6 @@ if city_name:
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
         correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
         subpref_identifier = f"{prefecture_name} {city_name}"
-        print(f"{subpref_identifier=}")
         df_mod = mod_data(df_target, correspondences, color_coding, subpref_identifier)
         view_state = area_data.areas[subpref_identifier].view_state
     else:

@@ -2,7 +2,7 @@
 postScriptGC = true
 
 [server]
-maxMessageSize = 300
+maxMessageSize = 500
 enableWebsocketCompression = true
 
 [theme]
