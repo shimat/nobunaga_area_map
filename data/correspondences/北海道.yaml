@@ -10653,6 +10653,8 @@ areas:
       - 神居４条１７丁目
       - 神居４条１６丁目
       - 神居３条１７丁目
+      own: 2
+      koku: 11
     - towns:
       - 神居７条１７丁目
       - 神居７条１８丁目
@@ -10716,6 +10718,8 @@ areas:
       - 神居６条１２丁目
       - 神居６条１３丁目
       - 神居５条１２丁目
+      own: 2
+      koku: 11
     - towns:
       - 神居９条７丁目
       - 神居９条８丁目
@@ -10818,6 +10822,8 @@ areas:
       - 神居６条４丁目
       - 神居５条４丁目
       - 神居５条５丁目
+      own: 2
+      koku: 13
     - towns:
       - 神居６条２丁目
       - 神居５条１丁目
@@ -10843,6 +10849,8 @@ areas:
       - 神居８条１丁目
       - 神居７条１丁目
       - 神居６条１丁目
+      own: 2
+      koku: 11
     - towns:
       - 高砂台１丁目
     - towns:
@@ -10919,6 +10927,8 @@ areas:
     - towns:
       - 忠和６条６丁目
       - 忠和５条６丁目
+      own: 2
+      koku: 12
     - towns:
       - 忠和７条６丁目
       - 忠和７条７丁目
@@ -10946,6 +10956,8 @@ areas:
       koku: 12
     - towns:
       - 忠和１条５丁目
+      own: 2
+      koku: 12
     - towns:
       - 忠和１条４丁目
     - towns:
@@ -10953,6 +10965,8 @@ areas:
       - 忠和２条３丁目
       - 忠和２条４丁目
       - 忠和２条５丁目
+      own: 2
+      koku: 14
     - towns:
       - 忠和４条３丁目
       - 忠和４条４丁目
@@ -11385,6 +11399,8 @@ areas:
     - towns:
       - 末広東１条１丁目
       - 春光１条９丁目
+      own: 2
+      koku: 12
     - towns:
       - 春光１条８丁目
       own: 2
@@ -11943,6 +11959,8 @@ areas:
       - 永山７条１丁目
       - 永山８条１丁目
       - 永山９条１丁目
+      own: 2
+      koku: 16
     - towns:
       - 永山１０条１丁目
       - 永山１０条２丁目
@@ -11985,6 +12003,8 @@ areas:
       - 永山２条２丁目
       - 永山２条３丁目
       - 永山３条２丁目
+      own: 2
+      koku: 12
     - towns:
       - 永山３条３丁目
       - 永山４条２丁目
@@ -12525,6 +12545,8 @@ areas:
     - towns:
       - 豊岡５条２丁目
       - 豊岡５条３丁目
+      own: 2
+      koku: 12
     - towns:
       - 豊岡５条１丁目
       - 豊岡４条１丁目
@@ -12561,6 +12583,8 @@ areas:
       - 南３条通２６丁目
       - 東光４条１丁目
       - 東光５条１丁目
+      own: 2
+      koku: 11
     - towns:
       - 東光６条１丁目
       - 東光７条１丁目
@@ -12977,6 +13001,8 @@ areas:
       - 神楽岡２条５丁目
     - towns:
       - 神楽岡１条４丁目
+      own: 2
+      koku: 11
     - towns:
       - 神楽岡公園
       own: 2
@@ -13923,6 +13949,8 @@ areas:
       - 南５条通２６丁目
       - 南６条通２６丁目
       - 東光８条１丁目
+      own: 2
+      koku: 11
     - towns:
       - 南７条通２６丁目
       - 南８条通２６丁目
@@ -19928,6 +19956,8 @@ areas:
       - 温根別町
     - towns:
       - 温根別町伊文
+      own: 2
+      koku: 248
     - towns:
       - 温根別町北静川
     - towns:
@@ -22595,8 +22625,12 @@ areas:
       own: 2
     - towns:
       - 茂辺地市ノ渡
+      own: 2
+      koku: 89
     - towns:
       - 矢不来
+      own: 2
+      koku: 58
     - towns:
       - 茂辺地
       own: 2
@@ -22608,12 +22642,16 @@ areas:
     - towns:
       - 茂辺地４丁目
       - 茂辺地６丁目
+      own: 2
+      koku: 16
     - towns:
       - 茂辺地３丁目
     - towns:
       - 茂辺地２丁目
     - towns:
       - 茂辺地１丁目
+      own: 2
+      koku: 12
     - towns:
       - 当別
       own: 2
@@ -22650,6 +22688,8 @@ areas:
       - 白川
     - towns:
       - 細入
+      own: 2
+      koku: 35
     - towns:
       - 本町
       own: 1
@@ -22669,6 +22709,8 @@ areas:
       - 本町６丁目
     - towns:
       - 村内
+      own: 2
+      koku: 53
     - towns:
       - 南大野
       own: 2
@@ -22687,6 +22729,8 @@ areas:
       own: 1
     - towns:
       - 千代田
+      own: 2
+      koku: 51
     - towns:
       - 清川
       own: 2
@@ -22698,8 +22742,10 @@ areas:
       own: 1
     - towns:
       - 追分７丁目
+      own: 2
     - towns:
       - 追分６丁目
+      own: 2
     - towns:
       - 追分５丁目
       own: 1
@@ -22708,6 +22754,7 @@ areas:
       own: 1
     - towns:
       - 追分２丁目
+      own: 2
     - towns:
       - 追分３丁目
       own: 2
@@ -22747,18 +22794,24 @@ areas:
       koku: 22
     - towns:
       - 久根別１丁目
+      own: 2
+      koku: 15
     - towns:
       - 久根別２丁目
     - towns:
       - 久根別３丁目
     - towns:
       - 久根別４丁目
+      own: 2
+      koku: 17
     - towns:
       - 久根別５丁目
       own: 2
       koku: 21
     - towns:
       - 東浜１丁目
+      own: 2
+      koku: 17
     - towns:
       - 東浜２丁目
     - towns:
@@ -23008,6 +23061,7 @@ areas:
       - 字鶴岡
     - towns:
       - 字本町
+      - 字前浜
 
 
   北海道 亀田郡七飯町:
@@ -27567,6 +27621,8 @@ areas:
       own: 1
     - towns:
       - 市街
+      own: 2
+      koku: 31
     - towns:
       - 六条西３丁目
     - towns:
@@ -27587,10 +27643,14 @@ areas:
     correspondences:
     - towns:
       - 字協和
+      own: 2
+      koku: 275
     - towns:
       - 字徳星
     - towns:
       - 字旭山
+      own: 2
+      koku: 213
     - towns:
       - 字金富
     - towns:

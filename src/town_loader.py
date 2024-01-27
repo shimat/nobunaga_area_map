@@ -1,4 +1,3 @@
-import functools
 import itertools
 import more_itertools
 import pandas as pd
