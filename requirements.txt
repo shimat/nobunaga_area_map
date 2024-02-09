@@ -3,5 +3,5 @@ orjson==3.9.10
 pydantic==2.5.3
 pydantic-yaml==1.2.0
 shapely==2.0.2
-streamlit==1.30.0
+streamlit==1.31.0
 randomcolor==0.4.4.6
