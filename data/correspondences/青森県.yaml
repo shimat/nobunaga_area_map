@@ -2010,6 +2010,8 @@ areas:
       koku: 486
     - towns:
       - 大平町
+      own: 2
+      koku: 558
     - towns:
       - 大字関根
     - towns:
@@ -2345,6 +2347,8 @@ areas:
       koku: 268
     - towns:
       - 大字長後
+      own: 2
+      koku: 253
 
 
   青森県 下北郡東通村:
