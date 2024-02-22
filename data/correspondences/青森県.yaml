@@ -2014,8 +2014,12 @@ areas:
       koku: 558
     - towns:
       - 大字関根
+      own: 2
+      koku: 179
     - towns:
       - 大字田名部
+      own: 2
+      koku: 199
     - towns:
       - 川内町
     - towns:
@@ -2030,14 +2034,120 @@ areas:
       - 大字大湊
     - towns:
       - 脇野沢
-    - towns:
-      - 赤川町
+      own: 2
+      koku: 243
     - towns:
       - 大字奥内
     - towns:
       - 新町
     - towns:
       - 大字中野沢
+    - towns:
+      - 大字大平
+    - towns:
+      - 松森町
+    - towns:
+      - 荒川町
+    - towns:
+      - 並川町
+    - towns:
+      - 大湊新町
+    - towns:
+      - 大湊浜町
+    - towns:
+      - 大湊上町
+    - towns:
+      - 川守町
+    - towns:
+      - 宇田町
+      - 大湊町
+    - towns:
+      - 桜木町
+    - towns:
+      - 文京町
+    - towns:
+      - 山田町
+    - towns:
+      - 旭町
+    - towns:
+      - 真砂町
+    - towns:
+      - 中央１丁目
+    - towns:
+      - 中央２丁目
+    - towns:
+      - 美里町
+    - towns:
+      - 緑ヶ丘
+    - towns:
+      - 十二林
+    - towns:
+      - 松山町
+    - towns:
+      - 金谷１丁目
+    - towns:
+      - 金谷２丁目
+    - towns:
+      - 小川町１丁目
+    - towns:
+      - 小川町２丁目
+    - towns:
+      - 栗山町
+    - towns:
+      - 柳町１丁目
+    - towns:
+      - 柳町２丁目
+    - towns:
+      - 柳町３丁目
+    - towns:
+      - 柳町４丁目
+    - towns:
+      - 上川町
+    - towns:
+      - 田名部町
+      - 本町
+    - towns:
+      - 横迎町１丁目
+    - towns:
+      - 横迎町２丁目
+    - towns:
+      - 苫生町１丁目
+    - towns:
+      - 苫生町２丁目
+    - towns:
+      - 海老川町
+    - towns:
+      - 緑町
+    - towns:
+      - 下北町
+    - towns:
+      - 港町
+    - towns:
+      - 仲町
+    - towns:
+      - 昭和町
+    - towns:
+      - 金曲１丁目
+    - towns:
+      - 金曲２丁目
+    - towns:
+      - 金曲３丁目
+    - towns:
+      - 若松町
+    - towns:
+      - 南町
+    - towns:
+      - 松原町
+    - towns:
+      - 赤川町
+    - towns:
+      - 大曲１丁目
+    - towns:
+      - 大曲２丁目
+    - towns:
+      - 大曲３丁目
+    - towns:
+      - 南赤川町
 
 
   青森県 つがる市:
