@@ -2022,24 +2022,40 @@ areas:
       koku: 199
     - towns:
       - 川内町
+      own: 2
+      koku: 244
     - towns:
       - 川内町蛎崎
+      own: 2
+      koku: 50
     - towns:
       - 川内町宿野部
+      own: 2
+      koku: 92
     - towns:
       - 川内町桧川
+      own: 2
+      koku: 68
     - towns:
       - 大字城ヶ沢
+      own: 2
+      koku: 148
     - towns:
       - 大字大湊
+      own: 2
+      koku: 101
     - towns:
       - 脇野沢
       own: 2
       koku: 243
     - towns:
       - 大字奥内
+      own: 2
+      koku: 164
     - towns:
       - 新町
+      own: 2
+      koku: 164
     - towns:
       - 大字中野沢
     - towns:
@@ -2061,93 +2077,176 @@ areas:
     - towns:
       - 宇田町
       - 大湊町
+      own: 2
+      koku: 28
     - towns:
       - 桜木町
     - towns:
       - 文京町
+      own: 2
+      koku: 21
     - towns:
       - 山田町
+      own: 2
+      koku: 20
     - towns:
       - 旭町
+      own: 2
+      koku: 21
     - towns:
       - 真砂町
+      own: 2
+      koku: 22
     - towns:
       - 中央１丁目
+      own: 2
+      koku: 21
     - towns:
       - 中央２丁目
+      own: 2
+      koku: 23
     - towns:
       - 美里町
+      own: 2
+      koku: 17
     - towns:
       - 緑ヶ丘
+      own: 2
+      koku: 19
     - towns:
       - 十二林
+      own: 2
+      koku: 15
     - towns:
       - 松山町
+      own: 2
+      koku: 15
     - towns:
       - 金谷１丁目
+      own: 2
+      koku: 21
     - towns:
       - 金谷２丁目
+      own: 2
+      koku: 20
     - towns:
       - 小川町１丁目
+      own: 2
+      koku: 23
     - towns:
       - 小川町２丁目
+      own: 2
+      koku: 18
     - towns:
       - 栗山町
+      own: 2
+      koku: 23
     - towns:
       - 柳町１丁目
+      own: 2
+      koku: 11
     - towns:
       - 柳町２丁目
+      own: 2
+      koku: 14
     - towns:
       - 柳町３丁目
+      own: 2
+      koku: 17
     - towns:
       - 柳町４丁目
+      own: 2
+      koku: 15
     - towns:
       - 上川町
+      own: 2
+      koku: 15
     - towns:
       - 田名部町
       - 本町
+      own: 2
+      koku: 11
     - towns:
       - 横迎町１丁目
+      own: 2
+      koku: 18
     - towns:
       - 横迎町２丁目
+      own: 2
+      koku: 16
     - towns:
       - 苫生町１丁目
+      own: 2
+      koku: 15
     - towns:
       - 苫生町２丁目
+      own: 2
+      koku: 11
     - towns:
       - 海老川町
+      own: 2
+      koku: 20
     - towns:
       - 緑町
+      own: 2
+      koku: 19
     - towns:
       - 下北町
+      own: 2
+      koku: 22
     - towns:
       - 港町
+      own: 2
+      koku: 32
     - towns:
       - 仲町
+      own: 2
+      koku: 21
     - towns:
       - 昭和町
+      own: 2
+      koku: 17
     - towns:
       - 金曲１丁目
+      own: 2
+      koku: 21
     - towns:
       - 金曲２丁目
+      own: 2
+      koku: 20
     - towns:
       - 金曲３丁目
+      own: 2
+      koku: 19
     - towns:
       - 若松町
+      own: 2
+      koku: 16
     - towns:
       - 南町
+      own: 2
+      koku: 18
     - towns:
       - 松原町
+      own: 2
+      koku: 25
     - towns:
       - 赤川町
+      own: 2
+      koku: 19
     - towns:
       - 大曲１丁目
+      own: 2
+      koku: 24
     - towns:
       - 大曲２丁目
-    - towns:
       - 大曲３丁目
+      own: 2
+      koku: 26
     - towns:
       - 南赤川町
+      own: 2
+      koku: 26
 
 
   青森県 つがる市:
@@ -2477,12 +2576,18 @@ areas:
       - 大字野牛
     - towns:
       - 大字蒲野沢
+      own: 2
+      koku: 138
     - towns:
       - 大字大利
     - towns:
       - 大字目名
+      own: 2
+      koku: 157
     - towns:
       - 大字田屋
+      own: 2
+      koku: 161
     - towns:
       - 大字砂子又
     - towns:
@@ -2491,6 +2596,8 @@ areas:
       - 大字小田野沢
     - towns:
       - 大字白糠
+      own: 2
+      koku: 212
 
 
   青森県 上北郡横浜町:
@@ -2537,6 +2644,8 @@ areas:
       - 字川尻
     - towns:
       - 字明神平
+      own: 2
+      koku: 134
     - towns:
       - 字有畑
     - towns:
@@ -2591,12 +2700,16 @@ areas:
       - 大字倉内
     - towns:
       - 大字出戸
+      own: 2
+      koku: 170
     - towns:
       - 大字尾駮
     - towns:
       - 大字平沼
     - towns:
       - 大字泊
+      own: 2
+      koku: 173
     - towns:
       - 大字鷹架
 
