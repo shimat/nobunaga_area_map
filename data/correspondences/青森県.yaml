@@ -2058,22 +2058,40 @@ areas:
       koku: 164
     - towns:
       - 大字中野沢
+      own: 2
+      koku: 85
     - towns:
       - 大字大平
+      own: 2
+      koku: 43
     - towns:
       - 松森町
+      own: 2
+      koku: 15
     - towns:
       - 荒川町
+      own: 2
+      koku: 17
     - towns:
       - 並川町
+      own: 2
+      koku: 23
     - towns:
       - 大湊新町
+      own: 2
+      koku: 23
     - towns:
       - 大湊浜町
+      own: 2
+      koku: 19
     - towns:
       - 大湊上町
+      own: 2
+      koku: 19
     - towns:
       - 川守町
+      own: 2
+      koku: 19
     - towns:
       - 宇田町
       - 大湊町
@@ -2081,6 +2099,8 @@ areas:
       koku: 28
     - towns:
       - 桜木町
+      own: 2
+      koku: 25
     - towns:
       - 文京町
       own: 2
@@ -2568,18 +2588,28 @@ areas:
     correspondences:
     - towns:
       - 大字尻屋
+      own: 2
+      koku: 101
     - towns:
       - 大字岩屋
+      own: 2
+      koku: 102
     - towns:
       - 大字尻労
+      own: 2
+      koku: 130
     - towns:
       - 大字野牛
+      own: 2
+      koku: 243
     - towns:
       - 大字蒲野沢
       own: 2
       koku: 138
     - towns:
       - 大字大利
+      own: 2
+      koku: 117
     - towns:
       - 大字目名
       own: 2
@@ -2590,10 +2620,16 @@ areas:
       koku: 161
     - towns:
       - 大字砂子又
+      own: 2
+      koku: 160
     - towns:
       - 大字猿ケ森
+      own: 2
+      koku: 137
     - towns:
       - 大字小田野沢
+      own: 2
+      koku: 164
     - towns:
       - 大字白糠
       own: 2
@@ -2698,12 +2734,16 @@ areas:
     correspondences:
     - towns:
       - 大字倉内
+      own: 2
+      koku: 226
     - towns:
       - 大字出戸
       own: 2
       koku: 170
     - towns:
       - 大字尾駮
+      own: 2
+      koku: 267
     - towns:
       - 大字平沼
     - towns:
@@ -2712,6 +2752,8 @@ areas:
       koku: 173
     - towns:
       - 大字鷹架
+      own: 2
+      koku: 215
 
 
   青森県 上北郡野辺地町:
@@ -2766,6 +2808,8 @@ areas:
       - 字古明前
     - towns:
       - 字向田
+      own: 2
+      koku: 150
     - towns:
       - 字地続山
     - towns:
@@ -2880,6 +2924,8 @@ areas:
       - 字ほとけ沢
     - towns:
       - 字ガス平
+      own: 2
+      koku: 125
     - towns:
       - 字上久保
     - towns:
