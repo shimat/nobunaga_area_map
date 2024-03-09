@@ -2668,6 +2668,8 @@ areas:
       - 字大豆田
     - towns:
       - 字太郎須田
+      own: 2
+      koku: 139
     - towns:
       - 字夷ケ沢平
     - towns:
@@ -3038,6 +3040,8 @@ areas:
       - 字大籏屋
     - towns:
       - 字太田平
+      own: 2
+      koku: 59
     - towns:
       - 字夫雑原
     - towns:
