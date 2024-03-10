@@ -2833,8 +2833,6 @@ areas:
     - towns:
       - 字大月平
     - towns:
-      - 字大谷地東沢
-    - towns:
       - 字家ノ上
     - towns:
       - 字寺ノ沢
@@ -2848,6 +2846,9 @@ areas:
       - 字明前
     - towns:
       - 字春木場沢
+      - 字大谷地東沢
+      own: 2
+      koku: 61
     - towns:
       - 字有戸鳥井平
     - towns:

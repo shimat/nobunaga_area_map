@@ -43,12 +43,21 @@ with st.expander("オプション"):
             label="色分け",
             options=color_coding_options,
             horizontal=True,)
-    with col2:
-        map_height: float = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
             disabled=(not city_name.startswith("（")))
+    with col2:
+        bastion_coordinates: str | None = st.text_input(
+            "拠点の緯度・経度 (入力した場合に半径50kmの円を表示)", value=None, placeholder="例: 43.0687, 141.3507")
+        bastion_latitude, bastion_longitude = None, None
+        if bastion_coordinates:
+            try:
+                bastion_latitude, bastion_longitude = map(float, bastion_coordinates.split(","))
+            except:
+                pass
+
+        map_height: float = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
 
 if city_name:
     t = time.perf_counter()
@@ -144,6 +153,29 @@ if city_name:
             get_line_color=[255, 255, 255],
             auto_highlight=False,
             pickable=False,
+        ))
+    # 遠征可能範囲の表示
+    if bastion_latitude and bastion_longitude:
+        df_circle = pd.DataFrame({
+            "coordinates": [[bastion_longitude, bastion_latitude]] * 2,
+            "radius": [50000, 300],
+            "fill_color": [
+                [255, 140, 0, 32],
+                [255, 0, 0, 255],
+            ],
+        })
+        layers.append(pydeck.Layer(
+            "ScatterplotLayer",
+            df_circle,
+            pickable=False,
+            stroked=True,
+            filled=True,
+            #radius_units="meters",
+            line_width_min_pixels=1,
+            get_position="coordinates",
+            get_radius="radius",
+            get_fill_color="fill_color",
+            get_line_color=[255, 255, 255],
         ))
     deck = pydeck.Deck(
         layers=layers,
