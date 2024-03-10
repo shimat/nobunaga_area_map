@@ -1,3 +1,4 @@
+import pandas as pd
 import pydeck
 import re
 import streamlit as st
@@ -21,12 +22,12 @@ prefecture_name: str = col_left.selectbox(
     label="都道府県",
     options=CITY_NAMES.keys(),
 )
-city_name: str | None = col_right.selectbox(
+city_name: str = col_right.selectbox(
     label="市区町村",
     options=CITY_NAMES[prefecture_name],
     index=None
-)
-city_name = re.sub(r"^\d+: ", "", city_name or "")
+) or ""
+city_name = re.sub(r"^\d+: ", "", city_name)
 
 with st.expander("オプション"):
     col1, col2 = st.columns(2)
@@ -43,11 +44,11 @@ with st.expander("オプション"):
             options=color_coding_options,
             horizontal=True,)
     with col2:
-        map_height = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
+        map_height: float = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
-            disabled=(city_name is not None and not city_name.startswith("（")))
+            disabled=(not city_name.startswith("（")))
 
 if city_name:
     t = time.perf_counter()
@@ -85,6 +86,7 @@ if city_name:
     df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x))
 
     fill_color: str | list[int]
+    df_show: pd.DataFrame
     match map_type:
         case MapType.NOBUNAGA_AREAS:
             df_show = df_mod

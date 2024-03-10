@@ -2643,6 +2643,13 @@ areas:
       zoom: 10.0
     correspondences:
     - towns:
+      - 字林尻
+    - towns:
+      - 字浜田
+      - 字苗代川目
+      - 字下苗代川目
+      - 字有畑
+    - towns:
       - 字イタヤノ木
     - towns:
       - 字モダシ平
@@ -2650,6 +2657,8 @@ areas:
       - 字三保野
     - towns:
       - 字上イタヤノ木
+      - 字下外ノ沢
+      - 字上外ノ沢
     - towns:
       - 字中椛名木
     - towns:
@@ -2658,6 +2667,7 @@ areas:
       - 字二又
     - towns:
       - 字向平
+      - 字荒内
     - towns:
       - 字吹越
     - towns:
@@ -2680,52 +2690,54 @@ areas:
       - 字川太郎川目
     - towns:
       - 字川尻
+      - 字茅平
+      - 字桧木
     - towns:
       - 字明神平
       own: 2
       koku: 134
     - towns:
-      - 字有畑
-    - towns:
       - 字林ノ後
     - towns:
       - 字林ノ脇
-    - towns:
-      - 字林尻
-    - towns:
-      - 字桧木
+      own: 2
+      koku: 97
     - towns:
       - 字梨木平
+      own: 2
+      koku: 82
     - towns:
       - 字泊川
     - towns:
       - 字浜懸
     - towns:
-      - 字浜田
-    - towns:
-      - 字牛ノ沢川目
-    - towns:
       - 字獅子沢平
+      own: 2
+      koku: 81
     - towns:
       - 字百目木
+      - 字牛ノ沢
+      - 字牛ノ沢川目
     - towns:
       - 字稲荷平
     - towns:
       - 字舘ノ後
-    - towns:
-      - 字苗代川目
-    - towns:
-      - 字茅平
-    - towns:
-      - 字荒内
+      - 字椛名木
     - towns:
       - 字豊栄平
     - towns:
       - 字雲雀平
     - towns:
       - 字鶏ケ唄
+      - 字下田ノ沢
+      - 字中田ノ沢
+      - 字上田ノ沢
     - towns:
       - 字鶏沢
+    - towns:
+      - 字下川原
+      - 字横浜
+      - 字寺下
 
 
   青森県 上北郡六ヶ所村:

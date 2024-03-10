@@ -10320,8 +10320,12 @@ areas:
       koku: 28
     - towns:
       - 銭函１丁目
+      own: 1
+      koku: 28
     - towns:
       - 張碓町
+      own: 1
+      koku: 43
     - towns:
       - 星野町
       own: 1
@@ -10333,17 +10337,23 @@ areas:
       own: 1
     - towns:
       - 春香町
-      own: 2
+      own: 1
     - towns:
       - 新光町
       own: 1
     - towns:
       - 朝里４丁目
+      own: 1
+      koku: 27
     - towns:
       - 朝里３丁目
+      own: 1
+      koku: 12
     - towns:
       - 朝里２丁目
       - 朝里１丁目
+      own: 1
+      koku: 14
     - towns:
       - 朝里川温泉１丁目
       own: 1
@@ -10355,10 +10365,16 @@ areas:
       own: 1
     - towns:
       - 新光１丁目
+      own: 1
+      koku: 21
     - towns:
       - 新光２丁目
+      own: 1
+      koku: 16
     - towns:
       - 新光３丁目
+      own: 1
+      koku: 19
     - towns:
       - 新光４丁目
       own: 1
@@ -10372,8 +10388,12 @@ areas:
       own: 1
     - towns:
       - 桜３丁目
+      own: 1
+      koku: 22
     - towns:
       - 桜４丁目
+      own: 1
+      koku: 14
     - towns:
       - 桜５丁目
     - towns:
@@ -10386,6 +10406,8 @@ areas:
       - 望洋台４丁目
     - towns:
       - 船浜町
+      own: 1
+      koku: 14
     - towns:
       - 若竹町
       own: 1
@@ -10397,6 +10419,8 @@ areas:
       own: 1
     - towns:
       - 潮見台１丁目
+      own: 1
+      koku: 21
     - towns:
       - 潮見台２丁目
     - towns:
@@ -10435,6 +10459,8 @@ areas:
       own: 2
     - towns:
       - 新富町
+      own: 1
+      koku: 11
     - towns:
       - 若松１丁目
       - 若松２丁目
@@ -10442,6 +10468,8 @@ areas:
       own: 1
     - towns:
       - 有幌町
+      own: 1
+      koku: 13
     - towns:
       - 住吉町
     - towns:
@@ -10619,6 +10647,8 @@ areas:
       koku: 127
     - towns:
       - 江丹別町富原
+      own: 2
+      koku: 142
     - towns:
       - 江丹別町西里
       own: 2
@@ -11270,6 +11300,8 @@ areas:
       koku: 14
     - towns:
       - 春光台４条５丁目
+      own: 2
+      koku: 12
     - towns:
       - 春光台５条４丁目
       - 春光台５条５丁目
@@ -13170,6 +13202,8 @@ areas:
       - 東光１５条６丁目
       - 東光１５条７丁目
       - 東光１６条６丁目
+      own: 2
+      koku: 11
     - towns:
       - 東光１３条５丁目
       - 東光１３条６丁目
@@ -13180,6 +13214,8 @@ areas:
       - 東光１２条７丁目
       - 東光１３条７丁目
       - 東光１４条７丁目
+      own: 2
+      koku: 11
     - towns:
       - 東光１２条９丁目
       - 東光１３条８丁目
@@ -13221,6 +13257,8 @@ areas:
       - 東光９条７丁目
       - 東光９条８丁目
       - 東光９条９丁目
+      own: 2
+      koku: 12
     - towns:
       - 東光６条１０丁目
       - 東光７条８丁目
@@ -13343,6 +13381,8 @@ areas:
       - 緑が丘東５条２丁目
     - towns:
       - 緑が丘東４条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 緑が丘５条４丁目
       - 緑が丘４条４丁目
