@@ -2669,6 +2669,8 @@ areas:
       - 字中椛名木
     - towns:
       - 字中畑
+      own: 2
+      koku: 14
     - towns:
       - 字二又
     - towns:
@@ -2686,12 +2688,16 @@ areas:
       koku: 18
     - towns:
       - 字大豆田
+      own: 2
+      koku: 33
     - towns:
       - 字太郎須田
       own: 2
       koku: 139
     - towns:
       - 字夷ケ沢平
+      own: 2
+      koku: 27
     - towns:
       - 字家ノ前川目
       own: 2
@@ -2736,6 +2742,8 @@ areas:
       - 字牛ノ沢川目
     - towns:
       - 字稲荷平
+      own: 2
+      koku: 34
     - towns:
       - 字舘ノ後
       - 字椛名木
@@ -2748,6 +2756,8 @@ areas:
       - 字下田ノ沢
       - 字中田ノ沢
       - 字上田ノ沢
+      own: 2
+      koku: 102
     - towns:
       - 字鶏沢
       own: 2
@@ -3081,6 +3091,8 @@ areas:
       - 字大久保
     - towns:
       - 字大久保平
+      own: 2
+      koku: 71
     - towns:
       - 字大向
     - towns:
@@ -3171,6 +3183,8 @@ areas:
       - 字横沢山
     - towns:
       - 字横沢頭
+      own: 2
+      koku: 76
     - towns:
       - 字水喰
     - towns:
