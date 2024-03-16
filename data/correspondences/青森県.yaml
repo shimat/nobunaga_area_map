@@ -2712,6 +2712,8 @@ areas:
       - 字川尻
       - 字茅平
       - 字桧木
+      own: 2
+      koku: 27
     - towns:
       - 字明神平
       own: 2
@@ -2996,8 +2998,6 @@ areas:
     - towns:
       - 字上板橋家ノ後
     - towns:
-      - 字上清水目
-    - towns:
       - 字上笹橋
     - towns:
       - 字下山
@@ -3097,6 +3097,8 @@ areas:
       - 字大向
     - towns:
       - 字大平
+      own: 2
+      koku: 79
     - towns:
       - 字大撫沢
     - towns:
@@ -3164,8 +3166,6 @@ areas:
     - towns:
       - 字日影林ノ上山
     - towns:
-      - 字板橋山
-    - towns:
       - 字板橋平
     - towns:
       - 字枋木
@@ -3222,6 +3222,12 @@ areas:
       - 字湯沢平
     - towns:
       - 字湯田平
+      - 字堰向
+      - 字岡端
+      - 字板橋山
+      - 字上清水目
+      own: 2
+      koku: 73
     - towns:
       - 字滝沢
     - towns:
