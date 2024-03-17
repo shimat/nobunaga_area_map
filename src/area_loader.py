@@ -53,7 +53,6 @@ def load_area_data(prefecture_name: str) -> AllAreasData:
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
 
 
-@conditional_decorator(st.cache_data, 'local' not in st.secrets)
 def load_region_data(region_name: str, prefecture_names: list[str]) -> AllAreasData:
     view_state_data = load_area_data(region_name).view_state
     areas_data = reduce(lambda d1, d2: d1 | d2, (load_area_data(pn).areas for pn in prefecture_names))
