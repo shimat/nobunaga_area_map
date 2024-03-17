@@ -13,10 +13,10 @@ class IColorGenerator(ABC):
 
 class RandomColorGenerator(IColorGenerator):
     def __init__(
-            self,
-            rand_color: RandomColor | None,
-            hue: str | None = None,
-            luminosity: str | None = "light"
+        self,
+        rand_color: RandomColor | None,
+        hue: str | None = None,
+        luminosity: str | None = "light"
     ) -> None:
         self._rand_color = rand_color
         self.hue = hue
@@ -31,18 +31,18 @@ class RandomColorGenerator(IColorGenerator):
     ) -> Self:
         rand_color = cls._make_randomcolor(unique_key)
         return RandomColorGenerator(rand_color, hue, luminosity)
-    
+
     @staticmethod
     def create_default() -> Self:
         return RandomColorGenerator(RandomColor(seed=42))
-    
+
     @staticmethod
     def _make_randomcolor(unique_key: str) -> RandomColor:
         md5 = hashlib.md5(unique_key.encode())
         hex = md5.hexdigest()
         seed = int(hex, 16)
         return RandomColor(seed=seed)
-    
+
     def generate(self, own: int = 0) -> list[int]:
         rgb = self._rand_color.generate(hue=self.hue, luminosity=self.luminosity, format_="Array(rgb)", count=1)[0]
         return [*rgb, 128]

@@ -29035,6 +29035,8 @@ areas:
       koku: 155
     - towns:
       - 字中央
+      own: 2
+      koku: 181
     - towns:
       - 字愛山
     - towns:

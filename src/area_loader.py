@@ -1,4 +1,5 @@
 from collections.abc import Iterable
+from functools import reduce
 from pathlib import Path
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
@@ -50,3 +51,10 @@ def load_area_data(prefecture_name: str) -> AllAreasData:
     path = Path(f"data/correspondences/{prefecture_name}.yaml")
     y = path.read_text(encoding="utf-8-sig")
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
+
+
+@conditional_decorator(st.cache_data, 'local' not in st.secrets)
+def load_region_data(region_name: str, prefecture_names: list[str]) -> AllAreasData:
+    view_state_data = load_area_data(region_name).view_state
+    areas_data = reduce(lambda d1, d2: d1 | d2, (load_area_data(pn).areas for pn in prefecture_names))
+    return AllAreasData(view_state=view_state_data, areas=areas_data)

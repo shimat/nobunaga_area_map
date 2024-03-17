@@ -7,3 +7,4 @@
 1. `cd tools`
 1. `streamlit run make_municipality_border.py`
 1. 対象の都道府県を選択
+1. `mv tools/out/{pref_name}.json municipality/json/`

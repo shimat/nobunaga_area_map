@@ -4,6 +4,14 @@
   zoom: 9.0
 
 areas:
+  神奈川県 （川崎市）:
+    view_state:
+      latitude: 35.550
+      longitude: 139.650
+      zoom: 10.5
+    correspondences: []
+
+
   神奈川県 川崎市川崎区:
     view_state:
       latitude: 35.507

@@ -1,12 +1,13 @@
+from functools import reduce
 import pandas as pd
 import pydeck
 import re
 import streamlit as st
 import time
-from src.area_loader import load_area_data
+from src.area_loader import AllAreasData, load_area_data, load_region_data
 from src.enums import MapType, ColorCoding
 from src.town_loader import load_town_data_from_gml_zip, mod_data
-from src.municipality_loader import load_municipality_borders_from_json
+from src.municipality_loader import load_municipality_borders_from_json, load_municipality_borders_from_json_multi
 from src.city_list import ORG_CITY_NAMES, CITY_NAMES, SUBPREFECTURES
 
 
@@ -21,13 +22,21 @@ col_left, col_right = st.columns(2)
 prefecture_name: str = col_left.selectbox(
     label="都道府県",
     options=CITY_NAMES.keys(),
-)
+) or ""
+if not prefecture_name:
+    st.warning("都道府県を選択してください")
+    st.stop()
 city_name: str = col_right.selectbox(
     label="市区町村",
     options=CITY_NAMES[prefecture_name],
-    index=None
+    index=None,
+    disabled=prefecture_name.startswith("（")
 ) or ""
-city_name = re.sub(r"^\d+: ", "", city_name)
+if prefecture_name.startswith("（"):
+    city_name = "（全体）"
+else:
+    city_name = re.sub(r"^\d+: ", "", city_name)
+
 
 with st.expander("オプション"):
     col1, col2 = st.columns(2)
@@ -61,19 +70,31 @@ with st.expander("オプション"):
 
 if city_name:
     t = time.perf_counter()
-    df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
+    # 地方全体モード
+    if prefecture_name.startswith("（"):
+        df_org = pd.concat([
+            load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{pn}.zip")
+            for pn in ORG_CITY_NAMES[prefecture_name]])
+    # 1つの都道府県モード
+    else:
+        df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
     print(f"DataFrame Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
-    area_data = load_area_data(prefecture_name)
+    if prefecture_name.startswith("（"):
+        area_data: AllAreasData = load_region_data(prefecture_name, ORG_CITY_NAMES[prefecture_name])
+    else:
+        area_data: AllAreasData = load_area_data(prefecture_name)
     print(f"AreaData Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
-    if city_name == "（全体）":
+    if city_name == "（全体）" or prefecture_name.startswith("（"):
         df_target = df_org[df_org["pref_city"].isin(area_data.areas.keys())].copy()
         correspondences = area_data.get_all_correspondences()
         df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
+        st.dataframe(df_target)
+        st.write(view_state)
     elif city_name.startswith("（"):  # 北海道等の各ブロック
         target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in SUBPREFECTURES[prefecture_name][city_name]}
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
@@ -91,7 +112,7 @@ if city_name:
     # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
     # st.write(df_org.memory_usage(deep=True))
 
-    df_target["area_str"] = df_org["area"].apply(lambda x: "{:,.0f}".format(x))
+    df_target["area_str"] = df_target["area"].apply(lambda x: "{:,.0f}".format(x))
     df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x))
 
     fill_color: str | list[int]
@@ -132,13 +153,17 @@ if city_name:
     ))
     if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
-        if city_name == "（全体）":
-            target_cities = ORG_CITY_NAMES[prefecture_name]
+        if prefecture_name.startswith("（"):
+            df_municipalities = load_municipality_borders_from_json_multi(
+                {pn: set(ORG_CITY_NAMES[pn]) for pn in ORG_CITY_NAMES[prefecture_name]})
         else:
-            target_cities = SUBPREFECTURES[prefecture_name][city_name]
-        df_municipalities = load_municipality_borders_from_json(
-            prefecture_name,
-            set(target_cities))
+            if city_name == "（全体）":
+                target_cities = ORG_CITY_NAMES[prefecture_name]
+            else:
+                target_cities = SUBPREFECTURES[prefecture_name][city_name]
+            df_municipalities = load_municipality_borders_from_json(
+                prefecture_name,
+                set(target_cities))
         print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")
         layers.append(pydeck.Layer(
             "PolygonLayer",
