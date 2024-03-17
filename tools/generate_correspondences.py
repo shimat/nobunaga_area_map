@@ -14,7 +14,7 @@ import shapely
 from io import StringIO
 from pathlib import Path
 from typing import NamedTuple
-from xml.etree import ElementTree
+from xml.etree import ElementTree as ET
 from pydantic import BaseModel, Field
 from ruamel.yaml import YAML
 
@@ -45,17 +45,17 @@ class Town(NamedTuple):
     exterior_coordinates: list[list[list[float]]]
 
 
-def load_town_data_from_gml_zip(file_name: str) -> list[Town]:
+def load_town_data_from_gml_zip(file_name: str | Path) -> list[Town]:
     with zipfile.ZipFile(file_name, 'r') as zf:
         gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: os.path.splitext(f)[1] == ".gml")
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, 'r') as file:
-            tree = ElementTree.parse(file)
+            tree = ET.parse(file)
             return load_town_data(tree)
 
 
-def load_town_data(tree: ElementTree) -> list[Town]:
+def load_town_data(tree: ET.ElementTree) -> list[Town]:
     # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
     NAMESPACES = {
         "gml": "http://www.opengis.net/gml",
@@ -83,55 +83,65 @@ def load_town_data(tree: ElementTree) -> list[Town]:
     return areas
 
 
-ap = argparse.ArgumentParser()
-ap.add_argument("prefecture_name", type=str)
-ap.add_argument("city_name", type=str)
-args = ap.parse_args()
+def one_city_process(city_name: str, areas: list[Town]) -> dict[str, OneAreaData]:
+    areas = sorted(areas, key=lambda a: a.town_name)
 
+    # 飛び地を考慮してgroupbyしたのち、各町丁ごとに面積が10石(10万平米)を超えるものをピックアップ
+    towns: list[list[str]] = []
+    small_towns: list[str] = []
+    polygons: list[shapely.geometry.Polygon] = []
+    groups = itertools.groupby(areas, key=lambda a: a.town_name)
+    for town_name, elems in groups:
+        elems = list(elems)
 
-# GMLから読み込み、対象市区町村内の町丁に絞る
-gml_path = Path(f"../gml/経済センサス_活動調査_{args.prefecture_name}.zip")
-areas = [
-    a for a in load_town_data_from_gml_zip(gml_path)
-    if a.city_name == args.city_name]
-if not areas:
-    print("No data found")
-    exit(-1)
-areas = sorted(areas, key=lambda a: a.town_name)
+        area_total = sum(a.area for a in elems)
+        if area_total >= 100000:
+            towns.append([town_name])
+        else:
+            small_towns.append(town_name)
+        polygons.extend(
+            shapely.geometry.Polygon(c) for e in elems for c in e.exterior_coordinates)
+    if small_towns:
+        towns.append(small_towns)
+    print(towns)
 
-# 飛び地を考慮してgroupbyしたのち、各町丁ごとに面積が10石(10万平米)を超えるものをピックアップ
-towns: list[list[str]] = []
-small_towns: list[str] = []
-polygons: list[shapely.geometry.Polygon] = []
-groups = itertools.groupby(areas, key=lambda a: a.town_name)
-for town_name, elems in groups:
-    elems = list(elems)
-    area_total = sum(a.area for a in elems)
-    if area_total >= 100000:
-        towns.append([town_name])
-    else:
-        small_towns.append(town_name)
-    polygons.extend(
-        shapely.geometry.Polygon(c) for e in elems for c in e.exterior_coordinates)
-if small_towns:
-    towns.append(small_towns)
-print(towns)
+    # 輪郭から重心を求める
+    # print(polygons)
+    merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
+    centroid: shapely.Point = merged_polygon.centroid
+    print(f"centroid = {centroid}")
 
-# 輪郭から重心を求める
-# print(polygons)
-merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
-centroid: shapely.Point = merged_polygon.centroid
-print(f"centroid = {centroid}")
-
-write_data = AllAreasData(
-    areas={
-        f"{args.prefecture_name} {args.city_name}":
+    return {
+        f"{args.prefecture_name} {city_name}":
             OneAreaData(
                 view_state=ViewState(latitude=centroid.y, longitude=centroid.x, zoom=10.0),
                 correspondences=tuple(OneCorrespondence(towns=tuple(t)) for t in towns))
-    },
-)
+    }
 
+
+ap = argparse.ArgumentParser()
+ap.add_argument("prefecture_name", type=str)
+args = ap.parse_args()
+print(args)
+
+# GMLから読み込み、対象市区町村内の町丁に絞る
+gml_path = Path(f"../gml/経済センサス_活動調査_{args.prefecture_name}.zip")
+areas = load_town_data_from_gml_zip(gml_path)
+if not areas:
+    print("No data found")
+    exit(-1)
+
+areas_by_city = more_itertools.bucket(areas, key=lambda a: a.city_name)
+result_areas: dict[str, OneAreaData] = {}
+for city_name in areas_by_city:
+    if not city_name:
+        continue
+    result_areas |= one_city_process(city_name, list(areas_by_city[city_name]))
+
+
+write_data = AllAreasData(
+    areas=result_areas
+)
 
 json_val = write_data.model_dump_json()
 json_dict = json.loads(json_val)
@@ -142,5 +152,9 @@ s.seek(0)
 yaml_str = s.read()
 # yaml_str = pydantic_yaml.to_yaml_str(write_data)
 
+city_list = [s.split(" ")[1] for s in result_areas.keys()]
+city_list_json = json.dumps(city_list, ensure_ascii=False, indent=2)
+
 os.makedirs("out", exist_ok=True)
-Path(f"out/{args.prefecture_name}_{args.city_name}.yaml").write_text(yaml_str, encoding="utf-8")
+Path(f"out/{args.prefecture_name}_correspondences.yaml").write_text(yaml_str, encoding="utf-8")
+Path(f"out/{args.prefecture_name}_city_list.json").write_text(city_list_json, encoding="utf-8")

@@ -5,8 +5,9 @@ import streamlit as st
 import shapely
 import zipfile
 from os.path import splitext
-from xml.etree import ElementTree
+import xml.etree.ElementTree as ElementTree
 #from xml.etree.ElementTree import ElementTree
+from typing import Any
 from src.area_loader import Correspondences
 from src.color_generator import make_color_generator, RandomColorGenerator
 from src.enums import ColorCoding
@@ -99,7 +100,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
     color_gen = make_color_generator(color_coding, cache_key)
 
-    new_data: dict[str, list] = {
+    new_data: dict[str, list[Any]] = {
         "prefecture_name": [],
         "city_name": [],
         "area_name": [],

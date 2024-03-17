@@ -1,6 +1,5 @@
-from functools import reduce
 import pandas as pd
-import pydeck
+import pydeck # type: ignore
 import re
 import streamlit as st
 import time
@@ -8,7 +7,7 @@ from src.area_loader import AllAreasData, load_area_data, load_region_data
 from src.enums import MapType, ColorCoding
 from src.town_loader import load_town_data_from_gml_zip, mod_data
 from src.municipality_loader import load_municipality_borders_from_json, load_municipality_borders_from_json_multi
-from src.city_list import ORG_CITY_NAMES, CITY_NAMES, SUBPREFECTURES
+from src.city_list import ORG_REGIONS, REGIONS, REGIONS_TO_SELECT, ORG_CITY_NAMES, CITY_NAMES, SUBPREFECTURES
 
 
 st.set_page_config(
@@ -17,20 +16,29 @@ st.set_page_config(
     layout="wide")
 st.header("「信長の野望 出陣」エリア別石高の可視化")
 
-col_left, col_right = st.columns(2)
 
-prefecture_name: str = col_left.selectbox(
-    label="都道府県",
-    options=CITY_NAMES.keys(),
+# 地方・都道府県・市区町村の選択
+selectbox_columns = st.columns(3)
+region_name: str = selectbox_columns[0].selectbox(
+    label="地方",
+    options=REGIONS_TO_SELECT,
 ) or ""
-if not prefecture_name:
-    st.warning("都道府県を選択してください")
-    st.stop()
-city_name: str = col_right.selectbox(
+prefecture_name: str = selectbox_columns[1].selectbox(
+    label="都道府県",
+    options=REGIONS[region_name],
+    index=0 if len(REGIONS[region_name]) == 1 else None,
+) or ""
+if not prefecture_name or prefecture_name.startswith("（"):
+    city_name_options = ()
+    city_name_disabled = True
+else:
+    city_name_options = CITY_NAMES[prefecture_name]
+    city_name_disabled = False
+city_name: str = selectbox_columns[2].selectbox(
     label="市区町村",
-    options=CITY_NAMES[prefecture_name],
+    options=city_name_options,
     index=None,
-    disabled=prefecture_name.startswith("（")
+    disabled=city_name_disabled
 ) or ""
 if prefecture_name.startswith("（"):
     city_name = "（全体）"
@@ -74,7 +82,7 @@ if city_name:
     if prefecture_name.startswith("（"):
         df_org = pd.concat([
             load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{pn}.zip")
-            for pn in ORG_CITY_NAMES[prefecture_name]])
+            for pn in ORG_REGIONS[region_name]])
     # 1つの都道府県モード
     else:
         df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
@@ -82,7 +90,7 @@ if city_name:
 
     t = time.perf_counter()
     if prefecture_name.startswith("（"):
-        area_data: AllAreasData = load_region_data(prefecture_name, ORG_CITY_NAMES[prefecture_name])
+        area_data: AllAreasData = load_region_data(region_name, ORG_REGIONS[region_name])
     else:
         area_data: AllAreasData = load_area_data(prefecture_name)
     print(f"AreaData Load Time = {time.perf_counter() - t:.3f}s")
@@ -93,8 +101,6 @@ if city_name:
         correspondences = area_data.get_all_correspondences()
         df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
-        st.dataframe(df_target)
-        st.write(view_state)
     elif city_name.startswith("（"):  # 北海道等の各ブロック
         target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in SUBPREFECTURES[prefecture_name][city_name]}
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
@@ -112,8 +118,8 @@ if city_name:
     # df_org.to_csv("hokkaido.csv", columns=["prefecture_name", "address", "area",], index=False, encoding="utf-8-sig")
     # st.write(df_org.memory_usage(deep=True))
 
-    df_target["area_str"] = df_target["area"].apply(lambda x: "{:,.0f}".format(x))
-    df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x))
+    df_target["area_str"] = df_target["area"].apply(lambda x: "{:,.0f}".format(x)) # type: ignore
+    df_mod["area_str"] = df_mod["area"].apply(lambda x: "{:,.0f}".format(x)) # type: ignore
 
     fill_color: str | list[int]
     df_show: pd.DataFrame
@@ -155,7 +161,7 @@ if city_name:
         t = time.perf_counter()
         if prefecture_name.startswith("（"):
             df_municipalities = load_municipality_borders_from_json_multi(
-                {pn: set(ORG_CITY_NAMES[pn]) for pn in ORG_CITY_NAMES[prefecture_name]})
+                {pn: set(ORG_CITY_NAMES[pn]) for pn in ORG_REGIONS[region_name]})
         else:
             if city_name == "（全体）":
                 target_cities = ORG_CITY_NAMES[prefecture_name]
