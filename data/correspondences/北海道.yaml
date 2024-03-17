@@ -11180,6 +11180,8 @@ areas:
       koku: 60
     - towns:
       - 東鷹栖３線
+      own: 2
+      koku: 52
     - towns:
       - 東鷹栖２線
     - towns:
@@ -13444,6 +13446,8 @@ areas:
     - towns:
       - 緑が丘東３条２丁目
       - 緑が丘東３条３丁目
+      own: 2
+      koku: 13
     - towns:
       - 緑が丘東２条１丁目
       own: 2

@@ -4,6 +4,14 @@
   zoom: 9.5
 
 areas:
+  東京都 （２３区）:
+    view_state:
+      latitude: 35.677
+      longitude: 139.756
+      zoom: 10.0
+    correspondences: []
+
+
   東京都 千代田区:
     view_state:
       latitude: 35.688
@@ -317,6 +325,8 @@ areas:
       own: 1
     - towns:
       - 築地５丁目
+      own: 2
+      koku: 19
     - towns:
       - 築地１丁目
       - 築地４丁目
@@ -2387,6 +2397,8 @@ areas:
       own: 1
     - towns:
       - 南蒲田２丁目
+      own: 2
+      koku: 15
     - towns:
       - 南蒲田３丁目
     - towns:
@@ -5287,6 +5299,8 @@ areas:
       - 新田２丁目
     - towns:
       - 新田３丁目
+      own: 2
+      koku: 28
     - towns:
       - 日ノ出町
     - towns:
@@ -5369,6 +5383,8 @@ areas:
       - 江北１丁目
     - towns:
       - 江北２丁目
+      own: 2
+      koku: 22
     - towns:
       - 江北３丁目
     - towns:

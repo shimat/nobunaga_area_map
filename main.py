@@ -74,7 +74,7 @@ with st.expander("オプション"):
             except:
                 pass
 
-        map_height: float = st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10)
+        map_height: int = int(st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10))
 
 if city_name:
     t = time.perf_counter()
@@ -219,7 +219,7 @@ if city_name:
             pitch=0,
             bearing=0,
         ),
-        tooltip={"text": tooltip},
+        tooltip={"text": tooltip}, # type: ignore
         height=map_height,
         map_provider="carto",
         map_style="dark",

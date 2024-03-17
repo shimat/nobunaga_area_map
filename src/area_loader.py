@@ -53,7 +53,7 @@ def load_area_data(prefecture_name: str) -> AllAreasData:
     return pydantic_yaml.parse_yaml_raw_as(AllAreasData, y)
 
 
-def load_region_data(region_name: str, prefecture_names: list[str]) -> AllAreasData:
+def load_region_data(region_name: str, prefecture_names: Iterable[str]) -> AllAreasData:
     view_state_data = load_area_data(region_name).view_state
     areas_data = reduce(lambda d1, d2: d1 | d2, (load_area_data(pn).areas for pn in prefecture_names))
     return AllAreasData(view_state=view_state_data, areas=areas_data)
