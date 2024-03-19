@@ -922,6 +922,9 @@ areas:
       - 本駒込３丁目
     - towns:
       - 本駒込４丁目
+      - 千駄木４丁目
+      own: 2
+      koku: 15
     - towns:
       - 本駒込５丁目
     - towns:
@@ -934,8 +937,6 @@ areas:
       - 千駄木２丁目
     - towns:
       - 千駄木３丁目
-    - towns:
-      - 千駄木４丁目
     - towns:
       - 千駄木５丁目
     - towns:
@@ -3665,6 +3666,8 @@ areas:
       own: 1
     - towns:
       - 上荻２丁目
+      own: 2
+      koku: 16
     - towns:
       - 上荻３丁目
     - towns:
@@ -3798,6 +3801,7 @@ areas:
       own: 1
     - towns:
       - 西荻南４丁目
+      own: 1
     - towns:
       - 浜田山１丁目
     - towns:
@@ -4171,6 +4175,8 @@ areas:
     - towns:
       - 田端２丁目
       - 田端５丁目
+      own: 2
+      koku: 13
     - towns:
       - 田端３丁目
     - towns:
@@ -4300,6 +4306,8 @@ areas:
       - 西尾久４丁目
     - towns:
       - 西尾久５丁目
+      own: 2
+      koku: 11
     - towns:
       - 西尾久６丁目
     - towns:
@@ -5123,6 +5131,8 @@ areas:
       - 保木間５丁目
     - towns:
       - 入谷１丁目
+      own: 2
+      koku: 16
     - towns:
       - 入谷２丁目
     - towns:
@@ -5135,6 +5145,8 @@ areas:
       - 入谷６丁目
     - towns:
       - 入谷７丁目
+      own: 2
+      koku: 17
     - towns:
       - 入谷８丁目
     - towns:
@@ -5235,10 +5247,14 @@ areas:
       - 古千谷本町１丁目
     - towns:
       - 古千谷本町２丁目
+      own: 2
+      koku: 15
     - towns:
       - 古千谷本町３丁目
     - towns:
       - 古千谷本町４丁目
+      own: 2
+      koku: 12
     - towns:
       - 古千谷１丁目
     - towns:
@@ -5261,6 +5277,8 @@ areas:
       - 大谷田５丁目
     - towns:
       - 宮城１丁目
+      own: 2
+      koku: 20
     - towns:
       - 宮城２丁目
       own: 2
@@ -5444,6 +5462,8 @@ areas:
       - 興野２丁目
     - towns:
       - 舎人公園
+      own: 2
+      koku: 14
     - towns:
       - 舎人１丁目
     - towns:
@@ -5581,6 +5601,8 @@ areas:
       - 鹿浜１丁目
     - towns:
       - 鹿浜２丁目
+      own: 2
+      koku: 25
     - towns:
       - 鹿浜３丁目
     - towns:

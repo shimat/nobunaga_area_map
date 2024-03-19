@@ -2142,8 +2142,12 @@ areas:
       - 東領家３丁目
     - towns:
       - 東領家４丁目
+      own: 2
+      koku: 14
     - towns:
       - 東領家５丁目
+      own: 2
+      koku: 16
     - towns:
       - 柳崎１丁目
     - towns:
@@ -4943,6 +4947,8 @@ areas:
       - 新栄４丁目
     - towns:
       - 新里町
+      own: 2
+      koku: 28
     - towns:
       - 旭町２丁目
     - towns:

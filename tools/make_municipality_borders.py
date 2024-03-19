@@ -3,7 +3,7 @@ import zipfile
 import pandas as pd
 import functools
 import os
-from xml.etree import ElementTree
+from xml.etree import ElementTree as ET
 import shapely
 import streamlit as st
 import pydeck
@@ -23,11 +23,11 @@ def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, 'r') as file:
-            tree = ElementTree.parse(file)
+            tree = ET.parse(file)
             return load_town_data(tree)
 
 
-def load_town_data(tree: ElementTree) -> pd.DataFrame:
+def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
     all_towns_polygons: dict[str, list[list[list[float]]]] = {}
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
@@ -58,7 +58,7 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
     }
     return pd.DataFrame(
         data=data,
-        columns=data.keys()
+        columns=list(data.keys())
     )
 
 
@@ -66,7 +66,7 @@ def merge_contours_by_municipality(all_coordinates: dict[str, list[list[list[flo
     result = {}
     for pref_city, coordinates in all_coordinates.items():
         print(pref_city)
-        polygons = [shapely.geometry.Polygon(c) for c in coordinates]
+        polygons = [shapely.geometry.Polygon(c) for c in coordinates] # type: ignore
         # st.write(pref_city, coordinates)
         merged_polygon = functools.reduce(lambda r, s: r.union(s), polygons[1:], polygons[0])
         simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)

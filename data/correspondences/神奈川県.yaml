@@ -3127,6 +3127,8 @@ areas:
       - 浜町２丁目
     - towns:
       - 浮島町
+      own: 2
+      koku: 79
     - towns:
       - 渡田向町
     - towns:
