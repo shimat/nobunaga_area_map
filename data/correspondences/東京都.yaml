@@ -5287,6 +5287,8 @@ areas:
       - 小台１丁目
     - towns:
       - 小台２丁目
+      own: 2
+      koku: 19
     - towns:
       - 島根１丁目
     - towns:
@@ -6967,6 +6969,8 @@ areas:
       - 境５丁目
     - towns:
       - 御殿山１丁目
+      own: 2
+      koku: 16
     - towns:
       - 御殿山２丁目
     - towns:

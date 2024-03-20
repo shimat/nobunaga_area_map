@@ -5037,10 +5037,14 @@ areas:
       - 西町
     - towns:
       - 谷塚上町
+      own: 2
+      koku: 25
     - towns:
       - 谷塚仲町
     - towns:
       - 谷塚町
+      own: 2
+      koku: 32
     - towns:
       - 谷塚１丁目
     - towns:
