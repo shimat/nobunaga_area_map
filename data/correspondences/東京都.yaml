@@ -939,6 +939,8 @@ areas:
       - 千駄木３丁目
     - towns:
       - 千駄木５丁目
+      own: 2
+      koku: 15
     - towns:
       - 弥生２丁目
     - towns:
@@ -4102,6 +4104,8 @@ areas:
       - 浮間５丁目
     - towns:
       - 王子１丁目
+      own: 2
+      koku: 18
     - towns:
       - 王子２丁目
     - towns:
@@ -4194,11 +4198,15 @@ areas:
       - 豊島２丁目
     - towns:
       - 豊島３丁目
+      own: 2
+      koku: 13
     - towns:
       - 豊島４丁目
       - 豊島６丁目
     - towns:
       - 豊島５丁目
+      own: 2
+      koku: 24
     - towns:
       - 豊島７丁目
     - towns:
@@ -4223,6 +4231,8 @@ areas:
       - 西ケ原１丁目
     - towns:
       - 西ケ原２丁目
+      own: 2
+      koku: 17
     - towns:
       - 西ケ原３丁目
     - towns:
@@ -4253,6 +4263,8 @@ areas:
       own: 1
     - towns:
       - 堀船１丁目
+      own: 2
+      koku: 13
     - towns:
       - 堀船２丁目
     - towns:
@@ -4354,6 +4366,8 @@ areas:
       - 東日暮里４丁目
     - towns:
       - 東日暮里５丁目
+      own: 2
+      koku: 15
     - towns:
       - 東日暮里６丁目
     - towns:
@@ -5285,6 +5299,8 @@ areas:
       koku: 18
     - towns:
       - 小台１丁目
+      own: 2
+      koku: 29
     - towns:
       - 小台２丁目
       own: 2
@@ -5309,8 +5325,12 @@ areas:
       - 弘道２丁目
     - towns:
       - 扇１丁目
+      own: 2
+      koku: 27
     - towns:
       - 扇２丁目
+      own: 2
+      koku: 26
     - towns:
       - 扇３丁目
     - towns:
@@ -7029,6 +7049,8 @@ areas:
       - 上連雀９丁目
     - towns:
       - 下連雀１丁目
+      own: 2
+      koku: 19
     - towns:
       - 下連雀２丁目
     - towns:

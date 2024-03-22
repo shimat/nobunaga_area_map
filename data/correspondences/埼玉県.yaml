@@ -1879,8 +1879,6 @@ areas:
     - towns:
       - 元郷１丁目
     - towns:
-      - 元郷２丁目
-    - towns:
       - 元郷３丁目
     - towns:
       - 元郷４丁目
@@ -2186,6 +2184,9 @@ areas:
       - 江戸３丁目
     - towns:
       - 河原町
+      - 元郷２丁目
+      own: 2
+      koku: 27
     - towns:
       - 緑町
     - towns:
@@ -4982,11 +4983,18 @@ areas:
     - towns:
       - 柿木町
     - towns:
+      - 栄町１丁目
+      - 神明２丁目
+      own: 2
+      koku: 14
+    - towns:
       - 栄町２丁目
     - towns:
       - 栄町３丁目
     - towns:
       - 氷川町
+      own: 2
+      koku: 32
     - towns:
       - 清門１丁目
     - towns:
@@ -5029,6 +5037,8 @@ areas:
       - 苗塚町
     - towns:
       - 草加１丁目
+      own: 2
+      koku: 11
     - towns:
       - 草加２丁目
     - towns:
