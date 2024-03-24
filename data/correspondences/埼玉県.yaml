@@ -4929,8 +4929,6 @@ areas:
     - towns:
       - 弁天２丁目
     - towns:
-      - 弁天３丁目
-    - towns:
       - 弁天４丁目
     - towns:
       - 弁天５丁目
@@ -4976,6 +4974,9 @@ areas:
       - 松江３丁目
     - towns:
       - 松江４丁目
+      - 弁天３丁目
+      own: 2
+      koku: 18
     - towns:
       - 松江６丁目
     - towns:
@@ -5017,6 +5018,8 @@ areas:
       - 神明１丁目
     - towns:
       - 稲荷１丁目
+      own: 2
+      koku: 13
     - towns:
       - 稲荷２丁目
     - towns:

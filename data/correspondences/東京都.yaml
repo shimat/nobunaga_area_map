@@ -4211,6 +4211,8 @@ areas:
       - 豊島７丁目
     - towns:
       - 豊島８丁目
+      own: 2
+      koku: 15
     - towns:
       - 中里１丁目
       - 中里２丁目
@@ -4294,16 +4296,24 @@ areas:
     correspondences:
     - towns:
       - 荒川１丁目
+      own: 2
+      koku: 15
     - towns:
       - 荒川２丁目
+      own: 2
+      koku: 14
     - towns:
       - 荒川３丁目
+      own: 2
+      koku: 15
     - towns:
       - 荒川４丁目
     - towns:
       - 荒川５丁目
     - towns:
       - 荒川６丁目
+      own: 2
+      koku: 13
     - towns:
       - 荒川７丁目
     - towns:
@@ -4354,6 +4364,8 @@ areas:
       - 東尾久６丁目
     - towns:
       - 東尾久７丁目
+      own: 2
+      koku: 17
     - towns:
       - 東尾久８丁目
     - towns:
@@ -4362,6 +4374,8 @@ areas:
       - 東日暮里２丁目
     - towns:
       - 東日暮里３丁目
+      own: 2
+      koku: 15
     - towns:
       - 東日暮里４丁目
     - towns:
@@ -4372,16 +4386,22 @@ areas:
       - 東日暮里６丁目
     - towns:
       - 町屋１丁目
+      own: 2
+      koku: 14
     - towns:
       - 町屋２丁目
     - towns:
       - 町屋３丁目
+      own: 2
+      koku: 13
     - towns:
       - 町屋４丁目
     - towns:
       - 町屋５丁目
     - towns:
       - 町屋６丁目
+      own: 2
+      koku: 15
     - towns:
       - 町屋７丁目
     - towns:
@@ -4398,8 +4418,12 @@ areas:
       - 南千住５丁目
     - towns:
       - 南千住６丁目
+      own: 2
+      koku: 20
     - towns:
       - 南千住７丁目
+      own: 2
+      koku: 14
     - towns:
       - 南千住８丁目
 
