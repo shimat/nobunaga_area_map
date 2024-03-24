@@ -1,15 +1,14 @@
 import itertools
-from pathlib import Path
 import more_itertools
 import os
 import pickle
-import shapely # type: ignore
+import shapely  # type: ignore
 import zipfile
 import networkx as nx
 import matplotlib.pyplot as plt
 import pandas as pd
 import pydeck
-from typing import Iterable, NamedTuple
+from typing import NamedTuple, Sequence
 from xml.etree import ElementTree as ET
 import streamlit as st
 
@@ -20,22 +19,30 @@ NAMESPACES = {
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
     "xlink": "http://www.w3.org/1999/xlink"
 }
+EXCLUDED_TOWNS = {
+    "東京都_千代田区_皇居外苑",
+    "東京都_千代田区_千代田",
+    "東京都_港区_元赤坂２丁目",
+}
+TARGET_PREFECTURES = ("東京都", "埼玉県", "神奈川県",)
 
 
 class TownPolygon(NamedTuple):
+    prefecture: str
     city: str
     town: str
     polygon: shapely.Polygon
 
     @property
     def name(self) -> str:
-        return f"{self.city}_{self.town}"
+        return f"{self.prefecture}_{self.city}_{self.town}"
 
     def __str__(self) -> str:
         return self.name
 
 
-def load_town_data_from_gml_zip(file_name: str) -> Iterable[TownPolygon]:
+@st.cache_data
+def load_town_data_from_gml_zip(file_name: str) -> list[TownPolygon]:
     with zipfile.ZipFile(file_name, 'r') as zf:
         gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: os.path.splitext(f)[1] == ".gml")
         if not gml_file_name:
@@ -45,7 +52,14 @@ def load_town_data_from_gml_zip(file_name: str) -> Iterable[TownPolygon]:
             return load_town_data(tree)
 
 
-def load_town_data(tree: ET.ElementTree) -> Iterable[TownPolygon]:
+def load_town_data(tree: ET.ElementTree) -> list[TownPolygon]:
+    def get_elem_text(elem: ET.Element, path: str) -> str | None:
+        child = elem.find(path, NAMESPACES)
+        if child is None:
+            return None
+        return child.text
+
+    result = []
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
 
@@ -67,44 +81,65 @@ def load_town_data(tree: ET.ElementTree) -> Iterable[TownPolygon]:
             lonlat_list = [[pos_list[i*2+1], pos_list[i*2]] for i in range(len(pos_list) // 2)]
             polygons.append(lonlat_list)
         polygon = shapely.geometry.Polygon(shell=polygons[0], holes=polygons[1:])
+        result.append(TownPolygon(prefecture_name, city_name, town_name, polygon))
 
-        yield TownPolygon(city_name, town_name, polygon)
-
-
-def get_elem_text(elem: ET.Element, path: str) -> str | None:
-    child = elem.find(path, NAMESPACES)
-    if child is None:
-        return None
-    return child.text
+    return result
 
 
-if __name__== "__main__":
+@st.cache_data
+def build_graph(_town_polygons_dict: dict[str, TownPolygon], prefectures_to_hash: Sequence[str]) -> nx.Graph:
+    graph = nx.Graph()
+    for a, b in itertools.combinations(_town_polygons_dict.values(), 2):
+        if a.name in EXCLUDED_TOWNS or b.name in EXCLUDED_TOWNS:
+            continue
+        if a.polygon.touches(b.polygon):
+            print(f"{a.name} touches {b.name}")
+            graph.add_edge(a, b)
+        else:
+            graph.add_node(a)
+            graph.add_node(b)
+    return graph
+
+
+if __name__ == "__main__":
     st.set_page_config(layout="wide")
 
-    town_polygons = load_town_data_from_gml_zip("../gml/経済センサス_活動調査_東京都.zip")
+    prefectures = st.multiselect(
+        label="検索対象の都道府県", 
+        options=TARGET_PREFECTURES,
+        default=TARGET_PREFECTURES,)
+    if not prefectures:
+        st.stop()
+
+    # 各区画の輪郭を取得
+    town_polygons = itertools.chain.from_iterable(
+        load_town_data_from_gml_zip(f"../gml/経済センサス_活動調査_{pn}.zip") for pn in prefectures)
     # town_polygons = list(itertools.islice(town_polygons, 10))
-    town_polygons = [p for p in town_polygons if p.city.endswith("区")]
+    town_polygons = [p for p in town_polygons if p.town != "(町名無し)"]
     town_polygons_dict = {p.name: p for p in town_polygons}
-    print(town_polygons)
 
+    col_left, col_right = st.columns(2)
+    with col_left:
+        st.text("始点")
+        pref_from = st.selectbox("都道府県", TARGET_PREFECTURES, key="pref_from")
+        cities_from = list(dict.fromkeys(p.city for p in town_polygons if p.prefecture == pref_from))
+        city_from = st.selectbox("市区町村", cities_from, key="city_from")
+        towns_from = list(dict.fromkeys(p.town for p in town_polygons if p.prefecture == pref_from and p.city == city_from))
+        town_from = st.selectbox("町名", towns_from, key="town_from", index=None)
+    with col_right:
+        st.text("終点")
+        pref_to = st.selectbox("都道府県", TARGET_PREFECTURES, key="pref_to")
+        cities_to = list(dict.fromkeys(p.city for p in town_polygons if p.prefecture == pref_to))
+        city_to = st.selectbox("市区町村", cities_to, key="city_to")
+        towns_to = list(dict.fromkeys(p.town for p in town_polygons if p.prefecture == pref_to and p.city == city_to))
+        town_to = st.selectbox("町名", towns_to, key="town_to", index=None)
+    if not town_from or not town_to:
+        st.stop()
 
-    graph_path = Path("graph.pkl")
-    if graph_path.exists():
-        print("Loading graph from cache...")
-        graph: nx.Graph = pickle.load(graph_path.open('rb'))
-    else:
-        graph = nx.Graph()
-        EXCLUDED_TOWNS = {"千代田区_皇居外苑", "千代田区_千代田", "港区_元赤坂２丁目",}
-        for a, b in itertools.combinations(town_polygons_dict.values(), 2):
-            if a.name in EXCLUDED_TOWNS or b.name in EXCLUDED_TOWNS:
-                continue
-            if a.polygon.touches(b.polygon):
-                print(f"{a.name} touches {b.name}")
-                graph.add_edge(a, b)
-            else:
-                graph.add_node(a)
-                graph.add_node(b)
-        pickle.dump(graph, open('graph.pkl', 'wb'))
+    # 区画の隣接グラフを構築
+    graph = build_graph(town_polygons_dict, prefectures)
+    with open('graph.pkl', 'wb') as f:
+        pickle.dump(graph, f)
 
     print("Finding shortest path...")
     node_from = town_polygons_dict["千代田区_丸の内１丁目"]
@@ -156,7 +191,7 @@ if __name__== "__main__":
             pitch=0,
             bearing=0,
         ),
-        tooltip={"text": "{town}"}, # type: ignore
+        tooltip={"text": "{town}"},  # type: ignore
         height=MAP_HEIGHT,
         map_provider="carto",
         map_style="dark",
@@ -165,4 +200,4 @@ if __name__== "__main__":
     deck.to_html("pydeck.html")
     st.components.v1.html(deck.to_html(as_string=True), height=MAP_HEIGHT)
 
-    st.write(f"最短経路: \n{'\n'.join(f'1. {p.name}' for p in shortest_path)}")
+    #st.write(f"最短経路: \n{'\n'.join(f'1. {p.name}' for p in shortest_path)}")

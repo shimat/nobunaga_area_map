@@ -6,7 +6,6 @@ import shapely
 import zipfile
 from os.path import splitext
 import xml.etree.ElementTree as ElementTree
-#from xml.etree.ElementTree import ElementTree
 from typing import Any
 from src.area_loader import Correspondences
 from src.color_generator import make_color_generator, RandomColorGenerator

@@ -5076,6 +5076,8 @@ areas:
       - 長栄４丁目
     - towns:
       - 青柳１丁目
+      own: 2
+      koku: 17
     - towns:
       - 青柳２丁目
     - towns:
@@ -6766,6 +6768,8 @@ areas:
       - 大字大瀬
     - towns:
       - 大字新町
+      own: 2
+      koku: 21
     - towns:
       - 大字木曽根
     - towns:

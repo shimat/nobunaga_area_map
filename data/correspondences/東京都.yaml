@@ -4192,6 +4192,8 @@ areas:
     - towns:
       - 田端新町２丁目
       - 田端新町３丁目
+      own: 2
+      koku: 14
     - towns:
       - 豊島１丁目
     - towns:
@@ -4326,6 +4328,8 @@ areas:
       - 西尾久３丁目
     - towns:
       - 西尾久４丁目
+      own: 2
+      koku: 12
     - towns:
       - 西尾久５丁目
       own: 2
@@ -4412,10 +4416,16 @@ areas:
       - 南千住２丁目
     - towns:
       - 南千住３丁目
+      own: 2
+      koku: 20
     - towns:
       - 南千住４丁目
+      own: 2
+      koku: 21
     - towns:
       - 南千住５丁目
+      own: 2
+      koku: 14
     - towns:
       - 南千住６丁目
       own: 2
@@ -4426,6 +4436,8 @@ areas:
       koku: 14
     - towns:
       - 南千住８丁目
+      own: 2
+      koku: 26
 
 
   東京都 板橋区:
