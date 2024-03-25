@@ -138,7 +138,7 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
                 kokudaka_str = f"{round(estimated_kokudaka, 2)} (推定)"
                 is_observed_kokudaka = False
 
-            polygons = [shapely.geometry.Polygon(shell=c[0], holes=c[1:])
+            polygons = [shapely.Polygon(shell=c[0], holes=c[1:])
                         for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
                 continue
