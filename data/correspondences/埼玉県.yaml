@@ -6752,6 +6752,8 @@ areas:
       - 大字伊草
     - towns:
       - 大字八條
+      own: 2
+      koku: 52
     - towns:
       - 大字南川崎
     - towns:
@@ -6920,6 +6922,8 @@ areas:
       - 上口３丁目
     - towns:
       - 上彦名
+      own: 2
+      koku: 22
     - towns:
       - 中央１丁目
     - towns:

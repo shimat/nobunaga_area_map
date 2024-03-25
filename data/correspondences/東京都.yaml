@@ -4176,6 +4176,8 @@ areas:
       - 滝野川７丁目
     - towns:
       - 田端１丁目
+      own: 2
+      koku: 14
     - towns:
       - 田端２丁目
       - 田端５丁目
@@ -4342,6 +4344,8 @@ areas:
       - 西尾久８丁目
     - towns:
       - 西日暮里１丁目
+      own: 2
+      koku: 15
     - towns:
       - 西日暮里２丁目
       own: 1
@@ -4360,6 +4364,8 @@ areas:
       - 東尾久２丁目
     - towns:
       - 東尾久３丁目
+      own: 2
+      koku: 12
     - towns:
       - 東尾久４丁目
     - towns:
@@ -4412,8 +4418,12 @@ areas:
       - 町屋８丁目
     - towns:
       - 南千住１丁目
+      own: 2
+      koku: 14
     - towns:
       - 南千住２丁目
+      own: 2
+      koku: 12
     - towns:
       - 南千住３丁目
       own: 2
