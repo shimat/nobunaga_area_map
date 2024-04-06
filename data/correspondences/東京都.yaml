@@ -920,6 +920,8 @@ areas:
       - 本駒込２丁目
     - towns:
       - 本駒込３丁目
+      own: 2
+      koku: 16
     - towns:
       - 本駒込４丁目
       - 千駄木４丁目
@@ -937,6 +939,8 @@ areas:
       - 千駄木２丁目
     - towns:
       - 千駄木３丁目
+      own: 2
+      koku: 15
     - towns:
       - 千駄木５丁目
       own: 2
@@ -948,6 +952,8 @@ areas:
       - 根津２丁目
     - towns:
       - 本郷１丁目
+      own: 2
+      koku: 14
     - towns:
       - 本郷２丁目
     - towns:
@@ -961,14 +967,20 @@ areas:
       - 西片１丁目
     - towns:
       - 本郷７丁目
+      own: 2
+      koku: 21
     - towns:
       - 湯島１丁目
     - towns:
       - 湯島２丁目
+      own: 2
+      koku: 12
     - towns:
       - 湯島３丁目
     - towns:
       - 湯島４丁目
+      own: 2
+      koku: 11
     - towns:
       - 西片２丁目
     - towns:
@@ -982,6 +994,8 @@ areas:
       - 春日１丁目
     - towns:
       - 春日２丁目
+      own: 2
+      koku: 13
     - towns:
       - 小石川１丁目
     - towns:
@@ -990,26 +1004,38 @@ areas:
       - 小石川３丁目
     - towns:
       - 小石川４丁目
+      own: 2
+      koku: 15
     - towns:
       - 小石川５丁目
+      own: 2
+      koku: 15
     - towns:
       - 白山１丁目
     - towns:
       - 白山２丁目
     - towns:
       - 白山３丁目
+      own: 2
+      koku: 15
     - towns:
       - 白山４丁目
     - towns:
       - 白山５丁目
+      own: 2
+      koku: 16
     - towns:
       - 向丘１丁目
     - towns:
       - 向丘２丁目
+      own: 2
+      koku: 15
     - towns:
       - 千石１丁目
     - towns:
       - 千石２丁目
+      own: 2
+      koku: 14
     - towns:
       - 千石３丁目
     - towns:
@@ -1020,10 +1046,14 @@ areas:
       - 大塚２丁目
     - towns:
       - 大塚３丁目
+      own: 2
+      koku: 15
     - towns:
       - 大塚４丁目
     - towns:
       - 大塚５丁目
+      own: 2
+      koku: 18
     - towns:
       - 大塚６丁目
     - towns:
@@ -1038,6 +1068,8 @@ areas:
       - 関口２丁目
     - towns:
       - 目白台１丁目
+      own: 2
+      koku: 14
     - towns:
       - 目白台２丁目
     - towns:
@@ -1050,6 +1082,8 @@ areas:
     - towns:
       - 小日向３丁目
       - 小日向４丁目
+      own: 2
+      koku: 12
 
 
   東京都 台東区:

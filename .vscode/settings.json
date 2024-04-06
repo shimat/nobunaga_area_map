@@ -1,15 +1,13 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "always",
+            "source.organizeImports.ruff": "always"
+        },
     },
     "python.languageServer": "Pylance",
-    "python.linting.enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-      "--config=${workspaceFolder}/.flake8"
+    "flake8.args": [
+        "--config=.flake8"
     ],
-    "python.formatting.provider": "black"
 }

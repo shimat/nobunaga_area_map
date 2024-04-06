@@ -1,45 +1,64 @@
+import re
+import time
+
 import pandas as pd
 import pydeck  # type: ignore
-import re
 import streamlit as st
-import time
-from src.area_loader import AllAreasData, load_area_data, load_region_data
-from src.enums import MapType, ColorCoding
-from src.town_loader import load_town_data_from_gml_zip, mod_data
-from src.municipality_loader import load_municipality_borders_from_json, load_municipality_borders_from_json_multi
-from src.city_list import ORG_REGIONS, REGIONS, REGIONS_TO_SELECT, ORG_CITY_NAMES, CITY_NAMES, SUBPREFECTURES
 
+from src.area_loader import AllAreasData, load_area_data, load_region_data
+from src.city_list import (
+    CITY_NAMES,
+    ORG_CITY_NAMES,
+    ORG_REGIONS,
+    REGIONS,
+    REGIONS_TO_SELECT,
+    SUBPREFECTURES,
+)
+from src.enums import ColorCoding, MapType
+from src.municipality_loader import (
+    load_municipality_borders_from_json,
+    load_municipality_borders_from_json_multi,
+)
+from src.town_loader import load_town_data_from_gml_zip, mod_data
 
 st.set_page_config(
-    page_title="「信長の野望 出陣」エリア別石高の可視化",
-    page_icon="🗾",
-    layout="wide")
+    page_title="「信長の野望 出陣」エリア別石高の可視化", page_icon="🗾", layout="wide"
+)
 st.header("「信長の野望 出陣」エリア別石高の可視化")
 
 
 # 地方・都道府県・市区町村の選択
 selectbox_columns = st.columns(3)
-region_name: str = selectbox_columns[0].selectbox(
-    label="地方",
-    options=REGIONS_TO_SELECT,
-) or ""
-prefecture_name: str = selectbox_columns[1].selectbox(
-    label="都道府県",
-    options=REGIONS[region_name],
-    index=0 if len(REGIONS[region_name]) == 1 else None,
-) or ""
+region_name: str = (
+    selectbox_columns[0].selectbox(
+        label="地方",
+        options=REGIONS_TO_SELECT,
+    )
+    or ""
+)
+prefecture_name: str = (
+    selectbox_columns[1].selectbox(
+        label="都道府県",
+        options=REGIONS[region_name],
+        index=0 if len(REGIONS[region_name]) == 1 else None,
+    )
+    or ""
+)
 if not prefecture_name or prefecture_name.startswith("（"):
     city_name_options = ()
     city_name_disabled = True
 else:
     city_name_options = CITY_NAMES[prefecture_name]
     city_name_disabled = False
-city_name: str = selectbox_columns[2].selectbox(
-    label="市区町村",
-    options=city_name_options,
-    index=None,
-    disabled=city_name_disabled
-) or ""
+city_name: str = (
+    selectbox_columns[2].selectbox(
+        label="市区町村",
+        options=city_name_options,
+        index=None,
+        disabled=city_name_disabled,
+    )
+    or ""
+)
 if prefecture_name.startswith("（"):
     city_name = "（全体）"
 else:
@@ -52,29 +71,41 @@ with st.expander("オプション"):
         map_type = st.radio(
             label="マップ種別",
             options=[t.value for t in MapType],
-            horizontal=True,)
+            horizontal=True,
+        )
         color_coding_options = [t.value for t in ColorCoding]
         if map_type == MapType.ALL_TOWNS:
             color_coding_options.remove(ColorCoding.OWNERSHIP)
         color_coding = st.radio(
             label="色分け",
             options=color_coding_options,
-            horizontal=True,)
+            horizontal=True,
+        )
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
             value=True,
-            disabled=(not city_name.startswith("（")))
+            disabled=(not city_name.startswith("（")),
+        )
     with col2:
         bastion_coordinates: str | None = st.text_input(
-            "拠点の緯度・経度 (入力した場合に半径50kmの円を表示)", value=None, placeholder="例: 43.0687, 141.3507")
+            "拠点の緯度・経度 (入力した場合に半径50kmの円を表示)",
+            value=None,
+            placeholder="例: 43.0687, 141.3507",
+        )
         bastion_latitude, bastion_longitude = None, None
         if bastion_coordinates:
             try:
-                bastion_latitude, bastion_longitude = map(float, bastion_coordinates.split(","))
+                bastion_latitude, bastion_longitude = map(
+                    float, bastion_coordinates.split(",")
+                )
             except:
                 pass
 
-        map_height: int = int(st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10))
+        map_height: int = int(
+            st.number_input(
+                "Map高さ(px)", value=600, max_value=6000, min_value=100, step=10
+            )
+        )
 
 if city_name:
     t = time.perf_counter()
@@ -84,12 +115,16 @@ if city_name:
             prefecture_name_list = ORG_REGIONS["!一都三県"]
         else:
             prefecture_name_list = ORG_REGIONS[region_name]
-        df_org = pd.concat([
+        df_org = pd.concat(
             load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{pn}.zip")
-            for pn in prefecture_name_list])
+            for pn in prefecture_name_list
+        )
     # 1つの都道府県モード
     else:
-        df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
+        df_org = load_town_data_from_gml_zip(
+            f"gml/経済センサス_活動調査_{prefecture_name}.zip"
+        )
+        prefecture_name_list = []
     print(f"DataFrame Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
@@ -106,9 +141,14 @@ if city_name:
         df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
     elif city_name.startswith("（"):  # 北海道等の各ブロック
-        target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in SUBPREFECTURES[prefecture_name][city_name]}
+        target_pref_cities = {
+            f"{prefecture_name} {city_name}"
+            for city_name in SUBPREFECTURES[prefecture_name][city_name]
+        }
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
-        correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
+        correspondences = area_data.get_multiple_areas_correspondences(
+            target_pref_cities
+        )
         subpref_identifier = f"{prefecture_name} {city_name}"
         df_mod = mod_data(df_target, correspondences, color_coding, subpref_identifier)
         view_state = area_data.areas[subpref_identifier].view_state
@@ -145,73 +185,82 @@ if city_name:
             raise Exception(f"Invalid map_type '{map_type}'")
 
     layers: list[pydeck.Layer] = []
-    layers.append(pydeck.Layer(
-        "PolygonLayer",
-        df_show,
-        stroked=True,
-        filled=True,
-        extruded=False,
-        wireframe=False,
-        line_width_scale=line_width_scale,
-        # line_width_min_pixels=0.1,
-        get_polygon="lonlat_coordinates",
-        get_line_color=[255, 255, 255],
-        get_fill_color=fill_color,
-        highlight_color=[255, 200, 0, 128],
-        auto_highlight=True,
-        pickable=True,
-    ))
+    layers.append(
+        pydeck.Layer(
+            "PolygonLayer",
+            df_show,
+            stroked=True,
+            filled=True,
+            extruded=False,
+            wireframe=False,
+            line_width_scale=line_width_scale,
+            # line_width_min_pixels=0.1,
+            get_polygon="lonlat_coordinates",
+            get_line_color=[255, 255, 255],
+            get_fill_color=fill_color,
+            highlight_color=[255, 200, 0, 128],
+            auto_highlight=True,
+            pickable=True,
+        )
+    )
     if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
         if prefecture_name.startswith("（"):
             df_municipalities = load_municipality_borders_from_json_multi(
-                {pn: set(ORG_CITY_NAMES[pn]) for pn in prefecture_name_list})
+                {pn: set(ORG_CITY_NAMES[pn]) for pn in prefecture_name_list}
+            )
         else:
             if city_name == "（全体）":
                 target_cities = ORG_CITY_NAMES[prefecture_name]
             else:
                 target_cities = SUBPREFECTURES[prefecture_name][city_name]
             df_municipalities = load_municipality_borders_from_json(
-                prefecture_name,
-                set(target_cities))
+                prefecture_name, set(target_cities)
+            )
         print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")
-        layers.append(pydeck.Layer(
-            "PolygonLayer",
-            df_municipalities,
-            stroked=True,
-            filled=False,
-            extruded=False,
-            wireframe=False,
-            line_width_scale=60,
-            line_width_min_pixels=1,
-            get_polygon="lonlat_coordinates",
-            get_line_color=[255, 255, 255],
-            auto_highlight=False,
-            pickable=False,
-        ))
+        layers.append(
+            pydeck.Layer(
+                "PolygonLayer",
+                df_municipalities,
+                stroked=True,
+                filled=False,
+                extruded=False,
+                wireframe=False,
+                line_width_scale=60,
+                line_width_min_pixels=1,
+                get_polygon="lonlat_coordinates",
+                get_line_color=[255, 255, 255],
+                auto_highlight=False,
+                pickable=False,
+            )
+        )
     # 遠征可能範囲の表示
     if bastion_latitude and bastion_longitude:
-        df_circle = pd.DataFrame({
-            "coordinates": [[bastion_longitude, bastion_latitude]] * 2,
-            "radius": [50000, 300],
-            "fill_color": [
-                [255, 140, 0, 32],
-                [255, 0, 0, 255],
-            ],
-        })
-        layers.append(pydeck.Layer(
-            "ScatterplotLayer",
-            df_circle,
-            pickable=False,
-            stroked=True,
-            filled=True,
-            # radius_units="meters",
-            line_width_min_pixels=1,
-            get_position="coordinates",
-            get_radius="radius",
-            get_fill_color="fill_color",
-            get_line_color=[255, 255, 255],
-        ))
+        df_circle = pd.DataFrame(
+            {
+                "coordinates": [[bastion_longitude, bastion_latitude]] * 2,
+                "radius": [50000, 300],
+                "fill_color": [
+                    [255, 140, 0, 32],
+                    [255, 0, 0, 255],
+                ],
+            }
+        )
+        layers.append(
+            pydeck.Layer(
+                "ScatterplotLayer",
+                df_circle,
+                pickable=False,
+                stroked=True,
+                filled=True,
+                # radius_units="meters",
+                line_width_min_pixels=1,
+                get_position="coordinates",
+                get_radius="radius",
+                get_fill_color="fill_color",
+                get_line_color=[255, 255, 255],
+            )
+        )
     deck = pydeck.Deck(
         layers=layers,
         initial_view_state=pydeck.ViewState(
@@ -230,7 +279,7 @@ if city_name:
     )
 
     # st.pydeck_chart(deck)
-    st.components.v1.html(deck.to_html(as_string=True), height=map_height)
+    st.components.v1.html(deck.to_html(as_string=True), height=map_height)  # type: ignore
 
     address_label = "住所" if (map_type == MapType.ALL_TOWNS) else "エリア名"
     st.dataframe(
@@ -244,25 +293,35 @@ if city_name:
             "town_name": st.column_config.TextColumn("町丁"),
             "address": address_label,
             "area": st.column_config.NumberColumn("面積[㎡]", step="0", width="small"),
-            "kokudaka": st.column_config.NumberColumn("石高", format="%.2f", width="small"),
+            "kokudaka": st.column_config.NumberColumn(
+                "石高", format="%.2f", width="small"
+            ),
             "kokudaka_str": None,
-            "is_observed_kokudaka": st.column_config.CheckboxColumn("実測石高か", width="small", help="石高が実測値か、回帰分析による推定値かのフラグ"),
+            "is_observed_kokudaka": st.column_config.CheckboxColumn(
+                "実測石高か",
+                width="small",
+                help="石高が実測値か、回帰分析による推定値かのフラグ",
+            ),
             # "sub_towns": st.column_config.ListColumn("含む町名"),
             "sub_towns_suffix": None,
             "lonlat_coordinates": None,
             "pref_city": None,
             "area_str": None,
-            "own": st.column_config.TextColumn("領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"),
+            "own": st.column_config.TextColumn(
+                "領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"
+            ),
             "fill_color": None,
         },
     )
 
-    if map_type != MapType.ALL_TOWNS.value:
+    if map_type != MapType.ALL_TOWNS:
         df_uniq = df_show.drop_duplicates(subset=("city_name", "area_name"))
         df_own = df_uniq[df_uniq["own"] != 0]
         kokudaka_all_sum = df_uniq["kokudaka"].sum()
         kokudaka_own_sum = df_own["kokudaka"].sum()
-        st.write(f"推定石高合計: {kokudaka_own_sum:.2f}石 / {kokudaka_all_sum:.2f}石 ({kokudaka_own_sum/kokudaka_all_sum:.1%})")
+        st.write(
+            f"推定石高合計: {kokudaka_own_sum:.2f}石 / {kokudaka_all_sum:.2f}石 ({kokudaka_own_sum/kokudaka_all_sum:.1%})"
+        )
 
 
 st.markdown(
@@ -275,4 +334,3 @@ st.markdown(
 """,  # noqa: E501
     unsafe_allow_html=True,
 )
-

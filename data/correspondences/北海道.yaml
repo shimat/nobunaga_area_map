@@ -10686,6 +10686,8 @@ areas:
       - 江丹別町中央
     - towns:
       - 江丹別町清水
+      own: 2
+      koku: 74
     - towns:
       - 江丹別町芳野
     - towns:
@@ -11172,12 +11174,17 @@ areas:
       - 東鷹栖１５線
     - towns:
       - 緑台
+      - 東鷹栖１２線
+      own: 2
+      koku: 92
     - towns:
       - 東鷹栖１４線
+      own: 2
+      koku: 46
     - towns:
       - 東鷹栖１３線
-    - towns:
-      - 東鷹栖１２線
+      own: 2
+      koku: 51
     - towns:
       - 東鷹栖１１線
     - towns:
@@ -12234,6 +12241,8 @@ areas:
       - 永山北３条１０丁目
     - towns:
       - 永山北１条１１丁目
+      own: 2
+      koku: 12
     - towns:
       - 永山北１条１０丁目
     - towns:
@@ -12705,6 +12714,8 @@ areas:
       - 永山７条２１丁目
       - 永山８条２０丁目
       - 永山８条２１丁目
+      own: 2
+      koku: 16
     - towns:
       - 永山５条２３丁目
       - 永山５条２４丁目
@@ -12794,6 +12805,8 @@ areas:
     - towns:
       - 工業団地５条２丁目
       - 工業団地４条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 工業団地３条２丁目
     - towns:
@@ -28213,6 +28226,8 @@ areas:
       - 字雨煙内
     - towns:
       - 字沼牛
+      own: 2
+      koku: 180
     - towns:
       - 字新成生
     - towns:
@@ -28566,6 +28581,9 @@ areas:
       koku: 42
     - towns:
       - 東１線
+      - 第１２号
+      own: 2
+      koku: 61
     - towns:
       - 東２線
     - towns:
@@ -28906,6 +28924,8 @@ areas:
       - 南一条１丁目
       - 南二条１丁目
       - 南二条２丁目
+      own: 2
+      koku: 15
     - towns:
       - 北一条２丁目
       - 北一条３丁目
@@ -29294,26 +29314,40 @@ areas:
       koku: 127
     - towns:
       - 字南丘
+      own: 2
+      koku: 109
     - towns:
       - 字中和
     - towns:
       - 字川西
+      own: 2
+      koku: 84
     - towns:
       - 字三笠
+      own: 2
+      koku: 66
     - towns:
       - 字日ノ出
+      own: 2
+      koku: 98
     - towns:
       - 字大成
     - towns:
       - 字北原
+      own: 2
+      koku: 78
     - towns:
       - 字松岡
+      own: 2
+      koku: 70
     - towns:
       - 字菊野
       own: 2
       koku: 104
     - towns:
       - 字三和
+      own: 2
+      koku: 116
     - towns:
       - 字西和
       own: 2
@@ -29324,12 +29358,20 @@ areas:
       koku: 162
     - towns:
       - 字北町
+      own: 2
+      koku: 13
     - towns:
       - 字東町
+      own: 2
+      koku: 17
     - towns:
       - 字南町
+      own: 2
+      koku: 12
     - towns:
       - 字西町
+      own: 2
+      koku: 17
 
 
   北海道 上川郡剣淵町:

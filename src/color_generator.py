@@ -1,6 +1,5 @@
 import hashlib
-from typing import Self
-from randomcolor import RandomColor
+from randomcolor import RandomColor  # type: ignore
 from src.enums import ColorCoding
 from abc import ABC, abstractmethod
 
@@ -28,12 +27,12 @@ class RandomColorGenerator(IColorGenerator):
         unique_key: str,
         hue: str | None = None,
         luminosity: str | None = "light"
-    ) -> Self:
+    ) -> "RandomColorGenerator":
         rand_color = cls._make_randomcolor(unique_key)
         return RandomColorGenerator(rand_color, hue, luminosity)
 
     @staticmethod
-    def create_default() -> Self:
+    def create_default() -> "RandomColorGenerator":
         return RandomColorGenerator(RandomColor(seed=42))
 
     @staticmethod
@@ -44,7 +43,7 @@ class RandomColorGenerator(IColorGenerator):
         return RandomColor(seed=seed)
 
     def generate(self, own: int = 0) -> list[int]:
-        rgb = self._rand_color.generate(hue=self.hue, luminosity=self.luminosity, format_="Array(rgb)", count=1)[0]
+        rgb: list[int] = self._rand_color.generate(hue=self.hue, luminosity=self.luminosity, format_="Array(rgb)", count=1)[0]  # type: ignore
         return [*rgb, 128]
 
 
@@ -74,5 +73,4 @@ def make_color_generator(color_coding: ColorCoding, unique_key: str) -> IColorGe
             return RandomColorGenerator.from_unique_key(unique_key)
         case ColorCoding.NOTHING:
             return ConstColorGenerator()
-        case _:
-            raise Exception(f"Invalid value: {color_coding=}")
+    raise Exception(f"Invalid value: {color_coding=}")

@@ -1324,6 +1324,8 @@ areas:
       - 仁連
     - towns:
       - 前林
+      own: 2
+      koku: 57
     - towns:
       - 北利根
     - towns:
@@ -1414,6 +1416,8 @@ areas:
       - 横山町３丁目
     - towns:
       - 水海
+      own: 2
+      koku: 58
     - towns:
       - 江口
     - towns:
@@ -7223,6 +7227,8 @@ areas:
       - 大字小福田
     - towns:
       - 大字山王
+      own: 2
+      koku: 43
     - towns:
       - 大字山王山
     - towns:
@@ -7259,6 +7265,8 @@ areas:
       - 大字内門
     - towns:
       - 大字塚崎
+      own: 2
+      koku: 72
     - towns:
       - 大字大歩
     - towns:
@@ -7267,12 +7275,16 @@ areas:
       - 大字志鳥
     - towns:
       - 大字新田戸
+      own: 2
+      koku: 28
     - towns:
       - 大字染谷
     - towns:
       - 大字栗山
     - towns:
       - 大字桐ケ作
+      own: 2
+      koku: 31
     - towns:
       - 大字横塚
     - towns:

@@ -1,45 +1,54 @@
 import itertools
-import more_itertools
-import pandas as pd
-import streamlit as st
-import shapely
+import xml.etree.ElementTree as ET
 import zipfile
 from os.path import splitext
-import xml.etree.ElementTree as ElementTree
 from typing import Any
-from src.area_loader import Correspondences
-from src.color_generator import make_color_generator, RandomColorGenerator
-from src.enums import ColorCoding
-from src.conditional_decorator import conditional_decorator
 
+import more_itertools
+import pandas as pd
+import shapely
+import streamlit as st
+
+from src.area_loader import Correspondences
+from src.color_generator import RandomColorGenerator, make_color_generator
+from src.conditional_decorator import conditional_decorator
+from src.enums import ColorCoding
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
 NAMESPACES = {
     "gml": "http://www.opengis.net/gml",
     "fme": "http://www.safe.com/gml/fme",
     "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "xlink": "http://www.w3.org/1999/xlink"
+    "xlink": "http://www.w3.org/1999/xlink",
 }
 
 
 @st.cache_resource
 def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
-    with zipfile.ZipFile(file_name, 'r') as zf:
-        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
+    with zipfile.ZipFile(file_name, "r") as zf:
+        gml_file_name = more_itertools.first_true(
+            zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml"
+        )
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
-        with zf.open(gml_file_name, 'r') as file:
-            tree = ElementTree.parse(file)
+        with zf.open(gml_file_name, "r") as file:
+            tree = ET.parse(file)
             return load_town_data(tree)
 
 
 @st.cache_data
 def load_town_data_from_gml(file_name: str) -> pd.DataFrame:
-    tree = ElementTree.parse(file_name)
+    tree = ET.parse(file_name)
     return load_town_data(tree)
 
 
-def load_town_data(tree: ElementTree) -> pd.DataFrame:
+def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
+    def get_elem_text(elem: ET.Element, path: str) -> str | None:
+        child = elem.find(path, NAMESPACES)
+        if child is None:
+            return None
+        return child.text
+
     prefecture_names: list[str] = []
     city_names: list[str] = []
     pref_cities: list[str] = []
@@ -53,14 +62,14 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
-        prefecture_name = elem.find("fme:PREF_NAME", NAMESPACES).text
-        city_name = elem.find("fme:CITY_NAME", NAMESPACES).text
-        town_name = elem.find("fme:S_NAME", NAMESPACES).text or "(町名無し)"
+        prefecture_name = get_elem_text(elem, "fme:PREF_NAME")
+        city_name = get_elem_text(elem, "fme:CITY_NAME")
+        town_name = get_elem_text(elem, "fme:S_NAME") or "(町名無し)"
         prefecture_names.append(prefecture_name)
         city_names.append(city_name)
         pref_cities.append(f"{prefecture_names[-1]} {city_name}")
         town_names.append(town_name)
-        areas.append(float(elem.find("fme:AREA", NAMESPACES).text))
+        areas.append(float(get_elem_text(elem, "fme:AREA")))
 
         # 飛び地には同じ色を振る
         if (color := fill_colors_lut.get(town_name)) is None:
@@ -68,14 +77,24 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
             fill_colors_lut[town_name] = color
         fill_colors.append(color)
 
-        polygons = []
+        polygons: list[list[list[float]]] = []
         contour_elements = itertools.chain(
-              elem.findall("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior", NAMESPACES),
-              elem.findall("gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:interior", NAMESPACES))
+            elem.findall(
+                "gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:exterior",
+                NAMESPACES,
+            ),
+            elem.findall(
+                "gml:surfaceProperty//gml:Surface//gml:PolygonPatch//gml:interior",
+                NAMESPACES,
+            ),
+        )
         for contour_elem in contour_elements:
             pos_list_elem = contour_elem.find("gml:LinearRing//gml:posList", NAMESPACES)
             pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
-            lonlat_list = [[pos_list[i*2+1], pos_list[i*2]] for i in range(len(pos_list) // 2)]
+            lonlat_list = [
+                [pos_list[i * 2 + 1], pos_list[i * 2]]
+                for i in range(len(pos_list) // 2)
+            ]
             polygons.append(lonlat_list)
         all_towns_polygons.append(polygons)
 
@@ -88,15 +107,17 @@ def load_town_data(tree: ElementTree) -> pd.DataFrame:
         "fill_color": fill_colors,
         "lonlat_coordinates": all_towns_polygons,
     }
-    return pd.DataFrame(
-        data=data,
-        columns=data.keys()
-    )
+    return pd.DataFrame(data=data, columns=data.keys())
 
 
 # @st.cache_data
-@conditional_decorator(st.cache_data, 'local' not in st.secrets)
-def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_coding: ColorCoding, cache_key: str) -> pd.DataFrame:
+@conditional_decorator(st.cache_data, "local" not in st.secrets)
+def mod_data(
+    df: pd.DataFrame,
+    _area_data_list: list[Correspondences],
+    color_coding: ColorCoding,
+    cache_key: str,
+) -> pd.DataFrame:
     color_gen = make_color_generator(color_coding, cache_key)
 
     new_data: dict[str, list[Any]] = {
@@ -119,7 +140,9 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
             sub_towns = correespondence.towns
             own = correespondence.own
 
-            sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
+            sub_rows = df[
+                (df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)
+            ]
             if sub_rows.empty:
                 raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
 
@@ -131,15 +154,19 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
             estimated_kokudaka = estimate_kokudaka(area)
             if correespondence.koku:
                 kokudaka = correespondence.koku
-                kokudaka_str = f"{correespondence.koku} ({round(estimated_kokudaka, 2)})"
+                kokudaka_str = (
+                    f"{correespondence.koku} ({round(estimated_kokudaka, 2)})"
+                )
                 is_observed_kokudaka = True
             else:
                 kokudaka = estimated_kokudaka
                 kokudaka_str = f"{round(estimated_kokudaka, 2)} (推定)"
                 is_observed_kokudaka = False
 
-            polygons = [shapely.Polygon(shell=c[0], holes=c[1:])
-                        for c in sub_rows["lonlat_coordinates"].values]
+            polygons = [
+                shapely.Polygon(shell=c[0], holes=c[1:])
+                for c in sub_rows["lonlat_coordinates"].values
+            ]
             if not polygons:
                 continue
             merged_polygon = shapely.unary_union(polygons)
@@ -162,7 +189,9 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
                         coords_list.append(coords)
                     area_name += " [飛び地あり]"
                 case _:
-                    raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
+                    raise Exception(
+                        f"Unexpected geom_type '{simple_polygon.geom_type}'"
+                    )
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
             fill_color = color_gen.generate(own)
@@ -185,14 +214,11 @@ def mod_data(df: pd.DataFrame, _area_data_list: list[Correspondences], color_cod
                 new_data["own"].append(own)
                 new_data["fill_color"].append(fill_color)
 
-    return pd.DataFrame(
-        data=new_data,
-        columns=new_data.keys()
-    )
+    return pd.DataFrame(data=new_data, columns=new_data.keys())
 
 
 def estimate_kokudaka(area: float) -> float:
-    return (area ** 0.497) / 30
+    return (area**0.497) / 30
 
 
 def _get_area_name(df: pd.DataFrame) -> str:

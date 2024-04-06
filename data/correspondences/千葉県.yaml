@@ -3418,6 +3418,8 @@ areas:
       - 光葉町３丁目
     - towns:
       - 古布内
+      own: 2
+      koku: 48
     - towns:
       - 吉春
     - towns:
@@ -3466,6 +3468,8 @@ areas:
       - 木野崎
     - towns:
       - 木間ケ瀬
+      own: 2
+      koku: 93
     - towns:
       - 木間ケ瀬新田
     - towns:
@@ -3534,12 +3538,16 @@ areas:
       - 長谷
     - towns:
       - 関宿三軒家
+      own: 2
+      koku: 22
     - towns:
       - 関宿元町
     - towns:
       - 関宿内町
     - towns:
       - 関宿台町
+      own: 2
+      koku: 66
     - towns:
       - 関宿江戸町
     - towns:
