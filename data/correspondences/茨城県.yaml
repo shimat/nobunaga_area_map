@@ -1314,6 +1314,8 @@ areas:
       - 中央町３丁目
     - towns:
       - 中田
+      own: 2
+      koku: 54
     - towns:
       - 中田新田
     - towns:
