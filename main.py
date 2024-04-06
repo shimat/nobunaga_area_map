@@ -1,5 +1,6 @@
 import re
 import time
+from typing import Sequence
 
 import pandas as pd
 import pydeck  # type: ignore
@@ -110,6 +111,7 @@ with st.expander("オプション"):
 if city_name:
     t = time.perf_counter()
     # 地方全体モード
+    prefecture_name_list: Sequence[str] = []
     if prefecture_name.startswith("（"):
         if prefecture_name == "（一都三県）":
             prefecture_name_list = ORG_REGIONS["!一都三県"]
@@ -124,7 +126,6 @@ if city_name:
         df_org = load_town_data_from_gml_zip(
             f"gml/経済センサス_活動調査_{prefecture_name}.zip"
         )
-        prefecture_name_list = []
     print(f"DataFrame Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()

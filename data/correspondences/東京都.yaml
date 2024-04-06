@@ -918,6 +918,8 @@ areas:
       - 本駒込１丁目
     - towns:
       - 本駒込２丁目
+      own: 2
+      koku: 17
     - towns:
       - 本駒込３丁目
       own: 2
@@ -935,6 +937,8 @@ areas:
     - towns:
       - 千駄木１丁目
       - 弥生１丁目
+      own: 2
+      koku: 16
     - towns:
       - 千駄木２丁目
     - towns:
@@ -1032,6 +1036,8 @@ areas:
       koku: 15
     - towns:
       - 千石１丁目
+      own: 2
+      koku: 13
     - towns:
       - 千石２丁目
       own: 2
@@ -4346,22 +4352,36 @@ areas:
       koku: 15
     - towns:
       - 荒川４丁目
+      own: 2
+      koku: 13
     - towns:
       - 荒川５丁目
+      own: 2
+      koku: 12
     - towns:
       - 荒川６丁目
       own: 2
       koku: 13
     - towns:
       - 荒川７丁目
+      own: 2
+      koku: 12
     - towns:
       - 荒川８丁目
+      own: 2
+      koku: 19
     - towns:
       - 西尾久１丁目
+      own: 2
+      koku: 11
     - towns:
       - 西尾久２丁目
+      own: 2
+      koku: 12
     - towns:
       - 西尾久３丁目
+      own: 2
+      koku: 14
     - towns:
       - 西尾久４丁目
       own: 2
@@ -4372,10 +4392,16 @@ areas:
       koku: 11
     - towns:
       - 西尾久６丁目
+      own: 2
+      koku: 13
     - towns:
       - 西尾久７丁目
+      own: 2
+      koku: 14
     - towns:
       - 西尾久８丁目
+      own: 2
+      koku: 14
     - towns:
       - 西日暮里１丁目
       own: 2
@@ -4385,71 +4411,107 @@ areas:
       own: 1
     - towns:
       - 西日暮里３丁目
+      own: 2
+      koku: 12
     - towns:
       - 西日暮里４丁目
+      own: 2
+      koku: 11
     - towns:
       - 西日暮里５丁目
       own: 1
     - towns:
       - 西日暮里６丁目
+      own: 2
+      koku: 14
     - towns:
       - 東尾久１丁目
+      own: 2
+      koku: 13
     - towns:
       - 東尾久２丁目
+      own: 2
+      koku: 14
     - towns:
       - 東尾久３丁目
       own: 2
       koku: 12
     - towns:
       - 東尾久４丁目
+      own: 2
+      koku: 14
     - towns:
       - 東尾久５丁目
+      own: 2
+      koku: 14
     - towns:
       - 東尾久６丁目
+      own: 2
+      koku: 14
     - towns:
       - 東尾久７丁目
       own: 2
       koku: 17
     - towns:
       - 東尾久８丁目
+      own: 2
+      koku: 16
     - towns:
       - 東日暮里１丁目
+      own: 2
+      koku: 12
     - towns:
       - 東日暮里２丁目
+      own: 2
+      koku: 13
     - towns:
       - 東日暮里３丁目
       own: 2
       koku: 15
     - towns:
       - 東日暮里４丁目
+      own: 2
+      koku: 12
     - towns:
       - 東日暮里５丁目
       own: 2
       koku: 15
     - towns:
       - 東日暮里６丁目
+      own: 2
+      koku: 15
     - towns:
       - 町屋１丁目
       own: 2
       koku: 14
     - towns:
       - 町屋２丁目
+      own: 2
+      koku: 11
     - towns:
       - 町屋３丁目
       own: 2
       koku: 13
     - towns:
       - 町屋４丁目
+      own: 2
+      koku: 13
     - towns:
       - 町屋５丁目
+      own: 2
+      koku: 14
     - towns:
       - 町屋６丁目
       own: 2
       koku: 15
     - towns:
       - 町屋７丁目
+      own: 2
+      koku: 14
     - towns:
       - 町屋８丁目
+      own: 2
+      koku: 12
     - towns:
       - 南千住１丁目
       own: 2

@@ -6940,6 +6940,8 @@ areas:
       - 前間
     - towns:
       - 半田
+      own: 2
+      koku: 35
     - towns:
       - 南蓮沼
     - towns:
@@ -6968,6 +6970,8 @@ areas:
       - 彦成３丁目
     - towns:
       - 彦成４丁目
+      own: 2
+      koku: 20
     - towns:
       - 彦成５丁目
     - towns:
@@ -7002,6 +7006,8 @@ areas:
       - 新三郷ららシティ１丁目
     - towns:
       - 新三郷ららシティ２丁目
+      own: 2
+      koku: 13
     - towns:
       - 新三郷ららシティ３丁目
     - towns:
@@ -7696,6 +7702,8 @@ areas:
       - 吉川２丁目
     - towns:
       - 大字三輪野江
+      own: 2
+      koku: 47
     - towns:
       - 大字上内川
     - towns:
@@ -7710,8 +7718,12 @@ areas:
       - 大字八子新田
     - towns:
       - 大字加藤
+      own: 2
+      koku: 28
     - towns:
       - 大字半割
+      own: 2
+      koku: 25
     - towns:
       - 大字南広島
     - towns:
@@ -7732,6 +7744,8 @@ areas:
       - 大字川野
     - towns:
       - 大字平方新田
+      own: 2
+      koku: 29
     - towns:
       - 大字平沼
     - towns:
@@ -7742,6 +7756,8 @@ areas:
       - 大字木売新田
     - towns:
       - 大字深井新田
+      own: 2
+      koku: 33
     - towns:
       - 大字鍋小路
     - towns:
@@ -7750,6 +7766,8 @@ areas:
       - 大字須賀
     - towns:
       - 大字飯島
+      own: 2
+      koku: 20
     - towns:
       - 大字高久
     - towns:

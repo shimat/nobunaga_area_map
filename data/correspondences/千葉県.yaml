@@ -3396,8 +3396,12 @@ areas:
       - 中根
     - towns:
       - 中里
+      own: 2
+      koku: 65
     - towns:
       - 中野台
+      own: 2
+      koku: 32
     - towns:
       - 中野台鹿島町
     - towns:
@@ -3410,8 +3414,12 @@ areas:
       - 五木新町
     - towns:
       - 今上
+      own: 2
+      koku: 50
     - towns:
       - 光葉町１丁目
+      own: 2
+      koku: 19
     - towns:
       - 光葉町２丁目
     - towns:
@@ -3422,6 +3430,8 @@ areas:
       koku: 48
     - towns:
       - 吉春
+      own: 2
+      koku: 38
     - towns:
       - 堤台
     - towns:
