@@ -10698,6 +10698,7 @@ areas:
       koku: 74
     - towns:
       - 江丹別町芳野
+      own: 2
     - towns:
       - 江丹別町中園
       own: 2
@@ -12837,6 +12838,7 @@ areas:
       koku: 70
     - towns:
       - 東旭川町旭正
+      own: 2
     - towns:
       - 東旭川町共栄
       - 東光８条１０丁目
@@ -29048,6 +29050,8 @@ areas:
     correspondences:
     - towns:
       - 北１５線
+      own: 2
+      koku: 77
     - towns:
       - 北１４線
     - towns:

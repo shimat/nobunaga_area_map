@@ -161,3 +161,4 @@ cython_debug/
 *.xlsx
 /hokkaido.csv
 /.streamlit/secrets.toml
+out/*
