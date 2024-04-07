@@ -89,9 +89,9 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
             ),
         )
         for contour_elem in contour_elements:
-            if (pos_list_elem := get_elem_text(contour_elem, "gml:LinearRing//gml:posList")) is None:
+            if (pos_list_text := get_elem_text(contour_elem, "gml:LinearRing//gml:posList")) is None:
                 raise Exception("posList not found")
-            pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
+            pos_list = [float(v) for v in pos_list_text.split(" ")]
             lonlat_list = [[pos_list[i * 2 + 1], pos_list[i * 2]] for i in range(len(pos_list) // 2)]
             polygons.append(lonlat_list)
         all_towns_polygons.append(polygons)
