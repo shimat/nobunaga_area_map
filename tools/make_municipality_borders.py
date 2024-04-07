@@ -72,7 +72,7 @@ def merge_contours_by_municipality(
     result = {}
     for pref_city, coordinates in all_coordinates.items():
         print(pref_city)
-        polygons = [shapely.Polygon(c) for c in coordinates]  # type: ignore
+        polygons = [shapely.Polygon(c) for c in coordinates]
         # st.write(pref_city, coordinates)
         merged_polygon = shapely.unary_union(polygons)
         simple_polygon = merged_polygon.simplify(0.0002, preserve_topology=True)
@@ -138,7 +138,7 @@ if prefecture:
             pitch=0,
             bearing=0,
         ),
-        tooltip={"text": ""},
+        tooltip={"text": ""},  # type: ignore
         height=600,
         map_provider="carto",
         map_style="dark",

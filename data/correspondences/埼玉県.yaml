@@ -3245,12 +3245,16 @@ areas:
       - 新川通
     - towns:
       - 旗井
+      own: 2
+      koku: 51
     - towns:
       - 日出安
     - towns:
       - 本町
     - towns:
       - 本郷
+      own: 2
+      koku: 42
     - towns:
       - 杓子木
     - towns:
@@ -3265,6 +3269,8 @@ areas:
       - 柳生
     - towns:
       - 栄
+      own: 2
+      koku: 58
     - towns:
       - 根古屋
     - towns:

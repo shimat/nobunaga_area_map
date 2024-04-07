@@ -996,6 +996,8 @@ areas:
       - 水道２丁目
     - towns:
       - 春日１丁目
+      own: 2
+      koku: 14
     - towns:
       - 春日２丁目
       own: 2

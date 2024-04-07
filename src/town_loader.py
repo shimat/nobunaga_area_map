@@ -8,10 +8,10 @@ import more_itertools
 import pandas as pd
 import shapely
 import streamlit as st
+from conditional_decorator import conditional_decorator
 
 from src.area_loader import Correspondences
 from src.color_generator import RandomColorGenerator, make_color_generator
-from src.conditional_decorator import conditional_decorator
 from src.enums import ColorCoding
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
@@ -62,14 +62,16 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
 
     for feature_member in tree.findall("gml:featureMember", NAMESPACES):
         elem = feature_member[0]
-        prefecture_name = get_elem_text(elem, "fme:PREF_NAME")
-        city_name = get_elem_text(elem, "fme:CITY_NAME")
+        if (prefecture_name := get_elem_text(elem, "fme:PREF_NAME")) is None:
+            continue
+        if (city_name := get_elem_text(elem, "fme:CITY_NAME")) is None:
+            continue
         town_name = get_elem_text(elem, "fme:S_NAME") or "(町名無し)"
         prefecture_names.append(prefecture_name)
         city_names.append(city_name)
         pref_cities.append(f"{prefecture_names[-1]} {city_name}")
         town_names.append(town_name)
-        areas.append(float(get_elem_text(elem, "fme:AREA")))
+        areas.append(float(get_elem_text(elem, "fme:AREA") or "0"))
 
         # 飛び地には同じ色を振る
         if (color := fill_colors_lut.get(town_name)) is None:
@@ -89,7 +91,12 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
             ),
         )
         for contour_elem in contour_elements:
-            pos_list_elem = contour_elem.find("gml:LinearRing//gml:posList", NAMESPACES)
+            if (
+                pos_list_elem := get_elem_text(
+                    contour_elem, "gml:LinearRing//gml:posList"
+                )
+            ) is None:
+                raise Exception("posList not found")
             pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
             lonlat_list = [
                 [pos_list[i * 2 + 1], pos_list[i * 2]]
@@ -107,7 +114,7 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
         "fill_color": fill_colors,
         "lonlat_coordinates": all_towns_polygons,
     }
-    return pd.DataFrame(data=data, columns=data.keys())
+    return pd.DataFrame(data=data, columns=list(data.keys()))
 
 
 # @st.cache_data

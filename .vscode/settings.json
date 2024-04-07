@@ -7,6 +7,9 @@
         },
     },
     "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "ruff.enable": true,
+    "python.analysis.inlayHints.variableTypes": true,
     "flake8.args": [
         "--config=.flake8"
     ],

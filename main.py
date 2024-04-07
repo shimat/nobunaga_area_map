@@ -22,9 +22,7 @@ from src.municipality_loader import (
 )
 from src.town_loader import load_town_data_from_gml_zip, mod_data
 
-st.set_page_config(
-    page_title="「信長の野望 出陣」エリア別石高の可視化", page_icon="🗾", layout="wide"
-)
+st.set_page_config(page_title="「信長の野望 出陣」エリア別石高の可視化", page_icon="🗾", layout="wide")
 st.header("「信長の野望 出陣」エリア別石高の可視化")
 
 
@@ -77,10 +75,12 @@ with st.expander("オプション"):
         color_coding_options = [t.value for t in ColorCoding]
         if map_type == MapType.ALL_TOWNS:
             color_coding_options.remove(ColorCoding.OWNERSHIP)
-        color_coding = st.radio(
-            label="色分け",
-            options=color_coding_options,
-            horizontal=True,
+        color_coding = ColorCoding(
+            st.radio(
+                label="色分け",
+                options=color_coding_options,
+                horizontal=True,
+            )
         )
         show_municipality_borders = st.checkbox(
             label="市区町村境界を表示",
@@ -96,17 +96,11 @@ with st.expander("オプション"):
         bastion_latitude, bastion_longitude = None, None
         if bastion_coordinates:
             try:
-                bastion_latitude, bastion_longitude = map(
-                    float, bastion_coordinates.split(",")
-                )
-            except:
+                bastion_latitude, bastion_longitude = map(float, bastion_coordinates.split(","))
+            except Exception:
                 pass
 
-        map_height: int = int(
-            st.number_input(
-                "Map高さ(px)", value=600, max_value=6000, min_value=100, step=10
-            )
-        )
+        map_height: int = int(st.number_input("Map高さ(px)", value=600, max_value=6000, min_value=100, step=10))
 
 if city_name:
     t = time.perf_counter()
@@ -117,15 +111,10 @@ if city_name:
             prefecture_name_list = ORG_REGIONS["!一都三県"]
         else:
             prefecture_name_list = ORG_REGIONS[region_name]
-        df_org = pd.concat(
-            load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{pn}.zip")
-            for pn in prefecture_name_list
-        )
+        df_org = pd.concat(load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{pn}.zip") for pn in prefecture_name_list)
     # 1つの都道府県モード
     else:
-        df_org = load_town_data_from_gml_zip(
-            f"gml/経済センサス_活動調査_{prefecture_name}.zip"
-        )
+        df_org = load_town_data_from_gml_zip(f"gml/経済センサス_活動調査_{prefecture_name}.zip")
     print(f"DataFrame Load Time = {time.perf_counter() - t:.3f}s")
 
     t = time.perf_counter()
@@ -142,14 +131,9 @@ if city_name:
         df_mod = mod_data(df_target, correspondences, color_coding, prefecture_name)
         view_state = area_data.view_state
     elif city_name.startswith("（"):  # 北海道等の各ブロック
-        target_pref_cities = {
-            f"{prefecture_name} {city_name}"
-            for city_name in SUBPREFECTURES[prefecture_name][city_name]
-        }
+        target_pref_cities = {f"{prefecture_name} {city_name}" for city_name in SUBPREFECTURES[prefecture_name][city_name]}
         df_target = df_org[df_org["pref_city"].isin(target_pref_cities)].copy()
-        correspondences = area_data.get_multiple_areas_correspondences(
-            target_pref_cities
-        )
+        correspondences = area_data.get_multiple_areas_correspondences(target_pref_cities)
         subpref_identifier = f"{prefecture_name} {city_name}"
         df_mod = mod_data(df_target, correspondences, color_coding, subpref_identifier)
         view_state = area_data.areas[subpref_identifier].view_state
@@ -207,17 +191,13 @@ if city_name:
     if show_municipality_borders and city_name.startswith("（"):
         t = time.perf_counter()
         if prefecture_name.startswith("（"):
-            df_municipalities = load_municipality_borders_from_json_multi(
-                {pn: set(ORG_CITY_NAMES[pn]) for pn in prefecture_name_list}
-            )
+            df_municipalities = load_municipality_borders_from_json_multi({pn: set(ORG_CITY_NAMES[pn]) for pn in prefecture_name_list})
         else:
             if city_name == "（全体）":
                 target_cities = ORG_CITY_NAMES[prefecture_name]
             else:
                 target_cities = SUBPREFECTURES[prefecture_name][city_name]
-            df_municipalities = load_municipality_borders_from_json(
-                prefecture_name, set(target_cities)
-            )
+            df_municipalities = load_municipality_borders_from_json(prefecture_name, set(target_cities))
         print(f"Municipality Load Time = {time.perf_counter() - t:.3f}s")
         layers.append(
             pydeck.Layer(
@@ -293,10 +273,8 @@ if city_name:
             "area_name": st.column_config.TextColumn("エリア名"),
             "town_name": st.column_config.TextColumn("町丁"),
             "address": address_label,
-            "area": st.column_config.NumberColumn("面積[㎡]", step="0", width="small"),
-            "kokudaka": st.column_config.NumberColumn(
-                "石高", format="%.2f", width="small"
-            ),
+            "area": st.column_config.NumberColumn("面積[㎡]", step="0", width="small"),  # type: ignore
+            "kokudaka": st.column_config.NumberColumn("石高", format="%.2f", width="small"),
             "kokudaka_str": None,
             "is_observed_kokudaka": st.column_config.CheckboxColumn(
                 "実測石高か",
@@ -308,9 +286,7 @@ if city_name:
             "lonlat_coordinates": None,
             "pref_city": None,
             "area_str": None,
-            "own": st.column_config.TextColumn(
-                "領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"
-            ),
+            "own": st.column_config.TextColumn("領有", width="small", help="0:未踏, 1:直接来訪, 2:遠征で獲得"),
             "fill_color": None,
         },
     )
@@ -320,9 +296,7 @@ if city_name:
         df_own = df_uniq[df_uniq["own"] != 0]
         kokudaka_all_sum = df_uniq["kokudaka"].sum()
         kokudaka_own_sum = df_own["kokudaka"].sum()
-        st.write(
-            f"推定石高合計: {kokudaka_own_sum:.2f}石 / {kokudaka_all_sum:.2f}石 ({kokudaka_own_sum/kokudaka_all_sum:.1%})"
-        )
+        st.write(f"推定石高合計: {kokudaka_own_sum:.2f}石 / {kokudaka_all_sum:.2f}石 ({kokudaka_own_sum/kokudaka_all_sum:.1%})")
 
 
 st.markdown(
