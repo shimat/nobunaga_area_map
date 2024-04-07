@@ -8,10 +8,10 @@ import more_itertools
 import pandas as pd
 import shapely
 import streamlit as st
-from conditional_decorator import conditional_decorator
 
 from src.area_loader import Correspondences
 from src.color_generator import RandomColorGenerator, make_color_generator
+from src.conditional_decorator import conditional_decorator
 from src.enums import ColorCoding
 
 # https://tm23forest.com/contents/python-jpgis-gml-dem-geotiff
@@ -26,9 +26,7 @@ NAMESPACES = {
 @st.cache_resource
 def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, "r") as zf:
-        gml_file_name = more_itertools.first_true(
-            zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml"
-        )
+        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: splitext(f)[1] == ".gml")
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, "r") as file:
@@ -91,17 +89,10 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
             ),
         )
         for contour_elem in contour_elements:
-            if (
-                pos_list_elem := get_elem_text(
-                    contour_elem, "gml:LinearRing//gml:posList"
-                )
-            ) is None:
+            if (pos_list_elem := get_elem_text(contour_elem, "gml:LinearRing//gml:posList")) is None:
                 raise Exception("posList not found")
             pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
-            lonlat_list = [
-                [pos_list[i * 2 + 1], pos_list[i * 2]]
-                for i in range(len(pos_list) // 2)
-            ]
+            lonlat_list = [[pos_list[i * 2 + 1], pos_list[i * 2]] for i in range(len(pos_list) // 2)]
             polygons.append(lonlat_list)
         all_towns_polygons.append(polygons)
 
@@ -147,9 +138,7 @@ def mod_data(
             sub_towns = correespondence.towns
             own = correespondence.own
 
-            sub_rows = df[
-                (df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)
-            ]
+            sub_rows = df[(df["pref_city"] == pref_city) & df["town_name"].isin(sub_towns)]
             if sub_rows.empty:
                 raise Exception(f"Town not found ({pref_city=}, {sub_towns=})")
 
@@ -161,19 +150,14 @@ def mod_data(
             estimated_kokudaka = estimate_kokudaka(area)
             if correespondence.koku:
                 kokudaka = correespondence.koku
-                kokudaka_str = (
-                    f"{correespondence.koku} ({round(estimated_kokudaka, 2)})"
-                )
+                kokudaka_str = f"{correespondence.koku} ({round(estimated_kokudaka, 2)})"
                 is_observed_kokudaka = True
             else:
                 kokudaka = estimated_kokudaka
                 kokudaka_str = f"{round(estimated_kokudaka, 2)} (推定)"
                 is_observed_kokudaka = False
 
-            polygons = [
-                shapely.Polygon(shell=c[0], holes=c[1:])
-                for c in sub_rows["lonlat_coordinates"].values
-            ]
+            polygons = [shapely.Polygon(shell=c[0], holes=c[1:]) for c in sub_rows["lonlat_coordinates"].values]
             if not polygons:
                 continue
             merged_polygon = shapely.unary_union(polygons)
@@ -196,9 +180,7 @@ def mod_data(
                         coords_list.append(coords)
                     area_name += " [飛び地あり]"
                 case _:
-                    raise Exception(
-                        f"Unexpected geom_type '{simple_polygon.geom_type}'"
-                    )
+                    raise Exception(f"Unexpected geom_type '{simple_polygon.geom_type}'")
 
             simplified_sub_towns = [s.split(" ")[1:] for s in sub_towns]
             fill_color = color_gen.generate(own)
