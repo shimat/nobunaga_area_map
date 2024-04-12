@@ -916,6 +916,8 @@ areas:
     correspondences:
     - towns:
       - 本駒込１丁目
+      own: 2
+      koku: 13
     - towns:
       - 本駒込２丁目
       own: 2
@@ -931,6 +933,8 @@ areas:
       koku: 15
     - towns:
       - 本駒込５丁目
+      own: 2
+      koku: 14
     - towns:
       - 本駒込６丁目
       own: 1
@@ -941,6 +945,8 @@ areas:
       koku: 16
     - towns:
       - 千駄木２丁目
+      own: 2
+      koku: 13
     - towns:
       - 千駄木３丁目
       own: 2
@@ -951,49 +957,74 @@ areas:
       koku: 15
     - towns:
       - 弥生２丁目
+      own: 2
+      koku: 11
     - towns:
       - 根津１丁目
       - 根津２丁目
+      own: 2
+      koku: 15
     - towns:
       - 本郷１丁目
       own: 2
       koku: 14
     - towns:
       - 本郷２丁目
+      own: 2
+      koku: 15
     - towns:
       - 本郷３丁目
+      own: 2
+      koku: 13
     - towns:
       - 本郷４丁目
+      own: 2
+      koku: 13
     - towns:
       - 本郷５丁目
+      own: 2
+      koku: 12
     - towns:
       - 本郷６丁目
       - 西片１丁目
+      own: 2
+      koku: 14
     - towns:
       - 本郷７丁目
       own: 2
       koku: 21
     - towns:
       - 湯島１丁目
+      own: 2
+      koku: 12
     - towns:
       - 湯島２丁目
       own: 2
       koku: 12
     - towns:
       - 湯島３丁目
+      own: 2
+      koku: 13
     - towns:
       - 湯島４丁目
       own: 2
       koku: 11
     - towns:
       - 西片２丁目
+      own: 2
+      koku: 13
     - towns:
       - 後楽１丁目
+      own: 2
     - towns:
       - 後楽２丁目
       - 水道１丁目
+      own: 2
+      koku: 15
     - towns:
       - 水道２丁目
+      own: 2
+      koku: 11
     - towns:
       - 春日１丁目
       own: 2
@@ -1004,10 +1035,16 @@ areas:
       koku: 13
     - towns:
       - 小石川１丁目
+      own: 2
+      koku: 11
     - towns:
       - 小石川２丁目
+      own: 2
+      koku: 13
     - towns:
       - 小石川３丁目
+      own: 2
+      koku: 14
     - towns:
       - 小石川４丁目
       own: 2
@@ -1018,20 +1055,28 @@ areas:
       koku: 15
     - towns:
       - 白山１丁目
+      own: 2
+      koku: 12
     - towns:
       - 白山２丁目
+      own: 2
+      koku: 15
     - towns:
       - 白山３丁目
       own: 2
       koku: 15
     - towns:
       - 白山４丁目
+      own: 2
+      koku: 15
     - towns:
       - 白山５丁目
       own: 2
       koku: 16
     - towns:
       - 向丘１丁目
+      own: 2
+      koku: 12
     - towns:
       - 向丘２丁目
       own: 2
@@ -1046,24 +1091,36 @@ areas:
       koku: 14
     - towns:
       - 千石３丁目
+      own: 2
+      koku: 14
     - towns:
       - 千石４丁目
+      own: 2
+      koku: 14
     - towns:
       - 大塚１丁目
+      own: 2
+      koku: 12
     - towns:
       - 大塚２丁目
+      own: 2
+      koku: 14
     - towns:
       - 大塚３丁目
       own: 2
       koku: 15
     - towns:
       - 大塚４丁目
+      own: 2
+      koku: 14
     - towns:
       - 大塚５丁目
       own: 2
       koku: 18
     - towns:
       - 大塚６丁目
+      own: 2
+      koku: 12
     - towns:
       - 音羽１丁目
       - 音羽２丁目
@@ -1074,19 +1131,27 @@ areas:
       own: 1
     - towns:
       - 関口２丁目
+      own: 2
+      koku: 13
     - towns:
       - 目白台１丁目
       own: 2
       koku: 14
     - towns:
       - 目白台２丁目
+      own: 2
+      koku: 12
     - towns:
       - 目白台３丁目
       own: 1
     - towns:
       - 小日向１丁目
+      own: 2
+      koku: 14
     - towns:
       - 小日向２丁目
+      own: 2
+      koku: 14
     - towns:
       - 小日向３丁目
       - 小日向４丁目
@@ -4110,6 +4175,8 @@ areas:
       - 赤羽北３丁目
     - towns:
       - 赤羽台１丁目
+      own: 2
+      koku: 13
     - towns:
       - 赤羽台２丁目
     - towns:
@@ -4122,8 +4189,12 @@ areas:
       - 赤羽西２丁目
     - towns:
       - 赤羽西３丁目
+      own: 2
+      koku: 12
     - towns:
       - 赤羽西４丁目
+      own: 2
+      koku: 13
     - towns:
       - 赤羽西５丁目
     - towns:
@@ -4156,6 +4227,8 @@ areas:
       - 王子４丁目
     - towns:
       - 王子５丁目
+      own: 2
+      koku: 17
     - towns:
       - 王子６丁目
     - towns:
@@ -4182,8 +4255,12 @@ areas:
       koku: 20
     - towns:
       - 神谷１丁目
+      own: 2
+      koku: 14
     - towns:
       - 神谷２丁目
+      own: 2
+      koku: 16
     - towns:
       - 神谷３丁目
     - towns:
@@ -4194,6 +4271,8 @@ areas:
       - 栄町
     - towns:
       - 志茂１丁目
+      own: 2
+      koku: 14
     - towns:
       - 志茂２丁目
     - towns:
@@ -4202,6 +4281,8 @@ areas:
       - 志茂４丁目
     - towns:
       - 志茂５丁目
+      own: 2
+      koku: 23
     - towns:
       - 十条台１丁目
     - towns:
@@ -4233,6 +4314,8 @@ areas:
       own: 1
     - towns:
       - 田端新町１丁目
+      own: 2
+      koku: 11
     - towns:
       - 田端新町２丁目
       - 田端新町３丁目
@@ -4249,6 +4332,8 @@ areas:
     - towns:
       - 豊島４丁目
       - 豊島６丁目
+      own: 2
+      koku: 17
     - towns:
       - 豊島５丁目
       own: 2
@@ -4267,8 +4352,12 @@ areas:
       - 中里３丁目
     - towns:
       - 中十条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 中十条３丁目
+      own: 2
+      koku: 12
     - towns:
       - 西が丘１丁目
     - towns:
@@ -4289,20 +4378,30 @@ areas:
       - 東十条１丁目
     - towns:
       - 東十条３丁目
+      own: 2
+      koku: 13
     - towns:
       - 東十条４丁目
       - 東十条５丁目
+      own: 2
+      koku: 15
     - towns:
       - 中十条４丁目
       - 東十条６丁目
+      own: 2
+      koku: 13
     - towns:
       - 上十条４丁目
       - 十条仲原２丁目
       - 十条仲原３丁目
       - 十条仲原４丁目
+      own: 2
+      koku: 18
     - towns:
       - 十条仲原１丁目
       - 中十条２丁目
+      own: 2
+      koku: 14
     - towns:
       - 東田端１丁目
       own: 1
@@ -4325,6 +4424,8 @@ areas:
       - 岸町１丁目
       - 岸町２丁目
       - 東十条２丁目
+      own: 2
+      koku: 15
     - towns:
       - 上中里３丁目
       - 昭和町１丁目
@@ -7137,6 +7238,8 @@ areas:
       koku: 16
     - towns:
       - 御殿山２丁目
+      own: 2
+      koku: 13
     - towns:
       - 桜堤１丁目
     - towns:
@@ -7203,6 +7306,8 @@ areas:
       - 下連雀４丁目
     - towns:
       - 下連雀５丁目
+      own: 2
+      koku: 16
     - towns:
       - 下連雀６丁目
     - towns:
@@ -7249,6 +7354,8 @@ areas:
       - 大沢１丁目
     - towns:
       - 大沢２丁目
+      own: 2
+      koku: 27
     - towns:
       - 大沢３丁目
     - towns:
@@ -7269,6 +7376,8 @@ areas:
       - 新川５丁目
     - towns:
       - 新川６丁目
+      own: 2
+      koku: 25
     - towns:
       - 深大寺１丁目
     - towns:
@@ -7291,12 +7400,18 @@ areas:
       - 牟礼７丁目
     - towns:
       - 野崎１丁目
+      own: 2
+      koku: 16
     - towns:
       - 野崎２丁目
+      own: 2
+      koku: 15
     - towns:
       - 野崎３丁目
     - towns:
       - 野崎４丁目
+      own: 2
+      koku: 12
     - towns:
       - 井口５丁目
 

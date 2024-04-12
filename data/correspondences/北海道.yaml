@@ -10502,10 +10502,14 @@ areas:
       - 潮見台４丁目
     - towns:
       - 真栄１丁目
+      own: 1
+      koku: 16
     - towns:
       - 真栄２丁目
     - towns:
       - 奥沢１丁目
+      own: 1
+      koku: 15
     - towns:
       - 奥沢２丁目
     - towns:
@@ -10549,8 +10553,12 @@ areas:
       - 入船１丁目
       - 住ノ江１丁目
       - 住ノ江２丁目
+      own: 1
+      koku: 17
     - towns:
       - 入船２丁目
+      own: 1
+      koku: 13
     - towns:
       - 入船３丁目
     - towns:
@@ -10564,12 +10572,6 @@ areas:
     - towns:
       - 最上２丁目
     - towns:
-      - 花園５丁目
-    - towns:
-      - 花園４丁目
-    - towns:
-      - 花園３丁目
-    - towns:
       - 東雲町
       - 相生町
     - towns:
@@ -10580,8 +10582,22 @@ areas:
       - 山田町
       - 花園１丁目
       - 稲穂１丁目
+      own: 1
+      koku: 15
     - towns:
       - 花園２丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 花園３丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 花園４丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 花園５丁目
     - towns:
       - 緑１丁目
     - towns:
@@ -10594,6 +10610,8 @@ areas:
       - 緑５丁目
     - towns:
       - 富岡１丁目
+      own: 1
+      koku: 18
     - towns:
       - 富岡２丁目
     - towns:
@@ -11235,18 +11253,28 @@ areas:
       koku: 51
     - towns:
       - 東鷹栖１１線
+      own: 2
+      koku: 54
     - towns:
       - 東鷹栖１０線
       own: 2
       koku: 60
     - towns:
       - 東鷹栖９線
+      own: 2
+      koku: 57
     - towns:
       - 東鷹栖８線
+      own: 2
+      koku: 55
     - towns:
       - 東鷹栖７線
+      own: 2
+      koku: 58
     - towns:
       - 東鷹栖６線
+      own: 2
+      koku: 64
     - towns:
       - 東鷹栖５線
       own: 2
@@ -11268,8 +11296,12 @@ areas:
       own: 1
     - towns:
       - 東鷹栖東１線
+      own: 2
+      koku: 28
     - towns:
       - 東山
+      own: 2
+      koku: 40
     - towns:
       - 東鷹栖４条１丁目
       - 東鷹栖４条２丁目
@@ -12260,6 +12292,7 @@ areas:
       own: 1
     - towns:
       - 永山町１２丁目
+      own: 2
     - towns:
       - 永山町１１丁目
       own: 2
@@ -12806,10 +12839,14 @@ areas:
       - 永山６条２２丁目
       - 永山６条２３丁目
       - 永山６条２４丁目
+      own: 2
+      koku: 14
     - towns:
       - 永山３条２４丁目
       - 永山４条２３丁目
       - 永山４条２４丁目
+      own: 2
+      koku: 11
     - towns:
       - 永山１条２３丁目
       - 永山１条２４丁目
@@ -12817,6 +12854,8 @@ areas:
       - 永山２条２３丁目
       - 永山２条２４丁目
       - 永山３条２３丁目
+      own: 2
+      koku: 15
     - towns:
       - 永山１条２１丁目
       - 永山１条２２丁目
@@ -12889,9 +12928,13 @@ areas:
       own: 2
     - towns:
       - 工業団地５条３丁目
+      own: 2
+      koku: 12
     - towns:
       - 工業団地４条２丁目
       - 工業団地４条３丁目
+      own: 2
+      koku: 14
     - towns:
       - 工業団地５条２丁目
       - 工業団地４条１丁目
@@ -12899,6 +12942,8 @@ areas:
       koku: 12
     - towns:
       - 工業団地３条２丁目
+      own: 2
+      koku: 11
     - towns:
       - 工業団地３条１丁目
       - 工業団地２条２丁目
@@ -13625,12 +13670,16 @@ areas:
       - 西神楽北２条２丁目
       - 西神楽北１条１丁目
       - 西神楽北１条２丁目
+      own: 2
+      koku: 14
     - towns:
       - 西神楽北２条３丁目
       - 西神楽北１条４丁目
       - 西神楽北１条３丁目
     - towns:
       - 西神楽南１条１丁目
+      own: 2
+      koku: 12
     - towns:
       - 西神楽南１条４丁目
       - 西神楽南１条３丁目
@@ -13639,6 +13688,8 @@ areas:
       - 西神楽南２条３丁目
       - 西神楽南２条２丁目
       - 西神楽南２条１丁目
+      own: 2
+      koku: 19
     - towns:
       - 緑が丘１条４丁目
       - 旭神３条５丁目
@@ -22220,6 +22271,8 @@ areas:
       koku: 336
     - towns:
       - 幌内
+      own: 2
+      koku: 182
     - towns:
       - ウッカ
     - towns:
@@ -28262,6 +28315,8 @@ areas:
       - 字幌新
     - towns:
       - 字更新
+      own: 2
+      koku: 240
     - towns:
       - 字東予
     - towns:
@@ -28535,6 +28590,8 @@ areas:
       - 字忠別
     - towns:
       - 字朗根内
+      own: 2
+      koku: 87
     - towns:
       - 字横牛
     - towns:
@@ -28655,8 +28712,12 @@ areas:
       - ８号
     - towns:
       - ７号
+      own: 2
+      koku: 33
     - towns:
       - ６号
+      own: 2
+      koku: 27
     - towns:
       - ５号
       - ひじり野南二条５丁目
@@ -28787,6 +28848,7 @@ areas:
       - ひじり野南一条１丁目
       - ひじり野南二条１丁目
       - ひじり野南三条１丁目
+      own: 2
     - towns:
       - ひじり野南一条４丁目
       - ひじり野南一条３丁目
@@ -28975,16 +29037,24 @@ areas:
       koku: 123
     - towns:
       - ２６線
+      own: 2
+      koku: 66
     - towns:
       - ２５線
+      own: 2
+      koku: 59
     - towns:
       - ２４線
     - towns:
       - ２３線
     - towns:
       - ２２線
+      own: 2
+      koku: 84
     - towns:
       - ２１線
+      own: 2
+      koku: 87
     - towns:
       - ２０線
     - towns:
@@ -29007,6 +29077,8 @@ areas:
       koku: 81
     - towns:
       - １２線
+      own: 2
+      koku: 80
     - towns:
       - １１線
       own: 2
@@ -29025,6 +29097,8 @@ areas:
       koku: 60
     - towns:
       - ７線
+      own: 2
+      koku: 21
     - towns:
       - 北一条１丁目
       - 南一条１丁目
@@ -29035,6 +29109,8 @@ areas:
     - towns:
       - 北一条２丁目
       - 北一条３丁目
+      own: 2
+      koku: 13
     - towns:
       - 南一条２丁目
       - 南一条３丁目
@@ -29115,10 +29191,14 @@ areas:
       - 北８線
     - towns:
       - 北７線
+      own: 2
+      koku: 72
     - towns:
       - 北６線
     - towns:
       - 北５線
+      own: 2
+      koku: 67
     - towns:
       - 北４線
     - towns:
@@ -29410,6 +29490,8 @@ areas:
       - 川端町
     - towns:
       - 新光町
+      own: 2
+      koku: 22
     - towns:
       - 栄町
 
