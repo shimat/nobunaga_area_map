@@ -2895,11 +2895,15 @@ areas:
       - 字東太田沢
     - towns:
       - 字松ノ木
+      own: 2
+      koku: 50
     - towns:
       - 字松ノ木平
       - 字上与田川
     - towns:
       - 字枇杷野
+      own: 2
+      koku: 46
     - towns:
       - 字柴崎
     - towns:
@@ -2933,8 +2937,6 @@ areas:
     - towns:
       - 字米内沢
     - towns:
-      - 字船橋
-    - towns:
       - 字蟹田
     - towns:
       - 字観音林後
@@ -2946,6 +2948,10 @@ areas:
       - 字陣場川原
     - towns:
       - 字雑吉沢
+      - 字種川
+      - 字船橋
+      own: 2
+      koku: 39
     - towns:
       - 字馬門
     - towns:
@@ -3008,8 +3014,6 @@ areas:
     - towns:
       - 字下山
     - towns:
-      - 字下板橋
-    - towns:
       - 字中村道ノ上
     - towns:
       - 字中村道ノ下
@@ -3061,6 +3065,9 @@ areas:
       - 字向屋敷
     - towns:
       - 字向平
+      - 字下板橋
+      own: 2
+      koku: 52
     - towns:
       - 字向籏屋
     - towns:
@@ -3422,6 +3429,9 @@ areas:
       - 字二ツ森家ノ表
     - towns:
       - 字五庵ノ下
+      - 字東天間舘
+      own: 2
+      koku: 47
     - towns:
       - 字作田
     - towns:
@@ -3600,8 +3610,6 @@ areas:
       - 字李沢家ノ後
     - towns:
       - 字李沢道ノ下
-    - towns:
-      - 字東天間舘
     - towns:
       - 字松ケ沢
     - towns:

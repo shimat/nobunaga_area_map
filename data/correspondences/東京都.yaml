@@ -1274,12 +1274,16 @@ areas:
       koku: 15
     - towns:
       - 浅草４丁目
+      own: 2
+      koku: 11
     - towns:
       - 浅草５丁目
       own: 2
       koku: 13
     - towns:
       - 浅草６丁目
+      own: 2
+      koku: 12
     - towns:
       - 千束３丁目
     - towns:
@@ -1317,14 +1321,20 @@ areas:
       koku: 14
     - towns:
       - 花川戸１丁目
+      own: 2
+      koku: 11
     - towns:
       - 浅草２丁目
       own: 2
       koku: 15
     - towns:
       - 浅草１丁目
+      own: 2
+      koku: 11
     - towns:
       - 西浅草３丁目
+      own: 2
+      koku: 12
     - towns:
       - 松が谷３丁目
       - 松が谷４丁目
@@ -4208,8 +4218,12 @@ areas:
       koku: 19
     - towns:
       - 赤羽北１丁目
+      own: 2
+      koku: 20
     - towns:
       - 赤羽北２丁目
+      own: 2
+      koku: 18
     - towns:
       - 赤羽北３丁目
       own: 2
@@ -4224,8 +4238,12 @@ areas:
       koku: 12
     - towns:
       - 赤羽台３丁目
+      own: 2
+      koku: 15
     - towns:
       - 赤羽台４丁目
+      own: 2
+      koku: 14
     - towns:
       - 赤羽西１丁目
       own: 2
@@ -4260,6 +4278,8 @@ areas:
       koku: 12
     - towns:
       - 岩淵町
+      own: 2
+      koku: 19
     - towns:
       - 浮間１丁目
       own: 2
@@ -4392,6 +4412,8 @@ areas:
       koku: 19
     - towns:
       - 滝野川１丁目
+      own: 2
+      koku: 16
     - towns:
       - 滝野川２丁目
       own: 2
@@ -4493,6 +4515,8 @@ areas:
       koku: 12
     - towns:
       - 西が丘３丁目
+      own: 2
+      koku: 17
     - towns:
       - 西ケ原１丁目
       own: 2
@@ -7507,6 +7531,8 @@ areas:
       - 大沢５丁目
     - towns:
       - 大沢６丁目
+      own: 2
+      koku: 19
     - towns:
       - 新川１丁目
     - towns:

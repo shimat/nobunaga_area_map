@@ -13680,6 +13680,8 @@ areas:
       - 西神楽北２条３丁目
       - 西神楽北１条４丁目
       - 西神楽北１条３丁目
+      own: 2
+      koku: 12
     - towns:
       - 西神楽南１条１丁目
       own: 2
@@ -29057,6 +29059,8 @@ areas:
       koku: 59
     - towns:
       - ２４線
+      own: 2
+      koku: 60
     - towns:
       - ２３線
       own: 2
@@ -29201,12 +29205,14 @@ areas:
       koku: 77
     - towns:
       - 北１４線
+      own: 2
     - towns:
       - 北１３線
       own: 2
       koku: 141
     - towns:
       - 北１２線
+      own: 2
     - towns:
       - 北１１線
       own: 2
