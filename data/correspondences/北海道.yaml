@@ -3088,6 +3088,8 @@ areas:
       koku: 15
     - towns:
       - 北丘珠五条４丁目
+      own: 1
+      koku: 11
     - towns:
       - 北丘珠五条３丁目
       - 北丘珠四条３丁目
@@ -3477,6 +3479,8 @@ areas:
       - 北三十五条東２丁目
       - 北三十五条東３丁目
       - 北三十五条東４丁目
+      own: 1
+      koku: 11
     - towns:
       - 北三十六条東８丁目
       - 北三十七条東８丁目
@@ -28706,10 +28710,16 @@ areas:
       - １１号
     - towns:
       - １０号
+      own: 2
+      koku: 41
     - towns:
       - ９号
+      own: 2
+      koku: 38
     - towns:
       - ８号
+      own: 2
+      koku: 35
     - towns:
       - ７号
       own: 2
@@ -28930,6 +28940,8 @@ areas:
       - 西１１号北
     - towns:
       - 西１２号北
+      own: 2
+      koku: 35
     - towns:
       - 東２０号
     - towns:
@@ -29047,6 +29059,8 @@ areas:
       - ２４線
     - towns:
       - ２３線
+      own: 2
+      koku: 58
     - towns:
       - ２２線
       own: 2
@@ -29057,20 +29071,32 @@ areas:
       koku: 87
     - towns:
       - ２０線
+      own: 2
+      koku: 59
     - towns:
       - １９線
+      own: 2
+      koku: 63
     - towns:
       - １８線
+      own: 2
+      koku: 60
     - towns:
       - １７線
+      own: 2
+      koku: 61
     - towns:
       - １６線
+      own: 2
+      koku: 61
     - towns:
       - １５線
       own: 2
       koku: 196
     - towns:
       - １４線
+      own: 2
+      koku: 80
     - towns:
       - １３線
       own: 2
@@ -29183,34 +29209,56 @@ areas:
       - 北１２線
     - towns:
       - 北１１線
+      own: 2
+      koku: 62
     - towns:
       - 北１０線
+      own: 2
+      koku: 56
     - towns:
       - 北９線
+      own: 2
+      koku: 61
     - towns:
       - 北８線
+      own: 2
+      koku: 59
     - towns:
       - 北７線
       own: 2
       koku: 72
     - towns:
       - 北６線
+      own: 2
+      koku: 70
     - towns:
       - 北５線
       own: 2
       koku: 67
     - towns:
       - 北４線
+      own: 2
+      koku: 70
     - towns:
       - 北３線
+      own: 2
+      koku: 73
     - towns:
       - 北２線
+      own: 2
+      koku: 69
     - towns:
       - 北１線
+      own: 2
+      koku: 71
     - towns:
       - 基線
+      own: 2
+      koku: 81
     - towns:
       - 南１線
+      own: 2
+      koku: 72
     - towns:
       - 寿町２丁目
       - 寿町３丁目
@@ -29218,38 +29266,58 @@ areas:
       - 寿町５丁目
       - 寿町６丁目
       - 北町２丁目
+      own: 2
+      koku: 18
     - towns:
       - 寿町１丁目
       - 西町４丁目
       - 西町３丁目
+      own: 2
+      koku: 12
     - towns:
       - 西町２丁目
       - 西町１丁目
       - 緑町３丁目
       - 緑町２丁目
+      own: 2
+      koku: 12
     - towns:
       - 北町３丁目
       - 東町２丁目
       - 東町３丁目
+      own: 2
+      koku: 13
     - towns:
       - 北町１丁目
       - 東町１丁目
       - 新町５丁目
+      own: 2
+      koku: 13
     - towns:
       - 中町２丁目
       - 南町３丁目
+      own: 2
+      koku: 11
     - towns:
       - 新町４丁目
+      own: 2
+      koku: 12
     - towns:
       - 中町１丁目
       - 南町２丁目
       - 新町３丁目
+      own: 2
+      koku: 15
     - towns:
       - 新町２丁目
+      own: 2
+      koku: 11
     - towns:
       - 南町１丁目
       - 緑町１丁目
       - 新町１丁目
+      own: 2
+      koku: 12
 
 
   北海道 上川郡当麻町:

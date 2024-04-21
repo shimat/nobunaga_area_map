@@ -252,6 +252,8 @@ areas:
       - 大字馬屋尻
     - towns:
       - 大字駒込
+      own: 2
+      koku: 354
     - towns:
       - 大字高田
     - towns:
@@ -1712,6 +1714,8 @@ areas:
       - 大字沢田
     - towns:
       - 大字法量
+      own: 2
+      koku: 309
     - towns:
       - 大字洞内
     - towns:
@@ -2812,6 +2816,8 @@ areas:
       - 字一ノ渡
     - towns:
       - 字上小中野
+      own: 2
+      koku: 124
     - towns:
       - 字上河渡頭
     - towns:
@@ -3077,6 +3083,8 @@ areas:
       - 字塔ノ沢山
     - towns:
       - 字塞ノ神
+      own: 2
+      koku: 144
     - towns:
       - 字夏焼
     - towns:
@@ -3111,6 +3119,8 @@ areas:
       koku: 59
     - towns:
       - 字夫雑原
+      own: 2
+      koku: 86
     - towns:
       - 字夫雑原下山
     - towns:
@@ -3151,8 +3161,6 @@ areas:
       - 字岩間手橋ノ上
     - towns:
       - 字川向
-    - towns:
-      - 字川迎
     - towns:
       - 字弥太郎
     - towns:
@@ -3213,8 +3221,6 @@ areas:
     - towns:
       - 字添ノ沢
     - towns:
-      - 字清水目向
-    - towns:
       - 字清水目深山
     - towns:
       - 字湯沢
@@ -3254,6 +3260,10 @@ areas:
       - 字石文
     - towns:
       - 字秋取山
+      - 字清水目向
+      - 字川迎
+      own: 2
+      koku: 63
     - towns:
       - 字空久保
     - towns:
@@ -3354,6 +3364,10 @@ areas:
       - 字上平
     - towns:
       - 字上志多
+      - 字志茂川原
+      - 字北天間舘
+      own: 2
+      koku: 70
     - towns:
       - 字上田坪
     - towns:
@@ -3374,6 +3388,8 @@ areas:
       - 字不動向
     - towns:
       - 字中天間舘
+      own: 2
+      koku: 338
     - towns:
       - 字中屋敷
     - towns:
@@ -3432,8 +3448,6 @@ areas:
       - 字前左野
     - towns:
       - 字前田
-    - towns:
-      - 字北天間舘
     - towns:
       - 字十役野
     - towns:
@@ -3572,8 +3586,6 @@ areas:
       - 字後川原
     - towns:
       - 字後平
-    - towns:
-      - 字志茂川原
     - towns:
       - 字手代森
     - towns:
@@ -4410,6 +4422,8 @@ areas:
       - 大字清水川
     - towns:
       - 大字狩場沢
+      own: 2
+      koku: 153
     - towns:
       - 大字田茂木
     - towns:
