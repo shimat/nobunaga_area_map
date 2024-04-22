@@ -1710,6 +1710,8 @@ areas:
       - 大字大沢田
     - towns:
       - 大字奥瀬
+      own: 2
+      koku: 508
     - towns:
       - 大字沢田
     - towns:
@@ -2794,6 +2796,8 @@ areas:
       koku: 267
     - towns:
       - 大字平沼
+      own: 2
+      koku: 162
     - towns:
       - 大字泊
       own: 2
@@ -2889,6 +2893,8 @@ areas:
       koku: 61
     - towns:
       - 字有戸鳥井平
+      own: 2
+      koku: 72
     - towns:
       - 字木明
     - towns:
@@ -2906,8 +2912,12 @@ areas:
       koku: 46
     - towns:
       - 字柴崎
+      own: 2
+      koku: 38
     - towns:
       - 字槻ノ木
+      own: 2
+      koku: 41
     - towns:
       - 字水ケ沢
     - towns:
