@@ -4728,20 +4728,30 @@ areas:
       own: 2
     - towns:
       - 芸術の森１丁目
+      own: 1
+      koku: 14
     - towns:
       - 芸術の森２丁目
       - 芸術の森３丁目
+      own: 1
+      koku: 23
     - towns:
       - 常盤五条２丁目
       - 常盤五条１丁目
       - 常盤六条１丁目
       - 常盤六条２丁目
+      own: 1
+      koku: 14
     - towns:
       - 常盤三条１丁目
       - 常盤四条１丁目
+      own: 1
+      koku: 11
     - towns:
       - 常盤三条２丁目
       - 常盤四条２丁目
+      own: 1
+      koku: 13
     - towns:
       - 常盤二条１丁目
       - 常盤一条１丁目
@@ -4780,6 +4790,8 @@ areas:
       own: 1
     - towns:
       - 真駒内南町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 真駒内南町２丁目
       - 真駒内南町３丁目
@@ -4787,6 +4799,8 @@ areas:
       own: 1
     - towns:
       - 真駒内泉町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内泉町１丁目
       - 真駒内泉町２丁目
@@ -4798,6 +4812,8 @@ areas:
       own: 1
     - towns:
       - 真駒内上町４丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内上町３丁目
       - 真駒内曙町３丁目
@@ -4822,6 +4838,8 @@ areas:
     - towns:
       - 真駒内上町２丁目
       - 真駒内緑町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 真駒内上町１丁目
       - 真駒内曙町２丁目
@@ -4835,16 +4853,26 @@ areas:
       own: 1
     - towns:
       - 真駒内柏丘１丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内柏丘５丁目
       - 真駒内柏丘６丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内柏丘４丁目
       - 真駒内柏丘８丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内柏丘９丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内柏丘７丁目
+      own: 1
+      koku: 11
     - towns:
       - 真駒内公園
       own: 1
@@ -5087,6 +5115,8 @@ areas:
       own: 1
     - towns:
       - 石山一条１丁目
+      own: 1
+      koku: 14
     - towns:
       - 石山一条２丁目
       own: 1

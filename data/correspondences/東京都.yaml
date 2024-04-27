@@ -4225,6 +4225,8 @@ areas:
       own: 1
     - towns:
       - 西巣鴨１丁目
+      own: 2
+      koku: 14
     - towns:
       - 西巣鴨２丁目
       own: 2
@@ -5705,10 +5707,14 @@ areas:
       - 千住仲町
     - towns:
       - 千住元町
+      own: 2
+      koku: 17
     - towns:
       - 千住大川町
     - towns:
       - 千住宮元町
+      own: 2
+      koku: 12
     - towns:
       - 千住寿町
       - 千住４丁目
@@ -5730,6 +5736,8 @@ areas:
       koku: 19
     - towns:
       - 千住橋戸町
+      own: 2
+      koku: 16
     - towns:
       - 千住河原町
     - towns:
@@ -5854,6 +5862,8 @@ areas:
       - 日ノ出町
     - towns:
       - 本木南町
+      own: 2
+      koku: 14
     - towns:
       - 本木東町
       - 本木北町
@@ -5863,6 +5873,8 @@ areas:
       koku: 14
     - towns:
       - 本木１丁目
+      own: 2
+      koku: 18
     - towns:
       - 本木２丁目
     - towns:

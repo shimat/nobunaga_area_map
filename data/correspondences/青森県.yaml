@@ -2871,6 +2871,8 @@ areas:
       - 字二本木
     - towns:
       - 字八ノ木谷地
+      own: 2
+      koku: 24
     - towns:
       - 字切明
     - towns:
@@ -2928,6 +2930,8 @@ areas:
       koku: 72
     - towns:
       - 字木明
+      own: 2
+      koku: 18
     - towns:
       - 字東太田沢
       own: 2
@@ -4478,6 +4482,8 @@ areas:
       - 大字増田
     - towns:
       - 大字外童子
+      own: 2
+      koku: 188
     - towns:
       - 大字小湊
     - towns:
