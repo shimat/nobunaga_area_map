@@ -10457,6 +10457,8 @@ areas:
       own: 1
     - towns:
       - 新光５丁目
+      own: 1
+      koku: 25
     - towns:
       - 桜１丁目
       own: 1
@@ -10473,11 +10475,15 @@ areas:
       koku: 14
     - towns:
       - 桜５丁目
+      own: 1
+      koku: 27
     - towns:
       - 望洋台１丁目
       own: 1
     - towns:
       - 望洋台２丁目
+      own: 1
+      koku: 21
     - towns:
       - 望洋台３丁目
       - 望洋台４丁目

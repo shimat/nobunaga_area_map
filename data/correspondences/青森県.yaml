@@ -1886,6 +1886,9 @@ areas:
       - 塩釜４丁目
     - towns:
       - 大字三沢
+      - さつきヶ丘１丁目
+      own: 2
+      koku: 303
     - towns:
       - 大字大浦
     - towns:
@@ -2661,6 +2664,8 @@ areas:
       koku: 26
     - towns:
       - 字イタヤノ木
+      own: 2
+      koku: 34
     - towns:
       - 字モダシ平
       own: 2
@@ -2671,6 +2676,8 @@ areas:
       - 字上イタヤノ木
       - 字下外ノ沢
       - 字上外ノ沢
+      own: 2
+      koku: 72
     - towns:
       - 字中椛名木
     - towns:
@@ -2679,6 +2686,8 @@ areas:
       koku: 14
     - towns:
       - 字二又
+      own: 2
+      koku: 40
     - towns:
       - 字向平
       - 字荒内
@@ -2757,8 +2766,12 @@ areas:
       - 字椛名木
     - towns:
       - 字豊栄平
+      own: 2
+      koku: 39
     - towns:
       - 字雲雀平
+      own: 2
+      koku: 119
     - towns:
       - 字鶏ケ唄
       - 字下田ノ沢
@@ -2815,8 +2828,6 @@ areas:
       zoom: 10.0
     correspondences:
     - towns:
-      - 字タラノ木
-    - towns:
       - 字一ノ渡
     - towns:
       - 字上小中野
@@ -2824,28 +2835,38 @@ areas:
       koku: 124
     - towns:
       - 字上河渡頭
+      own: 2
+      koku: 30
     - towns:
       - 字下坂
+      own: 2
+      koku: 31
     - towns:
       - 字下御手洗瀬
     - towns:
       - 字下角
     - towns:
-      - 字下道
-    - towns:
       - 字中与田川
+      own: 2
+      koku: 34
     - towns:
       - 字中屋敷
     - towns:
       - 字中渡
     - towns:
       - 字中田
+      - 字有戸
+      - 字下道
+      own: 2
+      koku: 20
     - towns:
       - 字中道
     - towns:
       - 字久田
     - towns:
       - 字二十平
+      own: 2
+      koku: 21
     - towns:
       - 字二本木
     - towns:
@@ -2870,18 +2891,28 @@ areas:
       - 字地続山
     - towns:
       - 字坊ノ塚
+      own: 2
+      koku: 27
     - towns:
       - 字大平下
+      own: 2
+      koku: 33
     - towns:
       - 字大月平
+      own: 2
+      koku: 21
     - towns:
       - 字家ノ上
     - towns:
       - 字寺ノ沢
+      own: 2
+      koku: 41
     - towns:
       - 字小沢平
     - towns:
       - 字干草橋
+      own: 2
+      koku: 34
     - towns:
       - 字新田
     - towns:
@@ -2899,6 +2930,8 @@ areas:
       - 字木明
     - towns:
       - 字東太田沢
+      own: 2
+      koku: 43
     - towns:
       - 字松ノ木
       own: 2
@@ -2922,8 +2955,13 @@ areas:
       - 字水ケ沢
     - towns:
       - 字洞内
+      - 字タラノ木
+      own: 2
+      koku: 33
     - towns:
       - 字浜掛
+      own: 2
+      koku: 13
     - towns:
       - 字湯沢
     - towns:
@@ -2932,30 +2970,44 @@ areas:
       - 字獅子沢
       - 字御手洗瀬
       - 字上御手洗瀬
+      own: 2
+      koku: 43
     - towns:
       - 字田名部道
+      own: 2
+      koku: 16
     - towns:
       - 字田狭沢
     - towns:
       - 字田端
     - towns:
       - 字石神裏
+      own: 2
+      koku: 14
     - towns:
       - 字笹館
       - 字新町裏
       - 字前田
+      own: 2
+      koku: 18
     - towns:
       - 字米内沢
     - towns:
       - 字蟹田
+      own: 2
+      koku: 44
     - towns:
       - 字観音林後
     - towns:
       - 字赤坂
     - towns:
       - 字野辺地
+      own: 2
+      koku: 20
     - towns:
       - 字陣場川原
+      own: 2
+      koku: 17
     - towns:
       - 字雑吉沢
       - 字種川
@@ -2968,6 +3020,8 @@ areas:
       - 字馬門道
     - towns:
       - 字鳥井平
+      own: 2
+      koku: 12
     - towns:
       - 字鳴沢
     - towns:
@@ -2982,6 +3036,8 @@ areas:
       - 字下与田川
       - 字下松ノ木平
       - 字与田川尻
+      own: 2
+      koku: 15
     - towns:
       - 字白岩
       - 字白岩向
@@ -3140,6 +3196,9 @@ areas:
       koku: 86
     - towns:
       - 字夫雑原下山
+      - 字家ノ下モ
+      own: 2
+      koku: 62
     - towns:
       - 字姥沢
     - towns:
@@ -3150,8 +3209,6 @@ areas:
       - 字家ノ上平
     - towns:
       - 字家ノ下タ
-    - towns:
-      - 字家ノ下モ
     - towns:
       - 字家ノ前
     - towns:
@@ -4226,10 +4283,13 @@ areas:
     correspondences:
     - towns:
       - 大字戸来
+      - 戸来
+      own: 2
+      koku: 341
     - towns:
       - 大字西越
-    - towns:
-      - 戸来
+      own: 2
+      koku: 189
 
 
   青森県 三戸郡三戸町:
@@ -4252,6 +4312,8 @@ areas:
       - 大字目時
     - towns:
       - 大字蛇沼
+      own: 2
+      koku: 146
     - towns:
       - 大字袴田
     - towns:

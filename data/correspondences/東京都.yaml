@@ -1180,6 +1180,8 @@ areas:
       koku: 17
     - towns:
       - 谷中３丁目
+      own: 2
+      koku: 11
     - towns:
       - 谷中７丁目
       own: 1
@@ -1189,6 +1191,8 @@ areas:
     - towns:
       - 上野桜木２丁目
       - 根岸２丁目
+      own: 2
+      koku: 14
     - towns:
       - 上野公園
       own: 2
@@ -1196,6 +1200,8 @@ areas:
     - towns:
       - 池之端１丁目
       - 池之端２丁目
+      own: 2
+      koku: 12
     - towns:
       - 上野１丁目
       - 上野２丁目
@@ -1220,13 +1226,18 @@ areas:
     - towns:
       - 台東２丁目
       - 台東３丁目
+      own: 2
+      koku: 14
     - towns:
       - 台東４丁目
       - 小島２丁目
       - 三筋２丁目
+      own: 2
     - towns:
       - 東上野１丁目
       - 元浅草１丁目
+      own: 2
+      koku: 13
     - towns:
       - 東上野３丁目
       - 元浅草２丁目
@@ -1237,9 +1248,13 @@ areas:
     - towns:
       - 東上野４丁目
       - 東上野５丁目
+      own: 2
+      koku: 13
     - towns:
       - 東上野６丁目
       - 北上野２丁目
+      own: 2
+      koku: 14
     - towns:
       - 北上野１丁目
       - 下谷１丁目
@@ -1247,9 +1262,13 @@ areas:
       own: 1
     - towns:
       - 根岸３丁目
+      own: 2
+      koku: 13
     - towns:
       - 下谷２丁目
       - 入谷１丁目
+      own: 2
+      koku: 14
     - towns:
       - 根岸４丁目
       - 下谷３丁目
@@ -1267,9 +1286,13 @@ areas:
       koku: 12
     - towns:
       - 竜泉３丁目
+      own: 2
+      koku: 11
     - towns:
       - 竜泉１丁目
       - 入谷２丁目
+      own: 2
+      koku: 14
     - towns:
       - 千束１丁目
       - 千束２丁目
@@ -1290,8 +1313,12 @@ areas:
       koku: 12
     - towns:
       - 千束３丁目
+      own: 2
+      koku: 12
     - towns:
       - 千束４丁目
+      own: 2
+      koku: 12
     - towns:
       - 日本堤２丁目
       own: 2
@@ -1304,20 +1331,28 @@ areas:
       koku: 16
     - towns:
       - 清川１丁目
+      own: 2
+      koku: 11
     - towns:
       - 清川２丁目
       own: 2
       koku: 12
     - towns:
       - 橋場１丁目
+      own: 2
+      koku: 13
     - towns:
       - 橋場２丁目
       own: 2
       koku: 11
     - towns:
       - 今戸１丁目
+      own: 2
+      koku: 13
     - towns:
       - 今戸２丁目
+      own: 2
+      koku: 13
     - towns:
       - 浅草７丁目
       - 花川戸２丁目
@@ -1342,6 +1377,8 @@ areas:
     - towns:
       - 松が谷３丁目
       - 松が谷４丁目
+      own: 2
+      koku: 12
     - towns:
       - 西浅草２丁目
       - 松が谷２丁目
@@ -1366,11 +1403,16 @@ areas:
     - towns:
       - 元浅草３丁目
       - 寿１丁目
+      own: 2
+      koku: 12
     - towns:
       - 寿３丁目
       - 蔵前３丁目
+      own: 2
+      koku: 11
     - towns:
       - 蔵前１丁目
+      own: 2
     - towns:
       - 蔵前２丁目
       own: 2
@@ -1385,6 +1427,8 @@ areas:
       - 三筋１丁目
       - 小島１丁目
       - 鳥越１丁目
+      own: 2
+      koku: 13
     - towns:
       - 浅草橋１丁目
       - 浅草橋４丁目
@@ -1393,6 +1437,8 @@ areas:
       koku: 15
     - towns:
       - 柳橋１丁目
+      own: 2
+      koku: 11
     - towns:
       - 柳橋２丁目
       - 浅草橋２丁目
@@ -1452,6 +1498,8 @@ areas:
       - 堤通２丁目
     - towns:
       - 向島１丁目
+      own: 2
+      koku: 14
     - towns:
       - 向島２丁目
     - towns:
@@ -1462,6 +1510,8 @@ areas:
       - 向島５丁目
     - towns:
       - 押上１丁目
+      own: 2
+      koku: 14
     - towns:
       - 押上２丁目
     - towns:
@@ -4168,6 +4218,8 @@ areas:
       own: 1
     - towns:
       - 北大塚２丁目
+      own: 2
+      koku: 12
     - towns:
       - 北大塚３丁目
       own: 1
@@ -4175,10 +4227,16 @@ areas:
       - 西巣鴨１丁目
     - towns:
       - 西巣鴨２丁目
+      own: 2
+      koku: 13
     - towns:
       - 西巣鴨３丁目
+      own: 2
+      koku: 11
     - towns:
       - 西巣鴨４丁目
+      own: 2
+      koku: 11
     - towns:
       - 巣鴨１丁目
       own: 1
@@ -4186,12 +4244,20 @@ areas:
       - 巣鴨２丁目
       - 駒込５丁目
       - 駒込７丁目
+      own: 2
+      koku: 17
     - towns:
       - 巣鴨３丁目
+      own: 2
+      koku: 14
     - towns:
       - 巣鴨４丁目
+      own: 2
+      koku: 14
     - towns:
       - 巣鴨５丁目
+      own: 2
+      koku: 14
     - towns:
       - 駒込１丁目
       own: 1
@@ -4201,13 +4267,19 @@ areas:
       own: 1
     - towns:
       - 駒込４丁目
+      own: 2
+      koku: 11
     - towns:
       - 駒込６丁目
+      own: 2
+      koku: 12
     - towns:
       - 南大塚１丁目
       own: 1
     - towns:
       - 南大塚２丁目
+      own: 2
+      koku: 15
     - towns:
       - 南大塚３丁目
       own: 1
@@ -5650,8 +5722,12 @@ areas:
       - 千住東２丁目
     - towns:
       - 千住桜木１丁目
+      own: 2
+      koku: 14
     - towns:
       - 千住桜木２丁目
+      own: 2
+      koku: 19
     - towns:
       - 千住橋戸町
     - towns:
@@ -5661,10 +5737,16 @@ areas:
       - 千住龍田町
     - towns:
       - 千住緑町１丁目
+      own: 2
+      koku: 13
     - towns:
       - 千住緑町２丁目
+      own: 2
+      koku: 12
     - towns:
       - 千住緑町３丁目
+      own: 2
+      koku: 11
     - towns:
       - 千住関屋町
     - towns:
@@ -5777,6 +5859,8 @@ areas:
       - 本木北町
     - towns:
       - 本木西町
+      own: 2
+      koku: 14
     - towns:
       - 本木１丁目
     - towns:
@@ -8500,8 +8584,12 @@ areas:
       - 三輪緑山４丁目
     - towns:
       - 上小山田町
+      own: 2
+      koku: 56
     - towns:
       - 下小山田町
+      own: 2
+      koku: 63
     - towns:
       - 中町１丁目
     - towns:
@@ -8568,6 +8656,8 @@ areas:
       - 小山田桜台２丁目
     - towns:
       - 小山町
+      own: 2
+      koku: 49
     - towns:
       - 小川
     - towns:
@@ -8698,6 +8788,8 @@ areas:
       - 玉川学園８丁目
     - towns:
       - 相原町
+      own: 2
+      koku: 84
     - towns:
       - 真光寺町
     - towns:
@@ -10872,3 +10964,207 @@ areas:
       - 留浦
     - towns:
       - 白丸
+
+
+  東京都 大島支庁大島町:
+    view_state:
+      latitude: 34.73752387917668
+      longitude: 139.3988421287113
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 元町
+    - towns:
+      - 元町１丁目
+    - towns:
+      - 元町２丁目
+    - towns:
+      - 元町３丁目
+    - towns:
+      - 元町４丁目
+    - towns:
+      - 岡田
+    - towns:
+      - 差木地
+    - towns:
+      - 泉津
+      own: 2
+      koku: 151
+    - towns:
+      - 波浮港
+    - towns:
+      - 野増
+      own: 2
+      koku: 145
+
+
+  東京都 大島支庁利島村:
+    view_state:
+      latitude: 34.52263611666544
+      longitude: 139.27922478888522
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - その他
+
+
+  東京都 大島支庁新島村:
+    view_state:
+      latitude: 34.37125148164555
+      longitude: 139.25937299631417
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 地内島
+    - towns:
+      - 式根島
+    - towns:
+      - 早島
+    - towns:
+      - 本村
+    - towns:
+      - 本村１丁目
+    - towns:
+      - 本村２丁目
+    - towns:
+      - 本村３丁目
+    - towns:
+      - 本村４丁目
+    - towns:
+      - 本村６丁目
+    - towns:
+      - 若郷
+    - towns:
+      - 鵜渡根島
+    - towns:
+      - 本村５丁目
+
+
+  東京都 大島支庁神津島村:
+    view_state:
+      latitude: 34.21425442188945
+      longitude: 139.14775014303274
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - (町名無し)
+    - towns:
+      - 三浦
+    - towns:
+      - 向山
+    - towns:
+      - 多幸
+    - towns:
+      - 大沢
+    - towns:
+      - 天上山
+    - towns:
+      - 山川
+    - towns:
+      - 惣四郎
+    - towns:
+      - 沢尻
+    - towns:
+      - 洞沢
+    - towns:
+      - 滝川
+    - towns:
+      - 祇苗島
+    - towns:
+      - 秩父山
+    - towns:
+      - 金長、等
+    - towns:
+      - 鉄砲場
+    - towns:
+      - 錆崎
+    - towns:
+      - 鍛冶山
+    - towns:
+      - 面房
+    - towns:
+      - 高処山
+    - towns:
+      - 高嶺
+    - towns:
+      - 恩馳島
+
+
+  東京都 三宅支庁三宅村:
+    view_state:
+      latitude: 34.08489040866855
+      longitude: 139.521154141455
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 伊ヶ谷
+    - towns:
+      - 伊豆
+    - towns:
+      - 坪田
+    - towns:
+      - 神着
+    - towns:
+      - 阿古
+    - towns:
+      - 雄山
+
+
+  東京都 三宅支庁御蔵島村:
+    view_state:
+      latitude: 33.87481904345388
+      longitude: 139.60319179204834
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - その他
+
+
+  東京都 八丈支庁八丈町:
+    view_state:
+      latitude: 33.10729125983683
+      longitude: 139.79310466415
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 三根
+    - towns:
+      - 中之郷
+    - towns:
+      - 八丈小島
+    - towns:
+      - 大賀郷
+    - towns:
+      - 末吉
+    - towns:
+      - 樫立
+
+
+  東京都 八丈支庁青ケ島村:
+    view_state:
+      latitude: 32.45801324829557
+      longitude: 139.76647496081898
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - その他
+
+
+  東京都 小笠原支庁小笠原村:
+    view_state:
+      latitude: 26.27161383022293
+      longitude: 142.08590674969406
+      zoom: 10.0
+    correspondences:
+    - towns:
+      - 南鳥島
+    - towns:
+      - 母島
+    - towns:
+      - 父島
+    - towns:
+      - 硫黄島
+    - towns:
+      - 聟島
+    - towns:
+      - 沖ノ鳥島
