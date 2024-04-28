@@ -10998,6 +10998,8 @@ areas:
       - 岡田
     - towns:
       - 差木地
+      own: 2
+      koku: 140
     - towns:
       - 泉津
       own: 2

@@ -2757,6 +2757,8 @@ areas:
       - 字百目木
       - 字牛ノ沢
       - 字牛ノ沢川目
+      own: 2
+      koku: 52
     - towns:
       - 字稲荷平
       own: 2
@@ -3067,6 +3069,8 @@ areas:
       - 大字上野
     - towns:
       - 大字大浦
+      own: 2
+      koku: 316
     - towns:
       - 大字新舘
     - towns:
