@@ -4708,7 +4708,7 @@ areas:
       own: 2
     - towns:
       - 常盤
-      own: 2
+      own: 1
     - towns:
       - 定山渓
       own: 1
@@ -10589,6 +10589,8 @@ areas:
       koku: 13
     - towns:
       - 住吉町
+      own: 1
+      koku: 13
     - towns:
       - 入船１丁目
       - 住ノ江１丁目
@@ -10609,13 +10611,19 @@ areas:
       - 松ケ枝１丁目
     - towns:
       - 最上１丁目
+      own: 1
+      koku: 18
     - towns:
       - 最上２丁目
+      own: 1
+      koku: 28
     - towns:
       - 東雲町
       - 相生町
     - towns:
       - 堺町
+      own: 1
+      koku: 11
     - towns:
       - 港町
     - towns:
@@ -10638,16 +10646,22 @@ areas:
       koku: 12
     - towns:
       - 花園５丁目
+      own: 1
+      koku: 19
     - towns:
       - 緑１丁目
     - towns:
       - 緑２丁目
+      own: 1
+      koku: 16
     - towns:
       - 緑３丁目
     - towns:
       - 緑４丁目
     - towns:
       - 緑５丁目
+      own: 1
+      koku: 27
     - towns:
       - 富岡１丁目
       own: 1
@@ -10660,16 +10674,26 @@ areas:
       - 稲穂３丁目
     - towns:
       - 稲穂４丁目
+      own: 1
+      koku: 11
     - towns:
       - 稲穂５丁目
+      own: 1
+      koku: 18
     - towns:
       - 色内１丁目
+      own: 1
+      koku: 13
     - towns:
       - 色内２丁目
+      own: 1
+      koku: 12
     - towns:
       - 色内３丁目
     - towns:
       - 錦町
+      own: 1
+      koku: 12
     - towns:
       - 石山町
     - towns:
@@ -10678,36 +10702,64 @@ areas:
       - 清水町
     - towns:
       - 梅ケ枝町
+      own: 1
+      koku: 20
     - towns:
       - 末広町
+      own: 1
+      koku: 19
     - towns:
       - 手宮１丁目
+      own: 1
+      koku: 19
     - towns:
       - 手宮２丁目
+      own: 1
+      koku: 15
     - towns:
       - 手宮３丁目
+      own: 1
+      koku: 13
     - towns:
       - 高島１丁目
+      own: 1
+      koku: 14
     - towns:
       - 高島２丁目
+      own: 1
+      koku: 18
     - towns:
       - 高島３丁目
+      own: 1
+      koku: 19
     - towns:
       - 高島４丁目
+      own: 1
+      koku: 21
     - towns:
       - 高島５丁目
+      own: 1
+      koku: 17
     - towns:
       - 祝津１丁目
+      own: 1
+      koku: 23
     - towns:
       - 祝津３丁目
       own: 1
     - towns:
       - 祝津２丁目
       - 祝津４丁目
+      own: 1
+      koku: 39
     - towns:
       - 赤岩１丁目
+      own: 1
+      koku: 23
     - towns:
       - 赤岩２丁目
+      own: 1
+      koku: 28
     - towns:
       - 赤岩３丁目
     - towns:
@@ -10720,35 +10772,59 @@ areas:
       - 幸４丁目
     - towns:
       - 長橋１丁目
+      own: 1
+      koku: 37
     - towns:
       - 長橋２丁目
+      own: 1
+      koku: 18
     - towns:
       - 長橋３丁目
     - towns:
       - 長橋４丁目
     - towns:
       - 長橋５丁目
+      own: 1
+      koku: 35
     - towns:
       - 旭町
     - towns:
       - オタモイ１丁目
+      own: 1
+      koku: 34
     - towns:
       - オタモイ２丁目
+      own: 1
+      koku: 22
     - towns:
       - オタモイ３丁目
       - オタモイ４丁目
+      own: 1
+      koku: 34
     - towns:
       - 塩谷１丁目
+      own: 1
+      koku: 58
     - towns:
       - 塩谷２丁目
+      own: 1
+      koku: 41
     - towns:
       - 塩谷３丁目
+      own: 1
+      koku: 65
     - towns:
       - 塩谷４丁目
+      own: 1
+      koku: 83
     - towns:
       - 塩谷５丁目
+      own: 1
+      koku: 81
     - towns:
       - 桃内１丁目
+      own: 1
+      koku: 35
     - towns:
       - 桃内２丁目
       - 桃内３丁目
@@ -10756,11 +10832,15 @@ areas:
       - 蘭島３丁目
     - towns:
       - 忍路１丁目
+      own: 1
+      koku: 50
     - towns:
       - 忍路２丁目
       own: 1
     - towns:
       - 蘭島１丁目
+      own: 1
+      koku: 31
     - towns:
       - 蘭島２丁目
       own: 1
@@ -25953,20 +26033,30 @@ areas:
     - towns:
       - 黒川町１０丁目
       - 黒川町１１丁目
+      own: 1
+      koku: 12
     - towns:
       - 大川町５丁目
       - 黒川町５丁目
     - towns:
       - 大川町６丁目
       - 大川町７丁目
+      own: 1
+      koku: 12
     - towns:
       - 大川町８丁目
       - 大川町９丁目
       - 黒川町１４丁目
+      own: 1
+      koku: 16
     - towns:
       - 黒川町１２丁目
+      own: 1
+      koku: 12
     - towns:
       - 黒川町１３丁目
+      own: 1
+      koku: 11
     - towns:
       - 黒川町１６丁目
     - towns:
@@ -25974,6 +26064,8 @@ areas:
     - towns:
       - 大川町１０丁目
       - 大川町１１丁目
+      own: 1
+      koku: 11
     - towns:
       - 黒川町１７丁目
     - towns:
@@ -25987,14 +26079,20 @@ areas:
       - 大川町１２丁目
       - 大川町１３丁目
       - 大川町１４丁目
+      own: 1
+      koku: 13
     - towns:
       - 大川町１５丁目
       - 大川町１６丁目
+      own: 1
+      koku: 11
     - towns:
       - 大川町１７丁目
       - 大川町１８丁目
       - 大川町１９丁目
       - 大川町２０丁目
+      own: 1
+      koku: 16
 
 
   北海道 余市郡仁木町:
@@ -26030,14 +26128,86 @@ areas:
       - 大江１丁目
       own: 1
     - towns:
-      - 南町１０丁目
+      - 南町１丁目
+      - 南町２丁目
+      own: 1
+      koku: 17
     - towns:
-      - 南町９丁目
+      - 南町３丁目
+      - 西町３丁目
+      own: 1
+      koku: 17
+    - towns:
+      - 南町４丁目
+      own: 1
+      koku: 14
+    - towns:
+      - 南町７丁目
     - towns:
       - 南町８丁目
       own: 1
     - towns:
-      - 南町７丁目
+      - 南町９丁目
+      own: 1
+      koku: 44
+    - towns:
+      - 南町１０丁目
+    - towns:
+      - 東町１丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 東町２丁目
+      own: 1
+      koku: 19
+    - towns:
+      - 東町３丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 東町４丁目
+      own: 1
+      koku: 18
+    - towns:
+      - 東町５丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 東町６丁目
+      own: 1
+      koku: 16
+    - towns:
+      - 東町７丁目
+      - 北町５丁目
+      - 北町７丁目
+      own: 1
+      koku: 23
+    - towns:
+      - 東町８丁目
+      own: 1
+      koku: 18
+    - towns:
+      - 東町９丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 東町１０丁目
+      own: 1
+      koku: 14
+    - towns:
+      - 東町１１丁目
+      own: 1
+      koku: 16
+    - towns:
+      - 東町１２丁目
+      own: 1
+      koku: 27
+    - towns:
+      - 東町１３丁目
+      - 北町１２丁目
+      - 北町１３丁目
+      own: 1
+      koku: 27
     - towns:
       - 東町緑ケ丘
       - 東町１４丁目
@@ -26045,8 +26215,8 @@ areas:
       - 東町１５丁目
     - towns:
       - 東町１６丁目
-    - towns:
-      - 東町１２丁目
+      own: 1
+      koku: 28
 
 
   北海道 余市郡赤井川村:
