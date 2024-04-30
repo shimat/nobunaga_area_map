@@ -6742,11 +6742,11 @@ areas:
       own: 1
     - towns:
       - 宮の沢
-      own: 2
+      own: 1
       koku: 29
     - towns:
       - 小別沢
-      own: 2
+      own: 1
     - towns:
       - 山の手
       own: 2

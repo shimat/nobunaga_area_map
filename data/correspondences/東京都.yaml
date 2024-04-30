@@ -4209,6 +4209,8 @@ areas:
       - 上池袋２丁目
     - towns:
       - 上池袋３丁目
+      own: 2
+      koku: 13
     - towns:
       - 上池袋４丁目
     - towns:
@@ -5709,6 +5711,8 @@ areas:
       - 北加平町
     - towns:
       - 千住中居町
+      own: 2
+      koku: 12
     - towns:
       - 千住仲町
     - towns:
@@ -5746,6 +5750,8 @@ areas:
       koku: 16
     - towns:
       - 千住河原町
+      own: 2
+      koku: 13
     - towns:
       - 千住柳町
       - 千住龍田町
@@ -5858,6 +5864,8 @@ areas:
       koku: 26
     - towns:
       - 扇３丁目
+      own: 2
+      koku: 17
     - towns:
       - 新田１丁目
     - towns:
@@ -5887,6 +5895,8 @@ areas:
       koku: 18
     - towns:
       - 本木２丁目
+      own: 2
+      koku: 12
     - towns:
       - 東伊興１丁目
     - towns:
@@ -5964,6 +5974,8 @@ areas:
       - 江北３丁目
     - towns:
       - 江北４丁目
+      own: 2
+      koku: 17
     - towns:
       - 江北５丁目
     - towns:
@@ -6015,8 +6027,12 @@ areas:
       - 綾瀬７丁目
     - towns:
       - 興野１丁目
+      own: 2
+      koku: 12
     - towns:
       - 興野２丁目
+      own: 2
+      koku: 17
     - towns:
       - 舎人公園
       own: 2
@@ -6138,6 +6154,8 @@ areas:
       - 辰沼２丁目
     - towns:
       - 関原１丁目
+      own: 2
+      koku: 13
     - towns:
       - 関原２丁目
     - towns:
@@ -11002,12 +11020,18 @@ areas:
       koku: 134
     - towns:
       - 元町１丁目
+      own: 2
+      koku: 15
     - towns:
       - 元町２丁目
     - towns:
       - 元町３丁目
+      own: 2
+      koku: 15
     - towns:
       - 元町４丁目
+      own: 2
+      koku: 15
     - towns:
       - 岡田
       own: 2

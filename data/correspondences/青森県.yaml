@@ -1513,8 +1513,6 @@ areas:
       zoom: 10.0
     correspondences:
     - towns:
-      - (町名無し)
-    - towns:
       - 中央４丁目
     - towns:
       - 十三
@@ -1672,8 +1670,6 @@ areas:
       longitude: 141.056
       zoom: 10.0
     correspondences:
-    - towns:
-      - (町名無し)
     - towns:
       - ひがしの１丁目
     - towns:
@@ -2684,6 +2680,8 @@ areas:
       koku: 72
     - towns:
       - 字中椛名木
+      own: 2
+      koku: 14
     - towns:
       - 字中畑
       own: 2
@@ -2703,6 +2701,8 @@ areas:
       koku: 85
     - towns:
       - 字塚名平
+      own: 2
+      koku: 15
     - towns:
       - 字大畑
       own: 2
@@ -2861,6 +2861,8 @@ areas:
       - 字中屋敷
     - towns:
       - 字中渡
+      own: 2
+      koku: 15
     - towns:
       - 字中田
       - 字有戸
@@ -2887,6 +2889,8 @@ areas:
       - 字前平
       - 字荒田ノ沢
       - 字滝田
+      own: 2
+      koku: 16
     - towns:
       - 字助佐小路
     - towns:
@@ -2931,6 +2935,8 @@ areas:
       - 字新田
     - towns:
       - 字明前
+      own: 2
+      koku: 37
     - towns:
       - 字春木場沢
       - 字大谷地東沢
@@ -2995,8 +3001,14 @@ areas:
       koku: 16
     - towns:
       - 字田狭沢
+      own: 2
+      koku: 14
     - towns:
       - 字田端
+      - 字下河渡頭
+      - 字中河渡頭
+      own: 2
+      koku: 14
     - towns:
       - 字石神裏
       own: 2
@@ -3009,6 +3021,8 @@ areas:
       koku: 18
     - towns:
       - 字米内沢
+      own: 2
+      koku: 12
     - towns:
       - 字蟹田
       own: 2
@@ -3035,6 +3049,8 @@ areas:
       - 字馬門
     - towns:
       - 字馬門道
+      own: 2
+      koku: 14
     - towns:
       - 字鳥井平
       own: 2
@@ -3044,7 +3060,6 @@ areas:
     - towns:
       - 字二本木向前田
       - 字二本木向
-      - 字観音林前田
       own: 2
       koku: 15
     - towns:
