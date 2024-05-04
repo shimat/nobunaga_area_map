@@ -4213,6 +4213,8 @@ areas:
       koku: 13
     - towns:
       - 上池袋４丁目
+      own: 2
+      koku: 13
     - towns:
       - 池袋本町１丁目
     - towns:
@@ -5715,6 +5717,8 @@ areas:
       koku: 12
     - towns:
       - 千住仲町
+      own: 2
+      koku: 13
     - towns:
       - 千住元町
       own: 2
@@ -5808,6 +5812,8 @@ areas:
       - 舎人町
     - towns:
       - 堀之内１丁目
+      own: 2
+      koku: 20
     - towns:
       - 堀之内２丁目
     - towns:
@@ -5870,6 +5876,8 @@ areas:
       - 新田１丁目
     - towns:
       - 新田２丁目
+      own: 2
+      koku: 18
     - towns:
       - 新田３丁目
       own: 2
@@ -5951,6 +5959,8 @@ areas:
       - 梅田３丁目
     - towns:
       - 梅田４丁目
+      own: 2
+      koku: 18
     - towns:
       - 梅田５丁目
     - towns:
@@ -5972,6 +5982,8 @@ areas:
       koku: 22
     - towns:
       - 江北３丁目
+      own: 2
+      koku: 18
     - towns:
       - 江北４丁目
       own: 2
@@ -11024,6 +11036,8 @@ areas:
       koku: 15
     - towns:
       - 元町２丁目
+      own: 2
+      koku: 15
     - towns:
       - 元町３丁目
       own: 2
@@ -11046,6 +11060,8 @@ areas:
       koku: 151
     - towns:
       - 波浮港
+      own: 2
+      koku: 45
     - towns:
       - 野増
       own: 2
@@ -11078,22 +11094,31 @@ areas:
       - 早島
     - towns:
       - 本村
+      own: 2
+      koku: 141
     - towns:
       - 本村１丁目
+      - 本村５丁目
+      own: 2
+      koku: 15
     - towns:
       - 本村２丁目
+      own: 2
+      koku: 16
     - towns:
       - 本村３丁目
+      own: 2
+      koku: 14
     - towns:
       - 本村４丁目
     - towns:
       - 本村６丁目
     - towns:
       - 若郷
+      own: 2
+      koku: 50
     - towns:
       - 鵜渡根島
-    - towns:
-      - 本村５丁目
 
 
   東京都 大島支庁神津島村:

@@ -2672,6 +2672,8 @@ areas:
       koku: 101
     - towns:
       - 字三保野
+      own: 2
+      koku: 24
     - towns:
       - 字上イタヤノ木
       - 字下外ノ沢
@@ -2725,6 +2727,8 @@ areas:
       koku: 51
     - towns:
       - 字屋敷形
+      own: 2
+      koku: 12
     - towns:
       - 字川太郎川目
       own: 2
@@ -2741,6 +2745,8 @@ areas:
       koku: 134
     - towns:
       - 字林ノ後
+      own: 2
+      koku: 14
     - towns:
       - 字林ノ脇
       own: 2
@@ -2755,6 +2761,8 @@ areas:
       koku: 26
     - towns:
       - 字浜懸
+      own: 2
+      koku: 12
     - towns:
       - 字獅子沢平
       own: 2
@@ -2772,6 +2780,8 @@ areas:
     - towns:
       - 字舘ノ後
       - 字椛名木
+      own: 2
+      koku: 16
     - towns:
       - 字豊栄平
       own: 2
@@ -2795,6 +2805,8 @@ areas:
       - 字下川原
       - 字横浜
       - 字寺下
+      own: 2
+      koku: 16
 
 
   青森県 上北郡六ヶ所村:
@@ -2851,8 +2863,8 @@ areas:
       koku: 31
     - towns:
       - 字下御手洗瀬
-    - towns:
-      - 字下角
+      own: 2
+      koku: 11
     - towns:
       - 字中与田川
       own: 2
@@ -2871,6 +2883,8 @@ areas:
       koku: 20
     - towns:
       - 字中道
+      own: 2
+      koku: 15
     - towns:
       - 字久田
     - towns:
@@ -2879,12 +2893,16 @@ areas:
       koku: 21
     - towns:
       - 字二本木
+      own: 2
+      koku: 12
     - towns:
       - 字八ノ木谷地
       own: 2
       koku: 24
     - towns:
       - 字切明
+      own: 2
+      koku: 11
     - towns:
       - 字前平
       - 字荒田ノ沢
@@ -2893,8 +2911,13 @@ areas:
       koku: 16
     - towns:
       - 字助佐小路
+      own: 2
+      koku: 13
     - towns:
       - 字古明前
+      - 字下角
+      own: 2
+      koku: 19
     - towns:
       - 字向田
       own: 2
@@ -2927,6 +2950,8 @@ areas:
       koku: 41
     - towns:
       - 字小沢平
+      own: 2
+      koku: 25
     - towns:
       - 字干草橋
       own: 2
@@ -3029,8 +3054,12 @@ areas:
       koku: 44
     - towns:
       - 字観音林後
+      own: 2
+      koku: 12
     - towns:
       - 字赤坂
+      own: 2
+      koku: 12
     - towns:
       - 字野辺地
       own: 2
@@ -3047,6 +3076,8 @@ areas:
       koku: 39
     - towns:
       - 字馬門
+      own: 2
+      koku: 11
     - towns:
       - 字馬門道
       own: 2
@@ -3057,6 +3088,8 @@ areas:
       koku: 12
     - towns:
       - 字鳴沢
+      own: 2
+      koku: 14
     - towns:
       - 字二本木向前田
       - 字二本木向
@@ -3078,6 +3111,17 @@ areas:
     - towns:
       - 字白岩
       - 字白岩向
+      own: 2
+      koku: 13
+    - towns:
+      - 字戸田ノ沢
+      - 字下上田表
+      - 字上田川原
+      - 字上田表
+      - 字川目
+      - 字水ケ沢出口
+      own: 2
+      koku: 15
 
 
   青森県 上北郡東北町:
@@ -4509,6 +4553,8 @@ areas:
       - 大字中野
     - towns:
       - 大字内童子
+      own: 2
+      koku: 120
     - towns:
       - 大字口広
     - towns:
