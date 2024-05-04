@@ -232,6 +232,8 @@ areas:
       - 大字羽白
     - towns:
       - 大字荒川
+      own: 2
+      koku: 241
     - towns:
       - 大字西田沢
     - towns:
@@ -2849,6 +2851,11 @@ areas:
     correspondences:
     - towns:
       - 字一ノ渡
+      - 字一ノ渡向
+      - 字ホトコ沢前谷地
+      - 字湯沢出口
+      own: 2
+      koku: 18
     - towns:
       - 字上小中野
       own: 2
@@ -2871,6 +2878,8 @@ areas:
       koku: 34
     - towns:
       - 字中屋敷
+      own: 2
+      koku: 15
     - towns:
       - 字中渡
       own: 2
@@ -2887,6 +2896,8 @@ areas:
       koku: 15
     - towns:
       - 字久田
+      own: 2
+      koku: 12
     - towns:
       - 字二十平
       own: 2
@@ -2958,6 +2969,8 @@ areas:
       koku: 34
     - towns:
       - 字新田
+      own: 2
+      koku: 11
     - towns:
       - 字明前
       own: 2
@@ -2986,6 +2999,8 @@ areas:
     - towns:
       - 字松ノ木平
       - 字上与田川
+      own: 2
+      koku: 27
     - towns:
       - 字枇杷野
       own: 2
@@ -3000,6 +3015,8 @@ areas:
       koku: 41
     - towns:
       - 字水ケ沢
+      own: 2
+      koku: 12
     - towns:
       - 字洞内
       - 字タラノ木
@@ -3120,6 +3137,14 @@ areas:
       - 字上田表
       - 字川目
       - 字水ケ沢出口
+      own: 2
+      koku: 15
+    - towns:
+      - 字下前田
+      - 字上川原
+      - 字上前田
+      - 字昼場
+      - 字餅粟川原
       own: 2
       koku: 15
 
@@ -3336,6 +3361,8 @@ areas:
       - 字枋木
     - towns:
       - 字林ノ下
+      own: 2
+      koku: 17
     - towns:
       - 字柳沢
     - towns:
@@ -3379,6 +3406,8 @@ areas:
       - 字添ノ沢
     - towns:
       - 字清水目深山
+      own: 2
+      koku: 20
     - towns:
       - 字湯沢
     - towns:
@@ -4593,6 +4622,8 @@ areas:
       koku: 153
     - towns:
       - 大字田茂木
+      own: 2
+      koku: 112
     - towns:
       - 大字白砂
     - towns:

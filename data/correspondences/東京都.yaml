@@ -4197,6 +4197,8 @@ areas:
       - 東池袋３丁目
     - towns:
       - 東池袋４丁目
+      own: 2
+      koku: 14
     - towns:
       - 東池袋５丁目
       own: 2
@@ -5732,6 +5734,8 @@ areas:
     - towns:
       - 千住寿町
       - 千住４丁目
+      own: 2
+      koku: 15
     - towns:
       - 千住旭町
     - towns:
@@ -5778,6 +5782,8 @@ areas:
     - towns:
       - 千住１丁目
       - 千住２丁目
+      own: 2
+      koku: 15
     - towns:
       - 千住３丁目
     - towns:
@@ -6104,6 +6110,8 @@ areas:
       - 西新井本町２丁目
     - towns:
       - 西新井本町４丁目
+      own: 2
+      koku: 15
     - towns:
       - 西新井本町５丁目
       - 西新井栄町３丁目
@@ -11111,8 +11119,12 @@ areas:
       koku: 14
     - towns:
       - 本村４丁目
+      own: 2
+      koku: 15
     - towns:
       - 本村６丁目
+      own: 2
+      koku: 15
     - towns:
       - 若郷
       own: 2
