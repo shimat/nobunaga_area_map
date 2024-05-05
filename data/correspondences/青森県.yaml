@@ -3289,8 +3289,6 @@ areas:
       own: 2
       koku: 79
     - towns:
-      - 字大撫沢
-    - towns:
       - 字大沢
     - towns:
       - 字大籏屋
@@ -3440,6 +3438,10 @@ areas:
       - 字田ノ沢川添
     - towns:
       - 字田面木
+      - 字戸田沢
+      - 字大撫沢
+      own: 2
+      koku: 41
     - towns:
       - 字石坂
     - towns:
@@ -4432,6 +4434,8 @@ areas:
       - 大字豊川
     - towns:
       - 大字貝守
+      own: 2
+      koku: 234
 
 
   青森県 三戸郡田子町:
@@ -4598,8 +4602,12 @@ areas:
       - 大字小湊
     - towns:
       - 大字小豆沢
+      own: 2
+      koku: 99
     - towns:
       - 大字山口
+      own: 2
+      koku: 98
     - towns:
       - 大字東滝
     - towns:

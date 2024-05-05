@@ -4195,6 +4195,8 @@ areas:
       koku: 14
     - towns:
       - 東池袋３丁目
+      own: 2
+      koku: 14
     - towns:
       - 東池袋４丁目
       own: 2
@@ -6178,6 +6180,8 @@ areas:
       koku: 13
     - towns:
       - 関原２丁目
+      own: 2
+      koku: 17
     - towns:
       - 関原３丁目
     - towns:
@@ -11098,6 +11102,8 @@ areas:
       - 地内島
     - towns:
       - 式根島
+      own: 2
+      koku: 62
     - towns:
       - 早島
     - towns:
@@ -11135,12 +11141,14 @@ areas:
 
   東京都 大島支庁神津島村:
     view_state:
-      latitude: 34.21425442188945
-      longitude: 139.14775014303274
+      latitude: 34.21425
+      longitude: 139.14775
       zoom: 10.0
     correspondences:
     - towns:
       - (町名無し)
+      own: 2
+      koku: 32
     - towns:
       - 三浦
     - towns:
