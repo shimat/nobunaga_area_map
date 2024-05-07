@@ -9073,11 +9073,15 @@ areas:
       own: 1
     - towns:
       - 月寒東一条１８丁目
+      own: 1
+      koku: 11
     - towns:
       - 月寒東二条１８丁目
       own: 1
     - towns:
       - 月寒東三条１８丁目
+      own: 1
+      koku: 13
     - towns:
       - 月寒東四条１８丁目
       own: 1
@@ -9134,6 +9138,8 @@ areas:
     - towns:
       - 福住二条２丁目
       - 福住二条３丁目
+      own: 1
+      koku: 11
     - towns:
       - 西岡五条１丁目
       - 西岡五条２丁目
@@ -9167,6 +9173,8 @@ areas:
     - towns:
       - 福住一条７丁目
       - 福住二条７丁目
+      own: 1
+      koku: 12
     - towns:
       - 福住一条８丁目
       - 福住一条９丁目
@@ -9321,7 +9329,7 @@ areas:
       - 平岡九条３丁目
       - 平岡九条４丁目
       - 平岡十条３丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡八条４丁目
       - 平岡七条４丁目
@@ -9342,7 +9350,7 @@ areas:
       own: 1
     - towns:
       - 平岡三条５丁目
-      own: 2
+      own: 1
       koku: 19
     - towns:
       - 平岡公園東１丁目
@@ -9361,7 +9369,7 @@ areas:
       own: 2
     - towns:
       - 平岡公園東９丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡公園東１１丁目
       - 平岡公園東４丁目
@@ -9369,10 +9377,10 @@ areas:
       own: 1
     - towns:
       - 里塚緑ケ丘１丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚緑ケ丘２丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚緑ケ丘３丁目
       own: 2
@@ -9402,7 +9410,7 @@ areas:
     - towns:
       - 里塚三条２丁目
       - 里塚四条３丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚三条３丁目
       own: 2
@@ -9412,11 +9420,11 @@ areas:
       own: 2
     - towns:
       - 里塚二条６丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚二条３丁目
       - 里塚三条４丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚二条４丁目
       own: 2
@@ -9426,13 +9434,13 @@ areas:
       own: 2
     - towns:
       - 里塚一条４丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚一条３丁目
       own: 2
     - towns:
       - 里塚三条１丁目
-      own: 2
+      own: 1
     - towns:
       - 里塚二条１丁目
       - 里塚二条２丁目
@@ -9562,7 +9570,7 @@ areas:
     - towns:
       - 平岡三条４丁目
       - 平岡二条４丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡一条２丁目
       - 平岡一条１丁目
@@ -9571,64 +9579,64 @@ areas:
       own: 1
     - towns:
       - 平岡三条３丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡四条３丁目
       own: 2
     - towns:
       - 平岡五条２丁目
       - 平岡五条３丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡六条３丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡七条３丁目
       own: 2
     - towns:
       - 平岡九条２丁目
       - 平岡八条３丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡十条２丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡十条１丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡九条１丁目
-      own: 2
+      own: 1
     - towns:
       - 北野七条５丁目
       own: 1
     - towns:
       - 平岡八条１丁目
       - 北野六条５丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡七条２丁目
       - 平岡八条２丁目
       - 平岡六条２丁目
       - 平岡七条１丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡六条１丁目
       - 平岡五条１丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡四条１丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡三条１丁目
       - 平岡四条２丁目
-      own: 2
+      own: 1
     - towns:
       - 平岡二条１丁目
       own: 2
     - towns:
       - 平岡三条２丁目
       - 平岡二条２丁目
-      own: 2
+      own: 1
     - towns:
       - 北野五条５丁目
       own: 2
@@ -22039,7 +22047,7 @@ areas:
       own: 1
     - towns:
       - 長都
-      own: 2
+      own: 1
     - towns:
       - 釜加
       own: 2
@@ -22047,12 +22055,14 @@ areas:
       - 都
     - towns:
       - 根志越
-      own: 2
+      own: 1
     - towns:
       - 中央
       own: 1
     - towns:
       - 泉郷
+      own: 1
+      koku: 103
     - towns:
       - 協和
       own: 2
@@ -22069,6 +22079,8 @@ areas:
       own: 2
     - towns:
       - 祝梅
+      own: 1
+      koku: 115
     - towns:
       - 柏台
       own: 1
@@ -22082,14 +22094,22 @@ areas:
       - みどり台北２丁目
       - みどり台北３丁目
       - みどり台北４丁目
+      own: 1
+      koku: 14
     - towns:
       - みどり台北１丁目
       - みどり台北５丁目
+      own: 1
+      koku: 12
     - towns:
       - みどり台南３丁目
+      own: 1
+      koku: 12
     - towns:
       - みどり台南２丁目
       - みどり台南１丁目
+      own: 1
+      koku: 14
     - towns:
       - みどり台南４丁目
       - 長都駅前５丁目
@@ -22097,50 +22117,80 @@ areas:
     - towns:
       - 長都駅前４丁目
       - 長都駅前３丁目
+      own: 1
+      koku: 13
     - towns:
       - 長都駅前２丁目
       - 勇舞８丁目
+      own: 1
+      koku: 15
     - towns:
       - 長都駅前１丁目
+      own: 1
+      koku: 11
     - towns:
       - 勇舞５丁目
       - 勇舞６丁目
+      own: 1
+      koku: 14
     - towns:
       - 勇舞２丁目
       - 勇舞３丁目
     - towns:
       - 勇舞１丁目
       - 勇舞４丁目
+      own: 1
+      koku: 13
     - towns:
       - 北陽４丁目
       - 北光７丁目
       - 北光６丁目
       - 北光５丁目
+      own: 1
+      koku: 16
     - towns:
       - 北陽３丁目
+      own: 1
+      koku: 11
     - towns:
       - 北陽６丁目
+      own: 1
+      koku: 11
     - towns:
       - 北陽８丁目
       - 北陽７丁目
       - 北陽５丁目
+      own: 1
+      koku: 15
     - towns:
       - 北陽１丁目
       - 北光２丁目
       - 北光４丁目
+      own: 1
+      koku: 14
     - towns:
       - 北陽２丁目
+      own: 1
+      koku: 12
     - towns:
       - 北光１丁目
       - 北光３丁目
     - towns:
       - あずさ５丁目
+      own: 1
+      koku: 12
     - towns:
       - あずさ３丁目
+      own: 1
+      koku: 11
     - towns:
       - あずさ２丁目
+      own: 1
+      koku: 11
     - towns:
       - あずさ１丁目
+      own: 1
+      koku: 12
     - towns:
       - 富丘３丁目
     - towns:
@@ -22163,15 +22213,23 @@ areas:
       - 清流４丁目
     - towns:
       - 清流２丁目
+      own: 1
+      koku: 16
     - towns:
       - 清流１丁目
+      own: 1
+      koku: 14
     - towns:
       - 清流５丁目
       - 清流６丁目
       - 稲穂３丁目
+      own: 1
+      koku: 15
     - towns:
       - 稲穂１丁目
       - 稲穂４丁目
+      own: 1
+      koku: 13
     - towns:
       - 稲穂２丁目
     - towns:
@@ -22193,10 +22251,14 @@ areas:
     - towns:
       - 花園３丁目
       - 花園４丁目
+      own: 1
+      koku: 11
     - towns:
       - 花園５丁目
       - 花園１丁目
       - 花園２丁目
+      own: 1
+      koku: 13
     - towns:
       - 豊里１丁目
       - 豊里２丁目
@@ -22210,6 +22272,8 @@ areas:
       - 豊里５丁目
     - towns:
       - 住吉１丁目
+      own: 1
+      koku: 12
     - towns:
       - 住吉３丁目
     - towns:
@@ -22217,6 +22281,8 @@ areas:
     - towns:
       - 住吉２丁目
       - 住吉５丁目
+      own: 1
+      koku: 14
     - towns:
       - 弥生３丁目
     - towns:
@@ -22230,8 +22296,12 @@ areas:
       - 弥生１丁目
       - 旭ヶ丘２丁目
       - 旭ヶ丘３丁目
+      own: 1
+      koku: 14
     - towns:
       - 流通３丁目
+      own: 1
+      koku: 15
     - towns:
       - 流通２丁目
     - towns:
@@ -22247,23 +22317,33 @@ areas:
     - towns:
       - 梅ヶ丘３丁目
       - 梅ヶ丘１丁目
+      own: 1
+      koku: 12
     - towns:
       - 梅ヶ丘２丁目
       - 日の出２丁目
       - 日の出１丁目
+      own: 1
+      koku: 15
     - towns:
       - 日の出３丁目
       - 日の出４丁目
       - 旭ヶ丘１丁目
       - 旭ヶ丘４丁目
+      own: 1
+      koku: 16
     - towns:
       - 日の出丘
     - towns:
       - 日の出５丁目
       - 青葉８丁目
+      own: 1
+      koku: 13
     - towns:
       - 青葉６丁目
       - 青葉７丁目
+      own: 1
+      koku: 12
     - towns:
       - 青葉２丁目
       own: 1
@@ -22273,6 +22353,7 @@ areas:
       - 青葉４丁目
       - 青葉５丁目
       - 末広３丁目
+      own: 1
     - towns:
       - 末広２丁目
       - 末広５丁目
@@ -23139,8 +23220,12 @@ areas:
       own: 1
     - towns:
       - 南島松
+      own: 1
+      koku: 54
     - towns:
       - 中央
+      own: 1
+      koku: 68
     - towns:
       - 上山口
       own: 1
@@ -23190,30 +23275,46 @@ areas:
       own: 1
     - towns:
       - 恵み野北７丁目
+      own: 1
+      koku: 11
     - towns:
       - 恵み野北１丁目
       - 恵み野北５丁目
       - 恵み野北６丁目
+      own: 1
+      koku: 17
     - towns:
       - 恵み野北２丁目
     - towns:
       - 恵み野北３丁目
+      own: 1
+      koku: 11
     - towns:
       - 恵み野北４丁目
     - towns:
       - 恵み野東７丁目
       - 恵み野東６丁目
       - 恵み野東５丁目
+      own: 1
+      koku: 15
     - towns:
       - 恵み野東４丁目
+      own: 1
+      koku: 11
     - towns:
       - 恵み野東１丁目
       - 恵み野東２丁目
       - 恵み野東３丁目
+      own: 1
+      koku: 15
     - towns:
       - 恵み野南３丁目
+      own: 1
+      koku: 11
     - towns:
       - 恵み野南４丁目
+      own: 1
+      koku: 13
     - towns:
       - 恵み野南１丁目
       - 恵み野南２丁目
@@ -23226,8 +23327,12 @@ areas:
       own: 1
     - towns:
       - 恵み野西５丁目
+      own: 1
+      koku: 12
     - towns:
       - 恵み野西６丁目
+      own: 1
+      koku: 13
     - towns:
       - 恵み野西１丁目
       own: 1
@@ -23567,7 +23672,7 @@ areas:
       own: 1
     - towns:
       - 中の沢
-      own: 2
+      own: 1
     - towns:
       - 東の里
       own: 2
@@ -23624,7 +23729,7 @@ areas:
       own: 2
     - towns:
       - 大曲緑ヶ丘７丁目
-      own: 2
+      own: 1
     - towns:
       - 大曲緑ヶ丘６丁目
       - 大曲緑ヶ丘４丁目
@@ -23653,7 +23758,7 @@ areas:
       - 大曲末広２丁目
       - 大曲末広６丁目
       - 大曲末広７丁目
-      own: 2
+      own: 1
     - towns:
       - 大曲末広１丁目
       - 大曲末広５丁目
@@ -23721,11 +23826,11 @@ areas:
     - towns:
       - 大曲中央２丁目
       - 大曲中央３丁目
-      own: 2
+      own: 1
     - towns:
       - 大曲中央１丁目
       - 大曲並木１丁目
-      own: 2
+      own: 1
     - towns:
       - 大曲並木２丁目
       own: 2
@@ -23767,6 +23872,8 @@ areas:
       - 共栄町４丁目
     - towns:
       - 共栄町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 共栄町２丁目
       - 中央３丁目
@@ -23794,6 +23901,8 @@ areas:
     - towns:
       - 中央１丁目
       - 中央２丁目
+      own: 1
+      koku: 11
     - towns:
       - 中央４丁目
       own: 1
@@ -23804,9 +23913,13 @@ areas:
     - towns:
       - 美沢４丁目
       - 美沢５丁目
+      own: 1
+      koku: 11
     - towns:
       - 北進町１丁目
       - 美沢２丁目
+      own: 1
+      koku: 11
     - towns:
       - 北進町２丁目
       - 栄町２丁目
@@ -23816,6 +23929,8 @@ areas:
       - 広葉町１丁目
     - towns:
       - 輝美町
+      own: 1
+      koku: 17
     - towns:
       - 広葉町２丁目
       - 広葉町３丁目
@@ -23827,6 +23942,8 @@ areas:
       - 栄町３丁目
     - towns:
       - 山手町１丁目
+      own: 1
+      koku: 20
     - towns:
       - 山手町２丁目
       - 山手町３丁目
@@ -23839,34 +23956,52 @@ areas:
     - towns:
       - 山手町４丁目
       - 緑陽町２丁目
+      own: 1
+      koku: 11
     - towns:
       - 緑陽町３丁目
       - 高台町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 里見町１丁目
       - 里見町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 高台町３丁目
       - 里見町４丁目
+      own: 1
+      koku: 11
     - towns:
       - 里見町５丁目
       - 里見町６丁目
+      own: 1
+      koku: 11
     - towns:
       - 高台町６丁目
       - 里見町７丁目
+      own: 1
+      koku: 12
     - towns:
       - 高台町４丁目
       - 高台町５丁目
       - 高台町７丁目
+      own: 1
+      koku: 12
     - towns:
       - 高台町１丁目
       - 松葉町６丁目
     - towns:
       - 緑陽町１丁目
+      own: 1
+      koku: 17
     - towns:
       - 松葉町１丁目
       - 松葉町２丁目
       - 松葉町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 松葉町４丁目
       - 松葉町５丁目
@@ -23876,18 +24011,28 @@ areas:
       - 泉町３丁目
       - 泉町４丁目
       - 白樺町１丁目
+      own: 1
+      koku: 13
     - towns:
       - 白樺町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 白樺町２丁目
       - 南町４丁目
       - 若葉町４丁目
+      own: 1
+      koku: 13
     - towns:
       - 南町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 若葉町３丁目
       - 南町２丁目
       - 南町１丁目
+      own: 1
+      koku: 15
     - towns:
       - 青葉町３丁目
       - 青葉町４丁目
@@ -28438,23 +28583,39 @@ areas:
       own: 1
     - towns:
       - 西９線南
+      own: 1
+      koku: 40
     - towns:
       - 西８線南
+      own: 1
+      koku: 42
     - towns:
       - 西７線南
+      own: 1
+      koku: 44
     - towns:
       - 西６線南
+      own: 1
+      koku: 47
     - towns:
       - 西５線南
+      own: 1
+      koku: 51
     - towns:
       - 西４線南
+      own: 1
+      koku: 51
     - towns:
       - 西３線南
+      own: 1
+      koku: 54
     - towns:
       - 西２線南
       own: 1
     - towns:
       - 西１線南
+      own: 1
+      koku: 60
     - towns:
       - 東１線南
       own: 1

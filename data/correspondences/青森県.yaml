@@ -3253,8 +3253,6 @@ areas:
     - towns:
       - 字坂ノ下
     - towns:
-      - 字坂下
-    - towns:
       - 字堤尻
     - towns:
       - 字堤端
@@ -3284,6 +3282,10 @@ areas:
       koku: 71
     - towns:
       - 字大向
+      - 字坂下
+      - 字長者久保
+      own: 2
+      koku: 33
     - towns:
       - 字大平
       own: 2
@@ -3315,6 +3317,8 @@ areas:
       - 字家ノ上平
     - towns:
       - 字家ノ下タ
+      own: 2
+      koku: 26
     - towns:
       - 字家ノ前
     - towns:
@@ -3503,11 +3507,11 @@ areas:
     - towns:
       - 字長久保
     - towns:
-      - 字長者久保
-    - towns:
       - 字間手場
     - towns:
       - 字饅頭長根
+      own: 2
+      koku: 44
     - towns:
       - 字馬尻
     - towns:
@@ -3977,6 +3981,8 @@ areas:
       - 大字小平
     - towns:
       - 大字折茂
+      own: 2
+      koku: 139
     - towns:
       - 大字柳町
     - towns:
@@ -4416,6 +4422,12 @@ areas:
       - 大字同心町
     - towns:
       - 大字川守田
+      - 大字川守田町
+      - 大字久慈町
+      - 大字在府小路町
+      - 大字六日町
+      own: 2
+      koku: 99
     - towns:
       - 大字斗内
     - towns:
@@ -4430,6 +4442,8 @@ areas:
       koku: 146
     - towns:
       - 大字袴田
+      own: 2
+      koku: 68
     - towns:
       - 大字豊川
     - towns:
@@ -4644,6 +4658,8 @@ areas:
       - 大字稲生
     - towns:
       - 大字茂浦
+      own: 2
+      koku: 122
     - towns:
       - 大字薬師野
     - towns:

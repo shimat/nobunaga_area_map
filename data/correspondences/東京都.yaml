@@ -4211,6 +4211,8 @@ areas:
       koku: 13
     - towns:
       - 上池袋２丁目
+      own: 2
+      koku: 15
     - towns:
       - 上池袋３丁目
       own: 2
@@ -5094,12 +5096,16 @@ areas:
       - 東新町２丁目
     - towns:
       - 板橋１丁目
+      own: 2
+      koku: 15
     - towns:
       - 板橋２丁目
     - towns:
       - 板橋３丁目
     - towns:
       - 板橋４丁目
+      own: 2
+      koku: 17
     - towns:
       - 栄町
     - towns:
@@ -5729,6 +5735,8 @@ areas:
       koku: 17
     - towns:
       - 千住大川町
+      own: 2
+      koku: 20
     - towns:
       - 千住宮元町
       own: 2
@@ -5781,6 +5789,8 @@ areas:
       koku: 11
     - towns:
       - 千住関屋町
+      own: 2
+      koku: 18
     - towns:
       - 千住１丁目
       - 千住２丁目
@@ -5788,6 +5798,8 @@ areas:
       koku: 15
     - towns:
       - 千住３丁目
+      own: 2
+      koku: 11
     - towns:
       - 千住５丁目
     - towns:
@@ -5824,6 +5836,8 @@ areas:
       koku: 20
     - towns:
       - 堀之内２丁目
+      own: 2
+      koku: 11
     - towns:
       - 大谷田１丁目
     - towns:
@@ -11154,17 +11168,20 @@ areas:
     - towns:
       - 向山
     - towns:
-      - 多幸
-    - towns:
       - 大沢
-    - towns:
-      - 天上山
     - towns:
       - 山川
     - towns:
       - 惣四郎
+      - 多幸
+      - 天上山
+      own: 2
+      koku: 107
     - towns:
       - 沢尻
+      - 錆崎
+      own: 2
+      koku: 21
     - towns:
       - 洞沢
     - towns:
@@ -11178,9 +11195,9 @@ areas:
     - towns:
       - 鉄砲場
     - towns:
-      - 錆崎
-    - towns:
       - 鍛冶山
+      own: 2
+      koku: 22
     - towns:
       - 面房
     - towns:
