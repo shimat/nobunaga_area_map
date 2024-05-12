@@ -3183,6 +3183,8 @@ areas:
       - 字上久保
     - towns:
       - 字上板橋家ノ後
+      own: 2
+      koku: 20
     - towns:
       - 字上笹橋
     - towns:
@@ -3228,11 +3230,9 @@ areas:
     - towns:
       - 字北膳前
     - towns:
-      - 字千曳
-    - towns:
       - 字千曳下山
-    - towns:
-      - 字千曳向
+      own: 2
+      koku: 34
     - towns:
       - 字古屋敷
     - towns:
@@ -3256,16 +3256,20 @@ areas:
       - 字堤尻
     - towns:
       - 字堤端
-    - towns:
-      - 字塔ノ沢
+      - 字山下
+      - 字石文
+      - 字千曳
+      - 字千曳向
+      own: 2
+      koku: 36
     - towns:
       - 字塔ノ沢山
+      own: 2
+      koku: 42
     - towns:
       - 字塞ノ神
       own: 2
       koku: 144
-    - towns:
-      - 字夏焼
     - towns:
       - 字外蛯沢前平
     - towns:
@@ -3312,15 +3316,11 @@ areas:
     - towns:
       - 字子ノ鳥平
     - towns:
-      - 字宇道坂
-    - towns:
       - 字家ノ上平
     - towns:
       - 字家ノ下タ
       own: 2
       koku: 26
-    - towns:
-      - 字家ノ前
     - towns:
       - 字寒水
     - towns:
@@ -3333,18 +3333,21 @@ areas:
       - 字寺沢川端
     - towns:
       - 字小沢
+      - 字夏焼
+      - 字羽立山
+      - 字田村頭
+      own: 2
+      koku: 30
     - towns:
       - 字山ノ神平
     - towns:
-      - 字山下
-    - towns:
       - 字山添
+      own: 2
+      koku: 20
     - towns:
       - 字岩渡沢
     - towns:
       - 字岩間手橋ノ上
-    - towns:
-      - 字川向
     - towns:
       - 字弥太郎
     - towns:
@@ -3359,6 +3362,10 @@ areas:
       - 字日影林ノ上山
     - towns:
       - 字板橋平
+      - 字川向
+      - 字宇道坂
+      own: 2
+      koku: 31
     - towns:
       - 字枋木
     - towns:
@@ -3375,6 +3382,8 @@ areas:
       - 字横沢
     - towns:
       - 字横沢山
+      own: 2
+      koku: 96
     - towns:
       - 字横沢頭
       own: 2
@@ -3387,6 +3396,8 @@ areas:
       - 字水尻
     - towns:
       - 字水流
+      own: 2
+      koku: 32
     - towns:
       - 字沼添左ノ平
     - towns:
@@ -3406,14 +3417,22 @@ areas:
       - 字淋代下山
     - towns:
       - 字添ノ沢
+      own: 2
+      koku: 59
     - towns:
       - 字清水目深山
       own: 2
       koku: 20
     - towns:
       - 字湯沢
+      - 字家ノ前
+      - 字石坂
+      own: 2
+      koku: 39
     - towns:
       - 字湯沢平
+      own: 2
+      koku: 19
     - towns:
       - 字湯田平
       - 字堰向
@@ -3434,6 +3453,8 @@ areas:
       - 字熊堂
     - towns:
       - 字狐沢山
+      own: 2
+      koku: 17
     - towns:
       - 字狼ノ沢
     - towns:
@@ -3447,10 +3468,6 @@ areas:
       own: 2
       koku: 41
     - towns:
-      - 字石坂
-    - towns:
-      - 字石文
-    - towns:
       - 字秋取山
       - 字清水目向
       - 字川迎
@@ -3462,6 +3479,8 @@ areas:
       - 字笹久保
     - towns:
       - 字篠内平
+      own: 2
+      koku: 51
     - towns:
       - 字素柄邸
     - towns:
@@ -3488,6 +3507,9 @@ areas:
       - 字藤木沢
     - towns:
       - 字袖ノ沢
+      - 字塔ノ沢
+      own: 2
+      koku: 26
     - towns:
       - 字谷地頭
     - towns:
@@ -3554,6 +3576,10 @@ areas:
       - 字上屋田
     - towns:
       - 字上平
+      - 字上川原
+      - 字坪川原
+      own: 2
+      koku: 28
     - towns:
       - 字上志多
       - 字志茂川原
@@ -3565,11 +3591,14 @@ areas:
     - towns:
       - 字上町野
     - towns:
-      - 字下タ川原
-    - towns:
       - 字下モ川原
+      - 字堰根
+      own: 2
+      koku: 23
     - towns:
       - 字下志多
+      own: 2
+      koku: 23
     - towns:
       - 字下田坪
     - towns:
@@ -3635,6 +3664,8 @@ areas:
       - 字八栗平
     - towns:
       - 字内ノ沢
+      own: 2
+      koku: 22
     - towns:
       - 字別曽
     - towns:
@@ -3653,6 +3684,8 @@ areas:
       - 字千刈道ノ下
     - towns:
       - 字卒古沢
+      own: 2
+      koku: 55
     - towns:
       - 字卒古沢南平
     - towns:
@@ -3667,6 +3700,8 @@ areas:
       - 字向中野川向
     - towns:
       - 字向川原
+      own: 2
+      koku: 25
     - towns:
       - 字向平
     - towns:
@@ -3686,11 +3721,9 @@ areas:
     - towns:
       - 字坂ノ外
     - towns:
-      - 字坪川原
-    - towns:
       - 字堰代
-    - towns:
-      - 字堰根
+      own: 2
+      koku: 29
     - towns:
       - 字堰添
     - towns:
@@ -3699,6 +3732,8 @@ areas:
       - 字夏焼
     - towns:
       - 字夏間木
+      own: 2
+      koku: 37
     - towns:
       - 字大平
     - towns:
@@ -3717,10 +3752,16 @@ areas:
       - 字天間舘倉越
     - towns:
       - 字天間舘前川原
+      own: 2
+      koku: 25
     - towns:
       - 字天間舘大沢
+      own: 2
+      koku: 33
     - towns:
       - 字天間舘寒水
+      own: 2
+      koku: 12
     - towns:
       - 字天間舘荒谷
     - towns:
@@ -3731,8 +3772,6 @@ areas:
       - 字夷堂
     - towns:
       - 字姥沢
-    - towns:
-      - 字宇道坂
     - towns:
       - 字家ノ下
     - towns:
@@ -3759,6 +3798,8 @@ areas:
       - 字小田平
     - towns:
       - 字尾山頭
+      own: 2
+      koku: 31
     - towns:
       - 字山屋
     - towns:
@@ -3773,6 +3814,8 @@ areas:
       - 字左組
     - towns:
       - 字市ノ渡
+      own: 2
+      koku: 32
     - towns:
       - 字底田
     - towns:
@@ -3781,6 +3824,8 @@ areas:
       - 字後川原
     - towns:
       - 字後平
+      own: 2
+      koku: 78
     - towns:
       - 字手代森
     - towns:
@@ -3789,6 +3834,8 @@ areas:
       - 字有田沢
     - towns:
       - 字李川原
+      own: 2
+      koku: 19
     - towns:
       - 字李沢家ノ前
     - towns:
@@ -3799,10 +3846,14 @@ areas:
       - 字松ケ沢
     - towns:
       - 字柳平
+      own: 2
+      koku: 43
     - towns:
       - 字柴舘道ノ下
     - towns:
       - 字栗ノ木沢
+      own: 2
+      koku: 55
     - towns:
       - 字根間手
     - towns:
@@ -3841,6 +3892,8 @@ areas:
       - 字海内
     - towns:
       - 字淋代
+      own: 2
+      koku: 16 # 不確か
     - towns:
       - 字清水頭
     - towns:
@@ -3855,6 +3908,9 @@ areas:
       - 字白岩
     - towns:
       - 字白石
+      - 字下タ川原
+      own: 2
+      koku: 19
     - towns:
       - 字皀
     - towns:
@@ -3885,6 +3941,8 @@ areas:
       - 字荒熊内
     - towns:
       - 字菩提木
+      own: 2
+      koku: 38
     - towns:
       - 字萩ノ沢
     - towns:
@@ -3939,6 +3997,8 @@ areas:
       - 字野続
     - towns:
       - 字金沢平
+      own: 2
+      koku: 44
     - towns:
       - 字鉢森平
     - towns:
@@ -4626,12 +4686,16 @@ areas:
       - 大字東滝
     - towns:
       - 大字東田沢
+      own: 2
+      koku: 129
     - towns:
       - 大字松野木
     - towns:
       - 大字沼館
     - towns:
       - 大字浅所
+      own: 2
+      koku: 63
     - towns:
       - 大字浜子
     - towns:
@@ -4648,14 +4712,20 @@ areas:
       koku: 112
     - towns:
       - 大字白砂
+      own: 2
+      koku: 79 # 不確か
     - towns:
       - 大字盛田
     - towns:
       - 大字福島
     - towns:
       - 大字福館
+      own: 2
+      koku: 112
     - towns:
       - 大字稲生
+      own: 2
+      koku: 46
     - towns:
       - 大字茂浦
       own: 2

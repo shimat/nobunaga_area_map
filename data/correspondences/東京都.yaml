@@ -191,6 +191,8 @@ areas:
       - 外神田３丁目
       - 外神田５丁目
       - 外神田６丁目
+      own: 2
+      koku: 13
     - towns:
       - 外神田４丁目
       - 神田練塀町
@@ -864,6 +866,8 @@ areas:
       - 津久戸町
     - towns:
       - 新小川町
+      own: 2
+      koku: 12
     - towns:
       - 筑土八幡町
       - 白銀町
@@ -871,6 +875,8 @@ areas:
     - towns:
       - 西五軒町
       - 水道町
+      own: 2
+      koku: 11
     - towns:
       - 改代町
       - 赤城元町
@@ -4140,6 +4146,8 @@ areas:
       - 高松３丁目
     - towns:
       - 池袋１丁目
+      own: 2
+      koku: 11
     - towns:
       - 池袋２丁目
     - towns:
@@ -4183,12 +4191,18 @@ areas:
       - 南池袋１丁目
     - towns:
       - 南池袋２丁目
+      own: 2
+      koku: 15
     - towns:
       - 南池袋３丁目
     - towns:
       - 南池袋４丁目
+      own: 2
+      koku: 14
     - towns:
       - 東池袋１丁目
+      own: 2
+      koku: 15
     - towns:
       - 東池袋２丁目
       own: 2
@@ -4223,12 +4237,18 @@ areas:
       koku: 13
     - towns:
       - 池袋本町１丁目
+      own: 2
+      koku: 13
     - towns:
       - 池袋本町２丁目
     - towns:
       - 池袋本町３丁目
+      own: 2
+      koku: 12
     - towns:
       - 池袋本町４丁目
+      own: 2
+      koku: 15
     - towns:
       - 北大塚１丁目
       own: 1
@@ -4961,6 +4981,8 @@ areas:
       - 前野町６丁目
     - towns:
       - 加賀１丁目
+      own: 2
+      koku: 16
     - towns:
       - 加賀２丁目
     - towns:
@@ -5102,6 +5124,8 @@ areas:
       - 板橋２丁目
     - towns:
       - 板橋３丁目
+      own: 2
+      koku: 16
     - towns:
       - 板橋４丁目
       own: 2
@@ -5748,12 +5772,18 @@ areas:
       koku: 15
     - towns:
       - 千住旭町
+      own: 2
+      koku: 17
     - towns:
       - 千住曙町
     - towns:
       - 千住東１丁目
+      own: 2
+      koku: 11
     - towns:
       - 千住東２丁目
+      own: 2
+      koku: 12
     - towns:
       - 千住桜木１丁目
       own: 2
@@ -5802,6 +5832,8 @@ areas:
       koku: 11
     - towns:
       - 千住５丁目
+      own: 2
+      koku: 17
     - towns:
       - 南花畑１丁目
     - towns:
@@ -5975,10 +6007,14 @@ areas:
       - 梅島３丁目
     - towns:
       - 梅田１丁目
+      own: 2
+      koku: 15
     - towns:
       - 梅田２丁目
     - towns:
       - 梅田３丁目
+      own: 2
+      koku: 15
     - towns:
       - 梅田４丁目
       own: 2
@@ -5994,6 +6030,8 @@ areas:
     - towns:
       - 椿１丁目
       - 椿２丁目
+      own: 2
+      koku: 13
     - towns:
       - 江北１丁目
       own: 2
@@ -6012,10 +6050,14 @@ areas:
       koku: 17
     - towns:
       - 江北５丁目
+      own: 2
+      koku: 12
     - towns:
       - 江北６丁目
     - towns:
       - 江北７丁目
+      own: 2
+      koku: 14
     - towns:
       - 皿沼１丁目
     - towns:
@@ -6122,8 +6164,12 @@ areas:
     - towns:
       - 西新井本町１丁目
       - 西新井本町３丁目
+      own: 2
+      koku: 16
     - towns:
       - 西新井本町２丁目
+      own: 2
+      koku: 15
     - towns:
       - 西新井本町４丁目
       own: 2
@@ -6131,6 +6177,8 @@ areas:
     - towns:
       - 西新井本町５丁目
       - 西新井栄町３丁目
+      own: 2
+      koku: 14
     - towns:
       - 西新井栄町１丁目
     - towns:
@@ -6149,6 +6197,8 @@ areas:
       - 西新井６丁目
     - towns:
       - 西新井７丁目
+      own: 2
+      koku: 13
     - towns:
       - 西竹の塚１丁目
     - towns:
@@ -6198,6 +6248,8 @@ areas:
       koku: 17
     - towns:
       - 関原３丁目
+      own: 2
+      koku: 17
     - towns:
       - 青井１丁目
     - towns:
@@ -6212,6 +6264,8 @@ areas:
       - 青井６丁目
     - towns:
       - 鹿浜１丁目
+      own: 2
+      koku: 15
     - towns:
       - 鹿浜２丁目
       own: 2
@@ -11164,14 +11218,6 @@ areas:
       own: 2
       koku: 32
     - towns:
-      - 三浦
-    - towns:
-      - 向山
-    - towns:
-      - 大沢
-    - towns:
-      - 山川
-    - towns:
       - 惣四郎
       - 多幸
       - 天上山
@@ -11183,27 +11229,35 @@ areas:
       own: 2
       koku: 21
     - towns:
-      - 洞沢
-    - towns:
-      - 滝川
-    - towns:
       - 祇苗島
     - towns:
-      - 秩父山
-    - towns:
       - 金長、等
-    - towns:
-      - 鉄砲場
+      own: 2
+      koku: 40
     - towns:
       - 鍛冶山
       own: 2
       koku: 22
     - towns:
       - 面房
+      own: 2
+      koku: 30
     - towns:
       - 高処山
+      - 三浦
+      - 向山
+      - 大沢
+      - 山川
+      - 洞沢
+      - 秩父山
+      - 鉄砲場
+      own: 2
+      koku: 49
     - towns:
       - 高嶺
+      - 滝川
+      own: 2
+      koku: 23
     - towns:
       - 恩馳島
 
@@ -11216,8 +11270,12 @@ areas:
     correspondences:
     - towns:
       - 伊ヶ谷
+      own: 2
+      koku: 59
     - towns:
       - 伊豆
+      own: 2
+      koku: 75
     - towns:
       - 坪田
     - towns:
@@ -11226,6 +11284,8 @@ areas:
       - 阿古
     - towns:
       - 雄山
+      own: 2
+      koku: 121
 
 
   東京都 三宅支庁御蔵島村:
