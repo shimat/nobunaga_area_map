@@ -2153,11 +2153,11 @@ areas:
     - towns:
       - 金谷１丁目
       own: 2
-      koku: 21
+      koku: 27
     - towns:
       - 金谷２丁目
       own: 2
-      koku: 20
+      koku: 16
     - towns:
       - 小川町１丁目
       own: 2
@@ -3199,6 +3199,8 @@ areas:
       - 字乙供
     - towns:
       - 字乙供山
+      own: 2
+      koku: 26
     - towns:
       - 字乙越
     - towns:
@@ -3237,6 +3239,8 @@ areas:
       - 字古屋敷
     - towns:
       - 字向屋敷
+      own: 2
+      koku: 32
     - towns:
       - 字向平
       - 字下板橋
@@ -3296,6 +3300,8 @@ areas:
       koku: 79
     - towns:
       - 字大沢
+      own: 2
+      koku: 54
     - towns:
       - 字大籏屋
     - towns:
@@ -3346,6 +3352,8 @@ areas:
       koku: 20
     - towns:
       - 字岩渡沢
+      own: 2
+      koku: 37
     - towns:
       - 字岩間手橋ノ上
     - towns:
@@ -3374,12 +3382,16 @@ areas:
       koku: 17
     - towns:
       - 字柳沢
+      own: 2
+      koku: 45
     - towns:
       - 字栗山添
     - towns:
       - 字横志多
     - towns:
       - 字横沢
+      own: 2
+      koku: 34
     - towns:
       - 字横沢山
       own: 2
@@ -3475,6 +3487,8 @@ areas:
       koku: 63
     - towns:
       - 字空久保
+      own: 2
+      koku: 32
     - towns:
       - 字笹久保
     - towns:
@@ -3678,6 +3692,8 @@ areas:
       - 字十役野
     - towns:
       - 字十枝内
+      own: 2
+      koku: 26
     - towns:
       - 字千刈道ノ上
     - towns:
@@ -3712,6 +3728,8 @@ areas:
       - 字和田下
     - towns:
       - 字哘
+      own: 2
+      koku: 20
     - towns:
       - 字哘崎
     - towns:
@@ -3736,6 +3754,8 @@ areas:
       koku: 37
     - towns:
       - 字大平
+      own: 2
+      koku: 24
     - towns:
       - 字大林
     - towns:
@@ -3750,6 +3770,8 @@ areas:
       - 字天神林
     - towns:
       - 字天間舘倉越
+      own: 2
+      koku: 44
     - towns:
       - 字天間舘前川原
       own: 2
@@ -3778,6 +3800,10 @@ areas:
       - 字家ノ前
     - towns:
       - 字家ノ志茂
+      - 字小又
+      - 字蛇食
+      own: 2
+      koku: 22
     - towns:
       - 字家ノ裏
     - towns:
@@ -3788,8 +3814,6 @@ areas:
       - 字寺下山
     - towns:
       - 字寺沢前
-    - towns:
-      - 字小又
     - towns:
       - 字小川口
     - towns:
@@ -3900,10 +3924,14 @@ areas:
       - 字渡ノ上
     - towns:
       - 字渡向
+      own: 2
+      koku: 16
     - towns:
       - 字犹花
     - towns:
       - 字猪ノ鼻
+      own: 2
+      koku: 42
     - towns:
       - 字白岩
     - towns:
@@ -4047,6 +4075,8 @@ areas:
       - 大字柳町
     - towns:
       - 大字犬落瀬
+      own: 2
+      koku: 207
     - towns:
       - 大字鶴喰
     - towns:
@@ -4059,6 +4089,8 @@ areas:
       - 小松ケ丘４丁目
     - towns:
       - 小松ケ丘５丁目
+      own: 2
+      koku: 17
     - towns:
       - 金矢１丁目
     - towns:
@@ -4684,6 +4716,8 @@ areas:
       koku: 98
     - towns:
       - 大字東滝
+      own: 2
+      koku: 30
     - towns:
       - 大字東田沢
       own: 2

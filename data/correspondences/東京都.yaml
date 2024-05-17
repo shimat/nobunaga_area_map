@@ -102,6 +102,8 @@ areas:
       - 飯田橋４丁目
     - towns:
       - 飯田橋３丁目
+      own: 2
+      koku: 12
     - towns:
       - 飯田橋２丁目
       - 三崎町３丁目
@@ -184,6 +186,8 @@ areas:
       - 猿楽町１丁目
     - towns:
       - 神田駿河台２丁目
+      own: 2
+      koku: 12
     - towns:
       - 神田駿河台４丁目
       - 外神田２丁目
@@ -864,6 +868,8 @@ areas:
       - 揚場町
       - 下宮比町
       - 津久戸町
+      own: 2
+      koku: 12
     - towns:
       - 新小川町
       own: 2
@@ -872,6 +878,8 @@ areas:
       - 筑土八幡町
       - 白銀町
       - 東五軒町
+      own: 2
+      koku: 13
     - towns:
       - 西五軒町
       - 水道町
@@ -908,6 +916,8 @@ areas:
       - 早稲田鶴巻町
     - towns:
       - 山吹町
+      own: 2
+      koku: 12
     - towns:
       - 榎町
       - 東榎町
@@ -4154,6 +4164,8 @@ areas:
       - 池袋３丁目
     - towns:
       - 池袋４丁目
+      own: 2
+      koku: 12
     - towns:
       - 西池袋１丁目
       own: 1
@@ -4187,14 +4199,20 @@ areas:
     - towns:
       - 雑司が谷２丁目
       - 雑司が谷３丁目
+      own: 2
+      koku: 15
     - towns:
       - 南池袋１丁目
+      own: 2
+      koku: 15
     - towns:
       - 南池袋２丁目
       own: 2
       koku: 15
     - towns:
       - 南池袋３丁目
+      own: 2
+      koku: 12
     - towns:
       - 南池袋４丁目
       own: 2
@@ -4241,6 +4259,8 @@ areas:
       koku: 13
     - towns:
       - 池袋本町２丁目
+      own: 2
+      koku: 13
     - towns:
       - 池袋本町３丁目
       own: 2
@@ -4985,6 +5005,8 @@ areas:
       koku: 16
     - towns:
       - 加賀２丁目
+      own: 2
+      koku: 16
     - towns:
       - 南常盤台１丁目
     - towns:
@@ -5122,6 +5144,8 @@ areas:
       koku: 15
     - towns:
       - 板橋２丁目
+      own: 2
+      koku: 17
     - towns:
       - 板橋３丁目
       own: 2
@@ -5928,6 +5952,8 @@ areas:
       koku: 17
     - towns:
       - 新田１丁目
+      own: 2
+      koku: 22
     - towns:
       - 新田２丁目
       own: 2
@@ -6011,6 +6037,8 @@ areas:
       koku: 15
     - towns:
       - 梅田２丁目
+      own: 2
+      koku: 12
     - towns:
       - 梅田３丁目
       own: 2
@@ -6021,8 +6049,12 @@ areas:
       koku: 18
     - towns:
       - 梅田５丁目
+      own: 2
+      koku: 13
     - towns:
       - 梅田６丁目
+      own: 2
+      koku: 14
     - towns:
       - 梅田７丁目
     - towns:
@@ -6181,8 +6213,12 @@ areas:
       koku: 14
     - towns:
       - 西新井栄町１丁目
+      own: 2
+      koku: 16
     - towns:
       - 西新井栄町２丁目
+      own: 2
+      koku: 12
     - towns:
       - 西新井１丁目
     - towns:
@@ -6195,6 +6231,8 @@ areas:
       - 西新井５丁目
     - towns:
       - 西新井６丁目
+      own: 2
+      koku: 17
     - towns:
       - 西新井７丁目
       own: 2
@@ -6230,6 +6268,8 @@ areas:
       - 谷在家３丁目
     - towns:
       - 足立１丁目
+      own: 2
+      koku: 16
     - towns:
       - 足立２丁目
     - towns:
@@ -6272,8 +6312,12 @@ areas:
       koku: 25
     - towns:
       - 鹿浜３丁目
+      own: 2
+      koku: 16
     - towns:
       - 鹿浜４丁目
+      own: 2
+      koku: 14
     - towns:
       - 鹿浜５丁目
     - towns:
@@ -11278,10 +11322,16 @@ areas:
       koku: 75
     - towns:
       - 坪田
+      own: 2
+      koku: 113
     - towns:
       - 神着
+      own: 2
+      koku: 85
     - towns:
       - 阿古
+      own: 2
+      koku: 112
     - towns:
       - 雄山
       own: 2
@@ -11296,6 +11346,8 @@ areas:
     correspondences:
     - towns:
       - その他
+      own: 2
+      koku: 44
 
 
   東京都 八丈支庁八丈町:
@@ -11306,6 +11358,8 @@ areas:
     correspondences:
     - towns:
       - 三根
+      own: 2
+      koku: 150
     - towns:
       - 中之郷
     - towns:
