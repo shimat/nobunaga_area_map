@@ -3230,8 +3230,6 @@ areas:
     - towns:
       - 字切左坂道ノ下
     - towns:
-      - 字北膳前
-    - towns:
       - 字千曳下山
       own: 2
       koku: 34
@@ -3248,6 +3246,9 @@ areas:
       koku: 52
     - towns:
       - 字向籏屋
+      - 字北膳前
+      own: 2
+      koku: 24
     - towns:
       - 字和山平
     - towns:
@@ -3386,6 +3387,8 @@ areas:
       koku: 45
     - towns:
       - 字栗山添
+      own: 2
+      koku: 18
     - towns:
       - 字横志多
     - towns:
@@ -3714,6 +3717,8 @@ areas:
       - 字古屋敷
     - towns:
       - 字向中野川向
+      own: 2
+      koku: 26
     - towns:
       - 字向川原
       own: 2
@@ -3734,6 +3739,8 @@ areas:
       - 字哘崎
     - towns:
       - 字哘平
+      own: 2
+      koku: 29
     - towns:
       - 字唐松
     - towns:
@@ -3795,8 +3802,6 @@ areas:
     - towns:
       - 字姥沢
     - towns:
-      - 字家ノ下
-    - towns:
       - 字家ノ前
     - towns:
       - 字家ノ志茂
@@ -3833,8 +3838,6 @@ areas:
     - towns:
       - 字川口
     - towns:
-      - 字川端
-    - towns:
       - 字左組
     - towns:
       - 字市ノ渡
@@ -3842,6 +3845,8 @@ areas:
       koku: 32
     - towns:
       - 字底田
+      own: 2
+      koku: 39
     - towns:
       - 字影津内
     - towns:
@@ -3868,6 +3873,8 @@ areas:
       - 字李沢道ノ下
     - towns:
       - 字松ケ沢
+      own: 2
+      koku: 37
     - towns:
       - 字柳平
       own: 2
@@ -3884,6 +3891,8 @@ areas:
       - 字桜田
     - towns:
       - 字森ケ沢
+      own: 2
+      koku: 31
     - towns:
       - 字森ノ上
     - towns:
@@ -3951,12 +3960,18 @@ areas:
       - 字笊田川久保
     - towns:
       - 字簗場川原
+      - 字川端
+      own: 2
+      koku: 22
     - towns:
       - 字細松
     - towns:
       - 字膝森
     - towns:
       - 字舘ノ下
+      - 字家ノ下
+      own: 2
+      koku: 20
     - towns:
       - 字舘野
     - towns:
@@ -4081,12 +4096,17 @@ areas:
       - 大字鶴喰
     - towns:
       - 小松ケ丘１丁目
+      - 小松ケ丘６丁目
+      own: 2
+      koku: 18
     - towns:
       - 小松ケ丘２丁目
     - towns:
       - 小松ケ丘３丁目
     - towns:
       - 小松ケ丘４丁目
+      own: 2
+      koku: 15
     - towns:
       - 小松ケ丘５丁目
       own: 2
@@ -4097,8 +4117,6 @@ areas:
       - 金矢２丁目
     - towns:
       - 金矢３丁目
-    - towns:
-      - 小松ケ丘６丁目
 
 
   青森県 上北郡おいらせ町:
