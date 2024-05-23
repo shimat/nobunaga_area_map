@@ -140,6 +140,8 @@ areas:
       - 大字大谷
     - towns:
       - 大字大野
+      own: 2
+      koku: 45
     - towns:
       - 大字奥内
     - towns:
@@ -2470,6 +2472,8 @@ areas:
       - 小和森
     - towns:
       - 小国
+      own: 2
+      koku: 126
     - towns:
       - 小杉
     - towns:
@@ -2524,6 +2528,8 @@ areas:
       - 荒田
     - towns:
       - 葛川
+      own: 2
+      koku: 224
     - towns:
       - 蒲田
     - towns:
@@ -3175,6 +3181,8 @@ areas:
       - 大字新舘
     - towns:
       - 字ほとけ沢
+      own: 2
+      koku: 20
     - towns:
       - 字ガス平
       own: 2
@@ -3320,6 +3328,8 @@ areas:
       koku: 62
     - towns:
       - 字姥沢
+      own: 2
+      koku: 42
     - towns:
       - 字子ノ鳥平
     - towns:
@@ -3330,6 +3340,8 @@ areas:
       koku: 26
     - towns:
       - 字寒水
+      own: 2
+      koku: 38
     - towns:
       - 字寒水下
     - towns:
@@ -3555,6 +3567,9 @@ areas:
       - 字馬尻
     - towns:
       - 字高森
+      - 字道合
+      own: 2
+      koku: 20
     - towns:
       - 字鳥口平
     - towns:
@@ -3620,8 +3635,6 @@ areas:
       - 字下田坪
     - towns:
       - 字下見町
-    - towns:
-      - 字下鳥谷部
     - towns:
       - 字不動向
     - towns:
@@ -3708,7 +3721,11 @@ areas:
     - towns:
       - 字卒古沢南平
     - towns:
+      - 字舘向
       - 字南舘向
+      - 字大川向
+      own: 2
+      koku: 19
     - towns:
       - 字原久保
     - towns:
@@ -3737,6 +3754,9 @@ areas:
       koku: 20
     - towns:
       - 字哘崎
+      - 字下鳥谷部
+      own: 2
+      koku: 26
     - towns:
       - 字哘平
       own: 2
@@ -3964,8 +3984,6 @@ areas:
       own: 2
       koku: 22
     - towns:
-      - 字細松
-    - towns:
       - 字膝森
     - towns:
       - 字舘ノ下
@@ -3976,6 +3994,8 @@ areas:
       - 字舘野
     - towns:
       - 字舟場向川久保
+      own: 2
+      koku: 55
     - towns:
       - 字花松林ノ根
     - towns:
@@ -4060,6 +4080,9 @@ areas:
       - 字馬門川原
     - towns:
       - 字高井名
+      - 字細松
+      own: 2
+      koku: 31
     - towns:
       - 字高屋敷
     - towns:
@@ -4708,22 +4731,32 @@ areas:
     correspondences:
     - towns:
       - 大字中野
+      own: 2
+      koku: 48
     - towns:
       - 大字内童子
       own: 2
       koku: 120
     - towns:
       - 大字口広
+      own: 2
+      koku: 105
     - towns:
       - 大字土屋
+      own: 2
+      koku: 34
     - towns:
       - 大字増田
+      own: 2
+      koku: 32
     - towns:
       - 大字外童子
       own: 2
       koku: 188
     - towns:
       - 大字小湊
+      own: 2
+      koku: 102
     - towns:
       - 大字小豆沢
       own: 2
@@ -4742,18 +4775,28 @@ areas:
       koku: 129
     - towns:
       - 大字松野木
+      own: 2
+      koku: 103
     - towns:
       - 大字沼館
+      own: 2
+      koku: 31
     - towns:
       - 大字浅所
       own: 2
       koku: 63
     - towns:
       - 大字浜子
+      own: 2
+      koku: 46
     - towns:
       - 大字浪打
+      own: 2
+      koku: 28
     - towns:
       - 大字清水川
+      own: 2
+      koku: 54
     - towns:
       - 大字狩場沢
       own: 2
@@ -4768,8 +4811,12 @@ areas:
       koku: 79 # 不確か
     - towns:
       - 大字盛田
+      own: 2
+      koku: 64
     - towns:
       - 大字福島
+      own: 2
+      koku: 36
     - towns:
       - 大字福館
       own: 2
@@ -4784,8 +4831,12 @@ areas:
       koku: 122
     - towns:
       - 大字薬師野
+      own: 2
+      koku: 24
     - towns:
       - 大字藤沢
+      own: 2
+      koku: 86
 
 
   青森県 東津軽郡蓬田村:

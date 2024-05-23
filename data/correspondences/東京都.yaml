@@ -96,10 +96,14 @@ areas:
       - 富士見２丁目
     - towns:
       - 富士見１丁目
+      own: 2
+      koku: 12
     - towns:
       - 九段北１丁目
       - 飯田橋１丁目
       - 飯田橋４丁目
+      own: 2
+      koku: 14
     - towns:
       - 飯田橋３丁目
       own: 2
@@ -179,6 +183,8 @@ areas:
       - 神田淡路町２丁目
       - 神田小川町１丁目
       - 神田駿河台３丁目
+      own: 2
+      koku: 13
     - towns:
       - 神田錦町２丁目
       - 神田小川町２丁目
@@ -707,6 +713,8 @@ areas:
       - 高田馬場４丁目
     - towns:
       - 西早稲田１丁目
+      own: 2
+      koku: 16
     - towns:
       - 西早稲田２丁目
     - towns:
@@ -906,6 +914,8 @@ areas:
       own: 1
     - towns:
       - 矢来町
+      own: 2
+      koku: 15
     - towns:
       - 北山伏町
       - 市谷山伏町
@@ -926,6 +936,8 @@ areas:
       - 戸塚町１丁目
     - towns:
       - 早稲田鶴巻町
+      own: 2
+      koku: 15
     - towns:
       - 山吹町
       own: 2
@@ -1524,14 +1536,20 @@ areas:
       - 東向島６丁目
     - towns:
       - 堤通１丁目
+      own: 2
+      koku: 15
     - towns:
       - 堤通２丁目
+      own: 2
+      koku: 22
     - towns:
       - 向島１丁目
       own: 2
       koku: 14
     - towns:
       - 向島２丁目
+      own: 2
+      koku: 13
     - towns:
       - 向島３丁目
     - towns:
@@ -1571,6 +1589,8 @@ areas:
       - 立花６丁目
     - towns:
       - 吾妻橋１丁目
+      own: 2
+      koku: 12
     - towns:
       - 吾妻橋２丁目
       - 吾妻橋３丁目
@@ -1578,6 +1598,8 @@ areas:
       - 業平１丁目
       - 業平２丁目
       - 業平３丁目
+      own: 2
+      koku: 15
     - towns:
       - 業平４丁目
       - 横川４丁目
@@ -4174,8 +4196,12 @@ areas:
       koku: 11
     - towns:
       - 池袋２丁目
+      own: 2
+      koku: 16
     - towns:
       - 池袋３丁目
+      own: 2
+      koku: 17
     - towns:
       - 池袋４丁目
       own: 2
@@ -4195,6 +4221,8 @@ areas:
       - 目白１丁目
     - towns:
       - 目白２丁目
+      own: 2
+      koku: 14
     - towns:
       - 目白３丁目
     - towns:
@@ -4207,6 +4235,8 @@ areas:
       koku: 14
     - towns:
       - 高田２丁目
+      own: 2
+      koku: 11
     - towns:
       - 高田３丁目
     - towns:
@@ -4991,6 +5021,8 @@ areas:
       - 上板橋２丁目
     - towns:
       - 中丸町
+      own: 2
+      koku: 15
     - towns:
       - 中台１丁目
     - towns:
@@ -5055,6 +5087,8 @@ areas:
       - 大和町
     - towns:
       - 大山東町
+      own: 2
+      koku: 14
     - towns:
       - 大山町
     - towns:
@@ -5181,6 +5215,8 @@ areas:
       - 桜川３丁目
     - towns:
       - 氷川町
+      own: 2
+      koku: 14
     - towns:
       - 泉町
     - towns:
@@ -5820,6 +5856,8 @@ areas:
       koku: 17
     - towns:
       - 千住曙町
+      own: 2
+      koku: 17
     - towns:
       - 千住東１丁目
       own: 2
@@ -6039,12 +6077,16 @@ areas:
       - 柳原１丁目
     - towns:
       - 柳原２丁目
+      own: 2
+      koku: 17
     - towns:
       - 栗原１丁目
     - towns:
       - 栗原２丁目
     - towns:
       - 栗原３丁目
+      own: 2
+      koku: 15
     - towns:
       - 栗原４丁目
     - towns:
@@ -6053,6 +6095,8 @@ areas:
       - 梅島２丁目
     - towns:
       - 梅島３丁目
+      own: 2
+      koku: 17
     - towns:
       - 梅田１丁目
       own: 2
@@ -6201,6 +6245,8 @@ areas:
       - 花畑８丁目
     - towns:
       - 西伊興１丁目
+      own: 2
+      koku: 17
     - towns:
       - 西伊興２丁目
       - 西伊興町
@@ -6290,8 +6336,12 @@ areas:
       - 辰沼１丁目
     - towns:
       - 谷在家１丁目
+      own: 2
+      koku: 12
     - towns:
       - 谷在家２丁目
+      own: 2
+      koku: 13
     - towns:
       - 谷在家３丁目
     - towns:
@@ -6300,10 +6350,14 @@ areas:
       koku: 16
     - towns:
       - 足立２丁目
+      own: 2
+      koku: 20
     - towns:
       - 足立３丁目
     - towns:
       - 足立４丁目
+      own: 2
+      koku: 15 # 不確か
     - towns:
       - 辰沼２丁目
     - towns:
@@ -6348,8 +6402,12 @@ areas:
       koku: 14
     - towns:
       - 鹿浜５丁目
+      own: 2
+      koku: 17
     - towns:
       - 鹿浜６丁目
+      own: 2
+      koku: 15
     - towns:
       - 鹿浜７丁目
     - towns:
@@ -7252,6 +7310,8 @@ areas:
       - 南大沢５丁目
     - towns:
       - 南浅川町
+      own: 2
+      koku: 93
     - towns:
       - 南陽台１丁目
     - towns:
@@ -7426,6 +7486,8 @@ areas:
       - 美山町
     - towns:
       - 裏高尾町
+      own: 2
+      koku: 97
     - towns:
       - 西寺方町
     - towns:
@@ -11390,6 +11452,8 @@ areas:
       koku: 150
     - towns:
       - 中之郷
+      own: 2
+      koku: 92
     - towns:
       - 八丈小島
     - towns:
@@ -11402,6 +11466,8 @@ areas:
       koku: 103
     - towns:
       - 樫立
+      own: 2
+      koku: 87
 
 
   東京都 八丈支庁青ケ島村:
@@ -11412,6 +11478,8 @@ areas:
     correspondences:
     - towns:
       - その他
+      own: 2
+      koku: 78
 
 
   東京都 小笠原支庁小笠原村:
@@ -11424,10 +11492,16 @@ areas:
       - 南鳥島
     - towns:
       - 母島
+      own: 2
+      koku: 162
     - towns:
       - 父島
+      own: 2
+      koku: 197
     - towns:
       - 硫黄島
+      own: 2
+      koku: 180
     - towns:
       - 聟島
     - towns:
