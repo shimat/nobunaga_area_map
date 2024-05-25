@@ -94,6 +94,8 @@ areas:
       - 九段北３丁目
     - towns:
       - 富士見２丁目
+      own: 2
+      koku: 15
     - towns:
       - 富士見１丁目
       own: 2
@@ -128,6 +130,8 @@ areas:
       own: 1
     - towns:
       - 神田神保町１丁目
+      own: 2
+      koku: 12
     - towns:
       - 一ツ橋１丁目
       - 一ツ橋２丁目
@@ -189,6 +193,8 @@ areas:
       - 神田錦町２丁目
       - 神田小川町２丁目
       - 神田小川町３丁目
+      own: 2
+      koku: 12
     - towns:
       - 神田駿河台１丁目
       - 猿楽町１丁目
@@ -934,6 +940,8 @@ areas:
       - 早稲田町
       - 馬場下町
       - 戸塚町１丁目
+      own: 2
+      koku: 15
     - towns:
       - 早稲田鶴巻町
       own: 2
@@ -1496,6 +1504,8 @@ areas:
     correspondences:
     - towns:
       - 墨田１丁目
+      own: 2
+      koku: 11
     - towns:
       - 墨田２丁目
     - towns:
@@ -4211,6 +4221,8 @@ areas:
       own: 1
     - towns:
       - 西池袋２丁目
+      own: 2
+      koku: 14
     - towns:
       - 西池袋３丁目
     - towns:
@@ -4219,6 +4231,8 @@ areas:
       - 西池袋５丁目
     - towns:
       - 目白１丁目
+      own: 2
+      koku: 17
     - towns:
       - 目白２丁目
       own: 2
@@ -5095,6 +5109,8 @@ areas:
       - 大山西町
     - towns:
       - 大山金井町
+      own: 2
+      koku: 15
     - towns:
       - 大谷口上町
     - towns:
@@ -5180,6 +5196,8 @@ areas:
       - 新河岸３丁目
     - towns:
       - 本町
+      own: 2
+      koku: 16
     - towns:
       - 東坂下１丁目
     - towns:
@@ -6075,12 +6093,16 @@ areas:
       - 東綾瀬３丁目
     - towns:
       - 柳原１丁目
+      own: 2
+      koku: 17
     - towns:
       - 柳原２丁目
       own: 2
       koku: 17
     - towns:
       - 栗原１丁目
+      own: 2
+      koku: 12
     - towns:
       - 栗原２丁目
     - towns:
@@ -6091,6 +6113,8 @@ areas:
       - 栗原４丁目
     - towns:
       - 梅島１丁目
+      own: 2
+      koku: 15
     - towns:
       - 梅島２丁目
     - towns:
@@ -6303,6 +6327,8 @@ areas:
       - 西新井４丁目
     - towns:
       - 西新井５丁目
+      own: 2
+      koku: 15
     - towns:
       - 西新井６丁目
       own: 2
@@ -6354,6 +6380,8 @@ areas:
       koku: 20
     - towns:
       - 足立３丁目
+      own: 2
+      koku: 14
     - towns:
       - 足立４丁目
       own: 2
@@ -7206,6 +7234,8 @@ areas:
       - 上野町
     - towns:
       - 下恩方町
+      own: 2
+      koku: 76
     - towns:
       - 下柚木
     - towns:
@@ -7484,6 +7514,8 @@ areas:
       - 緑町
     - towns:
       - 美山町
+      own: 2
+      koku: 86
     - towns:
       - 裏高尾町
       own: 2
