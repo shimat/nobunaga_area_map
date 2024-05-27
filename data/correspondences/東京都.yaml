@@ -862,6 +862,8 @@ areas:
       - 市谷田町３丁目
       - 市谷船河原町
       - 市谷砂土原町３丁目
+      own: 2
+      koku: 11
     - towns:
       - 納戸町
       - 払方町
@@ -933,6 +935,8 @@ areas:
       - 原町２丁目
     - towns:
       - 弁天町
+      own: 2
+      koku: 12
     - towns:
       - 喜久井町
     - towns:
@@ -1508,6 +1512,8 @@ areas:
       koku: 11
     - towns:
       - 墨田２丁目
+      own: 2
+      koku: 14
     - towns:
       - 墨田３丁目
     - towns:
@@ -1538,6 +1544,8 @@ areas:
       - 東向島２丁目
     - towns:
       - 東向島３丁目
+      own: 2
+      koku: 14
     - towns:
       - 東向島４丁目
     - towns:
@@ -1566,6 +1574,8 @@ areas:
       - 向島４丁目
     - towns:
       - 向島５丁目
+      own: 2
+      koku: 16
     - towns:
       - 押上１丁目
       own: 2
@@ -1604,6 +1614,8 @@ areas:
     - towns:
       - 吾妻橋２丁目
       - 吾妻橋３丁目
+      own: 2
+      koku: 12
     - towns:
       - 業平１丁目
       - 業平２丁目
@@ -6321,6 +6333,8 @@ areas:
       koku: 14
     - towns:
       - 西新井２丁目
+      own: 2
+      koku: 13
     - towns:
       - 西新井３丁目
     - towns:
@@ -6440,6 +6454,8 @@ areas:
       - 鹿浜７丁目
     - towns:
       - 鹿浜８丁目
+      own: 2
+      koku: 13
 
 
   東京都 葛飾区:
@@ -7222,6 +7238,8 @@ areas:
       - 上壱分方町
     - towns:
       - 上川町
+      own: 2
+      koku: 90
     - towns:
       - 上恩方町
     - towns:
@@ -10922,6 +10940,8 @@ areas:
       - 平沢
     - towns:
       - 引田
+      own: 2
+      koku: 47
     - towns:
       - 戸倉
     - towns:
@@ -11192,6 +11212,8 @@ areas:
       - 大字大久野
     - towns:
       - 大字平井
+      own: 2
+      koku: 80
 
 
   東京都 西多摩郡檜原村:

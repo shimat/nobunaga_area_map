@@ -1152,6 +1152,8 @@ areas:
       - 大字妙
     - towns:
       - 大字尻内町
+      own: 2
+      koku: 127
     - towns:
       - 大字市川町
     - towns:
@@ -2485,6 +2487,8 @@ areas:
       - 尾上
     - towns:
       - 尾崎
+      own: 2
+      koku: 103
     - towns:
       - 岩館
     - towns:
@@ -3200,14 +3204,20 @@ areas:
       koku: 20
     - towns:
       - 字上笹橋
+      own: 2
+      koku: 14
     - towns:
       - 字下山
       own: 2
       koku: 19
     - towns:
       - 字中村道ノ上
+      own: 2
+      koku: 39
     - towns:
       - 字中村道ノ下
+      own: 2
+      koku: 34
     - towns:
       - 字中津平
     - towns:
@@ -3394,6 +3404,9 @@ areas:
       - 字後久保
     - towns:
       - 字数牛
+      - 字谷地頭
+      own: 2
+      koku: 52
     - towns:
       - 字日影林ノ上山
     - towns:
@@ -3554,8 +3567,6 @@ areas:
       - 字塔ノ沢
       own: 2
       koku: 26
-    - towns:
-      - 字谷地頭
     - towns:
       - 字赤川橋ノ上
     - towns:
@@ -4118,6 +4129,8 @@ areas:
     correspondences:
     - towns:
       - 大字上吉田
+      own: 2
+      koku: 99
     - towns:
       - 大字下吉田
     - towns:
@@ -4403,6 +4416,8 @@ areas:
       - 大字倉石石沢
     - towns:
       - 大字切谷内
+      own: 2
+      koku: 160
     - towns:
       - 大字扇田
     - towns:
