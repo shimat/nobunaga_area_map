@@ -138,6 +138,8 @@ areas:
       own: 1
     - towns:
       - 神田錦町３丁目
+      own: 2
+      koku: 11
     - towns:
       - 大手町１丁目
       own: 1
@@ -939,6 +941,8 @@ areas:
       koku: 12
     - towns:
       - 喜久井町
+      own: 2
+      koku: 11
     - towns:
       - 早稲田南町
       - 早稲田町
@@ -1520,6 +1524,8 @@ areas:
       - 墨田４丁目
     - towns:
       - 墨田５丁目
+      own: 2
+      koku: 21
     - towns:
       - 東墨田１丁目
     - towns:
@@ -1570,6 +1576,8 @@ areas:
       koku: 13
     - towns:
       - 向島３丁目
+      own: 2
+      koku: 13
     - towns:
       - 向島４丁目
     - towns:
@@ -1632,6 +1640,8 @@ areas:
       - 東駒形１丁目
       - 東駒形２丁目
       - 東駒形３丁目
+      own: 2
+      koku: 15
     - towns:
       - 東駒形４丁目
     - towns:
@@ -1640,6 +1650,8 @@ areas:
       - 横川２丁目
       - 横川３丁目
       - 太平２丁目
+      own: 2
+      koku: 12
     - towns:
       - 本所１丁目
     - towns:
@@ -4167,6 +4179,8 @@ areas:
     correspondences:
     - towns:
       - 千早１丁目
+      own: 2
+      koku: 13
     - towns:
       - 千早２丁目
     - towns:
@@ -4177,6 +4191,8 @@ areas:
       - 長崎１丁目
     - towns:
       - 長崎２丁目
+      own: 2
+      koku: 12
     - towns:
       - 長崎３丁目
     - towns:
@@ -4199,17 +4215,25 @@ areas:
       - 南長崎６丁目
     - towns:
       - 要町１丁目
+      own: 2
+      koku: 14
     - towns:
       - 要町２丁目
+      own: 2
+      koku: 12
     - towns:
       - 要町３丁目
     - towns:
       - 千川１丁目
+      own: 2
+      koku: 11
     - towns:
       - 千川２丁目
     - towns:
       - 高松１丁目
       - 高松２丁目
+      own: 2
+      koku: 16
     - towns:
       - 高松３丁目
     - towns:
@@ -4241,6 +4265,8 @@ areas:
       - 西池袋４丁目
     - towns:
       - 西池袋５丁目
+      own: 2
+      koku: 13
     - towns:
       - 目白１丁目
       own: 2
@@ -5238,6 +5264,8 @@ areas:
       koku: 17
     - towns:
       - 栄町
+      own: 2
+      koku: 17
     - towns:
       - 桜川１丁目
     - towns:
@@ -6014,6 +6042,8 @@ areas:
       - 島根２丁目
     - towns:
       - 島根３丁目
+      own: 2
+      koku: 14
     - towns:
       - 島根４丁目
     - towns:
@@ -6129,6 +6159,8 @@ areas:
       koku: 15
     - towns:
       - 梅島２丁目
+      own: 2
+      koku: 15
     - towns:
       - 梅島３丁目
       own: 2
@@ -6339,6 +6371,8 @@ areas:
       - 西新井３丁目
     - towns:
       - 西新井４丁目
+      own: 2
+      koku: 19
     - towns:
       - 西新井５丁目
       own: 2
@@ -8180,6 +8214,8 @@ areas:
       - 東青梅６丁目
     - towns:
       - 柚木町１丁目
+      own: 2
+      koku: 39
     - towns:
       - 柚木町２丁目
     - towns:

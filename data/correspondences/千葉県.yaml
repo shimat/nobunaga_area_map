@@ -2072,6 +2072,8 @@ areas:
       own: 1
     - towns:
       - 本中山３丁目
+      own: 2
+      koku: 14
     - towns:
       - 本中山４丁目
     - towns:

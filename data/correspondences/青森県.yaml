@@ -1027,6 +1027,10 @@ areas:
     - towns:
       - 一番町１丁目
     - towns:
+      - 一番町２丁目
+      own: 2
+      koku: 12 # 不確か
+    - towns:
       - 下長１丁目
     - towns:
       - 下長２丁目
@@ -1050,16 +1054,26 @@ areas:
       - 内丸１丁目
     - towns:
       - 北インター工業団地１丁目
+      own: 2
+      koku: 21
     - towns:
       - 北インター工業団地２丁目
+      own: 2
+      koku: 16
     - towns:
       - 北インター工業団地３丁目
+      own: 2
+      koku: 17
     - towns:
       - 北インター工業団地４丁目
     - towns:
       - 北インター工業団地５丁目
+      own: 2
+      koku: 18
     - towns:
       - 北インター工業団地６丁目
+      own: 2
+      koku: 18
     - towns:
       - 北白山台１丁目
     - towns:
@@ -1086,6 +1100,8 @@ areas:
       - 南郷大字島守
     - towns:
       - 南郷大字市野沢
+      own: 2
+      koku: 87
     - towns:
       - 南郷大字泉清水
     - towns:
@@ -1100,8 +1116,12 @@ areas:
       - 南類家４丁目
     - towns:
       - 卸センター１丁目
+      own: 2
+      koku: 14
     - towns:
       - 卸センター２丁目
+      own: 2
+      koku: 12
     - towns:
       - 吹上１丁目
     - towns:
@@ -1135,15 +1155,22 @@ areas:
     - towns:
       - 多賀台２丁目
     - towns:
+      - 多賀台３丁目
+      - 多賀台４丁目
+    - towns:
       - 大字上野
     - towns:
       - 大字中居林
     - towns:
       - 大字八幡
+      own: 2
+      koku: 49
     - towns:
       - 大字十日市
     - towns:
       - 大字坂牛
+      own: 2
+      koku: 36
     - towns:
       - 大字売市
     - towns:
@@ -1156,6 +1183,8 @@ areas:
       koku: 127
     - towns:
       - 大字市川町
+      own: 2
+      koku: 144
     - towns:
       - 大字新井田
     - towns:
@@ -1164,18 +1193,26 @@ areas:
       - 大字松館
     - towns:
       - 大字根城
+      own: 2
+      koku: 48
     - towns:
       - 大字櫛引
     - towns:
       - 大字沢里
     - towns:
       - 大字河原木
+      own: 2
+      koku: 131
     - towns:
       - 大字湊町
+      own: 2
+      koku: 40
     - towns:
       - 大字田向
     - towns:
       - 大字田面木
+      own: 2
+      koku: 61
     - towns:
       - 大字白銀町
     - towns:
@@ -1186,10 +1223,14 @@ areas:
       - 大字美保野
     - towns:
       - 大字豊崎町
+      own: 2
+      koku: 86
     - towns:
       - 大字金浜
     - towns:
       - 大字長苗代
+      own: 2
+      koku: 63
     - towns:
       - 大字鮫町
     - towns:
@@ -1244,6 +1285,8 @@ areas:
       - 東白山台４丁目
     - towns:
       - 松ヶ丘
+      own: 2
+      koku: 11
     - towns:
       - 柏崎１丁目
     - towns:
@@ -1346,6 +1389,8 @@ areas:
       - 諏訪３丁目
     - towns:
       - 豊洲
+      own: 2
+      koku: 37
     - towns:
       - 長根１丁目
     - towns:
@@ -1360,6 +1405,8 @@ areas:
       - 長苗代１丁目
     - towns:
       - 長苗代２丁目
+      own: 2
+      koku: 15
     - towns:
       - 長苗代３丁目
     - towns:
@@ -4141,6 +4188,8 @@ areas:
       koku: 139
     - towns:
       - 大字柳町
+      own: 2
+      koku: 31
     - towns:
       - 大字犬落瀬
       own: 2
@@ -4156,6 +4205,8 @@ areas:
       - 小松ケ丘２丁目
     - towns:
       - 小松ケ丘３丁目
+      own: 2
+      koku: 14
     - towns:
       - 小松ケ丘４丁目
       own: 2
@@ -4408,10 +4459,14 @@ areas:
     correspondences:
     - towns:
       - 大字上市川
+      own: 2
+      koku: 133
     - towns:
       - 大字倉石中市
     - towns:
       - 大字倉石又重
+      own: 2
+      koku: 154
     - towns:
       - 大字倉石石沢
     - towns:
@@ -4659,6 +4714,8 @@ areas:
       - 大字剣吉
     - towns:
       - 大字埖渡
+      own: 2
+      koku: 79
     - towns:
       - 大字大向
     - towns:
@@ -4681,6 +4738,8 @@ areas:
       - 大字法光寺
     - towns:
       - 大字法師岡
+      own: 2
+      koku: 54
     - towns:
       - 大字片岸
     - towns:
