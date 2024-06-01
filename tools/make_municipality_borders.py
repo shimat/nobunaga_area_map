@@ -18,9 +18,7 @@ NAMESPACES = {
 
 def load_town_data_from_gml_zip(file_name: str) -> pd.DataFrame:
     with zipfile.ZipFile(file_name, "r") as zf:
-        gml_file_name = more_itertools.first_true(
-            zf.namelist(), pred=lambda f: os.path.splitext(f)[1] == ".gml"
-        )
+        gml_file_name = more_itertools.first_true(zf.namelist(), pred=lambda f: os.path.splitext(f)[1] == ".gml")
         if not gml_file_name:
             raise Exception(f"GML file not found in ZipFile '{file_name}'")
         with zf.open(gml_file_name, "r") as file:
@@ -47,10 +45,7 @@ def load_town_data(tree: ET.ElementTree) -> pd.DataFrame:
         for contour_elem in contour_elements:
             pos_list_elem = contour_elem.find("gml:LinearRing//gml:posList", NAMESPACES)
             pos_list = [float(v) for v in pos_list_elem.text.split(" ")]
-            lonlat_list = [
-                [pos_list[i * 2 + 1], pos_list[i * 2]]
-                for i in range(len(pos_list) // 2)
-            ]
+            lonlat_list = [[pos_list[i * 2 + 1], pos_list[i * 2]] for i in range(len(pos_list) // 2)]
             polygons.append(lonlat_list)
 
         if pref_city not in all_towns_polygons:
@@ -93,6 +88,7 @@ prefecture = st.selectbox(
         "北海道",
         "青森県",
         "岩手県",
+        "秋田県",
         "福島県",
         "茨城県",
         "栃木県",
@@ -103,7 +99,10 @@ prefecture = st.selectbox(
         "千葉県",
         "富山県",
         "石川県",
+        "滋賀県",
         "京都府",
+        "徳島県",
+        "大分県",
     ),
     index=None,
 )
