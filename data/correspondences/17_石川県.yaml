@@ -1464,6 +1464,8 @@ areas:
     correspondences:
     - towns:
       - 七原町
+      own: 2
+      koku: 31
     - towns:
       - 万行町
     - towns:
@@ -1504,6 +1506,8 @@ areas:
       - 中島町宮前
     - towns:
       - 中島町小牧
+      own: 2
+      koku: 84
     - towns:
       - 中島町山戸田
     - towns:
@@ -1532,6 +1536,8 @@ areas:
       - 中島町筆染
     - towns:
       - 中島町藤瀬
+      own: 2
+      koku: 51
     - towns:
       - 中島町西谷内
     - towns:
@@ -1756,6 +1762,8 @@ areas:
       koku: 47
     - towns:
       - 西下町
+      own: 2
+      koku: 22
     - towns:
       - 西藤橋町
     - towns:

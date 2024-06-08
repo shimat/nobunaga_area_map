@@ -15117,8 +15117,12 @@ areas:
       - 水元町
     - towns:
       - 崎守町
+      own: 1
+      koku: 61
     - towns:
       - 石川町
+      own: 1
+      koku: 58
     - towns:
       - 白鳥台１丁目
     - towns:
@@ -15135,14 +15139,20 @@ areas:
       - 陣屋町２丁目
     - towns:
       - 陣屋町３丁目
+      own: 1
+      koku: 25
     - towns:
       - 陣屋町４丁目
     - towns:
       - 陣屋町５丁目
     - towns:
       - 幌萌町
+      own: 1
+      koku: 57
     - towns:
       - 本輪西町１丁目
+      own: 1
+      koku: 19
     - towns:
       - 本輪西町２丁目
     - towns:
@@ -15155,6 +15165,8 @@ areas:
       - 柏木町
     - towns:
       - 港北町１丁目
+      own: 1
+      koku: 18
     - towns:
       - 港北町２丁目
     - towns:
@@ -15179,6 +15191,8 @@ areas:
       - 天神町
     - towns:
       - 中島本町１丁目
+      own: 1
+      koku: 24
     - towns:
       - 中島本町２丁目
     - towns:
@@ -15207,6 +15221,8 @@ areas:
       - 宮の森町３丁目
     - towns:
       - 宮の森町４丁目
+      own: 1
+      koku: 15
     - towns:
       - 高砂町１丁目
     - towns:
@@ -15225,6 +15241,8 @@ areas:
       - 日の出町３丁目
     - towns:
       - 寿町１丁目
+      own: 1
+      koku: 15
     - towns:
       - 寿町２丁目
     - towns:
@@ -15233,6 +15251,8 @@ areas:
       - 東町１丁目
     - towns:
       - 東町２丁目
+      own: 1
+      koku: 17
     - towns:
       - 東町３丁目
     - towns:
@@ -15241,6 +15261,8 @@ areas:
       - 東町５丁目
     - towns:
       - 仲町
+      own: 1
+      koku: 71
     - towns:
       - 輪西町１丁目
     - towns:
@@ -19665,7 +19687,7 @@ areas:
       own: 1
     - towns:
       - 字樽前
-      own: 2
+      own: 1
     - towns:
       - 字錦岡
       own: 1
@@ -19694,6 +19716,8 @@ areas:
       - 晴海町
     - towns:
       - 一本松町
+      own: 1
+      koku: 32
     - towns:
       - ウトナイ北１丁目
     - towns:
@@ -19742,6 +19766,8 @@ areas:
       - 沼ノ端中央５丁目
     - towns:
       - 沼ノ端中央６丁目
+      own: 1
+      koku: 16
     - towns:
       - 北栄町１丁目
     - towns:
@@ -19861,6 +19887,8 @@ areas:
       - 船見町１丁目
     - towns:
       - 船見町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 日の出町１丁目
       own: 1
@@ -19997,6 +20025,8 @@ areas:
       - 表町３丁目
       - 表町６丁目
       - 錦町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 旭町３丁目
       own: 1
@@ -20018,6 +20048,8 @@ areas:
       - 王子町１丁目
     - towns:
       - 王子町２丁目
+      own: 1
+      koku: 22
     - towns:
       - 王子町３丁目
     - towns:
@@ -20191,10 +20223,16 @@ areas:
       own: 1
     - towns:
       - 日吉町３丁目
+      own: 1
+      koku: 15
     - towns:
       - 日吉町４丁目
+      own: 1
+      koku: 15
     - towns:
       - 永福町２丁目
+      own: 1
+      koku: 12
     - towns:
       - 宮の森町１丁目
     - towns:
@@ -20224,8 +20262,12 @@ areas:
       - 川沿町６丁目
     - towns:
       - ときわ町１丁目
+      own: 1
+      koku: 12
     - towns:
       - ときわ町２丁目
+      own: 1
+      koku: 11
     - towns:
       - ときわ町３丁目
       own: 1
@@ -20258,6 +20300,8 @@ areas:
       - 澄川町８丁目
     - towns:
       - 美原町１丁目
+      own: 1
+      koku: 14
     - towns:
       - 美原町２丁目
       own: 1
@@ -20293,6 +20337,8 @@ areas:
       own: 1
     - towns:
       - 宮前町２丁目
+      own: 1
+      koku: 16
     - towns:
       - 宮前町３丁目
     - towns:
@@ -23026,8 +23072,12 @@ areas:
       - 登別東町５丁目
     - towns:
       - 登別港町１丁目
+      own: 1
+      koku: 22
     - towns:
       - 登別港町２丁目
+      own: 1
+      koku: 19
     - towns:
       - 登別本町１丁目
     - towns:
@@ -23040,6 +23090,8 @@ areas:
       - 富浦町１丁目
     - towns:
       - 富浦町２丁目
+      own: 1
+      koku: 19
     - towns:
       - 富浦町３丁目
       - 富浦町４丁目
@@ -23052,6 +23104,8 @@ areas:
       - 幸町２丁目
     - towns:
       - 幸町３丁目
+      own: 1
+      koku: 13
     - towns:
       - 幸町４丁目
       - 幸町６丁目
@@ -23080,6 +23134,8 @@ areas:
     - towns:
       - 幌別町５丁目
       - 幌別町７丁目
+      own: 1
+      koku: 14
     - towns:
       - 幌別町６丁目
     - towns:
@@ -23137,6 +23193,8 @@ areas:
       - 富士町３丁目
       - 桜木町１丁目
       - 大和町１丁目
+      own: 1
+      koku: 25
     - towns:
       - 新川町２丁目
     - towns:
@@ -23176,6 +23234,8 @@ areas:
       - 栄町２丁目
     - towns:
       - 栄町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 栄町４丁目
     - towns:
@@ -23186,6 +23246,8 @@ areas:
       - 鷲別町３丁目
     - towns:
       - 鷲別町４丁目
+      own: 1
+      koku: 15
     - towns:
       - 鷲別町５丁目
     - towns:
@@ -23504,6 +23566,8 @@ areas:
       - 黄金南１丁目
     - towns:
       - 和光町５丁目
+      own: 1
+      koku: 13
     - towns:
       - 和光町４丁目
       - 和光町３丁目
@@ -23626,8 +23690,12 @@ areas:
 
     - towns:
       - 有珠町
+      own: 1
+      koku: 76
     - towns:
       - 北有珠町
+      own: 1
+      koku: 73
     - towns:
       - 東有珠町
     - towns:
@@ -23636,10 +23704,14 @@ areas:
       - 向有珠町
     - towns:
       - 南有珠町
+      own: 1
+      koku: 47
     - towns:
       - 若生町
     - towns:
       - 長和町
+      own: 1
+      koku: 70
     - towns:
       - 上長和町
     - towns:
@@ -23656,12 +23728,18 @@ areas:
       - 乾町
     - towns:
       - 館山下町
+      own: 1
+      koku: 46
     - towns:
       - 館山町
     - towns:
       - 山下町
+      own: 1
+      koku: 26
     - towns:
       - 西浜町
+      own: 1
+      koku: 18
     - towns:
       - 末永町
     - towns:
@@ -23676,20 +23754,34 @@ areas:
       - 幌美内町
     - towns:
       - 舟岡町
+      own: 1
+      koku: 40
     - towns:
       - 弄月町
     - towns:
       - 萩原町
+      own: 1
+      koku: 47
     - towns:
       - 北稀府町
+      own: 1
+      koku: 89
     - towns:
       - 中稀府町
+      own: 1
+      koku: 96
     - towns:
       - 南稀府町
+      own: 1
+      koku: 100
     - towns:
       - 北黄金町
+      own: 1
+      koku: 141
     - towns:
       - 南黄金町
+      own: 1
+      koku: 105
     - towns:
       - 大町
       - 鹿島町
@@ -23697,9 +23789,13 @@ areas:
       - 元町
     - towns:
       - 錦町
+      own: 1
+      koku: 12
     - towns:
       - 網代町
       - 東浜町
+      own: 1
+      koku: 15
     - towns:
       - 旭町
 
@@ -23920,6 +24016,8 @@ areas:
     - towns:
       - 共栄町３丁目
       - 共栄町５丁目
+      own: 1
+      koku: 15
     - towns:
       - 共栄町４丁目
     - towns:
@@ -24655,7 +24753,7 @@ areas:
       own: 2
     - towns:
       - 茂辺地市ノ渡
-      own: 2
+      own: 1
       koku: 89
     - towns:
       - 矢不来
@@ -24732,7 +24830,7 @@ areas:
       koku: 31
     - towns:
       - 白川
-      own: 2
+      own: 1
     - towns:
       - 細入
       own: 2
@@ -24790,15 +24888,15 @@ areas:
       own: 1
     - towns:
       - 千代田
-      own: 2
+      own: 1
       koku: 51
     - towns:
       - 清川
-      own: 2
+      own: 1
       koku: 57
     - towns:
       - 中野
-      own: 2
+      own: 1
       koku: 32
     - towns:
       - 萩野
@@ -24951,7 +25049,7 @@ areas:
       koku: 14
     - towns:
       - 大工川
-      own: 2
+      own: 1
       koku: 49
     - towns:
       - 大工川１丁目
@@ -24960,7 +25058,7 @@ areas:
       koku: 12
     - towns:
       - 押上
-      own: 2
+      own: 1
       koku: 31
     - towns:
       - 押上１丁目
@@ -24972,7 +25070,7 @@ areas:
       koku: 11
     - towns:
       - 添山
-      own: 2
+      own: 1
       koku: 60
     - towns:
       - 常盤１丁目
@@ -25155,10 +25253,15 @@ areas:
       - 字泉沢
     - towns:
       - 字幸連
+      own: 1
     - towns:
       - 字札苅
+      own: 1
+      koku: 100
     - towns:
       - 字大平
+      own: 1
+      koku: 78
     - towns:
       - 字木古内
       own: 2
@@ -25228,13 +25331,13 @@ areas:
       own: 1
     - towns:
       - 字大沼町
-      own: 2
+      own: 1
     - towns:
       - 字飯田町
-      own: 2
+      own: 1
     - towns:
       - 字鶴野
-      own: 2
+      own: 1
     - towns:
       - 字中島
       own: 2
@@ -25441,7 +25544,7 @@ areas:
       koku: 24
     - towns:
       - 字東森町
-      own: 2
+      own: 1
       koku: 24
     - towns:
       - 字栄町
@@ -25449,7 +25552,7 @@ areas:
       koku: 31
     - towns:
       - 字常盤町
-      own: 2
+      own: 1
       koku: 33
     - towns:
       - 字白川
@@ -25463,18 +25566,18 @@ areas:
       own: 1
     - towns:
       - 字姫川
-      own: 2
+      own: 1
       koku: 127
     - towns:
       - 字森川町
       own: 1
     - towns:
       - 字新川町
-      own: 2
+      own: 1
       koku: 17
     - towns:
       - 字御幸町
-      own: 2
+      own: 1
       koku: 13
     - towns:
       - 字清澄町
@@ -25482,7 +25585,7 @@ areas:
       koku: 18
     - towns:
       - 字本町
-      own: 2
+      own: 1
       koku: 16
     - towns:
       - 字上台町
@@ -25492,7 +25595,7 @@ areas:
       own: 1
     - towns:
       - 字富士見町
-      own: 2
+      own: 1
       koku: 43
     - towns:
       - 字鷲ノ木町
@@ -25537,7 +25640,7 @@ areas:
     correspondences:
     - towns:
       - 栄浜
-      own: 2
+      own: 1
     - towns:
       - 入沢
       own: 1
@@ -25591,12 +25694,18 @@ areas:
       - 東町
     - towns:
       - 元町
+      own: 1
+      koku: 13
     - towns:
       - 本町
     - towns:
       - 三杉町
+      own: 1
+      koku: 23
     - towns:
       - 相生町
+      own: 1
+      koku: 13
     - towns:
       - 末広町
     - towns:
@@ -25605,6 +25714,8 @@ areas:
       - 宮園町
     - towns:
       - 住初町
+      own: 1
+      koku: 17
     - towns:
       - 栄町
     - towns:
@@ -25674,6 +25785,8 @@ areas:
       own: 1
     - towns:
       - 字豊野
+      own: 1
+      koku: 126
     - towns:
       - 字国縫
       - 字花岡
@@ -25687,6 +25800,8 @@ areas:
       own: 1
     - towns:
       - 字平里
+      own: 1
+      koku: 200
     - towns:
       - 字長万部
       own: 1
@@ -25697,10 +25812,14 @@ areas:
       own: 1
     - towns:
       - 字栄原
+      own: 1
+      koku: 91
     - towns:
       - 字共立
     - towns:
       - 字静狩
+      own: 1
+      koku: 148
     - towns:
       - 字栗岡
       - 字美畑
@@ -27109,7 +27228,6 @@ areas:
       - 栄町２丁目
       own: 1
     - towns:
-      - 本町２丁目
       - 本町３丁目
       own: 1
     - towns:
@@ -27117,11 +27235,16 @@ areas:
       own: 1
     - towns:
       - 高砂町３丁目
+      own: 1
+      koku: 14
     - towns:
       - 高砂町２丁目
       - 高砂町４丁目
     - towns:
       - 高砂町１丁目
+      - 本町２丁目
+      own: 1
+      koku: 15
     - towns:
       - 大町１丁目
       - 大町２丁目
@@ -27235,13 +27358,21 @@ areas:
       - 泉
     - towns:
       - 入江
+      own: 1
+      koku: 56
     - towns:
       - 高砂町
+      own: 1
+      koku: 36
     - towns:
       - 栄町
+      own: 1
+      koku: 18
     - towns:
       - 旭町
       - 大磯町
+      own: 1
+      koku: 13
     - towns:
       - 本町
       - 浜町
@@ -27328,6 +27459,8 @@ areas:
       - 字大岸
     - towns:
       - 字礼文華
+      own: 1
+      koku: 184
     - towns:
       - 字新山梨
     - towns:
@@ -30270,7 +30403,7 @@ areas:
       - 字層雲峡
     - towns:
       - 字白川
-      own: 2
+      own: 1
     - towns:
       - 字清川
       own: 2

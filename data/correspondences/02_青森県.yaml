@@ -1088,6 +1088,8 @@ areas:
       - 北白山台５丁目
     - towns:
       - 北白山台６丁目
+      own: 2
+      koku: 15
     - towns:
       - 南白山台１丁目
     - towns:
@@ -1381,6 +1383,8 @@ areas:
       - 西白山台１丁目
     - towns:
       - 西白山台２丁目
+      own: 2
+      koku: 15
     - towns:
       - 西白山台３丁目
     - towns:

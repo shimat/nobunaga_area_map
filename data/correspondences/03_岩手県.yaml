@@ -3877,6 +3877,8 @@ areas:
       - 小子内
     - towns:
       - 帯島
+      own: 2
+      koku: 101
     - towns:
       - 有家
     - towns:
@@ -3887,6 +3889,8 @@ areas:
       koku: 357
     - towns:
       - 阿子木
+      own: 2
+      koku: 93
 
 
   岩手県 二戸郡一戸町:
