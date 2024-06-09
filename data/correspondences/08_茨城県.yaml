@@ -1354,6 +1354,8 @@ areas:
       - 大堤
     - towns:
       - 大山
+      own: 1
+      koku: 56
     - towns:
       - 大手町
     - towns:

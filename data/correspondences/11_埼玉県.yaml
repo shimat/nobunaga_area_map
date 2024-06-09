@@ -132,6 +132,8 @@ areas:
       - 本郷町
     - towns:
       - 東大成町１丁目
+      own: 1
+      koku: 19
     - towns:
       - 東大成町２丁目
     - towns:
@@ -178,48 +180,87 @@ areas:
       koku: 30
     - towns:
       - 北袋町１丁目
+      own: 1
+      koku: 20
     - towns:
       - 北袋町２丁目
+      - 大原６丁目
+      own: 1
+      koku: 19
     - towns:
       - 吉敷町３丁目
     - towns:
       - 吉敷町４丁目
     - towns:
       - 土手町１丁目
+      own: 1
+      koku: 13
     - towns:
       - 土手町３丁目
+      - 高鼻町３丁目
+      own: 1
+      koku: 14
     - towns:
       - 堀の内町１丁目
+      own: 1
+      koku: 20
     - towns:
       - 堀の内町２丁目
+      own: 1
+      koku: 19
     - towns:
       - 堀の内町３丁目
+      own: 1
+      koku: 18
     - towns:
       - 大成町１丁目
+      own: 1
+      koku: 17
     - towns:
       - 大成町２丁目
+      own: 1
+      koku: 17
     - towns:
       - 大成町３丁目
+      own: 1
+      koku: 21
     - towns:
       - 天沼町１丁目
+      own: 1
+      koku: 26
     - towns:
       - 天沼町２丁目
+      - 大原７丁目
+      own: 1
+      koku: 27
     - towns:
       - 寿能町１丁目
+      own: 1
+      koku: 14
     - towns:
       - 寿能町２丁目
+      own: 1
+      koku: 23
     - towns:
       - 東町１丁目
+      own: 1
+      koku: 11
     - towns:
       - 東町２丁目
+      own: 1
+      koku: 11
     - towns:
       - 桜木町１丁目
       own: 1
       koku: 15
     - towns:
       - 桜木町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 桜木町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 桜木町４丁目
       own: 1
@@ -235,10 +276,27 @@ areas:
       koku: 23
     - towns:
       - 高鼻町１丁目
+      own: 1
+      koku: 13
     - towns:
       - 高鼻町２丁目
+      own: 1
+      koku: 15
     - towns:
       - 高鼻町４丁目
+      own: 1
+      koku: 19
+    - towns:
+      - 宮町１丁目
+      - 大門町１丁目
+      - 大門町２丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 宮町２丁目
+      - 大門町３丁目
+      own: 1
+      koku: 13
 
 
   埼玉県 さいたま市見沼区:
@@ -8033,6 +8091,8 @@ areas:
       - 白岡東
     - towns:
       - 篠津
+      own: 1
+      koku: 49
     - towns:
       - 荒井新田
     - towns:

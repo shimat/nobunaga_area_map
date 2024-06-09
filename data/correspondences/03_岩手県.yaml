@@ -2006,6 +2006,8 @@ areas:
       - 白鳥
     - towns:
       - 石切所
+      own: 1
+      koku: 126
     - towns:
       - 福岡
     - towns:
@@ -2018,6 +2020,8 @@ areas:
       - 野々上
     - towns:
       - 金田一
+      own: 1
+      koku: 146
     - towns:
       - 釜沢
     - towns:
@@ -3911,6 +3915,8 @@ areas:
       koku: 117
     - towns:
       - 水沢
+      own: 1
+      koku: 164
     - towns:
       - 種市
       own: 2

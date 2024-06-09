@@ -1500,6 +1500,8 @@ areas:
       koku: 84
     - towns:
       - 中島町塩津
+      own: 2
+      koku: 61
     - towns:
       - 中島町外
     - towns:
