@@ -96,6 +96,8 @@ areas:
     correspondences:
     - towns:
       - 今羽町
+      own: 1
+      koku: 25
     - towns:
       - 別所町
     - towns:
@@ -156,14 +158,24 @@ areas:
     correspondences:
     - towns:
       - 三橋１丁目
+      own: 1
+      koku: 30
     - towns:
       - 三橋２丁目
+      own: 1
+      koku: 25
     - towns:
       - 三橋３丁目
+      own: 1
+      koku: 13
     - towns:
       - 三橋４丁目
+      own: 1
+      koku: 27
     - towns:
       - 上小町
+      own: 1
+      koku: 30
     - towns:
       - 北袋町１丁目
     - towns:
@@ -202,18 +214,25 @@ areas:
       - 東町２丁目
     - towns:
       - 桜木町１丁目
+      own: 1
+      koku: 15
     - towns:
       - 桜木町２丁目
     - towns:
       - 桜木町３丁目
     - towns:
       - 桜木町４丁目
+      own: 1
+      koku: 25
     - towns:
       - 櫛引町１丁目
+      own: 1
     - towns:
       - 浅間町２丁目
     - towns:
       - 錦町
+      own: 1
+      koku: 23
     - towns:
       - 高鼻町１丁目
     - towns:
@@ -374,6 +393,8 @@ areas:
       - 上峰３丁目
     - towns:
       - 上落合１丁目
+      own: 1
+      koku: 12
     - towns:
       - 上落合２丁目
     - towns:
@@ -412,6 +433,9 @@ areas:
       - 大戸１丁目
     - towns:
       - 大戸２丁目
+      - 鈴谷１丁目
+      own: 1
+      koku: 15
     - towns:
       - 大戸３丁目
     - towns:
@@ -436,6 +460,8 @@ areas:
       - 本町東１丁目
     - towns:
       - 本町東２丁目
+      own: 1
+      koku: 11
     - towns:
       - 本町東３丁目
     - towns:
@@ -460,12 +486,18 @@ areas:
       - 桜丘１丁目
     - towns:
       - 鈴谷２丁目
+      own: 1
+      koku: 15
     - towns:
       - 鈴谷４丁目
     - towns:
       - 鈴谷５丁目
+      own: 1
+      koku: 12
     - towns:
       - 鈴谷６丁目
+      own: 1
+      koku: 11
     - towns:
       - 鈴谷７丁目
     - towns:
@@ -553,7 +585,10 @@ areas:
     - towns:
       - 町谷４丁目
     - towns:
+      - 西堀１丁目
       - 西堀２丁目
+      own: 1
+      koku: 16
     - towns:
       - 西堀３丁目
     - towns:
@@ -566,8 +601,13 @@ areas:
       - 西堀７丁目
     - towns:
       - 西堀８丁目
+      own: 1
+      koku: 14
     - towns:
       - 西堀９丁目
+      - 西堀１０丁目
+      own: 1
+      koku: 15
     - towns:
       - 道場２丁目
     - towns:
@@ -730,8 +770,12 @@ areas:
       - 内谷５丁目
     - towns:
       - 内谷６丁目
+      own: 1
+      koku: 12
     - towns:
       - 内谷７丁目
+      own: 1
+      koku: 12
     - towns:
       - 別所１丁目
     - towns:
@@ -741,7 +785,15 @@ areas:
     - towns:
       - 別所４丁目
     - towns:
+      - 別所５丁目
+      - 別所６丁目
+      - 鹿手袋２丁目
+      own: 1
+      koku: 17
+    - towns:
       - 別所７丁目
+      own: 1
+      koku: 14
     - towns:
       - 南本町２丁目
     - towns:
@@ -810,6 +862,8 @@ areas:
       - 沼影２丁目
     - towns:
       - 沼影３丁目
+      own: 1
+      koku: 13
     - towns:
       - 白幡１丁目
     - towns:
@@ -820,6 +874,8 @@ areas:
       - 白幡４丁目
     - towns:
       - 白幡５丁目
+      own: 1
+      koku: 14
     - towns:
       - 白幡６丁目
     - towns:
@@ -838,8 +894,12 @@ areas:
       - 辻８丁目
     - towns:
       - 鹿手袋１丁目
+      own: 1
+      koku: 11
     - towns:
       - 鹿手袋３丁目
+      own: 1
+      koku: 11
     - towns:
       - 鹿手袋４丁目
     - towns:
@@ -5530,10 +5590,14 @@ areas:
       - 上戸田２丁目
     - towns:
       - 上戸田３丁目
+      own: 1
+      koku: 13
     - towns:
       - 上戸田４丁目
     - towns:
       - 上戸田５丁目
+      own: 1
+      koku: 12
     - towns:
       - 下前１丁目
     - towns:
@@ -5560,24 +5624,36 @@ areas:
       - 大字上戸田
     - towns:
       - 大字下笹目
+      own: 1
+      koku: 27
     - towns:
       - 大字内谷
     - towns:
       - 大字新曽
+      own: 1
+      koku: 45
     - towns:
       - 大字曲本
     - towns:
       - 大字美女木
+      own: 1
+      koku: 40
     - towns:
       - 大字重瀬
     - towns:
       - 川岸１丁目
+      own: 1
+      koku: 15
     - towns:
       - 川岸２丁目
     - towns:
       - 川岸３丁目
+      own: 1
+      koku: 11
     - towns:
       - 戸田公園
+      own: 1
+      koku: 37
     - towns:
       - 新曽南２丁目
     - towns:
@@ -5592,12 +5668,18 @@ areas:
       - 本町１丁目
     - towns:
       - 本町２丁目
+      own: 1
+      koku: 12
     - towns:
       - 本町３丁目
     - towns:
       - 本町４丁目
+      own: 1
+      koku: 13
     - towns:
       - 本町５丁目
+      own: 1
+      koku: 14
     - towns:
       - 氷川町１丁目
     - towns:
@@ -6369,15 +6451,23 @@ areas:
     - towns:
       - 南栗橋１丁目
     - towns:
-      - 南栗橋１１丁目
-    - towns:
-      - 南栗橋１２丁目
-    - towns:
       - 南栗橋２丁目
+    - towns:
+      - 南栗橋３丁目
+      - 南栗橋９丁目
+      - 南栗橋１０丁目
+      own: 1
+      koku: 17
     - towns:
       - 南栗橋４丁目
     - towns:
       - 南栗橋８丁目
+    - towns:
+      - 南栗橋１１丁目
+    - towns:
+      - 南栗橋１２丁目
+      own: 1
+      koku: 14
     - towns:
       - 南２丁目
     - towns:
@@ -6400,6 +6490,8 @@ areas:
       - 太田袋
     - towns:
       - 小右衛門
+      own: 1
+      koku: 39
     - towns:
       - 島川
     - towns:

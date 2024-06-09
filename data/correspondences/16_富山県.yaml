@@ -2951,6 +2951,8 @@ areas:
       - 伊勢大町２丁目
     - towns:
       - 余川
+      own: 2
+      koku: 83
     - towns:
       - 加納
     - towns:
@@ -2967,6 +2969,8 @@ areas:
       - 吉懸
     - towns:
       - 吉滝
+      own: 2
+      koku: 46
     - towns:
       - 味川
     - towns:
@@ -3063,6 +3067,8 @@ areas:
       - 棚懸
     - towns:
       - 森寺
+      own: 2
+      koku: 55
     - towns:
       - 比美町
     - towns:
@@ -3129,6 +3135,8 @@ areas:
       - 針木
     - towns:
       - 長坂
+      own: 2
+      koku: 49
     - towns:
       - 間島
     - towns:

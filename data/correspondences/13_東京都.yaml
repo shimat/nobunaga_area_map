@@ -705,6 +705,8 @@ areas:
       - 下落合１丁目
     - towns:
       - 下落合２丁目
+      own: 1
+      koku: 16
     - towns:
       - 下落合３丁目
     - towns:
@@ -717,8 +719,12 @@ areas:
       - 上落合３丁目
     - towns:
       - 高田馬場１丁目
+      own: 1
+      koku: 16
     - towns:
       - 高田馬場２丁目
+      own: 1
+      koku: 11
     - towns:
       - 高田馬場３丁目
     - towns:
@@ -745,6 +751,8 @@ areas:
       - 大久保２丁目
     - towns:
       - 大久保３丁目
+      own: 1
+      koku: 19
     - towns:
       - 百人町１丁目
       own: 1
@@ -788,6 +796,8 @@ areas:
       own: 1
     - towns:
       - 歌舞伎町２丁目
+      own: 1
+      koku: 14
     - towns:
       - 新宿１丁目
     - towns:
@@ -2077,12 +2087,16 @@ areas:
     - towns:
       - 上大崎４丁目
       - 西五反田３丁目
+      own: 1
+      koku: 16
     - towns:
       - 西五反田１丁目
       - 西五反田８丁目
       - 大崎５丁目
     - towns:
       - 西五反田２丁目
+      own: 1
+      koku: 12
     - towns:
       - 西五反田４丁目
     - towns:
@@ -2306,11 +2320,15 @@ areas:
     - towns:
       - 南大井１丁目
       - 南大井２丁目
+      own: 1
+      koku: 15
     - towns:
       - 南大井３丁目
       own: 1
     - towns:
       - 南大井４丁目
+      own: 1
+      koku: 12
     - towns:
       - 南大井５丁目
     - towns:
@@ -2573,6 +2591,8 @@ areas:
       - 大森北１丁目
     - towns:
       - 大森北２丁目
+      own: 1
+      koku: 11
     - towns:
       - 大森北３丁目
       own: 1
@@ -2645,6 +2665,8 @@ areas:
       - 東糀谷６丁目
     - towns:
       - 羽田旭町
+      own: 1
+      koku: 18
     - towns:
       - 西糀谷１丁目
     - towns:
@@ -3599,6 +3621,8 @@ areas:
       own: 1
     - towns:
       - 道玄坂１丁目
+      own: 1
+      koku: 11
     - towns:
       - 道玄坂２丁目
     - towns:
@@ -3606,14 +3630,20 @@ areas:
       - 神泉町
     - towns:
       - 桜丘町
+      own: 1
+      koku: 13
     - towns:
       - 南平台町
     - towns:
       - 鶯谷町
+      own: 1
+      koku: 11
     - towns:
       - 鉢山町
     - towns:
       - 猿楽町
+      own: 1
+      koku: 13
     - towns:
       - 代官山町
       - 恵比寿西２丁目
@@ -4309,6 +4339,8 @@ areas:
       koku: 11
     - towns:
       - 高田３丁目
+      own: 1
+      koku: 15
     - towns:
       - 雑司が谷１丁目
       own: 1
@@ -5311,8 +5343,12 @@ areas:
       koku: 12
     - towns:
       - 舟渡１丁目
+      own: 1
+      koku: 16
     - towns:
       - 舟渡２丁目
+      own: 1
+      koku: 27
     - towns:
       - 舟渡３丁目
     - towns:

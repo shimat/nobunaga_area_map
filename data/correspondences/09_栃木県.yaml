@@ -54,6 +54,8 @@ areas:
       - 上小池町
     - towns:
       - 上御田町
+      own: 1
+      koku: 36
     - towns:
       - 上戸祭町
     - towns:
@@ -282,6 +284,8 @@ areas:
       - 岩原町
     - towns:
       - 岩曽町
+      own: 1
+      koku: 50
     - towns:
       - 岩本町
     - towns:
@@ -630,6 +634,8 @@ areas:
       - 雀の宮７丁目
     - towns:
       - 雀宮町
+      own: 1
+      koku: 23
     - towns:
       - 飯山町
     - towns:
@@ -2256,6 +2262,11 @@ areas:
     - towns:
       - 駅東通り３丁目
     - towns:
+      - 天神町２丁目
+      - 宮本町３丁目
+      own: 1
+      koku: 13
+    - towns:
       - 三峯１丁目
       - 三峯２丁目
       - 中久喜１丁目
@@ -2271,10 +2282,8 @@ areas:
       - 城山町１丁目
       - 城山町２丁目
       - 大字泉崎
-      - 天神町２丁目
       - 宮本町１丁目
       - 宮本町２丁目
-      - 宮本町３丁目
       - 扶桑１丁目
       - 扶桑３丁目
       - 暁１丁目
@@ -2809,6 +2818,8 @@ areas:
       - 幸岡
     - towns:
       - 成田
+      own: 1
+      koku: 64
     - towns:
       - 扇町１丁目
     - towns:
@@ -3071,6 +3082,8 @@ areas:
       - 東遅沢
     - towns:
       - 東関根
+      own: 1
+      koku: 25
     - towns:
       - 松浦町
     - towns:
@@ -3189,6 +3202,8 @@ areas:
       - 鍋掛
     - towns:
       - 関根
+      own: 1
+      koku: 19
     - towns:
       - 関谷
     - towns:

@@ -1412,8 +1412,12 @@ areas:
       - 山形町小国
     - towns:
       - 山形町川井
+      own: 2
+      koku: 215
     - towns:
       - 山形町戸呂町
+      own: 2
+      koku: 214
     - towns:
       - 山形町日野沢
     - towns:
@@ -3807,24 +3811,39 @@ areas:
       koku: 236
     - towns:
       - 大字円子
+      own: 2
+      koku: 144
     - towns:
       - 大字小軽米
       own: 2
       koku: 262
     - towns:
       - 大字山内
+      - 大字狄塚
+      own: 2
+      koku: 171
     - towns:
       - 大字晴山
-    - towns:
-      - 大字狄塚
+      own: 2
+      koku: 140
     - towns:
       - 大字蛇口
+      own: 2
+      koku: 103
     - towns:
       - 大字軽米
+      own: 2
+      koku: 168
     - towns:
       - 大字長倉
+      own: 2
+      koku: 96
     - towns:
       - 大字高家
+      own: 2
+      koku: 74
+
+
   岩手県 九戸郡野田村:
     view_state:
       latitude: 40.06898437537115
@@ -3859,6 +3878,7 @@ areas:
       - 大字長興寺
     - towns:
       - 大字雪屋
+
   岩手県 九戸郡洋野町:
     view_state:
       latitude: 40.32634795866694
@@ -3867,20 +3887,28 @@ areas:
     correspondences:
     - towns:
       - 上舘
+      own: 2
+      koku: 81
     - towns:
       - 中野
+      own: 2
+      koku: 146
     - towns:
       - 大野
       own: 2
       koku: 289
     - towns:
       - 小子内
+      own: 2
+      koku: 83
     - towns:
       - 帯島
       own: 2
       koku: 101
     - towns:
       - 有家
+      own: 2
+      koku: 117
     - towns:
       - 水沢
     - towns:

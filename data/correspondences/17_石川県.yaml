@@ -1468,6 +1468,8 @@ areas:
       koku: 31
     - towns:
       - 万行町
+      own: 2
+      koku: 68
     - towns:
       - 三室町
     - towns:
@@ -1484,6 +1486,8 @@ areas:
       - 中島町中島
     - towns:
       - 中島町別所
+      own: 2
+      koku: 87
     - towns:
       - 中島町北免田
     - towns:
@@ -1492,6 +1496,8 @@ areas:
       - 中島町呉竹
     - towns:
       - 中島町土川
+      own: 2
+      koku: 84
     - towns:
       - 中島町塩津
     - towns:
@@ -1510,10 +1516,14 @@ areas:
       koku: 84
     - towns:
       - 中島町山戸田
+      own: 2
+      koku: 43
     - towns:
       - 中島町崎山
     - towns:
       - 中島町横田
+      own: 2
+      koku: 38
     - towns:
       - 中島町横見
     - towns:
@@ -1532,6 +1542,8 @@ areas:
       - 中島町町屋
     - towns:
       - 中島町笠師
+      own: 2
+      koku: 80
     - towns:
       - 中島町筆染
     - towns:
@@ -1542,6 +1554,8 @@ areas:
       - 中島町西谷内
     - towns:
       - 中島町谷内
+      own: 1
+      koku: 47
     - towns:
       - 中島町豊田
     - towns:
@@ -1552,24 +1566,40 @@ areas:
       - 中島町鳥越
     - towns:
       - 中島町鹿島台
+      own: 2
+      koku: 51
     - towns:
       - 中挟町
+      own: 2
+      koku: 24
     - towns:
       - 伊久留町
+      own: 2
+      koku: 50
     - towns:
       - 佐々波町
     - towns:
       - 佐味町
+      own: 2
+      koku: 53
     - towns:
       - 佐野町
     - towns:
       - 八幡町
+      own: 2
+      koku: 26
     - towns:
       - 八田町
+      own: 2
+      koku: 47
     - towns:
       - 千野町
+      own: 2
+      koku: 53
     - towns:
       - 南ケ丘町
+      own: 2
+      koku: 12
     - towns:
       - 古城町
     - towns:
@@ -1578,14 +1608,21 @@ areas:
       - 古府町
     - towns:
       - 吉田町
+      own: 2
+      koku: 81
     - towns:
       - 和倉町
     - towns:
       - 和倉町ひばり３丁目
     - towns:
       - 国下町
+      own: 2
+      koku: 17
     - towns:
       - 国分町
+      - 栄町
+      own: 2
+      koku: 52
     - towns:
       - 垣吉町
     - towns:
@@ -1610,6 +1647,8 @@ areas:
       - 天神川原町
     - towns:
       - 奥原町
+      own: 2
+      koku: 47
     - towns:
       - 小島町
     - towns:
@@ -1632,16 +1671,22 @@ areas:
       - 所口町
     - towns:
       - 新保町
+      own: 2
+      koku: 32
     - towns:
       - 新屋町
     - towns:
       - 旭町
+      own: 2
+      koku: 27
     - towns:
       - 本府中町
     - towns:
       - 杉森町
     - towns:
       - 東三階町
+      own: 2
+      koku: 32
     - towns:
       - 東山町
     - towns:
@@ -1654,10 +1699,14 @@ areas:
       - 殿町
     - towns:
       - 江曽町
+      own: 2
+      koku: 51
     - towns:
       - 江泊町
     - towns:
       - 池崎町
+      own: 2
+      koku: 59
     - towns:
       - 沢野町
     - towns:
@@ -1668,16 +1717,24 @@ areas:
       - 清水平町
     - towns:
       - 温井町
+      own: 2
+      koku: 18
     - towns:
       - 湯川町
     - towns:
       - 満仁町
+      own: 2
+      koku: 30
     - towns:
       - 熊淵町
+      own: 2
+      koku: 90
     - towns:
       - 田鶴浜町
     - towns:
       - 町屋町
+      own: 2
+      koku: 17
     - towns:
       - 白浜町
     - towns:
@@ -1686,22 +1743,32 @@ areas:
       koku: 56
     - towns:
       - 盤若野町
+      own: 2
+      koku: 22
     - towns:
       - 直津町
+      own: 2
+      koku: 47
     - towns:
       - 矢田新町
     - towns:
       - 矢田町
     - towns:
       - 石崎町
+      own: 2
+      koku: 44
     - towns:
       - 石崎町香島１丁目
     - towns:
       - 祖浜町
+      own: 2
+      koku: 27
     - towns:
       - 竹町
     - towns:
       - 細口町
+      own: 2
+      koku: 33
     - towns:
       - 能登島えの目町
     - towns:
@@ -1754,6 +1821,8 @@ areas:
       - 菅沢町
     - towns:
       - 藤橋町
+      own: 2
+      koku: 42
     - towns:
       - 藤野町
     - towns:
@@ -1768,12 +1837,20 @@ areas:
       - 西藤橋町
     - towns:
       - 赤浦新町
+      own: 2
+      koku: 20
     - towns:
       - 赤浦町
+      own: 2
+      koku: 55
     - towns:
       - 青山町
+      own: 2
+      koku: 24
     - towns:
       - 青葉台町
+      own: 2
+      koku: 15
     - towns:
       - 須能町
     - towns:
@@ -1817,7 +1894,6 @@ areas:
       - 昭和町
       - 木町
       - 松本町
-      - 栄町
       - 桜町
       - 桧物町
       - 橘町
@@ -4794,6 +4870,8 @@ areas:
       - 大鳥居
     - towns:
       - 安津見
+      own: 2
+      koku: 86
     - towns:
       - 安部屋
     - towns:
@@ -4826,6 +4904,8 @@ areas:
       - 広地
     - towns:
       - 徳田
+      own: 2
+      koku: 89
     - towns:
       - 日下田
     - towns:
@@ -4876,6 +4956,8 @@ areas:
       - 矢蔵谷
     - towns:
       - 矢駄
+      own: 2
+      koku: 84
     - towns:
       - 神代
     - towns:
@@ -5082,6 +5164,8 @@ areas:
     correspondences:
     - towns:
       - 一青
+      own: 2
+      koku: 39
     - towns:
       - 上後山
     - towns:
@@ -5096,6 +5180,8 @@ areas:
       - 久江原山分
     - towns:
       - 二宮
+      own: 2
+      koku: 59
     - towns:
       - 井田
     - towns:
@@ -5134,26 +5220,41 @@ areas:
       - 徳丸
     - towns:
       - 徳前
+      - 浅井
+      own: 2
+      koku: 40
     - towns:
       - 新庄
       own: 2
       koku: 28
     - towns:
       - 春木
+      own: 2
+      koku: 43
     - towns:
       - 曽祢
     - towns:
       - 最勝講
+      own: 2
+      koku: 20
     - towns:
       - 末坂
+      own: 2
+      koku: 47
     - towns:
       - 東馬場
+      own: 2
+      koku: 29
     - towns:
       - 武部
+      own: 2
+      koku: 52
     - towns:
       - 水白
     - towns:
       - 瀬戸
+      own: 2
+      koku: 76
     - towns:
       - 石動山
       own: 2
@@ -5162,14 +5263,20 @@ areas:
       - 福田
     - towns:
       - 羽坂
+      own: 2
+      koku: 26
     - towns:
       - 能登部上
     - towns:
       - 能登部下
     - towns:
       - 良川
+      own: 2
+      koku: 59
     - towns:
       - 花見月
+      own: 2
+      koku: 80
     - towns:
       - 芹川
     - towns:
@@ -5188,9 +5295,9 @@ areas:
       - 高畠
     - towns:
       - 黒氏
-    - towns:
       - 二宮あおば台
-      - 浅井
+      own: 2
+      koku: 35
 
 
   石川県 鳳珠郡穴水町:

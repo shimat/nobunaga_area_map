@@ -144,6 +144,8 @@ areas:
       koku: 45
     - towns:
       - 大字奥内
+      own: 1
+      koku: 77
     - towns:
       - 大字孫内
     - towns:
@@ -160,6 +162,8 @@ areas:
       - 大字小館
     - towns:
       - 大字岡町
+      own: 1
+      koku: 46
     - towns:
       - 大字岩渡
     - towns:
@@ -206,12 +210,16 @@ areas:
       - 大字浪館
     - towns:
       - 大字清水
+      own: 1
+      koku: 83
     - towns:
       - 大字滝沢
       own: 2
       koku: 252
     - towns:
       - 大字瀬戸子
+      own: 1
+      koku: 101
     - towns:
       - 大字牛館
     - towns:
@@ -224,20 +232,28 @@ areas:
       - 大字矢田前
     - towns:
       - 大字石江
+      own: 1
+      koku: 52
     - towns:
       - 大字筒井
     - towns:
       - 大字築木館
     - towns:
       - 大字細越
+      own: 1
+      koku: 86
     - towns:
       - 大字羽白
+      own: 1
+      koku: 73
     - towns:
       - 大字荒川
       own: 2
       koku: 241
     - towns:
       - 大字西田沢
+      own: 1
+      koku: 106
     - towns:
       - 大字諏訪沢
     - towns:
@@ -254,6 +270,8 @@ areas:
       - 大字雲谷
     - towns:
       - 大字飛鳥
+      own: 1
+      koku: 83
     - towns:
       - 大字馬屋尻
     - towns:
@@ -262,6 +280,8 @@ areas:
       koku: 354
     - towns:
       - 大字高田
+      own: 1
+      koku: 82
     - towns:
       - 大字鶴ケ坂
     - towns:
@@ -1034,12 +1054,31 @@ areas:
       koku: 12 # 不確か
     - towns:
       - 下長１丁目
+      own: 2
+      koku: 14
     - towns:
       - 下長２丁目
+      - 河原木
+      own: 2
+      koku: 16
     - towns:
       - 下長３丁目
+      own: 2
+      koku: 13
     - towns:
       - 下長４丁目
+      own: 2
+      koku: 15
+    - towns:
+      - 下長５丁目
+      - 日計４丁目
+      own: 2
+      koku: 13
+    - towns:
+      - 下長６丁目
+      - 高州１丁目
+      own: 2
+      koku: 14
     - towns:
       - 下長７丁目
     - towns:
@@ -1068,6 +1107,8 @@ areas:
       koku: 17
     - towns:
       - 北インター工業団地４丁目
+      own: 2
+      koku: 19
     - towns:
       - 北インター工業団地５丁目
       own: 2
@@ -1078,12 +1119,18 @@ areas:
       koku: 18
     - towns:
       - 北白山台１丁目
+      own: 2
+      koku: 12
     - towns:
       - 北白山台２丁目
+      own: 2
+      koku: 16
     - towns:
       - 北白山台３丁目
     - towns:
       - 北白山台４丁目
+      own: 2
+      koku: 11
     - towns:
       - 北白山台５丁目
     - towns:
@@ -1150,23 +1197,37 @@ areas:
       - 城下４丁目
     - towns:
       - 売市１丁目
+      own: 2
+      koku: 11
     - towns:
       - 売市２丁目
+      own: 2
+      koku: 12
     - towns:
       - 売市３丁目
+      own: 2
+      koku: 11
     - towns:
       - 売市４丁目
+      own: 2
+      koku: 14
     - towns:
       - 多賀台１丁目
     - towns:
       - 多賀台２丁目
+      own: 2
+      koku: 12
     - towns:
       - 多賀台３丁目
       - 多賀台４丁目
     - towns:
       - 大字上野
+      own: 2
+      koku: 44
     - towns:
       - 大字中居林
+      own: 2
+      koku: 29
     - towns:
       - 大字八幡
       own: 2
@@ -1179,13 +1240,15 @@ areas:
       koku: 36
     - towns:
       - 大字売市
+      own: 2
+      koku: 30
     - towns:
       - 大字大久保
     - towns:
       - 大字妙
     - towns:
       - 大字尻内町
-      own: 2
+      own: 1
       koku: 127
     - towns:
       - 大字市川町
@@ -1205,13 +1268,13 @@ areas:
       koku: 48
     - towns:
       - 大字櫛引
-      own: 2
+      own: 1
       koku: 133
     - towns:
       - 大字沢里
     - towns:
       - 大字河原木
-      own: 2
+      own: 1
       koku: 131
     - towns:
       - 大字湊町
@@ -1239,7 +1302,7 @@ areas:
       - 大字金浜
     - towns:
       - 大字長苗代
-      own: 2
+      own: 1
       koku: 63
     - towns:
       - 大字鮫町
@@ -1272,7 +1335,14 @@ areas:
     - towns:
       - 新湊３丁目
     - towns:
+      - 日計１丁目
+      - 日計３丁目
+      own: 2
+      koku: 14
+    - towns:
       - 日計２丁目
+      own: 2
+      koku: 11
     - towns:
       - 旭ヶ丘１丁目
     - towns:
@@ -1313,18 +1383,32 @@ areas:
       - 根城２丁目
     - towns:
       - 根城３丁目
+      own: 2
+      koku: 14
     - towns:
       - 根城４丁目
+      own: 2
+      koku: 12
     - towns:
       - 根城５丁目
+      own: 2
+      koku: 12
     - towns:
       - 根城６丁目
+      own: 2
+      koku: 14
     - towns:
       - 根城７丁目
+      own: 2
+      koku: 17
     - towns:
       - 根城８丁目
+      own: 2
+      koku: 13
     - towns:
       - 根城９丁目
+      own: 2
+      koku: 14
     - towns:
       - 桔梗野工業団地１丁目
     - towns:
@@ -1371,12 +1455,20 @@ areas:
       - 湊高台８丁目
     - towns:
       - 石堂１丁目
+      own: 2
+      koku: 18
     - towns:
       - 石堂２丁目
+      own: 2
+      koku: 17
     - towns:
       - 石堂３丁目
+      own: 2
+      koku: 17
     - towns:
       - 石堂４丁目
+      own: 2
+      koku: 14
     - towns:
       - 築港街１丁目
     - towns:
@@ -1405,6 +1497,9 @@ areas:
       koku: 37
     - towns:
       - 長根１丁目
+      - 長根２丁目
+      own: 2
+      koku: 15
     - towns:
       - 長者１丁目
     - towns:
@@ -1415,14 +1510,20 @@ areas:
       - 長者４丁目
     - towns:
       - 長苗代１丁目
+      own: 2
+      koku: 14
     - towns:
       - 長苗代２丁目
       own: 2
       koku: 15
     - towns:
       - 長苗代３丁目
+      own: 2
+      koku: 15
     - towns:
       - 長苗代４丁目
+      own: 2
+      koku: 13
     - towns:
       - 青葉１丁目
     - towns:
@@ -1439,6 +1540,11 @@ areas:
       - 類家５丁目
     - towns:
       - 高州２丁目
+    - towns:
+      - 小田１丁目
+      - 小田２丁目
+      own: 2
+      koku: 11
 
 
   青森県 黒石市:
@@ -1791,12 +1897,16 @@ areas:
       koku: 228 # 不確か
     - towns:
       - 大字滝沢
+      own: 2
+      koku: 199
     - towns:
       - 大字相坂
     - towns:
       - 大字立崎
     - towns:
       - 大字米田
+      own: 1
+      koku: 228
     - towns:
       - 大字藤島
     - towns:
@@ -3245,10 +3355,12 @@ areas:
       - 大字上野
     - towns:
       - 大字大浦
-      own: 2
+      own: 1
       koku: 316
     - towns:
       - 大字新舘
+      own: 1
+      koku: 86
     - towns:
       - 字ほとけ沢
       own: 2
@@ -3769,6 +3881,8 @@ areas:
       - 字作田
     - towns:
       - 字作田道
+      own: 1
+      koku: 43
     - towns:
       - 字倉岡
     - towns:
@@ -3878,6 +3992,8 @@ areas:
       - 字大池
     - towns:
       - 字大沢
+      own: 1
+      koku: 32
     - towns:
       - 字大渡
     - towns:
@@ -3922,6 +4038,8 @@ areas:
       - 字家ノ裏
     - towns:
       - 字寒水
+      own: 1
+      koku: 23
     - towns:
       - 字寺下
     - towns:
@@ -4050,6 +4168,8 @@ areas:
       koku: 16
     - towns:
       - 字犹花
+      own: 1
+      koku: 21
     - towns:
       - 字猪ノ鼻
       own: 2
@@ -4078,6 +4198,8 @@ areas:
       koku: 22
     - towns:
       - 字膝森
+      own: 1
+      koku: 33
     - towns:
       - 字舘ノ下
       - 字家ノ下
@@ -4095,6 +4217,8 @@ areas:
       - 字荒屋
     - towns:
       - 字荒熊内
+      own: 1
+      koku: 51
     - towns:
       - 字菩提木
       own: 2
@@ -4182,6 +4306,8 @@ areas:
       - 字鳥谷部
     - towns:
       - 字鶴児平
+      own: 1
+      koku: 123
     - towns:
       - 字鶴打田
 
@@ -4198,8 +4324,12 @@ areas:
       koku: 99
     - towns:
       - 大字下吉田
+      own: 2
+      koku: 72
     - towns:
       - 大字小平
+      own: 2
+      koku: 39
     - towns:
       - 大字折茂
       own: 2
@@ -4210,10 +4340,12 @@ areas:
       koku: 31
     - towns:
       - 大字犬落瀬
-      own: 2
+      own: 1
       koku: 207
     - towns:
       - 大字鶴喰
+      own: 2
+      koku: 57
     - towns:
       - 小松ケ丘１丁目
       - 小松ケ丘６丁目
@@ -4221,6 +4353,8 @@ areas:
       koku: 18
     - towns:
       - 小松ケ丘２丁目
+      own: 2
+      koku: 12
     - towns:
       - 小松ケ丘３丁目
       own: 2
@@ -4259,6 +4393,8 @@ areas:
       - 一川目４丁目
     - towns:
       - 丈の端
+      own: 1
+      koku: 21
     - towns:
       - 三九郎
     - towns:
@@ -4355,6 +4491,8 @@ areas:
       - 新田
     - towns:
       - 明土
+      own: 1
+      koku: 16
     - towns:
       - 木ノ下南
     - towns:
@@ -4397,8 +4535,12 @@ areas:
       - 獺野
     - towns:
       - 瓢
+      own: 1
+      koku: 64
     - towns:
       - 神明前
+      own: 1
+      koku: 28
     - towns:
       - 秋堂
     - towns:
@@ -4415,8 +4557,12 @@ areas:
       - 萱の前
     - towns:
       - 西下川原
+      own: 1
+      koku: 24
     - towns:
       - 西下谷地
+      own: 1
+      koku: 33
     - towns:
       - 西前川原
     - towns:
@@ -4467,6 +4613,11 @@ areas:
       - 鶉久保山
     - towns:
       - 黒坂谷地
+    - towns:
+      - 南下田
+      - 舘越
+      own: 1
+      koku: 12
 
 
   青森県 三戸郡五戸町:
@@ -4758,7 +4909,7 @@ areas:
       - 大字法光寺
     - towns:
       - 大字法師岡
-      own: 2
+      own: 1
       koku: 54
     - towns:
       - 大字片岸
@@ -4768,6 +4919,8 @@ areas:
       - 大字相内
     - towns:
       - 大字福田
+      own: 2
+      koku: 89
     - towns:
       - 大字苫米地
     - towns:
@@ -4964,12 +5117,16 @@ areas:
       - 大字瀬辺地
     - towns:
       - 大字蓬田
+      own: 1
+      koku: 91
     - towns:
       - 大字郷沢
     - towns:
       - 大字長科
     - towns:
       - 大字阿弥陀川
+      own: 1
+      koku: 79
 
 
   青森県 東津軽郡外ヶ浜町:
@@ -5122,6 +5279,9 @@ areas:
       - 字蟹田大平沢辺
     - towns:
       - 字蟹田大平高石
+      - 字蟹田小国西小国山
+      own: 1
+      koku: 155
     - towns:
       - 字蟹田姥ケ沢
     - towns:
@@ -5141,11 +5301,11 @@ areas:
     - towns:
       - 字蟹田小国東小国山
     - towns:
-      - 字蟹田小国西小国山
-    - towns:
       - 字蟹田小国谷田
     - towns:
       - 字蟹田小国館下
+      own: 1
+      koku: 28
     - towns:
       - 字蟹田小国黒山添
     - towns:
@@ -5180,8 +5340,12 @@ areas:
     correspondences:
     - towns:
       - 大字今別
+      own: 1
+      koku: 181
     - towns:
       - 大字大川平
+      own: 1
+      koku: 234
     - towns:
       - 大字大泊
     - towns:
@@ -5190,6 +5354,8 @@ areas:
       - 大字山崎
     - towns:
       - 大字浜名
+      own: 1
+      koku: 51
     - towns:
       - 大字砂ケ森
     - towns:
