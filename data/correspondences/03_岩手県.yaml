@@ -68,6 +68,8 @@ areas:
       - 上鹿妻
     - towns:
       - 下厨川
+      own: 1
+      koku: 77
     - towns:
       - 下太田
     - towns:
@@ -116,6 +118,8 @@ areas:
       - 前九年２丁目
     - towns:
       - 前九年３丁目
+      own: 1
+      koku: 19
     - towns:
       - 加賀野
     - towns:
@@ -356,6 +360,8 @@ areas:
       - 津志田西１丁目
     - towns:
       - 津志田西２丁目
+      own: 1
+      koku: 15
     - towns:
       - 流通センター北１丁目
     - towns:
@@ -370,6 +376,8 @@ areas:
       - 清水町
     - towns:
       - 渋民
+      own: 1
+      koku: 112
     - towns:
       - 湯沢
     - towns:
@@ -382,10 +390,16 @@ areas:
       - 玉山永井
     - towns:
       - 玉山馬場
+      own: 1
+      koku: 171
     - towns:
       - 盛岡駅前北通
+      own: 1
+      koku: 13
     - towns:
       - 盛岡駅前通
+      own: 1
+      koku: 21
     - towns:
       - 盛岡駅西通１丁目
     - towns:
@@ -458,6 +472,8 @@ areas:
       - 門
     - towns:
       - 門前寺
+      own: 1
+      koku: 73
     - towns:
       - 門１丁目
     - towns:
@@ -963,6 +979,8 @@ areas:
       - 材木町
     - towns:
       - 東十二丁目
+      own: 1
+      koku: 81
     - towns:
       - 東和町上浮田
     - towns:
@@ -1696,6 +1714,8 @@ areas:
       - 真柴
     - towns:
       - 舞川
+      own: 1
+      koku: 179
     - towns:
       - 花泉町日形
     - towns:
@@ -2363,6 +2383,8 @@ areas:
       - 水沢区花園町２丁目
     - towns:
       - 水沢区黒石町
+      own: 1
+      koku: 162
     - towns:
       - 江刺区伊手
     - towns:
@@ -2393,6 +2415,8 @@ areas:
       - 江刺区田原
     - towns:
       - 江刺区稲瀬
+      own: 1
+      koku: 163
     - towns:
       - 江刺区稲瀬字２丁目
     - towns:
@@ -3183,6 +3207,8 @@ areas:
       - 大字久保
     - towns:
       - 大字五日市
+      own: 1
+      koku: 143
     - towns:
       - 大字土川
     - towns:
@@ -3199,6 +3225,8 @@ areas:
       - 大字江刈内
     - towns:
       - 大字沼宮内
+      own: 1
+      koku: 194
     - towns:
       - 大字葉木田
     - towns:
@@ -3235,6 +3263,8 @@ areas:
       - 南伝法寺
     - towns:
       - 南日詰
+      own: 1
+      koku: 70
     - towns:
       - 吉水
     - towns:
@@ -3915,7 +3945,7 @@ areas:
       koku: 117
     - towns:
       - 水沢
-      own: 1
+      own: 2
       koku: 164
     - towns:
       - 種市

@@ -189,8 +189,12 @@ areas:
       koku: 19
     - towns:
       - 吉敷町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 吉敷町４丁目
+      own: 1
+      koku: 18
     - towns:
       - 土手町１丁目
       own: 1
@@ -270,6 +274,8 @@ areas:
       own: 1
     - towns:
       - 浅間町２丁目
+      own: 1
+      koku: 12
     - towns:
       - 錦町
       own: 1
