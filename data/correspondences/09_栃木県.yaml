@@ -1,7 +1,7 @@
 ﻿view_state:
   latitude: 36.713
-  longitude: 136.720
-  zoom: 7.5
+  longitude: 139.720
+  zoom: 8.0
 
 areas:
   栃木県 宇都宮市:
@@ -68,6 +68,8 @@ areas:
       - 上横倉町
     - towns:
       - 上横田町
+      own: 1
+      koku: 49
     - towns:
       - 上欠町
     - towns:
@@ -86,12 +88,16 @@ areas:
       - 下反町町
     - towns:
       - 下小倉町
+      own: 1
+      koku: 87
     - towns:
       - 下小池町
     - towns:
       - 下岡本町
     - towns:
       - 下川俣町
+      own: 1
+      koku: 41
     - towns:
       - 下平出町
     - towns:
@@ -1971,6 +1977,8 @@ areas:
       - 城北６丁目
     - towns:
       - 城山町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 城東１丁目
     - towns:
@@ -2838,6 +2846,8 @@ areas:
       - 東町
     - towns:
       - 沢
+      own: 1
+      koku: 52
     - towns:
       - 泉
     - towns:
@@ -2910,6 +2920,8 @@ areas:
       - 上郷屋
     - towns:
       - 下中野
+      own: 1
+      koku: 52
     - towns:
       - 下厚崎
     - towns:
@@ -3588,6 +3600,8 @@ areas:
       - 花田
     - towns:
       - 薬師寺
+      own: 1
+      koku: 82
     - towns:
       - 谷地賀
     - towns:
@@ -3985,6 +3999,8 @@ areas:
       - 至宝２丁目
       - 至宝３丁目
       - 若草町
+
+
   栃木県 下都賀郡野木町:
     view_state:
       latitude: 36.228809763489735
@@ -3999,6 +4015,8 @@ areas:
       - 大字佐川野
     - towns:
       - 大字南赤塚
+      own: 1
+      koku: 64
     - towns:
       - 大字友沼
     - towns:
@@ -4063,6 +4081,8 @@ areas:
       - 大字飯岡
     - towns:
       - 大字鳥羽新田
+
+
   栃木県 塩谷郡高根沢町:
     view_state:
       latitude: 36.630092844134296
@@ -4130,6 +4150,8 @@ areas:
       - 大字狭間田
       - 大字給部
       - 宝石台３丁目
+
+
   栃木県 那須郡那須町:
     view_state:
       latitude: 37.042812198620446
@@ -4154,6 +4176,8 @@ areas:
       - 大字寺子丙
     - towns:
       - 大字寺子乙
+      own: 1
+      koku: 146
     - towns:
       - 大字東岩崎
     - towns:
