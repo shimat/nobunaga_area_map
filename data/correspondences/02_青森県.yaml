@@ -1093,6 +1093,8 @@ areas:
       - 八太郎６丁目
     - towns:
       - 内丸１丁目
+      own: 2
+      koku: 13
     - towns:
       - 北インター工業団地１丁目
       own: 2
@@ -1141,6 +1143,8 @@ areas:
       - 南白山台１丁目
     - towns:
       - 南白山台２丁目
+      own: 2
+      koku: 12
     - towns:
       - 南白山台３丁目
     - towns:
@@ -1244,6 +1248,8 @@ areas:
       koku: 30
     - towns:
       - 大字大久保
+      own: 2
+      koku: 97
     - towns:
       - 大字妙
     - towns:
@@ -1294,18 +1300,24 @@ areas:
       - 大字糠塚
     - towns:
       - 大字美保野
+      own: 2
+      koku: 47
     - towns:
       - 大字豊崎町
       own: 2
       koku: 86
     - towns:
       - 大字金浜
+      own: 2
+      koku: 97
     - towns:
       - 大字長苗代
       own: 1
       koku: 63
     - towns:
       - 大字鮫町
+      own: 2
+      koku: 125
     - towns:
       - 小中野２丁目
     - towns:
@@ -1344,6 +1356,11 @@ areas:
       own: 2
       koku: 11
     - towns:
+      - 日計５丁目
+      - 八太郎４丁目
+      own: 2
+      koku: 12
+    - towns:
       - 旭ヶ丘１丁目
     - towns:
       - 旭ヶ丘３丁目
@@ -1357,10 +1374,14 @@ areas:
       - 是川４丁目
     - towns:
       - 東白山台１丁目
+      own: 2
+      koku: 14
     - towns:
       - 東白山台２丁目
     - towns:
       - 東白山台３丁目
+      own: 2
+      koku: 14
     - towns:
       - 東白山台４丁目
     - towns:
@@ -1435,6 +1456,9 @@ areas:
       - 沼館２丁目
     - towns:
       - 沼館３丁目
+      - 大字沼館
+      own: 2
+      koku: 19
     - towns:
       - 沼館４丁目
     - towns:
@@ -1453,6 +1477,8 @@ areas:
       - 湊高台７丁目
     - towns:
       - 湊高台８丁目
+      own: 2
+      koku: 21
     - towns:
       - 石堂１丁目
       own: 2
@@ -1479,6 +1505,8 @@ areas:
       koku: 15
     - towns:
       - 西白山台３丁目
+      own: 2
+      koku: 15
     - towns:
       - 西白山台４丁目
     - towns:

@@ -3888,6 +3888,8 @@ areas:
       - 大字玉川
     - towns:
       - 大字野田
+
+
   岩手県 九戸郡九戸村:
     view_state:
       latitude: 40.19569325680575
@@ -3896,22 +3898,32 @@ areas:
     correspondences:
     - towns:
       - 大字伊保内
+      own: 2
+      koku: 139
     - towns:
       - 大字小倉
     - towns:
       - 大字山屋
+      own: 2
+      koku: 77
     - towns:
       - 大字山根
     - towns:
       - 大字戸田
     - towns:
       - 大字江刺家
+      own: 2
+      koku: 137
     - towns:
       - 大字荒谷
     - towns:
       - 大字長興寺
+      own: 2
+      koku: 143
     - towns:
       - 大字雪屋
+      own: 2
+      koku: 114
 
   岩手県 九戸郡洋野町:
     view_state:

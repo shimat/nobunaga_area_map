@@ -1472,6 +1472,8 @@ areas:
       koku: 68
     - towns:
       - 三室町
+      own: 2
+      koku: 55
     - towns:
       - 三引町
     - towns:
@@ -1556,7 +1558,7 @@ areas:
       - 中島町西谷内
     - towns:
       - 中島町谷内
-      own: 1
+      own: 2
       koku: 47
     - towns:
       - 中島町豊田
@@ -1627,6 +1629,9 @@ areas:
       koku: 52
     - towns:
       - 垣吉町
+      - 東山町
+      own: 2
+      koku: 31
     - towns:
       - 外林町
     - towns:
@@ -1645,6 +1650,8 @@ areas:
       - 大田町
     - towns:
       - 大野木町
+      own: 2
+      koku: 42
     - towns:
       - 天神川原町
     - towns:
@@ -1659,6 +1666,8 @@ areas:
       - 小池川原町
     - towns:
       - 山崎町
+      own: 2
+      koku: 75
     - towns:
       - 岡町
     - towns:
@@ -1689,8 +1698,6 @@ areas:
       - 東三階町
       own: 2
       koku: 32
-    - towns:
-      - 東山町
     - towns:
       - 東浜町
     - towns:
@@ -1723,6 +1730,8 @@ areas:
       koku: 18
     - towns:
       - 湯川町
+      own: 2
+      koku: 51
     - towns:
       - 満仁町
       own: 2
@@ -1773,6 +1782,8 @@ areas:
       koku: 33
     - towns:
       - 能登島えの目町
+      own: 2
+      koku: 47
     - towns:
       - 能登島久木町
     - towns:
@@ -1789,6 +1800,8 @@ areas:
       - 能登島南町
     - towns:
       - 能登島向田町
+      own: 2
+      koku: 91
     - towns:
       - 能登島日出ケ島町
     - towns:
@@ -1801,12 +1814,16 @@ areas:
       - 能登島百万石町
     - towns:
       - 能登島祖母ケ浦町
+      own: 2
+      koku: 35
     - towns:
       - 能登島通町
     - towns:
       - 能登島野崎町
     - towns:
       - 能登島長崎町
+      own: 2
+      koku: 52
     - towns:
       - 能登島閨町
     - towns:
@@ -1819,8 +1836,6 @@ areas:
       - 若林町
       own: 2
       koku: 31
-    - towns:
-      - 菅沢町
     - towns:
       - 藤橋町
       own: 2
@@ -1861,25 +1876,39 @@ areas:
       koku: 32
     - towns:
       - 高田町
+      own: 2
+      koku: 32
     - towns:
       - 鵜浦町
     - towns:
       - 麻生町
     - towns:
       - 黒崎町
+      - 菅沢町
+      own: 2
+      koku: 65
+    - towns:
+      - 山王町
+      - 上府中町
+      own: 2
+      koku: 12
+    - towns:
+      - 南藤橋町
+      - 北藤橋町
+      - 御祓町
+      own: 2
+      koku: 13
     - towns:
       - つつじが浜
       - なぎの浦
       - 一本杉町
       - 三島町
-      - 上府中町
       - 上野ヶ丘町
       - 亀山町
       - 今町
       - 作事町
       - 光陽台
       - 北藤橋町
-      - 南藤橋町
       - 和倉町ひばり１丁目
       - 和倉町ひばり２丁目
       - 塗師町
@@ -1889,10 +1918,8 @@ areas:
       - 小丸山台１丁目
       - 小丸山台２丁目
       - 小丸山台３丁目
-      - 山王町
       - 川原町
       - 常盤町
-      - 御祓町
       - 昭和町
       - 木町
       - 松本町
@@ -5208,12 +5235,17 @@ areas:
       - 小田中
     - towns:
       - 小竹
+      own: 2
+      koku: 49
     - towns:
       - 小金森
     - towns:
       - 尾崎
+      own: 2
+      koku: 20
     - towns:
       - 川田
+      own: 2
     - towns:
       - 廿九日
       own: 2
@@ -5269,6 +5301,8 @@ areas:
       koku: 26
     - towns:
       - 能登部上
+      own: 2
+      koku: 38
     - towns:
       - 能登部下
     - towns:
