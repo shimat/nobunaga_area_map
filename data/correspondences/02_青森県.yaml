@@ -1089,8 +1089,12 @@ areas:
       - 八太郎３丁目
     - towns:
       - 八太郎５丁目
+      own: 2
+      koku: 12
     - towns:
       - 八太郎６丁目
+      own: 2
+      koku: 14
     - towns:
       - 内丸１丁目
       own: 2
@@ -1147,6 +1151,8 @@ areas:
       koku: 12
     - towns:
       - 南白山台３丁目
+      own: 2
+      koku: 12
     - towns:
       - 南郷大字中野
     - towns:
@@ -1181,16 +1187,24 @@ areas:
       koku: 12
     - towns:
       - 吹上１丁目
+      own: 2
+      koku: 15
     - towns:
       - 吹上２丁目
+      own: 2
+      koku: 15
     - towns:
       - 吹上３丁目
+      own: 2
+      koku: 13
     - towns:
       - 吹上４丁目
     - towns:
       - 吹上５丁目
     - towns:
       - 吹上６丁目
+      own: 2
+      koku: 14
     - towns:
       - 城下１丁目
     - towns:
@@ -1217,6 +1231,8 @@ areas:
       koku: 14
     - towns:
       - 多賀台１丁目
+      own: 2
+      koku: 14
     - towns:
       - 多賀台２丁目
       own: 2
@@ -1319,6 +1335,11 @@ areas:
       own: 2
       koku: 125
     - towns:
+      - 小中野１丁目
+      - 柏崎５丁目
+      own: 2
+      koku: 13
+    - towns:
       - 小中野２丁目
     - towns:
       - 小中野３丁目
@@ -1392,12 +1413,18 @@ areas:
       - 柏崎１丁目
     - towns:
       - 柏崎２丁目
+      own: 2
+      koku: 11
     - towns:
       - 柏崎３丁目
     - towns:
       - 柏崎４丁目
+      own: 2
+      koku: 12
     - towns:
       - 柏崎６丁目
+      own: 2
+      koku: 12
     - towns:
       - 根城１丁目
     - towns:
@@ -1436,20 +1463,25 @@ areas:
       - 桔梗野工業団地２丁目
     - towns:
       - 桔梗野工業団地３丁目
+      own: 2
+      koku: 19
     - towns:
       - 桜ヶ丘２丁目
     - towns:
       - 桜ヶ丘４丁目
     - towns:
       - 江陽１丁目
+      own: 2
+      koku: 16
     - towns:
       - 江陽２丁目
     - towns:
       - 江陽３丁目
+      - 江陽５丁目
+      own: 2
+      koku: 29
     - towns:
       - 江陽４丁目
-    - towns:
-      - 江陽５丁目
     - towns:
       - 沼館１丁目
     - towns:
@@ -1511,6 +1543,8 @@ areas:
       - 西白山台４丁目
     - towns:
       - 西白山台５丁目
+      own: 2
+      koku: 14
     - towns:
       - 西白山台６丁目
     - towns:
@@ -1532,6 +1566,8 @@ areas:
       - 長者１丁目
     - towns:
       - 長者２丁目
+      own: 2
+      koku: 12
     - towns:
       - 長者３丁目
     - towns:
@@ -1554,6 +1590,8 @@ areas:
       koku: 13
     - towns:
       - 青葉１丁目
+      own: 2
+      koku: 12
     - towns:
       - 青葉２丁目
     - towns:
@@ -4545,6 +4583,8 @@ areas:
       - 染屋
     - towns:
       - 沼小屋
+      own: 2
+      koku: 21
     - towns:
       - 沼端
     - towns:
@@ -4877,8 +4917,12 @@ areas:
     correspondences:
     - towns:
       - 大字原
+      own: 2
+      koku: 110
     - towns:
       - 大字夏坂
+      own: 2
+      koku: 113
     - towns:
       - 大字山口
     - towns:
@@ -4887,6 +4931,8 @@ areas:
       koku: 297
     - towns:
       - 大字相米
+      own: 2
+      koku: 141
     - towns:
       - 大字石亀
     - towns:
@@ -4895,6 +4941,8 @@ areas:
       - 大字遠瀬
     - towns:
       - 大字関
+      own: 2
+      koku: 199
     - towns:
       - 字平成田
 
@@ -4921,6 +4969,8 @@ areas:
       - 大字小向
     - towns:
       - 大字小泉
+      own: 2
+      koku: 41
     - towns:
       - 大字平
     - towns:
@@ -4951,12 +5001,16 @@ areas:
       koku: 89
     - towns:
       - 大字苫米地
+      own: 2
+      koku: 81
     - towns:
       - 大字虎渡
     - towns:
       - 大字赤石
     - towns:
       - 大字高橋
+      own: 2
+      koku: 29
     - towns:
       - 大字高瀬
     - towns:
@@ -4977,8 +5031,12 @@ areas:
       - 大字平内
     - towns:
       - 大字晴山沢
+      own: 2
+      koku: 100
     - towns:
       - 大字田代
+      own: 2
+      koku: 110
     - towns:
       - 大字角柄折
     - towns:

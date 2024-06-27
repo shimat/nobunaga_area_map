@@ -1495,8 +1495,6 @@ areas:
     - towns:
       - 中島町古江
     - towns:
-      - 中島町呉竹
-    - towns:
       - 中島町土川
       own: 2
       koku: 84
@@ -1532,6 +1530,9 @@ areas:
       - 中島町横見
     - towns:
       - 中島町河内
+      - 中島町呉竹
+      own: 2
+      koku: 113
     - towns:
       - 中島町河崎
     - towns:
@@ -1640,6 +1641,8 @@ areas:
       koku: 76
     - towns:
       - 大和町
+      own: 2
+      koku: 13
     - towns:
       - 大泊町
     - towns:
@@ -1672,8 +1675,12 @@ areas:
       - 岡町
     - towns:
       - 川尻町
+      own: 2
+      koku: 23
     - towns:
       - 府中町
+      own: 2
+      koku: 12
     - towns:
       - 庵町
     - towns:
@@ -1702,6 +1709,8 @@ areas:
       - 東浜町
     - towns:
       - 松百町
+      own: 2
+      koku: 38
     - towns:
       - 柑子町
     - towns:
@@ -1712,6 +1721,8 @@ areas:
       koku: 51
     - towns:
       - 江泊町
+      own: 2
+      koku: 48
     - towns:
       - 池崎町
       own: 2
@@ -1742,12 +1753,17 @@ areas:
       koku: 90
     - towns:
       - 田鶴浜町
+      - 上野ヶ丘町
+      own: 2
+      koku: 37
     - towns:
       - 町屋町
       own: 2
       koku: 17
     - towns:
       - 白浜町
+      own: 2
+      koku: 36
     - towns:
       - 白馬町
       own: 2
@@ -1762,6 +1778,8 @@ areas:
       koku: 47
     - towns:
       - 矢田新町
+      own: 2
+      koku: 23
     - towns:
       - 矢田町
     - towns:
@@ -1770,6 +1788,8 @@ areas:
       koku: 44
     - towns:
       - 石崎町香島１丁目
+      own: 2
+      koku: 12
     - towns:
       - 祖浜町
       own: 2
@@ -1790,6 +1810,8 @@ areas:
       - 能登島二穴町
     - towns:
       - 能登島佐波町
+      own: 2
+      koku: 48
     - towns:
       - 能登島八ケ崎町
     - towns:
@@ -1899,7 +1921,16 @@ areas:
       own: 2
       koku: 13
     - towns:
+      - なぎの浦
       - つつじが浜
+      own: 2
+      koku: 12
+    - towns:
+      - 泉南台
+      - 石崎町香島３丁目
+      own: 2
+      koku: 12
+    - towns:
       - なぎの浦
       - 一本杉町
       - 三島町
@@ -1926,14 +1957,12 @@ areas:
       - 桜町
       - 桧物町
       - 橘町
-      - 泉南台
       - 湊町１丁目
       - 湊町２丁目
       - 生駒町
       - 白銀町
       - 相生町
       - 石崎町香島２丁目
-      - 石崎町香島３丁目
       - 神明町
       - 米町
       - 袖ケ江町
@@ -4829,6 +4858,8 @@ areas:
       - 字旭ケ丘
       - 字緑台２丁目
       - 字鶴ケ丘３丁目
+
+
   石川県 羽咋郡志賀町:
     view_state:
       latitude: 37.089057749977606
@@ -4861,6 +4892,8 @@ areas:
       - 代田
     - towns:
       - 倉垣
+      own: 2
+      koku: 61
     - towns:
       - 入釜
     - towns:
@@ -5064,6 +5097,8 @@ areas:
       - 前浜
       - 西山台１丁目
       - 西山台２丁目
+
+
   石川県 羽咋郡宝達志水町:
     view_state:
       latitude: 36.82598099461574
@@ -5076,6 +5111,8 @@ areas:
       - 上田出
     - towns:
       - 上田出外
+      own: 2
+      koku: 84
     - towns:
       - 下石
     - towns:
@@ -5098,6 +5135,8 @@ areas:
       - 南吉田
     - towns:
       - 原
+      own: 2
+      koku: 86
     - towns:
       - 吉野屋
     - towns:
@@ -5108,6 +5147,8 @@ areas:
       - 子浦
     - towns:
       - 宝達
+      own: 2
+      koku: 76
     - towns:
       - 宿
     - towns:
@@ -5122,6 +5163,8 @@ areas:
       - 御舘外
     - towns:
       - 所司原
+      own: 2
+      koku: 87
     - towns:
       - 散田
     - towns:
@@ -5149,8 +5192,6 @@ areas:
     - towns:
       - 海老坂
     - towns:
-      - 清水原
-    - towns:
       - 石坂
     - towns:
       - 竹生野
@@ -5172,8 +5213,13 @@ areas:
       - 菅原
     - towns:
       - 見砂
+      own: 2
+      koku: 51
     - towns:
       - 走入
+      - 清水原
+      own: 2
+      koku: 59
     - towns:
       - 針山
     - towns:
@@ -5197,8 +5243,12 @@ areas:
       koku: 39
     - towns:
       - 上後山
+      own: 2
+      koku: 51
     - towns:
       - 下後山
+      own: 2
+      koku: 29
     - towns:
       - 久乃木
       own: 2
@@ -5239,6 +5289,8 @@ areas:
       koku: 49
     - towns:
       - 小金森
+      own: 2
+      koku: 22
     - towns:
       - 尾崎
       own: 2
@@ -5252,6 +5304,8 @@ areas:
       koku: 17
     - towns:
       - 徳丸
+      own: 2
+      koku: 36
     - towns:
       - 徳前
       - 浅井
@@ -5267,6 +5321,8 @@ areas:
       koku: 43
     - towns:
       - 曽祢
+      own: 2
+      koku: 27
     - towns:
       - 最勝講
       own: 2
@@ -5305,6 +5361,8 @@ areas:
       koku: 38
     - towns:
       - 能登部下
+      own: 2
+      koku: 55
     - towns:
       - 良川
       own: 2

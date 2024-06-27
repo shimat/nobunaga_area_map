@@ -1400,6 +1400,8 @@ areas:
       - 青柳町２丁目
       - 黒沢尻２丁目
       - 黒沢尻４丁目
+
+
   岩手県 久慈市:
     view_state:
       latitude: 40.14361236927258
@@ -1414,8 +1416,12 @@ areas:
       - 侍浜町
     - towns:
       - 夏井町
+      own: 2
+      koku: 199
     - towns:
       - 大川目町
+      own: 2
+      koku: 214
     - towns:
       - 大沢
     - towns:
@@ -1958,6 +1964,8 @@ areas:
     correspondences:
     - towns:
       - 上斗米
+      own: 2
+      koku: 206
     - towns:
       - 下斗米
     - towns:
@@ -3183,6 +3191,8 @@ areas:
       - 中町
       - 晴山
       - 町裏
+
+
   岩手県 岩手郡葛巻町:
     view_state:
       latitude: 40.005787965435054
@@ -3193,8 +3203,12 @@ areas:
       - 江刈
     - towns:
       - 田部
+      own: 2
+      koku: 211
     - towns:
       - 葛巻
+
+
   岩手県 岩手郡岩手町:
     view_state:
       latitude: 39.95341337750151
@@ -3910,6 +3924,8 @@ areas:
       - 大字山根
     - towns:
       - 大字戸田
+      own: 2
+      koku: 207
     - towns:
       - 大字江刺家
       own: 2

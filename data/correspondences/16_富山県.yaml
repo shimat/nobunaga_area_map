@@ -2442,6 +2442,8 @@ areas:
       - 福岡町江尻
     - towns:
       - 福岡町沢川
+      own: 2
+      koku: 94
     - towns:
       - 福岡町矢部
     - towns:
@@ -3121,6 +3123,8 @@ areas:
       - 見内
     - towns:
       - 角間
+      own: 2
+      koku: 72
     - towns:
       - 触坂
     - towns:
@@ -3901,6 +3905,8 @@ areas:
       - 宇治新
     - towns:
       - 安楽寺
+      own: 2
+      koku: 55
     - towns:
       - 安養寺
     - towns:
