@@ -1487,6 +1487,8 @@ areas:
       - 横山町１丁目
       - 横山町２丁目
       - 長谷
+
+
   茨城県 石岡市:
     view_state:
       latitude: 36.2278112038853
@@ -3004,17 +3006,29 @@ areas:
     - towns:
       - 井野１丁目
     - towns:
+      - 井野２丁目
       - 井野３丁目
+      - 青柳１丁目
+      own: 1
+      koku: 17
     - towns:
       - 取手
+      own: 1
+      koku: 40
     - towns:
       - 取手１丁目
+      own: 1
+      koku: 18
     - towns:
       - 取手２丁目
+      own: 1
+      koku: 12
     - towns:
       - 台宿２丁目
     - towns:
       - 吉田
+      own: 1
+      koku: 25
     - towns:
       - 和田
     - towns:
@@ -3065,6 +3079,8 @@ areas:
       - 新川
     - towns:
       - 新町１丁目
+      own: 1
+      koku: 15
     - towns:
       - 新町３丁目
     - towns:
@@ -3075,8 +3091,17 @@ areas:
       - 本郷３丁目
     - towns:
       - 東３丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 東５丁目
+      - 台宿１丁目
+      own: 1
+      koku: 13
     - towns:
       - 東６丁目
+      own: 1
+      koku: 13
     - towns:
       - 桑原
     - towns:
@@ -3103,6 +3128,8 @@ areas:
       - 白山２丁目
     - towns:
       - 白山５丁目
+      own: 1
+      koku: 13
     - towns:
       - 白山６丁目
     - towns:
@@ -3143,8 +3170,12 @@ areas:
       - 野々井
     - towns:
       - 長兵衛新田
+      own: 1
+      koku: 31
     - towns:
       - 青柳
+      own: 1
+      koku: 32
     - towns:
       - 駒場１丁目
     - towns:
@@ -3167,7 +3198,6 @@ areas:
       - 双葉３丁目
       - 取手３丁目
       - 台宿
-      - 台宿１丁目
       - 戸頭１丁目
       - 戸頭５丁目
       - 新取手２丁目
@@ -3183,14 +3213,14 @@ areas:
       - 東１丁目
       - 東２丁目
       - 東４丁目
-      - 東５丁目
       - 片町
       - 白山３丁目
       - 白山４丁目
       - 紫水２丁目
       - 紫水３丁目
       - 藤代南３丁目
-      - 青柳１丁目
+
+
   茨城県 牛久市:
     view_state:
       latitude: 35.97181154717036

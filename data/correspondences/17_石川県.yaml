@@ -1583,6 +1583,8 @@ areas:
       koku: 50
     - towns:
       - 佐々波町
+      own: 2
+      koku: 68
     - towns:
       - 佐味町
       own: 2

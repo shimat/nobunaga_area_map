@@ -5053,6 +5053,8 @@ areas:
       - 蒼前東２丁目
     - towns:
       - 蒼前東３丁目
+      own: 2
+      koku: 22
     - towns:
       - 蒼前東４丁目
     - towns:
