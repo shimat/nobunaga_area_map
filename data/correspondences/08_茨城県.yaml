@@ -4483,8 +4483,14 @@ areas:
       - けやき台５丁目
     - towns:
       - ひがし野１丁目
+      - ひがし野４丁目
+      own: 1
+      koku: 14
     - towns:
+      - ひがし野２丁目
       - ひがし野３丁目
+      own: 1
+      koku: 16
     - towns:
       - みずき野４丁目
     - towns:
@@ -4495,6 +4501,14 @@ areas:
       - みずき野７丁目
     - towns:
       - 中央１丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 中央２丁目
+      - 中央３丁目
+      - 中央４丁目
+      own: 1
+      koku: 12
     - towns:
       - 久保ケ丘１丁目
     - towns:
@@ -4509,6 +4523,8 @@ areas:
       - 大木
     - towns:
       - 大柏
+      own: 1
+      koku: 50
     - towns:
       - 小山
     - towns:
@@ -4519,20 +4535,30 @@ areas:
       - 御所ケ丘５丁目
     - towns:
       - 本町
+      own: 1
+      koku: 55
     - towns:
       - 松ケ丘１丁目
+      own: 1
+      koku: 12
     - towns:
       - 松ケ丘２丁目
+      own: 1
+      koku: 12
     - towns:
       - 松ケ丘３丁目
     - towns:
       - 松ケ丘４丁目
     - towns:
       - 松ケ丘５丁目
+      own: 1
+      koku: 11
     - towns:
       - 松ケ丘６丁目
     - towns:
       - 松並
+      own: 1
+      koku: 41
     - towns:
       - 松前台１丁目
     - towns:
@@ -4547,12 +4573,20 @@ areas:
       - 板戸井
     - towns:
       - 百合ケ丘１丁目
+      own: 1
+      koku: 21
     - towns:
       - 百合ケ丘２丁目
+      own: 1
+      koku: 25
     - towns:
       - 百合ケ丘３丁目
+      own: 1
+      koku: 20
     - towns:
       - 立沢
+      own: 1
+      koku: 45
     - towns:
       - 緑１丁目
     - towns:
@@ -4578,16 +4612,14 @@ areas:
     - towns:
       - 高野
     - towns:
-      - けやき台６丁目
-      - ひがし野２丁目
-      - ひがし野４丁目
       - みずき野１丁目
       - みずき野２丁目
       - みずき野３丁目
+      own: 1
+      koku: 15
+    - towns:
+      - けやき台６丁目
       - みずき野８丁目
-      - 中央２丁目
-      - 中央３丁目
-      - 中央４丁目
       - 久保ケ丘２丁目
       - 久保ケ丘３丁目
       - 御所ケ丘１丁目
@@ -6377,6 +6409,8 @@ areas:
       - 福田
     - towns:
       - 筒戸
+      own: 1
+      koku: 50
     - towns:
       - 箕輪
     - towns:

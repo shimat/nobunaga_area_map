@@ -7867,24 +7867,33 @@ areas:
       - 日の出３丁目
     - towns:
       - 日の出５丁目
+      own: 1
+      koku: 15
     - towns:
       - 日の出６丁目
     - towns:
       - 日の出７丁目
-    - towns:
       - 日の出８丁目
+      own: 1
+      koku: 20
     - towns:
       - 明海１丁目
     - towns:
       - 明海２丁目
     - towns:
       - 明海４丁目
+      own: 1
+      koku: 15
     - towns:
       - 明海５丁目
+      own: 1
+      koku: 16
     - towns:
       - 明海６丁目
     - towns:
       - 明海７丁目
+      own: 1
+      koku: 15
     - towns:
       - 東野１丁目
     - towns:
@@ -7949,8 +7958,8 @@ areas:
       - 高洲９丁目
     - towns:
       - 入船６丁目
-      - 日の出４丁目
       - 明海３丁目
+
   千葉県 四街道市:
     view_state:
       latitude: 35.67162749237853

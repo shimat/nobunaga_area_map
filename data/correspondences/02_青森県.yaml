@@ -5051,6 +5051,8 @@ areas:
       - 蒼前東１丁目
     - towns:
       - 蒼前東２丁目
+      own: 2
+      koku: 25
     - towns:
       - 蒼前東３丁目
       own: 2

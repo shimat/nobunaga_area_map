@@ -1675,6 +1675,8 @@ areas:
       koku: 75
     - towns:
       - 岡町
+      own: 2
+      koku: 32
     - towns:
       - 川尻町
       own: 2
