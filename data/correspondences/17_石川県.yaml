@@ -1820,6 +1820,8 @@ areas:
       - 能登島八ケ崎町
     - towns:
       - 能登島別所町
+      own: 2
+      koku: 46
     - towns:
       - 能登島半浦町
     - towns:
@@ -1832,6 +1834,8 @@ areas:
       - 能登島日出ケ島町
     - towns:
       - 能登島曲町
+      own: 2
+      koku: 62
     - towns:
       - 能登島無関町
     - towns:

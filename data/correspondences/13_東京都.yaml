@@ -433,6 +433,8 @@ areas:
     correspondences:
     - towns:
       - 赤坂１丁目
+      own: 1
+      koku: 13
     - towns:
       - 赤坂２丁目
     - towns:
@@ -449,14 +451,22 @@ areas:
       - 赤坂６丁目
     - towns:
       - 赤坂７丁目
+      own: 1
+      koku: 13
     - towns:
       - 赤坂８丁目
+      own: 1
+      koku: 14
     - towns:
       - 赤坂９丁目
+      own: 1
+      koku: 14
     - towns:
       - 北青山１丁目
     - towns:
       - 北青山２丁目
+      own: 1
+      koku: 15
     - towns:
       - 北青山３丁目
       own: 1
@@ -465,11 +475,15 @@ areas:
       own: 1
     - towns:
       - 南青山２丁目
+      own: 1
+      koku: 23
     - towns:
       - 南青山３丁目
       own: 1
     - towns:
       - 南青山４丁目
+      own: 1
+      koku: 15
     - towns:
       - 南青山５丁目
       own: 1
@@ -523,9 +537,13 @@ areas:
       own: 1
     - towns:
       - 六本木１丁目
+      own: 1
+      koku: 12
     - towns:
       - 六本木２丁目
       - 六本木４丁目
+      own: 1
+      koku: 14
     - towns:
       - 六本木３丁目
       own: 1
@@ -1876,29 +1894,52 @@ areas:
       - 新砂１丁目
     - towns:
       - 新砂２丁目
+      - (町名無し)
+      own: 1
+      koku: 38
     - towns:
       - 新砂３丁目
       own: 1
     - towns:
       - 夢の島１丁目
+      own: 1
+      koku: 17
     - towns:
       - 夢の島２丁目
+      own: 1
+      koku: 18
     - towns:
       - 夢の島３丁目
+      own: 1
+      koku: 17
     - towns:
       - 新木場１丁目
+      own: 1
+      koku: 29
     - towns:
       - 新木場２丁目
+      own: 1
+      koku: 33
     - towns:
       - 新木場３丁目
+      own: 1
+      koku: 23
     - towns:
       - 新木場４丁目
+      own: 1
+      koku: 24
     - towns:
       - 若洲１丁目
+      own: 1
+      koku: 24
     - towns:
       - 若洲２丁目
+      own: 1
+      koku: 20
     - towns:
       - 若洲３丁目
+      own: 1
+      koku: 31
     - towns:
       - 有明１丁目
       own: 1
@@ -3702,6 +3743,8 @@ areas:
       own: 1
     - towns:
       - 神宮前２丁目
+      own: 1
+      koku: 15
     - towns:
       - 神宮前３丁目
     - towns:

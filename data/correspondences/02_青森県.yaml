@@ -1482,6 +1482,8 @@ areas:
       koku: 29
     - towns:
       - 江陽４丁目
+      own: 1
+      koku: 21
     - towns:
       - 沼館１丁目
     - towns:
@@ -5039,8 +5041,12 @@ areas:
       koku: 110
     - towns:
       - 大字角柄折
+      own: 2
+      koku: 98
     - towns:
       - 大字赤保内
+      own: 2
+      koku: 99
     - towns:
       - 大字道仏
     - towns:
