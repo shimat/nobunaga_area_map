@@ -6,8 +6,8 @@ view_state:
 areas:
   富山県 富山市:
     view_state:
-      latitude: 36.546558893320224
-      longitude: 137.29936133377657
+      latitude: 36.5465
+      longitude: 137.2993
       zoom: 10.0
     correspondences:
     - towns:
@@ -2967,6 +2967,8 @@ areas:
       - 南大町
     - towns:
       - 吉岡
+      own: 2
+      koku: 30
     - towns:
       - 吉懸
     - towns:
@@ -2993,6 +2995,8 @@ areas:
       - 大浦新町
     - towns:
       - 大窪
+      own: 2
+      koku: 37
     - towns:
       - 大野
     - towns:
@@ -3029,8 +3033,12 @@ areas:
       - 布施
     - towns:
       - 平
+      own: 2
+      koku: 33
     - towns:
       - 平沢
+      own: 2
+      koku: 40
     - towns:
       - 幸町
     - towns:
@@ -3107,6 +3115,8 @@ areas:
       - 老谷
     - towns:
       - 胡桃
+      own: 2
+      koku: 69
     - towns:
       - 脇
     - towns:
@@ -3915,6 +3925,8 @@ areas:
       - 宮須
     - towns:
       - 小森谷
+      own: 2
+      koku: 53
     - towns:
       - 小神
     - towns:
@@ -3947,6 +3959,10 @@ areas:
       - 新西
     - towns:
       - 末友
+      - 末沢新
+      - 川開新
+      own: 2
+      koku: 59
     - towns:
       - 本町
     - towns:
@@ -4083,9 +4099,7 @@ areas:
       - 安養寺新
       - 小矢部
       - 小矢部町
-      - 川開新
       - 新富町
-      - 末沢新
       - 津沢１丁目
       - 清原
       - 畠中

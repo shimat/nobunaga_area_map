@@ -1978,6 +1978,8 @@ areas:
       - 安比
     - towns:
       - 浄法寺町
+      own: 2
+      koku: 412
     - towns:
       - 浄法寺町上外野
     - towns:

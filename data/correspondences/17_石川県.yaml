@@ -1492,6 +1492,8 @@ areas:
       koku: 87
     - towns:
       - 中島町北免田
+      own: 2
+      koku: 51
     - towns:
       - 中島町古江
     - towns:
@@ -1539,6 +1541,8 @@ areas:
       - 中島町浜田
     - towns:
       - 中島町深浦
+      own: 2
+      koku: 33
     - towns:
       - 中島町瀬嵐
     - towns:
@@ -1569,6 +1573,8 @@ areas:
       - 中島町長浦
     - towns:
       - 中島町鳥越
+      own: 2
+      koku: 48
     - towns:
       - 中島町鹿島台
       own: 2
@@ -1619,8 +1625,17 @@ areas:
       koku: 81
     - towns:
       - 和倉町
+      own: 2
+      koku: 38
+    - towns:
+      - 和倉町ひばり１丁目
+      - 和倉町ひばり２丁目
+      own: 2
+      koku: 11
     - towns:
       - 和倉町ひばり３丁目
+      own: 2
+      koku: 11
     - towns:
       - 国下町
       own: 2
@@ -1649,6 +1664,8 @@ areas:
       - 大泊町
     - towns:
       - 大津町
+      own: 2
+      koku: 64
     - towns:
       - 大田新町
     - towns:
@@ -1737,6 +1754,8 @@ areas:
       - 津向町
     - towns:
       - 深見町
+      own: 2
+      koku: 42
     - towns:
       - 清水平町
     - towns:
@@ -1795,6 +1814,11 @@ areas:
       own: 2
       koku: 12
     - towns:
+      - 石崎町香島２丁目
+      - 光陽台
+      own: 2
+      koku: 13
+    - towns:
       - 祖浜町
       own: 2
       koku: 27
@@ -1812,6 +1836,8 @@ areas:
       - 能登島久木町
     - towns:
       - 能登島二穴町
+      own: 2
+      koku: 30
     - towns:
       - 能登島佐波町
       own: 2
@@ -1832,6 +1858,8 @@ areas:
       koku: 91
     - towns:
       - 能登島日出ケ島町
+      own: 2
+      koku: 27
     - towns:
       - 能登島曲町
       own: 2
@@ -1842,6 +1870,8 @@ areas:
       - 能登島田尻町
     - towns:
       - 能登島百万石町
+      own: 2
+      koku: 30
     - towns:
       - 能登島祖母ケ浦町
       own: 2
@@ -1946,10 +1976,7 @@ areas:
       - 亀山町
       - 今町
       - 作事町
-      - 光陽台
       - 北藤橋町
-      - 和倉町ひばり１丁目
-      - 和倉町ひばり２丁目
       - 塗師町
       - 大手町
       - 富岡町
@@ -1970,7 +1997,6 @@ areas:
       - 生駒町
       - 白銀町
       - 相生町
-      - 石崎町香島２丁目
       - 神明町
       - 米町
       - 袖ケ江町
@@ -2456,6 +2482,8 @@ areas:
       - 三井町仁行
     - towns:
       - 三井町内屋
+      own: 2
+      koku: 68
     - towns:
       - 三井町小泉
     - towns:
@@ -3443,6 +3471,8 @@ areas:
       - 上白瀬町
     - towns:
       - 下曽祢町
+      own: 2
+      koku: 28
     - towns:
       - 中央町
     - towns:
@@ -5052,6 +5082,8 @@ areas:
       - 舘
     - towns:
       - 舘開
+      own: 2
+      koku: 60
     - towns:
       - 若葉台
     - towns:
