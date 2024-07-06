@@ -2939,6 +2939,8 @@ areas:
       - 中村
     - towns:
       - 中波
+      own: 2
+      koku: 62
     - towns:
       - 中田
     - towns:
@@ -3891,6 +3893,8 @@ areas:
       - 別所滝
     - towns:
       - 北一
+      own: 2
+      koku: 40
     - towns:
       - 千石
     - towns:
@@ -4565,6 +4569,8 @@ areas:
       - 蓑谷
     - towns:
       - 蔵原
+      own: 2
+      koku: 57
     - towns:
       - 蛇喰
     - towns:

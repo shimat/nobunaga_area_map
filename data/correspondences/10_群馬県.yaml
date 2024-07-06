@@ -549,7 +549,20 @@ areas:
     - towns:
       - 下佐野町
     - towns:
+      - 下和田町１丁目
+      - 下和田町３丁目
+      - 和田町
+      own: 1
+      koku: 12
+    - towns:
       - 下和田町２丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 下和田町４丁目
+      - 下和田町５丁目
+      own: 1
+      koku: 13
     - towns:
       - 下大島町
     - towns:
@@ -630,6 +643,8 @@ areas:
       - 八千代町４丁目
     - towns:
       - 八島町
+      own: 1
+      koku: 13
     - towns:
       - 八幡原町
     - towns:
@@ -652,6 +667,8 @@ areas:
       - 南新波町
     - towns:
       - 双葉町
+      own: 1
+      koku: 22
     - towns:
       - 台新田町
     - towns:
@@ -740,6 +757,8 @@ areas:
       - 大沢町
     - towns:
       - 宮元町
+      own: 1
+      koku: 11
     - towns:
       - 宮原町
     - towns:
@@ -780,6 +799,8 @@ areas:
       - 日高町
     - towns:
       - 旭町
+      own: 1
+      koku: 12
     - towns:
       - 昭和町
     - towns:
@@ -794,6 +815,8 @@ areas:
       - 東国分町
     - towns:
       - 東町
+      own: 1
+      koku: 15
     - towns:
       - 東貝沢町１丁目
     - towns:
@@ -806,6 +829,9 @@ areas:
       - 柴崎町
     - towns:
       - 栄町
+      - 北双葉町
+      own: 1
+      koku: 19
     - towns:
       - 栗崎町
     - towns:
@@ -822,6 +848,8 @@ areas:
       - 正観寺町
     - towns:
       - 江木町
+      own: 1
+      koku: 38
     - towns:
       - 沖町
     - towns:
@@ -852,6 +880,8 @@ areas:
       - 稲荷台町
     - towns:
       - 竜見町
+      own: 1
+      koku: 13
     - towns:
       - 筑縄町
     - towns:
@@ -896,6 +926,8 @@ areas:
       - 芝塚町
     - towns:
       - 若松町
+      own: 1
+      koku: 12
     - towns:
       - 若田町
     - towns:
@@ -930,12 +962,20 @@ areas:
       - 飯玉町
     - towns:
       - 高松町
+      own: 1
+      koku: 20
     - towns:
       - 高浜町
     - towns:
       - 高関町
     - towns:
       - 鼻高町
+    - towns:
+      - 鶴見町
+      - 新田町
+      - 南町
+      own: 1
+      koku: 11
 
 
   群馬県 桐生市:

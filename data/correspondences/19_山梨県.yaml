@@ -429,6 +429,8 @@ areas:
       - 里吉町
       - 金竹町
       - 青沼１丁目
+
+
   山梨県 富士吉田市:
     view_state:
       latitude: 35.43984818733017
@@ -437,30 +439,62 @@ areas:
     correspondences:
     - towns:
       - 上吉田
+      own: 1
+      koku: 289
     - towns:
       - 上吉田２丁目
+      own: 1
+      koku: 11
     - towns:
       - 上吉田３丁目
+      own: 1
+      koku: 12
     - towns:
       - 上吉田５丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 上吉田４丁目
+      - 上吉田６丁目
+      own: 1
+      koku: 13
     - towns:
       - 上吉田７丁目
+      own: 1
+      koku: 11
     - towns:
       - 上暮地
+      own: 1
+      koku: 85
     - towns:
       - 上暮地１丁目
+      own: 1
+      koku: 15
     - towns:
       - 上暮地２丁目
     - towns:
       - 上暮地３丁目
+      own: 1
+      koku: 12
     - towns:
       - 上暮地４丁目
+      own: 1
+      koku: 11
     - towns:
       - 上暮地５丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 上暮地６丁目
+      - 上暮地７丁目
+      own: 1
+      koku: 15
     - towns:
       - 上暮地８丁目
     - towns:
       - 下吉田
+      own: 1
+      koku: 43
     - towns:
       - 下吉田東１丁目
     - towns:
@@ -471,12 +505,22 @@ areas:
       - 下吉田東４丁目
     - towns:
       - 下吉田１丁目
+      - 下吉田３丁目
+      - 富士見１丁目
+      own: 1
+      koku: 18
     - towns:
       - 下吉田２丁目
+      own: 1
+      koku: 15
     - towns:
       - 下吉田４丁目
+      own: 1
+      koku: 13
     - towns:
       - 下吉田５丁目
+      own: 1
+      koku: 15
     - towns:
       - 下吉田６丁目
     - towns:
@@ -487,6 +531,9 @@ areas:
       - 下吉田９丁目
     - towns:
       - 中曽根１丁目
+      - 上吉田１丁目
+      own: 1
+      koku: 14
     - towns:
       - 中曽根２丁目
     - towns:
@@ -507,71 +554,124 @@ areas:
       - 大明見６丁目
     - towns:
       - 富士見２丁目
+      own: 1
+      koku: 12
     - towns:
       - 富士見３丁目
+      own: 1
+      koku: 13
     - towns:
       - 富士見４丁目
+      own: 1
+      koku: 12
     - towns:
       - 富士見５丁目
+      own: 1
+      koku: 13
     - towns:
       - 富士見６丁目
+      own: 1
+      koku: 14
     - towns:
       - 富士見７丁目
+      own: 1
+      koku: 12
     - towns:
       - 小明見
     - towns:
       - 新倉
+      own: 1
+      koku: 57
     - towns:
       - 新屋
+      own: 1
+      koku: 58
     - towns:
       - 新西原１丁目
+      own: 1
+      koku: 15
     - towns:
       - 新西原２丁目
+      own: 1
+      koku: 17
     - towns:
       - 新西原３丁目
+      own: 1
+      koku: 12
     - towns:
       - 新西原４丁目
+      own: 1
+      koku: 13
     - towns:
       - 新西原５丁目
+      own: 1
+      koku: 16
     - towns:
       - 旭２丁目
+      own: 1
+      koku: 13
     - towns:
       - 旭３丁目
+      own: 1
+      koku: 12
     - towns:
       - 旭４丁目
+      own: 1
+      koku: 12
     - towns:
       - 旭５丁目
+      own: 1
+      koku: 13
     - towns:
       - 松山
+      own: 1
+      koku: 36
     - towns:
       - 松山１丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 松山２丁目
+      - 松山３丁目
+      own: 1
+      koku: 14
     - towns:
       - 松山４丁目
+      own: 1
+      koku: 12
     - towns:
       - 松山５丁目
+      own: 1
+      koku: 11
     - towns:
       - 竜ケ丘１丁目
+      own: 1
+      koku: 12
     - towns:
       - 竜ケ丘２丁目
+      - 旭１丁目
+      own: 1
+      koku: 15
     - towns:
       - 竜ケ丘３丁目
+      own: 1
+      koku: 12
     - towns:
+      - 緑ケ丘１丁目
       - 緑ケ丘２丁目
+      own: 1
+      koku: 14
     - towns:
       - ときわ台１丁目
       - ときわ台２丁目
-      - 上吉田１丁目
+      own: 1
+      koku: 13
+    - towns:
       - 上吉田４丁目
       - 上吉田６丁目
-      - 上暮地６丁目
-      - 上暮地７丁目
-      - 下吉田３丁目
       - 中曽根４丁目
-      - 富士見１丁目
-      - 旭１丁目
-      - 松山２丁目
-      - 松山３丁目
-      - 緑ケ丘１丁目
+
+
   山梨県 都留市:
     view_state:
       latitude: 35.536699781729624
@@ -586,8 +686,12 @@ areas:
       - つる５丁目
     - towns:
       - 上谷
+      own: 1
+      koku: 47
     - towns:
       - 上谷４丁目
+      own: 1
+      koku: 11
     - towns:
       - 上谷５丁目
     - towns:
@@ -600,20 +704,30 @@ areas:
       - 中津森
     - towns:
       - 井倉
+      own: 1
+      koku: 63
     - towns:
       - 加畑
     - towns:
       - 十日市場
+      own: 1
+      koku: 39
     - towns:
       - 厚原
     - towns:
       - 古川渡
+      own: 1
+      koku: 26
     - towns:
       - 四日市場
+      own: 1
+      koku: 36
     - towns:
       - 境
     - towns:
       - 夏狩
+      own: 1
+      koku: 32
     - towns:
       - 大原
     - towns:
@@ -628,6 +742,8 @@ areas:
       - 川棚
     - towns:
       - 川茂
+      own: 1
+      koku: 28
     - towns:
       - 平栗
     - towns:
@@ -638,18 +754,27 @@ areas:
       - 朝日馬場
     - towns:
       - 桂町
+      own: 1
+      koku: 24
     - towns:
       - 法能
     - towns:
       - 玉川
     - towns:
       - 田原１丁目
+      own: 1
+      koku: 13
     - towns:
       - 田原２丁目
+      - 田原４丁目
+      own: 1
+      koku: 16
     - towns:
       - 田原３丁目
     - towns:
       - 田野倉
+      own: 1
+      koku: 56
     - towns:
       - 盛里
     - towns:
@@ -670,7 +795,8 @@ areas:
       - 中央２丁目
       - 中央３丁目
       - 中央４丁目
-      - 田原４丁目
+
+
   山梨県 山梨市:
     view_state:
       latitude: 35.79719028791052
@@ -809,26 +935,38 @@ areas:
       - 初狩町中初狩
     - towns:
       - 大月町大月
+      own: 1
+      koku: 37
     - towns:
       - 大月町真木
     - towns:
       - 大月町花咲
     - towns:
-      - 大月町駒橋
-    - towns:
       - 大月１丁目
+      own: 1
+      koku: 13
     - towns:
       - 大月２丁目
+      own: 1
+      koku: 17
     - towns:
       - 大月３丁目
+      own: 1
+      koku: 12
     - towns:
       - 富浜町宮谷
     - towns:
       - 富浜町鳥沢
+      own: 1
+      koku: 102
     - towns:
       - 御太刀１丁目
+      own: 1
+      koku: 11
     - towns:
       - 御太刀２丁目
+      own: 1
+      koku: 15
     - towns:
       - 梁川町塩瀬
     - towns:
@@ -837,8 +975,12 @@ areas:
       - 梁川町立野
     - towns:
       - 梁川町綱の上
+      own: 1
+      koku: 56
     - towns:
       - 猿橋町伊良原
+      own: 1
+      koku: 13
     - towns:
       - 猿橋町小沢
     - towns:
@@ -847,16 +989,24 @@ areas:
       - 猿橋町朝日小沢
     - towns:
       - 猿橋町桂台１丁目
+      own: 1
+      koku: 19
     - towns:
       - 猿橋町桂台２丁目
     - towns:
       - 猿橋町桂台３丁目
     - towns:
       - 猿橋町殿上
+      own: 1
+      koku: 27
     - towns:
       - 猿橋町猿橋
+      own: 1
+      koku: 68
     - towns:
       - 猿橋町藤崎
+      own: 1
+      koku: 73
     - towns:
       - 笹子町吉久保
     - towns:
@@ -869,18 +1019,31 @@ areas:
       - 賑岡町岩殿
     - towns:
       - 賑岡町強瀬
+      own: 1
+      koku: 36
     - towns:
       - 賑岡町浅利
+      own: 1
+      koku: 58
     - towns:
       - 賑岡町畑倉
     - towns:
       - 駒橋１丁目
+      own: 1
+      koku: 12
     - towns:
       - 駒橋２丁目
+      - 大月町駒橋
+      own: 1
+      koku: 43
     - towns:
       - 駒橋３丁目
+      own: 1
+      koku: 13
     - towns:
       - 賑岡町ゆりケ丘
+
+
   山梨県 韮崎市:
     view_state:
       latitude: 35.71770619084486
@@ -1605,6 +1768,8 @@ areas:
       - 川合
     - towns:
       - 新田
+      own: 1
+      koku: 29
     - towns:
       - 松留
     - towns:
@@ -2230,6 +2395,7 @@ areas:
     - towns:
       - 岩瀬
       - 笹久根
+
   山梨県 南都留郡西桂町:
     view_state:
       latitude: 35.530756388161684
@@ -2238,10 +2404,15 @@ areas:
     correspondences:
     - towns:
       - 下暮地
+      own: 1
+      koku: 103
     - towns:
       - 倉見
     - towns:
       - 小沼
+      own: 1
+      koku: 38
+
   山梨県 南都留郡忍野村:
     view_state:
       latitude: 35.45965880102308
@@ -2302,6 +2473,8 @@ areas:
       - 精進
     - towns:
       - 船津
+      own: 1
+      koku: 106
     - towns:
       - 西湖
     - towns:
@@ -2310,6 +2483,8 @@ areas:
       - 西湖西
     - towns:
       - 長浜
+
+
   山梨県 北都留郡小菅村:
     view_state:
       latitude: 35.74769689405363

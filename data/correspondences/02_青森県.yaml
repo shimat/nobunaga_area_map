@@ -4481,6 +4481,8 @@ areas:
       - 下前田
     - towns:
       - 下境
+      own: 2
+      koku: 18
     - towns:
       - 下屋敷
     - towns:
@@ -5107,8 +5109,13 @@ areas:
       - 蒼前東８丁目
     - towns:
       - 蒼前西１丁目
+      - 蒼前西７丁目
+      own: 2
+      koku: 14
     - towns:
       - 蒼前西２丁目
+      own: 1
+      koku: 11
     - towns:
       - 蒼前西３丁目
     - towns:
@@ -5117,8 +5124,12 @@ areas:
       koku: 11
     - towns:
       - 蒼前西５丁目
+      own: 2
+      koku: 12
     - towns:
       - 蒼前西６丁目
+      own: 2
+      koku: 15
 
 
   青森県 東津軽郡平内町:

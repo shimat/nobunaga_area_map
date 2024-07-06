@@ -745,14 +745,20 @@ areas:
       koku: 11
     - towns:
       - 高田馬場３丁目
+      own: 1
+      koku: 17
     - towns:
       - 高田馬場４丁目
+      own: 1
+      koku: 17
     - towns:
       - 西早稲田１丁目
       own: 2
       koku: 16
     - towns:
       - 西早稲田２丁目
+      own: 1
+      koku: 15
     - towns:
       - 西早稲田３丁目
       own: 2
@@ -761,12 +767,18 @@ areas:
       - 戸山１丁目
     - towns:
       - 戸山２丁目
+      own: 1
+      koku: 15
     - towns:
       - 戸山３丁目
+      own: 1
+      koku: 16
     - towns:
       - 大久保１丁目
     - towns:
       - 大久保２丁目
+      own: 1
+      koku: 16
     - towns:
       - 大久保３丁目
       own: 1
@@ -779,12 +791,20 @@ areas:
       own: 1
     - towns:
       - 百人町３丁目
+      own: 1
+      koku: 15
     - towns:
       - 百人町４丁目
+      own: 1
+      koku: 11
     - towns:
       - 北新宿１丁目
+      own: 1
+      koku: 16
     - towns:
       - 北新宿２丁目
+      own: 1
+      koku: 14
     - towns:
       - 北新宿３丁目
       own: 1
@@ -809,6 +829,8 @@ areas:
       own: 1
     - towns:
       - 西新宿８丁目
+      own: 1
+      koku: 12
     - towns:
       - 歌舞伎町１丁目
       own: 1
@@ -828,8 +850,12 @@ areas:
       - 新宿５丁目
     - towns:
       - 新宿６丁目
+      own: 1
+      koku: 16
     - towns:
       - 新宿７丁目
+      own: 1
+      koku: 15
     - towns:
       - 内藤町
     - towns:
@@ -3924,8 +3950,12 @@ areas:
       - 中央５丁目
     - towns:
       - 本町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 本町２丁目
+      own: 1
+      koku: 15
     - towns:
       - 本町３丁目
     - towns:
@@ -7555,12 +7585,16 @@ areas:
       - 大谷町
     - towns:
       - 子安町１丁目
+      own: 1
+      koku: 17
     - towns:
       - 子安町２丁目
     - towns:
       - 子安町３丁目
     - towns:
       - 子安町４丁目
+      own: 1
+      koku: 11
     - towns:
       - 宇津木町
     - towns:
@@ -7613,12 +7647,16 @@ areas:
       - 散田町５丁目
     - towns:
       - 旭町
+      own: 1
+      koku: 14
     - towns:
       - 明神町１丁目
     - towns:
       - 明神町２丁目
     - towns:
       - 明神町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 明神町４丁目
     - towns:

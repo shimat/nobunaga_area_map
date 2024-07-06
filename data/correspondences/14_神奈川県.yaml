@@ -182,6 +182,8 @@ areas:
       - 豊岡町
     - towns:
       - 馬場１丁目
+      own: 1
+      koku: 14
     - towns:
       - 馬場２丁目
     - towns:
@@ -194,6 +196,8 @@ areas:
       - 馬場６丁目
     - towns:
       - 馬場７丁目
+      own: 1
+      koku: 15
     - towns:
       - 駒岡１丁目
     - towns:
@@ -256,6 +260,8 @@ areas:
       - 潮田町２丁目
       - 潮田町３丁目
       - 潮田町４丁目
+
+
   神奈川県 横浜市神奈川区:
     view_state:
       latitude: 35.48546702795974
@@ -264,6 +270,8 @@ areas:
     correspondences:
     - towns:
       - 七島町
+      own: 1
+      koku: 14
     - towns:
       - 三ツ沢上町
     - towns:
@@ -280,8 +288,12 @@ areas:
       - 三枚町
     - towns:
       - 入江１丁目
+      own: 1
+      koku: 14
     - towns:
       - 入江２丁目
+      own: 1
+      koku: 11
     - towns:
       - 六角橋２丁目
     - towns:
@@ -304,6 +316,8 @@ areas:
       - 大口仲町
     - towns:
       - 大口通
+      own: 1
+      koku: 15
     - towns:
       - 子安台１丁目
     - towns:
@@ -331,15 +345,28 @@ areas:
     - towns:
       - 旭ケ丘
     - towns:
+      - 東神奈川１丁目
+      - 西神奈川１丁目
+      own: 1
+      koku: 14
+    - towns:
       - 東神奈川２丁目
+      own: 1
+      koku: 15
     - towns:
       - 松ケ丘
     - towns:
       - 松見町１丁目
+      own: 1
+      koku: 14
     - towns:
       - 松見町２丁目
+      own: 1
+      koku: 14
     - towns:
       - 松見町３丁目
+      own: 1
+      koku: 14
     - towns:
       - 松見町４丁目
     - towns:
@@ -348,8 +375,12 @@ areas:
       - 栗田谷
     - towns:
       - 沢渡
+      own: 1
+      koku: 14
     - towns:
       - 浦島丘
+      own: 1
+      koku: 11
     - towns:
       - 片倉１丁目
     - towns:
@@ -380,6 +411,8 @@ areas:
       - 神之木台
     - towns:
       - 神之木町
+      own: 1
+      koku: 11
     - towns:
       - 神大寺１丁目
     - towns:
@@ -402,8 +435,12 @@ areas:
       - 西大口
     - towns:
       - 西寺尾１丁目
+      own: 1
+      koku: 13
     - towns:
       - 西寺尾２丁目
+      own: 1
+      koku: 15
     - towns:
       - 西寺尾３丁目
     - towns:
@@ -414,15 +451,31 @@ areas:
       - 鈴繁町
     - towns:
       - 高島台
+      own: 1
+      koku: 13
+    - towns:
+      - 鳥越
+      - 富家町
+      - 立町
+      own: 1
+      koku: 14
+    - towns:
+      - 反町１丁目
+      - 広台太田町
+      own: 1
+      koku: 11
+    - towns:
+      - 神奈川本町
+      - 二ツ谷町
+      own: 1
+      koku: 12
     - towns:
       - 上反町１丁目
       - 上反町２丁目
       - 中丸
       - 亀住町
-      - 二ツ谷町
       - 二本榎
       - 六角橋１丁目
-      - 反町１丁目
       - 反町２丁目
       - 反町３丁目
       - 反町４丁目
@@ -432,14 +485,11 @@ areas:
       - 子安通２丁目
       - 守屋町１丁目
       - 守屋町２丁目
-      - 富家町
-      - 広台太田町
       - 新子安２丁目
       - 新浦島町１丁目
       - 新浦島町２丁目
       - 新町
       - 星野町
-      - 東神奈川１丁目
       - 松本町１丁目
       - 松本町２丁目
       - 松本町３丁目
@@ -453,19 +503,18 @@ areas:
       - 泉町
       - 浦島町
       - 白幡町
-      - 神奈川本町
       - 神奈川１丁目
       - 神奈川２丁目
-      - 立町
       - 羽沢南４丁目
       - 西神奈川１丁目
       - 西神奈川２丁目
       - 西神奈川３丁目
       - 青木町
-      - 鳥越
       - 鶴屋町１丁目
       - 鶴屋町２丁目
       - 鶴屋町３丁目
+
+
   神奈川県 横浜市西区:
     view_state:
       latitude: 35.45673990382971
@@ -474,16 +523,26 @@ areas:
     correspondences:
     - towns:
       - みなとみらい１丁目
+      own: 1
+      koku: 18
     - towns:
       - みなとみらい２丁目
+      own: 1
+      koku: 14
     - towns:
       - みなとみらい３丁目
+      own: 1
+      koku: 15
     - towns:
       - みなとみらい４丁目
+      own: 1
+      koku: 16
     - towns:
       - みなとみらい５丁目
     - towns:
       - みなとみらい６丁目
+      own: 1
+      koku: 15
     - towns:
       - 中央１丁目
     - towns:
@@ -493,27 +552,44 @@ areas:
     - towns:
       - 元久保町
     - towns:
+      - 北幸１丁目
+      - 南幸１丁目
+      own: 1
+      koku: 13
+    - towns:
       - 北幸２丁目
+      own: 1
+      koku: 12
     - towns:
       - 北軽井沢
     - towns:
       - 南幸２丁目
+      own: 1
+      koku: 11
     - towns:
       - 南浅間町
     - towns:
       - 南軽井沢
+      own: 1
+      koku: 11
     - towns:
       - 境之谷
     - towns:
       - 宮ケ谷
     - towns:
       - 岡野１丁目
+      own: 1
+      koku: 11
     - towns:
       - 岡野２丁目
     - towns:
       - 平沼１丁目
+      own: 1
+      koku: 14
     - towns:
       - 戸部本町
+      own: 1
+      koku: 12
     - towns:
       - 東久保町
     - towns:
@@ -528,6 +604,8 @@ areas:
       - 藤棚町２丁目
     - towns:
       - 西平沼町
+      own: 1
+      koku: 14
     - towns:
       - 西戸部町１丁目
     - towns:
@@ -537,11 +615,15 @@ areas:
     - towns:
       - 高島２丁目
     - towns:
+      - 楠町
+      - 浅間町１丁目
+      - 浅間町２丁目
+      own: 1
+      koku: 14
+    - towns:
       - 伊勢町１丁目
       - 伊勢町２丁目
       - 伊勢町３丁目
-      - 北幸１丁目
-      - 南幸１丁目
       - 宮崎町
       - 平沼２丁目
       - 御所山町
@@ -557,9 +639,6 @@ areas:
       - 桜木町５丁目
       - 桜木町６丁目
       - 桜木町７丁目
-      - 楠町
-      - 浅間町１丁目
-      - 浅間町２丁目
       - 浅間町４丁目
       - 浅間町５丁目
       - 紅葉ケ丘
@@ -607,8 +686,12 @@ areas:
       - 新山下３丁目
     - towns:
       - 新港１丁目
+      own: 1
+      koku: 15
     - towns:
       - 新港２丁目
+      own: 1
+      koku: 17
     - towns:
       - 本牧ふ頭
     - towns:
@@ -643,8 +726,13 @@ areas:
       - 根岸台
     - towns:
       - 桜木町１丁目
+      - 内田町
+      own: 1
+      koku: 13
     - towns:
       - 海岸通１丁目
+      own: 1
+      koku: 13
     - towns:
       - 滝之上
     - towns:
@@ -663,6 +751,12 @@ areas:
       - 豊浦町
     - towns:
       - 錦町
+    - towns:
+      - 北仲通６丁目
+      - 海岸通５丁目
+      - 本町６丁目
+      own: 1
+      koku: 11
     - towns:
       - 万代町１丁目
       - 万代町２丁目
@@ -697,7 +791,6 @@ areas:
       - 元町３丁目
       - 元町４丁目
       - 元町５丁目
-      - 内田町
       - 初音町１丁目
       - 初音町２丁目
       - 初音町３丁目
@@ -706,7 +799,6 @@ areas:
       - 北仲通３丁目
       - 北仲通４丁目
       - 北仲通５丁目
-      - 北仲通６丁目
       - 北方町１丁目
       - 北方町２丁目
       - 千代崎町１丁目
@@ -798,7 +890,6 @@ areas:
       - 本町３丁目
       - 本町４丁目
       - 本町５丁目
-      - 本町６丁目
       - 本郷町１丁目
       - 本郷町２丁目
       - 松影町１丁目
@@ -817,7 +908,6 @@ areas:
       - 海岸通２丁目
       - 海岸通３丁目
       - 海岸通４丁目
-      - 海岸通５丁目
       - 港町１丁目
       - 港町２丁目
       - 港町３丁目
@@ -1689,8 +1779,12 @@ areas:
       - 箕輪町３丁目
     - towns:
       - 篠原北１丁目
+      own: 1
+      koku: 13
     - towns:
       - 篠原北２丁目
+      own: 1
+      koku: 12
     - towns:
       - 篠原台町
     - towns:
@@ -1735,16 +1829,24 @@ areas:
       - 菊名２丁目
     - towns:
       - 菊名３丁目
+      own: 1
+      koku: 14
     - towns:
       - 菊名４丁目
+      own: 1
+      koku: 12
     - towns:
       - 菊名５丁目
     - towns:
       - 菊名６丁目
     - towns:
       - 菊名７丁目
+      own: 1
+      koku: 13
     - towns:
       - 錦が丘
+      own: 1
+      koku: 13
     - towns:
       - 高田東１丁目
     - towns:

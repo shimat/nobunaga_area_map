@@ -1758,6 +1758,8 @@ areas:
       koku: 42
     - towns:
       - 清水平町
+      own: 2
+      koku: 32
     - towns:
       - 温井町
       own: 2
@@ -1868,6 +1870,8 @@ areas:
       - 能登島無関町
     - towns:
       - 能登島田尻町
+      own: 2
+      koku: 25
     - towns:
       - 能登島百万石町
       own: 2
@@ -1892,6 +1896,8 @@ areas:
       - 舟尾町
     - towns:
       - 花園町
+      own: 2
+      koku: 26
     - towns:
       - 若林町
       own: 2
@@ -2722,6 +2728,8 @@ areas:
       - 門前町南
     - towns:
       - 門前町原
+      own: 2
+      koku: 48
     - towns:
       - 門前町吉浦
     - towns:
@@ -4956,6 +4964,8 @@ areas:
       - 堀松
     - towns:
       - 大坂
+      own: 2
+      koku: 26
     - towns:
       - 大島
     - towns:
