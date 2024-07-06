@@ -2981,6 +2981,8 @@ areas:
       - 味川
     - towns:
       - 国見
+      own: 2
+      koku: 45
     - towns:
       - 園
     - towns:
@@ -3907,6 +3909,8 @@ areas:
       - 和沢
     - towns:
       - 嘉例谷
+      own: 2
+      koku: 66
     - towns:
       - 地崎
     - towns:
@@ -3981,6 +3985,8 @@ areas:
       - 柳原
     - towns:
       - 桜町
+      own: 2
+      koku: 63
     - towns:
       - 棚田
     - towns:
@@ -4083,6 +4089,8 @@ areas:
       - 金屋本江
     - towns:
       - 長
+      own: 2
+      koku: 53
     - towns:
       - 高坂
     - towns:

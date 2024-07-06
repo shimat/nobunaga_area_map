@@ -1295,6 +1295,8 @@ areas:
       - 岩間町２丁目
       - 帷子町１丁目
       - 帷子町２丁目
+
+
   神奈川県 横浜市磯子区:
     view_state:
       latitude: 35.39225960695423
@@ -8627,6 +8629,8 @@ areas:
       - 黒岩
     - towns:
       - 石神台２丁目
+
+
   神奈川県 中郡二宮町:
     view_state:
       latitude: 35.3077287817895
@@ -8840,6 +8844,8 @@ areas:
       - 須雲川
     - towns:
       - 底倉
+
+
   神奈川県 足柄下郡真鶴町:
     view_state:
       latitude: 35.16536601627181
@@ -8848,8 +8854,12 @@ areas:
     correspondences:
     - towns:
       - 岩
+      own: 1
+      koku: 69
     - towns:
       - 真鶴
+
+
   神奈川県 足柄下郡湯河原町:
     view_state:
       latitude: 35.16624326728492
@@ -8858,20 +8868,42 @@ areas:
     correspondences:
     - towns:
       - 中央１丁目
+      own: 1
+      koku: 12
     - towns:
       - 中央２丁目
+      own: 1
+      koku: 11
+    - towns:
+      - 中央３丁目
+      - 中央４丁目
+      - 中央５丁目
+      own: 1
+      koku: 16
     - towns:
       - 吉浜
     - towns:
-      - 土肥２丁目
-    - towns:
+      - 土肥１丁目
+      - 土肥３丁目
       - 土肥４丁目
+      own: 1
+      koku: 17
+    - towns:
+      - 土肥２丁目
+      own: 1
+      koku: 12
     - towns:
       - 土肥５丁目
+      own: 1
+      koku: 12
     - towns:
       - 城堀
+      own: 1
+      koku: 31
     - towns:
       - 宮上
+      own: 1
+      koku: 125
     - towns:
       - 宮下
     - towns:
@@ -8880,16 +8912,15 @@ areas:
       - 鍛冶屋
     - towns:
       - 門川
+      own: 1
+      koku: 13
     - towns:
-      - 中央３丁目
-      - 中央４丁目
-      - 中央５丁目
       - 吉浜福浦
-      - 土肥１丁目
-      - 土肥３丁目
       - 土肥６丁目
       - 福浦吉浜
       - 福浦鍛冶屋
+
+
   神奈川県 愛甲郡愛川町:
     view_state:
       latitude: 35.52884151494048

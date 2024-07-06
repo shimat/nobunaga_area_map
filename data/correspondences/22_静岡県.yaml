@@ -2865,14 +2865,20 @@ areas:
       - 和田町
     - towns:
       - 咲見町
+      own: 1
+      koku: 12
     - towns:
       - 小嵐町
+      own: 1
+      koku: 15
     - towns:
       - 日金町
     - towns:
       - 春日町
     - towns:
       - 東海岸町
+      own: 1
+      koku: 14
     - towns:
       - 林ガ丘町
     - towns:
@@ -2917,12 +2923,20 @@ areas:
       - 青葉町
     - towns:
       - 中央町
-      - 山手町
-      - 昭和町
-      - 清水町
-      - 渚町
-      - 福道町
       - 銀座町
+      own: 1
+      koku: 11
+    - towns:
+      - 昭和町
+      - 渚町
+      - 清水町
+      own: 1
+      koku: 17
+    - towns:
+      - 山手町
+      - 福道町
+
+
   静岡県 三島市:
     view_state:
       latitude: 35.13947593728811
@@ -2931,18 +2945,26 @@ areas:
     correspondences:
     - towns:
       - 一番町
+      own: 1
+      koku: 18
     - towns:
       - 三ツ谷新田
     - towns:
       - 三好町
+      own: 1
+      koku: 11
     - towns:
       - 三恵台
     - towns:
       - 中
+      own: 1
+      koku: 22
     - towns:
       - 中島
     - towns:
       - 中田町
+      own: 1
+      koku: 11
     - towns:
       - 佐野
     - towns:
@@ -2959,30 +2981,58 @@ areas:
       - 加茂
     - towns:
       - 加茂川町
+      own: 1
+      koku: 17
     - towns:
       - 北沢
+      own: 1
+      koku: 23
     - towns:
       - 南二日町
+      own: 1
+      koku: 21
     - towns:
       - 南本町
+      own: 1
+      koku: 12
     - towns:
       - 南田町
+      own: 1
+      koku: 12
     - towns:
       - 南町
+      own: 1
+      koku: 14
     - towns:
       - 塚原新田
     - towns:
       - 壱町田
     - towns:
       - 多呂
+      own: 1
+      koku: 19
     - towns:
       - 大場
+      own: 1
+      koku: 41
+    - towns:
+      - 大宮町１丁目
+      - 芝本町
+      - 中央町
+      own: 1
+      koku: 16
     - towns:
       - 大宮町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 大宮町３丁目
+      own: 1
+      koku: 14
     - towns:
       - 大社町
+      own: 1
+      koku: 12
     - towns:
       - 安久
     - towns:
@@ -2991,6 +3041,8 @@ areas:
       - 富士見台
     - towns:
       - 富田町
+      own: 1
+      koku: 13
     - towns:
       - 山中新田
     - towns:
@@ -3001,6 +3053,8 @@ areas:
       - 平成台
     - towns:
       - 平田
+      own: 1
+      koku: 16
     - towns:
       - 幸原町２丁目
     - towns:
@@ -3017,12 +3071,20 @@ areas:
       - 徳倉４丁目
     - towns:
       - 文教町１丁目
+      own: 1
+      koku: 16
     - towns:
       - 文教町２丁目
+      own: 1
+      koku: 20
     - towns:
       - 新谷
+      own: 1
+      koku: 20
     - towns:
       - 日の出町
+      own: 1
+      koku: 11
     - towns:
       - 旭ヶ丘
     - towns:
@@ -3030,9 +3092,18 @@ areas:
     - towns:
       - 東大場２丁目
     - towns:
+      - 東本町１丁目
+      - 北田町
+      own: 1
+      koku: 14
+    - towns:
       - 東本町２丁目
+      own: 1
+      koku: 15
     - towns:
       - 東町
+      own: 1
+      koku: 12
     - towns:
       - 松本
     - towns:
@@ -3043,6 +3114,8 @@ areas:
       - 沢地
     - towns:
       - 玉川
+      own: 1
+      koku: 19
     - towns:
       - 玉沢
     - towns:
@@ -3051,6 +3124,8 @@ areas:
       - 笹原新田
     - towns:
       - 緑町
+      own: 1
+      koku: 15
     - towns:
       - 芙蓉台１丁目
     - towns:
@@ -3069,29 +3144,37 @@ areas:
       - 長伏
     - towns:
       - 青木
+      - 鶴喰
+      - 藤代町
+      own: 1
+      koku: 23
     - towns:
-      - 中央町
-      - 加屋町
-      - 北田町
-      - 千枚原
-      - 大宮町１丁目
-      - 寿町
-      - 幸原町１丁目
+      - 本町
+      - 西本町
       - 広小路町
+      own: 1
+      koku: 15
+    - towns:
+      - 清住町
+      - 栄町
+      - 加屋町
+      own: 1
+      koku: 17
+    - towns:
+      - 寿町
+      - 西若町
+      - 泉町
+      own: 1
+      koku: 16
+    - towns:
+      - 千枚原
+      - 幸原町１丁目
       - 徳倉５丁目
       - 末広町
-      - 本町
       - 東壱町田
-      - 東本町１丁目
       - 松が丘
-      - 栄町
-      - 泉町
-      - 清住町
-      - 芝本町
-      - 藤代町
-      - 西本町
-      - 西若町
-      - 鶴喰
+
+
   静岡県 富士宮市:
     view_state:
       latitude: 35.30257349401709
@@ -3277,6 +3360,8 @@ areas:
       - 前田町
       - 錦町
       - 阿幸地
+
+
   静岡県 伊東市:
     view_state:
       latitude: 34.93564698124903
@@ -5369,6 +5454,8 @@ areas:
       - 神山平１丁目
       - 神山平２丁目
       - 神山平３丁目
+
+
   静岡県 袋井市:
     view_state:
       latitude: 34.74171203689239
@@ -5559,6 +5646,8 @@ areas:
       - 葵町２丁目
       - 葵町３丁目
       - 青木町
+
+
   静岡県 下田市:
     view_state:
       latitude: 34.708865401430465
@@ -5796,6 +5885,8 @@ areas:
       - 佐野
     - towns:
       - 修善寺
+      own: 1
+      koku: 146
     - towns:
       - 八幡
     - towns:
@@ -5804,6 +5895,8 @@ areas:
       - 冷川
     - towns:
       - 加殿
+      own: 1
+      koku: 58
     - towns:
       - 原保
     - towns:
@@ -5834,6 +5927,8 @@ areas:
       - 小土肥
     - towns:
       - 小立野
+      own: 1
+      koku: 17
     - towns:
       - 市山
     - towns:
@@ -5846,16 +5941,22 @@ areas:
       - 持越
     - towns:
       - 日向
+      own: 1
+      koku: 59
     - towns:
       - 月ケ瀬
     - towns:
       - 本柿木
     - towns:
       - 本立野
+      own: 1
+      koku: 29
     - towns:
       - 松ケ瀬
     - towns:
       - 柏久保
+      own: 1
+      koku: 41
     - towns:
       - 柳瀬
     - towns:
@@ -5864,10 +5965,16 @@ areas:
       - 湯ケ島
     - towns:
       - 熊坂
+      own: 1
+      koku: 51
     - towns:
       - 牧之郷
+      own: 1
+      koku: 55
     - towns:
       - 瓜生野
+      own: 1
+      koku: 29
     - towns:
       - 田代
     - towns:
@@ -6022,6 +6129,8 @@ areas:
       - 柳３丁目
       - 耳川
       - 青葉台２丁目
+
+
   静岡県 伊豆の国市:
     view_state:
       latitude: 35.03802746963037
@@ -6030,6 +6139,8 @@ areas:
     correspondences:
     - towns:
       - 三福
+      own: 1
+      koku: 40
     - towns:
       - 下畑
     - towns:
@@ -6038,38 +6149,56 @@ areas:
       - 中島
     - towns:
       - 中條
+      own: 1
+      koku: 19
     - towns:
       - 内中
     - towns:
       - 北江間
     - towns:
       - 南條
+      own: 1
+      koku: 38
     - towns:
       - 南江間
     - towns:
       - 原木
+      own: 1
+      koku: 36
     - towns:
       - 古奈
     - towns:
       - 吉田
+      own: 1
+      koku: 28
     - towns:
       - 四日町
+      own: 1
+      koku: 37
     - towns:
       - 墹之上
     - towns:
       - 大仁
+      own: 1
+      koku: 26
     - towns:
       - 天野
     - towns:
       - 奈古谷
     - towns:
       - 守木
+      own: 1
+      koku: 32
     - towns:
       - 宗光寺
+      own: 1
+      koku: 39
     - towns:
       - 富士見
     - towns:
       - 寺家
+      own: 1
+      koku: 33
     - towns:
       - 小坂
     - towns:
@@ -6082,12 +6211,16 @@ areas:
       - 田中山
     - towns:
       - 田京
+      own: 1
+      koku: 54
     - towns:
       - 田原野
     - towns:
       - 白山堂
     - towns:
       - 神島
+      own: 1
+      koku: 71
     - towns:
       - 花坂
     - towns:
@@ -6112,6 +6245,8 @@ areas:
       - 立花１丁目
       - 立花２丁目
       - 立花３丁目
+
+
   静岡県 牧之原市:
     view_state:
       latitude: 34.73189060315046
@@ -6384,6 +6519,8 @@ areas:
       - 安良里
     - towns:
       - 田子
+
+
   静岡県 田方郡函南町:
     view_state:
       latitude: 35.11398333489036
@@ -6396,8 +6533,12 @@ areas:
       - 丹那
     - towns:
       - 仁田
+      own: 1
+      koku: 36
     - towns:
       - 塚本
+      own: 1
+      koku: 35
     - towns:
       - 大土肥
     - towns:
@@ -6418,12 +6559,17 @@ areas:
       - 畑毛
     - towns:
       - 肥田
+      - 新田
+      own: 1
+      koku: 31
     - towns:
       - 軽井沢
     - towns:
       - 間宮
-    - towns:
-      - 新田
+      own: 1
+      koku: 33
+
+
   静岡県 駿東郡清水町:
     view_state:
       latitude: 35.09737958487186
@@ -6434,32 +6580,50 @@ areas:
       - 中徳倉
     - towns:
       - 久米田
+      own: 1
+      koku: 20
     - towns:
       - 伏見
+      own: 1
+      koku: 33
     - towns:
       - 八幡
+      own: 1
+      koku: 18
     - towns:
       - 卸団地
     - towns:
       - 堂庭
+      own: 1
+      koku: 25
     - towns:
       - 徳倉
     - towns:
       - 戸田
     - towns:
       - 新宿
+      own: 1
+      koku: 15
     - towns:
       - 柿田
+      own: 1
+      koku: 27
     - towns:
       - 湯川
     - towns:
       - 玉川
+      own: 1
+      koku: 21
     - towns:
       - 畑中
     - towns:
       - 的場
     - towns:
       - 長沢
+      own: 1
+      koku: 31
+
+
   静岡県 駿東郡長泉町:
     view_state:
       latitude: 35.16591327918507
@@ -6472,10 +6636,14 @@ areas:
       - 上長窪
     - towns:
       - 下土狩
+      own: 1
+      koku: 45
     - towns:
       - 下長窪
     - towns:
       - 中土狩
+      own: 1
+      koku: 35
     - towns:
       - 元長窪
     - towns:
@@ -6486,12 +6654,16 @@ areas:
       - 東野
     - towns:
       - 竹原
+      own: 1
+      koku: 23
     - towns:
       - 納米里
     - towns:
       - 桜堤１丁目
       - 桜堤２丁目
       - 桜堤３丁目
+
+
   静岡県 駿東郡小山町:
     view_state:
       latitude: 35.360128177512856

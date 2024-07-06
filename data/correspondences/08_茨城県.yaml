@@ -2969,6 +2969,8 @@ areas:
       - 八雲１丁目
       - 友部駅前
       - 箱田大郷戸
+
+
   茨城県 取手市:
     view_state:
       latitude: 35.912874482102886
@@ -2977,14 +2979,20 @@ areas:
     correspondences:
     - towns:
       - ゆめみ野
+      own: 1
+      koku: 29
     - towns:
       - 上萱場
     - towns:
       - 上高井
+      own: 1
+      koku: 34
     - towns:
       - 下萱場
     - towns:
       - 下高井
+      own: 1
+      koku: 44
     - towns:
       - 中内
     - towns:
@@ -2997,14 +3005,18 @@ areas:
       - 井野台２丁目
     - towns:
       - 井野台３丁目
+      own: 1
+      koku: 13
     - towns:
       - 井野台４丁目
-    - towns:
-      - 井野台５丁目
+      own: 1
+      koku: 12
     - towns:
       - 井野団地
     - towns:
       - 井野１丁目
+      own: 1
+      koku: 11
     - towns:
       - 井野２丁目
       - 井野３丁目
@@ -3024,7 +3036,15 @@ areas:
       own: 1
       koku: 12
     - towns:
+      - 取手３丁目
+      - 新町２丁目
+      - 中央町
+      own: 1
+      koku: 13
+    - towns:
       - 台宿２丁目
+      own: 1
+      koku: 19
     - towns:
       - 吉田
       own: 1
@@ -3039,6 +3059,8 @@ areas:
       - 宮和田
     - towns:
       - 寺田
+      own: 1
+      koku: 51
     - towns:
       - 小堀
     - towns:
@@ -3051,30 +3073,62 @@ areas:
       - 山王
     - towns:
       - 岡
+      own: 1
+      koku: 40
     - towns:
       - 市之代
     - towns:
       - 平野
     - towns:
       - 戸頭
+      own: 1
+      koku: 48
     - towns:
       - 戸頭２丁目
+      own: 1
+      koku: 15
     - towns:
       - 戸頭３丁目
+      own: 1
+      koku: 15
     - towns:
       - 戸頭４丁目
+      - 戸頭５丁目
+      own: 1
+      koku: 13
     - towns:
       - 戸頭６丁目
+      own: 1
+      koku: 15
     - towns:
+      - 戸頭１丁目
       - 戸頭７丁目
+      own: 1
+      koku: 17
     - towns:
       - 戸頭８丁目
+      own: 1
+      koku: 13
     - towns:
       - 戸頭９丁目
+      own: 1
+      koku: 11
     - towns:
       - 押切
     - towns:
       - 新取手１丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 新取手２丁目
+      - 新取手３丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 新取手４丁目
+      - 新取手５丁目
+      own: 1
+      koku: 11
     - towns:
       - 新川
     - towns:
@@ -3083,12 +3137,30 @@ areas:
       koku: 15
     - towns:
       - 新町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 新町４丁目
+      own: 1
+      koku: 12
     - towns:
       - 本郷１丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 本郷２丁目
+      - 井野台５丁目
+      own: 1
+      koku: 15
     - towns:
       - 本郷３丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 本郷４丁目
+      - 本郷５丁目
+      own: 1
+      koku: 14
     - towns:
       - 東３丁目
       own: 1
@@ -3124,14 +3196,26 @@ areas:
       - 渋沼
     - towns:
       - 白山１丁目
+      own: 1
+      koku: 11
     - towns:
       - 白山２丁目
+      own: 1
+      koku: 12
+    - towns:
+      - 白山３丁目
+      - 白山４丁目
+      - 中原町
+      own: 1
+      koku: 13
     - towns:
       - 白山５丁目
       own: 1
       koku: 13
     - towns:
       - 白山６丁目
+      own: 1
+      koku: 15
     - towns:
       - 白山７丁目
     - towns:
@@ -3144,6 +3228,8 @@ areas:
       - 稲
     - towns:
       - 米ノ井
+      own: 1
+      koku: 29
     - towns:
       - 米田
     - towns:
@@ -3164,10 +3250,14 @@ areas:
       - 谷中
     - towns:
       - 貝塚
+      own: 1
+      koku: 25
     - towns:
       - 配松
     - towns:
       - 野々井
+      own: 1
+      koku: 48
     - towns:
       - 長兵衛新田
       own: 1
@@ -3178,17 +3268,23 @@ areas:
       koku: 32
     - towns:
       - 駒場１丁目
+      own: 1
+      koku: 14
     - towns:
       - 駒場２丁目
+      own: 1
+      koku: 12
     - towns:
       - 駒場３丁目
+      own: 1
+      koku: 14
     - towns:
       - 駒場４丁目
+      own: 1
+      koku: 12
     - towns:
       - 高須
     - towns:
-      - 中原町
-      - 中央町
       - 井野２丁目
       - 光風台１丁目
       - 光風台２丁目
@@ -3196,26 +3292,13 @@ areas:
       - 双葉１丁目
       - 双葉２丁目
       - 双葉３丁目
-      - 取手３丁目
       - 台宿
-      - 戸頭１丁目
-      - 戸頭５丁目
-      - 新取手２丁目
-      - 新取手３丁目
-      - 新取手４丁目
-      - 新取手５丁目
-      - 新町２丁目
       - 新町５丁目
       - 新町６丁目
-      - 本郷２丁目
-      - 本郷４丁目
-      - 本郷５丁目
       - 東１丁目
       - 東２丁目
       - 東４丁目
       - 片町
-      - 白山３丁目
-      - 白山４丁目
       - 紫水２丁目
       - 紫水３丁目
       - 藤代南３丁目
@@ -4465,6 +4548,8 @@ areas:
     - towns:
       - 新宮南
       - 福島
+
+
   茨城県 守谷市:
     view_state:
       latitude: 35.94778135271739
@@ -4475,12 +4560,19 @@ areas:
       - けやき台１丁目
     - towns:
       - けやき台２丁目
+      own: 1
+      koku: 14
     - towns:
       - けやき台３丁目
+      own: 1
+      koku: 13
     - towns:
       - けやき台４丁目
     - towns:
       - けやき台５丁目
+      - けやき台６丁目
+      own: 1
+      koku: 15
     - towns:
       - ひがし野１丁目
       - ひがし野４丁目
@@ -4493,12 +4585,21 @@ areas:
       koku: 16
     - towns:
       - みずき野４丁目
+      - みずき野８丁目
+      own: 1
+      koku: 14
     - towns:
       - みずき野５丁目
+      own: 1
+      koku: 12
     - towns:
       - みずき野６丁目
+      own: 1
+      koku: 12
     - towns:
       - みずき野７丁目
+      own: 1
+      koku: 12
     - towns:
       - 中央１丁目
       own: 1
@@ -4515,6 +4616,8 @@ areas:
       - 久保ケ丘４丁目
     - towns:
       - 乙子
+      own: 1
+      koku: 18
     - towns:
       - 同地
     - towns:
@@ -4527,6 +4630,8 @@ areas:
       koku: 50
     - towns:
       - 小山
+      own: 1
+      koku: 17
     - towns:
       - 御所ケ丘３丁目
     - towns:
@@ -4547,8 +4652,13 @@ areas:
       koku: 12
     - towns:
       - 松ケ丘３丁目
+      own: 1
+      koku: 12
     - towns:
       - 松ケ丘４丁目
+      - 松ケ丘７丁目
+      own: 1
+      koku: 15
     - towns:
       - 松ケ丘５丁目
       own: 1
@@ -4592,7 +4702,16 @@ areas:
     - towns:
       - 緑２丁目
     - towns:
+      - 美園１丁目
       - 美園２丁目
+      own: 1
+      koku: 13
+    - towns:
+      - 美園３丁目
+      - 美園４丁目
+      - 美園５丁目
+      own: 1
+      koku: 14
     - towns:
       - 薬師台２丁目
     - towns:
@@ -4609,8 +4728,12 @@ areas:
       - 野木崎
     - towns:
       - 鈴塚
+      own: 1
+      koku: 14
     - towns:
       - 高野
+      own: 1
+      koku: 69
     - towns:
       - みずき野１丁目
       - みずき野２丁目
@@ -4618,21 +4741,16 @@ areas:
       own: 1
       koku: 15
     - towns:
-      - けやき台６丁目
-      - みずき野８丁目
       - 久保ケ丘２丁目
       - 久保ケ丘３丁目
       - 御所ケ丘１丁目
       - 御所ケ丘２丁目
-      - 松ケ丘７丁目
       - 松前台４丁目
       - 松前台６丁目
-      - 美園１丁目
-      - 美園３丁目
-      - 美園４丁目
-      - 美園５丁目
       - 薬師台１丁目
       - 薬師台３丁目
+
+
   茨城県 常陸大宮市:
     view_state:
       latitude: 36.61375137162968

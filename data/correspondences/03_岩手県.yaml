@@ -1432,6 +1432,8 @@ areas:
       - 寺里
     - towns:
       - 小久慈町
+      own: 1
+      koku: 160
     - towns:
       - 山形町小国
     - towns:
@@ -3918,12 +3920,16 @@ areas:
       koku: 139
     - towns:
       - 大字小倉
+      own: 2
+      koku: 55
     - towns:
       - 大字山屋
       own: 2
       koku: 77
     - towns:
       - 大字山根
+      own: 2
+      koku: 102
     - towns:
       - 大字戸田
       own: 2
@@ -3934,6 +3940,8 @@ areas:
       koku: 137
     - towns:
       - 大字荒谷
+      own: 2
+      koku: 44
     - towns:
       - 大字長興寺
       own: 2

@@ -10629,6 +10629,8 @@ areas:
     - towns:
       - 望洋台３丁目
       - 望洋台４丁目
+      own: 1
+      koku: 23
     - towns:
       - 船浜町
       own: 1
@@ -10648,28 +10650,44 @@ areas:
       koku: 21
     - towns:
       - 潮見台２丁目
+      own: 1
+      koku: 19
     - towns:
       - 潮見台３丁目
+      own: 1
+      koku: 29
     - towns:
       - 潮見台４丁目
+      own: 1
+      koku: 18
     - towns:
       - 真栄１丁目
       own: 1
       koku: 16
     - towns:
       - 真栄２丁目
+      own: 1
+      koku: 30
     - towns:
       - 奥沢１丁目
       own: 1
       koku: 15
     - towns:
       - 奥沢２丁目
+      own: 1
+      koku: 11
     - towns:
       - 奥沢３丁目
+      own: 1
+      koku: 17
     - towns:
       - 奥沢４丁目
+      own: 1
+      koku: 20
     - towns:
       - 奥沢５丁目
+      own: 1
+      koku: 35
     - towns:
       - 天神１丁目
       own: 1
@@ -10681,6 +10699,8 @@ areas:
       own: 1
     - towns:
       - 天狗山１丁目
+      own: 2
+      koku: 63
     - towns:
       - 天狗山２丁目
       - 松ケ枝２丁目
@@ -10715,12 +10735,20 @@ areas:
       koku: 13
     - towns:
       - 入船３丁目
+      own: 1
+      koku: 15
     - towns:
       - 入船４丁目
+      own: 1
+      koku: 18
     - towns:
       - 入船５丁目
+      own: 1
+      koku: 15
     - towns:
       - 松ケ枝１丁目
+      own: 1
+      koku: 17
     - towns:
       - 最上１丁目
       own: 1
@@ -10762,14 +10790,20 @@ areas:
       koku: 19
     - towns:
       - 緑１丁目
+      own: 2
+      koku: 15
     - towns:
       - 緑２丁目
       own: 1
       koku: 16
     - towns:
       - 緑３丁目
+      own: 1
+      koku: 21
     - towns:
       - 緑４丁目
+      own: 1
+      koku: 25
     - towns:
       - 緑５丁目
       own: 1

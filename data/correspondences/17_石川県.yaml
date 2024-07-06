@@ -1476,6 +1476,8 @@ areas:
       koku: 55
     - towns:
       - 三引町
+      own: 2
+      koku: 62
     - towns:
       - 下町
       own: 2
@@ -1545,6 +1547,8 @@ areas:
       koku: 33
     - towns:
       - 中島町瀬嵐
+      own: 2
+      koku: 49
     - towns:
       - 中島町田岸
     - towns:
@@ -1571,6 +1575,8 @@ areas:
       - 中島町豊田町
     - towns:
       - 中島町長浦
+      own: 2
+      koku: 39
     - towns:
       - 中島町鳥越
       own: 2
@@ -1597,6 +1603,8 @@ areas:
       koku: 53
     - towns:
       - 佐野町
+      own: 2
+      koku: 54
     - towns:
       - 八幡町
       own: 2
@@ -1615,10 +1623,16 @@ areas:
       koku: 12
     - towns:
       - 古城町
+      own: 2
+      koku: 37
     - towns:
       - 古屋敷町
+      own: 2
+      koku: 15
     - towns:
       - 古府町
+      own: 2
+      koku: 53
     - towns:
       - 吉田町
       own: 2
@@ -1651,8 +1665,6 @@ areas:
       own: 2
       koku: 31
     - towns:
-      - 外林町
-    - towns:
       - 多根町
       own: 2
       koku: 76
@@ -1662,6 +1674,8 @@ areas:
       koku: 13
     - towns:
       - 大泊町
+      own: 2
+      koku: 53
     - towns:
       - 大津町
       own: 2
@@ -1670,22 +1684,28 @@ areas:
       - 大田新町
     - towns:
       - 大田町
+      own: 2
+      koku: 78
     - towns:
       - 大野木町
       own: 2
       koku: 42
     - towns:
       - 天神川原町
+      own: 2
+      koku: 14
     - towns:
       - 奥原町
       own: 2
       koku: 47
     - towns:
       - 小島町
-    - towns:
-      - 小栗町
+      own: 2
+      koku: 35
     - towns:
       - 小池川原町
+      own: 2
+      koku: 15
     - towns:
       - 山崎町
       own: 2
@@ -1704,36 +1724,53 @@ areas:
       koku: 12
     - towns:
       - 庵町
+      own: 2
+      koku: 78
     - towns:
       - 後畠町
+      own: 2
+      koku: 15
     - towns:
       - 所口町
+      own: 2
+      koku: 11
     - towns:
       - 新保町
       own: 2
       koku: 32
     - towns:
       - 新屋町
+      own: 2
+      koku: 10 # 不確か
     - towns:
       - 旭町
       own: 2
       koku: 27
     - towns:
       - 本府中町
+      own: 2
+      koku: 28
     - towns:
       - 杉森町
+      own: 2
+      koku: 33
     - towns:
       - 東三階町
       own: 2
       koku: 32
     - towns:
       - 東浜町
+      own: 2
+      koku: 45
     - towns:
       - 松百町
       own: 2
       koku: 38
     - towns:
       - 柑子町
+      - 外林町
+      own: 2
+      koku: 37
     - towns:
       - 殿町
     - towns:
@@ -1750,8 +1787,12 @@ areas:
       koku: 59
     - towns:
       - 沢野町
+      own: 2
+      koku: 55
     - towns:
       - 津向町
+      own: 2
+      koku: 39
     - towns:
       - 深見町
       own: 2
@@ -1807,6 +1848,8 @@ areas:
       koku: 23
     - towns:
       - 矢田町
+      own: 2
+      koku: 58
     - towns:
       - 石崎町
       own: 2
@@ -1826,6 +1869,8 @@ areas:
       koku: 27
     - towns:
       - 竹町
+      own: 2
+      koku: 17
     - towns:
       - 細口町
       own: 2
@@ -1836,6 +1881,8 @@ areas:
       koku: 47
     - towns:
       - 能登島久木町
+      own: 2
+      koku: 27
     - towns:
       - 能登島二穴町
       own: 2
@@ -1846,14 +1893,20 @@ areas:
       koku: 48
     - towns:
       - 能登島八ケ崎町
+      own: 2
+      koku: 35
     - towns:
       - 能登島別所町
       own: 2
       koku: 46
     - towns:
       - 能登島半浦町
+      own: 2
+      koku: 67
     - towns:
       - 能登島南町
+      own: 2
+      koku: 44
     - towns:
       - 能登島向田町
       own: 2
@@ -1868,6 +1921,8 @@ areas:
       koku: 62
     - towns:
       - 能登島無関町
+      own: 2
+      koku: 40
     - towns:
       - 能登島田尻町
       own: 2
@@ -1882,8 +1937,12 @@ areas:
       koku: 35
     - towns:
       - 能登島通町
+      own: 2
+      koku: 23
     - towns:
       - 能登島野崎町
+      own: 2
+      koku: 60
     - towns:
       - 能登島長崎町
       own: 2
@@ -1892,8 +1951,12 @@ areas:
       - 能登島閨町
     - towns:
       - 能登島須曽町
+      own: 2
+      koku: 65
     - towns:
       - 舟尾町
+      own: 2
+      koku: 45
     - towns:
       - 花園町
       own: 2
@@ -1908,6 +1971,8 @@ areas:
       koku: 42
     - towns:
       - 藤野町
+      own: 2
+      koku: 18
     - towns:
       - 西三階町
       own: 2
@@ -1918,6 +1983,8 @@ areas:
       koku: 22
     - towns:
       - 西藤橋町
+      own: 2
+      koku: 11
     - towns:
       - 赤浦新町
       own: 2
@@ -1935,8 +2002,6 @@ areas:
       own: 2
       koku: 15
     - towns:
-      - 須能町
-    - towns:
       - 飯川町
       own: 2
       koku: 32
@@ -1946,8 +2011,14 @@ areas:
       koku: 32
     - towns:
       - 鵜浦町
+      own: 2
+      koku: 70
     - towns:
       - 麻生町
+      - 小栗町
+      - 須能町
+      own: 2
+      koku: 83
     - towns:
       - 黒崎町
       - 菅沢町
@@ -1975,9 +2046,20 @@ areas:
       own: 2
       koku: 12
     - towns:
+      - 小丸山台１丁目
+      - 小丸山台２丁目
+      - 小丸山台３丁目
+      own: 2
+      koku: 16
+    - towns:
+      - 寿町
+      - 三島町
+      - 昭和町
+      own: 2
+      koku: 11
+    - towns:
       - なぎの浦
       - 一本杉町
-      - 三島町
       - 上野ヶ丘町
       - 亀山町
       - 今町
@@ -1986,13 +2068,8 @@ areas:
       - 塗師町
       - 大手町
       - 富岡町
-      - 寿町
-      - 小丸山台１丁目
-      - 小丸山台２丁目
-      - 小丸山台３丁目
       - 川原町
       - 常盤町
-      - 昭和町
       - 木町
       - 松本町
       - 桜町
@@ -3571,6 +3648,8 @@ areas:
       - 石野町
     - towns:
       - 神子原町
+      own: 2
+      koku: 82
     - towns:
       - 福水町
     - towns:
@@ -3583,6 +3662,8 @@ areas:
       - 羽咋町
     - towns:
       - 菅池町
+      own: 2
+      koku: 50
     - towns:
       - 菱分町
     - towns:
@@ -4775,6 +4856,8 @@ areas:
       - 字潟端
     - towns:
       - 字牛首
+      own: 2
+      koku: 85
     - towns:
       - 字瓜生
     - towns:
@@ -4916,6 +4999,8 @@ areas:
       - 三明
     - towns:
       - 上棚
+      own: 2
+      koku: 124
     - towns:
       - 上野
     - towns:
@@ -5305,20 +5390,24 @@ areas:
       koku: 44
     - towns:
       - 久江
+      own: 2
+      koku: 47
     - towns:
       - 久江原山分
+      own: 2
+      koku: 64
     - towns:
       - 二宮
       own: 2
       koku: 59
     - towns:
       - 井田
+      own: 2
+      koku: 65
     - towns:
       - 今羽坂
       own: 2
       koku: 11
-    - towns:
-      - 原山
     - towns:
       - 在江
       own: 2
@@ -5333,6 +5422,8 @@ areas:
       koku: 49
     - towns:
       - 小田中
+      own: 2
+      koku: 54
     - towns:
       - 小竹
       own: 2
@@ -5391,6 +5482,8 @@ areas:
       koku: 52
     - towns:
       - 水白
+      own: 2
+      koku: 34
     - towns:
       - 瀬戸
       own: 2
@@ -5401,6 +5494,8 @@ areas:
       koku: 86
     - towns:
       - 福田
+      own: 2
+      koku: 21
     - towns:
       - 羽坂
       own: 2
@@ -5423,20 +5518,30 @@ areas:
       koku: 80
     - towns:
       - 芹川
+      - 蟻ケ原
+      - 原山
+      own: 2
+      koku: 66
     - towns:
       - 藤井
-    - towns:
-      - 蟻ケ原
+      own: 2
+      koku: 37
     - towns:
       - 西
       own: 2
       koku: 27
     - towns:
       - 西馬場
+      own: 2
+      koku: 42
     - towns:
       - 金丸
+      own: 2
+      koku: 64
     - towns:
       - 高畠
+      own: 2
+      koku: 61
     - towns:
       - 黒氏
       - 二宮あおば台
@@ -5504,6 +5609,8 @@ areas:
       - 字平野
     - towns:
       - 字志ケ浦
+      own: 2
+      koku: 145
     - towns:
       - 字挾石
     - towns:
@@ -5536,6 +5643,8 @@ areas:
       - 字比良
     - towns:
       - 字汁谷
+      own: 2
+      koku: 60
     - towns:
       - 字沖波
     - towns:

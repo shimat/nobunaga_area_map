@@ -3202,6 +3202,8 @@ areas:
       - 大字飯倉
     - towns:
       - 大字飯塚
+
+
   群馬県 邑楽郡板倉町:
     view_state:
       latitude: 36.228797567644975
@@ -3210,6 +3212,8 @@ areas:
     correspondences:
     - towns:
       - 大字下五箇
+      own: 1
+      koku: 46
     - towns:
       - 大字内蔵新田
     - towns:
@@ -3220,16 +3224,26 @@ areas:
       - 大字大蔵
     - towns:
       - 大字大高嶋
+      own: 1
+      koku: 62
     - towns:
       - 大字岩田
+      own: 1
+      koku: 56
     - towns:
       - 大字板倉
+      own: 1
+      koku: 76
     - towns:
       - 大字海老瀬
+      own: 1
+      koku: 87 # 不確か
     - towns:
       - 大字籾谷
     - towns:
       - 大字細谷
+      own: 1
+      koku: 50
     - towns:
       - 大字西岡
     - towns:
@@ -3240,20 +3254,35 @@ areas:
       - 大字離
     - towns:
       - 大字飯野
+      own: 1
+      koku: 57
     - towns:
       - 朝日野１丁目
+      own: 1
+      koku: 14
     - towns:
       - 朝日野２丁目
+      own: 1
+      koku: 11
     - towns:
       - 朝日野３丁目
+      own: 1
+      koku: 18
     - towns:
       - 朝日野４丁目
+      own: 1
+      koku: 16
     - towns:
       - 泉野１丁目
+      - 泉野３丁目
+      own: 1
+      koku: 27
     - towns:
       - 泉野２丁目
-    - towns:
-      - 泉野３丁目
+      own: 1
+      koku: 25
+
+
   群馬県 邑楽郡明和町:
     view_state:
       latitude: 36.20703949313189

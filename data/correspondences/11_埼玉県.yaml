@@ -3307,6 +3307,8 @@ areas:
       - 古川２丁目
     - towns:
       - 向古河
+      own: 1
+      koku: 44
     - towns:
       - 土手２丁目
     - towns:
@@ -3333,6 +3335,8 @@ areas:
       - 富士見町
     - towns:
       - 小野袋
+      own: 1
+      koku: 41
     - towns:
       - 岡古井
     - towns:
@@ -3391,8 +3395,12 @@ areas:
       - 松永新田
     - towns:
       - 柏戸
+      own: 1
+      koku: 45
     - towns:
       - 柳生
+      own: 1
+      koku: 48
     - towns:
       - 栄
       own: 2
@@ -3462,9 +3470,14 @@ areas:
     - towns:
       - 阿良川
     - towns:
+      - 陽光台１丁目
       - 陽光台２丁目
+      own: 1
+      koku: 15
     - towns:
       - 飯積
+      own: 1
+      koku: 50
     - towns:
       - 馬内
     - towns:
@@ -3475,6 +3488,8 @@ areas:
       - 鴻茎
     - towns:
       - 麦倉
+      own: 1
+      koku: 64
 
 
   埼玉県 本庄市:

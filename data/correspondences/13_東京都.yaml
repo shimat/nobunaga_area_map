@@ -37,11 +37,15 @@ areas:
       own: 1
     - towns:
       - 日比谷公園
+      own: 1
+      koku: 15
     - towns:
       - 霞が関１丁目
       own: 1
     - towns:
       - 霞が関２丁目
+      own: 1
+      koku: 12
     - towns:
       - 霞が関３丁目
       own: 1
@@ -53,6 +57,8 @@ areas:
       own: 1
     - towns:
       - 隼町
+      own: 1
+      koku: 11
     - towns:
       - 平河町２丁目
       own: 1
@@ -72,26 +78,40 @@ areas:
       own: 1
     - towns:
       - 二番町
+      own: 1
+      koku: 11
     - towns:
       - 一番町
       own: 1
     - towns:
       - 六番町
+      own: 1
+      koku: 11
     - towns:
       - 五番町
+      own: 1
+      koku: 11
     - towns:
       - 三番町
+      own: 1
+      koku: 15
     - towns:
       - 四番町
       - 九段南２丁目
       - 九段南３丁目
       - 九段南４丁目
       - 九段北４丁目
+      own: 1
+      koku: 20
     - towns:
       - 北の丸公園
+      own: 1
+      koku: 21
     - towns:
       - 九段北２丁目
       - 九段北３丁目
+      own: 1
+      koku: 14
     - towns:
       - 富士見２丁目
       own: 2
@@ -155,6 +175,8 @@ areas:
     - towns:
       - 内神田１丁目
       - 内神田２丁目
+      own: 1
+      koku: 13
     - towns:
       - 内神田３丁目
       - 神田多町２丁目
@@ -281,13 +303,19 @@ areas:
     - towns:
       - 日本橋堀留町１丁目
       - 日本橋小舟町
+      own: 1
+      koku: 11
     - towns:
       - 日本橋小伝馬町
       - 日本橋本町４丁目
+      own: 1
+      koku: 12
     - towns:
       - 日本橋本町３丁目
       - 日本橋本町２丁目
       - 日本橋本町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 日本橋室町４丁目
       - 日本橋室町３丁目
@@ -310,8 +338,12 @@ areas:
       own: 1
     - towns:
       - 日本橋小網町
+      own: 1
+      koku: 11
     - towns:
       - 日本橋兜町
+      own: 1
+      koku: 11
     - towns:
       - 日本橋茅場町１丁目
       - 日本橋茅場町２丁目
@@ -325,6 +357,8 @@ areas:
     - towns:
       - 八丁堀２丁目
       - 八丁堀３丁目
+      own: 1
+      koku: 13
     - towns:
       - 京橋１丁目
       - 京橋２丁目
@@ -335,6 +369,8 @@ areas:
     - towns:
       - 八丁堀４丁目
       - 湊１丁目
+      own: 1
+      koku: 11
     - towns:
       - 湊２丁目
       - 湊３丁目
@@ -342,6 +378,8 @@ areas:
       - 入船２丁目
       - 入船３丁目
       - 新富１丁目
+      own: 1
+      koku: 17
     - towns:
       - 明石町
     - towns:
@@ -368,6 +406,8 @@ areas:
       - 浜離宮庭園
     - towns:
       - 銀座１丁目
+      own: 1
+      koku: 12
     - towns:
       - 銀座３丁目
       - 銀座４丁目
@@ -775,6 +815,8 @@ areas:
       koku: 16
     - towns:
       - 大久保１丁目
+      own: 1
+      koku: 13
     - towns:
       - 大久保２丁目
       own: 1
@@ -816,14 +858,24 @@ areas:
       own: 1
     - towns:
       - 西新宿２丁目
+      own: 1
+      koku: 19
     - towns:
       - 西新宿３丁目
+      own: 1
+      koku: 15
     - towns:
       - 西新宿４丁目
+      own: 1
+      koku: 16
     - towns:
       - 西新宿５丁目
+      own: 1
+      koku: 12
     - towns:
       - 西新宿６丁目
+      own: 1
+      koku: 15
     - towns:
       - 西新宿７丁目
       own: 1
@@ -3662,8 +3714,12 @@ areas:
       - 代々木２丁目
     - towns:
       - 代々木３丁目
+      own: 1
+      koku: 17
     - towns:
       - 代々木４丁目
+      own: 1
+      koku: 16
     - towns:
       - 代々木５丁目
     - towns:
@@ -3940,8 +3996,12 @@ areas:
       own: 1
     - towns:
       - 中央１丁目
+      own: 1
+      koku: 16
     - towns:
       - 中央２丁目
+      own: 1
+      koku: 18
     - towns:
       - 中央３丁目
     - towns:
@@ -7405,6 +7465,8 @@ areas:
       - 七国６丁目
     - towns:
       - 万町
+      own: 1
+      koku: 15
     - towns:
       - 上壱分方町
     - towns:
@@ -7607,6 +7669,8 @@ areas:
       - 寺田町
     - towns:
       - 寺町
+      own: 1
+      koku: 11
     - towns:
       - 小宮町
     - towns:
@@ -7683,6 +7747,9 @@ areas:
       - 楢原町
     - towns:
       - 横山町
+      - 新町
+      own: 1
+      koku: 14
     - towns:
       - 横川町
     - towns:
