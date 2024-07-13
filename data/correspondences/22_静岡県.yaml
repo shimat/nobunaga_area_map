@@ -1,13 +1,13 @@
 view_state:
-  latitude: 36.650
-  longitude: 137.120
-  zoom: 8.5
+  latitude: 35.10
+  longitude: 138.10
+  zoom: 8.0
 
 areas:
   静岡県 静岡市葵区:
     view_state:
-      latitude: 35.239742096928566
-      longitude: 138.2641633817043
+      latitude: 35.2397
+      longitude: 138.2641
       zoom: 10.0
     correspondences:
     - towns:
