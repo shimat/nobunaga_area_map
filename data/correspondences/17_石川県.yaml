@@ -1484,10 +1484,16 @@ areas:
       koku: 42
     - towns:
       - 中島町上町
+      own: 2
+      koku: 45
     - towns:
       - 中島町上畠
+      own: 2
+      koku: 41
     - towns:
       - 中島町中島
+      own: 2
+      koku: 60
     - towns:
       - 中島町別所
       own: 2
@@ -1498,6 +1504,8 @@ areas:
       koku: 51
     - towns:
       - 中島町古江
+      own: 2
+      koku: 31
     - towns:
       - 中島町土川
       own: 2
@@ -1508,14 +1516,24 @@ areas:
       koku: 61
     - towns:
       - 中島町外
+      own: 2
+      koku: 50
     - towns:
       - 中島町外原
+      own: 2
+      koku: 53
     - towns:
       - 中島町大平
+      own: 2
+      koku: 43
     - towns:
       - 中島町奥吉田
+      own: 2
+      koku: 37
     - towns:
       - 中島町宮前
+      own: 2
+      koku: 14
     - towns:
       - 中島町小牧
       own: 2
@@ -1526,12 +1544,16 @@ areas:
       koku: 43
     - towns:
       - 中島町崎山
+      own: 2
+      koku: 18
     - towns:
       - 中島町横田
       own: 2
       koku: 38
     - towns:
       - 中島町横見
+      own: 2
+      koku: 46
     - towns:
       - 中島町河内
       - 中島町呉竹
@@ -1539,8 +1561,12 @@ areas:
       koku: 113
     - towns:
       - 中島町河崎
+      own: 2
+      koku: 39
     - towns:
       - 中島町浜田
+      own: 2
+      koku: 48
     - towns:
       - 中島町深浦
       own: 2
@@ -1551,28 +1577,40 @@ areas:
       koku: 49
     - towns:
       - 中島町田岸
+      own: 2
+      koku: 54
     - towns:
       - 中島町町屋
+      own: 2
+      koku: 37
     - towns:
       - 中島町笠師
       own: 2
       koku: 80
     - towns:
       - 中島町筆染
+      own: 2
+      koku: 28
     - towns:
       - 中島町藤瀬
       own: 2
       koku: 51
     - towns:
       - 中島町西谷内
+      own: 2
+      koku: 62
     - towns:
       - 中島町谷内
       own: 2
       koku: 47
     - towns:
       - 中島町豊田
+      own: 2
+      koku: 58
     - towns:
       - 中島町豊田町
+      own: 2
+      koku: 30
     - towns:
       - 中島町長浦
       own: 2
@@ -1682,6 +1720,8 @@ areas:
       koku: 64
     - towns:
       - 大田新町
+      own: 2
+      koku: 13
     - towns:
       - 大田町
       own: 2
@@ -1773,6 +1813,8 @@ areas:
       koku: 37
     - towns:
       - 殿町
+      own: 2
+      koku: 24
     - towns:
       - 江曽町
       own: 2
@@ -1949,6 +1991,8 @@ areas:
       koku: 52
     - towns:
       - 能登島閨町
+      own: 2
+      koku: 58
     - towns:
       - 能登島須曽町
       own: 2
@@ -2831,6 +2875,8 @@ areas:
       - 門前町安代原
     - towns:
       - 門前町定広
+      own: 2
+      koku: 63
     - towns:
       - 門前町宮古場
     - towns:
@@ -5565,6 +5611,8 @@ areas:
       - 字上野
     - towns:
       - 字下唐川
+      own: 2
+      koku: 76
     - towns:
       - 字中居
     - towns:
@@ -5623,6 +5671,8 @@ areas:
       - 字曽山
     - towns:
       - 字曽福
+      own: 2
+      koku: 25
     - towns:
       - 字曽良
     - towns:
@@ -5631,6 +5681,8 @@ areas:
       - 字東中谷
     - towns:
       - 字根木
+      own: 2
+      koku: 35
     - towns:
       - 字桂谷
     - towns:
@@ -5675,6 +5727,8 @@ areas:
       - 字鵜島
     - towns:
       - 字鹿島
+      own: 2
+      koku: 18
     - towns:
       - 字鹿波
     - towns:

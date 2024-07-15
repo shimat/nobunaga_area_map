@@ -362,6 +362,8 @@ areas:
     - towns:
       - 京橋１丁目
       - 京橋２丁目
+      own: 1
+      koku: 13
     - towns:
       - 京橋３丁目
       - 八重洲２丁目
@@ -554,6 +556,8 @@ areas:
     - towns:
       - 元麻布１丁目
       - 麻布十番２丁目
+      own: 1
+      koku: 13
     - towns:
       - 元麻布２丁目
     - towns:
@@ -702,8 +706,12 @@ areas:
       - 白金台２丁目
     - towns:
       - 白金台３丁目
+      own: 1
+      koku: 13
     - towns:
       - 白金台４丁目
+      own: 1
+      koku: 13
     - towns:
       - 白金台５丁目
     - towns:
@@ -715,6 +723,8 @@ areas:
       own: 1
     - towns:
       - 高輪４丁目
+      own: 1
+      koku: 18
     - towns:
       - 港南１丁目
     - towns:
@@ -2198,6 +2208,7 @@ areas:
     - towns:
       - 上大崎１丁目
       own: 1
+      koku: 14
     - towns:
       - 上大崎２丁目
     - towns:
@@ -2220,6 +2231,8 @@ areas:
       - 西五反田４丁目
     - towns:
       - 西五反田５丁目
+      own: 1
+      koku: 15
     - towns:
       - 西五反田６丁目
     - towns:
@@ -2286,8 +2299,12 @@ areas:
       - 南品川６丁目
     - towns:
       - 広町１丁目
+      own: 1
+      koku: 13
     - towns:
       - 広町２丁目
+      own: 1
+      koku: 17
     - towns:
       - 大崎１丁目
       own: 1
@@ -2299,21 +2316,33 @@ areas:
       - 大崎４丁目
     - towns:
       - 西品川１丁目
+      own: 1
+      koku: 15
     - towns:
       - 西品川２丁目
+      own: 1
+      koku: 12
     - towns:
       - 西品川３丁目
+      own: 1
+      koku: 12
     - towns:
       - 豊町１丁目
     - towns:
       - 豊町２丁目
+      own: 1
+      koku: 13
     - towns:
       - 豊町３丁目
       - 豊町４丁目
       - 二葉２丁目
+      own: 1
+      koku: 17
     - towns:
       - 豊町５丁目
       - 二葉３丁目
+      own: 1
+      koku: 13
     - towns:
       - 豊町６丁目
     - towns:
@@ -2346,15 +2375,23 @@ areas:
       - 荏原５丁目
       - 小山４丁目
       - 小山５丁目
+      own: 1
+      koku: 18
     - towns:
       - 荏原６丁目
     - towns:
       - 荏原７丁目
       - 小山７丁目
+      own: 1
+      koku: 15
     - towns:
       - 小山３丁目
+      own: 1
+      koku: 12
     - towns:
       - 小山６丁目
+      own: 1
+      koku: 12
     - towns:
       - 小山台１丁目
     - towns:
@@ -2389,20 +2426,28 @@ areas:
       - 東中延２丁目
     - towns:
       - 二葉１丁目
+      own: 1
+      koku: 13
     - towns:
       - 二葉４丁目
     - towns:
       - 大井１丁目
+      own: 1
+      koku: 14
     - towns:
       - 大井２丁目
     - towns:
       - 大井３丁目
     - towns:
       - 大井４丁目
+      own: 1
+      koku: 14
     - towns:
       - 大井５丁目
     - towns:
       - 大井６丁目
+      own: 1
+      koku: 13
     - towns:
       - 大井７丁目
     - towns:
@@ -2414,8 +2459,12 @@ areas:
       - 西大井４丁目
     - towns:
       - 西大井５丁目
+      own: 1
+      koku: 14
     - towns:
       - 西大井６丁目
+      own: 1
+      koku: 12
     - towns:
       - 東大井１丁目
       own: 1
@@ -2429,6 +2478,8 @@ areas:
     - towns:
       - 東大井５丁目
       - 東大井６丁目
+      own: 1
+      koku: 15
     - towns:
       - 勝島１丁目
       own: 1
@@ -2488,18 +2539,30 @@ areas:
       - 東山３丁目
     - towns:
       - 上目黒１丁目
+      own: 1
+      koku: 12
     - towns:
       - 上目黒２丁目
+      own: 1
+      koku: 14
     - towns:
       - 上目黒３丁目
+      own: 1
+      koku: 16
     - towns:
       - 上目黒４丁目
+      own: 1
+      koku: 13
     - towns:
       - 上目黒５丁目
     - towns:
       - 五本木１丁目
+      own: 1
+      koku: 14
     - towns:
       - 五本木２丁目
+      own: 1
+      koku: 15
     - towns:
       - 五本木３丁目
     - towns:
@@ -2516,6 +2579,8 @@ areas:
       - 祐天寺１丁目
     - towns:
       - 祐天寺２丁目
+      own: 1
+      koku: 11
     - towns:
       - 三田１丁目
     - towns:
@@ -2547,12 +2612,16 @@ areas:
       - 中央町１丁目
     - towns:
       - 中央町２丁目
+      own: 1
+      koku: 14
     - towns:
       - 鷹番１丁目
     - towns:
       - 鷹番２丁目
     - towns:
       - 鷹番３丁目
+      own: 1
+      koku: 13
     - towns:
       - 目黒本町１丁目
     - towns:
@@ -2563,6 +2632,8 @@ areas:
       - 目黒本町４丁目
     - towns:
       - 目黒本町５丁目
+      own: 1
+      koku: 14
     - towns:
       - 目黒本町６丁目
     - towns:
@@ -2575,16 +2646,24 @@ areas:
       - 碑文谷４丁目
     - towns:
       - 碑文谷５丁目
+      own: 1
+      koku: 15
     - towns:
       - 碑文谷６丁目
+      own: 1
+      koku: 12
     - towns:
       - 原町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 原町２丁目
     - towns:
       - 洗足１丁目
     - towns:
       - 洗足２丁目
+      own: 1
+      koku: 14
     - towns:
       - 南１丁目
     - towns:
@@ -2594,13 +2673,19 @@ areas:
       - 大岡山１丁目
     - towns:
       - 大岡山２丁目
+      own: 1
+      koku: 17
     - towns:
       - 緑が丘１丁目
       - 緑が丘３丁目
+      own: 1
+      koku: 16
     - towns:
       - 緑が丘２丁目
     - towns:
       - 自由が丘１丁目
+      own: 1
+      koku: 15
     - towns:
       - 自由が丘２丁目
     - towns:
@@ -2617,6 +2702,8 @@ areas:
       - 八雲５丁目
     - towns:
       - 中根１丁目
+      own: 1
+      koku: 13
     - towns:
       - 中根２丁目
     - towns:
@@ -2625,6 +2712,8 @@ areas:
       - 平町２丁目
     - towns:
       - 柿の木坂１丁目
+      own: 1
+      koku: 16
     - towns:
       - 柿の木坂２丁目
       - 柿の木坂３丁目
@@ -2708,6 +2797,8 @@ areas:
       - 大森本町２丁目
     - towns:
       - 大森北１丁目
+      own: 1
+      koku: 14
     - towns:
       - 大森北２丁目
       own: 1
@@ -2718,6 +2809,8 @@ areas:
     - towns:
       - 大森北４丁目
       - 大森北５丁目
+      own: 1
+      koku: 17
     - towns:
       - 大森北６丁目
       own: 1
@@ -2746,6 +2839,8 @@ areas:
       own: 1
     - towns:
       - 大森西１丁目
+      own: 1
+      koku: 16
     - towns:
       - 大森西２丁目
       own: 1
@@ -2754,6 +2849,8 @@ areas:
       own: 1
     - towns:
       - 大森西４丁目
+      own: 1
+      koku: 14
     - towns:
       - 大森西５丁目
       own: 1
@@ -2762,6 +2859,8 @@ areas:
       own: 1
     - towns:
       - 大森西７丁目
+      own: 1
+      koku: 11
     - towns:
       - 大森中１丁目
     - towns:
@@ -2843,6 +2942,8 @@ areas:
       - 仲六郷３丁目
     - towns:
       - 仲六郷４丁目
+      own: 1
+      koku: 19
     - towns:
       - 西六郷１丁目
     - towns:
@@ -2877,6 +2978,8 @@ areas:
       own: 1
     - towns:
       - 蒲田５丁目
+      own: 1
+      koku: 15
     - towns:
       - 東蒲田１丁目
     - towns:
@@ -2921,6 +3024,8 @@ areas:
       - 中央８丁目
     - towns:
       - 山王１丁目
+      own: 1
+      koku: 17
     - towns:
       - 山王２丁目
     - towns:
@@ -2932,8 +3037,12 @@ areas:
     - towns:
       - 東馬込２丁目
       - 南馬込２丁目
+      own: 1
+      koku: 16
     - towns:
       - 南馬込１丁目
+      own: 1
+      koku: 17
     - towns:
       - 南馬込３丁目
     - towns:
@@ -2954,8 +3063,12 @@ areas:
       - 中馬込３丁目
     - towns:
       - 西馬込１丁目
+      own: 1
+      koku: 15
     - towns:
       - 西馬込２丁目
+      own: 1
+      koku: 14
     - towns:
       - 池上１丁目
     - towns:
@@ -2974,6 +3087,8 @@ areas:
       - 池上８丁目
     - towns:
       - 仲池上１丁目
+      own: 1
+      koku: 17
     - towns:
       - 仲池上２丁目
     - towns:
@@ -3014,6 +3129,8 @@ areas:
       - 鵜の木３丁目
     - towns:
       - 久が原１丁目
+      own: 1
+      koku: 16
     - towns:
       - 久が原２丁目
     - towns:
@@ -3030,20 +3147,32 @@ areas:
       - 南久が原２丁目
     - towns:
       - 東嶺町
+      own: 1
+      koku: 18
     - towns:
       - 西嶺町
+      own: 1
+      koku: 15
     - towns:
       - 北嶺町
     - towns:
       - 田園調布南
+      own: 1
+      koku: 18
     - towns:
       - 田園調布本町
     - towns:
       - 田園調布１丁目
+      own: 1
+      koku: 24
     - towns:
       - 田園調布２丁目
+      own: 1
+      koku: 20
     - towns:
       - 田園調布３丁目
+      own: 1
+      koku: 18
     - towns:
       - 田園調布４丁目
     - towns:
@@ -3091,10 +3220,16 @@ areas:
       - 南千束３丁目
     - towns:
       - 北千束１丁目
+      own: 1
+      koku: 16
     - towns:
       - 北千束２丁目
+      own: 1
+      koku: 16
     - towns:
       - 北千束３丁目
+      own: 1
+      koku: 13
 
 
   東京都 世田谷区:
@@ -3155,14 +3290,24 @@ areas:
       - 岡本３丁目
     - towns:
       - 奥沢１丁目
+      own: 1
+      koku: 18
     - towns:
       - 奥沢２丁目
+      own: 1
+      koku: 16
     - towns:
       - 奥沢３丁目
+      own: 1
+      koku: 14
     - towns:
       - 奥沢４丁目
+      own: 1
+      koku: 11
     - towns:
       - 奥沢５丁目
+      own: 1
+      koku: 15
     - towns:
       - 奥沢６丁目
     - towns:
@@ -3467,8 +3612,12 @@ areas:
       - 玉川台２丁目
     - towns:
       - 玉川田園調布１丁目
+      own: 1
+      koku: 14
     - towns:
       - 玉川田園調布２丁目
+      own: 1
+      koku: 12
     - towns:
       - 玉堤１丁目
     - towns:
@@ -3829,6 +3978,8 @@ areas:
       koku: 15
     - towns:
       - 神宮前３丁目
+      own: 1
+      koku: 15
     - towns:
       - 神宮前４丁目
       own: 1

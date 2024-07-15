@@ -4042,6 +4042,8 @@ areas:
       - 藤原町日内
     - towns:
       - 藤原町本郷
+      own: 2
+      koku: 78
     - towns:
       - 藤原町東禅寺
     - towns:

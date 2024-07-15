@@ -2742,6 +2742,8 @@ areas:
       - 上石津町打上
     - towns:
       - 上石津町時山
+      own: 2
+      koku: 127
     - towns:
       - 上石津町牧田
     - towns:

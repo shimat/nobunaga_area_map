@@ -960,8 +960,8 @@ areas:
       - 仏生寺町
     - towns:
       - 佐和山町
-    - towns:
-      - 八坂町
+    #- towns:
+    #  - 八坂町
     - towns:
       - 出路町
     - towns:
@@ -996,12 +996,16 @@ areas:
       - 宇尾町
     - towns:
       - 安清町
+      own: 2
+      koku: 13
     - towns:
       - 安食中町
     - towns:
       - 宮田町
     - towns:
       - 小泉町
+      own: 2
+      koku: 30
     - towns:
       - 小野町
     - towns:
@@ -1013,16 +1017,24 @@ areas:
       koku: 14
     - towns:
       - 岡町
+      own: 2
+      koku: 14
     - towns:
       - 川瀬馬場町
     - towns:
       - 平田町
+      own: 2
+      koku: 31
     - towns:
       - 彦富町
     - towns:
       - 後三条町
+      own: 2
+      koku: 24
     - towns:
       - 戸賀町
+      own: 2
+      koku: 15
     - towns:
       - 新海浜１丁目
     - towns:
@@ -1039,6 +1051,8 @@ areas:
       - 本庄町
     - towns:
       - 東沼波町
+      own: 2
+      koku: 30
     - towns:
       - 松原町
     - towns:
@@ -1089,8 +1103,12 @@ areas:
       - 肥田町
     - towns:
       - 芹川町
+      own: 2
+      koku: 26
     - towns:
       - 芹橋２丁目
+      own: 2
+      koku: 12
     - towns:
       - 荘厳寺町
     - towns:
@@ -1101,8 +1119,12 @@ areas:
       - 薩摩町
     - towns:
       - 西今町
+      own: 2
+      koku: 33
     - towns:
       - 西沼波町
+      own: 2
+      koku: 22
     - towns:
       - 西葛籠町
     - towns:
@@ -1129,10 +1151,14 @@ areas:
       - 金田町
     - towns:
       - 長曽根南町
+      own: 2
+      koku: 18
     - towns:
       - 長曽根町
     - towns:
       - 開出今町
+      own: 2
+      koku: 36
     - towns:
       - 須越町
     - towns:
@@ -1141,6 +1167,8 @@ areas:
       - 馬場２丁目
     - towns:
       - 高宮町
+      own: 2
+      koku: 59
     - towns:
       - 鳥居本町
     - towns:
@@ -4468,6 +4496,8 @@ areas:
       - 大字五僧
     - towns:
       - 大字佐目
+      own: 2
+      koku: 89
     - towns:
       - 大字佛ケ後
     - towns:
@@ -4480,20 +4510,28 @@ areas:
       - 大字向之倉
     - towns:
       - 大字四手
+      own: 2
+      koku: 64
     - towns:
       - 大字土田
     - towns:
       - 大字壺
     - towns:
       - 大字多賀
+      own: 2
+      koku: 54
     - towns:
       - 大字大君ケ畑
+      own: 2
+      koku: 132
     - towns:
       - 大字大岡
     - towns:
       - 大字大杉
     - towns:
       - 大字富之尾
+      own: 2
+      koku: 57
     - towns:
       - 大字小原
     - towns:
@@ -4504,6 +4542,8 @@ areas:
       - 大字後谷
     - towns:
       - 大字敏満寺
+      own: 2
+      koku: 68
     - towns:
       - 大字月之木
     - towns:

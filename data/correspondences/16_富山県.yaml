@@ -2943,6 +2943,8 @@ areas:
       koku: 62
     - towns:
       - 中田
+      own: 2
+      koku: 61
     - towns:
       - 中谷内
     - towns:
@@ -3011,6 +3013,8 @@ areas:
       - 宮田
     - towns:
       - 寺尾
+      own: 2
+      koku: 79
     - towns:
       - 小久米
     - towns:
@@ -3051,6 +3055,8 @@ areas:
       - 惣領
     - towns:
       - 懸札
+      own: 2
+      koku: 60
     - towns:
       - 戸津宮
     - towns:
@@ -3123,6 +3129,8 @@ areas:
       koku: 69
     - towns:
       - 脇
+      own: 2
+      koku: 38
     - towns:
       - 脇方
     - towns:
@@ -3919,6 +3927,8 @@ areas:
       - 城山町
     - towns:
       - 埴生
+      own: 2
+      koku: 62
     - towns:
       - 宇治新
     - towns:

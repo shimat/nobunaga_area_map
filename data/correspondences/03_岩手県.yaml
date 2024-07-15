@@ -1414,6 +1414,8 @@ areas:
       - 京の森
     - towns:
       - 侍浜町
+      own: 2
+      koku: 187
     - towns:
       - 夏井町
       own: 2
@@ -1446,10 +1448,14 @@ areas:
       koku: 214
     - towns:
       - 山形町日野沢
+      own: 2
+      koku: 161
     - towns:
       - 山形町来内
     - towns:
       - 山形町繋
+      own: 2
+      koku: 172
     - towns:
       - 山形町荷軽部
     - towns:
@@ -1970,6 +1976,8 @@ areas:
       koku: 206
     - towns:
       - 下斗米
+      own: 2
+      koku: 162
     - towns:
       - 仁左平
     - towns:
@@ -2056,6 +2064,8 @@ areas:
       koku: 146
     - towns:
       - 釜沢
+      own: 2
+      koku: 120
     - towns:
       - 浄法寺町サイカツ田
       - 浄法寺町八幡舘
@@ -2065,6 +2075,8 @@ areas:
       - 浄法寺町漆沢上前田
       - 浄法寺町漆沢下モ前田
       - 浄法寺町長者花
+
+
   岩手県 八幡平市:
     view_state:
       latitude: 40.02393675213997
@@ -4027,6 +4039,8 @@ areas:
       - 岩舘
     - towns:
       - 平糠
+      own: 2
+      koku: 183
     - towns:
       - 月舘
     - towns:

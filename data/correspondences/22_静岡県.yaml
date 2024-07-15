@@ -2843,6 +2843,8 @@ areas:
       - 魚町
       - 鵰町
       - 黒瀬町
+
+
   静岡県 熱海市:
     view_state:
       latitude: 35.090525756233305
@@ -2857,6 +2859,8 @@ areas:
       - 下多賀
     - towns:
       - 伊豆山
+      own: 1
+      koku: 96
     - towns:
       - 初島
     - towns:
@@ -2875,6 +2879,8 @@ areas:
       - 日金町
     - towns:
       - 春日町
+      own: 1
+      koku: 13
     - towns:
       - 東海岸町
       own: 1
@@ -2883,6 +2889,8 @@ areas:
       - 林ガ丘町
     - towns:
       - 桃山町
+      own: 1
+      koku: 20
     - towns:
       - 桜木町
     - towns:
@@ -2897,6 +2905,8 @@ areas:
       - 水口町２丁目
     - towns:
       - 泉
+      own: 1
+      koku: 108
     - towns:
       - 海光町
     - towns:

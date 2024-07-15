@@ -3900,6 +3900,8 @@ areas:
       - 大字千国乙
     - towns:
       - 大字千国甲
+
+
   長野県 埴科郡坂城町:
     view_state:
       latitude: 36.45276366403971
@@ -3914,10 +3916,14 @@ areas:
       - 大字中之条
     - towns:
       - 大字南条
+      own: 2
+      koku: 115
     - towns:
       - 大字坂城
     - towns:
       - 大字網掛
+
+
   長野県 上高井郡小布施町:
     view_state:
       latitude: 36.70268849071314

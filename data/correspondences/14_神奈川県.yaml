@@ -108,8 +108,12 @@ areas:
       - 岸谷４丁目
     - towns:
       - 市場上町
+      own: 1
+      koku: 12
     - towns:
       - 市場下町
+      own: 1
+      koku: 15
     - towns:
       - 平安町１丁目
     - towns:
@@ -158,8 +162,12 @@ areas:
       - 生麦２丁目
     - towns:
       - 生麦３丁目
+      own: 1
+      koku: 14
     - towns:
       - 生麦４丁目
+      own: 1
+      koku: 15
     - towns:
       - 生麦５丁目
     - towns:
@@ -223,6 +231,11 @@ areas:
     - towns:
       - 鶴見２丁目
     - towns:
+      - 市場東中町
+      - 市場西中町
+      own: 1
+      koku: 12
+    - towns:
       - 上末吉３丁目
       - 下末吉４丁目
       - 下野谷町１丁目
@@ -239,8 +252,6 @@ areas:
       - 大東町
       - 市場大和町
       - 市場富士見町
-      - 市場東中町
-      - 市場西中町
       - 朝日町１丁目
       - 朝日町２丁目
       - 本町通１丁目
@@ -286,6 +297,8 @@ areas:
       - 三ツ沢西町
     - towns:
       - 三枚町
+      own: 1
+      koku: 30
     - towns:
       - 入江１丁目
       own: 1
@@ -322,6 +335,9 @@ areas:
       - 子安台１丁目
     - towns:
       - 子安通１丁目
+      - 子安通２丁目
+      own: 1
+      koku: 16
     - towns:
       - 子安通３丁目
     - towns:
@@ -336,6 +352,8 @@ areas:
       - 平川町
     - towns:
       - 幸ケ谷
+      own: 1
+      koku: 11
     - towns:
       - 恵比須町
     - towns:
@@ -482,7 +500,6 @@ areas:
       - 台町
       - 大野町
       - 子安台２丁目
-      - 子安通２丁目
       - 守屋町１丁目
       - 守屋町２丁目
       - 新子安２丁目
@@ -598,6 +615,9 @@ areas:
       - 浅間町３丁目
     - towns:
       - 浜松町
+      - 平沼２丁目
+      own: 1
+      koku: 15
     - towns:
       - 老松町
     - towns:
@@ -614,6 +634,8 @@ areas:
       - 霞ケ丘
     - towns:
       - 高島２丁目
+      own: 1
+      koku: 17
     - towns:
       - 楠町
       - 浅間町１丁目
@@ -625,7 +647,6 @@ areas:
       - 伊勢町２丁目
       - 伊勢町３丁目
       - 宮崎町
-      - 平沼２丁目
       - 御所山町
       - 戸部町１丁目
       - 戸部町２丁目
@@ -1176,6 +1197,8 @@ areas:
       - 高砂町１丁目
       - 高砂町２丁目
       - 高砂町３丁目
+
+
   神奈川県 横浜市保土ケ谷区:
     view_state:
       latitude: 35.461305794304714
@@ -1204,6 +1227,8 @@ areas:
       - 境木本町
     - towns:
       - 境木町
+      own: 1
+      koku: 17
     - towns:
       - 天王町１丁目
     - towns:
@@ -1274,6 +1299,8 @@ areas:
       - 藤塚町
     - towns:
       - 西久保町
+      own: 1
+      koku: 17
     - towns:
       - 西谷町
     - towns:
@@ -1283,11 +1310,14 @@ areas:
     - towns:
       - 霞台
     - towns:
+      - 保土ケ谷町２丁目
+      - 保土ケ谷町３丁目
+      own: 1
+      koku: 11
+    - towns:
       - 上星川１丁目
       - 上星川３丁目
       - 保土ケ谷町１丁目
-      - 保土ケ谷町２丁目
-      - 保土ケ谷町３丁目
       - 宮田町１丁目
       - 宮田町２丁目
       - 宮田町３丁目
@@ -1733,8 +1763,12 @@ areas:
       - 新吉田町
     - towns:
       - 新横浜１丁目
+      own: 1
+      koku: 16
     - towns:
       - 新横浜２丁目
+      own: 1
+      koku: 18
     - towns:
       - 新横浜３丁目
     - towns:
@@ -1755,6 +1789,8 @@ areas:
       - 日吉１丁目
     - towns:
       - 日吉２丁目
+      own: 1
+      koku: 15
     - towns:
       - 日吉３丁目
     - towns:
@@ -1797,6 +1833,8 @@ areas:
       - 篠原東３丁目
     - towns:
       - 篠原町
+      own: 1
+      koku: 33
     - towns:
       - 篠原西町
     - towns:
@@ -1805,8 +1843,12 @@ areas:
       - 綱島台
     - towns:
       - 綱島東１丁目
+      own: 1
+      koku: 15
     - towns:
       - 綱島東２丁目
+      own: 1
+      koku: 14
     - towns:
       - 綱島東３丁目
     - towns:
@@ -1873,6 +1915,8 @@ areas:
       - 新吉田東７丁目
       - 菊名１丁目
       - 高田西２丁目
+
+
   神奈川県 横浜市戸塚区:
     view_state:
       latitude: 35.40327892496425
@@ -1881,6 +1925,8 @@ areas:
     correspondences:
     - towns:
       - 上倉田町
+      own: 1
+      koku: 39
     - towns:
       - 上品濃
     - towns:
@@ -1893,6 +1939,8 @@ areas:
       - 俣野町
     - towns:
       - 前田町
+      own: 1
+      koku: 23
     - towns:
       - 南舞岡１丁目
     - towns:
@@ -1961,6 +2009,8 @@ areas:
       - 深谷町
     - towns:
       - 矢部町
+      own: 1
+      koku: 35
     - towns:
       - 秋葉町
     - towns:
@@ -1969,6 +2019,8 @@ areas:
       - 鳥が丘
     - towns:
       - 南舞岡２丁目
+
+
   神奈川県 横浜市港南区:
     view_state:
       latitude: 35.39426788144119
@@ -2272,6 +2324,8 @@ areas:
       - 若葉台４丁目
     - towns:
       - 西川島町
+      own: 1
+      koku: 24
     - towns:
       - 都岡町
     - towns:
@@ -2617,6 +2671,8 @@ areas:
       - 笠間２丁目
     - towns:
       - 笠間３丁目
+      own: 1
+      koku: 20
     - towns:
       - 笠間４丁目
     - towns:
@@ -2641,11 +2697,15 @@ areas:
       - 長沼町
     - towns:
       - 飯島町
+      own: 1
+      koku: 41
     - towns:
       - 小菅ケ谷町
       - 庄戸２丁目
       - 笠間町
       - 長倉町
+
+
   神奈川県 横浜市泉区:
     view_state:
       latitude: 35.42067079896475
@@ -2654,6 +2714,8 @@ areas:
     correspondences:
     - towns:
       - 上飯田町
+      own: 1
+      koku: 59
     - towns:
       - 下和泉２丁目
     - towns:
@@ -3119,6 +3181,9 @@ areas:
     correspondences:
     - towns:
       - 下並木
+      - 堤根
+      own: 1
+      koku: 14
     - towns:
       - 中瀬１丁目
     - towns:
@@ -3197,6 +3262,8 @@ areas:
       - 扇町
     - towns:
       - 日進町
+      own: 1
+      koku: 18
     - towns:
       - 旭町２丁目
     - towns:
@@ -3271,6 +3338,8 @@ areas:
       - 鋼管通４丁目
     - towns:
       - 駅前本町
+      own: 1
+      koku: 13
 
 
   神奈川県 川崎市幸区:
@@ -3309,6 +3378,8 @@ areas:
       - 古市場２丁目
     - towns:
       - 堀川町
+      own: 1
+      koku: 16
     - towns:
       - 塚越２丁目
     - towns:
@@ -3371,13 +3442,21 @@ areas:
     correspondences:
     - towns:
       - 上丸子八幡町
+      own: 1
+      koku: 18
     - towns:
       - 上丸子天神町
+      own: 1
+      koku: 19
     - towns:
       - 上丸子山王町１丁目
+      own: 1
+      koku: 14
     - towns:
       - 上丸子
       - 上丸子山王町２丁目
+      own: 1
+      koku: 12
     - towns:
       - 上小田中１丁目
     - towns:
@@ -3465,10 +3544,14 @@ areas:
       - 小杉御殿町２丁目
     - towns:
       - 小杉町１丁目
+      own: 1
+      koku: 12
     - towns:
       - 小杉町２丁目
     - towns:
       - 小杉町３丁目
+      own: 1
+      koku: 12
     - towns:
       - 小杉陣屋町１丁目
     - towns:
@@ -3477,13 +3560,22 @@ areas:
       - 市ノ坪
     - towns:
       - 新丸子東３丁目
+      own: 1
+      koku: 12
     - towns:
       - 新丸子町
+      own: 1
+      koku: 11
+    - towns:
       - 新丸子東１丁目
       - 新丸子東２丁目
+      own: 1
+      koku: 12
     - towns:
       - 丸子通１丁目
       - 丸子通２丁目
+      own: 1
+      koku: 13
     - towns:
       - 木月住吉町
     - towns:
@@ -3493,10 +3585,14 @@ areas:
       - 木月伊勢町
     - towns:
       - 木月１丁目
+      own: 1
+      koku: 12
     - towns:
       - 木月２丁目
     - towns:
       - 木月３丁目
+      own: 1
+      koku: 19
     - towns:
       - 木月４丁目
     - towns:
@@ -5493,6 +5589,8 @@ areas:
       - 長坂１丁目
       - 鶴が丘１丁目
       - 鶴が丘２丁目
+
+
   神奈川県 平塚市:
     view_state:
       latitude: 35.35095143106939
@@ -5531,6 +5629,8 @@ areas:
       - 代官町
     - towns:
       - 入野
+      own: 1
+      koku: 29
     - towns:
       - 八幡
     - towns:
@@ -5539,6 +5639,8 @@ areas:
       - 公所
     - towns:
       - 出縄
+      own: 1
+      koku: 26
     - towns:
       - 北豊田
     - towns:
@@ -5605,10 +5707,14 @@ areas:
       - 天沼
     - towns:
       - 宝町
+      own: 1
+      koku: 11
     - towns:
       - 宮松町
     - towns:
       - 寺田縄
+      own: 1
+      koku: 34
     - towns:
       - 小鍋島
     - towns:
@@ -5677,6 +5783,8 @@ areas:
       - 松風町
     - towns:
       - 根坂間
+      own: 1
+      koku: 26
     - towns:
       - 桃浜町
     - towns:
@@ -5685,6 +5793,8 @@ areas:
       - 横内
     - towns:
       - 河内
+      own: 1
+      koku: 21
     - towns:
       - 浅間町
     - towns:
@@ -5723,8 +5833,12 @@ areas:
       - 立野町
     - towns:
       - 紅谷町
+      own: 1
+      koku: 12
     - towns:
       - 纒
+      own: 1
+      koku: 24
     - towns:
       - 老松町
     - towns:
@@ -5769,6 +5883,8 @@ areas:
       - 錦町
     - towns:
       - 長持
+      own: 1
+      koku: 26
     - towns:
       - 長瀞
     - towns:
@@ -5882,6 +5998,8 @@ areas:
       - 大船
     - towns:
       - 大船１丁目
+      own: 1
+      koku: 14
     - towns:
       - 大船２丁目
     - towns:
@@ -6096,6 +6214,7 @@ areas:
       - 西鎌倉３丁目
       - 雪ノ下
       - 雪ノ下５丁目
+
   神奈川県 藤沢市:
     view_state:
       latitude: 35.36842661983293
@@ -6170,12 +6289,16 @@ areas:
       - 宮原
     - towns:
       - 小塚
+      own: 1
+      koku: 13
     - towns:
       - 川名
     - towns:
       - 川名１丁目
     - towns:
       - 弥勒寺１丁目
+      own: 1
+      koku: 14
     - towns:
       - 弥勒寺２丁目
     - towns:
@@ -6320,6 +6443,8 @@ areas:
       - 藤が岡３丁目
     - towns:
       - 藤沢
+      own: 1
+      koku: 23
     - towns:
       - 藤沢２丁目
     - towns:
@@ -6348,6 +6473,8 @@ areas:
       - 辻堂太平台２丁目
     - towns:
       - 辻堂新町１丁目
+      own: 1
+      koku: 15
     - towns:
       - 辻堂新町２丁目
     - towns:
@@ -6376,6 +6503,8 @@ areas:
       - 辻堂１丁目
     - towns:
       - 辻堂２丁目
+      own: 1
+      koku: 12
     - towns:
       - 辻堂３丁目
     - towns:
@@ -6432,6 +6561,8 @@ areas:
       - 鵠沼海岸７丁目
     - towns:
       - 鵠沼神明１丁目
+      own: 1
+      koku: 16
     - towns:
       - 鵠沼神明２丁目
     - towns:
@@ -6481,6 +6612,7 @@ areas:
       - 鵠沼石上１丁目
       - 鵠沼石上２丁目
       - 鵠沼石上３丁目
+
   神奈川県 小田原市:
     view_state:
       latitude: 35.26309720602098
@@ -6497,6 +6629,8 @@ areas:
       - 下大井
     - towns:
       - 中新田
+      own: 1
+      koku: 16
     - towns:
       - 中曽根
     - towns:
@@ -6517,6 +6651,8 @@ areas:
       - 別堀
     - towns:
       - 前川
+      own: 1
+      koku: 40
     - towns:
       - 北ノ窪
     - towns:
@@ -6539,22 +6675,39 @@ areas:
       - 南鴨宮３丁目
     - towns:
       - 国府津
+      own: 1
+      koku: 44
     - towns:
       - 国府津１丁目
     - towns:
       - 国府津２丁目
+      - 国府津３丁目
+      own: 1
+      koku: 16
     - towns:
       - 国府津４丁目
+      - 国府津５丁目
+      own: 1
+      koku: 17
     - towns:
       - 城内
+      own: 1
+      koku: 15
     - towns:
       - 城山１丁目
+      own: 1
+      koku: 16
     - towns:
       - 城山２丁目
     - towns:
       - 城山３丁目
+      own: 1
+      koku: 19
     - towns:
       - 城山４丁目
+      - 十字２丁目
+      own: 1
+      koku: 16
     - towns:
       - 堀之内
     - towns:
@@ -6589,6 +6742,9 @@ areas:
       - 成田
     - towns:
       - 扇町１丁目
+      - 池上
+      own: 1
+      koku: 20
     - towns:
       - 扇町２丁目
     - towns:
@@ -6603,6 +6759,8 @@ areas:
       - 新屋
     - towns:
       - 早川
+      own: 1
+      koku: 97
     - towns:
       - 早川１丁目
     - towns:
@@ -6649,10 +6807,14 @@ areas:
       - 栄町２丁目
     - towns:
       - 栄町３丁目
+      own: 1
+      koku: 11
     - towns:
       - 栢山
     - towns:
       - 根府川
+      own: 1
+      koku: 90
     - towns:
       - 桑原
     - towns:
@@ -6661,6 +6823,8 @@ areas:
       - 永塚
     - towns:
       - 江之浦
+      own: 1
+      koku: 49
     - towns:
       - 沼代
     - towns:
@@ -6673,10 +6837,14 @@ areas:
       - 清水新田
     - towns:
       - 田島
+      own: 1
+      koku: 40
     - towns:
       - 矢作
     - towns:
       - 石橋
+      own: 1
+      koku: 53
     - towns:
       - 穴部
     - towns:
@@ -6695,6 +6863,9 @@ areas:
       - 西酒匂１丁目
     - towns:
       - 酒匂
+      - 西酒匂３丁目
+      own: 1
+      koku: 16
     - towns:
       - 酒匂１丁目
     - towns:
@@ -6721,14 +6892,13 @@ areas:
       - 鬼柳
     - towns:
       - 鴨宮
+      own: 1
+      koku: 29
     - towns:
       - 上新田
       - 下新田
       - 井細田
-      - 十字２丁目
       - 南板橋２丁目
-      - 国府津３丁目
-      - 国府津５丁目
       - 寿町２丁目
       - 小八幡
       - 小八幡４丁目
@@ -6737,11 +6907,9 @@ areas:
       - 本町２丁目
       - 東ケ丘
       - 栄町４丁目
-      - 池上
       - 浜町２丁目
       - 緑４丁目
       - 西酒匂２丁目
-      - 西酒匂３丁目
       - 谷津
   神奈川県 茅ヶ崎市:
     view_state:
@@ -6761,6 +6929,8 @@ areas:
       - 下町屋３丁目
     - towns:
       - 中島
+      own: 1
+      koku: 34
     - towns:
       - 中海岸２丁目
     - towns:
@@ -6771,8 +6941,12 @@ areas:
       - 今宿
     - towns:
       - 代官町
+      own: 1
+      koku: 11
     - towns:
       - 元町
+      own: 1
+      koku: 13
     - towns:
       - 共恵１丁目
     - towns:
@@ -6827,6 +7001,8 @@ areas:
       - 幸町
     - towns:
       - 新栄町
+      own: 1
+      koku: 11
     - towns:
       - 旭が丘
     - towns:
@@ -7330,6 +7506,8 @@ areas:
       - 鈴張町
       - 鶴巻北３丁目
       - 鶴巻南５丁目
+
+
   神奈川県 厚木市:
     view_state:
       latitude: 35.465064290632384
@@ -8067,6 +8245,8 @@ areas:
       - 望地２丁目
     - towns:
       - 本郷
+      own: 1
+      koku: 56
     - towns:
       - 杉久保
     - towns:
@@ -8581,6 +8761,8 @@ areas:
       - 大曲
       - 小谷
       - 岡田５丁目
+
+
   神奈川県 中郡大磯町:
     view_state:
       latitude: 35.316651590938385
@@ -8591,14 +8773,22 @@ areas:
       - 国府新宿
     - towns:
       - 国府本郷
+      own: 1
+      koku: 46
     - towns:
       - 大磯
+      own: 1
+      koku: 40
     - towns:
       - 寺坂
+      own: 1
+      koku: 39
     - towns:
       - 月京
     - towns:
       - 東小磯
+      own: 1
+      koku: 33
     - towns:
       - 東町１丁目
     - towns:
@@ -8607,6 +8797,8 @@ areas:
       - 東町３丁目
     - towns:
       - 生沢
+      own: 1
+      koku: 47
     - towns:
       - 石神台１丁目
     - towns:
@@ -8621,6 +8813,8 @@ areas:
       - 高麗
     - towns:
       - 高麗１丁目
+      own: 1
+      koku: 16
     - towns:
       - 高麗２丁目
     - towns:
@@ -8645,12 +8839,16 @@ areas:
       - 中里２丁目
     - towns:
       - 二宮
+      own: 1
+      koku: 46
     - towns:
       - 富士見が丘１丁目
     - towns:
       - 富士見が丘２丁目
     - towns:
       - 山西
+      own: 1
+      koku: 44
     - towns:
       - 川匂
     - towns:
@@ -8703,6 +8901,7 @@ areas:
       - 雑色
     - towns:
       - 鴨沢
+
   神奈川県 足柄上郡大井町:
     view_state:
       latitude: 35.33502121389798
@@ -8858,6 +9057,8 @@ areas:
       koku: 69
     - towns:
       - 真鶴
+      own: 1
+      koku: 57 # 不確か
 
 
   神奈川県 足柄下郡湯河原町:
@@ -8882,6 +9083,8 @@ areas:
       koku: 16
     - towns:
       - 吉浜
+      own: 1
+      koku: 109
     - towns:
       - 土肥１丁目
       - 土肥３丁目
@@ -8906,17 +9109,21 @@ areas:
       koku: 125
     - towns:
       - 宮下
+      - 土肥６丁目
+      own: 1
+      koku: 39
     - towns:
       - 福浦
     - towns:
       - 鍛冶屋
+      own: 1
+      koku: 98
     - towns:
       - 門川
       own: 1
       koku: 13
     - towns:
       - 吉浜福浦
-      - 土肥６丁目
       - 福浦吉浜
       - 福浦鍛冶屋
 
