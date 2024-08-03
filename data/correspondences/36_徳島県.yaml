@@ -1031,6 +1031,8 @@ areas:
       - 山川町八幡
     - towns:
       - 山川町前川
+      own: 2
+      koku: 27
     - towns:
       - 山川町北島
     - towns:
@@ -1282,6 +1284,8 @@ areas:
       - 鴨島町知恵島番外
       - 鴨島町鴨島乙
       - 鴨島町鴨島甲
+
+
   徳島県 阿波市:
     view_state:
       latitude: 34.12195223119341
@@ -1290,6 +1294,8 @@ areas:
     correspondences:
     - towns:
       - (町名無し)
+      own: 2
+      koku: 94
     - towns:
       - 吉野町五条
     - towns:
@@ -1354,6 +1360,8 @@ areas:
       - 阿波町中原
     - towns:
       - 阿波町中坪
+      own: 2
+      koku: 22
     - towns:
       - 阿波町中川原
     - towns:
@@ -1398,32 +1406,47 @@ areas:
       - 阿波町北原
     - towns:
       - 阿波町北山
+      own: 2
+      koku: 41
     - towns:
       - 阿波町北岡
     - towns:
       - 阿波町北整理
+      own: 2
+      koku: 12
     - towns:
       - 阿波町北柴生
     - towns:
       - 阿波町北正広
+      - 阿波町西正広
+      own: 2
+      koku: 29
     - towns:
       - 阿波町北西谷
     - towns:
       - 阿波町医王寺
+      own: 2
+      koku: 22
     - towns:
       - 阿波町十善地
+      own: 2
+      koku: 18
     - towns:
       - 阿波町南五味知
     - towns:
       - 阿波町南川原
     - towns:
       - 阿波町南整理
+      own: 2
+      koku: 20
     - towns:
       - 阿波町南柴生
     - towns:
       - 阿波町南谷島
     - towns:
       - 阿波町善地
+      own: 2
+      koku: 17
     - towns:
       - 阿波町四歩一
     - towns:
@@ -1441,9 +1464,9 @@ areas:
     - towns:
       - 阿波町安政
     - towns:
-      - 阿波町寒風
-    - towns:
       - 阿波町小倉
+      own: 2
+      koku: 30
     - towns:
       - 阿波町居屋敷
     - towns:
@@ -1467,8 +1490,6 @@ areas:
     - towns:
       - 阿波町庚申原
     - towns:
-      - 阿波町廿町
-    - towns:
       - 阿波町引地
     - towns:
       - 阿波町新開
@@ -1486,6 +1507,8 @@ areas:
       - 阿波町東川原
     - towns:
       - 阿波町東整理
+      own: 2
+      koku: 16
     - towns:
       - 阿波町東条
     - towns:
@@ -1494,12 +1517,20 @@ areas:
       - 阿波町東正広
     - towns:
       - 阿波町東長峰
+      - 阿波町廿町
+      own: 2
+      koku: 33
     - towns:
       - 阿波町柏谷左右
     - towns:
       - 阿波町栩ケ窪
+      - 阿波町寒風
+      own: 2
+      koku: 35
     - towns:
       - 阿波町桜ノ岡
+      own: 2
+      koku: 33
     - towns:
       - 阿波町梅ノ木原
     - towns:
@@ -1530,6 +1561,8 @@ areas:
       - 阿波町西原
     - towns:
       - 阿波町西整理
+      own: 2
+      koku: 18
     - towns:
       - 阿波町西林
       own: 2
@@ -1537,11 +1570,11 @@ areas:
     - towns:
       - 阿波町西柴生
     - towns:
-      - 阿波町西正広
-    - towns:
       - 阿波町西清原
     - towns:
       - 阿波町西長峰
+      own: 2
+      koku: 20
     - towns:
       - 阿波町谷島
     - towns:
@@ -1575,6 +1608,8 @@ areas:
       - 阿波町王子川
       - 阿波町西島
       - 阿波町谷口
+
+
   徳島県 美馬市:
     view_state:
       latitude: 34.018961309691356
@@ -1585,26 +1620,44 @@ areas:
       - 木屋平
     - towns:
       - 穴吹町三島
+      own: 2
+      koku: 122
     - towns:
       - 穴吹町口山
+      own: 2
+      koku: 200
     - towns:
       - 穴吹町古宮
     - towns:
       - 穴吹町穴吹
+      own: 2
+      koku: 114
     - towns:
       - 美馬町
+      own: 2
+      koku: 216
     - towns:
       - 脇町
+      own: 2
+      koku: 317
     - towns:
       - 脇町別所
     - towns:
       - 脇町助松
+      own: 2
+      koku: 21
     - towns:
       - 脇町大字北庄
+      own: 2
+      koku: 40
     - towns:
       - 脇町大字猪尻
+      own: 2
+      koku: 41
     - towns:
       - 脇町大字脇町
+      own: 2
+      koku: 42
     - towns:
       - 脇町岩倉
     - towns:
@@ -1619,6 +1672,8 @@ areas:
       - 脇町野村
     - towns:
       - 脇町馬木
+
+
   徳島県 三好市:
     view_state:
       latitude: 33.933456903814836
@@ -1633,6 +1688,8 @@ areas:
       - 三野町太刀野
     - towns:
       - 三野町太刀野山
+      own: 2
+      koku: 168
     - towns:
       - 三野町清水
     - towns:
@@ -2449,6 +2506,8 @@ areas:
       - 半田
     - towns:
       - 貞光
+
+
   徳島県 三好郡東みよし町:
     view_state:
       latitude: 34.03565675320177
@@ -2463,6 +2522,8 @@ areas:
       - 昼間
     - towns:
       - 東山
+      own: 2
+      koku: 191
     - towns:
       - 毛田
     - towns:

@@ -2058,6 +2058,8 @@ areas:
       - 足沢
     - towns:
       - 野々上
+      own: 2
+      koku: 123
     - towns:
       - 金田一
       own: 1

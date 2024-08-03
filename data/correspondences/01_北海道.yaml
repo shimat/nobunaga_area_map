@@ -2631,10 +2631,14 @@ areas:
     - towns:
       - 西茨戸一条１丁目
       - 西茨戸二条１丁目
+      own: 1
+      koku: 12
     - towns:
       - 西茨戸四条２丁目
       - 西茨戸四条１丁目
       - 西茨戸五条１丁目
+      own: 1
+      koku: 13
     - towns:
       - 西茨戸六条１丁目
       - 西茨戸七条１丁目
@@ -10760,12 +10764,16 @@ areas:
     - towns:
       - 東雲町
       - 相生町
+      own: 1
+      koku: 14
     - towns:
       - 堺町
       own: 1
       koku: 11
     - towns:
       - 港町
+      own: 1
+      koku: 25
     - towns:
       - 山田町
       - 花園１丁目
@@ -10814,10 +10822,16 @@ areas:
       koku: 18
     - towns:
       - 富岡２丁目
+      own: 1
+      koku: 22
     - towns:
       - 稲穂２丁目
+      own: 1
+      koku: 13
     - towns:
       - 稲穂３丁目
+      own: 1
+      koku: 11
     - towns:
       - 稲穂４丁目
       own: 1
@@ -10836,16 +10850,24 @@ areas:
       koku: 12
     - towns:
       - 色内３丁目
+      own: 1
+      koku: 17
     - towns:
       - 錦町
       own: 1
       koku: 12
     - towns:
       - 石山町
+      own: 1
+      koku: 18
     - towns:
       - 豊川町
+      own: 1
+      koku: 12
     - towns:
       - 清水町
+      own: 1
+      koku: 24
     - towns:
       - 梅ケ枝町
       own: 1
@@ -10908,14 +10930,24 @@ areas:
       koku: 28
     - towns:
       - 赤岩３丁目
+      own: 1
+      koku: 59
     - towns:
       - 幸１丁目
+      own: 1
+      koku: 25
     - towns:
       - 幸２丁目
+      own: 1
+      koku: 20
     - towns:
       - 幸３丁目
+      own: 1
+      koku: 16
     - towns:
       - 幸４丁目
+      own: 1
+      koku: 17
     - towns:
       - 長橋１丁目
       own: 1
@@ -10926,14 +10958,20 @@ areas:
       koku: 18
     - towns:
       - 長橋３丁目
+      own: 1
+      koku: 20
     - towns:
       - 長橋４丁目
+      own: 1
+      koku: 19
     - towns:
       - 長橋５丁目
       own: 1
       koku: 35
     - towns:
       - 旭町
+      own: 1
+      koku: 24
     - towns:
       - オタモイ１丁目
       own: 1
@@ -10976,6 +11014,8 @@ areas:
       - 桃内３丁目
       - 忍路３丁目
       - 蘭島３丁目
+      own: 1
+      koku: 119
     - towns:
       - 忍路１丁目
       own: 1

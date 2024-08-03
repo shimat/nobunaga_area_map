@@ -1190,8 +1190,12 @@ areas:
       koku: 59
     - towns:
       - 南郷大字泥障作
+      own: 2
+      koku: 54
     - towns:
       - 南郷大字頃巻沢
+      own: 2
+      koku: 55
     - towns:
       - 南類家１丁目
       own: 2
@@ -1425,7 +1429,15 @@ areas:
       own: 2
       koku: 15
     - towns:
+      - 岬台１丁目
+      - 岬台３丁目
+      - 岬台４丁目
+      own: 2
+      koku: 15
+    - towns:
       - 岬台２丁目
+      own: 2
+      koku: 11
     - towns:
       - 新井田西１丁目
     - towns:
@@ -1454,16 +1466,33 @@ areas:
       koku: 12
     - towns:
       - 旭ヶ丘１丁目
+      own: 2
+      koku: 12
+    - towns:
+      - 旭ヶ丘２丁目
+      - 旭ヶ丘４丁目
+      - 旭ヶ丘５丁目
+      own: 2
+      koku: 13
     - towns:
       - 旭ヶ丘３丁目
+      own: 2
+      koku: 11
     - towns:
       - 是川１丁目
+      own: 2
+      koku: 12
     - towns:
       - 是川２丁目
+      own: 2
+      koku: 12
     - towns:
       - 是川３丁目
     - towns:
       - 是川４丁目
+      - 是川５丁目
+      own: 2
+      koku: 14
     - towns:
       - 東白山台１丁目
       own: 2
@@ -1553,9 +1582,18 @@ areas:
       own: 2
       koku: 19
     - towns:
+      - 桜ヶ丘１丁目
+      - 桜ヶ丘３丁目
+      own: 2
+      koku: 12
+    - towns:
       - 桜ヶ丘２丁目
+      own: 2
+      koku: 13
     - towns:
       - 桜ヶ丘４丁目
+      own: 2
+      koku: 11
     - towns:
       - 江陽１丁目
       own: 2
@@ -1592,18 +1630,32 @@ areas:
       koku: 23
     - towns:
       - 湊高台１丁目
+      own: 2
+      koku: 13
     - towns:
       - 湊高台２丁目
+      own: 2
+      koku: 15
     - towns:
       - 湊高台３丁目
+      own: 2
+      koku: 13
     - towns:
       - 湊高台４丁目
+      own: 2
+      koku: 13
     - towns:
       - 湊高台５丁目
+      own: 2
+      koku: 13
     - towns:
       - 湊高台６丁目
+      own: 2
+      koku: 13
     - towns:
       - 湊高台７丁目
+      own: 2
+      koku: 14
     - towns:
       - 湊高台８丁目
       own: 2
@@ -1626,6 +1678,10 @@ areas:
       koku: 14
     - towns:
       - 築港街１丁目
+      - 築港街２丁目
+      - 築港街第一ふ頭
+      own: 2
+      koku: 18
     - towns:
       - 西白山台１丁目
       own: 2
@@ -1739,6 +1795,23 @@ areas:
       - 小田２丁目
       own: 2
       koku: 11
+    - towns:
+      - 白銀１丁目
+      - 白銀２丁目
+      - 白銀５丁目
+      own: 2
+      koku: 15
+    - towns:
+      - 白銀３丁目
+      - 白銀４丁目
+      own: 2
+      koku: 14
+    - towns:
+      - 白銀台１丁目
+      - 白銀台２丁目
+      - 白銀台３丁目
+      own: 2
+      koku: 13
 
 
   青森県 黒石市:
@@ -2063,6 +2136,8 @@ areas:
       - 元町西６丁目
     - towns:
       - 大字三本木
+      own: 2
+      koku: 139
     - towns:
       - 大字伝法寺
     - towns:
@@ -2081,6 +2156,8 @@ areas:
       koku: 508
     - towns:
       - 大字沢田
+      own: 2
+      koku: 139
     - towns:
       - 大字法量
       own: 2
@@ -4627,10 +4704,14 @@ areas:
       - 中下田
     - towns:
       - 中平下長根山
+      own: 2
+      koku: 42
     - towns:
       - 中谷地
     - towns:
       - 中野平
+      own: 2
+      koku: 21
     - towns:
       - 二川目１丁目
     - towns:
@@ -4677,8 +4758,12 @@ areas:
       - 土取
     - towns:
       - 堀ノ内
+      own: 2
+      koku: 16
     - towns:
       - 堤田
+      own: 2
+      koku: 16
     - towns:
       - 境田
       own: 2
@@ -4703,6 +4788,8 @@ areas:
       - 新敷
     - towns:
       - 新田
+      own: 2
+      koku: 14
     - towns:
       - 明土
       own: 1
@@ -4721,14 +4808,22 @@ areas:
       - 東下川原
     - towns:
       - 東下谷地
+      own: 2
+      koku: 50
     - towns:
       - 東前川原
     - towns:
       - 東後谷地
+      own: 2
+      koku: 16
     - towns:
       - 松原１丁目
+      own: 2
+      koku: 19
     - towns:
       - 松原２丁目
+      own: 2
+      koku: 20
     - towns:
       - 染屋
     - towns:
@@ -4737,6 +4832,8 @@ areas:
       koku: 21
     - towns:
       - 沼端
+      own: 2
+      koku: 29
     - towns:
       - 洗平
     - towns:
@@ -4751,6 +4848,10 @@ areas:
       - 牛込平
     - towns:
       - 獺野
+      - 上前田
+      - 千刈田
+      own: 2
+      koku: 18
     - towns:
       - 瓢
       own: 1
@@ -4766,6 +4867,8 @@ areas:
       koku: 17
     - towns:
       - 立蛇
+      own: 2
+      koku: 18
     - towns:
       - 苗平谷地
     - towns:
@@ -4837,6 +4940,8 @@ areas:
       - 青葉１０丁目
     - towns:
       - 風嵐
+      own: 2
+      koku: 12
     - towns:
       - 高田
     - towns:
@@ -4845,11 +4950,19 @@ areas:
       - 鶉久保山
     - towns:
       - 黒坂谷地
+      own: 2
+      koku: 30
     - towns:
       - 南下田
       - 舘越
       own: 1
       koku: 12
+    - towns:
+      - 洋光台３丁目
+      - 洋光台５丁目
+      - 洋光台６丁目
+      own: 2
+      koku: 11
 
 
   青森県 三戸郡五戸町:

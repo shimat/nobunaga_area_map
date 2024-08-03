@@ -1316,6 +1316,8 @@ areas:
       - 公文名
     - towns:
       - 刀根
+      own: 2
+      koku: 126
     - towns:
       - 原
     - towns:
@@ -1352,8 +1354,8 @@ areas:
       - 小河口
     - towns:
       - 山
-    - towns:
-      - 山中
+      own: 2
+      koku: 168
     - towns:
       - 山泉
     - towns:
@@ -1404,6 +1406,8 @@ areas:
       - 杉津
     - towns:
       - 杉箸
+      own: 2
+      koku: 105
     - towns:
       - 東洋町
     - towns:
@@ -1528,6 +1532,9 @@ areas:
       - 鞠山
     - towns:
       - 駄口
+      - 山中
+      own: 2
+      koku: 147
     - towns:
       - 高野
     - towns:
@@ -4232,6 +4239,8 @@ areas:
       - 嶋
     - towns:
       - 広野
+      own: 2
+      koku: 209
     - towns:
       - 新道
     - towns:
@@ -4300,6 +4309,8 @@ areas:
       - 馬上免
     - towns:
       - 鯖波
+
+
   福井県 丹生郡越前町:
     view_state:
       latitude: 35.95913917177165
@@ -4533,6 +4544,8 @@ areas:
       - 山上
     - towns:
       - 新庄
+      own: 2
+      koku: 263
     - towns:
       - 日向
     - towns:

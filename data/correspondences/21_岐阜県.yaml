@@ -9266,12 +9266,16 @@ areas:
       - 長良
     - towns:
       - 門入
+      own: 2
+      koku: 262
     - towns:
       - 開田
     - towns:
       - 鶴見
     - towns:
       - 黒田
+
+
   岐阜県 揖斐郡大野町:
     view_state:
       latitude: 35.46838071037158

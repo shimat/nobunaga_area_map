@@ -928,6 +928,8 @@ areas:
       - 鳥居川町
       - 黒津１丁目
       - 黒津３丁目
+
+
   滋賀県 彦根市:
     view_state:
       latitude: 35.26507102709901
@@ -936,10 +938,16 @@ areas:
     correspondences:
     - towns:
       - 三津屋町
+      own: 2
+      koku: 35
     - towns:
       - 三津町
+      own: 2
+      koku: 25
     - towns:
       - 上岡部町
+      own: 2
+      koku: 26
     - towns:
       - 上稲葉町
     - towns:
@@ -947,17 +955,21 @@ areas:
     - towns:
       - 下岡部町
     - towns:
-      - 下矢倉町
-    - towns:
       - 下稲葉町
     - towns:
       - 下西川町
+      own: 2
+      koku: 26
     - towns:
       - 中山町
+      own: 2
+      koku: 53
     - towns:
       - 中藪町
     - towns:
       - 仏生寺町
+      own: 2
+      koku: 48
     - towns:
       - 佐和山町
     #- towns:
@@ -966,16 +978,23 @@ areas:
       - 出路町
     - towns:
       - 千尋町
+      own: 2
+      koku: 12
     - towns:
       - 南三ツ谷町
     - towns:
       - 南川瀬町
+      - 出町
+      own: 2
+      koku: 37
     - towns:
       - 原町
     - towns:
       - 古沢町
     - towns:
       - 善谷町
+      own: 2
+      koku: 34
     - towns:
       - 地蔵町
     - towns:
@@ -992,6 +1011,8 @@ areas:
       - 大藪町
     - towns:
       - 太堂町
+      own: 2
+      koku: 23
     - towns:
       - 宇尾町
     - towns:
@@ -1000,8 +1021,12 @@ areas:
       koku: 13
     - towns:
       - 安食中町
+      own: 2
+      koku: 24
     - towns:
       - 宮田町
+      own: 2
+      koku: 34
     - towns:
       - 小泉町
       own: 2
@@ -1043,6 +1068,8 @@ areas:
       - 新海町
     - towns:
       - 日夏町
+      own: 2
+      koku: 58
     - towns:
       - 普光寺町
     - towns:
@@ -1061,6 +1088,8 @@ areas:
       - 森堂町
     - towns:
       - 楡町
+      own: 2
+      koku: 22
     - towns:
       - 極楽寺町
     - towns:
@@ -1071,8 +1100,12 @@ areas:
       - 法士町
     - towns:
       - 海瀬町
+      own: 2
+      koku: 24
     - towns:
       - 清崎町
+      own: 2
+      koku: 44
     - towns:
       - 犬方町
     - towns:
@@ -1085,20 +1118,31 @@ areas:
       - 甲崎町
     - towns:
       - 甲田町
+      - 下矢倉町
+      own: 2
+      koku: 29
     - towns:
       - 男鬼町
+      own: 2
+      koku: 56
     - towns:
       - 石寺町
+      own: 2
+      koku: 49
     - towns:
       - 稲枝町
     - towns:
       - 稲部町
     - towns:
       - 稲里町
+      own: 2
+      koku: 46
     - towns:
       - 竹ケ鼻町
     - towns:
       - 笹尾町
+      own: 2
+      koku: 50
     - towns:
       - 肥田町
     - towns:
@@ -1111,12 +1155,18 @@ areas:
       koku: 12
     - towns:
       - 荘厳寺町
+      own: 2
+      koku: 33
     - towns:
       - 葛籠町
+      own: 2
+      koku: 26
     - towns:
       - 蓮台寺町
     - towns:
       - 薩摩町
+      own: 2
+      koku: 38
     - towns:
       - 西今町
       own: 2
@@ -1129,12 +1179,16 @@ areas:
       - 西葛籠町
     - towns:
       - 賀田山町
+      own: 2
+      koku: 33
     - towns:
       - 辻堂町
     - towns:
       - 里根町
     - towns:
       - 野口町
+      own: 2
+      koku: 16
     - towns:
       - 野瀬町
     - towns:
@@ -1147,6 +1201,8 @@ areas:
       - 金剛寺町
     - towns:
       - 金沢町
+      own: 2
+      koku: 33
     - towns:
       - 金田町
     - towns:
@@ -1161,6 +1217,8 @@ areas:
       koku: 36
     - towns:
       - 須越町
+      own: 2
+      koku: 30
     - towns:
       - 馬場１丁目
     - towns:
@@ -1171,6 +1229,8 @@ areas:
       koku: 59
     - towns:
       - 鳥居本町
+      own: 2
+      koku: 55
     - towns:
       - 中央町
       - 中藪１丁目
@@ -1181,7 +1241,6 @@ areas:
       - 佐和町
       - 元岡町
       - 元町
-      - 出町
       - 城町１丁目
       - 大橋町
       - 安清東町
@@ -1267,6 +1326,8 @@ areas:
       - 余呉町中之郷
     - towns:
       - 余呉町中河内
+      own: 2
+      koku: 170
     - towns:
       - 余呉町今市
     - towns:
@@ -1305,6 +1366,8 @@ areas:
       - 余呉町菅並
     - towns:
       - 余呉町針川
+      own: 2
+      koku: 117
     - towns:
       - 余呉町鷲見
     - towns:
@@ -1679,6 +1742,8 @@ areas:
       - 西浅井町横波
     - towns:
       - 西浅井町沓掛
+      own: 2
+      koku: 93
     - towns:
       - 西浅井町祝山
     - towns:
@@ -3288,15 +3353,11 @@ areas:
     - towns:
       - 今津町大供
     - towns:
-      - 今津町天増川
-    - towns:
       - 今津町岸脇
     - towns:
       - 今津町弘川
     - towns:
       - 今津町日置前
-    - towns:
-      - 今津町杉山
     - towns:
       - 今津町松陽台１丁目
     - towns:
@@ -3305,12 +3366,18 @@ areas:
       - 今津町梅原
     - towns:
       - 今津町椋川
+      own: 2
+      koku: 132
     - towns:
       - 今津町浜分
     - towns:
       - 今津町深清水
     - towns:
       - 今津町狭山
+      - 今津町杉山
+      - 今津町天増川
+      own: 2
+      koku: 153
     - towns:
       - 今津町福岡
     - towns:
@@ -3387,8 +3454,8 @@ areas:
       - 新旭町藁園
     - towns:
       - 新旭町針江
-    - towns:
-      - 新旭町饗庭
+    #- towns:
+    #  - 新旭町饗庭
     - towns:
       - 朽木中牧
     - towns:
@@ -3431,6 +3498,8 @@ areas:
       - 朽木雲洞谷
     - towns:
       - 朽木麻生
+      own: 2
+      koku: 182
     - towns:
       - 武曽横山
     - towns:
@@ -3941,6 +4010,8 @@ areas:
       - 鯰江町
     - towns:
       - 黄和田町
+      own: 2
+      koku: 99
     - towns:
       - 五個荘石川町
       - 八日市本町
@@ -3990,18 +4061,24 @@ areas:
       - 下多良１丁目
     - towns:
       - 下多良２丁目
+      own: 2
+      koku: 11
     - towns:
       - 下板並
     - towns:
       - 世継
     - towns:
       - 中多良
+      own: 2
+      koku: 23
     - towns:
       - 井之口
     - towns:
       - 伊吹
     - towns:
       - 入江
+      own: 2
+      koku: 55
     - towns:
       - 加勢野
     - towns:
@@ -4074,6 +4151,8 @@ areas:
       - 柏原
     - towns:
       - 梅ケ原
+      own: 2
+      koku: 42
     - towns:
       - 梓河内
     - towns:
@@ -4094,8 +4173,12 @@ areas:
       - 甲賀
     - towns:
       - 番場
+      own: 2
+      koku: 79
     - towns:
       - 磯
+      own: 2
+      koku: 45
     - towns:
       - 箕浦
     - towns:
@@ -4140,6 +4223,9 @@ areas:
       - 下多良３丁目
       - 中多良１丁目
       - 中多良２丁目
+      own: 2
+      koku: 11
+    - towns:
       - 梅ケ原栄
       - 米原西
   滋賀県 蒲生郡日野町:
@@ -4385,6 +4471,8 @@ areas:
       - 畑田
     - towns:
       - 目加田
+      own: 2
+      koku: 40
     - towns:
       - 矢守
     - towns:
@@ -4411,6 +4499,8 @@ areas:
       - 長野
     - towns:
       - 香之庄
+
+
   滋賀県 犬上郡豊郷町:
     view_state:
       latitude: 35.19836111939885
@@ -4421,33 +4511,58 @@ areas:
       - 大字三ツ池
     - towns:
       - 大字上枝
+      - 大字八目
+      own: 2
+      koku: 17
     - towns:
       - 大字下枝
+      own: 2
+      koku: 15
     - towns:
       - 大字八町
+      own: 2
+      koku: 33
     - towns:
       - 大字吉田
+      own: 2
+      koku: 37
     - towns:
       - 大字四十九院
+      own: 2
+      koku: 29
     - towns:
       - 大字大町
+      own: 2
+      koku: 13
     - towns:
       - 大字安食南
+      own: 2
+      koku: 25
     - towns:
       - 大字安食西
+      own: 2
+      koku: 31
     - towns:
       - 大字日栄
+      - 大字杉
+      own: 2
+      koku: 14
     - towns:
       - 大字沢
+      own: 2
+      koku: 22
     - towns:
       - 大字石畑
+      own: 2
+      koku: 21
     - towns:
       - 大字雨降野
+      own: 2
+      koku: 22
     - towns:
       - 大字高野瀬
-    - towns:
-      - 大字八目
-      - 大字杉
+
+
   滋賀県 犬上郡甲良町:
     view_state:
       latitude: 35.20247520279114
@@ -4456,28 +4571,54 @@ areas:
     correspondences:
     - towns:
       - 大字下之郷
+      own: 2
+      koku: 40
     - towns:
       - 大字北落
+      own: 2
+      koku: 32
     - towns:
       - 大字呉竹
+      own: 2
+      koku: 16
     - towns:
       - 大字在士
+      own: 2
+      koku: 25
     - towns:
       - 大字小川原
+      own: 2
+      koku: 39
     - towns:
       - 大字尼子
+      own: 2
+      koku: 47
     - towns:
       - 大字横関
+      own: 2
+      koku: 26
     - towns:
       - 大字正楽寺
+      own: 2
+      koku: 25
     - towns:
       - 大字池寺
+      own: 2
+      koku: 54
     - towns:
       - 大字法養寺
+      own: 2
+      koku: 23
     - towns:
       - 大字金屋
+      own: 2
+      koku: 32
     - towns:
       - 大字長寺
+      own: 2
+      koku: 34
+
+
   滋賀県 犬上郡多賀町:
     view_state:
       latitude: 35.21079384107539
@@ -4488,10 +4629,14 @@ areas:
       - 大字一ノ瀬
     - towns:
       - 大字一円
+      own: 2
+      koku: 40
     - towns:
       - 大字中川原
     - towns:
       - 大字久徳
+      own: 2
+      koku: 27
     - towns:
       - 大字五僧
     - towns:
@@ -4504,6 +4649,8 @@ areas:
       - 大字保月
     - towns:
       - 大字八重練
+      own: 2
+      koku: 41
     - towns:
       - 大字南後谷
     - towns:
@@ -4526,6 +4673,8 @@ areas:
       koku: 132
     - towns:
       - 大字大岡
+      own: 2
+      koku: 25
     - towns:
       - 大字大杉
     - towns:
@@ -4546,20 +4695,30 @@ areas:
       koku: 68
     - towns:
       - 大字月之木
+      own: 2
+      koku: 20
     - towns:
       - 大字木曽
+      own: 2
+      koku: 34
     - towns:
       - 大字杉
     - towns:
       - 大字栗栖
+      own: 2
+      koku: 48
     - towns:
       - 大字桃原
+      own: 2
+      koku: 37
     - towns:
       - 大字楢崎
     - towns:
       - 大字樋田
     - towns:
       - 大字水谷
+      own: 2
+      koku: 52
     - towns:
       - 大字河内
     - towns:
