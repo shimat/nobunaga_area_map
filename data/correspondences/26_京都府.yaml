@@ -520,10 +520,11 @@ areas:
       - 静市静原町
     - towns:
       - 鞍馬二ノ瀬町
+      - 鞍馬貴船町
+      own: 2
+      koku: 114
     - towns:
       - 鞍馬本町
-    - towns:
-      - 鞍馬貴船町
     - towns:
       - 高野東開町
     - towns:
@@ -746,6 +747,8 @@ areas:
       - 京北細野町
     - towns:
       - 京北芹生町
+      own: 2
+      koku: 115
     - towns:
       - 京北西町
     - towns:

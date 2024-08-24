@@ -3571,6 +3571,8 @@ areas:
       - 太森町
     - towns:
       - 安坂山町
+      own: 2
+      koku: 162
     - towns:
       - 安知本町
     - towns:
@@ -3609,6 +3611,8 @@ areas:
       - 田茂町
     - towns:
       - 白木町
+      own: 2
+      koku: 117
     - towns:
       - 羽若町
     - towns:
@@ -3643,6 +3647,8 @@ areas:
       - 関町古厩
     - towns:
       - 関町坂下
+      own: 2
+      koku: 114
     - towns:
       - 関町富士ハイツ
     - towns:
@@ -4008,6 +4014,8 @@ areas:
       - 大安町石榑北山
     - towns:
       - 大安町石榑南
+      own: 2
+      koku: 127
     - towns:
       - 大安町石榑東
     - towns:

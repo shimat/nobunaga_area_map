@@ -950,6 +950,8 @@ areas:
       koku: 26
     - towns:
       - 上稲葉町
+      own: 2
+      koku: 12
     - towns:
       - 上西川町
     - towns:
@@ -1084,6 +1086,8 @@ areas:
       - 松原町
     - towns:
       - 柳川町
+      own: 2
+      koku: 21
     - towns:
       - 森堂町
     - towns:
@@ -1096,6 +1100,8 @@ areas:
       - 正法寺町
     - towns:
       - 武奈町
+      own: 2
+      koku: 58
     - towns:
       - 法士町
     - towns:
@@ -2766,6 +2772,8 @@ areas:
       - 土山町黒川
     - towns:
       - 土山町黒滝
+      own: 2
+      koku: 107
     - towns:
       - 水口町さつきが丘
     - towns:
@@ -4047,6 +4055,8 @@ areas:
       - 上丹生
     - towns:
       - 上多良
+      own: 2
+      koku: 25
     - towns:
       - 上平寺
     - towns:
@@ -4407,6 +4417,8 @@ areas:
       - 大字駕輿丁
     - towns:
       - 大字鵜川
+
+
   滋賀県 愛知郡愛荘町:
     view_state:
       latitude: 35.169246831469124
@@ -4423,6 +4435,8 @@ areas:
       - 元持
     - towns:
       - 円城寺
+      own: 2
+      koku: 23
     - towns:
       - 北八木
     - towns:
@@ -4433,6 +4447,8 @@ areas:
       - 宮後
     - towns:
       - 山川原
+      own: 2
+      koku: 14
     - towns:
       - 山川原工区
     - towns:
@@ -4447,12 +4463,16 @@ areas:
       - 市
     - towns:
       - 常安寺
+      own: 2
+      koku: 28
     - towns:
       - 平居
     - towns:
       - 愛知川
     - towns:
       - 斧磨
+      own: 2
+      koku: 51
     - towns:
       - 東円堂
     - towns:
@@ -4467,6 +4487,8 @@ areas:
       - 沖
     - towns:
       - 深草
+      own: 2
+      koku: 13
     - towns:
       - 畑田
     - towns:
@@ -4663,6 +4685,9 @@ areas:
       - 大字土田
     - towns:
       - 大字壺
+      - 大字小原
+      own: 2
+      koku: 39
     - towns:
       - 大字多賀
       own: 2
@@ -4681,8 +4706,6 @@ areas:
       - 大字富之尾
       own: 2
       koku: 57
-    - towns:
-      - 大字小原
     - towns:
       - 大字屏風
     - towns:

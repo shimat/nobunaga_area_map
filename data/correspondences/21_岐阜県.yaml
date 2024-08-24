@@ -8972,6 +8972,8 @@ areas:
       - 清水１丁目
       - 清水２丁目
       - 清水３丁目
+
+
   岐阜県 不破郡関ケ原町:
     view_state:
       latitude: 35.34782818094661
@@ -8988,12 +8990,16 @@ areas:
       - 大字松尾
     - towns:
       - 大字玉
+      own: 2
+      koku: 72
     - towns:
       - 大字藤下
     - towns:
       - 大字野上
     - towns:
       - 大字関ケ原
+
+
   岐阜県 安八郡神戸町:
     view_state:
       latitude: 35.4158664019687

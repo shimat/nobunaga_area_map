@@ -2226,6 +2226,8 @@ areas:
       - 大字野川
     - towns:
       - 大字長山
+
+
   高知県 安芸郡馬路村:
     view_state:
       latitude: 33.62284099173511
@@ -2236,6 +2238,10 @@ areas:
       - 大字馬路
     - towns:
       - 大字魚梁瀬
+      own: 2
+      koku: 317
+
+
   高知県 安芸郡芸西村:
     view_state:
       latitude: 33.548502068200676

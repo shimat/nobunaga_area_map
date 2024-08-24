@@ -20,6 +20,8 @@ areas:
       - 三軒屋町
     - towns:
       - 上八万町
+      own: 2
+      koku: 104
     - towns:
       - 上助任町
     - towns:
@@ -90,6 +92,8 @@ areas:
       - 入田町
     - towns:
       - 八万町
+      own: 2
+      koku: 97
     - towns:
       - 八多町
     - towns:
@@ -1034,8 +1038,6 @@ areas:
       own: 2
       koku: 27
     - towns:
-      - 山川町北島
-    - towns:
       - 山川町北須賀
     - towns:
       - 山川町古城
@@ -1054,11 +1056,12 @@ areas:
     - towns:
       - 山川町大室
     - towns:
-      - 山川町大峯
-    - towns:
       - 山川町大藤谷
     - towns:
       - 山川町天王原
+      - 山川町土仏西向
+      own: 2
+      koku: 17
     - towns:
       - 山川町天神
     - towns:
@@ -1085,6 +1088,10 @@ areas:
       - 山川町川田八幡
     - towns:
       - 山川町川田北島
+      - 山川町北島
+      - 山川町大須賀
+      own: 2
+      koku: 18
     - towns:
       - 山川町川田忌部山
     - towns:
@@ -1097,6 +1104,8 @@ areas:
       - 山川町引地
     - towns:
       - 山川町御旅館
+      own: 2
+      koku: 16
     - towns:
       - 山川町忌部
     - towns:
@@ -1115,6 +1124,10 @@ areas:
       - 山川町春日
     - towns:
       - 山川町木戸口
+      - 山川町小路
+      - 山川町楮本
+      own: 2
+      koku: 18
     - towns:
       - 山川町木綿麻山
     - towns:
@@ -1139,6 +1152,8 @@ areas:
       - 山川町湯立
     - towns:
       - 山川町片岸
+      own: 2
+      koku: 11
     - towns:
       - 山川町牛ノ子尾
     - towns:
@@ -1180,13 +1195,15 @@ areas:
     - towns:
       - 山川町馬見尾
     - towns:
-      - 山川町高頭
-    - towns:
       - 山川町麦原
     - towns:
       - 山川町麻掛
     - towns:
       - 山川町黒岩
+      - 山川町高頭
+      - 山川町大峯
+      own: 2
+      koku: 27
     - towns:
       - 山川町鼓山
     - towns:
@@ -1195,6 +1212,8 @@ areas:
       - 川島町児島
     - towns:
       - 川島町学
+      own: 2
+      koku: 70
     - towns:
       - 川島町宮島
     - towns:
@@ -1205,6 +1224,8 @@ areas:
       - 川島町桑村
     - towns:
       - 美郷
+      own: 2
+      koku: 225
     - towns:
       - 鴨島町上下島
     - towns:
@@ -1229,6 +1250,9 @@ areas:
       - 鴨島町牛島
     - towns:
       - 鴨島町知恵島
+      - 鴨島町知恵島番外
+      own: 2
+      koku: 61
     - towns:
       - 鴨島町粟島
     - towns:
@@ -1246,18 +1270,15 @@ areas:
       - 山川町丸山
       - 山川町井傍
       - 山川町八ヶ久保
-      - 山川町土仏西向
       - 山川町土橋
       - 山川町土橋ノ上
       - 山川町坂口
       - 山川町堤内
       - 山川町塚穴
-      - 山川町大須賀
       - 山川町天神佐古
       - 山川町奥原
       - 山川町宮北
       - 山川町宮谷
-      - 山川町小路
       - 山川町岩戸
       - 山川町川田天神
       - 山川町川田市
@@ -1266,7 +1287,6 @@ areas:
       - 山川町朝日
       - 山川町柿木谷
       - 山川町桑ノ峯
-      - 山川町楮本
       - 山川町榛木原
       - 山川町槻原
       - 山川町権現谷
@@ -1281,7 +1301,6 @@ areas:
       - 鴨島町喜来甲
       - 鴨島町喜来番外
       - 鴨島町牛島番外
-      - 鴨島町知恵島番外
       - 鴨島町鴨島乙
       - 鴨島町鴨島甲
 
@@ -1348,8 +1367,12 @@ areas:
       - 市場町興崎
     - towns:
       - 市場町香美
+      own: 2
+      koku: 60
     - towns:
       - 阿波町三本柳
+      own: 2
+      koku: 18
     - towns:
       - 阿波町下原
     - towns:
@@ -1368,12 +1391,16 @@ areas:
       - 阿波町中長峰
     - towns:
       - 阿波町丸山
+      own: 2
+      koku: 18
     - towns:
       - 阿波町久原
     - towns:
       - 阿波町亀底
     - towns:
       - 阿波町五明
+      own: 2
+      koku: 14
     - towns:
       - 阿波町井出口
     - towns:
@@ -1469,6 +1496,8 @@ areas:
       koku: 30
     - towns:
       - 阿波町居屋敷
+      own: 2
+      koku: 15
     - towns:
       - 阿波町山ノ神
     - towns:
@@ -1479,6 +1508,8 @@ areas:
       - 阿波町岡地
     - towns:
       - 阿波町川久保
+      own: 2
+      koku: 19
     - towns:
       - 阿波町川添
     - towns:
@@ -1581,14 +1612,24 @@ areas:
       - 阿波町谷島北
     - towns:
       - 阿波町赤坂
+      own: 2
+      koku: 23
     - towns:
       - 阿波町野神
     - towns:
       - 阿波町馬場
     - towns:
       - 阿波町高垣
+      own: 2
+      koku: 15
     - towns:
       - 阿波町鳶谷
+    - towns:
+      - 阿波町王子川
+      - 阿波町梅ノ東
+      - 阿波町松川内
+      own: 2
+      koku: 14
     - towns:
       - 市場町八幡
       - 阿波町乙岩津
@@ -1600,12 +1641,9 @@ areas:
       - 阿波町本安
       - 阿波町東島
       - 阿波町東村
-      - 阿波町松川内
-      - 阿波町梅ノ東
       - 阿波町梅川内
       - 阿波町植桜
       - 阿波町王地南
-      - 阿波町王子川
       - 阿波町西島
       - 阿波町谷口
 
@@ -2000,6 +2038,7 @@ areas:
       - 大字沼江
     - towns:
       - 大字生名
+
   徳島県 勝浦郡上勝町:
     view_state:
       latitude: 33.90016269917149
@@ -2014,8 +2053,12 @@ areas:
       - 大字正木
     - towns:
       - 大字生実
+      own: 2
+      koku: 193
     - towns:
       - 大字福原
+
+
   徳島県 名東郡佐那河内村:
     view_state:
       latitude: 33.98250960671848
@@ -2024,8 +2067,14 @@ areas:
     correspondences:
     - towns:
       - 上
+      own: 2
+      koku: 124
     - towns:
       - 下
+      own: 2
+      koku: 165
+
+
   徳島県 名西郡石井町:
     view_state:
       latitude: 34.07806985925191
@@ -2042,6 +2091,8 @@ areas:
       - 高原
     - towns:
       - 高川原
+
+
   徳島県 名西郡神山町:
     view_state:
       latitude: 33.977067847741594
@@ -2052,12 +2103,22 @@ areas:
       - 上分
     - towns:
       - 下分
+      own: 2
+      koku: 185
     - towns:
       - 神領
+      own: 2
+      koku: 178
     - towns:
       - 阿野
+      own: 2
+      koku: 211
     - towns:
       - 鬼籠野
+      own: 2
+      koku: 145
+
+
   徳島県 那賀郡那賀町:
     view_state:
       latitude: 33.80014455753708
@@ -2224,6 +2285,8 @@ areas:
       - 鮎川
     - towns:
       - 和食
+
+
   徳島県 海部郡牟岐町:
     view_state:
       latitude: 33.68644314221674
@@ -2380,6 +2443,7 @@ areas:
       - 長原
     - towns:
       - 長岸
+
   徳島県 板野郡北島町:
     view_state:
       latitude: 34.12767163748477
