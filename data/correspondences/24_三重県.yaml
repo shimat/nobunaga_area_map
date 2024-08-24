@@ -3535,6 +3535,8 @@ areas:
       - 住山町
     - towns:
       - 加太中在家
+      own: 2
+      koku: 98
     - towns:
       - 加太北在家
     - towns:
@@ -3543,10 +3545,14 @@ areas:
       - 加太市場
     - towns:
       - 加太板屋
+      own: 2
+      koku: 69
     - towns:
       - 加太梶ケ坂
     - towns:
       - 加太神武
+      own: 2
+      koku: 68
     - towns:
       - 北山町
     - towns:
@@ -4217,6 +4223,8 @@ areas:
       - 下川原
     - towns:
       - 下柘植
+      own: 2
+      koku: 91
     - towns:
       - 下神戸
     - towns:

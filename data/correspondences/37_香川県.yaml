@@ -901,6 +901,8 @@ areas:
       - 大野原町大野原
     - towns:
       - 大野原町有木
+      own: 2
+      koku: 85
     - towns:
       - 大野原町海老済
     - towns:

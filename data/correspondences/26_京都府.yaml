@@ -4,14 +4,6 @@
     zoom: 8.2
 
 areas:
-  京都府 （京都市）:
-    view_state:
-      latitude: 35.100
-      longitude: 135.705
-      zoom: 9.5
-    correspondences: []
-
-
   京都府 京都市北区:
     view_state:
       latitude: 35.100
@@ -20,14 +12,15 @@ areas:
     correspondences:
     - towns:
       - 上賀茂ケシ山
+      - 上賀茂狭間町
+      own: 2
+      koku: 18
     - towns:
       - 上賀茂十三石山
     - towns:
       - 上賀茂朝露ケ原町
     - towns:
       - 上賀茂本山
-    - towns:
-      - 上賀茂狭間町
     - towns:
       - 上賀茂神山
     - towns:
@@ -460,6 +453,8 @@ areas:
       - 岩倉大鷺町
     - towns:
       - 岩倉幡枝町
+      own: 2
+      koku: 40
     - towns:
       - 岩倉忠在地町
     - towns:
@@ -508,12 +503,16 @@ areas:
       - 花脊別所町
     - towns:
       - 花脊原地町
+      own: 2
+      koku: 125
     - towns:
       - 花脊大布施町
     - towns:
       - 賀茂今井町
     - towns:
       - 静市市原町
+      own: 2
+      koku: 52
     - towns:
       - 静市野中町
     - towns:

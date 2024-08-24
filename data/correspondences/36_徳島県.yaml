@@ -686,8 +686,12 @@ areas:
       - 北灘町宿毛谷
     - towns:
       - 北灘町折野
+      own: 2
+      koku: 124
     - towns:
       - 北灘町櫛木
+      own: 2
+      koku: 77
     - towns:
       - 北灘町碁浦
     - towns:
@@ -730,6 +734,8 @@ areas:
       - 大麻町松村
     - towns:
       - 大麻町板東
+      own: 2
+      koku: 145
     - towns:
       - 大麻町桧
     - towns:
@@ -750,6 +756,8 @@ areas:
       - 撫養町南浜
     - towns:
       - 撫養町大桑島
+      own: 2
+      koku: 34
     - towns:
       - 撫養町小桑島
     - towns:
@@ -766,12 +774,16 @@ areas:
       - 撫養町立岩
     - towns:
       - 撫養町黒崎
+      own: 2
+      koku: 43
     - towns:
       - 瀬戸町中島田
     - towns:
       - 瀬戸町北泊
     - towns:
       - 瀬戸町堂浦
+      own: 2
+      koku: 67
     - towns:
       - 瀬戸町大島田
     - towns:
@@ -782,6 +794,8 @@ areas:
       - 瀬戸町撫佐
     - towns:
       - 瀬戸町明神
+      own: 2
+      koku: 54
     - towns:
       - 瀬戸町湊谷
     - towns:
@@ -790,10 +804,16 @@ areas:
       - 里浦町里浦
     - towns:
       - 鳴門町三ツ石
+      own: 2
+      koku: 31
     - towns:
       - 鳴門町土佐泊浦
+      own: 2
+      koku: 81
     - towns:
       - 鳴門町高島
+
+
   徳島県 小松島市:
     view_state:
       latitude: 33.984132392093244
@@ -1047,12 +1067,19 @@ areas:
       - 山川町坂田
     - towns:
       - 山川町堤外
+      own: 2
+      koku: 32
     - towns:
       - 山川町境谷
     - towns:
       - 山川町大内
+      - 山川町馬見尾
+      own: 2
+      koku: 41
     - towns:
       - 山川町大塚
+      own: 2
+      koku: 12
     - towns:
       - 山川町大室
     - towns:
@@ -1086,6 +1113,8 @@ areas:
       - 山川町川田
     - towns:
       - 山川町川田八幡
+      own: 2
+      koku: 16
     - towns:
       - 山川町川田北島
       - 山川町北島
@@ -1158,6 +1187,8 @@ areas:
       - 山川町牛ノ子尾
     - towns:
       - 山川町町
+      own: 2
+      koku: 20
     - towns:
       - 山川町皆瀬
     - towns:
@@ -1168,6 +1199,8 @@ areas:
       - 山川町祇園
     - towns:
       - 山川町翁喜台
+      own: 2
+      koku: 20
     - towns:
       - 山川町舟戸
     - towns:
@@ -1184,6 +1217,8 @@ areas:
       - 山川町西麓
     - towns:
       - 山川町諏訪
+      own: 2
+      koku: 30
     - towns:
       - 山川町赤岩
     - towns:
@@ -1192,8 +1227,6 @@ areas:
       - 山川町鍋倉
     - towns:
       - 山川町青木
-    - towns:
-      - 山川町馬見尾
     - towns:
       - 山川町麦原
     - towns:
@@ -1207,7 +1240,14 @@ areas:
     - towns:
       - 山川町鼓山
     - towns:
+      - 山川町田ノ浦
+      - 山川町御饌免
+      own: 2
+      koku: 14
+    - towns:
       - 川島町三ツ島
+      own: 2
+      koku: 28
     - towns:
       - 川島町児島
     - towns:
@@ -1222,6 +1262,8 @@ areas:
       - 川島町川島
     - towns:
       - 川島町桑村
+      own: 2
+      koku: 83
     - towns:
       - 美郷
       own: 2
@@ -1283,7 +1325,6 @@ areas:
       - 山川町川田天神
       - 山川町川田市
       - 山川町市久保
-      - 山川町御饌免
       - 山川町朝日
       - 山川町柿木谷
       - 山川町桑ノ峯
@@ -1292,7 +1333,6 @@ areas:
       - 山川町権現谷
       - 山川町流
       - 山川町瀬津
-      - 山川町田ノ浦
       - 山川町西ノ原
       - 山川町貞田
       - 山川町赤刎
@@ -1319,6 +1359,8 @@ areas:
       - 吉野町五条
     - towns:
       - 吉野町柿原
+      own: 2
+      koku: 76
     - towns:
       - 吉野町柿原１丁目
     - towns:
@@ -1351,6 +1393,8 @@ areas:
       - 市場町大俣
     - towns:
       - 市場町大影
+      own: 2
+      koku: 81
     - towns:
       - 市場町大野島
     - towns:
@@ -1359,10 +1403,16 @@ areas:
       - 市場町山野上
     - towns:
       - 市場町市場
+      own: 2
+      koku: 44
     - towns:
       - 市場町日開谷
+      own: 2
+      koku: 163
     - towns:
       - 市場町犬墓
+      own: 2
+      koku: 103
     - towns:
       - 市場町興崎
     - towns:
@@ -1409,6 +1459,8 @@ areas:
       - 阿波町伊沢市
     - towns:
       - 阿波町伊沢田
+      own: 2
+      koku: 13
     - towns:
       - 阿波町伊沢谷東縁
     - towns:
@@ -1417,6 +1469,8 @@ areas:
       - 阿波町八丁原
     - towns:
       - 阿波町前島
+      own: 2
+      koku: 13
     - towns:
       - 阿波町勝命
     - towns:
@@ -1542,6 +1596,9 @@ areas:
       koku: 16
     - towns:
       - 阿波町東条
+      - 阿波町真福寺
+      own: 2
+      koku: 25
     - towns:
       - 阿波町東柴生
     - towns:
@@ -1571,8 +1628,6 @@ areas:
     - towns:
       - 阿波町王地
     - towns:
-      - 阿波町真福寺
-    - towns:
       - 阿波町真重
     - towns:
       - 阿波町稲荷
@@ -1590,6 +1645,8 @@ areas:
       - 阿波町西ノ岡
     - towns:
       - 阿波町西原
+      own: 2
+      koku: 15
     - towns:
       - 阿波町西整理
       own: 2
@@ -1942,6 +1999,8 @@ areas:
       - 池田町漆川
     - towns:
       - 池田町白地
+      own: 2
+      koku: 166
     - towns:
       - 池田町西山
     - towns:
@@ -2047,6 +2106,8 @@ areas:
     correspondences:
     - towns:
       - 大字傍示
+      own: 2
+      koku: 215
     - towns:
       - 大字旭
     - towns:
@@ -2085,6 +2146,8 @@ areas:
       - 浦庄
     - towns:
       - 石井
+      own: 2
+      koku: 87
     - towns:
       - 藍畑
     - towns:
@@ -2484,10 +2547,14 @@ areas:
       - 徳命
     - towns:
       - 東中富
+      own: 2
+      koku: 53
     - towns:
       - 矢上
     - towns:
       - 笠木
+
+
   徳島県 板野郡板野町:
     view_state:
       latitude: 34.1525892573418
@@ -2510,6 +2577,8 @@ areas:
       - 大寺
     - towns:
       - 川端
+      own: 2
+      koku: 85
     - towns:
       - 松谷
     - towns:

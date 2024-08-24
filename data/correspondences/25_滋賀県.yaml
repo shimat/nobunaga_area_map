@@ -1588,6 +1588,8 @@ areas:
       - 木之本町赤尾
     - towns:
       - 木之本町金居原
+      own: 2
+      koku: 180
     - towns:
       - 木之本町音羽
     - towns:
@@ -1794,6 +1796,8 @@ areas:
       - 香花寺町
     - towns:
       - 高山町
+      own: 2
+      koku: 184
     - towns:
       - 高月町井口
     - towns:
@@ -3886,6 +3890,8 @@ areas:
       - 柴原南町
     - towns:
       - 栗見出在家町
+      own: 2
+      koku: 79
     - towns:
       - 栗見新田町
     - towns:
@@ -4179,6 +4185,8 @@ areas:
       - 烏脇
     - towns:
       - 甲津原
+      own: 2
+      koku: 151
     - towns:
       - 甲賀
     - towns:
@@ -4433,6 +4441,8 @@ areas:
       - 中宿
     - towns:
       - 元持
+      own: 2
+      koku: 27
     - towns:
       - 円城寺
       own: 2
@@ -4455,12 +4465,18 @@ areas:
       - 岩倉
     - towns:
       - 島川
+      own: 2
+      koku: 36
     - towns:
       - 川久保
+      own: 2
+      koku: 14
     - towns:
       - 川原
     - towns:
       - 市
+      own: 2
+      koku: 33
     - towns:
       - 常安寺
       own: 2
@@ -4469,18 +4485,26 @@ areas:
       - 平居
     - towns:
       - 愛知川
+      own: 2
+      koku: 43
     - towns:
       - 斧磨
       own: 2
       koku: 51
     - towns:
       - 東円堂
+      own: 2
+      koku: 49
     - towns:
       - 東出
     - towns:
       - 松尾寺
+      own: 2
+      koku: 85
     - towns:
       - 栗田
+      own: 2
+      koku: 23
     - towns:
       - 沓掛
     - towns:
@@ -4499,18 +4523,28 @@ areas:
       - 矢守
     - towns:
       - 石橋
+      own: 2
+      koku: 27
     - towns:
       - 竹原
+      own: 2
+      koku: 34
     - towns:
       - 苅間
     - towns:
       - 蚊野
+      own: 2
+      koku: 44
     - towns:
       - 蚊野外
+      own: 2
+      koku: 25
     - towns:
       - 西出
     - towns:
       - 豊満
+      own: 2
+      koku: 30
     - towns:
       - 軽野
     - towns:
@@ -4519,8 +4553,12 @@ areas:
       - 長塚
     - towns:
       - 長野
+      own: 2
+      koku: 51
     - towns:
       - 香之庄
+      own: 2
+      koku: 28
 
 
   滋賀県 犬上郡豊郷町:
@@ -4750,8 +4788,12 @@ areas:
       - 大字甲頭倉
     - towns:
       - 大字萱原
+      own: 2
+      koku: 145
     - towns:
       - 大字藤瀬
+      own: 2
+      koku: 73
     - towns:
       - 大字霊仙
     - towns:

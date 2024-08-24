@@ -2710,6 +2710,8 @@ areas:
       - 上屋２丁目
     - towns:
       - 上石津町一之瀬
+      own: 2
+      koku: 122
     - towns:
       - 上石津町三ツ里
     - towns:
@@ -8924,6 +8926,8 @@ areas:
       - 金屋２丁目
       - 飯積１丁目
       - 高田馬場町
+
+
   岐阜県 不破郡垂井町:
     view_state:
       latitude: 35.38599621224478
@@ -8934,6 +8938,8 @@ areas:
       - 伊吹
     - towns:
       - 垂井
+      own: 2
+      koku: 60
     - towns:
       - 大滝
     - towns:
@@ -8942,6 +8948,8 @@ areas:
       - 宮代
     - towns:
       - 岩手
+      own: 2
+      koku: 108
     - towns:
       - 市之尾
     - towns:
@@ -8960,6 +8968,8 @@ areas:
       - 綾戸
     - towns:
       - 表佐
+      own: 2
+      koku: 67
     - towns:
       - 南新井１丁目
       - 南新井２丁目
@@ -9170,6 +9180,8 @@ areas:
       - 坂内坂本
     - towns:
       - 坂内川上
+      own: 2
+      koku: 253
     - towns:
       - 坂内広瀬
     - towns:
@@ -9210,6 +9222,8 @@ areas:
       - 春日中山
     - towns:
       - 春日六合
+      own: 2
+      koku: 180
     - towns:
       - 春日小宮神
     - towns:
@@ -9278,6 +9292,8 @@ areas:
       - 開田
     - towns:
       - 鶴見
+      own: 2
+      koku: 162
     - towns:
       - 黒田
 
